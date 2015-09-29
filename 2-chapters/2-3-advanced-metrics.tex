@@ -1,0 +1,44 @@
+\chapter{Time series advanced metrics}
+\label{sec:unchapitre}
+\minitoc
+
+\noindent Chapeau introductif
+\begin{itemize}
+	\item Objectif : Trouver une distance, combinaison des distances basiques qui donne une bonne classification $k$-NN sur une base de données.
+	\item Pourquoi une distance combinée? Dans le cadre de données réelles, plusieurs modalités peuvent être impliquées (forme, valeur, fréquence), de manière globale ou locale.
+	\item Dans le cadre des données réelles, plusieurs composantes/modalités peuvent être impliqués (forme, valeur, fréquence). = attribut (feature) en traitement du signal. Hypothèse : valeur sur une série complète, sur un intervalle ou sur une fenêtre (dans le cadre des métriques à base fréquentielle).
+\end{itemize}
+
+%-----------------------------------------------------------------------------
+\section{Combined metrics for time series}
+\begin{itemize}
+	\item Certains travaux dans la littérature propose des combinaisons : linéaire, exponentielle, sigmoïde.
+	\item Limites:
+	\begin{itemize}
+		\item Implique que 2 modalités et au niveau global. Pour intégrer d'autres modalités et à d'autres échelles, il faut changer la formule et ajouter de nouveaux hyper-paramètres à optimiser $\rightarrow$ l'apprentissage de ces paramètres est plus long.
+		\item La combinaison est définie a priori
+		\item La combinaison est indépendante de la tâche d'analyse.
+		\item Pour répondre à ces problèmes, certains auteurs proposent d'apprendre une métrique en vue de la tâche d'analyse considérée (classification, régression, clustering).
+	\end{itemize}
+\end{itemize}
+
+
+%-----------------------------------------------------------------------------
+\section{Metric Learning: state of the art}
+\begin{itemize}
+	\item Placer le contexte : travaux réalisés dans le cadre de la classification de données statiques.
+	\item Présenter l'intuition du Metric Learning sur la base des travaux de Weinberger.
+	\item Donner la terminologie (target, imposter, push, pull)
+	\item Objectif : push des imposters et pull des targets
+	\item Formalisation du problème (optimisation)
+	\item Limites:
+	\begin{itemize}
+		\item On apprend les poids d'une distance de Mahalanobis
+		\item L'apprentissage ne prend pas en compte l'aspect multi-modal dans les données
+	\end{itemize}
+\end{itemize}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../roque-phdthesis"
+%%% End: 

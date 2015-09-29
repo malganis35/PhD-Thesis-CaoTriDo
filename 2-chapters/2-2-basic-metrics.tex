@@ -1,0 +1,93 @@
+\chapter{Time series basic metrics}
+\label{sec:unchapitre}
+\minitoc
+
+\noindent Chapeau introductif
+\begin{itemize}
+	\item Rappel : notion de similaire : dans le cadre de la classification, on a un comportement « similaire » pour une même classe. La notion de « similaire » est lié à une notion de distance ou (dis)similarité. 
+	\item Donner les hypothèses de travail : 
+	\begin{itemize}
+		\item Considérons la série temporelle comme étant un objet ordonné.
+		\item les séries temporelles sont de même taille
+		\item les séries temporelles ont la même période d'échantillonnage
+		\item les séries temporelles peuvent être comparés sur l'ensemble des valeurs, sur une partie des valeurs, sur un ensemble de fenêtre (fréquences, etc.)
+	\end{itemize}
+	\item On va définir dans la suite la notion de métrique, d'alignement, de localité pour des séries temporelles.
+	\item Mettre un graphique (dit GRAPHIQUE GENERAL) qui prend 5 séries temporelles que l'on va utiliser pour la suite : proche en valeur, proche en forme, proche en fréquence, proche en valeur avec un délai, proche en forme avec un délai
+\end{itemize}
+
+%-----------------------------------------------------------------------------
+\section{Properties of a distance measure}
+\begin{itemize}
+	\item Rappeler les propriétés d'une mesure de distance (positivité, symétrique, distinguabilité, inégalité triangulaire)
+	\item Donner les différences entre métriques, distance, dissimilarités, similarités, pseudo-métrique, etc.
+	\item Dans la suite du travail, on va tout assimiler au mot métrique pour une meilleure simplicité
+\end{itemize}
+
+
+%-----------------------------------------------------------------------------
+\section{Basic metrics for time series}
+\subsection{Value-based metrics}
+\begin{itemize}
+	\item Distance classiquement utilisée dans la littérature 
+	\item Distance de Minkowski (norm Lp)
+	\item Distance de Mahalanobis (norm pondéré)
+	\item $D_E$	qui est une forme particulière de Minkowski
+	\item Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "amplitudes proches", on obtient une valeur de distance faible. 
+\end{itemize}
+
+\subsection{Behavior-based metrics}
+\begin{itemize}
+	\item Intuition : expliquer ce que signifie "2 séries temporelles sont proches en forme".
+	\item Dans la littérature classique, on trouve la corrélation de Pearson
+	\item Récemment, Douzal \& al. propose une généralisation: cort
+	\item Transformer la cort en mesure de dissimilarité
+	\item Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "formes proches", on obtient une valeur de distance faible. 
+\end{itemize}
+
+\subsection{Frequential-based metrics}
+\begin{itemize}
+	\item Dans le cadre du traitement de signal, les gens utilisent des représentations fréquentielles (Fourier, etc.)
+	\item Rappeler la transformée de Fourier (TF) + spectre (module de la TF)
+	\item On peut définir une distance dans la représentation de Fourier.
+	\item Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "spectres proches", on obtient une valeur de distance faible. 
+\end{itemize}
+
+\subsection{Other metrics}
+\begin{itemize}
+	\item Il existe dans la littérature de nombreuses autres métriques pour les séries temporelles (laisser la porte ouverte).
+	\item Certaines métriques sont utilisées dans le domaine temporelle
+	\item D'autres métriques sont utilisés dans d'autres représentations (Wavelet, etc.)
+	\item Certaines combinent la représentation temporelles et fréquentielles (Représentation spectrogramme en temps-fréquence)
+	\item Se baser sur l'article "TSclust : An R Package for Time Series Clustering".
+	\item Fermer le cadre : dans la suite de notre travail, on ne va pas les utiliser mais elles pourront être intégrées dans le framework qui suivra au chapitre suivant
+\end{itemize}
+%-----------------------------------------------------------------------------
+\section{Kernels for time series}
+\textit{(à compléter)}
+
+%-----------------------------------------------------------------------------
+\section{Time series alignment}
+\begin{itemize}
+	\item Les données réelles peuvent présenter des délais, des changements de dynamique de l'échelle de temps : extension, compression (dans la limite du raisonnable).
+	\item Il existe des techniques qui permettent de ré-aligner les séries temporelles comme la DTW
+	\item Définir la notion d'alignement
+	\item Présenter la DTW (+ algorithme)
+	\item Présenter les variantes de la DTW
+	\item Dans la suite du travail, on suppose que les séries temporelles sont ré-alignées.
+	\item Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "valeurs proches" mais décalés, on obtient une valeur de distance faible. (prendre DTW standard avec une fonction de coût $D_E$ par exemple)
+\end{itemize}
+
+%-----------------------------------------------------------------------------
+\section{Multi-scale aspect}
+\begin{itemize}
+	\item Dans le cadre de la classification, on peut avoir des données où l'information qui permet de discriminer une classe d'une autre n'est pas globale mais est localisé sur une partie du signal
+	\item Limite des métriques basiques présentées précédemment (valeur, forme, fréquence) considère la comparaison sur l'intégralité du signal
+	\item On propose la définition de métriques locales. Pour cela, on va découper notre signal. Il existe plusieurs manières de réaliser ce découpage. On va utiliser la dichotomie proposée par Douzal \& al.
+\end{itemize}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../roque-phdthesis"
+%%% End: 

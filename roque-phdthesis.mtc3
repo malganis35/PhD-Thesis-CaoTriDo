@@ -1,2 +1,11 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.1}Une section}{\reset@font\mtcSfont 3}{section.1.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}Une autre section}{\reset@font\mtcSfont 4}{section.1.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.1}Definition of a time series}{\reset@font\mtcSfont 7}{section.1.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}Machine learning algorithms}{\reset@font\mtcSfont 8}{section.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.1}Classification, regression and clustering}{\reset@font\mtcSSfont 9}{subsection.1.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.2}$k$-Nearest Neighbors ($k$-NN)}{\reset@font\mtcSSfont 9}{subsection.1.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.3}Support Vector Machine (SVM)}{\reset@font\mtcSSfont 11}{subsection.1.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.4}Other classification algorithms}{\reset@font\mtcSSfont 11}{subsection.1.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}Learning protocol}{\reset@font\mtcSfont 11}{section.1.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.1}Learning framework}{\reset@font\mtcSSfont 11}{subsection.1.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.2}Model evaluation}{\reset@font\mtcSSfont 12}{subsection.1.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.3}Data pre-processing}{\reset@font\mtcSSfont 12}{subsection.1.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}Limits of classical technics}{\reset@font\mtcSfont 12}{section.1.4}}

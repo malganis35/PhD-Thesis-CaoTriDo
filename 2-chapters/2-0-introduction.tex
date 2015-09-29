@@ -1,0 +1,71 @@
+\chapter*{Introduction}
+\addstarredchapter{Introduction}
+\markboth{Introduction}{Introduction}
+\label{chap:introduction}
+%\minitoc
+
+\section*{Motivation}
+\begin{itemize}
+	\item Qu’est-ce qu’une série temporelle ? (réponse d’un système dynamique complexe (= pas de modèle du système)
+	\item Motiver l’intérêt des séries temporelles dans les applications aujourd’hui:  données de plus en plus présentes dans de nombreux domaines divers et variés
+	\item Les séries temporelles sont impliquées dans des problèmes de classification, régression et clustering
+	\item Pourquoi sont-elles challenging ? (délais, dynamique)
+	\item On fait face à la fois, à un problème de small et big data
+\end{itemize}
+
+
+\section*{Problem statement (with words)}
+\begin{itemize}
+	\item Dans de nombreux algorithmes de classification ou de régression (kNN, SVM), la comparaison des individus (séries temporelles) reposent sur une notion de distance entre individus (séries temporelles).
+	\item Contrairement aux données statiques, les données temporelles peuvent être comparés sur la base de plusieurs modalités (valeurs, forme, distance entre spectre, etc.) et à différentes échelles. La « métrique idéale », càd, celle qui permettra de résoudre au mieux le problème de classification/régression peut donc impliquer plusieurs modalités.
+	\item Objectif de notre travail : Apprendre une métrique adéquate tenant compte de plusieurs modalités et de plusieurs échelles en vue d’une classification/régression kNN
+\end{itemize}
+
+\section*{PhD contributions}
+\begin{itemize}
+	\item Définition d’un nouvel espace de représentation: la représentation par paires
+	\item Apprentissage d’une métrique multimodale et multi-échelle en vue d’une classification kNN à vaste marge de séries temporelles monovariées.
+	\item Extension/Transposition du problème d’apprentissage de métrique (Metric Learning) dans l’espace des paires
+	\item Comparaison de la méthode proposée avec des métriques classiques sur un vaste jeu de données (30 bases) de la littérature dans le cadre de la classification univariée de séries temporelles
+	\item Extension du framework d’apprentissage de métrique au problème de régression de séries temporelles univariés
+	\item Extension du framework d’apprentissage de métrique au problème de classification/régression de séries temporelles multivariés. 
+\end{itemize}
+
+\section*{Organisation du manuscrit}
+Présenter les différents chapitres
+
+\newpage
+\section*{Notations}
+
+\begin{tabular}{ll}
+	$\textbf{x}_i$ 							& a time series \\ 
+	$y_i$ 									& a label (discrete or continous) \\
+	$\textbf{X} = \{(\textbf{x}_i , y_i)\}_{i=1}^n$ & a set of $n \in \mathbb{N}$ labeled time series \\
+	$d_E$		& Euclidean distance \\
+	$L_q$		& Minkovski q-norm \\
+	$||\textbf{x}||_q$	& q-norm of the vector $\textbf{x}$ \\
+	$d_A$		& Value-based distance \\
+	$corr$  	& Pearson correlation \\
+	$cort$  	& Temporal correlation \\
+	$d_F$   	& Euclidean distance between the Fourier spectrum \\
+	$D$ 		& Distance \\
+	$\textbf{x}_{ij}$ 	& a pair of time series $\textbf{x}_i$ and $\textbf{x}_j$ \\
+	$y_{ij}$			& the pairwise label of $\textbf{x}_{ij}$ \\
+	$t$			& time stamp/index with $t=1,...,T$ \\
+	$T$			& length of the time series (supposed fixed) \\
+	$f$			& frequential index \\	
+	$F$			& length of the Fourier transform \\
+	$\xi$		& Relaxation term \\
+	$p$			& number of metric measure considered in the metric learning 	process \\
+	$r$			& order of the temporal correlation \\
+	$k$			& number of nearest neighbors \\
+	$K(\textbf{x}_i,\textbf{x}_j)$ & Kernel function between $\textbf{x}_i$ and $\textbf{x}_j$ \\
+	$\phi(\textbf{x}_i)$ & embedding function from the original space to the Hilbert space  \\
+	$C$ 		& Hyper-parameter of the SVM (trade-off)\\ 
+	$\alpha$	& \\
+	$\lambda$	& \\
+\end{tabular} 
+
+
+
+

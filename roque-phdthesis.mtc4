@@ -1,5 +1,9 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Description du mod\IeC {\`e}le}{\reset@font\mtcSfont 8}{section.2.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Analyse aux limites}{\reset@font\mtcSfont 9}{section.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Calculer en cent le\IeC {\c c}ons}{\reset@font\mtcSSfont 9}{subsection.2.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Le monde conique}{\reset@font\mtcSSfont 9}{subsection.2.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}V\IeC {\'e}rification par simulation num\IeC {\'e}rique}{\reset@font\mtcSfont 10}{section.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Properties of a distance measure}{\reset@font\mtcSfont 14}{section.2.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Basic metrics for time series}{\reset@font\mtcSfont 14}{section.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Value-based metrics}{\reset@font\mtcSSfont 14}{subsection.2.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Behavior-based metrics}{\reset@font\mtcSSfont 14}{subsection.2.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.3}Frequential-based metrics}{\reset@font\mtcSSfont 15}{subsection.2.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.4}Other metrics}{\reset@font\mtcSSfont 15}{subsection.2.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Kernels for time series}{\reset@font\mtcSfont 15}{section.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Time series alignment}{\reset@font\mtcSfont 15}{section.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Multi-scale aspect}{\reset@font\mtcSfont 16}{section.2.5}}

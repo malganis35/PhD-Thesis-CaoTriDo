@@ -33,6 +33,8 @@
 % \include{2-chapters/2-7-conclusion}
 
 \begin{document}
+% \shorthandoff{:} % Commande pour enlever l'espace avant les deux points 
+
 % Include the title pages
 % (the first is made mandatory by UDG and the second is more traditional)
 \include{1-opening/titlepage}
@@ -71,16 +73,30 @@
 \pagestyle{fancy}
 
 % Include the chapters
-\include{2-chapters/2-1-introduction}
-\include{2-chapters/2-2-first-chapter}
-\include{2-chapters/2-3-another-chapter}
-\include{2-chapters/2-7-conclusion}
+\include{2-chapters/2-0-introduction}
+
+\include{2-chapters/0-1-first-part}
+\include{2-chapters/2-1-machine-learning}
+\include{2-chapters/2-2-basic-metrics}
+\include{2-chapters/2-3-advanced-metrics}
+\include{2-chapters/0-1-conclusion-first-part}
+
+\include{2-chapters/0-2-second-part}
+\include{2-chapters/2-3-pairwise-space}
+\include{2-chapters/2-5-M2TML}
+\include{2-chapters/2-6-M2TML-algo}
+\include{2-chapters/2-7-experiments}
+\include{2-chapters/0-2-conclusion-second-part}
+
+\include{2-chapters/3-0-conclusion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Appendices are included here %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \appendix
 \include{3-appendices/3-1-first-appendix}
+\include{3-appendices/3-2-second-appendix}
+\include{3-appendices/3-3-third-appendix}
 
 % Build the references list
 % Bibtex
@@ -99,3 +115,70 @@
 \end{document}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Extra
+
+
+% Exemple références
+Lorem ipsum dolor sit amet, consectetur adipiscing elit \cite{Roque2012,Roque2012b,Roque2012c,Roque2012d}. Sed non risus \cite{Bello1963}. 
+
+% Exemple figure
+amet (fig. \ref{fig:une-image}).
+\begin{figure}[htp]
+	\centering
+	\input{images/tikz_diagram}
+	\caption{Exemple de diagramme TikZ.}
+	\label{fig:une-image}
+\end{figure}
+
+
+% Exemple tableau
+Curabitur eu amet (tab. \ref{tab:un-tableau}).
+\begin{table}[ht]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline
+			& $h(t,\tau)$ & $S_{\OP{H}}^{(\alpha)} (f,\tau)$ & $L_{\OP{H}}^{(\alpha)} (\nu,t)$ & $H^{(\alpha)}(f,\nu)$ \\
+			\hline
+			LTI & $q(\tau)$ & $q(\tau) \delta(f)$ & $Q(\nu)$ & $Q(\nu) \delta(\nu-f)$ \\
+			\hline
+			LFI & $m(t) \delta(\tau)$ & $M(f) \delta(\tau)$ & $m(t)$ & $M(f)$\\
+			\hline
+			identité & $\delta(t)$ & $\delta(f)\delta(\tau)$ & $1$ & $\delta(\nu-f)$\\
+			\hline
+		\end{tabular}
+		\caption{Exemple de tableau.}
+		\label{tab:un-tableau}
+	\end{center}
+\end{table}
+
+% Exemple 2 figure
+amet (fig. \ref{fig:une-autre-image}).
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=4cm]{images/bitmap_image}
+	\caption{Exemple d'image au format JPG.}
+	\label{fig:une-autre-image}
+\end{figure}
+
+% Exemple figure
+\textbf{\begin{figure}[htp!]
+		\centering
+		\setlength\figureheight{7cm}
+		\setlength\figurewidth{9cm}
+		\input{images/tikz_plot}
+		\caption{Exemple de courbe TikZ.}
+		\label{fig:courbe-tikz}
+	\end{figure}}
+
+
+% Exemple équation
+\begin{align}
+H_{m,n,p,q} &= \DPR{\rproto_{p,q}}{\OP{H} \tproto_{m,n}}\\
+&= \iint\limits_{\SET{R}^2} S_{\OP{H}}(f,\tau) \DPR{\rproto_{p,q}}{\OP{U}_{f,\tau} \tproto_{m,n}} \ud f \ud \tau \\
+&= \iint\limits_{\SET{R}^2} S_{\OP{H}}(f,\tau) \int\limits_{\R} \rproto_{p,q}^*(t) \OP{U}_{f,\tau} (\tproto_{m,n})(t) \ud t \ud f \ud \tau\\
+&= \iint\limits_{\SET{R}^2} S_{\OP{H}}(f,\tau) \int\limits_{\R} \rproto^*(t-qT_0)e^{-j2 \pi pF_0t} \tproto(t-nT_0-\tau)e^{j2 \pi (mF_0(t-\tau) + ft)} \ud t \ud f \ud \tau\\
+&= \iint\limits_{\SET{R}^2} S_{\OP{H}}(f,\tau) e^{-j2\pi m F_0 \tau} \int\limits_{\R} \rproto^*(t-qT_0) \tproto(t-nT_0-\tau)e^{j2 \pi ((m-p)F_0 + f)t} \ud t \ud f \ud \tau.
+\end{align}

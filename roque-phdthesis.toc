@@ -1,31 +1,113 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\select@language {french}
+\select@language {american}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{Table des sigles et acronymes}{ix}{chapter*.5}
+\contentsline {starchapter}{Table des sigles et acronymes}{xi}{chapter*.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {starchapter}{Introduction}{1}{chapter*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Premier chapitre}{3}{chapter.1}
+\contentsline {part}{I\hspace {1em}Work positionning}{5}{part.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Une section}{3}{section.1.1}
+\contentsline {chapter}{\numberline {1}Machine Learning for static data: state of the art}{7}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Une autre section}{4}{section.1.2}
+\contentsline {section}{\numberline {1.1}Definition of a time series}{7}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Un chapitre}{7}{chapter.2}
+\contentsline {section}{\numberline {1.2}Machine learning algorithms}{8}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Description du mod\IeC {\`e}le}{8}{section.2.1}
+\contentsline {subsection}{\numberline {1.2.1}Classification, regression and clustering}{9}{subsection.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Analyse aux limites}{9}{section.2.2}
+\contentsline {subsection}{\numberline {1.2.2}$k$-Nearest Neighbors ($k$-NN)}{9}{subsection.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Calculer en cent le\IeC {\c c}ons}{9}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {1.2.3}Support Vector Machine (SVM)}{11}{subsection.1.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Le monde conique}{9}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {1.2.4}Other classification algorithms}{11}{subsection.1.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}V\IeC {\'e}rification par simulation num\IeC {\'e}rique}{10}{section.2.3}
+\contentsline {section}{\numberline {1.3}Learning protocol}{11}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{Conclusion}{13}{chapter*.11}
+\contentsline {subsection}{\numberline {1.3.1}Learning framework}{11}{subsection.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}D\IeC {\'e}veloppement du gros calcul}{15}{appendix.A}
+\contentsline {subsection}{\numberline {1.3.2}Model evaluation}{12}{subsection.1.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{Bibliographie}{16}{appendix.A}
+\contentsline {subsection}{\numberline {1.3.3}Data pre-processing}{12}{subsection.1.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Limits of classical technics}{12}{section.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Time series basic metrics}{13}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Properties of a distance measure}{14}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Basic metrics for time series}{14}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Value-based metrics}{14}{subsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Behavior-based metrics}{14}{subsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Frequential-based metrics}{15}{subsection.2.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.4}Other metrics}{15}{subsection.2.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Kernels for time series}{15}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Time series alignment}{15}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Multi-scale aspect}{16}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Time series advanced metrics}{17}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Combined metrics for time series}{17}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Metric Learning: state of the art}{18}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{II\hspace {1em}Metric learning for time series from multiple modalities and multiple scales}{21}{part.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Projection in the pairwise space}{23}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Pairwise embedding}{23}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Interpretation of the pairwise space}{23}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Pros \& Cons}{24}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}$M^2TML$: formalization}{25}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}LP optimization problem}{25}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}QP optimization problem}{25}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}SVM approximation}{25}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}$M^2TML$: implementation}{27}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Projection in the pairwise space}{27}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}M-NN M-diff strategy}{27}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Radius normalization}{28}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Solving the SVM problem}{28}{section.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.5}Definition of the dissimilarity measure}{28}{section.6.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.6}Extension to regression problem}{28}{section.6.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.7}Extension to multivariate problem}{28}{section.6.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}$M^2TML$: Experiments}{29}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Dataset presentation}{29}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Experimental protocol}{29}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Results}{29}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Discussion}{29}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {starchapter}{Conclusion}{33}{chapter*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Detailed presentation of the datasets}{35}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Solver library}{37}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}SVM librairy}{39}{appendix.C}
+\defcounter {refsection}{0}\relax 
+\contentsline {starchapter}{Bibliographie}{40}{appendix.C}

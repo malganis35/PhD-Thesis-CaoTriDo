@@ -1,0 +1,13 @@
+# ignore generated html files,
+*.aux
+*.log
+*.bbl
+*.blg
+*.lof
+*.lot
+*.mtc*
+*.nlo
+*.out
+*.xml
+*.gz
+*.toc

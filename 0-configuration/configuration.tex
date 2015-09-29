@@ -3,8 +3,9 @@
 % Encoding and internationalization
 \usepackage[T1]{fontenc}
 \usepackage{aecompl}
-\usepackage[french]{babel} % Comment this line if the document is written in english
-%\usepackage[american]{babel} % Comment this line if the document is written in english
+\usepackage[utf8]{inputenc}  % For accent
+% \usepackage[french]{babel} % Comment this line if the document is written in english
+\usepackage[american]{babel} % Comment this line if the document is written in english
 
 % Math packages
 \usepackage{amsmath,amssymb}
@@ -150,3 +151,18 @@ urlcolor=linkcol
 %%% mode: latex
 %%% TeX-master: "../roque-phdthesis"
 %%% End: 
+
+
+%% TO DO
+\usepackage{titlesec}
+\titleclass{\part}{top}
+\titleformat{\part}[display]
+{\normalfont\huge\bfseries}{\centering\partname\ \thepart}{20pt}{\Huge\centering}
+\titlespacing*{\part}{0pt}{50pt}{40pt}
+%\titleclass{\chapter}{straight}
+%\titleformat{\chapter}[display]
+%{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+%\titlespacing*{\chapter} {0pt}{50pt}{40pt}
+
+
+\usepackage{amsmath,amsfonts}
