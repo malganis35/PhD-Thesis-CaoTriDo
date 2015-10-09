@@ -9,8 +9,9 @@
 \newcommand*{\DPR}[2]  {\ensuremath{\left \langle #1,#2 \right \rangle}}
 \newcommand*{\FOURIER}[1]  {\ensuremath{\widehat{#1}}}
 \newcommand{\eqdef}{\stackrel{\mathrm{def}}{=}}
-\newcommand{\argmax}{\operatornamewithlimits{argmax}}
-\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+\newcommand{\argmax}{\operatornamewithlimits{argmax }}
+\newcommand{\argmin}{\operatornamewithlimits{argmin }}
+%\newcommand{\argmin}{\arg\!\min}
 \newcommand{\diag}{\operatorname{diag}}
 \newcommand{\ud}{\, \mathrm{d}}
 \newcommand{\vect}{\mathrm{Vect}}
@@ -96,3 +97,166 @@
 %%% mode: latex
 %%% TeX-master: "../roque-phdthesis"
 %%% End: 
+
+% For conditional control flow in draft mode
+\usepackage{ifdraft}
+
+% For larger margins when in draft mode
+% \ifdraft{\usepackage[rmargin=3in,marginparwidth=2.75in]{geometry}}{}
+
+% For todo notes in the margins
+\usepackage{todonotes}
+
+% For highlighting in MS Word-like comments
+\usepackage{soul,color}
+
+% This is needed to ensure the line spacing of the margin notes is correct.
+\usepackage{setspace}
+
+% For conditional use of the \comment command based on the options provided.
+\usepackage{ifthen}
+
+% BEGIN HIGHLIGHTING: The following code provides a highlighting command, which is 
+% used in my custom commenting system below.  If you want more information about 
+% this code, see the following URL:
+%   http://tex.stackexchange.com/questions/5959/cool-text-highlighting-in-latex
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathmorphing}
+
+\makeatletter
+
+\newcommand{\defhighlighter}[3][]{%
+	\tikzset{every highlighter/.style={color=#2, fill opacity=#3, #1}}%
+}
+
+\defhighlighter{yellow}{.5}
+
+\newcommand{\highlight@DoHighlight}{
+	\fill [ decoration = {random steps, amplitude=1pt, segment length=15pt}
+	, outer sep = -15pt, inner sep = 0pt, decorate
+	, every highlighter, this highlighter ]
+	($(begin highlight)+(0,8pt)$) rectangle ($(end highlight)+(0,-3pt)$) ;
+}
+
+\newcommand{\highlight@BeginHighlight}{
+	\coordinate (begin highlight) at (0,0) ;
+}
+
+\newcommand{\highlight@EndHighlight}{
+	\coordinate (end highlight) at (0,0) ;
+}
+
+\newdimen\highlight@previous
+\newdimen\highlight@current
+
+\DeclareRobustCommand*\highlight[1][]{%
+	\tikzset{this highlighter/.style={#1}}%
+	\SOUL@setup
+	%
+	\def\SOUL@preamble{%
+		\begin{tikzpicture}[overlay, remember picture]
+		\highlight@BeginHighlight
+		\highlight@EndHighlight
+		\end{tikzpicture}%
+	}%
+	%
+	\def\SOUL@postamble{%
+		\begin{tikzpicture}[overlay, remember picture]
+		\highlight@EndHighlight
+		\highlight@DoHighlight
+		\end{tikzpicture}%
+	}%
+	%
+	\def\SOUL@everyhyphen{%
+		\discretionary{%
+			\SOUL@setkern\SOUL@hyphkern
+			\SOUL@sethyphenchar
+			\tikz[overlay, remember picture] \highlight@EndHighlight ;%
+		}{%
+	}{%
+	\SOUL@setkern\SOUL@charkern
+}%
+}%
+%
+\def\SOUL@everyexhyphen##1{%
+	\SOUL@setkern\SOUL@hyphkern
+	\hbox{##1}%
+	\discretionary{%
+		\tikz[overlay, remember picture] \highlight@EndHighlight ;%
+	}{%
+}{%
+\SOUL@setkern\SOUL@charkern
+}%
+}%
+%
+\def\SOUL@everysyllable{%
+	\begin{tikzpicture}[overlay, remember picture]
+	\path let \p0 = (begin highlight), \p1 = (0,0) in \pgfextra
+	\global\highlight@previous=\y0
+	\global\highlight@current =\y1
+	\endpgfextra (0,0) ;
+	\ifdim\highlight@current < \highlight@previous
+	\highlight@DoHighlight
+	\highlight@BeginHighlight
+	\fi
+	\end{tikzpicture}%
+	\the\SOUL@syllable
+	\tikz[overlay, remember picture] \highlight@EndHighlight ;%
+}%
+\SOUL@
+}
+\makeatother
+% END HIGHLIGHTING
+
+% BEGIN MS WORD-STYLE COMMENTS
+% This is the main function for providing MS Word-style comments.  There are two 
+% ways to use it.  First, you can do the following: 
+% 
+%     \comment[akm]{This is comment text that will appear in the margin.}{This is 
+%         body text that will appear in the main output.}
+%
+% Second, you can do the following, which will appear only as a note in the margin:
+%
+%     \comment[akm]{Here's a comment that won't highlight any text.  However, it 
+%         should still point to the place in the text where it appears.}
+% 
+% Third, if you're Aaron, then you can leave out the initials.  Obviously, anyone 
+% else reading this should consider altering the command for their own default 
+% initials.
+%
+%     \comment{Here's a margin note using the default initials.}
+\newcounter{akmctr}
+\newcommand{\comment}[3][akm]{%
+	% initials of the author (optional) + note in the margin
+	\ifdraft{\refstepcounter{akmctr}%
+		{%
+			\setstretch{1.0}% line spacing
+			\todo[color={red!100!green!33},size=\small,fancyline]{%
+				\textbf{Comment [\uppercase{#1} \arabic{akmctr}]:}~#2}
+			\ifthenelse{\equal{#3}{}}{}{\highlight[red!100!green!33]{#3}}%
+		}%
+	}{}%
+}
+% END MS WORD-STYLE COMMENTS
+
+\newcounter{mycomment}
+\newcommand{\mycomment}[2][]{%
+	% initials of the author (optional) + note in the margin
+	\refstepcounter{mycomment}%
+	{%
+		\setstretch{0.7}% spacing
+		\todo[color={red!100!green!33},size=\small, fancyline]{%
+			\textbf{Comment [\uppercase{#1}\themycomment]:}~#2}%
+	}}
+
+\newcommand{\myincomment}[2][]{%
+	% initials of the author (optional) + note in the margin
+	\refstepcounter{mycomment}%
+	{%
+		\setstretch{0.7}% spacing
+		\todo[color={red!100!green!33},size=\small,inline, fancyline]{%
+			\textbf{Comment [\uppercase{#1}\themycomment]:}~#2}%
+	}}
+
+
