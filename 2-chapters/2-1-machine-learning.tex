@@ -329,8 +329,14 @@ From this, we can solve $b^*$ using an arbitrarily chosen support vector $\textb
 %\end{itemize}
 
 \noindent \textbf{Complexity} \\
-As the objective is to provide an algorithm for both small and large datasets, let us examine the complexity of SVMs, both in the resolution of the optimization problem (primal and dual) and in the computation of the Gram matrix $G$.
-\todo[inline]{Finir la complexité}
+\todo[inline]{réécrire}
+As the objective is to provide an algorithm for both small and large datasets, let us examine the complexity of SVMs and in the computation of the Gram matrix $G$ \cite{Bottou2007}.
+
+In the dual, suppose that we know which samples are not support vectors ($\alpha_i = 0$) and which sample are bounded support vectors ($\alpha_i = C$). The $R$ remaining support vectors are determined by a system of $R$ linear equations. They represent the derivatives of the objective function and requires a number of operations proportional to $R^3$. Verifying that a vector $\alpha$ is a solution of the SVM problem involves computing the gradient of the dual and checking the optimality conditions. With $n$ samples and $n_{SV}$ support vectors, the number of operations required is equal to $n.n_{SV}$. When $C$ gets large, few support vectors reach the upper bound, the cost is then $R^3 \approx n_{SV}^3$. The term $n.n_{SV}$ is usually larger. The final number of support vectors $n_{SV}$ therefore is the critical component of the computational cost of solving the dual problem. Since the asymptotical number of support vectors $n_{SV}$ grows linearly with the number of samples $n$, the computational cost of solving the SVM problem has both a quadratic and a cubic component. It grows at least like $n^2$ when $C$ is small and $n^3$ when $C$ gets large.
+
+Computing the $n^2$ components of the kernel matrix $G = \{K(\textbf{x}_i
+, \textbf{x}_j)\}_{i=1}^n$ is a quadratic matter. Note that it can lead to technical issue in pratice such as the kernel matrix does not fit in memory.
+
 
 \noindent \textbf{Interpretation in the primal} \\
 In the primal, the weight vector $\textbf{w} = [w_1, \ldots, w_T]'$ contains as many elements as there are variables in the dataset, i.e., $\textbf{w} \in \mathbb{R}^T$. The magnitude of each element in $\textbf{w}$ denotes the importance of the corresponding variable for the classification problem. If the element of $\textbf{w}$ for some variable is 0, these variables are not important for the classification problem.
@@ -374,7 +380,7 @@ the prediction $f(\textbf{x}_i)$ and the target $y_i$ is less than $\epsilon$ wh
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.9\linewidth]{images/SVR_tube}
+\includegraphics[width=0.7\linewidth]{images/SVR_tube}
 \caption{Illustration of SVM regression (left), showing the regression curve with the $\epsilon$-insensitive "tube" (right). Samples $\textbf{x}_i$ above the $\epsilon$-tube have $\xi_1 > 0$ and $\xi_1 = 0$, points below the $\epsilon$-tube have $\xi_2 = 0$ and $\xi_2 > 0$, and points inside the $\epsilon$-tube have $\xi = 0$.}
 \label{fig:SVR_tube}
 \end{figure}
@@ -444,7 +450,7 @@ More informations about the calculation develpment can be found in \cite{Bishop2
 %	\item Cross-validation (pourquoi on fait de la cross-validation, comment on la fait (Faire un schéma))
 %\end{itemize}	
 
-A key objective of learning algorithms is to build models $f$ with good generalization capability, i.e., models $f$ that correctly predict the class labels $y_j$ of new unknown samples $\textbf{x}_j$. Fig. \ref{fig:LearningFramework} shows a general approach for solving machine learning problems. First, a training set $X=\{(\textbf{x}_i,y_i)\}_{i=1}^n$ consisting of samples $\textbf{x}_i$ whose labels $y_i$ are known is provided. The training set is used to build the supervised model $f$. Then, the model is applied to the test set $X_T=\{(\textbf{x}_j,y_j)\}_{j=1}^m$, which consists of samples $\textbf{x}_j$ with unknown labels $y_j$. The test is used to evaluate the performance of the learnt model. 
+A key objective of learning algorithms is to build models $f$ with good generalization capability, i.e., models $f$ that correctly predict the class labels $y_j$ of new unknown samples $\textbf{x}_j$. Fig. \ref{fig:LearningFramework} shows a general approach for solving machine learning problems. First, a training set $X=\{(\textbf{x}_i,y_i)\}_{i=1}^n$ consisting of $m$ samples $\textbf{x}_i$ whose labels $y_i$ are known is provided. The training set is used to build the supervised model $f$. Then, the model is applied to the test set $X_T=\{(\textbf{x}_j,y_j)\}_{j=1}^m$, which consists of samples $\textbf{x}_j$ with unknown labels $y_j$. The test is used to evaluate the performance of the learnt model. 
 
 \begin{figure}[h!]
 \centering

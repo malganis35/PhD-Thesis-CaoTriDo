@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.15)  9 OCT 2015 10:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.15)  12 OCT 2015 13:28
 entering extended mode
 **roque-phdthesis.tex
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.tex
@@ -2039,7 +2039,7 @@ ine-learning.tex" [6
 Chapter 1.
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-3") [7] <images/time_series_example.png, id=506, 681.747pt x 201.75375pt>
+3") [7] <images/time_series_example.png, id=502, 681.747pt x 201.75375pt>
 File: images/time_series_example.png Graphic file (type png)
 
 <use images/time_series_example.png>
@@ -2089,7 +2089,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] <images/kNN_example.png, id=532, 193.9245pt x 166.221pt>
+[9] <images/kNN_example.png, id=528, 193.9245pt x 166.221pt>
 File: images/kNN_example.png Graphic file (type png)
 
 <use images/kNN_example.png>
@@ -2136,7 +2136,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11]
-<images/Plusieurs_separatrice_lineaire.png, id=577, 478.78876pt x 370.38374pt>
+<images/Plusieurs_separatrice_lineaire.png, id=573, 478.78876pt x 370.38374pt>
 File: images/Plusieurs_separatrice_lineaire.png Graphic file (type png)
 
 <use images/Plusieurs_separatrice_lineaire.png>
@@ -2144,7 +2144,7 @@ Package pdftex.def Info: images/Plusieurs_separatrice_lineaire.png used on inpu
 t line 138.
 (pdftex.def)             Requested size: 177.05879pt x 136.96635pt.
 
-<images/Separatrice_lineaire_avec_marges.png, id=580, 623.32875pt x 370.38374pt
+<images/Separatrice_lineaire_avec_marges.png, id=576, 623.32875pt x 370.38374pt
 >
 File: images/Separatrice_lineaire_avec_marges.png Graphic file (type png)
  <use images/Separatrice_lineaire_avec_marges.png>
@@ -2180,7 +2180,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14] <images/SVM_SV.png, id=633, 343.2825pt x 244.5135pt>
+[14] <images/SVM_SV.png, id=629, 343.2825pt x 244.5135pt>
 File: images/SVM_SV.png Graphic file (type png)
 
 <use images/SVM_SV.png>
@@ -2211,7 +2211,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [16 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_SV.pn
-g>] <images/SVM_nonlinear.png, id=660, 682.9515pt x 353.52075pt>
+g>] <images/SVM_nonlinear.png, id=656, 682.9515pt x 353.52075pt>
 File: images/SVM_nonlinear.png Graphic file (type png)
 
 <use images/SVM_nonlinear.png>
@@ -2259,7 +2259,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [17 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_nonli
-near.png>] <images/Kernel_Gaussian.png, id=672, 292.09125pt x 298.11375pt>
+near.png>] <images/Kernel_Gaussian.png, id=668, 292.09125pt x 298.11375pt>
 File: images/Kernel_Gaussian.png Graphic file (type png)
 
 <use images/Kernel_Gaussian.png>
@@ -2281,16 +2281,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [18 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Kernel_Ga
 ussian.png>]
-<images/Weight_interpretation.png, id=686, 391.4625pt x 307.90031pt>
-File: images/Weight_interpretation.png Graphic file (type png)
 
-<use images/Weight_interpretation.png>
-Package pdftex.def Info: images/Weight_interpretation.png used on input line 34
-2.
-(pdftex.def)             Requested size: 309.85626pt x 243.72719pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Citation 'Bottou2007' on page 19 undefined on input line 333.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2298,15 +2290,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19] <images/SVM_interpretation.png, id=700, 463.7325pt x 368.577pt>
+[19] <images/Weight_interpretation.png, id=689, 391.4625pt x 307.90031pt>
+File: images/Weight_interpretation.png Graphic file (type png)
+
+<use images/Weight_interpretation.png>
+Package pdftex.def Info: images/Weight_interpretation.png used on input line 34
+8.
+(pdftex.def)             Requested size: 309.85626pt x 243.72719pt.
+
+<images/SVM_interpretation.png, id=692, 463.7325pt x 368.577pt>
 File: images/SVM_interpretation.png Graphic file (type png)
 
 <use images/SVM_interpretation.png>
-Package pdftex.def Info: images/SVM_interpretation.png used on input line 354.
+Package pdftex.def Info: images/SVM_interpretation.png used on input line 360.
 (pdftex.def)             Requested size: 221.32687pt x 175.91386pt.
 
-Underfull \vbox (badness 2486) has occurred while \output is active []
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2315,28 +2315,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Weight_in
-terpretation.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/im
-ages/SVM_interpretation.png>]
-<images/SVR_tube.png, id=713, 420.97275pt x 200.54926pt>
+terpretation.png>] <images/SVR_tube.png, id=708, 420.97275pt x 200.54926pt>
 File: images/SVR_tube.png Graphic file (type png)
 
 <use images/SVR_tube.png>
-Package pdftex.def Info: images/SVR_tube.png used on input line 377.
-(pdftex.def)             Requested size: 398.38567pt x 189.78932pt.
-
-Underfull \vbox (badness 6141) has occurred while \output is active []
+Package pdftex.def Info: images/SVR_tube.png used on input line 383.
+(pdftex.def)             Requested size: 309.85626pt x 147.6146pt.
 
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVR_tube.
-png>]
-
-LaTeX Warning: Citation 'Bishop2006' on page 22 undefined on input line 426.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2348,12 +2335,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22] <images/LearningFramework.png, id=741, 568.524pt x 369.7815pt>
-File: images/LearningFramework.png Graphic file (type png)
+[21 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_inter
+pretation.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<use images/LearningFramework.png>
-Package pdftex.def Info: images/LearningFramework.png used on input line 451.
-(pdftex.def)             Requested size: 309.85626pt x 201.54102pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2361,20 +2346,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/LearningF
-ramework.png>] <images/Overfitting.png, id=748, 481.8pt x 481.8pt>
-File: images/Overfitting.png Graphic file (type png)
+[22 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVR_tube.
+png>]
 
-<use images/Overfitting.png>
-Package pdftex.def Info: images/Overfitting.png used on input line 460.
-(pdftex.def)             Requested size: 177.05879pt x 177.05753pt.
+LaTeX Warning: Citation 'Bishop2006' on page 23 undefined on input line 432.
 
-<images/GridSearch.png, id=750, 340.8735pt x 338.4645pt>
-File: images/GridSearch.png Graphic file (type png)
+<images/LearningFramework.png, id=734, 568.524pt x 369.7815pt>
+File: images/LearningFramework.png Graphic file (type png)
 
-<use images/GridSearch.png>
-Package pdftex.def Info: images/GridSearch.png used on input line 469.
-(pdftex.def)             Requested size: 177.05879pt x 175.81146pt.
+<use images/LearningFramework.png>
+Package pdftex.def Info: images/LearningFramework.png used on input line 457.
+(pdftex.def)             Requested size: 309.85626pt x 201.54102pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2385,16 +2367,37 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Overfitti
-ng.png>] <images/Cross_validation2.jpg, id=757, 651.93562pt x 258.9675pt>
+[23] <images/Overfitting.png, id=743, 481.8pt x 481.8pt>
+File: images/Overfitting.png Graphic file (type png)
+
+<use images/Overfitting.png>
+Package pdftex.def Info: images/Overfitting.png used on input line 466.
+(pdftex.def)             Requested size: 177.05879pt x 177.05753pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/LearningF
+ramework.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images
+/Overfitting.png>] <images/GridSearch.png, id=751, 340.8735pt x 338.4645pt>
+File: images/GridSearch.png Graphic file (type png)
+
+<use images/GridSearch.png>
+Package pdftex.def Info: images/GridSearch.png used on input line 475.
+(pdftex.def)             Requested size: 177.05879pt x 175.81146pt.
+
+<images/Cross_validation2.jpg, id=753, 651.93562pt x 258.9675pt>
 File: images/Cross_validation2.jpg Graphic file (type jpg)
 
 <use images/Cross_validation2.jpg>
-Package pdftex.def Info: images/Cross_validation2.jpg used on input line 478.
+Package pdftex.def Info: images/Cross_validation2.jpg used on input line 484.
 (pdftex.def)             Requested size: 442.65375pt x 175.8387pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2403,15 +2406,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [25 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/GridSearc
-h.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Cross_
-validation2.jpg>])
+h.png>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]
+[26 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Cross_val
+idation2.jpg>]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-2-basi
 c-metrics.tex"
 Chapter 2.
@@ -2692,15 +2695,9 @@ cond-appendix.aux")
 ird-appendix.aux"))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
+Package rerunfilecheck Info: File `roque-phdthesis.out' has not changed.
+(rerunfilecheck)             Checksum: 271DD985F544A91BC269654A0E4889E7;3038.
 
-
-Package rerunfilecheck Warning: File `roque-phdthesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `roque-phdthesis.out':
-(rerunfilecheck)             Before: 65B5E299DA0BEFB3BDDC72F849191620;3038
-(rerunfilecheck)             After:  271DD985F544A91BC269654A0E4889E7;3038.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -2720,10 +2717,10 @@ Package logreq Info: Writing requests to 'roque-phdthesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
  ) 
 Here is how much of TeX's memory you used:
- 39289 strings out of 493921
- 869330 string characters out of 3146064
+ 39283 strings out of 493921
+ 869220 string characters out of 3146064
  1312726 words of memory out of 3000000
- 41169 multiletter control sequences out of 15000+200000
+ 41167 multiletter control sequences out of 15000+200000
  42782 words of font info for 120 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  59i,20n,86p,1671b,3263s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2742,19 +2739,7 @@ pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.42} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.41} has been referenced but does not
- exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix*.44} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.43} has been referenced but does not exist
 , replaced by a fixed one
 
  <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
@@ -2800,9 +2785,9 @@ s/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1
 ic/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/ams
 fonts/cm/cmsy8.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/
 symbols/msbm10.pfb>
-Output written on roque-phdthesis.pdf (75 pages, 1361977 bytes).
+Output written on roque-phdthesis.pdf (75 pages, 1363587 bytes).
 PDF statistics:
- 1922 PDF objects out of 2073 (max. 8388607)
- 261 named destinations out of 1000 (max. 500000)
+ 1915 PDF objects out of 2073 (max. 8388607)
+ 257 named destinations out of 1000 (max. 500000)
  440 words of extra memory for PDF output out of 10000 (max. 10000000)
 

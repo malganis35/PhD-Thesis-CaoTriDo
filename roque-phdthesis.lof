@@ -24,17 +24,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.8}{\ignorespaces Example of several SVMs and how to interpret the weight vector $\textbf {w}$\relax }}{20}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.9}{\ignorespaces \relax }}{20}{figure.caption.33}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces \relax }}{21}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Illustration of SVM regression (left), showing the regression curve with the $\epsilon $-insensitive "tube" (right). Samples $\textbf {x}_i$ above the $\epsilon $-tube have $\xi _1 > 0$ and $\xi _1 = 0$, points below the $\epsilon $-tube have $\xi _2 = 0$ and $\xi _2 > 0$, and points inside the $\epsilon $-tube have $\xi = 0$.\relax }}{21}{figure.caption.35}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Illustration of SVM regression (left), showing the regression curve with the $\epsilon $-insensitive "tube" (right). Samples $\textbf {x}_i$ above the $\epsilon $-tube have $\xi _1 > 0$ and $\xi _1 = 0$, points below the $\epsilon $-tube have $\xi _2 = 0$ and $\xi _2 > 0$, and points inside the $\epsilon $-tube have $\xi = 0$.\relax }}{22}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.11}{\ignorespaces General framework for building a supervised (classification/regression) model.\relax }}{23}{figure.caption.37}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces General framework for building a supervised (classification/regression) model.\relax }}{24}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.12}{\ignorespaces An example of overfitting for a classification problem. The objective is to separate blue points from red points. Black line shows a separator $f_1$ with low complexity where as green line illustrates a model $f_2$ with high compelexity. On training examples (blue and red points), the model $f_2$ separates all the classes perfectly but may lead to poor generalization on new unseen examples. \relax }}{24}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.13}{\ignorespaces Example of a 2 dimensional grid search for parameters $C$ and $\gamma $. It defines a grid where each cell of the grid contains a combination ($C$, $\gamma $). Each combination is used to learn the model and is evaluated on the validation set.\relax }}{25}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.14}{\ignorespaces $v$-fold Cross-validation for one combination of parameters. For each of $v$ experiments, use $v-1$ folds for training and a different fold for Testing, then the training error for this combination of parameter is the mean of all testing errors. This procedure is illustrated for $v=4$.\relax }}{25}{figure.caption.40}
+\contentsline {figure}{\numberline {1.14}{\ignorespaces $v$-fold Cross-validation for one combination of parameters. For each of $v$ experiments, use $v-1$ folds for training and a different fold for Testing, then the training error for this combination of parameter is the mean of all testing errors. This procedure is illustrated for $v=4$.\relax }}{26}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
