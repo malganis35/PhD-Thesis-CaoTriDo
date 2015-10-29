@@ -10,11 +10,11 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Time series basic metrics}{27}{chapter.2}
+\contentsline {xchapter}{Time series basic metrics}{33}{chapter.2}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Time series advanced metrics}{31}{chapter.3}
+\contentsline {xchapter}{Time series advanced metrics}{43}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 
@@ -22,30 +22,30 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Projection in the pairwise space}{37}{chapter.4}
+\contentsline {xchapter}{Projection in the pairwise space}{53}{chapter.4}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{$M^2TML$: formalization}{39}{chapter.5}
+\contentsline {xchapter}{$M^2TML$: formalization}{55}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{$M^2TML$: implementation}{41}{chapter.6}
+\contentsline {xchapter}{$M^2TML$: implementation}{57}{chapter.6}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{$M^2TML$: Experiments}{43}{chapter.7}
+\contentsline {xchapter}{$M^2TML$: Experiments}{59}{chapter.7}
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Detailed presentation of the datasets}{49}{appendix.A}
+\contentsline {xchapter}{Detailed presentation of the datasets}{65}{appendix.A}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Solver library}{51}{appendix.B}
+\contentsline {xchapter}{Solver library}{67}{appendix.B}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{SVM librairy}{53}{appendix.C}
+\contentsline {xchapter}{SVM librairy}{69}{appendix.C}

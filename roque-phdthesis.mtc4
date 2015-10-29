@@ -1,9 +1,9 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Properties of a distance measure}{\reset@font\mtcSfont 28}{section.2.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Basic metrics for time series}{\reset@font\mtcSfont 28}{section.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Value-based metrics}{\reset@font\mtcSSfont 28}{subsection.2.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Behavior-based metrics}{\reset@font\mtcSSfont 28}{subsection.2.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.3}Frequential-based metrics}{\reset@font\mtcSSfont 29}{subsection.2.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.4}Other metrics}{\reset@font\mtcSSfont 29}{subsection.2.2.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Kernels for time series}{\reset@font\mtcSfont 29}{section.2.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Time series alignment}{\reset@font\mtcSfont 29}{section.2.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Multi-scale aspect}{\reset@font\mtcSfont 30}{section.2.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Properties of a metric}{\reset@font\mtcSfont 34}{section.2.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Unimodal metrics for time series}{\reset@font\mtcSfont 34}{section.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Amplitude-based metrics}{\reset@font\mtcSSfont 34}{subsection.2.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Behavior-based metrics}{\reset@font\mtcSSfont 36}{subsection.2.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.3}Frequential-based metrics}{\reset@font\mtcSSfont 36}{subsection.2.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.4}Other metrics and Kernels for time series}{\reset@font\mtcSSfont 37}{subsection.2.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Time series alignment and dynamic programming approach}{\reset@font\mtcSfont 37}{section.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Multi-scale aspect}{\reset@font\mtcSfont 40}{section.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Conclusion of the chapter}{\reset@font\mtcSfont 41}{section.2.5}}

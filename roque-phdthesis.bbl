@@ -49,6 +49,183 @@
   \field{year}{1964}
 \endentry
 
+\entry{Abraham2010a}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Abraham}{A.}%
+     {Z.}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tan}{T.}%
+     {P.N.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AZTP1}
+  \strng{fullhash}{AZTP1}
+  \field{labelalpha}{AT10}
+  \field{sortinit}{A}
+  \field{abstract}{%
+  Zero-inflated time series data are commonly encountered in many applications,
+  including climate and ecological modeling, disease monitoring, manufacturing
+  defect detection, and traffic monitoring. Such data often leads to poor model
+  fitting using standard regression methods because they tend to underestimate
+  the frequency of zeros and the magnitude of non-zero values. This paper
+  presents an integrated framework that simultaneously performs classification
+  and regression to accurately predict future values of a zero-inflated time
+  series. A regression model is initially applied to predict the value of the
+  time series. The regression output is then fed into a classification model to
+  determine whether the predicted value should be adjusted to zero. Our
+  regression and classification models are trained to optimize a joint
+  objective function that considers both classification errors on the time
+  series and regression errors on data points that have non-zero values. We
+  demonstrate the effectiveness of our framework in the context of its
+  application to a precipitation downscaling problem for climate impact
+  assessment studies. Read More:
+  http://epubs.siam.org/doi/abs/10.1137/1.9781611972801.57%
+  }
+  \field{booktitle}{ACM SIGKDD}
+  \field{title}{{An Integrated Framework for Simultaneous Classification and
+  Regression of Time-Series Data}}
+  \verb{url}
+  \verb https://siam.org/proceedings/datamining/2010/dm10\_057\_abrahamz.pdf
+  \endverb
+  \field{year}{2010}
+\endentry
+
+\entry{Berndt1994}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Berndt}{B.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Clifford}{C.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{dynamic programming,dynamic time warping,knowledge discovery,pat,tern
+  analysis,time series}
+  \strng{namehash}{BDCJ1}
+  \strng{fullhash}{BDCJ1}
+  \field{labelalpha}{BC94}
+  \field{extraalpha}{1}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  Knowledge discovery in databases presents many interesting challenges within
+  the context of providing computer tools for exploring large data archives.
+  Electronic data repositories are growing qulckiy and contain data from
+  commercial, scientific, and other domains. Much of this data is inherently
+  temporal, such as stock prices or NASA telemetry data. Detecting patterns in
+  such data streams or time series is an important knowledge discovery task.
+  This paper describes some primary experiments with a dynamic programming
+  approach to the problem. The pattern detection algorithm is based on the
+  dynamic time warping technique used in the speech recognition field.
+  Keywords: dynamic programming, dynamic time warping, knowledge discovery,
+  pattern analysis, time series.%
+  }
+  \field{booktitle}{KDD}
+  \field{title}{{Using dynamic time warping to find patterns in time series}}
+  \verb{url}
+  \verb http://www.aaai.org/Papers/Workshops/1994/WS-94-03/WS94-03-031.pdf
+  \endverb
+  \field{volume}{398}
+  \field{year}{1994}
+\endentry
+
+\entry{Berndt1994a}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Berndt}{B.}%
+     {Donald}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Clifford}{C.}%
+     {James}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{dynamic programming,dynamic time warping,knowledge discovery,pat,tern
+  analysis,time series}
+  \strng{namehash}{BDCJ2}
+  \strng{fullhash}{BDCJ2}
+  \field{labelalpha}{BC94}
+  \field{extraalpha}{2}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  Knowledge discovery in databases presents many interesting challenges within
+  the context of providing computer tools for exploring large data archives.
+  Electronic data repositories are growing qulckiy and contain data from
+  commercial, scientific, and other domains. Much of this data is inherently
+  temporal, such as stock prices or NASA telemetry data. Detecting patterns in
+  such data streams or time series is an important knowledge discovery task.
+  This paper describes some primary experiments with a dynamic programming
+  approach to the problem. The pattern detection algorithm is based on the
+  dynamic time warping technique used in the speech recognition field.
+  Keywords: dynamic programming, dynamic time warping, knowledge discovery,
+  pattern analysis, time series.%
+  }
+  \field{pages}{359\bibrangedash 370}
+  \field{title}{{Using dynamic time warping to find patterns in time series}}
+  \verb{url}
+  \verb http://www.aaai.org/Papers/Workshops/1994/WS-94-03/WS94-03-031.pdf
+  \endverb
+  \field{volume}{398}
+  \field{journaltitle}{Workshop on Knowledge Knowledge Discovery in Databases}
+  \field{year}{1994}
+\endentry
+
+\entry{Benesty2009}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Benesty}{B.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chen}{C.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Huang}{H.}%
+     {Y.}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cohen}{C.}%
+     {I.}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BJ+1}
+  \strng{fullhash}{BJCJHYCI1}
+  \field{labelalpha}{Ben+09}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  This chapter develops several forms of the Pearson correlation coefficient in
+  the different domains. This coefficient can be used as an optimization
+  criterion to derive different optimal noise reduction filters [14], but is
+  even more useful for analyzing these optimal filters for their noise
+  reduction performance.%
+  }
+  \verb{doi}
+  \verb 10.1007/978-3-642-00296-0
+  \endverb
+  \field{isbn}{978-3-642-00295-3}
+  \field{title}{{Pearson correlation coefficient}}
+  \verb{url}
+  \verb http://www.springerlink.com/index/10.1007/978-3-642-00296-0$\backslash$
+  \verb nhttp://link.springer.com/content/pdf/10.1007/978-3-642-00296-0\_5.pdf
+  \endverb
+  \field{journaltitle}{Noise Reduction in Speech Processing}
+  \field{year}{2009}
+\endentry
+
 \entry{Boser1992}{inproceedings}{}
   \name{author}{3}{}{%
     {{}%
@@ -102,6 +279,154 @@
   \field{year}{1992}
 \endentry
 
+\entry{Bishop2006}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Bishop}{B.}%
+     {Christopher~M}{C.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BCM1}
+  \strng{fullhash}{BCM1}
+  \field{labelalpha}{Bis06}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  The dramatic growth in practical applications for machine learning over the
+  last ten years has been accompanied by many important developments in the
+  underlying algorithms and techniques. For example, Bayesian methods have
+  grown from a specialist niche to become mainstream, while graphical models
+  have emerged as a general framework for describing and applying probabilistic
+  techniques. The practical applicability of Bayesian methods has been greatly
+  enhanced by the development of a range of approximate inference algorithms
+  such as variational Bayes and expectation propagation, while new models based
+  on kernels have had a significant impact on both algorithms and applications.
+  This completely new textbook reflects these recent developments while
+  providing a comprehensive introduction to the fields of pattern recognition
+  and machine learning. It is aimed at advanced undergraduates or first-year
+  PhD students, as well as researchers and practitioners. No previous knowledge
+  of pattern recognition or machine learning concepts is assumed. Familiarity
+  with multivariate calculus and basic linear algebra is required, and some
+  experience in the use of probabilities would be helpful though not essential
+  as the book includes a self-contained introduction to basic probability
+  theory. The book is suitable for courses on machine learning, statistics,
+  computer science, signal processing, computer vision, data mining, and
+  bioinformatics. Extensive support is provided for course instructors,
+  including more than 400 exercises, graded according to difficulty. Example
+  solutions for a subset of the exercises are available from the book web site,
+  while solutions for the remainder can be obtained by instructors from the
+  publisher. The book is supported by a great deal of additional material, and
+  the reader is encouraged to visit the book web site for the latest
+  information. A forthcoming companion volume will deal with practical aspects
+  of pattern recognition and machine learning, and will include free software
+  implementations of the key algorithms along with example data sets and
+  demonstration programs. Christopher Bishop is Assistant Director at Microsoft
+  Research Cambridge, and also holds a Chair in Computer Science at the
+  University of Edinburgh. He is a Fellow of Darwin College Cambridge, and was
+  recently elected Fellow of the Royal Academy of Engineering. The author's
+  previous textbook "Neural Networks for Pattern Recognition" has been widely
+  adopted.%
+  }
+  \field{booktitle}{Pattern Recognition}
+  \verb{doi}
+  \verb 10.1117/1.2819119
+  \endverb
+  \verb{eprint}
+  \verb 0-387-31073-8
+  \endverb
+  \field{isbn}{9780387310732}
+  \field{issn}{10179909}
+  \field{number}{4}
+  \field{pages}{738}
+  \field{title}{{Pattern Recognition and Machine Learning}}
+  \verb{url}
+  \verb http://www.library.wisc.edu/selectedtocs/bg0137.pdf
+  \endverb
+  \field{volume}{4}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th\`{e}se/Bibliographie/L
+  \verb ivre/Bishop - Pattern Recognition and Machine Learning.pdf:pdf
+  \endverb
+  \field{eprinttype}{arXiv}
+  \field{year}{2006}
+\endentry
+
+\entry{Bottou2007}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Bottou}{B.}%
+     {L}{L}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lin}{L.}%
+     {CJ}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BLLC1}
+  \strng{fullhash}{BLLC1}
+  \field{labelalpha}{BL07}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  Considerable efforts have been devoted to the implementation of efficient
+  optimization method for solving the Support Vector Machine dual problem. This
+  document proposes an historical perspective and and in depth review of the
+  algorithmic and computational issues associated with this problem.%
+  }
+  \field{isbn}{0262026252}
+  \field{pages}{1\bibrangedash 27}
+  \field{title}{{Support vector machine solvers}}
+  \verb{url}
+  \verb http://140.112.30.28/~cjlin/papers/bottou\_lin.pdf
+  \endverb
+  \field{journaltitle}{Large scale kernel machines}
+  \field{year}{2007}
+\endentry
+
+\entry{Brigham1967}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Brigham}{B.}%
+     {E.~O.}{E.~O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Morrow}{M.}%
+     {R.~E.}{R.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BEOMRE1}
+  \strng{fullhash}{BEOMRE1}
+  \field{labelalpha}{BM67}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  The fast Fourier transform (FFT), a computer algorithm that computes the
+  discrete Fourier transform much faster than other algorithms, is explained.
+  Examples and detailed procedures are provided to assist the reader in
+  learning how to use the algorithm. The savings in computer time can be huge;
+  for example, an N = 210-point transform can be computed with the FFT 100
+  times faster than with the use of a direct approach.%
+  }
+  \verb{doi}
+  \verb 10.1109/MSPEC.1967.5217220
+  \endverb
+  \field{isbn}{0018-9235}
+  \field{issn}{0018-9235}
+  \field{number}{12}
+  \field{pages}{63 \bibrangedash 70}
+  \field{title}{{The fast Fourier transform}}
+  \verb{url}
+  \verb http://ieeexplore.ieee.org/ielx5/6/5217195/05217220.pdf?tp=\&arnumber=5
+  \verb 217220\&isnumber=5217195$\backslash$nhttp://ieeexplore.ieee.org/stamp/s
+  \verb tamp.jsp?tp=\&arnumber=5217220
+  \endverb
+  \field{volume}{4}
+  \field{journaltitle}{Spectrum, IEEE}
+  \field{year}{1967}
+\endentry
+
 \entry{Chatfield2004}{book}{}
   \name{author}{1}{}{%
     {{}%
@@ -132,6 +457,227 @@
   \field{pages}{xiii, 333 p.}
   \field{title}{{The analysis of time series : an introduction}}
   \field{year}{2004}
+\endentry
+
+\entry{Chopra2005}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Chopra}{C.}%
+     {Sumit}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hadsell}{H.}%
+     {Raia}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {LeCun}{L.}%
+     {Yann}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CSHRLY1}
+  \strng{fullhash}{CSHRLY1}
+  \field{labelalpha}{CHL05}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  We present a method for training a similarity metric from data. The method
+  can be used for recognition or verification applications where the number of
+  categories is very large and not known during training, and where the number
+  of training samples for a single category is very small. The idea is to learn
+  a function that maps input patterns into a target space such that the L1 norm
+  in the target space approximates the "semantic" distance in the input space.
+  The method is applied to a face verification task. The learning process
+  minimizes a discriminative loss function that drives the similarity metric to
+  be small for pairs of faces from the same person, and large for pairs from
+  different persons. The mapping from raw to the target space is a
+  convolutional network whose architecture is designed for robustness to
+  geometric distortions. The system is tested on the Purdue/AR face database
+  which has a very high degree of variability in the pose, lighting,
+  expression, position, and artificial occlusions such as dark glasses and
+  obscuring scarves.%
+  }
+  \field{booktitle}{CVPR}
+  \verb{doi}
+  \verb 10.1109/CVPR.2005.202
+  \endverb
+  \field{isbn}{0769523722}
+  \field{issn}{10636919}
+  \field{pages}{539\bibrangedash 546}
+  \field{title}{{Learning a similarity metric discriminatively, with
+  application to face verification}}
+  \field{volume}{1}
+  \field{year}{2005}
+\endentry
+
+\entry{Chen1996}{misc}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Chen}{C.}%
+     {Ming~Syan}{M.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Han}{H.}%
+     {Jiawei}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yu}{Y.}%
+     {Philip~S.}{P.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Association rules,Classification,Data clustering,Data cubes,Data
+  generalization and characterization,Data mining,Knowledge
+  discovery,Multiple-dimensional databases,Pattern matching algorithms}
+  \strng{namehash}{CMSHJYPS1}
+  \strng{fullhash}{CMSHJYPS1}
+  \field{labelalpha}{CHY96}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  Mining information and knowledge from large databases has been recognized by
+  many researchers as a key research topic in database systems and machine
+  learning, and by many industrial companies as an important area with an
+  opportunity of major revenues. Researchers in many different fields have
+  shown great interest in data mining. Several emerging applications in
+  information-providing services, such as data warehousing and online services
+  over the Internet, also call for various data mining techniques to better
+  understand user behavior, to improve the service provided and to increase
+  business opportunities. In response to such a demand, this article provides a
+  survey, from a database researcher's point of view, on the data mining
+  techniques developed recently. A classification of the available data mining
+  techniques is provided and a comparative study of such techniques is
+  presented%
+  }
+  \field{booktitle}{IEEE Transactions on Knowledge and Data Engineering}
+  \verb{doi}
+  \verb 10.1109/69.553155
+  \endverb
+  \field{isbn}{1041-4347}
+  \field{issn}{10414347}
+  \field{number}{6}
+  \field{pages}{866\bibrangedash 883}
+  \field{title}{{Data mining: An Overview from a Database Perspective}}
+  \field{volume}{8}
+  \field{year}{1996}
+\endentry
+
+\entry{Cochran1977}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Cochran}{C.}%
+     {William~C}{W.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CWC1}
+  \strng{fullhash}{CWC1}
+  \field{labelalpha}{Coc77}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  Commentary by : Cochran William C. Current Contents : \#19, May 9, 1977%
+  }
+  \field{pages}{1}
+  \field{title}{{Snedecor G W \& Cochran W G. Statistical methods applied to
+  experiments in agriculture and biology. 5th ed. Ames, Iowa: Iowa State
+  University Press, 1956.}}
+  \verb{url}
+  \verb papers3://publication/uuid/8C5C843E-F853-4CB4-82BC-1141F0C01CB4
+  \endverb
+  \field{volume}{19}
+  \field{journaltitle}{Citation Classics}
+  \field{year}{1977}
+\endentry
+
+\entry{Crammer2001}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Crammer}{C.}%
+     {Koby}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Singer}{S.}%
+     {Yoram}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{kernel machines,multiclass problems,svm}
+  \strng{namehash}{CKSY1}
+  \strng{fullhash}{CKSY1}
+  \field{labelalpha}{CS01}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  In this paper we describe the algorithmic implementation of multiclass
+  kernel-based vector machines. Our starting point is a generalized notion of
+  the margin to multiclass problems. Using this notion we cast multiclass
+  categorization problems as a constrained optimization problem with a
+  quadratic objective function. Unlike most of previous approaches which
+  typically decompose a multiclass problem into multiple independent binary
+  classification tasks, our notion of margin yields a direct method for
+  training multiclass predictors. By using the dual of the optimization problem
+  we are able to incorporate kernels with a compact set of constraints and
+  decompose the dual problem into multiple optimization problems of reduced
+  size. We describe an efficient fixed-point algorithm for solving the reduced
+  optimization problems and prove its convergence. We then discuss technical
+  details that yield significant running time improvements for large datasets.
+  Finally, we describe various experiments with our approach comparing it to
+  previously studied kernel-based methods. Our experiments indicate that for
+  multiclass problems we attain state-of-the-art accuracy%
+  }
+  \verb{doi}
+  \verb 10.1162/15324430260185628
+  \endverb
+  \field{isbn}{1532-4435}
+  \field{issn}{15324435}
+  \field{pages}{265\bibrangedash 292}
+  \field{title}{{On the Algorithmic Implementation of Multiclass Kernel-based
+  Vector Machines}}
+  \verb{url}
+  \verb http://machinelearning.wustl.edu/mlpapers/paper\_files/CrammerS01.pdf$\
+  \verb backslash$nhttp://www.jmlr.org/papers/volume2/crammer01a/crammer01a.pdf
+  \endverb
+  \field{volume}{2}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Crammer, Singer - 2001 - On the Algorithmic Implement
+  \verb ation of Multiclass Kernel-based Vector Machines.pdf:pdf
+  \endverb
+  \field{journaltitle}{Journal of Machine Learning Research}
+  \field{year}{2001}
+\endentry
+
+\entry{Cao2001}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Cao}{C.}%
+     {Lijuan}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tay}{T.}%
+     {Francis E~H}{F.~E.~H.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{back propagation
+  algorithm,financial,generalisation,multi-layer,perceptron,support vector
+  machines,time series forecasting}
+  \strng{namehash}{CLTFEH1}
+  \strng{fullhash}{CLTFEH1}
+  \field{labelalpha}{CT01}
+  \field{sortinit}{C}
+  \field{pages}{184\bibrangedash 192}
+  \field{title}{{Financial Forecasting Using Support Vector Machines}}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Cao, Tay - 2001 - Financial Forecasting Using Support
+  \verb  Vector Machines.pdf:pdf
+  \endverb
+  \field{journaltitle}{Neural Computing \& Applications}
+  \field{year}{2001}
 \endentry
 
 \entry{Cortes1995}{article}{}
@@ -225,6 +771,168 @@
   \field{year}{2011}
 \endentry
 
+\entry{AhlameDouzal-Chouakria2011}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Douzal-Chouakria}{D.-C.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Amblard}{A.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {VLDB Endowment}%
+  }
+  \keyw{Classification,Supervised classification,Time series proximity
+  measures,trees Learning metric}
+  \strng{namehash}{DCAAC1}
+  \strng{fullhash}{DCAAC1}
+  \field{labelalpha}{DCA11}
+  \field{sortinit}{D}
+  \field{abstract}{%
+  This paper proposes an extension of classification trees to time series input
+  variables. A new split criterion based on time series proximities is
+  introduced. First, the criterion relies on an adaptive (i.e., parameterized)
+  time series metric to cover both behaviors and values proximities. The
+  metrics parameters may change from one internal node to another to achieve
+  the best bisection of the set of time series. Second, the criterion involves
+  the automatic extraction of the most discriminating subsequences. The
+  proposed time series classification tree is applied to a wide range of
+  datasets: public and new, real and synthetic, univariate and multivariate
+  data. We show, through the experiments performed in this study, that the
+  proposed tree outperforms temporal trees using standard time series distances
+  and performs well compared to other competitive time series classifiers%
+  }
+  \field{isbn}{0000000000000}
+  \field{issn}{2150-8097}
+  \field{title}{{Classification trees for time series}}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Douzal-Chouakria, Amblard - 2011 - Classification tre
+  \verb es for time series.pdf:pdf
+  \endverb
+  \field{journaltitle}{Pattern Recognition journal}
+  \field{year}{2011}
+\endentry
+
+\entry{Chouakria2007}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Douzal-Chouakria}{D.-C.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nagabhushan}{N.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Classification,Dynamic time warping,Fr??chet distance,Time Series}
+  \strng{namehash}{DCANP1}
+  \strng{fullhash}{DCANP1}
+  \field{labelalpha}{DCN07}
+  \field{sortinit}{D}
+  \field{abstract}{%
+  Abstract The most widely used measures of time series proximity are the
+  Euclidean distance and dynamic time warping. The latter can be derived from
+  the distance introduced by Maurice Frchet in 1906 to account for the
+  proximity between curves. The major limitation of these proximity measures is
+  that they are based on the closeness of the values regardless of the
+  similarity w.r.t. the growth behavior of the time series. To alleviate this
+  drawback we propose a new dissimilarity index, based on an automatic adaptive
+  tuning function, to include both proximity measures w.r.t. values and w.r.t.
+  behavior. A comparative numerical analysis between the proposed index and the
+  classical distance measures is performed on the basis of two datasets: a
+  synthetic dataset and a dataset from a public health study.%
+  }
+  \verb{doi}
+  \verb 10.1007/s11634-006-0004-6
+  \endverb
+  \field{issn}{18625347}
+  \field{title}{{Adaptive dissimilarity index for measuring time series
+  proximity}}
+  \field{journaltitle}{Advances in Data Analysis and Classification}
+  \field{year}{2007}
+\endentry
+
+\entry{Dietterich1995}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Dietterich}{D.}%
+     {Thomas~G.}{T.~G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hild}{H.}%
+     {Hermann}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bakiri}{B.}%
+     {Ghulum}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{ID3,backpropagation,experimental comparisons,text-to-speech}
+  \strng{namehash}{DTGHHBG1}
+  \strng{fullhash}{DTGHHBG1}
+  \field{labelalpha}{DHB95}
+  \field{sortinit}{D}
+  \field{abstract}{%
+  The performance of the error backpropagation (BP) and ID3 learning algorithms
+  was compared on the task of mapping English text to phonemes and stresses.
+  Under the distributed output code developed by Sejnowski and Rosenberg, it is
+  shown that BP consistently out-performs ID3 on this task by several
+  percentage points. Three hypotheses explaining this difference were explored:
+  (a) ID3 is overfitting the training data, (b) BP is able to share hidden
+  units across several output units and hence can learn the output units
+  better, and (c) BP captures statistical information that ID3 does not. We
+  conclude that only hypothesis (c) is correct. By augmenting ID3 with a simple
+  statistical learning procedure, the performance of BP can be closely matched.
+  More complex statistical procedures can improve the performance of both BP
+  and ID3 substantially in this domain.%
+  }
+  \verb{doi}
+  \verb 10.1007/BF00993821
+  \endverb
+  \field{isbn}{0885-6125}
+  \field{issn}{08856125}
+  \field{number}{1}
+  \field{pages}{51\bibrangedash 80}
+  \field{title}{{A comparison of ID3 and backpropagation for English
+  text-to-speech mapping}}
+  \field{volume}{18}
+  \field{journaltitle}{Machine Learning}
+  \field{year}{1995}
+\endentry
+
+\entry{Dietterich1997}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Dietterich}{D.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DT1}
+  \strng{fullhash}{DT1}
+  \field{labelalpha}{Die97}
+  \field{sortinit}{D}
+  \field{title}{{Approximate Statistical Tests for Comparing Supervised
+  Classification Learning Algorithms}}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Dietterich - 1997 - Approximate Statistical Tests for
+  \verb  Comparing Supervised Classification Learning Algorithms.pdf:pdf
+  \endverb
+  \field{year}{1997}
+\endentry
+
 \entry{Ding2008}{article}{}
   \name{author}{5}{}{%
     {{}%
@@ -305,6 +1013,703 @@
   \field{journaltitle}{Proceedings of the VLDB Endowment}
   \field{eprinttype}{arXiv}
   \field{year}{2008}
+\endentry
+
+\entry{Fan2008}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Fan}{F.}%
+     {RE}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chang}{C.}%
+     {KW}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hsieh}{H.}%
+     {CJ}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{large-scale linear classification,logistic regression,machine
+  learning,open,source,support vector machines}
+  \strng{namehash}{FRCKHC1}
+  \strng{fullhash}{FRCKHC1}
+  \field{labelalpha}{FCH08}
+  \field{sortinit}{F}
+  \field{abstract}{%
+  LIBLINEAR is an open source library for large-scale linear classification. It
+  supports logistic regression and linear support vector machines. We provide
+  easy-to-use command-line tools and library calls for users and developers.
+  Comprehensive documents are available for both beginners and advanced users.
+  Experiments demonstrate that LIBLINEAR is very efficient on large sparse data
+  sets.%
+  }
+  \verb{doi}
+  \verb 10.1038/oby.2011.351
+  \endverb
+  \field{isbn}{089791497X}
+  \field{issn}{15324435}
+  \field{title}{{LIBLINEAR: A library for large linear classification}}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=1442794
+  \endverb
+  \field{journaltitle}{The Journal of Machine Learning}
+  \field{year}{2008}
+\endentry
+
+\entry{Goldberger2004}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Goldberger}{G.}%
+     {Jacob}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Roweis}{R.}%
+     {Sam~T}{S.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hinton}{H.}%
+     {Geoffrey~E}{G.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Salakhutdinov}{S.}%
+     {Ruslan}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Roweis}{R.}%
+     {Sam~T}{S.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Salakhutdinov}{S.}%
+     {Ruslan}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Learning/Statistics \& Optimisation,Theory \& Algorithms}
+  \strng{namehash}{GJ+1}
+  \strng{fullhash}{GJRSTHGESRRSTSR1}
+  \field{labelalpha}{Gol+04}
+  \field{sortinit}{G}
+  \field{abstract}{%
+  In this paper we propose a novel method for learning
+  a$\backslash$r$\backslash$nMahalanobis distance measure to be used in the KNN
+  classification$\backslash$r$\backslash$nalgorithm. The algorithm directly
+  maximizes a stochastic variant of$\backslash$r$\backslash$nthe leave-one-out
+  KNN score on the training set. It can also$\backslash$r$\backslash$nlearn a
+  low-dimensional linear embedding of labeled data that
+  can$\backslash$r$\backslash$nbe used for data visualization and fast
+  classification.$\backslash$r$\backslash$nUnlike other methods, our
+  classification model is non-parametric,$\backslash$r$\backslash$nmaking no
+  assumptions about the shape of the class distributions
+  or$\backslash$r$\backslash$nthe boundaries between them. The performance of
+  the method$\backslash$r$\backslash$nis demonstrated on several data sets,
+  both for metric learning and$\backslash$r$\backslash$nlinear dimensionality
+  reduction.%
+  }
+  \verb{doi}
+  \verb 10.1.1.108.7841
+  \endverb
+  \field{pages}{513\bibrangedash 520}
+  \field{title}{{Neighbourhood Components Analysis}}
+  \verb{url}
+  \verb http://eprints.pascal-network.org/archive/00001570/
+  \endverb
+  \field{journaltitle}{Advances in Neural Information Processing Systems}
+  \field{year}{2004}
+\endentry
+
+\entry{Hsu2008}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Hsu}{H.}%
+     {Chih-Wei}{C.-W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chang}{C.}%
+     {Chih-Chung}{C.-C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lin}{L.}%
+     {Chih-Jen}{C.-J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HCWCCCLCJ1}
+  \strng{fullhash}{HCWCCCLCJ1}
+  \field{labelalpha}{HCL08}
+  \field{sortinit}{H}
+  \field{abstract}{%
+  The support vector machine (SVM) is a popular classi cation technique.
+  However, beginners who are not familiar with SVM often get unsatisfactory
+  results since they miss some easy but signi cant steps. In this guide, we
+  propose a simple procedure which usually gives reasonable results. developed
+  well-differentiated superficial transitional cell bladder cancer.
+  CONCLUSIONS: Patients with SCI often prefer SPC than other methods offered to
+  them, because of quality-of-life issues. The incidence of significant
+  complications might not be as high as previously reported, and with a
+  commitment to careful follow-up, SPC can be a safe option for carefully
+  selected patients if adequate surveillance can be ensured.%
+  }
+  \verb{doi}
+  \verb 10.1177/02632760022050997
+  \endverb
+  \verb{eprint}
+  \verb 0-387-31073-8
+  \endverb
+  \field{isbn}{013805326X}
+  \field{issn}{1464-410X}
+  \field{number}{1}
+  \field{pages}{1396\bibrangedash 400}
+  \field{title}{{A Practical Guide to Support Vector Classification}}
+  \verb{url}
+  \verb http://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf
+  \endverb
+  \field{volume}{101}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th\`{e}se/Bibliographie/S
+  \verb VM Librairie/A Practical Guide to Support Vector Classification.pdf:pdf
+  \endverb
+  \field{journaltitle}{BJU international}
+  \field{eprinttype}{arXiv}
+  \field{year}{2008}
+\endentry
+
+\entry{Hwang2012}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Hwang}{H.}%
+     {Seok~Hwan}{S.~H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ham}{H.}%
+     {Dae~Heon}{D.~H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kim}{K.}%
+     {Joong~Hoon}{J.~H.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{forecasting,forecasting performance,support vector machine}
+  \strng{namehash}{HSHHDHKJH1}
+  \strng{fullhash}{HSHHDHKJH1}
+  \field{labelalpha}{HHK12}
+  \field{sortinit}{H}
+  \verb{doi}
+  \verb 10.1007/s12205-012-1519-3
+  \endverb
+  \field{issn}{1226-7988}
+  \field{number}{5}
+  \field{pages}{870\bibrangedash 882}
+  \field{title}{{Forecasting performance of LS-SVM for nonlinear hydrological
+  time series}}
+  \verb{url}
+  \verb http://link.springer.com/10.1007/s12205-012-1519-3
+  \endverb
+  \field{volume}{16}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th\`{e}se/Bibliographie/S
+  \verb VM + Time Series/Hwang-KSCE Journal of Civil Engineering-2012\_Forecast
+  \verb ing performance of LS-SVM for nonlinear hydrological time series.pdf:pd
+  \verb f
+  \endverb
+  \field{journaltitle}{KSCE Journal of Civil Engineering}
+  \field{year}{2012}
+\endentry
+
+\entry{Heisele2001}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Heisele}{H.}%
+     {B}{B}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ho}{H.}%
+     {P}{P}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Poggio}{P.}%
+     {T}{T}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Active shape model,Biology computing,Face recognition,Image
+  databases,Image recognition,Mouth,Robustness,SVM classifier,Solid
+  modeling,Support vector machine classification,Support vector
+  machines,clustering,component-based approach,facial components,feature
+  extraction,feature vector,global methods,learning automata}
+  \strng{namehash}{HBHPPT1}
+  \strng{fullhash}{HBHPPT1}
+  \field{labelalpha}{HHP01}
+  \field{sortinit}{H}
+  \field{abstract}{%
+  We present a component-based method and two global methods for face
+  recognition and evaluate them with respect to robustness against pose
+  changes. In the component system we first locate facial components, extract
+  them and combine them into a single feature vector which is classified by a
+  Support Vector Machine (SVM). The two global systems recognize faces by
+  classifying a single feature vector consisting of the gray values of the
+  whole face image. In the first global system we trained a single SVM
+  classifier for each person in the database. The second system consists of
+  sets of viewpoint-specific SVM classifiers and involves clustering during
+  training. We performed extensive tests on a database which included faces
+  rotated up to about 40° in depth. The component system clearly outperformed
+  both global systems on all tests.%
+  }
+  \field{booktitle}{IEEE International Conference on Computer Vision, ICCV}
+  \verb{doi}
+  \verb 10.1109/ICCV.2001.937693
+  \endverb
+  \field{isbn}{0-7695-1143-0}
+  \field{issn}{1089-7801}
+  \field{number}{July}
+  \field{pages}{688\bibrangedash 694}
+  \field{title}{{Face recognition with support vector machines: global versus
+  component-based approach}}
+  \verb{url}
+  \verb http://dx.doi.org/10.1109/ICCV.2001.937693
+  \endverb
+  \field{volume}{2}
+  \field{year}{2001}
+\endentry
+
+\entry{Hu2013}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Hu}{H.}%
+     {Jianming}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Jianzhou}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zeng}{Z.}%
+     {Guowei}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier Ltd}%
+  }
+  \keyw{Ensemble Empirical Mode Decomposition (EEMD),Support Vector Machine
+  (SVM),Wind farm,Wind speed forecasting}
+  \strng{namehash}{HJWJZG1}
+  \strng{fullhash}{HJWJZG1}
+  \field{labelalpha}{HWZ13}
+  \field{sortinit}{H}
+  \field{abstract}{%
+  In this paper, a hybrid forecasting approach, which combines the Ensemble
+  Empirical Mode Decomposition (EEMD) and the Support Vector Machine (SVM), is
+  proposed to improve the quality of wind speed forecasting. The essence of the
+  methodology incorporates three phases. First, the original data of wind speed
+  are decomposed into a number of independent Intrinsic Mode Functions (IMFs)
+  and one residual series by EEMD using the principle of decomposition. In
+  order to forecast these IMFs, excepting the highest frequency acquired by
+  EEMD, the respective estimates are yielded using the SVM algorithm. Finally,
+  these respective estimates are combined into the final wind speed forecasts
+  using the principle of ensemble. The proposed hybrid method is examined by
+  forecasting the mean monthly wind speed of three wind farms located in
+  northwest China. The obtained results confirm an observable improvement for
+  the forecasting validity of the proposed hybrid approach. This tool shows
+  great promise for the forecasting of intricate time series which are
+  intrinsically highly volatile and irregular. ?? 2013 Elsevier Ltd.%
+  }
+  \verb{doi}
+  \verb 10.1016/j.renene.2013.05.012
+  \endverb
+  \field{isbn}{0960-1481}
+  \field{issn}{09601481}
+  \field{pages}{185\bibrangedash 194}
+  \field{title}{{A hybrid forecasting approach applied to wind speed time
+  series}}
+  \verb{url}
+  \verb http://dx.doi.org/10.1016/j.renene.2013.05.012
+  \endverb
+  \field{volume}{60}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th\`{e}se/Bibliographie/S
+  \verb VM + Time Series/Hu-Renewable Energy-2013\_A hybrid forecasting approac
+  \verb h applied to wind speed time series.pdf:pdf
+  \endverb
+  \field{journaltitle}{Renewable Energy}
+  \field{year}{2013}
+\endentry
+
+\entry{Jain1999}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Jain}{J.}%
+     {a.~K.}{a.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Murty}{M.}%
+     {M.~N.}{M.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Flynn}{F.}%
+     {P.~J.}{P.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{JaKMMNFPJ1}
+  \strng{fullhash}{JaKMMNFPJ1}
+  \field{labelalpha}{JMF99}
+  \field{sortinit}{J}
+  \field{abstract}{%
+  Clustering is the unsupervised classification of patterns (observations, data
+  items, or feature vectors) into groups (clusters). The clustering problem has
+  been addressed in many contexts and by researchers in many disciplines; this
+  reflects its broad appeal and usefulness as one of the steps in exploratory
+  data analysis. However, clustering is a difficult problem combinatorially,
+  and differences in assumptions and contexts in different communities has made
+  the transfer of useful generic concepts and methodologies slow to occur. This
+  paper presents an overview of pattern clustering methods from a statistical
+  pattern recognition perspective, with a goal of providing useful advice and
+  references to fundamental concepts accessible to the broad community of
+  clustering practitioners. We present a taxonomy of clustering techniques, and
+  identify cross-cutting themes and recent advances. We also describe some
+  important applications of clustering algorithms such as image segmentation,
+  object recognition, and information retrieval.%
+  }
+  \verb{doi}
+  \verb 10.1145/331499.331504
+  \endverb
+  \verb{eprint}
+  \verb arXiv:1101.1881v2
+  \endverb
+  \field{isbn}{0360-0300}
+  \field{issn}{03600300}
+  \field{number}{3}
+  \field{pages}{264\bibrangedash 323}
+  \field{title}{{Data clustering: a review}}
+  \verb{url}
+  \verb http://portal.acm.org/citation.cfm?doid=331499.331504
+  \endverb
+  \field{volume}{31}
+  \field{journaltitle}{ACM Computing Surveys}
+  \field{eprinttype}{arXiv}
+  \field{year}{1999}
+\endentry
+
+\entry{Keogh2004}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Keogh}{K.}%
+     {Eamonn}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ratanamahatana}{R.}%
+     {Chotirat~Ann}{C.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{dynamic time warping,indexing,lower bounding,time series}
+  \strng{namehash}{KERCA1}
+  \strng{fullhash}{KERCA1}
+  \field{labelalpha}{KR04}
+  \field{sortinit}{K}
+  \field{abstract}{%
+  The problem of indexing time series has attracted much interest. Most
+  algorithms used to index time series utilize the Euclidean distance or some
+  variation thereof. However, it has been forcefully shown that the Euclidean
+  distance is a very brittle distance measure. Dy- namic time warping (DTW) is
+  a much more robust distance measure for time series, allowing similar shapes
+  to match even if they are out of phase in the time axis. Because of this
+  flexi- bility, DTW is widely used in science, medicine, industry and finance.
+  Unfortunately, however, DTW does not obey the triangular inequality and thus
+  has resisted attempts at exact indexing. Instead, many researchers have
+  introduced approximate indexing techniques or abandoned the idea of indexing
+  and concentrated on speeding up sequential searches. In this work, we intro-
+  duce a novel technique for the exact indexing of DTW. We prove that our
+  method guarantees no false dismissals and we demonstrate its vast superiority
+  over all competing approaches in the largest and most comprehensive set of
+  time series indexing experiments ever undertaken.%
+  }
+  \verb{doi}
+  \verb 10.1007/s10115-004-0154-9
+  \endverb
+  \field{issn}{0219-1377}
+  \field{number}{3}
+  \field{pages}{358\bibrangedash 386}
+  \field{title}{{Exact indexing of dynamic time warping}}
+  \verb{url}
+  \verb http://www.springerlink.com/index/10.1007/s10115-004-0154-9
+  \endverb
+  \field{volume}{7}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Keogh, Ratanamahatana - 2004 - Exact indexing of dyna
+  \verb mic time warping.pdf:pdf
+  \endverb
+  \field{journaltitle}{Knowledge and Information Systems}
+  \field{month}{05}
+  \field{year}{2004}
+\endentry
+
+\entry{Kijsirikul2002}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Kijsirikul}{K.}%
+     {B}{B}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ussivakul}{U.}%
+     {N}{N}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{decision directed acyclic graph, decision levels, learning (artificial
+  intelligence), learning automata, linear support vector machines, multiclass
+  support vector machines, pattern classification, probability adaptive
+  directed acyclic graph,directed graphs}
+  \strng{namehash}{KBUN1}
+  \strng{fullhash}{KBUN1}
+  \field{labelalpha}{KU02}
+  \field{sortinit}{K}
+  \field{abstract}{%
+  Presents a method of extending support vector machines (SVMs) for dealing
+  with multiclass problems. Motivated by the decision directed acyclic graph
+  (DDAG), we propose the adaptive DAG (ADAG): a modified structure of the DDAG
+  that has a lower number of decision levels and reduces the dependency on the
+  sequence of nodes. Thus, the ADAG improves the accuracy of the DDAG while
+  maintaining low computational requirement%
+  }
+  \verb{doi}
+  \verb 10.1109/IJCNN.2002.1005608
+  \endverb
+  \field{pages}{980\bibrangedash 985}
+  \field{title}{{Multiclass Support Vector Machines using Adaptive Directed
+  Acyclic Graph}}
+  \field{volume}{1}
+  \field{journaltitle}{Neural Networks, 2002. IJCNN '02. Proceedings of the
+  2002 International Joint Conference on}
+  \field{year}{2002}
+\endentry
+
+\entry{Lhermitte2011a}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Lhermitte}{L.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Verbesselt}{V.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Verstraeten}{V.}%
+     {W.W.}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Coppin}{C.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Change detection,Classification,Ecosystem dynamics,Time series
+  analysis}
+  \strng{namehash}{LS+1}
+  \strng{fullhash}{LSVJVWCP1}
+  \field{labelalpha}{Lhe+11}
+  \field{sortinit}{L}
+  \field{abstract}{%
+  Time series of remote sensing imagery or derived vegetation indices and
+  biophysical products have been shown particularly useful to characterize land
+  ecosystem dynamics. Various methods have been developed based on temporal
+  trajectory analysis to characterize, classify and detect changes in ecosystem
+  dynamics. Although time series similarity measures play an important role in
+  these methods, a quantitative comparison of the similarity measures is
+  lacking. The objective of this study was to provide an overview and
+  quantitative comparison of the similarity measures in function of varying
+  time series and ecosystem characteristics, such as amplitude, timing and
+  noise effects. For this purpose, the performance was evaluated for the
+  commonly used similarity measures (D), ranging from Manhattan (DMan),
+  Euclidean (DE) and Mahalanobis (DMah) distance measures, to correlation
+  (DCC), Principal Component Analysis (PCA; DPCA) and Fourier based
+  (DFFT,D$\xi$,DFk) similarities. The quantitative comparison consists of a
+  series of Monte-Carlo simulations based on subsets of global MODIS Normalized
+  Difference Vegetation index (NDVI) and Enhanced Vegetation Index (EVI) and
+  Leaf Area Index (LAI) data. Results of the simulations reveal four main
+  groups of time series similarity measures with different sensitivities: (i)
+  DMan, DE, DPCA, DFk quantify the difference in time series values, (ii) DMah
+  accounts for temporal correlation and non-stationarity of variance, (iii) DCC
+  measures the temporal correlation, and (iv) the Fourier based DFFT and D$\xi$
+  show their specific sensitivity based on the selected Fourier components. The
+  difference measures show relatively the highest sensitivity to amplitude
+  effects, whereas the correlation based measures are highly sensitive to
+  variations in timing and noise. The Fourier based measures, finally, depend
+  highly on the signal to noise ratio and the balance between amplitude and
+  phase dominance. The heterogeneity in sensitivity of each D stresses the
+  importance of (i) understanding the time series characteristics before
+  applying any classification of change detection approach and (ii) defining
+  the variability one wants to identify/account for. This requires an
+  understanding of the ecosystem dynamics and time series characteristics
+  related to the baseline, amplitude, timing, noise and variability of the
+  ecosystem time series. This is also illustrated in the quantitative
+  comparison, where the different sensitivities of D for the NDVI, EVI, and LAI
+  data relate specifically to the temporal characteristics of each data set.
+  Additionally, the effect of noise and intra- and interclass variability is
+  demonstrated in a case study based on land cover classification.%
+  }
+  \verb{doi}
+  \verb 10.1016/j.rse.2011.06.020
+  \endverb
+  \field{isbn}{0034-4257}
+  \field{issn}{00344257}
+  \field{number}{12}
+  \field{pages}{3129\bibrangedash 3152}
+  \field{title}{{A comparison of time series similarity measures for
+  classification and change detection of ecosystem dynamics}}
+  \verb{url}
+  \verb http://www.sciencedirect.com/science/article/pii/S0034425711002446
+  \endverb
+  \field{volume}{115}
+  \field{journaltitle}{Remote Sensing of Environment}
+  \field{year}{2011}
+\endentry
+
+\entry{Liang2012}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Liang}{L.}%
+     {Chunquan}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhang}{Z.}%
+     {Yang}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shi}{S.}%
+     {Peng}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hu}{H.}%
+     {Zhengguo}{Z.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier Inc.}%
+  }
+  \keyw{Positive unlabeled learning,Uncertain attribute,Uncertain data
+  stream,Very fast decision tree}
+  \strng{namehash}{LC+1}
+  \strng{fullhash}{LCZYSPHZ1}
+  \field{labelalpha}{Lia+12}
+  \field{sortinit}{L}
+  \field{abstract}{%
+  Most data stream classification algorithms need to supply input with a large
+  amount of precisely labeled data. However, in many data stream applications,
+  streaming data contains inherent uncertainty, and labeled samples are
+  difficult to be collected, while abundant data are unlabeled. In this paper,
+  we focus on classifying uncertain data streams with only positive and
+  unlabeled samples available. Based on concept-adapting very fast decision
+  tree (CVFDT) algorithm, we propose an algorithm namely puuCVFDT (CVFDT for
+  positive and unlabeled uncertain data). Experimental results on both
+  synthetic and real-life datasets demonstrate the strong ability and
+  efficiency of puuCVFDT to handle concept drift with uncertainty under
+  positive and unlabeled learning scenario. Even when 90\% of the samples in
+  the stream are unlabeled, the classification performance of the proposed
+  algorithm is still compared to that of CVFDT, which is learned from fully
+  labeled data without uncertainty. ?? 2012 Elsevier Inc. All rights reserved.%
+  }
+  \verb{doi}
+  \verb 10.1016/j.ins.2012.05.023
+  \endverb
+  \field{issn}{00200255}
+  \field{pages}{50\bibrangedash 67}
+  \field{title}{{Learning very fast decision tree from uncertain data streams
+  with positive and unlabeled samples}}
+  \verb{url}
+  \verb http://dx.doi.org/10.1016/j.ins.2012.05.023
+  \endverb
+  \field{volume}{213}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th\`{e}se/Bibliographie/D
+  \verb ecision Tree/Liang-Elsevier-2012\_Learning very fast decision tree from
+  \verb  uncertain data streams with positive and unlabeled samples.pdf:pdf
+  \endverb
+  \field{journaltitle}{Information Sciences}
+  \field{year}{2012}
+\endentry
+
+\entry{Morse2007}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Morse}{M.}%
+     {Michael~D}{M.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patel}{P.}%
+     {Jignesh~M}{J.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{clustering,time series,trajectory similarity}
+  \strng{namehash}{MMDPJM1}
+  \strng{fullhash}{MMDPJM1}
+  \field{labelalpha}{MP07}
+  \field{sortinit}{M}
+  \field{abstract}{%
+  A variety of techniques currently exist for measuring the similarity between
+  time series datasets. Of these techniques, the methods whosematching criteria
+  is bounded by a specified ǫ threshold value, such as the LCSS and the EDR
+  techniques, have been shown to be robust in the presence of noise, time
+  shifts, and data scaling. Our work proposes a new algorithm, called the Fast
+  Time Series Evaluation (FTSE) method, which can be used to evaluate such
+  threshold value techniques, including LCSS and EDR. Using FTSE,we show that
+  these techniques can be evaluated faster than using either traditional
+  dynamic programming or even warp-restricting methods such as the Sakoe-Chiba
+  band and the Itakura Parallelogram. We also show that FTSE can be used in a
+  framework that can evaluate a richer range of epsilon threshold-based scoring
+  techniques, of which EDR and LCSS are just two examples. This framework,
+  called Swale, extends the epsilon threshold-based scoring techniques to
+  include arbitrary match rewards and gap penalties. Through extensive
+  empirical evaluation, we show that Swale can obtain greater accuracy than
+  existing methods.%
+  }
+  \verb{doi}
+  \verb 10.1145/1247480.1247544
+  \endverb
+  \field{isbn}{9781595936868}
+  \field{pages}{569}
+  \field{title}{{An efficient and accurate method for evaluating time series
+  similarity}}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=1247544$\backslash$nhttp://portal.acm
+  \verb .org/citation.cfm?doid=1247480.1247544
+  \endverb
+  \field{journaltitle}{ACM SIGMOD international conference on Management of
+  data}
+  \field{year}{2007}
 \endentry
 
 \entry{Najmeddine2012}{inproceedings}{}
@@ -451,6 +1856,312 @@
   \field{year}{1973}
 \endentry
 
+\entry{Prekopcsak2012}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Prekopcs\'{a}k}{P.}%
+     {Zolt\'{a}n}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lemire}{L.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Distance measure learning,Mahalanobis distance measure,Nearest
+  Neighbor,Time-series classification}
+  \strng{namehash}{PZLD1}
+  \strng{fullhash}{PZLD1}
+  \field{labelalpha}{PL12}
+  \field{sortinit}{P}
+  \field{abstract}{%
+  To classify time series by nearest neighbors, we need to specify or learn one
+  or several distance measures. We consider variations of the Mahalanobis
+  distance measures which rely on the inverse covariance matrix of the data.
+  Unfortunately --- for time series data --- the covariance matrix has often
+  low rank. To alleviate this problem we can either use a pseudoinverse,
+  covariance shrinking or limit the matrix to its diagonal. We review these
+  alternatives and benchmark them against competitive methods such as the
+  related Large Margin Nearest Neighbor Classification (LMNN) and the Dynamic
+  Time Warping (DTW) distance. As we expected, we find that the DTW is
+  superior, but the Mahalanobis distance measures are one to two orders of
+  magnitude faster. To get best results with Mahalanobis distance measures, we
+  recommend learning one distance measure per class using either covariance
+  shrinking or the diagonal approach.%
+  }
+  \verb{doi}
+  \verb 10.1007/s11634-012-0110-6
+  \endverb
+  \verb{eprint}
+  \verb 1010.1526
+  \endverb
+  \field{isbn}{1163401201106}
+  \field{issn}{18625347}
+  \field{number}{3}
+  \field{pages}{185\bibrangedash 200}
+  \field{title}{{Time series classification by class-specific Mahalanobis
+  distance measures}}
+  \field{volume}{6}
+  \field{journaltitle}{Advances in Data Analysis and Classification}
+  \field{eprinttype}{arXiv}
+  \field{year}{2012}
+\endentry
+
+\entry{Rabiner1993}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Rabiner}{R.}%
+     {L.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Juang}{J.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RLJB1}
+  \strng{fullhash}{RLJB1}
+  \field{labelalpha}{RJ93}
+  \field{sortinit}{R}
+  \field{abstract}{%
+  Provides a theoretically sound, technically accurate, and complete
+  description of the basic knowledge and ideas that constitute a modern system
+  for speech recognition by machine. Covers production, perception, and
+  acoustic-phonetic characterization of the speech signal; signal processing
+  and analysis methods for speech recognition; pattern comparison techniques;
+  speech recognition system design and implementation; theory and
+  implementation of hidden Markov models; speech recognition based on connected
+  word models; large vocabulary continuous speech recognition; and task-
+  oriented application of automatic speech recognition. For practicing
+  engineers, scientists, linguists, and programmers interested in speech
+  recognition.%
+  }
+  \field{booktitle}{Prentice Hall}
+  \verb{doi}
+  \verb 10.1002/ev.1647
+  \endverb
+  \field{isbn}{0130151572}
+  \field{title}{{Fundamentals of Speech Recognition}}
+  \verb{url}
+  \verb http://cmp.felk.cvut.cz/cmp/support/phd112.html
+  \endverb
+  \field{volume}{103}
+  \field{year}{1993}
+\endentry
+
+\entry{Salvador}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Salvador}{S.}%
+     {Stan}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chan}{C.}%
+     {Philip}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{dynamic time warping,time series}
+  \strng{namehash}{SSCP1}
+  \strng{fullhash}{SSCP1}
+  \field{labelalpha}{SC}
+  \field{sortinit}{S}
+  \field{abstract}{%
+  The dynamic time warping (DTW) algorithm is able to find the optimal
+  alignment between two time series. It is often used to determine time series
+  similarity, classification, and to find corresponding regions between two
+  time series. DTW has a quadratic time and space complexity that limits its
+  use to only small time series data sets. In this paper we introduce FastDTW,
+  an approximation of DTW that has a linear time and space complexity. FastDTW
+  uses a multilevel approach that recursively projects a solution from a coarse
+  resolution and refines the projected solution. We prove the linear time and
+  space complexity of FastDTW both theoretically and empirically. We also
+  analyze the accuracy of FastDTW compared to two other existing approximate
+  DTW algorithms: Sakoe-Chuba Bands and Data Abstraction. Our results show a
+  large improvement in accuracy over the existing methods.%
+  }
+  \field{title}{{FastDTW : Toward Accurate Dynamic Time Warping in Linear Time
+  and Space}}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Salvador, Chan - Unknown - FastDTW Toward Accurate Dy
+  \verb namic Time Warping in Linear Time and Space.pdf:pdf
+  \endverb
+\endentry
+
+\entry{Sakoe1978a}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Sakoe}{S.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chiba}{C.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SHCS1}
+  \strng{fullhash}{SHCS1}
+  \field{labelalpha}{SC78}
+  \field{sortinit}{S}
+  \field{abstract}{%
+  This paper reports on an optimum dynamic programming (DP) based
+  time-normalization algorithm for spoken word recognition. First, a general
+  principle of time-normalization is given using timewarping function. Then,
+  two time-normalized distance definitions, d e d symmetric and asymmetric
+  forms, are derived from the principle. These two forms are compared with each
+  other through theoretical discussions and experimental studies. The symmetric
+  form algorithm superiority is established. A new technique, called slope
+  constraint, is successfully introduced, iwn hich the warping function slope
+  isr estricted so as to improve discrimination between words in different
+  categories. The effective slope constraint characteristic is qualitatively
+  analyzed, and the optimum slope constraint condition is determined through
+  experiments. The optimized algorithm is then extensively subjected to
+  experimentat comparison with various DP-algorithms, previously applied to
+  spoken word recognition by different research groups. The experiment shows
+  that the present algorithm gives no more than about twothirds errors, even
+  compared to the best conventional algorithm.%
+  }
+  \verb{doi}
+  \verb 10.1109/TASSP.1978.1163055
+  \endverb
+  \field{isbn}{1558601244}
+  \field{issn}{00963518}
+  \field{title}{{Dynamic Programming Algorithm Optimization for Spoken Word
+  Recognition}}
+  \field{journaltitle}{IEEE transactions on acoustics, speech, and signal
+  processing}
+  \field{year}{1978}
+\endentry
+
+\entry{Shental2002}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Shental}{S.}%
+     {Noam}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hertz}{H.}%
+     {Tomer}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Weinshall}{W.}%
+     {Daphna}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pavel}{P.}%
+     {Misha}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SN+1}
+  \strng{fullhash}{SNHTWDPM1}
+  \field{labelalpha}{She+02}
+  \field{sortinit}{S}
+  \field{abstract}{%
+  We present a method for training a similarity metric from data. The method
+  can be used for recognition or verification applications where the number of
+  categories is very large and not known during training, and where the number
+  of training samples for a single category is very small. The idea is to learn
+  a function that maps input patterns into a target space such that the L1 norm
+  in the target space approximates the "semantic" distance in the input space.
+  The method is applied to a face verification task. The learning process
+  minimizes a discriminative loss function that drives the similarity metric to
+  be small for pairs of faces from the same person, and large for pairs from
+  different persons. The mapping from raw to the target space is a
+  convolutional network whose architecture is designed for robustness to
+  geometric distortions. The system is tested on the Purdue/AR face database
+  which has a very high degree of variability in the pose, lighting,
+  expression, position, and artificial occlusions such as dark glasses and
+  obscuring scarves.%
+  }
+  \verb{doi}
+  \verb 10.1007/3-540-47979-1\_52
+  \endverb
+  \field{isbn}{978-3-540-43748-2}
+  \field{pages}{776\bibrangedash 790}
+  \field{title}{{Adjustment Learning and Relevant Component Analysis}}
+  \verb{url}
+  \verb http://dx.doi.org/10.1007/3-540-47979-1\_52
+  \endverb
+  \field{volume}{2353}
+  \field{journaltitle}{European Conference on Computer Vision (ECCV)}
+  \field{year}{2002}
+\endentry
+
+\entry{Sahidullah2012}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Sahidullah}{S.}%
+     {Md}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Saha}{S.}%
+     {Goutam}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Block transform,Correlation matrix,DCT,Decorrelation technique,Linear
+  transformation,MFCC,Missing feature theory,Narrow-band noise,Speaker
+  recognition}
+  \strng{namehash}{SMSG1}
+  \strng{fullhash}{SMSG1}
+  \field{labelalpha}{SS12}
+  \field{sortinit}{S}
+  \field{abstract}{%
+  Standard Mel frequency cepstrum coefficient (MFCC) computation technique
+  utilizes discrete cosine transform (DCT) for decorrelating log energies of
+  filter bank output. The use of DCT is reasonable here as the covariance
+  matrix of Mel filter bank log energy (MFLE) can be compared with that of
+  highly correlated Markov-I process. This full-band based MFCC computation
+  technique where each of the filter bank output has contribution to all
+  coefficients, has two main disadvantages. First, the covariance matrix of the
+  log energies does not exactly follow Markov-I property. Second, full-band
+  based MFCC feature gets severely degraded when speech signal is corrupted
+  with narrow-band channel noise, though few filter bank outputs may remain
+  unaffected. In this work, we have studied a class of linear transformation
+  techniques based on block wise transformation of MFLE which effectively
+  decorrelate the filter bank log energies and also capture speech information
+  in an efficient manner. A thorough study has been carried out on the block
+  based transformation approach by investigating a new partitioning technique
+  that highlights associated advantages. This article also reports a novel
+  feature extraction scheme which captures complementary information to wide
+  band information; that otherwise remains undetected by standard MFCC and
+  proposed block transform (BT) techniques. The proposed features are evaluated
+  on NIST SRE databases using Gaussian mixture model-universal background model
+  (GMM-UBM) based speaker recognition system. We have obtained significant
+  performance improvement over baseline features for both matched and
+  mismatched condition, also for standard and narrow-band noises. The proposed
+  method achieves significant performance improvement in presence of
+  narrow-band noise when clubbed with missing feature theory based score
+  computation scheme. ?? 2011 Elsevier B.V. All rights reserved.%
+  }
+  \verb{doi}
+  \verb 10.1016/j.specom.2011.11.004
+  \endverb
+  \field{isbn}{0167-6393}
+  \field{issn}{01676393}
+  \field{number}{4}
+  \field{pages}{543\bibrangedash 565}
+  \field{title}{{Design, analysis and experimental evaluation of block based
+  transformation in MFCC computation for speaker recognition}}
+  \verb{url}
+  \verb http://dx.doi.org/10.1016/j.specom.2011.11.004
+  \endverb
+  \field{volume}{54}
+  \field{journaltitle}{Speech Communication}
+  \field{year}{2012}
+\endentry
+
 \entry{Schlkopf2013}{book}{}
   \name{author}{2}{}{%
     {{}%
@@ -510,6 +2221,108 @@
   \field{year}{2013}
 \endentry
 
+\entry{Sadri2003}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Sadri}{S.}%
+     {Javad}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Suen}{S.}%
+     {Ching~Y}{C.~Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bui}{B.}%
+     {Tien~D.}{T.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{feature extraction,machine learning,mlp neural network,multiple support
+  vector classifiers,ocr,optical character recognition,support,svm,vector
+  machine}
+  \strng{namehash}{SJSCYBTD1}
+  \strng{fullhash}{SJSCYBTD1}
+  \field{labelalpha}{SSB03}
+  \field{sortinit}{S}
+  \field{abstract}{%
+  : A new method for recognition of isolated handwritten Arabic/Persian digits
+  is presented. This method is based on Support Vector Machines (SVMs), and a
+  new approach of feature extraction. Each digit is considered from four
+  different views, and from each view 16 features are extracted and combined to
+  obtain 64 features. Using these features, multiple SVM classifiers are
+  trained to separate different classes of digits. CENPARMI Indian
+  (Arabic/Persian) handwritten digit database is used for training and testing
+  of SVM classifiers. Based on this database, differences between Arabic and
+  Persian digits in digit recognition are shown. This database provides 7390
+  samples for training and 3035 samples for testing from the real life samples.
+  Experiments show that the proposed features can provide a very good
+  recognition result using Support Vector Machines at a recognition rate
+  94.14\%, compared with 91.25 \% obtained by MLP neural network classifier
+  using the same features and test set.%
+  }
+  \field{pages}{300\bibrangedash 307}
+  \field{title}{{Application of Support Vector Machines for recognition of
+  handwritten Arabic/Persian digits}}
+  \field{volume}{1}
+  \field{journaltitle}{Second Conference on Machine Vision and Image Processing
+  \& Applications (MVIP 2003)}
+  \field{year}{2003}
+\endentry
+
+\entry{Torrence1998}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Torrence}{T.}%
+     {Christopher}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Compo}{C.}%
+     {Gilbert~P.}{G.~P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{TCCGP1}
+  \strng{fullhash}{TCCGP1}
+  \field{labelalpha}{TC98}
+  \field{sortinit}{T}
+  \field{abstract}{%
+  A practical step-by-step guide to wavelet analysis is given, with examples
+  taken from time series of the El Ni\~{n}o–Southern Oscillation (ENSO). The
+  guide includes a comparison to the windowed Fourier transform, the choice of
+  an appropriate wavelet basis function, edge effects due to finite-length time
+  series, and the relationship between wavelet scale and Fourier frequency. New
+  statistical significance tests for wavelet power spectra are developed by
+  deriving theoretical wavelet spectra for white and red noise processes and
+  using these to establish significance levels and confidence intervals. It is
+  shown that smoothing in time or scale can be used to increase the confidence
+  of the wavelet spectrum. Empirical formulas are given for the effect of
+  smoothing on significance levels and confidence intervals. Extensions to
+  wavelet analysis such as filtering, the power Hovm\"{o}ller, cross-wavelet
+  spectra, and coherence are described. The statistical significance tests are
+  used to give a quantitative measure of changes in ENSO variance on
+  interdecadal timescales. Using new datasets that extend back to 1871, the
+  Ni\~{n}o3 sea surface temperature and the Southern Oscillation index show
+  significantly higher power during 1880–1920 and 1960–90, and lower power
+  during 1920–60, as well as a possible 15-yr modulation of variance. The
+  power Hovm\"{o}ller of sea level pressure shows significant variations in
+  2–8-yr wavelet power in both longitude and time.%
+  }
+  \verb{doi}
+  \verb 10.1175/1520-0477(1998)079<0061:APGTWA>2.0.CO;2
+  \endverb
+  \field{isbn}{0871706881}
+  \field{issn}{00030007}
+  \field{number}{1}
+  \field{pages}{61\bibrangedash 78}
+  \field{title}{{A Practical Guide to Wavelet Analysis}}
+  \field{volume}{79}
+  \field{journaltitle}{Bulletin of the American Meteorological Society}
+  \field{year}{1998}
+\endentry
+
 \entry{Tan2005b}{book}{}
   \name{author}{3}{}{%
     {{}%
@@ -554,6 +2367,159 @@
   \field{pages}{500}
   \field{title}{{Introduction to Data Mining}}
   \field{year}{2005}
+\endentry
+
+\entry{Vlachos2006}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Vlachos}{V.}%
+     {Michail}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hadjieleftheriou}{H.}%
+     {Marios}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gunopulos}{G.}%
+     {Dimitrios}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Keogh}{K.}%
+     {Eamonn}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Dynamic time warping,Ensemble index,Longest common subsequence,Motion
+  capture,Trajectories}
+  \strng{namehash}{VM+1}
+  \strng{fullhash}{VMHMGDKE1}
+  \field{labelalpha}{Vla+06}
+  \field{sortinit}{V}
+  \field{abstract}{%
+  While most time series data mining research has concentrated on providing
+  solutions for a single distance function, in this work we motivate the need
+  for an index structure that can support multiple distance measures. Our
+  specific area of interest is the efficient retrieval and analysis of similar
+  trajectories. Trajectory datasets are very common in environmental
+  applications, mobility experiments, and video surveillance and are especially
+  important for the discovery of certain biological patterns. Our primary
+  similarity measure is based on the longest common subsequence (LCSS) model
+  that offers enhanced robustness, particularly for noisy data, which are
+  encountered very often in real-world applications. However, our index is able
+  to accommodate other distance measures as well, including the ubiquitous
+  Euclidean distance and the increasingly popular dynamic time warping (DTW).
+  While other researchers have advocated one or other of these similarity
+  measures, a major contribution of our work is the ability to support all
+  these measures without the need to restructure the index. Our framework
+  guarantees no false dismissals and can also be tailored to provide much
+  faster response time at the expense of slightly reduced precision/recall. The
+  experimental results demonstrate that our index can help speed up the
+  computation of expensive similarity measures such as the LCSS and the DTW.%
+  }
+  \verb{doi}
+  \verb 10.1007/s00778-004-0144-2
+  \endverb
+  \field{isbn}{1-58113-737-0}
+  \field{issn}{10668888}
+  \field{number}{1}
+  \field{pages}{1\bibrangedash 20}
+  \field{title}{{Indexing multidimensional time-series}}
+  \field{volume}{15}
+  \field{journaltitle}{VLDB Journal}
+  \field{year}{2006}
+\endentry
+
+\entry{Wang2002}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wang}{W.}%
+     {Jung-Ying}{J.-Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WJY1}
+  \strng{fullhash}{WJY1}
+  \field{labelalpha}{Wan02}
+  \field{sortinit}{W}
+  \field{abstract}{%
+  Recently a new learning method called support vector machines (SVM) has shown
+  comparable or better results than neural networks on some applications. In
+  this thesis we exploit the possibility of using SVM for three important
+  issues of bioinformatics: the prediction of protein secondary structure,
+  multi-class protein fold recognition, and the prediction of human signal
+  peptide cleavage sites. By using similar data, we demonstrate that SVM can
+  easily achieve comparable accuracy as using neural networks. Therefore, in
+  the future it is a promising direction to apply SVM on more bioinformatics
+  applications.%
+  }
+  \field{pages}{1\bibrangedash 56}
+  \field{title}{{Support Vector Machines ( SVM ) in bioinformatics
+  Bioinformatics applications}}
+  \verb{url}
+  \verb http://www.csie.ntu.edu.tw/~p88012/Bio\_SVM.pdf
+  \endverb
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2002}
+\endentry
+
+\entry{Weinberger2009}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Weinberger}{W.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Saul}{S.}%
+     {L.}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{convex optimization,ing,mahalanobis distance,metric learn-,multi-class
+  classification,semi-definite programming,support vector machines}
+  \strng{namehash}{WKSL1}
+  \strng{fullhash}{WKSL1}
+  \field{labelalpha}{WS09}
+  \field{sortinit}{W}
+  \field{abstract}{%
+  The accuracy of k-nearest neighbor (kNN) classification depends significantly
+  on the metric used to compute distances between different examples. In this
+  paper, we show how to learn a Maha- lanobis distance metric for kNN
+  classification from labeled examples. The Mahalanobis metric can equivalently
+  be viewed as a global linear transformation of the input space that precedes
+  kNN classification using Euclidean distances. In our approach, the metric is
+  trained with the goal that the k-nearest neighbors always belong to the same
+  class while examples from different classes are separated by a largemargin.
+  As in support vectormachines (SVMs), themargin criterion leads to a convex
+  optimization based on the hinge loss. Unlike learning in SVMs, however, our
+  approach re- quires no modification or extension for problems in multiway (as
+  opposed to binary) classification. In our framework, the Mahalanobis distance
+  metric is obtained as the solution to a semidefinite program. On several data
+  sets of varying size and difficulty, we find that metrics trained in this way
+  lead to significant improvements in kNN classification. Sometimes these
+  results can be further improved by clustering the training examples and
+  learning an individual metric within each cluster. We show how to learn and
+  combine these local metrics in a globally integrated manner. Keywords: convex
+  optimization, semi-definite programming,Mahalanobis distance,metric learn-
+  ing, multi-class classification, support vector machines 1.%
+  }
+  \field{pages}{207\bibrangedash 244}
+  \field{title}{{Distance Metric Learning for Large Margin Nearest Neighbor
+  Classification}}
+  \verb{url}
+  \verb http://www.jmlr.org/papers/volume10/weinberger09a/weinberger09a.pdf
+  \endverb
+  \field{volume}{10}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Weinberger, Saul - 2009 - Distance Metric Learning fo
+  \verb r Large Margin Nearest Neighbor Classification.pdf:pdf
+  \endverb
+  \field{journaltitle}{Journal of Machine Learning Research}
+  \field{year}{2009}
 \endentry
 
 \entry{Xi2006a}{inproceedings}{}
@@ -660,6 +2626,46 @@
   \field{issn}{15504786}
   \field{title}{{Clustering distributed time series in sensor networks}}
   \field{year}{2008}
+\endentry
+
+\entry{Yang1999}{incollection}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Yang}{Y.}%
+     {Yiming}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liu}{L.}%
+     {Xin}{X.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{YYLX1}
+  \strng{fullhash}{YYLX1}
+  \field{labelalpha}{YL99}
+  \field{sortinit}{Y}
+  \field{abstract}{%
+  This paper reports a controlled study with statistical signifi cance tests on
+  five text categorization methods: the Support Vector Machines (SVM), a
+  kNearest Neighbor (kNN) clas sifier, a neural network (NNet) approach, the
+  Linear Least squares Fit (LLSF) mapping and a Naive Bayes (NB) classi fier.
+  We focus on the robustness of these methods in dealing with a skewed category
+  distribution, and their performance as function of the trainingset category
+  frequency. Our re sults show that SVM, kNN and LLSF significantly outper form
+  NNet and NB when the number of positive training instances per category are
+  small (less than ten), and that all the methods perform comparably when the
+  categories are sufficiently common (over 300 instances).%
+  }
+  \field{booktitle}{Proceedings of the 22nd annual international ACM SIGIR
+  conference on Research and development in information retrieval SIGIR 99}
+  \verb{doi}
+  \verb 10.1145/312624.312647
+  \endverb
+  \field{isbn}{1581130961}
+  \field{pages}{42\bibrangedash 49}
+  \field{title}{{A re-examination of text categorization methods}}
+  \field{year}{1999}
 \endentry
 
 \entry{Dreyfus2006}{book}{}

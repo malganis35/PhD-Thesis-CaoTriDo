@@ -2,128 +2,134 @@
 \defcounter {refsection}{0}\relax 
 \select@language {american}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{Table des sigles et acronymes}{xiii}{chapter*.6}
+\contentsline {starchapter}{Table des sigles et acronymes}{xv}{chapter*.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {starchapter}{Introduction}{1}{chapter*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{I\hspace {1em}Work positionning}{5}{part.1}
+\contentsline {part}{I\hspace {1em}Work positioning}{5}{part.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Machine Learning: state of the art}{7}{chapter.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Definition of a time series}{7}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Machine learning algorithms}{9}{section.1.2}
+\contentsline {section}{\numberline {1.2}Machine Learning framework}{9}{section.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.1}Classification, regression}{9}{subsection.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}$k$-Nearest Neighbors ($k$-NN)}{9}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.2}Supervised learning framework}{9}{subsection.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.3}Support Vector Machine (SVM)}{11}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.3}Model evaluation}{13}{subsection.1.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.3.1}Intuition}{12}{subsubsection.1.2.3.1}
+\contentsline {subsubsection}{\numberline {1.2.3.a}Classification}{13}{subsubsection.1.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.3.2}Primal formulation}{13}{subsubsection.1.2.3.2}
+\contentsline {subsubsection}{\numberline {1.2.3.b}Regression}{14}{subsubsection.1.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.3.3}Dual formulation}{14}{subsubsection.1.2.3.3}
+\contentsline {subsection}{\numberline {1.2.4}Data pre-processing}{15}{subsection.1.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.3.4}Kernel trick}{16}{subsubsection.1.2.3.4}
+\contentsline {section}{\numberline {1.3}Machine Learning algorithms}{16}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.3.5}Complexity and interpretation}{19}{subsubsection.1.2.3.5}
+\contentsline {subsection}{\numberline {1.3.1}$k$-Nearest Neighbors ($k$-NN) classifier}{16}{subsection.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.3.6}Extensions of SVM}{21}{subsubsection.1.2.3.6}
+\contentsline {subsection}{\numberline {1.3.2}Support Vector Machine (SVM) algorithm}{18}{subsection.1.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.4}Other classification algorithms}{23}{subsection.1.2.4}
+\contentsline {subsubsection}{\numberline {1.3.2.a}Intuition}{19}{subsubsection.1.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Learning protocol}{23}{section.1.3}
+\contentsline {subsubsection}{\numberline {1.3.2.b}Primal formulation}{20}{subsubsection.1.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Supervised learning framework}{23}{subsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.2.c}Dual formulation}{21}{subsubsection.1.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Model evaluation}{25}{subsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.2.d}Kernel trick}{23}{subsubsection.1.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.2.1}Classification}{26}{subsubsection.1.3.2.1}
+\contentsline {subsubsection}{\numberline {1.3.2.e}Complexity and interpretation}{26}{subsubsection.1.3.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.2.2}Regression}{26}{subsubsection.1.3.2.2}
+\contentsline {subsubsection}{\numberline {1.3.2.f}Extensions of SVM}{28}{subsubsection.1.3.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.3}Data pre-processing}{26}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.3}Other classification algorithms}{30}{subsection.1.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Limits of classical technics}{26}{section.1.4}
+\contentsline {section}{\numberline {1.4}Conclusion of the chapter}{30}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Time series basic metrics}{27}{chapter.2}
+\contentsline {chapter}{\numberline {2}Time series basic metrics}{33}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Properties of a distance measure}{28}{section.2.1}
+\contentsline {section}{\numberline {2.1}Properties of a metric}{34}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Basic metrics for time series}{28}{section.2.2}
+\contentsline {section}{\numberline {2.2}Unimodal metrics for time series}{34}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Value-based metrics}{28}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Amplitude-based metrics}{34}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Behavior-based metrics}{28}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Behavior-based metrics}{36}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Frequential-based metrics}{29}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Frequential-based metrics}{36}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}Other metrics}{29}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.4}Other metrics and Kernels for time series}{37}{subsection.2.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Kernels for time series}{29}{section.2.3}
+\contentsline {section}{\numberline {2.3}Time series alignment and dynamic programming approach}{37}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Time series alignment}{29}{section.2.4}
+\contentsline {section}{\numberline {2.4}Multi-scale aspect}{40}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Multi-scale aspect}{30}{section.2.5}
+\contentsline {section}{\numberline {2.5}Conclusion of the chapter}{41}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Time series advanced metrics}{31}{chapter.3}
+\contentsline {chapter}{\numberline {3}Time series advanced metrics}{43}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Combined metrics for time series}{31}{section.3.1}
+\contentsline {section}{\numberline {3.1}Combined metrics for time series}{43}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Metric Learning: state of the art}{32}{section.3.2}
+\contentsline {section}{\numberline {3.2}Metric Learning}{45}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{II\hspace {1em}Metric learning for time series from multiple modalities and multiple scales}{35}{part.2}
+\contentsline {subsection}{\numberline {3.2.1}State of the art}{45}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Projection in the pairwise space}{37}{chapter.4}
+\contentsline {subsection}{\numberline {3.2.2}Intuition}{45}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Pairwise embedding}{37}{section.4.1}
+\contentsline {subsection}{\numberline {3.2.3}Problem formalization}{46}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Interpretation of the pairwise space}{37}{section.4.2}
+\contentsline {part}{II\hspace {1em}Metric learning for time series from multiple modalities and multiple scales}{51}{part.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Pros \& Cons}{38}{section.4.3}
+\contentsline {chapter}{\numberline {4}Projection in the pairwise space}{53}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}$M^2TML$: formalization}{39}{chapter.5}
+\contentsline {section}{\numberline {4.1}Pairwise embedding}{53}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}LP optimization problem}{39}{section.5.1}
+\contentsline {section}{\numberline {4.2}Interpretation of the pairwise space}{53}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}QP optimization problem}{39}{section.5.2}
+\contentsline {section}{\numberline {4.3}Pros \& Cons}{54}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}SVM approximation}{39}{section.5.3}
+\contentsline {chapter}{\numberline {5}$M^2TML$: formalization}{55}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}$M^2TML$: implementation}{41}{chapter.6}
+\contentsline {section}{\numberline {5.1}LP optimization problem}{55}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Projection in the pairwise space}{41}{section.6.1}
+\contentsline {section}{\numberline {5.2}QP optimization problem}{55}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}M-NN M-diff strategy}{41}{section.6.2}
+\contentsline {section}{\numberline {5.3}SVM approximation}{55}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Radius normalization}{42}{section.6.3}
+\contentsline {chapter}{\numberline {6}$M^2TML$: implementation}{57}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Solving the SVM problem}{42}{section.6.4}
+\contentsline {section}{\numberline {6.1}Projection in the pairwise space}{57}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Definition of the dissimilarity measure}{42}{section.6.5}
+\contentsline {section}{\numberline {6.2}M-NN M-diff strategy}{57}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.6}Extension to regression problem}{42}{section.6.6}
+\contentsline {section}{\numberline {6.3}Radius normalization}{58}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.7}Extension to multivariate problem}{42}{section.6.7}
+\contentsline {section}{\numberline {6.4}Solving the SVM problem}{58}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}$M^2TML$: Experiments}{43}{chapter.7}
+\contentsline {section}{\numberline {6.5}Definition of the dissimilarity measure}{58}{section.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Dataset presentation}{43}{section.7.1}
+\contentsline {section}{\numberline {6.6}Extension to regression problem}{58}{section.6.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Experimental protocol}{43}{section.7.2}
+\contentsline {section}{\numberline {6.7}Extension to multivariate problem}{58}{section.6.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Results}{43}{section.7.3}
+\contentsline {chapter}{\numberline {7}$M^2TML$: Experiments}{59}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Discussion}{43}{section.7.4}
+\contentsline {section}{\numberline {7.1}Dataset presentation}{59}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{Conclusion}{47}{chapter*.41}
+\contentsline {section}{\numberline {7.2}Experimental protocol}{59}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Detailed presentation of the datasets}{49}{appendix.A}
+\contentsline {section}{\numberline {7.3}Results}{59}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Solver library}{51}{appendix.B}
+\contentsline {section}{\numberline {7.4}Discussion}{59}{section.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}SVM librairy}{53}{appendix.C}
+\contentsline {starchapter}{Conclusion}{63}{chapter*.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{Bibliographie}{55}{appendix*.42}
+\contentsline {chapter}{\numberline {A}Detailed presentation of the datasets}{65}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Solver library}{67}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}SVM librairy}{69}{appendix.C}
+\defcounter {refsection}{0}\relax 
+\contentsline {starchapter}{Bibliographie}{74}{appendix*.61}

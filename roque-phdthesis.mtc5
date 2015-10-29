@@ -1,2 +1,5 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Combined metrics for time series}{\reset@font\mtcSfont 31}{section.3.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Metric Learning: state of the art}{\reset@font\mtcSfont 32}{section.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Combined metrics for time series}{\reset@font\mtcSfont 43}{section.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Metric Learning}{\reset@font\mtcSfont 45}{section.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}State of the art}{\reset@font\mtcSSfont 45}{subsection.3.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Intuition}{\reset@font\mtcSSfont 45}{subsection.3.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Problem formalization}{\reset@font\mtcSSfont 46}{subsection.3.2.3}}
