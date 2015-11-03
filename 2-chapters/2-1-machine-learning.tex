@@ -19,9 +19,9 @@ In this chapter, we first present what a time series is. Then, we vectorize time
 % We call time series, a collection of numerical observations made sequentially in the time. It is characterized by a finite number of realized observations made at discrete instants of time $t=1,...,T$. 
 Time series and more generally temporal data are data objects that frequently occur in physical sciences (meteorology, marine science, geophysics), marketing or process control \cite{Chatfield2004}. For physical systems, a time series of length $N$ can be seen as a signal, sampled at a frequency $f_e$, in a temporal window $[0;\frac{N}{f_e}]$. From a mathematical perspective, a time series is a collection of a finite number of realized normalized observations made sequentially at discrete time instants $t=1,...,T$. Note that when $f_e=1$, $T=N$.
 
-Let $\textbf{x}_i=(x_{i1}, x_{i2}, ..., x_{iT})$ be a univariate time series of length $T$. Each observation $x_{it}$ is bounded (i.e., the infinity is not a valid value: $x_{it} \neq \pm \infty$). The time series $\textbf{x}_i$ is said to be univariate if the collection of observations $x_{it}$ comes from the observations of one variable (i.e., it has been measured by one sensor, the temperature for example). When the observations are made at the same time from $Q$ variables (several sensors such as the temperature, the pressure, etc.), the time series is said multivariate and is denoted $\textbf{x}_i=(\textbf{x}_{i,1}, ...., \textbf{x}_{i,Q})=(x_{i1,1}, ..., x_{iT,1},x_{i1,2}, ..., x_{iT,2}, ..., x_{i1,Q}, ..., x_{iT,Q})$. For simplification purpose, we consider in the following univariate time series. 
+Let $\textbf{x}_i=(x_{i1}, x_{i2}, ..., x_{iT})$ be a univariate time series of length $T$. Each observation $x_{it}$ is bounded (i.e., the infinity is not a valid\mycomment[MR]{available?} value: $x_{it} \neq \pm \infty$). The time series $\textbf{x}_i$ is said to be univariate if the collection of observations $x_{it}$ comes from the observations of one variable (i.e., it has been measured by one sensor, the temperature for example). When the observations are made at the same time from $Q$ variables (several sensors such as the temperature, the pressure, etc.), the time series is said multivariate and is denoted $\textbf{x}_i=(\textbf{x}_{i,1}, ...., \textbf{x}_{i,Q})=(x_{i1,1}, ..., x_{iT,1},x_{i1,2}, ..., x_{iT,2}, ..., x_{i1,Q}, ..., x_{iT,Q})$. For simplification purpose, we consider in the following univariate time series. 
 
-Time series can be found in various emerging applications such as sensor networks, smart buildings, social media networks or Internet of Things (IoT) \cite{Najmeddine2012,Nguyen2012,Yin2008}. They are involved in many learning problems such as recognizing a human movement in a video, detect a particular operating mode, etc. \mycomment[MR]{ref application time series (Michèle)}. In \textbf{clustering} problems, one would like to organize similar time series together into homogeneous groups. In \textbf{classification} problems, the aim is to assign time series to one of several predefined categories (e.g., different types of defaults in a machine). In \textbf{regression} problems, the objective is to predict a continuous value from observed time series (e.g., forecasting the measurement of a power meter from pressure and temperature sensors). Our work focus on classification and regression problems. However, due to their temporal and structured nature, time series constitute complex data to be analyzed by classic Machine Learning approaches.
+Time series can be found in various emerging applications such as sensor networks, smart buildings, social media networks or Internet of Things (IoT) \cite{Najmeddine2012,Nguyen2012,Yin2008}. They are involved in many learning problems such as recognizing a human movement in a video, detect a particular operating mode, etc. \cite{PANAGIOTAKIS2008,Ramasso2008}. In \textbf{clustering} problems, one would like to organize similar time series together into homogeneous groups. In \textbf{classification} problems, the aim is to assign time series to one of several predefined categories (e.g., different types of defaults in a machine). In \textbf{regression} problems, the objective is to predict a continuous value from observed time series (e.g., forecasting the measurement of a power meter from pressure and temperature sensors). Our work focus on classification and regression problems. However, due to their temporal and structured nature, time series constitute complex data to be analyzed by classic Machine Learning approaches.
 
 To overcome this complexity, some authors propose to extract representative features from time series. Fig.~\ref{fig:time_series_example} illustrates a model for time series proposed by Chatfield in \cite{Chatfield2004}. It states that a time series can be decomposed into 3 components: a trend, a cycle (periodic component) and a residual (irregular variations). 
 
@@ -51,7 +51,7 @@ In this section, we review some basic terminology in Machine Learning. First, we
 \subsection{Classification, regression}
 The idea of Machine Learning (also refer as Pattern Learning or Pattern Recognition) is to imitate with algorithms executed on computers, the ability of living beings to learn from examples. For instance, to teach a child how to read letters, we show him during the training phase labeled examples of letters ('A', 'B', 'C', etc.) written in different styles and fonts. We don't give him a complete and analytic description of the topology of the characters but labeled examples. After the training phase (testing phase), we want the child to be able to recognize and to label correctly the letters that have been seen during the training, and also to generalize to new instances \cite{Dreyfus2006}. 
 
-Let $\textbf{X}=\{\textbf{x}_i,y_i\}_{i=1}^n$ be a training set of $n$ samples $\textbf{x}_i$ (time series in our case) and $y_i$ their corresponding labels. The aim of Machine Learning is to learn a relation (model) $f$ between the samples $\textbf{x}_i$ and their labels $y_i$ based on examples. This relationship can include static relationships, correlations, dynamic relationship, etc. After the training phase based on labeled examples $(\textbf{x}_i,y_i)$, the model $f$ has to be able to generalize on the testing phase, i.e., to give a correct prediction $y_j$ for new instances $\textbf{x}_j$ that haven't been seen during the training.
+Let $X=\{\textbf{x}_i,y_i\}_{i=1}^n$ be a training set of $n$ samples $\textbf{x}_i$ (time series in our case) and $y_i$ their corresponding labels. The aim of Machine Learning is to learn a relation (model) $f$ between the samples $\textbf{x}_i$ and their labels $y_i$ based on examples. This relationship can include static relationships, correlations, dynamic relationship, etc. After the training phase based on labeled examples $(\textbf{x}_i,y_i)$, the model $f$ has to be able to generalize on the testing phase, i.e., to give a correct prediction $y_j$ for new instances $\textbf{x}_j$ that haven't been seen during the training.
 
 When $y_i$ are class labels (e.g., class 'A', 'B', 'C' in the case of child's reading), learning the model $f$ is a classification problem; when $y_i$ is a continuous value (e.g., the energy consumption in a building), learning $f$ is a regression problem. Both problems corresponds to supervised learning as $\textbf{x}_i$ and $y_i$ are known during the training phase \cite{Bishop2006,Dreyfus2006,Duda1973}. For both problems, when a part of the labels $y_i$ are known and an other part of $y_i$ is unknown during training, learning $f$ is a semi-supervised problem \todo{[biblio semi-supervisé]}. Note that when the labels $y_i$ are unknown, learning $f$ refers to a clustering problem (unsupervised learning) \cite{Jain1999,Chen1996}, not managed in our work.
 
@@ -65,8 +65,8 @@ When $y_i$ are class labels (e.g., class 'A', 'B', 'C' in the case of child's re
 A key objective of learning algorithms is to build models $f$ with good generalization abilities, i.e., models $f$ that correctly predict the class labels $y_j$ of new unknown samples $\textbf{x}_j$. Fig. \ref{fig:LearningFramework} shows a general approach for solving Machine Learning problems. In general, a dataset can be divided into 3 sub-datasets (illustrated in Fig. \ref{fig:Dataset}):
 \begin{itemize}
 	\item A \textbf{training set} $X=\{(\textbf{x}_i,y_i)\}_{i=1}^n$ consisting of $n$ samples $\textbf{x}_i$ whose labels $y_i$ are known. The training set is used to build the supervised model $f$. 
-	\item A \textbf{test set} $X_T=\{(\textbf{x}_j,y_j)\}_{j=1}^m$, which consists of $m$ samples $\textbf{x}_j$ which labels $y_j$ are also known but the model $f$ is applied to predict the label $\hat{y_j}$ of samples $\textbf{x}_j$. The test is used to evaluate the performance of the learnt model between $\hat{y_j}$ and $y_j$. 
-	\item An \textbf{evaluation set} $X_E=\{(\textbf{x}_l,y_l)\}_{l=1}^L$, which consists of $L$ samples $\textbf{x}_l$ with labels $y_l$ are unknown. The evaluation set is in general a new dataset on which we would like to apply the learnt algorithm. 
+	\item A \textbf{test set} $X_{Test}=\{(\textbf{x}_j,y_j)\}_{j=1}^m$, which consists of $m$ samples $\textbf{x}_j$ which labels $y_j$ are also known but the model $f$ is applied to predict the label $\hat{y_j}$ of samples $\textbf{x}_j$. The test is used to evaluate the performance of the learnt model between $\hat{y_j}$ and $y_j$. 
+	\item An \textbf{evaluation set} $X_{Eval}=\{(\textbf{x}_l,y_l)\}_{l=1}^L$, which consists of $L$ samples $\textbf{x}_l$ with labels $y_l$ are unknown. The evaluation set is in general a new dataset on which we would like to apply the learnt algorithm. 
 \end{itemize}
 
 \begin{figure}[h!]
@@ -76,7 +76,7 @@ A key objective of learning algorithms is to build models $f$ with good generali
 \label{fig:Dataset}
 \end{figure}
 
-%\mycomment[MR]{refaire cette partie là} First, a training set $X=\{(\textbf{x}_i,y_i)\}_{i=1}^n$ consisting of $m$ samples $\textbf{x}_i$ whose labels $y_i$ are known is provided. The training set is used to build the supervised model $f$. Then, the model is applied to the test set $X_T=\{(\textbf{x}_j,y_j)\}_{j=1}^m$, which consists of samples $\textbf{x}_j$ with unknown labels $y_j$. The test is used to evaluate the performance of the learnt model. 
+%\mycomment[MR]{refaire cette partie là} First, a training set $X=\{(\textbf{x}_i,y_i)\}_{i=1}^n$ consisting of $m$ samples $\textbf{x}_i$ whose labels $y_i$ are known is provided. The training set is used to build the supervised model $f$. Then, the model is applied to the test set $X_{Test}=\{(\textbf{x}_j,y_j)\}_{j=1}^m$, which consists of samples $\textbf{x}_j$ with unknown labels $y_j$. The test is used to evaluate the performance of the learnt model. 
 
 \begin{figure}[h!]
 	\centering
@@ -86,7 +86,7 @@ A key objective of learning algorithms is to build models $f$ with good generali
 \end{figure}
 
 
-The errors committed by a classification or regression model are divided into two types: training errors and generalization errors (testing errors). \textbf{Training error} is the number of misclassification errors in classification (Root Mean Square Error or other error measures used in regression) committed on training samples $\textbf{x}_i$, whereas \textbf{generalization error} is the expected error of the model $f$ on unseen samples $\textbf{x}_j$. A good supervised model $f$ must not only fit the training data $X$ well, it must also accurately classify records it has never seen before (test set $X_T$). In other words, a good model $f$ must have low training error as well as low generalization error. This is important because a model that fits the training data too well can have a poorer generalization error than a model with a higher training error. Such a situation is known as model overfitting (Fig. \ref{fig:Overfitting}).
+The errors committed by a classification or regression model are divided into two types: training errors and generalization errors (testing errors). \textbf{Training error} is the number of misclassification errors in classification (Root Mean Square Error or other error measures used in regression) committed on training samples $\textbf{x}_i$, whereas \textbf{generalization error} is the expected error of the model $f$ on unseen samples $\textbf{x}_j$. A good supervised model $f$ must not only fit the training data $X$ well, it must also accurately classify records it has never seen before (test set $X_{Test}$). In other words, a good model $f$ must have low training error as well as low generalization error. This is important because a model that fits the training data too well can have a poorer generalization error than a model with a higher training error. Such a situation is known as model overfitting (Fig. \ref{fig:Overfitting}).
 
 \begin{figure}[h!]
 	\centering
@@ -122,15 +122,22 @@ An alternative is cross-validation with $v$ folds, illustrated in Fig. \ref{fig:
 %	\item Classification Error et test de significativité
 %	\item Regression Error
 %\end{itemize}
-\subsubsection{Classification}
-The performance of a classification model is based on the counts of test samples $\textbf{x}_j$ correctly and incorrectly predicted by the model $f$. These counts are tabulated in a table called the confusion matrix. Table \ref{fig:ConfusionMatrix} illustrates the concept for a binary classification problem. Each cell $f_{ij}$ the table stands for the number of samples from class $i$ predicted to be of class $j$. Based on this matrix, the number of correct predictions made by the model is $\sum_{i=1}^C f_{ii}$, where $C$ is the number of classes. Equivalently, the number of of incorrect prediction is $1-\sum_{i=1}^C f_{ii}$.
-\todo{Refaire le tableau}
-\begin{figure}[h!]
+\subsubsection{Classification evaluation}
+The performance of a classification model is based on the counts of test samples $\textbf{x}_j$ correctly and incorrectly predicted by the model $f$. These counts are tabulated in a table called the confusion matrix. Table \ref{fig:ConfusionMatrix} illustrates the concept for a binary classification problem. Each cell $f_{ij}$ the table stands for the number of samples from class $i$ predicted to be of class $j$. Based on this matrix, the number of correct predictions made by the model is $\sum_{i=1}^C f_{ii}$, where $C$ is the number of classes. Equivalently, the ratio of incorrect predictions is $1-\sum_{i=1}^C f_{ii}$.
+
+\begin{table}[h!]
 	\centering
-	\includegraphics[width=0.4\linewidth]{images/ConfusionMatrix}
-	\caption{Confusion matrix for a 2-class problem.}
+	\begin{tabular}{|c|c|c|c|}
+		\hline      &  & \multicolumn{2}{c|} {Predicted class } \\ 
+		\cline{3-4} &  & Class = 1 & Class = 0  \\ 
+		\hline  \multirow{2}{*}{Actual Class } & Class = 1  & $f_{11}$ & $f_{10}$ \\ 
+		\cline{2-4}  & Class = 0  & $f_{01}$ & $f_{00}$ \\ 
+		\hline 
+	\end{tabular}
+	\caption{Confusion matrix for a 2-class problem.} 
 	\label{fig:ConfusionMatrix}
-\end{figure}
+\end{table}
+
 
 To summarize the information, it generally more convenient to use performance metrics such as the classification accuracy ($Acc$) or error rate ($Err$). This allows to compare several models with a single number. Note that $Err = 1-Acc$.
 \begin{align}
@@ -138,27 +145,27 @@ Acc & = \frac{\text{Number of correct predictions}}{\text{Total number of predic
 Err & = \frac{\text{Number of wrong predictions}}{\text{Total number of predictions}} = \frac{\sum\limits_{i,j=1, i \neq j}^{C} f_{ij}}{\sum\limits_{i,j=1}^{C} f_{ij}}
 \end{align}
 
-Using these performance metrics allows to compare the performance of different classifiers $f$. It allows to determine in particular whether one learning algorithm outperforms another on a particular learning task on a given test dataset $X_T$. However, depending on the size of the test dataset, the difference in error rate $Err$ between two classifiers may not be statistically significant. Snedecor \& Cochran proposed in 1989 a statistical test based on measuring the difference between two learning algorithms \cite{Cochran1977}. It has been used by many researchers \cite{Dietterich1997,Dietterich1995}.
+Using these performance metrics allows to compare the performance of different classifiers $f$. It allows to determine in particular whether one learning algorithm outperforms another on a particular learning task on a given test dataset $X_{Test}$. However, depending on the size of the test dataset, the difference in error rate $Err$ between two classifiers may not be statistically significant. Snedecor \& Cochran proposed in 1989 a statistical test based on measuring the difference between two learning algorithms \cite{Cochran1977}. It has been used by many researchers \cite{Dietterich1997,Dietterich1995}.
 
-Let consider 2 classifiers $f_A$ and $f_B$. We test these classifiers on the test set $X_T$ and denote $p_A$ and $p_B$ their respective error rates. The intuition of this statistical test is that when algoithm A classifies an example $\textbf{x}_j$ from the test set $X_T$, the probability of misclassification is $p_A$. Thus, the number of misclassification of $m$ test examples is a binomial random variable with mean $m.p_A$ and variance $p_A(1-p_A)m$. The binomial distribution can be approximated by a normal distribution when $m$ has a reasonable value (Law of large numbers). The difference between two independent normally distributed random variable is also normally distributed. Thus, the quantity $p_A-p_B$ is a normally distributed random variable. Under the null hypothesis (the two algorithm should have the same error rate), this will have a mean of zero and a standard error of:
+Let consider 2 classifiers $f_A$ and $f_B$. We test these classifiers on the test set $X_{Test}$ and denote $p_A$ and $p_B$ their respective error rates. The intuition of this statistical test is that when algoithm A classifies an example $\textbf{x}_j$ from the test set $X_{Test}$, the probability of misclassification is $p_A$. Thus, the number of misclassification of $m$ test examples is a binomial random variable with mean $m.p_A$ and variance $p_A(1-p_A)m$. The binomial distribution can be approximated by a normal distribution when $m$ has a reasonable value (Law of large numbers). The difference between two independent normally distributed random variables is also normally distributed. Thus, the quantity $p_A-p_B$ is a normally distributed random variable. Under the null hypothesis (the two algorithm should have the same error rate), this will have a mean of zero and a standard error $se$ of:
 \begin{equation}
-se = \sqrt{\frac{2p(1-p)}{n}}
+se = \sqrt{\frac{2p(1-p)}{m}}
 \end{equation}
 \noindent where $p=\frac{p_A+p_B}{2}$ is the average of the two error probabilities. From this analysis, we obtain the statistic:
 \begin{equation}
-z=\frac{p_A-p_B}{\sqrt{2p(1-p)/n}}
+z=\frac{p_A-p_B}{\sqrt{2p(1-p)/m}}
 \end{equation}
 \noindent which has (approximatively) a standard normal distribution. We can reject the null hypothesis if $|z| > Z_{0.975} = 1.96$ (for a 2-sided test with probability of incorrectly rejecting the null hypothesis of 0.05).
 
 
-\subsubsection{Regression}
+\subsubsection{Regression evaluation}
 As the concept of classes is restricted to classification problems, the performance of a regression model $f$ is based on metrics that measure the difference between the predicted label $\hat{y}_j$ and the known label $y_j$. The Mean Absolute Error function (MAE) computes the mean absolute error, a risk metric corresponding to the expected value of the absolute error loss or L1-norm loss.
 
 \begin{equation}
 MAE(\hat{y},y) = \frac{1}{m} \sum_{j=1}^m|\hat{y}_j-y_j|
 \end{equation}
 
-A commonly used performance metrics is the Root Mean Squared Error function (RMSE) that computes the root of the mean square error, a risk metric corresponding to the expected value of the squared (quadratic) error loss or loss.
+A commonly used performance metrics is the Root Mean Squared Error function (RMSE) that computes the root of the mean square error, a risk metric corresponding to the expected value of the squared (quadratic) error loss.
 
 \begin{equation}
 RMSE(\hat{y},y) = \sqrt{\frac{1}{m} \sum_{j=1}^m(\hat{y}_j-y_j)^2}
@@ -174,20 +181,22 @@ R^2(\hat{y},y) = 1- \frac{\sum_{j=1}^m (\hat{y}_j-y_j)^2}{\sum_{j=1}^m (\bar{y}-
 
 
 \subsection{Data pre-processing}
-Real dataset are often subjected to noise or data scaling. Before applying any learning protocol, it is often necessary to pre-process the data when they are numerical. Part 2 of Sarle's Neural Networks FAQ Sarle (1997) \footnote{\url{http://www.faqs.org/faqs/ai-faq/neural-nets/}} explains the importance of theses considerations for neural network but they can be applied to any learning algorithms. The main advantage of scaling is to avoid attributes in greater numeric ranges to dominate those in smaller numeric ranges. Another advantage is to avoid numerical difficulties during the calculation. For example, in the case of SVM, because kernel values usually depend on the inner products of feature vectors, i.e. the linear kernel and the polynomial kernel, large attribute values might cause numerical problems. 
+Real dataset are often subjected to noise or data scaling. Before applying any learning protocol, it is often necessary to pre-process the data: data scaling, data filtering (e.g., to delete noise), etc. We focus on data scaling in our work.
 
-In most cases, it is recommended to scale each attribute to the range [-1; +1] or [0; 1]. Many normalization methods have been proposed such as Min/Max normalization, Z-normalization or normalization of the log normalization \todo{références normalization}. Let $\mu_j$ and $\sigma_j$ be the mean and the standard deviation of a variable $X_j$, applying the Z-normalized variable $X^{norm}_j$ is given by:
+Part 2 of Sarle's Neural Networks FAQ (1997) \footnote{\url{http://www.faqs.org/faqs/ai-faq/neural-nets/}} explains the importance of theses considerations for neural network but they can be applied to any learning algorithms. The main advantage of scaling is to avoid attributes in greater numeric ranges to dominate those in smaller numeric ranges. Another advantage is to avoid numerical difficulties during the calculation. For example, in the case of SVM, because kernel values usually depend on the inner products of feature vectors, i.e. the linear kernel and the polynomial kernel, large attribute values might cause numerical problems. 
+
+In most cases, it is recommended to scale each attribute to the range [-1; +1] or [0; 1]. Many normalization methods have been proposed such as Min/Max normalization, Z-normalization or normalization of the log normalization \todo{références normalization}. Let $X=\{\textbf{x}_i,y_i\}_{i=1}^n$ be a training set, $\textbf{x}_i$ being a sample described by $T$ features $\textbf{X}_1, \ldots \textbf{X}_T$. We define $\mu_j$ and $\sigma_j$ as the mean and the standard deviation of a variable $\textbf{X}_j$, applying the Z-normalized variable $\textbf{X}^{norm}_j$ is given by:
 \begin{equation}
-X^{norm}_j = \frac{X_j-\mu_j}{\sigma_j}
+\textbf{X}^{norm}_j = \frac{\textbf{X}_j-\mu_j}{\sigma_j}
 \end{equation}
-Note that the underlying assumption supposes that the variable $X_j$ is normally distributed: data evolves between $[-\infty;+\infty]$ and are coming from a Gaussian process. In some cases, the data are skewed such as monetary amounts, incomes or distance measures. These data are often log-normally distributed, e.g., the log of the data is normally distributed (Fig. \ref{fig:SkewedData}). The underlying idea is to take the log of the data ($X^{log}_j$) to restore the symmetry to it, and then, to apply a Z-normalization of this transformation:
+Note that the underlying assumption supposes that the variable $\textbf{X}_j$ is normally distributed: data evolves between $[-\infty;+\infty]$ and are coming from a Gaussian process. In some cases, the data are skewed such as monetary amounts, incomes or distance measures. These data are often log-normally distributed, e.g., the log of the data is normally distributed (Fig. \ref{fig:SkewedData}). The underlying idea is to take the log of the data ($\textbf{X}^{log}_j$) to restore the symmetry, and then, to apply a Z-normalization of this transformation:
 \begin{align}
-X^{log}_j 		& = \ln(X_j); \\
-X^{log,norm}_j 	& = \frac{X^{log}_j-\mu^{log}_j}{\sigma^{log}_j} \\
-X^{norm}_j 		& = \exp(X^{log,norm}_j)
+\textbf{X}^{log}_j 		& = \ln(\textbf{X}_j); \\
+\textbf{X}^{log,norm}_j & = \frac{\textbf{X}^{log}_j-\mu^{log}_j}{\sigma^{log}_j} \\
+\textbf{X}^{norm}_j 	& = \exp(\textbf{X}^{log,norm}_j)
 \end{align}
 
-\noindent where $\ln$ denotes the Natural Logarithm function, $\mu^{log}_j$ and $\sigma^{log}_j$ the mean and the standard deviation of a variable $X^{log}_j$.
+\noindent where $\ln$ denotes the Natural Logarithm function, $\mu^{log}_j$ and $\sigma^{log}_j$ the mean and the standard deviation of a variable $\textbf{X}^{log}_j$.
 
 \begin{figure}
 	\centering
@@ -197,10 +206,11 @@ X^{norm}_j 		& = \exp(X^{log,norm}_j)
 \end{figure}
 \footnotetext{source: \url{http://www.r-statistics.com/2013/05/log-transformations-for-skewed-and-wide-distributions-from-practical-data-science-with-r/}}
 
-Finally, we recall some precautions to the practitioner in the learning protocol, experimented by Hsu \& al. in \cite{Hsu2008} in the context of Support Vector Machine (SVM). First, training and testing data must be scaled using the same method. Second, training and testing data must not be scaled separately. Third, the whole dataset must not be scaled together at the same time. These often leads to poorer results. A proper way to do normalization is to scale the training data, store the parameters of the normalization (i.e. $\mu_i$ and $\sigma_i$ for Z-normalization), then apply the same normalization to the testing data. 
+Finally, we recall some precautions to the practitioner in the learning protocol, experimented by Hsu \& al. in the context of Support Vector Machine (SVM) \cite{Hsu2008}. First, training and testing data must be scaled using the same method. Second, training and testing data must not be scaled separately. Third, the whole dataset must not be scaled together at the same time. These often leads to poorer results. A proper way to do normalization is to scale the training data, store the parameters of the normalization (i.e. $\mu_i$ and $\sigma_i$ for Z-normalization), then apply the same normalization to the testing data. 
 
 
-%-------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\newpage
 \section{Machine Learning algorithms}
 
 Many popular algorithms have been proposed in Machine Learning, in the context of supervised learning, such as the Deep neural network, the Decision tree or the Relevance Vector Machine (RVM). We focus on $k$-Nearest Neighbors ($k$-NN) and Support Vector Machine (SVM). The interest of these two is that they are based on the comparison of samples (time series in our case) through a distance measure, notion detailed in the next chapters.  
@@ -217,19 +227,17 @@ Many popular algorithms have been proposed in Machine Learning, in the context o
 %	\item Donner les arguments qui permettent de dire pourquoi utiliser un 1-NN permet de faire une évaluation de métriques (Ding)
 %\end{itemize}
 
-A simple \mycomment[MR]{principle au la place de approach to classify samples}approach to classify samples is to consider that "close" samples have a great probability to belong to the same class. Given a test sample $\textbf{x}_j$, one can decide that $\textbf{x}_j$ belong to the same class of its nearest neighbor in the training set. More generally, we can consider the $k$ nearest neighbors of $\textbf{x}_j$. The class $y_j$ of the test sample $\textbf{x}_j$ is assigned with a voting scheme among them, i.e., using the majority of the class of nearest neighbors. This algorithm is refer as the $k$-nearest neighbors algorithm ($k$-NN) 
+A simple approach to classify samples is to consider that "close" samples have a great probability to belong to the same class. Given a test sample $\textbf{x}_j$, one can decide that $\textbf{x}_j$ belong to the same class of its nearest neighbor in the training set. More generally, we can consider the $k$ nearest neighbors of $\textbf{x}_j$. The class $y_j$ of the test sample $\textbf{x}_j$ is assigned with a voting scheme among them, i.e., using the majority of the class of nearest neighbors. This algorithm is refer as the $k$-Nearest Neighbors algorithm ($k$-NN) 
 \cite{Cover1967b,Duda1973}. Fig. \ref{fig:kNN_example} illustrates the concept for a neighborhood of $k=3$ and $k=5$.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.4\linewidth]{images/kNN_example}
-\caption{Example of $k$-NN classification. The test sample (green circle) is classified either to the first class (blue squares) or to the second class (red triangles). If $k = 3$ (solid line circle) it is assigned to the second class because there are 2 triangles and only 1 square inside the inner circle. If $k = 5$ (dashed line circle) it is assigned to the first class (3 squares vs. 2 triangles inside the outer circle).}
+\caption{Example of $k$-NN classification. The test sample (green circle) is classified either to the first class (red stars) or to the second class (blue triangles). If $k = 3$ (solid line circle) it is assigned to the second class because there are 2 triangles and only 1 star inside the inner circle. If $k = 5$ (dashed line circle) it is assigned to the first class (3 stars vs. 2 triangles inside the outer circle).}
 \label{fig:kNN_example}
 \end{figure}
 
-\todo[size=\tiny]{By the very nature of its decision rule, the performance of $k$-NN classification depends crucially on the way that distances are computed between different examples}.
-
-\noindent In the $k$-NN algorithm, the notion of "closeness" between samples is based on the computation of a metric \footnote{A clarification of the terms metric, distance, dissimilarity, etc. will be given in Chapter \ref{sec:Chapter_metrics}. For now, we refer all of them as metrics.}. Let $D$ be a metric. Usually, for static data, standard metrics are the Euclidean distance, the Minkowski distance or the Mahalanobis distance\footnote{A recall of these metrics will be in Chapter \ref{sec:Chapter_metrics}.}. Solving the 1-NN classification problem is equivalent to solve the optimization problem: \\
+\noindent In the $k$-NN algorithm, the notion of "closeness" between samples is based on the computation of a metric \footnote{A clarification of the terms metric, distance, dissimilarity, etc. will be given in Chapter \ref{sec:Chapter_metrics}. For now, we refer all of them as metrics.} $D$. Usually, for static data, standard metrics are the Euclidean distance, the Minkowski distance or the Mahalanobis distance\footnote{A recall of these metrics will be in Chapter \ref{sec:Chapter_metrics}.}. Considering a training set $X$ of $n$ samples, solving the 1-NN classification problem is equivalent to solve the optimization problem: \\
 \noindent For a new sample $\textbf{x}_j$, $\forall i \in \{1...n\}$,
 \begin{equation}
 y_j = y_{i^*}
@@ -240,7 +248,7 @@ The $k$-NN algorithm can be extended to estimate continous labels (regression pr
 \begin{equation}
 y_j = \sum_{i=1}^{k} y_{i}
 \end{equation}
-where $i$ corresponds to the index of the $k$-nearest neighbors\todo{[biblio regression kNN]}. There exists other variants of the $k$-NN algorithms: in a weighed $k$-NN, the approach consists in weighting each neighbors labels $y_{i}$ by a factor equal to the inverse of the distance $\frac{1}{D(\textbf{x}_i, \textbf{x}_j)}$ \todo{[biblio kNN pondéré]}; in a fuzzy $k$-NN, the idea is to assign memberships of samples $\textbf{x}_j$ to classes. The class membership is a function of the sample’s distance $D(\textbf{x}_i, \textbf{x}_j)$ from its $k$-NN training samples\todo{[biblio fuzzy kNN]}; \mycomment[MR]{+ $k$-NN crédibiliste}
+where $i$ corresponds to the index of the $k$-nearest neighbors\todo{[biblio regression kNN]}. There exists other variants of the $k$-NN algorithms: in a weighed $k$-NN, the approach consists in weighting each neighbors labels $y_{i}$ by a factor equal to the inverse of the distance $\frac{1}{D(\textbf{x}_i, \textbf{x}_j)}$ \todo{[biblio kNN pondéré]}; in a fuzzy $k$-NN, the idea is to assign memberships of samples $\textbf{x}_j$ to classes. The class membership is a function of the sample’s distance $D(\textbf{x}_i, \textbf{x}_j)$ from its $k$-NN training samples\todo{[biblio fuzzy kNN]}; in a credibilist $k$-NN\mycomment[MR]{+ $k$-NN crédibiliste} \cite{Denoeux1995}
 
 Despite its simplicity, the $k$-NN algorithm presents many advantages and have been shown to be successful on time series classification problems \cite{Belongie2002,Xi2006a,Ding2008}. One main advantage is that a 1-NN classifier can be used to evaluate and compare the efficacy of different metrics \cite{Ding2008}. First, the underlying metric is critical in the performance of the 1-NN classifier \cite{Tan2005b}. Thus, the accuracy of the 1-NN classifier directly reflects the effectiveness of the metric. Second, 1-NN classifier is easy to implement and doesn't need to learn any hyper-parameters, which make it straightforward for anyone to reproduce results. All of this advantages allows one who want to evaluate a benchmark of metrics. Other methods to compare metrics exists such as clustering with small data sets which are not statistically significant, or compare the compactness of the metric \cite{Morse2007,Vlachos2006}. The 1-NN algorithm will be used in our experiments to compare the performances different metrics used for time series.
 
@@ -289,7 +297,7 @@ Let consider a classification problem with 2 classes ($y_i= \pm 1$). The objecti
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.7\linewidth]{images/Plusieurs_separatrice_lineaire}
+\includegraphics[width=0.6\linewidth]{images/Plusieurs_separatrice_lineaire2}
 \caption{Example of linear classifiers in a 2-dimensional plot. For a set of points of classes +1 and -1 that are linearly separable, there exists an infinite number of separating hyperplanes corresponding to $\textbf{w}.\textbf{x} + b = 0.$}
 \label{fig:Plusieurs_separatrice_lineaire}
 \end{figure}
@@ -298,8 +306,8 @@ Let consider a classification problem with 2 classes ($y_i= \pm 1$). The objecti
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{images/Separatrice_lineaire_avec_marges}
-\caption{The argument inside the decision function of a classifier is $\textbf{w}.\textbf{x} + b$. The separating hyperplane corresponding to $\textbf{w}.\textbf{x} + b = 0$ is shown as a line in this 2-dimensional plot. This hyperplane separates the two classes of data with points on one side labeled $y_i = +1$ ($\textbf{w}.\textbf{x} + b \geq 0$) and points on the other side labeled $y_i=-1$ ($\textbf{w}.\textbf{x} + b < 0$). Support vectors are circled in blue and lies on the hyperplanes $\textbf{w}.\textbf{x} + b = +1$ and $\textbf{w}.\textbf{x} + b = -1$}
+\includegraphics[width=0.6\linewidth]{images/Separatrice_lineaire_avec_marges2}
+\caption{The argument inside the decision function of a classifier is $\textbf{w}.\textbf{x} + b$. The separating hyperplane corresponding to $\textbf{w}.\textbf{x} + b = 0$ is shown as a line in this 2-dimensional plot. This hyperplane separates the two classes of data with points on one side labeled $y_i = +1$ ($\textbf{w}.\textbf{x} + b \geq 0$) and points on the other side labeled $y_i=-1$ ($\textbf{w}.\textbf{x} + b < 0$). Support vectors are circled in purple and lies on the hyperplanes $\textbf{w}.\textbf{x} + b = +1$ and $\textbf{w}.\textbf{x} + b = -1$}
 \label{fig:Separatrice_lineaire_avec_marges}
 \end{figure}
 
@@ -321,12 +329,12 @@ This is a constrained optimization problem in which we minimize an objective fun
 		\frac{1}{2}||\textbf{w}||^2_2}^{Regularization}
 	+ C \overbrace{\sum\limits_{i=1}^{n}\xi_i(\textbf{w}; b; x_i; y_i)}^{Loss} \right) 
 	\label{eq:objectiveSVM2}\\
-	& \textbf{s.t. } y_i(\textbf{w}.\textbf{x}_i+b) \geq 1 -\xi_i \label{eq:constraintsSVM2} \\
-	&  \xi_i \geq 0 \label{eq:constraintsSVM20}
+	& \textbf{s.t. } y_i(\textbf{w}.\textbf{x}_i+b) \geq 1 -\xi_i(\textbf{w}; b; x_i; y_i) \label{eq:constraintsSVM2} \\
+	&  \xi_i(\textbf{w}; b; x_i; y_i) \geq 0 \label{eq:constraintsSVM20}
 	\end{align}
 \noindent where $C > 0$ is a penalty hyper-parameter. 
 	
-This formulation is referred as the primal soft margin problem. It is quadratic programming optimization problem subjected to constraints. Thus, it is a convex problem: any local solutions is a global solution. The objective function in Eq.~\ref{eq:objectiveSVM2} is made of two terms. The first one, the regularization term, penalize the complexity of the model and thus, controls the ability of the algorithm to generalize on new samples. The second one, the loss term, is an adaptation term to the data. The hyper-parameter $C$ is a trade-off between the regularization and the loss term. When $C$ tends to $+\infty$, the problem is equivalent to the primal hard margin problem. The hyper-parameter $C$ is learnt during the training phase. 
+This formulation is referred as the primal soft margin problem. It is quadratic programming optimization problem subjected to constraints. Thus, it is a convex problem: any local solutions is a global solution. The objective function in Eq.~\ref{eq:objectiveSVM2} is made of two terms. The first one, the regularization term, penalizes the complexity of the model and thus, controls the ability of the algorithm to generalize on new samples. The second one, the loss term, is an adaptation term to the data. The hyper-parameter $C$ is a trade-off between the regularization and the loss term. When $C$ tends to $+\infty$, the problem is equivalent to the primal hard margin problem. The hyper-parameter $C$ is learnt during the training phase. 
 
 For SVM, the two common loss functions $\xi_i$ are $\max(1-y_i \textbf{w}. \textbf{x}_i, 0)$ and $[\max(1-y_i \textbf{w}.\textbf{x}_i, 0)]^2$. The former is referred to as L1-Loss and the latter is L2-Loss function. L2-loss function will penalize more slack variables $\xi_i$ during training. Theorically, it should lead to less error in training and poorer generalization in most of the case.
 
@@ -343,7 +351,7 @@ From the primal formulation, using a L2-Regularizer, it is possible to have an e
 First, to simplify the calculation development, let consider the hard margin formulation in Eq. \ref{eq:objectiveSVM2}, \ref{eq:constraintsSVM2} and \ref{eq:constraintsSVM20} with a L1-Loss function. As a constrained optimization problem, the formulation is equivalent to the minimization of a Lagrange function $L(\textbf{w},b)$, consisting of the sum of the objective function and the $n$ constraints multiplied by their respective Lagrange multipliers $\boldsymbol{\alpha} = [\alpha_1, \ldots, \alpha_n]'$: 
 \begin{align}
 	& \argmax_{\boldsymbol{\alpha}} \left( L(\textbf{w},b) = \frac{1}{2}(\textbf{w}.\textbf{w})-\sum\limits_{i=1}^{n}\alpha_i(y_i(\textbf{w}.\textbf{x}_i+b)-1) \right) \label{eq:Lagrange} \\
-	& \textbf{s.t. KKT } \forall i = 1...n: \nonumber \\
+	& \textbf{s.t. } \forall i = 1...n: \nonumber \\
 	& \alpha_i \geq 0 \label{KKT1}\\
 	& y_i(\textbf{w}.\textbf{x}_i+b)-1 \geq 0 \label{KKT2}\\
 	& \alpha_i (y_i(\textbf{w}.\textbf{x}_i+b)-1) = 0 \label{KKT3}
@@ -391,7 +399,7 @@ At the optimality point, only a few number of datapoints have $\alpha_i^* > 0$ a
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.6\linewidth]{images/SVM_SV}
+\includegraphics[width=0.6\linewidth]{images/SVM_SV2}
 \caption{Obtained hyperplane after a dual resolution (full blue line). The 2 canonical hyperplanes (dash blue line) contains the support vectors whose $\alpha_i > 0$. Other points have their $\alpha_i = 0$ and the equation of the hyperplane is only affected by the support vectors.}
 \label{fig:SVM_SV}
 \end{figure}
@@ -400,11 +408,11 @@ At the optimality point, only a few number of datapoints have $\alpha_i^* > 0$ a
 \subsubsection{Kernel trick}
 The concept of kernels was introduced by Aizerman \& Al in 1964 to design potential functions in the context of pattern recognition \cite{Aizerman1964}. The idea was re-introduced in 1992 by Boser \& al. for Support Vector Machine (SVM) and has been received a great number of improvements and extensions to symbolic objects such as text or graphs \cite{Boser1992}.
 
-One theoretical interesting property of SVM if that it has been shown that the generalization error bound does not depend on the dimensionality $T$ of the space \cite{Schlkopf2013}. From the dual objective in Eq. \ref{eq:dualSVM}, we note that the samples $\textbf{x}_i$ are only involves in a dot-product. Therefore, we can map these samples $\textbf{x}_i$ into a higher dimensional hyperspace, called the feature space, through the replacement:
+One theoretical interesting property of SVM is that it has been shown that the generalization error bound does not depend on the dimensionality $T$ of the space \cite{Schlkopf2013}. From the dual objective in Eq. \ref{eq:dualSVM}, we note that the samples $\textbf{x}_i$ are only involves in a dot-product. Therefore, we can map these samples $\textbf{x}_i$ into a higher dimensional hyperspace, called the feature space, through the replacement:
 \begin{equation}
 	(\textbf{x}_i . \textbf{x}_j) \rightarrow \Phi(\textbf{x}_i) . \Phi(\textbf{x}_j) 
 \end{equation}
-\noindent where $\Phi$ is the mapping function. The intuition behind is that in many datasets, it is not possible to find a hyperplan that can separate the two classes in the input space if the problem is not linearly separable. However, by applying a transformation $\Phi$, data might become linearly separable in a higher dimensional space (feature space). Fig. \ref{fig:SVM_nonlinear} illustrates the idea: in the original 2-dimensional space (left), the two classes can't be separated by a line. However, with a third dimension such that the $+1$ labeled points are moved forward and the $-1$ labeled moved back the two classes become separable.
+\noindent where $\Phi$ is the mapping function. The intuition behind is that for many datasets, it is not possible to find a hyperplan that can separate the two classes in the input space if the problem is not linearly separable. However, by applying a transformation $\Phi$, data might become linearly separable in a higher dimensional space (feature space). Fig. \ref{fig:SVM_nonlinear} illustrates the idea: in the original 2-dimensional space (left), the two classes can't be separated by a line. However, with a third dimension such that the $+1$ labeled points are moved forward and the $-1$ labeled moved back the two classes become separable.
 
 In most of the case, the mapping function $\Phi$ does not need to be known since it will be defined by the choice of a kernel: $K(\textbf{x}_i,\textbf{x}_j)= \Phi(\textbf{x}_i) . \Phi(\textbf{x}_j)$. We call Gram matrix $G$, the matrix containing all $K(\textbf{x}_i,\textbf{x}_j)$:
 \begin{equation*}
@@ -421,10 +429,11 @@ In most of the case, the mapping function $\Phi$ does not need to be known since
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.9\linewidth]{images/SVM_nonlinear}
-\caption{Left: in two dimensions these two classes of data are mixed together, and it is not possible to separate them by a line: the data is not linearly separable. Right: using a Gaussian kernel, these two classes of data (cross and circle) become separable by a hyperplane in feature space, which maps to the nonlinear boundary shown, back in input space.}
+\includegraphics[width=0.9\linewidth]{images/SVM_nonlinear2}
+\caption{Left: in two dimensions these two classes of data are mixed together, and it is not possible to separate them by a line: the data is not linearly separable. Right: using a Gaussian kernel, these two classes of data (cross and circle) become separable by a hyperplane in feature space, which maps to the nonlinear boundary shown, back in input space.\protect\footnotemark}
 \label{fig:SVM_nonlinear}
 \end{figure}
+\footnotetext{source: \url{http://users.sussex.ac.uk/~christ/crs/ml/lec08a.html}}
 
 Many kernels have been proposed in the literature such as the polynomial, sigmoid, exponential or wavelet kernels \cite{Schlkopf2013}. The most popular ones that we will use in our work are respectively the Linear and the Gaussian (or Radial Basis Function (RBF)) kernels:
 \begin{align}
@@ -488,10 +497,19 @@ Computing the $n^2$ components of the kernel matrix $G = \{K(\textbf{x}_i
 
 
 \noindent \textbf{Interpretation in the primal} \\
-We recall that $\textbf{x}_i$ is a univariate time series of length $T$. We suppose time in dependency. Thus, the $T$ observations $x_{it}$ can be seen as attributes in the representation $\mathbb{R}^T$. In the primal, the weight vector $\textbf{w} = [w_1, \ldots, w_T]'$ contains as many elements as there are variables in the dataset, i.e., $\textbf{w} \in \mathbb{R}^T$. The magnitude of each element in $\textbf{w}$ denotes the importance of the corresponding variable for the classification problem. If the element of $\textbf{w}$ for some variable is 0, these variables are not used for the classification problem.
+We recall that $\textbf{x}_i$ is a univariate time series of length $T$. If we suppose time in dependency, the $T$ observations $x_{it}$ can be seen as attributes in the representation $\mathbb{R}^T$. Geometrically, the vector $\textbf{w}$ represents the direction of the hyperplane (Fig. \ref{fig:SVM_interpretation}). The bias $b$ is equal to the distance of the hyperplane to the origin point $\textbf{x}=\textbf{0}$\footnote{$\textbf{0}$ stands for the null vector: $\textbf{0} = [0, \ldots ,0]^T$}. The orthogonal projection of a sample $\textbf{x}_i$ on the direction $\textbf{w}$ is $P_\textbf{w}(\textbf{x}_i) = \textbf{w}.\textbf{x}_i$. In the soft margin problem, the slack variables $\xi_i$ of the samples $\textbf{x}_i$ that lies within the two canonical hyperplanes are equal to zero. Outside of these canonical hyperplanes, the slack variables $\xi_i > 0$ are equal to the distance to the hyperplane.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{images/SVM_interpretation2}
+	\caption{Geometric representation of SVM.}
+	\label{fig:SVM_interpretation}
+\end{figure}
+
+In the primal, the weight vector $\textbf{w} = [w_1, \ldots, w_T]'$ contains as many elements as there are variables in the dataset, i.e., $\textbf{w} \in \mathbb{R}^T$. The magnitude of each element in $\textbf{w}$ denotes the importance of the corresponding variable for the classification problem. If the element of $\textbf{w}$ for some variable is 0, these variables are not used for the classification problem.
 
 In order to visualize the above interpretation of the weight vector $\textbf{w}$, let us examine several hyperplanes $\textbf{w}.\textbf{x}+b=0$ shown in Fig. \ref*{fig:Weight_interpretation} with $T=2$. Figure (a) shows a hyperplane where elements of $\textbf{w}$ are the same for both variables $\textbf{x}_1$ and $\textbf{x}_2$. The interpretation is that both variables contribute equally for classification of objects into positive and negative. Figure (b) shows a hyperplane where the element of $\textbf{w}$ for $\textbf{x}_1$ is 1, while that for $\textbf{x}_2$ is 0. This is interpreted as that $\textbf{x}_1$ is important but $\textbf{x}_2$ is not. An opposite example is shown in figure (c) where $\textbf{x}_2$ is considered to be important but $\textbf{x}_1$ is not. Finally, figure (d) provides a 3-dimensional example ($T=3$) where an element of $\textbf{w}$ for $\textbf{x}_3$ is 0 and all other elements are equal to 1. The interpretation is that $\textbf{x}_1$ and $\textbf{x}_2$ are important but $\textbf{x}_3$ is not.
-
+\todo{figure à refaire}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.95\linewidth]{Weight_interpretation}
@@ -499,17 +517,9 @@ In order to visualize the above interpretation of the weight vector $\textbf{w}$
 	\label{fig:Weight_interpretation}
 \end{figure}
 
-Another way to interpret how much a variable contributes in the vector $\textbf{w}$ is to express the contribution in percentage. To do that, if the variables $\textbf{X}_j$ of the time series are normalized before learning the SVM model, they evolves in the same range. Thus, the ratio $\frac{w_j}{||\textbf{w}||_2} \times 100$ defines the percentage of contribution for each variable $\textbf{X}_j$ in the SVM model.
-
-Geometrically, the vector $\textbf{w}$ represents the direction of the hyperplane (Fig. \ref{fig:SVM_interpretation}). The bias $b$ is equal to the distance of the hyperplane to the origin point $\textbf{x}=\textbf{0}$\footnote{$\textbf{0}$ stands for the null vector: $\textbf{0} = [0, \ldots ,0]^T$}. The orthogonal projection of a sample $\textbf{x}_i$ on the direction $\textbf{w}$ is $P_\textbf{w}(\textbf{x}_i) = \textbf{w}.\textbf{x}_i$. In the soft margin problem, the slack variables $\xi_i$ of the samples $\textbf{x}_i$ that lies within the two canonical hyperplanes are equal to zero. Outside of these canonical hyperplanes, the slack variables $\xi_i > 0$ are equal to the distance to the hyperplane.
+Another way to interpret how much a variable contributes in the vector $\textbf{w}$ is to express the contribution in percentage. To do that, if the variables $\textbf{X}_j$ of the time series are normalized before learning the SVM model, they evolves in the same range. Thus, the ratio $\frac{w_j}{||\textbf{w}||_2} . 100$ defines the percentage of contribution for each variable $\textbf{X}_j$ in the SVM model.
 
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.5\linewidth]{images/SVM_interpretation}
-	\caption{Geometric representation of SVM.}
-	\label{fig:SVM_interpretation}
-\end{figure}
 
 
 \noindent \textbf{Interpretation in the dual} \\
@@ -602,7 +612,7 @@ More informations about the calculation development can be found in \cite{Bishop
 
 To make the classification or regression of time series, a commonly hypothesis is to consider time series as static data and then to apply classical machine learning algorithms, such as a $k$-Nearest Neighbors ($k$-NN) or Support Vector Machine (SVM) approach. For that, the practitioner has to be careful on the design of his learning framework: data must be separated into a training and testing set, data have to be normalized depending on their distributions, cross-validation must be operated on the training set to learn the best fitting of the hyper-parameters and finally, performance metrics and statistical tests should be used to compare the performances of different classifiers.
 
-A key aspect in $k$-NN and SVM relies on the comparison of time series through metrics. Assuming that time series can be reduced to flat data may be too restrictive. Under such hypothesis and using a standard Euclidean distance, time series are only compared on their amplitude at the same time instant. However, time series are more complex. They may exhibit similar behavior or share similar frequential spectrum. Thus, there is a need to consider time series as an ordered object and to define adapted metrics for time series.
+A key aspect in $k$-NN and SVM relies on the comparison of time series through metrics. Assuming that time series can be reduced to flat data may be too restrictive. Under such hypothesis and using a standard Euclidean distance, time series are only compared on their amplitude at the same time. However, time series are more complex. They may exhibit similar behavior or share similar frequential spectrum. Thus, there is a need to consider time series as an ordered object and to define adapted metrics for time series.
 
 
 %%% Local Variables: 

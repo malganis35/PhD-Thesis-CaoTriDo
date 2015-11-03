@@ -5,52 +5,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {todo}{Figure: Testing a long text string}{2}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{\textbf {Comment [\uppercase {MR}3]:}~ref application time series (Mich\IeC {\`e}le)}{8}{section*.10}
+\contentsline {todo}{\textbf {Comment [\uppercase {MR}3]:}~available?}{7}{section*.10}
 \defcounter {refsection}{0}\relax 
 \contentsline {todo}{[biblio semi-supervis\IeC {\'e}]}{9}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Refaire le tableau}{13}{section*.18}
+\contentsline {todo}{r\IeC {\'e}f\IeC {\'e}rences normalization}{15}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{r\IeC {\'e}f\IeC {\'e}rences normalization}{15}{section*.20}
+\contentsline {todo}{[biblio regression kNN]}{18}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{\textbf {Comment [\uppercase {MR}4]:}~principle au la place de approach to classify samples}{16}{section*.22}
+\contentsline {todo}{[biblio kNN pond\IeC {\'e}r\IeC {\'e}]}{18}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{By the very nature of its decision rule, the performance of $k$-NN classification depends crucially on the way that distances are computed between different examples}{17}{section*.24}
+\contentsline {todo}{[biblio fuzzy kNN]}{18}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{[biblio regression kNN]}{17}{section*.25}
+\contentsline {todo}{\textbf {Comment [\uppercase {MR}4]:}~+ $k$-NN cr\IeC {\'e}dibiliste}{18}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{[biblio kNN pond\IeC {\'e}r\IeC {\'e}]}{17}{section*.26}
+\contentsline {todo}{\textbf {Comment [\uppercase {CTD}5]:}~r\IeC {\'e}\IeC {\'e}crire + compl\IeC {\'e}ter avec Claude}{26}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{[biblio fuzzy kNN]}{18}{section*.27}
+\contentsline {todo}{figure \IeC {\`a} refaire}{28}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{\textbf {Comment [\uppercase {MR}5]:}~+ $k$-NN cr\IeC {\'e}dibiliste}{18}{section*.28}
+\contentsline {todo}{Partie non encore r\IeC {\'e}dig\IeC {\'e}e. A faire \IeC {\`a} la fin.}{31}{section*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{\textbf {Comment [\uppercase {CTD}6]:}~r\IeC {\'e}\IeC {\'e}crire + compl\IeC {\'e}ter avec Claude}{26}{section*.34}
+\contentsline {todo}{Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "amplitudes proches", on obtient une valeur de distance faible. }{35}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Partie non encore r\IeC {\'e}dig\IeC {\'e}e. A faire \IeC {\`a} la fin.}{30}{section*.38}
+\contentsline {todo}{Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "spectres proches", on obtient une valeur de distance faible. }{35}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Reparler avec Mich\IeC {\`e}le et Sylvain de la figure. J'aimerai pouvoir trouver 5 s\IeC {\'e}ries temporelles qui couvrirait ces cas.}{34}{section*.40}
+\contentsline {todo}{Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "formes proches", on obtient une valeur de distance faible. }{36}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "amplitudes proches", on obtient une valeur de distance faible. }{35}{section*.41}
+\contentsline {todo}{A faire \IeC {\`a} la fin, pas urgent}{36}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "formes proches", on obtient une valeur de distance faible. }{36}{section*.42}
+\contentsline {todo}{Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "valeurs proches" mais d\IeC {\'e}cal\IeC {\'e}s, on obtient une valeur de distance faible. (prendre DTW standard avec une fonction de co\IeC {\^u}t $D_E$ par exemple)}{38}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Voir Mich\IeC {\`e}le s'il faut r\IeC {\'e}\IeC {\'e}crire}{36}{section*.43}
+\contentsline {todo}{ref}{39}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "spectres proches", on obtient une valeur de distance faible. }{37}{section*.44}
+\contentsline {todo}{ref}{40}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{A faire \IeC {\`a} la fin, pas urgent}{37}{section*.45}
+\contentsline {todo}{ref}{41}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Proposer une figure plus \IeC {\'e}vidente ou plus simple?}{38}{section*.47}
+\contentsline {todo}{A faire, le positionnement du Metric Learning avec l'aide du papier PRL}{43}{section*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Doit-on d\IeC {\'e}velopper + sur la DTW comme par exemple, donner l'algorithme?}{39}{section*.49}
-\defcounter {refsection}{0}\relax 
-\contentsline {todo}{Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "valeurs proches" mais d\IeC {\'e}cal\IeC {\'e}s, on obtient une valeur de distance faible. (prendre DTW standard avec une fonction de co\IeC {\^u}t $D_E$ par exemple)}{39}{section*.50}
-\defcounter {refsection}{0}\relax 
-\contentsline {todo}{J'ai repris ce que ahlame avait marqu\IeC {\'e} dans le papier PRL mais faudrait il r\IeC {\'e}\IeC {\'e}crire?}{40}{section*.51}
-\defcounter {refsection}{0}\relax 
-\contentsline {todo}{ref}{43}{section*.54}
-\defcounter {refsection}{0}\relax 
-\contentsline {todo}{ref exponentiel}{44}{section*.55}
-\defcounter {refsection}{0}\relax 
-\contentsline {todo}{A modifier, \IeC {\c c}a vient de PRL}{45}{section*.58}
+\contentsline {todo}{ref}{45}{section*.52}

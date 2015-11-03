@@ -94,48 +94,6 @@
   \field{year}{2010}
 \endentry
 
-\entry{Berndt1994}{inproceedings}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Berndt}{B.}%
-     {D.}{D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Clifford}{C.}%
-     {J.}{J.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{dynamic programming,dynamic time warping,knowledge discovery,pat,tern
-  analysis,time series}
-  \strng{namehash}{BDCJ1}
-  \strng{fullhash}{BDCJ1}
-  \field{labelalpha}{BC94}
-  \field{extraalpha}{1}
-  \field{sortinit}{B}
-  \field{abstract}{%
-  Knowledge discovery in databases presents many interesting challenges within
-  the context of providing computer tools for exploring large data archives.
-  Electronic data repositories are growing qulckiy and contain data from
-  commercial, scientific, and other domains. Much of this data is inherently
-  temporal, such as stock prices or NASA telemetry data. Detecting patterns in
-  such data streams or time series is an important knowledge discovery task.
-  This paper describes some primary experiments with a dynamic programming
-  approach to the problem. The pattern detection algorithm is based on the
-  dynamic time warping technique used in the speech recognition field.
-  Keywords: dynamic programming, dynamic time warping, knowledge discovery,
-  pattern analysis, time series.%
-  }
-  \field{booktitle}{KDD}
-  \field{title}{{Using dynamic time warping to find patterns in time series}}
-  \verb{url}
-  \verb http://www.aaai.org/Papers/Workshops/1994/WS-94-03/WS94-03-031.pdf
-  \endverb
-  \field{volume}{398}
-  \field{year}{1994}
-\endentry
-
 \entry{Berndt1994a}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -151,10 +109,9 @@
   }
   \keyw{dynamic programming,dynamic time warping,knowledge discovery,pat,tern
   analysis,time series}
-  \strng{namehash}{BDCJ2}
-  \strng{fullhash}{BDCJ2}
+  \strng{namehash}{BDCJ1}
+  \strng{fullhash}{BDCJ1}
   \field{labelalpha}{BC94}
-  \field{extraalpha}{2}
   \field{sortinit}{B}
   \field{abstract}{%
   Knowledge discovery in databases presents many interesting challenges within
@@ -424,6 +381,112 @@
   \endverb
   \field{volume}{4}
   \field{journaltitle}{Spectrum, IEEE}
+  \field{year}{1967}
+\endentry
+
+\entry{Belongie2002}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Belongie}{B.}%
+     {Serge}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Malik}{M.}%
+     {Jitendra}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Puzicha}{P.}%
+     {Jan}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BSMJPJ1}
+  \strng{fullhash}{BSMJPJ1}
+  \field{labelalpha}{BMP02}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  We present a novel approach to measuring similarity between shapes and
+  exploit it for object recognition. In our framework, the measurement of
+  similarity is preceded by 1) solving for correspondences between points on
+  the two shapes, 2) using the correspondences to estimate an aligning
+  transform. In order to solve the correspondence problem, we attach a
+  descriptor, the shape context, to each point. The shape context at a
+  reference point captures the distribution of the remaining points relative to
+  it, thus offering a globally discriminative characterization. Corresponding
+  points on two similar shapes will have similar shape contexts, enabling us to
+  solve for correspondences as an optimal assignment problem. Given the point
+  correspondences, we estimate the transformation that best aligns the two
+  shapes; regularized thin-plate splines provide a flexible class of
+  transformation maps for this purpose. The dissimilarity between the two
+  shapes is computed as a sum of matching errors between corresponding points,
+  together with a term measuring the magnitude of the aligning transform. We
+  treat recognition in a nearest-neighbor classification framework as the
+  problem of finding the stored prototype shape that is maximally similar to
+  that in the image. Results are presented for silhouettes, trademarks,
+  handwritten digits, and the COIL data set.%
+  }
+  \verb{doi}
+  \verb 10.1.1.18.8852
+  \endverb
+  \field{isbn}{9781424455409}
+  \field{issn}{01628828}
+  \field{pages}{509\bibrangedash 522}
+  \field{title}{{Shape Matching and Object Recognition Using Shape Contexts}}
+  \verb{url}
+  \verb http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.18.8852
+  \endverb
+  \field{volume}{24}
+  \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}
+  \field{year}{2002}
+\endentry
+
+\entry{Cover1967b}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Cover}{C.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hart}{H.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CTHP1}
+  \strng{fullhash}{CTHP1}
+  \field{labelalpha}{CH67}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  The nearest neighbor decision rule assigns to an unclassified sample point
+  the classification of the nearest of a set of previously classified points.
+  This rule is independent of the underlying joint distribution on the sample
+  points and their classifications, and hence the probability of
+  error<tex>R</tex>of such a rule must be at least as great as the Bayes
+  probability of error<tex>R\^{}\{ast\}</tex>--the minimum probability of error
+  over all decision rules taking underlying probability structure into account.
+  However, in a large sample analysis, we will show in the<tex>M</tex>-category
+  case that<tex>R\^{}\{ast\} leq R leq R\^{}\{ast\}(2
+  --MR\^{}\{ast\}/(M-1))</tex>, where these bounds are the tightest possible,
+  for all suitably smooth underlying distributions. Thus for any number of
+  categories, the probability of error of the nearest neighbor rule is bounded
+  above by twice the Bayes probability of error. In this sense, it may be said
+  that half the classification information in an infinite sample set is
+  contained in the nearest neighbor.%
+  }
+  \verb{doi}
+  \verb 10.1109/TIT.1967.1053964
+  \endverb
+  \field{isbn}{0018-9448}
+  \field{issn}{0018-9448}
+  \field{number}{1}
+  \field{pages}{21\bibrangedash 27}
+  \field{title}{{Nearest neighbor pattern classification}}
+  \field{volume}{13}
+  \field{journaltitle}{IEEE Transactions on Information Theory}
   \field{year}{1967}
 \endentry
 
@@ -860,6 +923,54 @@
   \field{year}{2007}
 \endentry
 
+\entry{Denoeux1995}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Denoeux}{D.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Dempster's rule of combination,Dempster-Shafer theory,Density
+  functional theory,Error analysis,H infinity control,Medical services,Nearest
+  neighbor searches,Neural networks,Voting,ambiguity,class membership,distance
+  rejection,distance-weighted k-NN procedures,evidence,imperfect
+  knowledge,inference mechanisms,k-nearest neighbor classification rule,pattern
+  classification,statistical analysis,unseen pattern classification,voting}
+  \strng{namehash}{DT1}
+  \strng{fullhash}{DT1}
+  \field{labelalpha}{Den95}
+  \field{sortinit}{D}
+  \field{abstract}{%
+  In this paper, the problem of classifying an unseen pattern on the basis of
+  its nearest neighbors in a recorded data set is addressed from the point of
+  view of Dempster-Shafer theory. Each neighbor of a sample to be classified is
+  considered as an item of evidence that supports certain hypotheses regarding
+  the class membership of that pattern. The degree of support is defined as a
+  function of the distance between the two vectors. The evidence of the k
+  nearest neighbors is then pooled by means of Dempster's rule of combination.
+  This approach provides a global treatment of such issues as ambiguity and
+  distance rejection, and imperfect knowledge regarding the class membership of
+  training patterns. The effectiveness of this classification scheme as
+  compared to the voting and distance-weighted k-NN procedures is demonstrated
+  using several sets of simulated and real-world data%
+  }
+  \verb{doi}
+  \verb 10.1109/21.376493
+  \endverb
+  \field{issn}{00189472}
+  \field{number}{5}
+  \field{pages}{804\bibrangedash 813}
+  \field{title}{{A k-nearest neighbor classification rule based on
+  Dempster-Shafer theory}}
+  \verb{url}
+  \verb http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=376493
+  \endverb
+  \field{volume}{25}
+  \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics}
+  \field{year}{1995}
+\endentry
+
 \entry{Dietterich1995}{article}{}
   \name{author}{3}{}{%
     {{}%
@@ -919,8 +1030,8 @@
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{DT1}
-  \strng{fullhash}{DT1}
+  \strng{namehash}{DT2}
+  \strng{fullhash}{DT2}
   \field{labelalpha}{Die97}
   \field{sortinit}{D}
   \field{title}{{Approximate Statistical Tests for Comparing Supervised
@@ -1058,6 +1169,61 @@
   \endverb
   \field{journaltitle}{The Journal of Machine Learning}
   \field{year}{2008}
+\endentry
+
+\entry{Faloutsos1994}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Faloutsos}{F.}%
+     {Christos}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ranganathan}{R.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Manolopoulos}{M.}%
+     {Yannis}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{FCRMMY1}
+  \strng{fullhash}{FCRMMY1}
+  \field{labelalpha}{FRM94}
+  \field{sortinit}{F}
+  \field{abstract}{%
+  We present an ecient indexing method to locate 1-dimensional subsequences
+  within a collection of sequences, such that the subsequences match a given
+  (query) pattern within a specified tolerance. The idea is to map each data
+  sequence into a small set of multidimensional rectangles in feature space.
+  Then, these rectangles can be readily indexed using traditional spatial
+  access methods, like the R*-tree [9]. In more detail, we use a sliding window
+  over the data sequence and extract its features; the result is a trail in
+  feature space. We propose an efficient and effective algorithm to divide such
+  trails into sub-trails, which are subsequently represented by their Minimum
+  Bounding Rectangles (MBRs). We also examine queries of varying lengths, and
+  we show how to handle each case eciently. We implemented our method and
+  carried out experiments on synthetic and real data (stock price movements).
+  We compared the method to sequential scanning, which is the only obvious
+  competitor. The results were excellent: our method accelerated the search
+  time from 3 times up to 100 times.%
+  }
+  \verb{doi}
+  \verb 10.1145/191843.191925
+  \endverb
+  \field{isbn}{0897916395}
+  \field{issn}{01635808}
+  \field{number}{2}
+  \field{pages}{419\bibrangedash 429}
+  \field{title}{{Fast subsequence matching in time-series databases}}
+  \verb{url}
+  \verb http://portal.acm.org/citation.cfm?doid=191843.191925
+  \endverb
+  \field{volume}{23}
+  \field{journaltitle}{ACM SIGMOD Record}
+  \field{year}{1994}
 \endentry
 
 \entry{Goldberger2004}{article}{}
@@ -1410,6 +1576,48 @@
   \field{year}{1999}
 \endentry
 
+\entry{Kalman1960}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Kalman}{K.}%
+     {R~E}{R.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KRE1}
+  \strng{fullhash}{KRE1}
+  \field{labelalpha}{Kal60}
+  \field{sortinit}{K}
+  \field{abstract}{%
+  The classical filtering and prediction problem is re-examined using the Bode-
+  Shannon representation of random processes and the ``state
+  transition\&apos;\&apos; method of analysis of dynamic systems. New results
+  are: (1) The formulation and methods of solution of the problem apply without
+  modifica- tion to stationary and nonstationary statistics and to
+  growing-memory and infinite- memory filters. (2) A nonlinear difference (or
+  differential) equation is derived for the covariance matrix of the optimal
+  estimation error. From the solution of this equation the co- efficients of
+  the difference (or differential) equation of the optimal linear filter are
+  ob- tained without further calculations. (3) The filtering problem is shown
+  to be the dual of the noise-free regulator problem. The new method developed
+  here is applied to two well-known problems, confirming and extending earlier
+  results. The discussion is largely self-contained and proceeds from first
+  principles; basic concepts of the theory of random processes are reviewed in
+  the Appendix.%
+  }
+  \verb{doi}
+  \verb 10.1115/1.3662552
+  \endverb
+  \field{isbn}{9783540769897}
+  \field{issn}{0021-9223}
+  \field{number}{Series D}
+  \field{pages}{35\bibrangedash 45}
+  \field{title}{{A New Approach to Linear Filtering and Prediction Problems}}
+  \field{volume}{82}
+  \field{journaltitle}{Transactions of the ASME Journal of Basic Engineering}
+  \field{year}{1960}
+\endentry
+
 \entry{Keogh2004}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -1479,10 +1687,10 @@
      {}{}%
      {}{}}%
   }
-  \keyw{decision directed acyclic graph, decision levels, learning (artificial
-  intelligence), learning automata, linear support vector machines, multiclass
-  support vector machines, pattern classification, probability adaptive
-  directed acyclic graph,directed graphs}
+  \keyw{decision directed acyclic graph,decision levels,directed
+  graphs,learning (artificial intelligence),learning automata,linear support
+  vector machines,multiclass support vector machines,pattern
+  classification,probability adaptive directed acyclic graph}
   \strng{namehash}{KBUN1}
   \strng{fullhash}{KBUN1}
   \field{labelalpha}{KU02}
@@ -1660,6 +1868,48 @@
   \field{year}{2012}
 \endentry
 
+\entry{McNames2002}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {McNames}{M.}%
+     {James}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Chaos,Embedding dimension,Local models,Metric optimization,Time series
+  prediction}
+  \strng{namehash}{MJ1}
+  \strng{fullhash}{MJ1}
+  \field{labelalpha}{McN02}
+  \field{sortinit}{M}
+  \field{abstract}{%
+  Local models have emerged as one of the most accurate methods of time series
+  prediction, but their performance is sensitive to the choice of
+  user-specified parameters such as the size of the neighborhood, the embedding
+  dimension, and the distance metric. This paper describes a new method of
+  optimizing these parameters to minimize the multi-step cross-validation
+  error. Empirical results indicate that multi-step optimization is susceptible
+  to shallow local minima unless the optimization is limited to 10 or fewer
+  steps ahead. The models optimized using the new method consistently performed
+  better than those optimized with adaptive analog forecasts. ?? 2002 Elsevier
+  Science B.V. All rights reserved.%
+  }
+  \verb{doi}
+  \verb 10.1016/S0925-2312(01)00647-6
+  \endverb
+  \field{issn}{09252312}
+  \field{number}{May 2001}
+  \field{pages}{279\bibrangedash 297}
+  \field{title}{{Local averaging optimization for chaotic time series
+  prediction}}
+  \field{volume}{48}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/Desktop/Neurocomputing.pdf:pdf
+  \endverb
+  \field{journaltitle}{Neurocomputing}
+  \field{year}{2002}
+\endentry
+
 \entry{Morse2007}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -1710,6 +1960,54 @@
   \field{journaltitle}{ACM SIGMOD international conference on Management of
   data}
   \field{year}{2007}
+\endentry
+
+\entry{Montero2014}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Montero}{M.}%
+     {Pablo}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vilar}{V.}%
+     {Jos\'{e}}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{clustering,dissimilarity measure,time series data,validation indices}
+  \strng{namehash}{MPVJ1}
+  \strng{fullhash}{MPVJ1}
+  \field{labelalpha}{MV14}
+  \field{sortinit}{M}
+  \field{abstract}{%
+  Time series clustering is an active research area with applications in a wide
+  range of fields. One key component in cluster analysis is determining a
+  proper dissimilarity mea- sure between two data objects, and many criteria
+  have been proposed in the literature to assess dissimilarity between two time
+  series. The R package TSclust is aimed to im- plement a large set of
+  well-established peer-reviewed time series dissimilarity measures, including
+  measures based on raw data, extracted features, underlying parametric models,
+  complexity levels, and forecast behaviors. Computation of these measures
+  allows the user to perform clustering by using conventional clustering
+  algorithms. TSclust also includes a clustering procedure based on p values
+  from checking the equality of generating models, and some utilities to
+  evaluate cluster solutions. The implemented dissimilarity functions are
+  accessible individually for an easier extension and possible use out of the
+  clustering context. The main features of TSclust are described and examples
+  of its use are presented.%
+  }
+  \field{number}{1}
+  \field{title}{{TSclust : An R Package for Time Series Clustering}}
+  \verb{url}
+  \verb http://www.jstatsoft.org/v62/i01/paper
+  \endverb
+  \field{volume}{62}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/Desktop/TS clust.pdf:pdf
+  \endverb
+  \field{journaltitle}{Journal of Statistical Software November}
+  \field{year}{2014}
 \endentry
 
 \entry{Najmeddine2012}{inproceedings}{}
@@ -1856,6 +2154,74 @@
   \field{year}{1973}
 \endentry
 
+\entry{PANAGIOTAKIS2008}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {PANAGIOTAKIS}{P.}%
+     {COSTAS}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {RAMASSO}{R.}%
+     {EMMANUEL}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {TZIRITAS}{T.}%
+     {GEORGIOS}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {ROMBAUT}{R.}%
+     {MICH\`{E}LE}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {PELLERIN}{P.}%
+     {DENIS}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{People detection,people counting,team activity recognition,transferable
+  belief model,video analysis}
+  \strng{namehash}{PC+1}
+  \strng{fullhash}{PCRETGRMPD1}
+  \field{labelalpha}{PAN+08}
+  \field{sortinit}{P}
+  \field{abstract}{%
+  We present a shape-based method for automatic people detection and counting
+  without any assumption concerning camera motion. In order to evaluate the
+  robustness of the proposed method, we apply it for classifying athletics
+  videos into two classes: videos of individual and videos of team sports. The
+  videos used are real and characterized by dynamic and unconstrained
+  environment. Moreover, in the case of team sport, we propose a shape
+  deformations based method for running/hurdling discrimination (activity
+  recognition). Robust, adaptive and independent from color, illumination
+  changes and the camera motion, the proposed features are combined in the
+  Transferable Belief Model (TBM) framework providing a two-level (frames and
+  shot) video categorization. Experimental results of 97\% of accuracy for
+  individual/team sport categorization using a dataset of 252 real videos of
+  athletic meetings, acquired by moving cameras under varying view angles,
+  indicate the stability and the good performance of the proposed scheme.%
+  }
+  \verb{doi}
+  \verb 10.1142/S0218001408006752
+  \endverb
+  \field{issn}{0218-0014}
+  \field{number}{06}
+  \field{pages}{1187\bibrangedash 1213}
+  \field{title}{{SHAPE-BASED INDIVIDUAL/GROUP DETECTION FOR SPORT VIDEOS
+  CATEGORIZATION}}
+  \verb{url}
+  \verb http://www.worldscientific.com/doi/abs/10.1142/S0218001408006752?journa
+  \verb lCode=ijprai
+  \endverb
+  \field{volume}{22}
+  \field{journaltitle}{International Journal of Pattern Recognition and
+  Artificial Intelligence}
+  \field{year}{2008}
+\endentry
+
 \entry{Prekopcsak2012}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -1906,6 +2272,68 @@
   \field{journaltitle}{Advances in Data Analysis and Classification}
   \field{eprinttype}{arXiv}
   \field{year}{2012}
+\endentry
+
+\entry{Ramasso2008}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Ramasso}{R.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Panagiotakis}{P.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pellerin}{P.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rombaut}{R.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Human action recognition,Moving camera,Temporal Belief
+  Filter,Transferable Belief Model}
+  \strng{namehash}{RE+1}
+  \strng{fullhash}{REPCPDRM1}
+  \field{labelalpha}{Ram+08}
+  \field{sortinit}{R}
+  \field{abstract}{%
+  This paper focuses on human behavior recognition where the main
+  problem$\backslash$nis to bridge the semantic gap between the analogue
+  observations of the$\backslash$nreal world and the symbolic world of human
+  interpretation. For that, a$\backslash$nfusion architecture based on the
+  Transferable Belief Model framework is$\backslash$nproposed and applied to
+  action recognition of an athlete in video$\backslash$nsequences of athletics
+  meeting with moving camera. Relevant features are$\backslash$nextracted from
+  videos, based on both the camera motion analysis and the$\backslash$ntracking
+  of particular points on the athlete's silhouette. Some models$\backslash$nof
+  interpretation are used to link the numerical features to the
+  symbols$\backslash$nto be recognized, which are running, jumping and falling
+  actions. A$\backslash$nTemporal Belief Filter is then used to improve the
+  robustness of action$\backslash$nrecognition. The proposed approach
+  demonstrates good performance when$\backslash$ntested on real videos of
+  athletics sports videos (high jumps, pole$\backslash$nvaults, triple jumps
+  and long jumps) acquired by a moving camera and$\backslash$ndifferent view
+  angles. The proposed system is also compared to
+  Bayesian$\backslash$nNetworks.%
+  }
+  \verb{doi}
+  \verb 10.1007/s10044-007-0073-y
+  \endverb
+  \field{issn}{14337541}
+  \field{number}{1}
+  \field{pages}{1\bibrangedash 19}
+  \field{title}{{Human action recognition in videos based on the transferable
+  belief model : AAAApplication to athletics jumps}}
+  \field{volume}{11}
+  \field{journaltitle}{Pattern Analysis and Applications}
+  \field{year}{2008}
 \endentry
 
 \entry{Rabiner1993}{book}{}
@@ -2760,6 +3188,27 @@
   \verb n, F. Badran - 2006 - Apprentissage Apprentissage statistique.pdf:pdf
   \endverb
   \field{year}{2006}
+\endentry
+
+\entry{WienerN1942}{report}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{Wiener N}}{W.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{W1}
+  \strng{fullhash}{W1}
+  \field{labelalpha}{{Wie}42}
+  \field{sortinit}{{W}}
+  \field{title}{{Extrapolation, Interpolation \& Smoothing of Stationary Time
+  Series - With Engineering Applications}}
+  \list{institution}{1}{%
+    {Report of the Services 19, Research Project DIC-6037 MIT}%
+  }
+  \field{type}{techreport}
+  \field{year}{1942}
 \endentry
 
 \lossort

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.15)  28 OCT 2015 16:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.15)  3 NOV 2015 16:48
 entering extended mode
 **roque-phdthesis.tex
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.tex
@@ -1483,6 +1483,9 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 )
 \c@@todonotes@numberoftodonotes=\count322
 ))
+("C:\Program Files (x86)\MikeTeX\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen199
+)
 \@input{0-configuration/macros.aux}
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\0-configuration/mac
@@ -1503,9 +1506,9 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@buffer=\toks56
 \SOUL@token=\toks57
 \SOUL@spaceskip=\skip91
-\SOUL@ttwidth=\dimen199
-\SOUL@uldp=\dimen200
-\SOUL@ulht=\dimen201
+\SOUL@ttwidth=\dimen200
+\SOUL@uldp=\dimen201
+\SOUL@ulht=\dimen202
 )
 ("C:\Program Files (x86)\MikeTeX\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
@@ -1514,8 +1517,8 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 ikzlibrarycalc.code.tex"
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.0 (rcs-revision 1.9)
 )
-\highlight@previous=\dimen202
-\highlight@current=\dimen203
+\highlight@previous=\dimen203
+\highlight@current=\dimen204
 \c@akmctr=\count328
 \c@mycomment=\count329
 )
@@ -1551,7 +1554,11 @@ t-part.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-1-mach
 ine-learning.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-2-basi
-c-metrics.aux")
+c-metrics.aux"
+
+LaTeX Warning: Label `eq:A' multiply defined.
+
+)
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-3-adva
 nced-metrics.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-1-conc
@@ -1559,11 +1566,7 @@ lusion-first-part.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-2-seco
 nd-part.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-3-pair
-wise-space.aux"
-
-LaTeX Warning: Label `sec:unchapitre' multiply defined.
-
-)
+wise-space.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-5-M2TM
 L.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-6-M2TM
@@ -1660,13 +1663,13 @@ Package minitoc(hints) Warning: W0023
 ("C:\Program Files (x86)\MikeTeX\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count338
-\scratchdimen=\dimen204
+\scratchdimen=\dimen205
 \scratchbox=\box66
 \nofMPsegments=\count339
 \nofMParguments=\count340
 \everyMPshowfont=\toks58
 \MPscratchCnt=\count341
-\MPscratchDim=\dimen205
+\MPscratchDim=\dimen206
 \MPnumerator=\count342
 \makeMPintoPDFobject=\count343
 \everyMPtoPDFconversion=\toks59
@@ -1788,7 +1791,7 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <13> not available
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <6.5> not available
 (Font)              size <6> substituted on input line 28.
 
-<images/background-eps-converted-to.pdf, id=182, 532.99126pt x 790.955pt>
+<images/background-eps-converted-to.pdf, id=178, 532.99126pt x 790.955pt>
 File: images/background-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/background-eps-converted-to.pdf>
@@ -1857,14 +1860,9 @@ Package minitoc Info: I0033
 (minitoc)             Writing roque-phdthesis.mtc12.
 Package minitoc Info: I0033
 (minitoc)             Writing roque-phdthesis.mtc13.
-Package minitoc Info: I0033
-(minitoc)             Writing roque-phdthesis.mtc14.
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.tdo
-"
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
+" [1
 
 
 
@@ -1897,9 +1895,6 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 ]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.toc
 " [5]
-Underfull \vbox (badness 2277) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1919,10 +1914,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.lof
-"
-Underfull \vbox (badness 10000) has occurred while \output is active []
+" [9])
+\tf@lof=\write10
 
- [9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1932,9 +1926,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10])
-\tf@lof=\write10
-
+[10]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2062,49 +2054,49 @@ ine-learning.tex" [6
 Chapter 1.
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-3") [7]
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 24--24
+3")
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 22--22
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (3.95149pt too wide) in paragraph at lines 24--24
-\T1/cmr/bx/n/10 [MR3]: \T1/cmr/m/n/10 ref 
+Overfull \hbox (15.86525pt too wide) in paragraph at lines 22--22
+\T1/cmr/bx/n/10 [MR3]: \T1/cmr/m/n/10 avail- 
  []
 
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 24--24
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 22--22
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (3.95149pt too wide) in paragraph at lines 24--24
-\T1/cmr/bx/n/10 [MR3]: \T1/cmr/m/n/10 ref 
+Overfull \hbox (15.86525pt too wide) in paragraph at lines 22--22
+\T1/cmr/bx/n/10 [MR3]: \T1/cmr/m/n/10 avail- 
  []
 
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 24--24
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 22--22
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (3.95149pt too wide) in paragraph at lines 24--24
-\T1/cmr/bx/n/10 [MR3]: \T1/cmr/m/n/10 ref 
+Overfull \hbox (15.86525pt too wide) in paragraph at lines 22--22
+\T1/cmr/bx/n/10 [MR3]: \T1/cmr/m/n/10 avail- 
  []
 
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 24--24
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 22--22
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (3.95149pt too wide) in paragraph at lines 24--24
-\T1/cmr/bx/n/10 [MR3]: \T1/cmr/m/n/10 ref 
+Overfull \hbox (15.86525pt too wide) in paragraph at lines 22--22
+\T1/cmr/bx/n/10 [MR3]: \T1/cmr/m/n/10 avail- 
  []
 
 Missing character: There is no ; in font nullfont!
-<images/time_series_example.png, id=578, 681.747pt x 201.75375pt>
+[7] <images/time_series_example.png, id=567, 681.747pt x 201.75375pt>
 File: images/time_series_example.png Graphic file (type png)
 
 <use images/time_series_example.png>
@@ -2148,14 +2140,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] <images/Dataset.png, id=621, 638.385pt x 473.3685pt>
+[9] <images/Dataset.png, id=611, 638.385pt x 473.3685pt>
 File: images/Dataset.png Graphic file (type png)
 
 <use images/Dataset.png>
 Package pdftex.def Info: images/Dataset.png used on input line 74.
 (pdftex.def)             Requested size: 398.38567pt x 295.40675pt.
 
-<images/LearningFramework.png, id=622, 890.1255pt x 448.074pt>
+<images/LearningFramework.png, id=612, 890.1255pt x 448.074pt>
 File: images/LearningFramework.png Graphic file (type png)
 
 <use images/LearningFramework.png>
@@ -2165,7 +2157,7 @@ Package pdftex.def Info: images/LearningFramework.png used on input line 83.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Overfitting.png, id=624, 287.8755pt x 287.27325pt>
+<images/Overfitting.png, id=614, 287.8755pt x 287.27325pt>
 File: images/Overfitting.png Graphic file (type png)
 
 <use images/Overfitting.png>
@@ -2188,14 +2180,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/LearningF
 ramework.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images
-/Overfitting.png>] <images/GridSearch.png, id=638, 340.8735pt x 338.4645pt>
+/Overfitting.png>] <images/GridSearch.png, id=628, 340.8735pt x 338.4645pt>
 File: images/GridSearch.png Graphic file (type png)
 
 <use images/GridSearch.png>
 Package pdftex.def Info: images/GridSearch.png used on input line 102.
 (pdftex.def)             Requested size: 154.9315pt x 153.84148pt.
 
-<images/Cross_validation2.jpg, id=639, 651.93562pt x 258.9675pt>
+<images/Cross_validation2.jpg, id=629, 651.93562pt x 258.9675pt>
 File: images/Cross_validation2.jpg Graphic file (type jpg)
 
 <use images/Cross_validation2.jpg>
@@ -2210,22 +2202,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [12 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/GridSearc
 h.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Cross_
-validation2.jpg>] <images/ConfusionMatrix.png, id=649, 286.671pt x 75.28125pt>
-File: images/ConfusionMatrix.png Graphic file (type png)
-
-<use images/ConfusionMatrix.png>
-Package pdftex.def Info: images/ConfusionMatrix.png used on input line 130.
-(pdftex.def)             Requested size: 177.05879pt x 46.49812pt.
-
+validation2.jpg>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Confusion
-Matrix.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[13]
+Underfull \vbox (badness 7704) has occurred while \output is active []
 
 
 
@@ -2235,167 +2220,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
-Overfull \hbox (0.6786pt too wide) in paragraph at lines 179--179
+Overfull \hbox (0.6786pt too wide) in paragraph at lines 188--188
 [][][][]\T1/cmr/m/n/10.95 références 
  []
 
 
-Overfull \hbox (0.6786pt too wide) in paragraph at lines 179--179
+Overfull \hbox (0.6786pt too wide) in paragraph at lines 188--188
 [][][][]\T1/cmr/m/n/10.95 références 
  []
 
 
-Overfull \hbox (0.6786pt too wide) in paragraph at lines 179--179
+Overfull \hbox (0.6786pt too wide) in paragraph at lines 188--188
 [][][][]\T1/cmr/m/n/10.95 références 
  []
 
 
-Overfull \hbox (0.6786pt too wide) in paragraph at lines 179--179
+Overfull \hbox (0.6786pt too wide) in paragraph at lines 188--188
 [][][][]\T1/cmr/m/n/10.95 références 
  []
 
-<images/SkewedData.png, id=678, 848.16875pt x 639.38875pt>
-File: images/SkewedData.png Graphic file (type png)
-
-<use images/SkewedData.png>
-Package pdftex.def Info: images/SkewedData.png used on input line 194.
-(pdftex.def)             Requested size: 265.59494pt x 200.21825pt.
-
-Overfull \vbox (1.06633pt too high) has occurred while \output is active []
-
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-[][]\T1/cmr/m/n/9 source: [][]$\T1/cmtt/m/n/9 http : / / www . r -[] statistics
- . com / 2013 / 05 / log -[] transformations -[] for -[] skewed -[] and -[] wid
-e -[]$
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 220--220
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (13.67134pt too wide) in paragraph at lines 220--220
-\T1/cmr/bx/n/10 [MR4]: \T1/cmr/m/n/10 prin- 
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 220--220
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (13.67134pt too wide) in paragraph at lines 220--220
-\T1/cmr/bx/n/10 [MR4]: \T1/cmr/m/n/10 prin- 
- []
-
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 220--220
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (13.67134pt too wide) in paragraph at lines 220--220
-\T1/cmr/bx/n/10 [MR4]: \T1/cmr/m/n/10 prin- 
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 220--220
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (13.67134pt too wide) in paragraph at lines 220--220
-\T1/cmr/bx/n/10 [MR4]: \T1/cmr/m/n/10 prin- 
- []
-
-Missing character: There is no ; in font nullfont!
-
-LaTeX Warning: Citation 'Cover1967b' on page 16 undefined on input line 221.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[16 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SkewedDat
-a.png>] <images/kNN_example.png, id=705, 193.9245pt x 166.221pt>
-File: images/kNN_example.png Graphic file (type png)
-
-<use images/kNN_example.png>
-Package pdftex.def Info: images/kNN_example.png used on input line 225.
-(pdftex.def)             Requested size: 177.05879pt x 151.76604pt.
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 243--243
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 243--243
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 243--243
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 243--243
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-Missing character: There is no ; in font nullfont!
-
-LaTeX Warning: Marginpar on page 17 moved.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[17 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/kNN_examp
-le.png>]
-
-LaTeX Warning: Marginpar on page 18 moved.
-
-
-LaTeX Warning: Citation 'Belongie2002' on page 18 undefined on input line 245.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[18]
-<images/Plusieurs_separatrice_lineaire.png, id=760, 478.78876pt x 370.38374pt>
-File: images/Plusieurs_separatrice_lineaire.png Graphic file (type png)
-
-<use images/Plusieurs_separatrice_lineaire.png>
-Package pdftex.def Info: images/Plusieurs_separatrice_lineaire.png used on inpu
-t line 292.
-(pdftex.def)             Requested size: 309.85626pt x 239.70102pt.
-
-<images/Separatrice_lineaire_avec_marges.png, id=763, 623.32875pt x 370.38374pt
->
-File: images/Separatrice_lineaire_avec_marges.png Graphic file (type png)
- <use images/Separatrice_lineaire_avec_marges.png>
-Package pdftex.def Info: images/Separatrice_lineaire_avec_marges.png used on in
-put line 301.
-(pdftex.def)             Requested size: 309.85626pt x 184.1176pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2406,9 +2249,102 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+[15] <images/SkewedData.png, id=673, 848.16875pt x 639.38875pt>
+File: images/SkewedData.png Graphic file (type png)
+
+<use images/SkewedData.png>
+Package pdftex.def Info: images/SkewedData.png used on input line 203.
+(pdftex.def)             Requested size: 265.59494pt x 200.21825pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
+[][]\T1/cmr/m/n/9 source: [][]$\T1/cmtt/m/n/9 http : / / www . r -[] statistics
+ . com / 2013 / 05 / log -[] transformations -[] for -[] skewed -[] and -[] wid
+e -[]$
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SkewedDat
+a.png>] <images/kNN_example.png, id=692, 419.76825pt x 309.5565pt>
+File: images/kNN_example.png Graphic file (type png)
+
+<use images/kNN_example.png>
+Package pdftex.def Info: images/kNN_example.png used on input line 235.
+(pdftex.def)             Requested size: 177.05879pt x 130.5702pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/kNN_examp
+le.png>]
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 251--251
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 251--251
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 251--251
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 251--251
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+LaTeX Warning: Marginpar on page 18 moved.
+
+
+LaTeX Warning: Marginpar on page 18 moved.
+
+
+LaTeX Warning: Marginpar on page 18 moved.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18]
+<images/Plusieurs_separatrice_lineaire2.png, id=747, 418.66759pt x 314.00069pt>
+File: images/Plusieurs_separatrice_lineaire2.png Graphic file (type png)
+<use images/Plusieurs_separatrice_lineaire2.png>
+Package pdftex.def Info: images/Plusieurs_separatrice_lineaire2.png used on inp
+ut line 300.
+(pdftex.def)             Requested size: 265.59494pt x 199.19656pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [19 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Plusieurs
-_separatrice_lineaire.png>]
-Underfull \vbox (badness 1888) has occurred while \output is active []
+_separatrice_lineaire2.png (PNG copy)>]
+<images/Separatrice_lineaire_avec_marges2.png, id=762, 418.66759pt x 314.00069p
+t>
+File: images/Separatrice_lineaire_avec_marges2.png Graphic file (type png)
+ <use images/Separatrice_lineaire_avec_marges2.png>
+Package pdftex.def Info: images/Separatrice_lineaire_avec_marges2.png used on i
+nput line 309.
+(pdftex.def)             Requested size: 265.59494pt x 199.19656pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -2418,7 +2354,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Separatri
-ce_lineaire_avec_marges.png>]
+ce_lineaire_avec_marges2.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2435,29 +2371,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22] <images/SVM_SV.png, id=827, 343.2825pt x 244.5135pt>
-File: images/SVM_SV.png Graphic file (type png)
+[22] <images/SVM_SV2.png, id=818, 418.66759pt x 325.215pt>
+File: images/SVM_SV2.png Graphic file (type png)
 
-<use images/SVM_SV.png>
-Package pdftex.def Info: images/SVM_SV.png used on input line 394.
-(pdftex.def)             Requested size: 265.59494pt x 189.17513pt.
+<use images/SVM_SV2.png>
+Package pdftex.def Info: images/SVM_SV2.png used on input line 402.
+(pdftex.def)             Requested size: 265.59494pt x 206.31073pt.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[23 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_SV.pn
-g>] <images/SVM_nonlinear.png, id=844, 682.9515pt x 353.52075pt>
-File: images/SVM_nonlinear.png Graphic file (type png)
-
-<use images/SVM_nonlinear.png>
-Package pdftex.def Info: images/SVM_nonlinear.png used on input line 424.
-(pdftex.def)             Requested size: 398.38567pt x 206.21812pt.
-
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2465,19 +2387,43 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_nonli
-near.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
+[23] <images/SVM_nonlinear2.png, id=837, 733.74126pt x 347.2975pt>
+File: images/SVM_nonlinear2.png Graphic file (type png)
+
+<use images/SVM_nonlinear2.png>
+Package pdftex.def Info: images/SVM_nonlinear2.png used on input line 432.
+(pdftex.def)             Requested size: 398.38567pt x 188.56592pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_SV2.p
+ng>]
+Underfull \hbox (badness 10000) in paragraph at lines 447--447
 [][][][]$\T1/cmtt/m/n/9 https : / / www . quora . com / Support -[] Vector -[] 
 Machines / What -[] is -[] the -[] intuition -[] behind -[] Gaussian -[]$
  []
 
-<images/Kernel_Gaussian2.png, id=856, 555.07375pt x 209.78375pt>
+<images/Kernel_Gaussian2.png, id=851, 555.07375pt x 209.78375pt>
 File: images/Kernel_Gaussian2.png Graphic file (type png)
 
 <use images/Kernel_Gaussian2.png>
-Package pdftex.def Info: images/Kernel_Gaussian2.png used on input line 442.
+Package pdftex.def Info: images/Kernel_Gaussian2.png used on input line 451.
 (pdftex.def)             Requested size: 265.59494pt x 100.37814pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2488,46 +2434,46 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Kernel_Ga
-ussian2.png>]
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 481--481
+[25 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_nonli
+near2.png>]
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 490--490
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (30.41725pt too wide) in paragraph at lines 481--481
-\T1/cmr/bx/n/10 [CTD6]: \T1/cmr/m/n/10 réécrire 
+Overfull \hbox (30.41725pt too wide) in paragraph at lines 490--490
+\T1/cmr/bx/n/10 [CTD5]: \T1/cmr/m/n/10 réécrire 
  []
 
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 481--481
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 490--490
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (30.41725pt too wide) in paragraph at lines 481--481
-\T1/cmr/bx/n/10 [CTD6]: \T1/cmr/m/n/10 réécrire 
+Overfull \hbox (30.41725pt too wide) in paragraph at lines 490--490
+\T1/cmr/bx/n/10 [CTD5]: \T1/cmr/m/n/10 réécrire 
  []
 
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 481--481
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 490--490
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (30.41725pt too wide) in paragraph at lines 481--481
-\T1/cmr/bx/n/10 [CTD6]: \T1/cmr/m/n/10 réécrire 
+Overfull \hbox (30.41725pt too wide) in paragraph at lines 490--490
+\T1/cmr/bx/n/10 [CTD5]: \T1/cmr/m/n/10 réécrire 
  []
 
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 481--481
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 490--490
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (30.41725pt too wide) in paragraph at lines 481--481
-\T1/cmr/bx/n/10 [CTD6]: \T1/cmr/m/n/10 réécrire 
+Overfull \hbox (30.41725pt too wide) in paragraph at lines 490--490
+\T1/cmr/bx/n/10 [CTD5]: \T1/cmr/m/n/10 réécrire 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -2537,47 +2483,47 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26] <images/Weight_interpretation.png, id=883, 391.4625pt x 307.90031pt>
+[26 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Kernel_Ga
+ussian2.png>]
+<images/SVM_interpretation2.png, id=881, 418.66759pt x 314.00069pt>
+File: images/SVM_interpretation2.png Graphic file (type png)
+
+<use images/SVM_interpretation2.png>
+Package pdftex.def Info: images/SVM_interpretation2.png used on input line 504.
+
+(pdftex.def)             Requested size: 265.59494pt x 199.19656pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_inter
+pretation2.png>]
+<images/Weight_interpretation.png, id=891, 391.4625pt x 307.90031pt>
 File: images/Weight_interpretation.png Graphic file (type png)
 
 <use images/Weight_interpretation.png>
-Package pdftex.def Info: images/Weight_interpretation.png used on input line 49
-7.
+Package pdftex.def Info: images/Weight_interpretation.png used on input line 51
+5.
 (pdftex.def)             Requested size: 420.5197pt x 330.77495pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Weight_in
-terpretation.png>]
-<images/SVM_interpretation.png, id=890, 463.7325pt x 368.577pt>
-File: images/SVM_interpretation.png Graphic file (type png)
-
-<use images/SVM_interpretation.png>
-Package pdftex.def Info: images/SVM_interpretation.png used on input line 509.
-(pdftex.def)             Requested size: 221.32687pt x 175.91386pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[28 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_inter
-pretation.png>] <images/SVR_tube.png, id=912, 420.97275pt x 200.54926pt>
+[28 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Weight_in
+terpretation.png>] <images/SVR_tube.png, id=905, 420.97275pt x 200.54926pt>
 File: images/SVR_tube.png Graphic file (type png)
 
 <use images/SVR_tube.png>
-Package pdftex.def Info: images/SVR_tube.png used on input line 533.
+Package pdftex.def Info: images/SVR_tube.png used on input line 543.
 (pdftex.def)             Requested size: 354.12434pt x 168.70197pt.
 
-Underfull \vbox (badness 1331) has occurred while \output is active []
+Underfull \vbox (badness 1014) has occurred while \output is active []
 
 
 
@@ -2588,6 +2534,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [29 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVR_tube.
 png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2616,17 +2565,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--23
 
  []
 
-[33] <images/ExampleTimeSeriesMetrics2.png, id=963, 418.66759pt x 314.00069pt>
-File: images/ExampleTimeSeriesMetrics2.png Graphic file (type png)
-
-<use images/ExampleTimeSeriesMetrics2.png>
-Package pdftex.def Info: images/ExampleTimeSeriesMetrics2.png used on input lin
-e 54.
-(pdftex.def)             Requested size: 265.59494pt x 199.19656pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+[33]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2643,11 +2582,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/ExampleTi
-meSeriesMetrics2.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+[35]
 
- []
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36] <images/Voice_Example.png, id=1021, 307.74976pt x 347.49825pt>
+File: images/Voice_Example.png Graphic file (type png)
+
+<use images/Voice_Example.png>
+Package pdftex.def Info: images/Voice_Example.png used on input line 203.
+(pdftex.def)             Requested size: 177.05879pt x 199.93188pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2655,23 +2602,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36] <images/Voice_Example.png, id=1006, 307.74976pt x 347.49825pt>
-File: images/Voice_Example.png Graphic file (type png)
+[37 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Voice_Exa
+mple.png>] <images/DTWgrid2.png, id=1038, 418.66759pt x 314.00069pt>
+File: images/DTWgrid2.png Graphic file (type png)
 
-<use images/Voice_Example.png>
-Package pdftex.def Info: images/Voice_Example.png used on input line 198.
-(pdftex.def)             Requested size: 177.05879pt x 199.93188pt.
+<use images/DTWgrid2.png>
+Package pdftex.def Info: images/DTWgrid2.png used on input line 250.
+(pdftex.def)             Requested size: 221.32687pt x 165.99792pt.
+
+<images/DTWwarpedSignals.png, id=1039, 696.53328pt x 314.00069pt>
+File: images/DTWwarpedSignals.png Graphic file (type png)
+
+<use images/DTWwarpedSignals.png>
+Package pdftex.def Info: images/DTWwarpedSignals.png used on input line 251.
+(pdftex.def)             Requested size: 442.65375pt x 199.54633pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[37]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2681,13 +2630,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Voice_Exa
-mple.png>] <images/DTWgrid.png, id=1036, 282.45525pt x 277.035pt>
-File: images/DTWgrid.png Graphic file (type png)
+[38] <images/UMD.png, id=1059, 298.11375pt x 147.55125pt>
+File: images/UMD.png Graphic file (type png)
+ <use images/UMD.png>
+Package pdftex.def Info: images/UMD.png used on input line 274.
+(pdftex.def)             Requested size: 265.59494pt x 131.46428pt.
 
-<use images/DTWgrid.png>
-Package pdftex.def Info: images/DTWgrid.png used on input line 248.
-(pdftex.def)             Requested size: 177.05879pt x 173.65793pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 5245) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2695,18 +2649,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/DTWgrid.p
-ng>] <images/UMD.png, id=1052, 298.11375pt x 147.55125pt>
-File: images/UMD.png Graphic file (type png)
- <use images/UMD.png>
-Package pdftex.def Info: images/UMD.png used on input line 274.
-(pdftex.def)             Requested size: 309.85626pt x 153.37086pt.
-
-<images/Intervalles.png, id=1054, 558.888pt x 345.6915pt>
+[39 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/DTWgrid2.
+png (PNG copy)> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/imag
+es/DTWwarpedSignals.png (PNG copy)>]
+<images/Intervalles.png, id=1071, 558.888pt x 345.6915pt>
 File: images/Intervalles.png Graphic file (type png)
 
 <use images/Intervalles.png>
-Package pdftex.def Info: images/Intervalles.png used on input line 284.
+Package pdftex.def Info: images/Intervalles.png used on input line 300.
 (pdftex.def)             Requested size: 309.85626pt x 191.6606pt.
 
 
@@ -2719,7 +2669,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [40 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/UMD.png>]
-)
+<images/CombinedMetrics.png, id=1080, 2163.282pt x 1712.799pt>
+File: images/CombinedMetrics.png Graphic file (type png)
+
+<use images/CombinedMetrics.png>
+Package pdftex.def Info: images/CombinedMetrics.png used on input line 338.
+(pdftex.def)             Requested size: 442.65375pt x 350.47269pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 5105) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2728,28 +2691,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [41 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Intervall
 es.png>]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-3-adva
-nced-metrics.tex" [42
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-]
-Chapter 3.
-
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-5") [43] <images/ContourLine_DSig.png, id=1085, 586.5915pt x 138.5175pt>
-File: images/ContourLine_DSig.png Graphic file (type png)
-
-<use images/ContourLine_DSig.png>
-Package pdftex.def Info: images/ContourLine_DSig.png used on input line 50.
-(pdftex.def)             Requested size: 442.65375pt x 104.5325pt.
-
-<images/ContourLine_DLin.png, id=1086, 554.67226pt x 132.495pt>
-File: images/ContourLine_DLin.png Graphic file (type png)
-
-<use images/ContourLine_DLin.png>
-Package pdftex.def Info: images/ContourLine_DLin.png used on input line 57.
-(pdftex.def)             Requested size: 442.65375pt x 105.73936pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2757,9 +2700,37 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/ContourLi
-ne_DSig.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/
-ContourLine_DLin.png>]
+[42 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/CombinedM
+etrics.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43]
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 413.
+
+
+<./images/TargetImposterRepresentationCao.png, id=1113, 906.38625pt x 363.60844
+pt>
+File: ./images/TargetImposterRepresentationCao.png Graphic file (type png)
+ <use ./images/TargetImposterRepresentationCao.png>
+Package pdftex.def Info: ./images/TargetImposterRepresentationCao.png used on i
+nput line 413.
+(pdftex.def)             Requested size: 354.12434pt x 142.06194pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/TargetImp
+osterRepresentationCao.png>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2767,44 +2738,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [45]
-
-Package nag Warning: Command \centerline is TeX. 
-(nag)                Use \centering or center environment instead on input line
- 117.
-
-
-<./images/TargetImposterRepresentationCao.png, id=1110, 906.38625pt x 363.60844
-pt>
-File: ./images/TargetImposterRepresentationCao.png Graphic file (type png)
- <use ./images/TargetImposterRepresentationCao.png>
-Package pdftex.def Info: ./images/TargetImposterRepresentationCao.png used on i
-nput line 117.
-(pdftex.def)             Requested size: 354.12434pt x 142.06194pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 1675) has occurred while \output is active []
-
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[46])
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[47 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/TargetImp
-osterRepresentationCao.png>]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-3-adva
+nced-metrics.tex")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-1-conc
-lusion-first-part.tex" [48
+lusion-first-part.tex" [46
+
+
 
 
 
@@ -2813,23 +2752,52 @@ lusion-first-part.tex" [48
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 4.
 
-) [49]
+) [47]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-2-seco
-nd-part.tex" [50
+nd-part.tex" [48
 
 
 
-]) [51]
+]) [49]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-3-pair
-wise-space.tex" [52
+wise-space.tex" [50
 
 
 
 ]
-Chapter 4.
+Chapter 3.
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-6") [53])
+5") [51])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-5-M2TM
+L.tex"
+Chapter 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
+6") [53
+
+
+
+])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2837,8 +2805,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [54]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-5-M2TM
-L.tex"
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-6-M2TM
+L-algo.tex"
 Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2866,8 +2834,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [56]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-6-M2TM
-L-algo.tex"
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-7-expe
+riments.tex"
 Chapter 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2883,79 +2851,64 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-8") [57
+8")) [57
 
 
 
-])
+]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-2-conc
+lusion-second-part.tex" [58
+
+
+
+]) [59]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/3-0-conc
+lusion.tex" [60
+
+
+
+]) [61]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-1-fi
+rst-appendix.tex" [62
+
+
+
+]
+Appendix A.
+) [63]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-2-se
+cond-appendix.tex" [64
+
+
+
+]
+Appendix B.
+) [65]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-3-th
+ird-appendix.tex" [66
+
+
+
+]
+Appendix C.
+) [67] [68
+
+
+] [69]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[58]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-7-expe
-riments.tex"
-Chapter 7.
+[70]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-9")) [59
-
-
-
-]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-2-conc
-lusion-second-part.tex" [60
-
-
-
-]) [61]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/3-0-conc
-lusion.tex" [62
-
-
-
-]) [63]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-1-fi
-rst-appendix.tex" [64
-
-
-
-]
-Appendix A.
-) [65]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-2-se
-cond-appendix.tex" [66
-
-
-
-]
-Appendix B.
-) [67]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-3-th
-ird-appendix.tex" [68
-
-
-
-]
-Appendix C.
-) [69] [70
-
-
-] [71]
+[71]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2969,14 +2922,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[73]
+[73] [74
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[74]
+]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\4-closing/abstract.
 tex"
 Underfull \hbox (badness 10000) in paragraph at lines 2--13
@@ -3013,9 +2961,7 @@ Package minitoc(hints) Warning: W0024
 
 Package nag Warning: 6 complaints in total.
 
-[75
-
-]
+[75]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
 
@@ -3062,36 +3008,34 @@ ird-appendix.aux"))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 120.
 Package rerunfilecheck Info: File `roque-phdthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4089074A2E153D9E83D52CAAADE8F633;3053.
+(rerunfilecheck)             Checksum: 42382943CCC234DE22360170BFBCECB4;3001.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                roque-phdthesis
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'roque-phdthesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
  ) 
 Here is how much of TeX's memory you used:
- 39742 strings out of 493921
- 878863 string characters out of 3146064
- 1319743 words of memory out of 3000000
- 41482 multiletter control sequences out of 15000+200000
+ 39788 strings out of 493921
+ 879794 string characters out of 3146064
+ 1310942 words of memory out of 3000000
+ 41518 multiletter control sequences out of 15000+200000
  46228 words of font info for 130 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  59i,20n,86p,1671b,3263s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exi
-st, replaced by a fixed one
+pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
 , replaced by a fixed one
@@ -3164,9 +3108,9 @@ s (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86
 )/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/Mike
 TeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/Mike
 TeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on roque-phdthesis.pdf (95 pages, 2086756 bytes).
+Output written on roque-phdthesis.pdf (95 pages, 2058409 bytes).
 PDF statistics:
- 2383 PDF objects out of 2487 (max. 8388607)
- 377 named destinations out of 1000 (max. 500000)
- 495 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2370 PDF objects out of 2487 (max. 8388607)
+ 390 named destinations out of 1000 (max. 500000)
+ 477 words of extra memory for PDF output out of 10000 (max. 10000000)
 
