@@ -1,3 +1,7 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}LP optimization problem}{\reset@font\mtcSfont 53}{section.4.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}QP optimization problem}{\reset@font\mtcSfont 53}{section.4.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}SVM approximation}{\reset@font\mtcSfont 53}{section.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Projection in the pairwise space}{\reset@font\mtcSfont 57}{section.4.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}M-NN M-diff strategy}{\reset@font\mtcSfont 58}{section.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Radius normalization}{\reset@font\mtcSfont 58}{section.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}Solving the SVM problem}{\reset@font\mtcSfont 58}{section.4.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.5}Definition of the dissimilarity measure}{\reset@font\mtcSfont 58}{section.4.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.6}Extension to regression problem}{\reset@font\mtcSfont 58}{section.4.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.7}Extension to multivariate problem}{\reset@font\mtcSfont 58}{section.4.7}}

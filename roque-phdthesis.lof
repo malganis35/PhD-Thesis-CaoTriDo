@@ -8,84 +8,86 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{Machine Learning: state of the art}{7}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The Beveridge wheat price index is the average in nearly 50 places in various countries measured in successive years from 1500 to 1869. \footnotemark \relax }}{8}{figure.caption.11}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces The Beveridge wheat price index is the average in nearly 50 places in various countries measured in successive years from 1500 to 1869. \footnotemark \relax }}{8}{figure.caption.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Division of a dataset into 3 datasets: training, test and evaluation.\relax }}{10}{figure.caption.13}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Division of a dataset into 3 datasets: training, test and evaluation.\relax }}{10}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.3}{\ignorespaces General framework for building a supervised (classification/regression) model. Example with 3 features and 2 classes ('Yes' and 'No').\relax }}{11}{figure.caption.14}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces General framework for building a supervised (classification/regression) model. Example with 3 features and 2 classes ('Yes' and 'No').\relax }}{11}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.4}{\ignorespaces An example of overfitting in the case of classification. The objective is to separate blue points from red points. Black line shows a classifier $f_1$ with low complexity where as green line illustrates a classifier $f_2$ with high complexity. On training examples (blue and red points), the model $f_2$ separates all the classes perfectly but may lead to poor generalization on new unseen examples. Model $f_1$ is often preferred.\relax }}{11}{figure.caption.15}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces An example of overfitting in the case of classification. The objective is to separate blue points from red points. Black line shows a classifier $f_1$ with low complexity where as green line illustrates a classifier $f_2$ with high complexity. On training examples (blue and red points), the model $f_2$ separates all the classes perfectly but may lead to poor generalization on new unseen examples. Model $f_1$ is often preferred.\relax }}{11}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Example of a 2 dimensional grid search for parameters $C$ and $\gamma $. It defines a grid where each cell of the grid contains a combination ($C$, $\gamma $). Each combination is used to learn the model and is evaluated on the validation set.\relax }}{12}{figure.caption.16}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Example of a 2 dimensional grid search for parameters $C$ and $\gamma $. It defines a grid where each cell of the grid contains a combination ($C$, $\gamma $). Each combination is used to learn the model and is evaluated on the validation set.\relax }}{12}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.6}{\ignorespaces $v$-fold Cross-validation for one combination of parameters. For each of $v$ experiments, use $v-1$ folds for training and a different fold for Testing, then the training error for this combination of parameter is the mean of all testing errors. This procedure is illustrated for $v=4$.\relax }}{12}{figure.caption.17}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces $v$-fold Cross-validation for one combination of parameters. For each of $v$ experiments, use $v-1$ folds for training and a different fold for Testing, then the training error for this combination of parameter is the mean of all testing errors. This procedure is illustrated for $v=4$.\relax }}{12}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.7}{\ignorespaces A nearly log-normal distribution, and its log \footnotemark \relax }}{16}{figure.caption.20}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces A nearly log-normal distribution, and its log \footnotemark \relax }}{16}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Example of $k$-NN classification. The test sample (green circle) is classified either to the first class (red stars) or to the second class (blue triangles). If $k = 3$ (solid line circle) it is assigned to the second class because there are 2 triangles and only 1 star inside the inner circle. If $k = 5$ (dashed line circle) it is assigned to the first class (3 stars vs. 2 triangles inside the outer circle).\relax }}{17}{figure.caption.21}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Example of $k$-NN classification. The test sample (green circle) is classified either to the first class (red stars) or to the second class (blue triangles). If $k = 3$ (solid line circle) it is assigned to the second class because there are 2 triangles and only 1 star inside the inner circle. If $k = 5$ (dashed line circle) it is assigned to the first class (3 stars vs. 2 triangles inside the outer circle).\relax }}{17}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Example of linear classifiers in a 2-dimensional plot. For a set of points of classes +1 and -1 that are linearly separable, there exists an infinite number of separating hyperplanes corresponding to $\textbf {w}.\textbf {x} + b = 0.$\relax }}{19}{figure.caption.26}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Example of linear classifiers in a 2-dimensional plot. For a set of points of classes +1 and -1 that are linearly separable, there exists an infinite number of separating hyperplanes corresponding to $\textbf {w}.\textbf {x} + b = 0.$\relax }}{20}{figure.caption.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.10}{\ignorespaces The argument inside the decision function of a classifier is $\textbf {w}.\textbf {x} + b$. The separating hyperplane corresponding to $\textbf {w}.\textbf {x} + b = 0$ is shown as a line in this 2-dimensional plot. This hyperplane separates the two classes of data with points on one side labeled $y_i = +1$ ($\textbf {w}.\textbf {x} + b \geq 0$) and points on the other side labeled $y_i=-1$ ($\textbf {w}.\textbf {x} + b < 0$). Support vectors are circled in purple and lies on the hyperplanes $\textbf {w}.\textbf {x} + b = +1$ and $\textbf {w}.\textbf {x} + b = -1$\relax }}{20}{figure.caption.27}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces The argument inside the decision function of a classifier is $\textbf {w}.\textbf {x} + b$. The separating hyperplane corresponding to $\textbf {w}.\textbf {x} + b = 0$ is shown as a line in this 2-dimensional plot. This hyperplane separates the two classes of data with points on one side labeled $y_i = +1$ ($\textbf {w}.\textbf {x} + b \geq 0$) and points on the other side labeled $y_i=-1$ ($\textbf {w}.\textbf {x} + b < 0$). Support vectors are circled in purple and lies on the hyperplanes $\textbf {w}.\textbf {x} + b = +1$ and $\textbf {w}.\textbf {x} + b = -1$\relax }}{21}{figure.caption.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Obtained hyperplane after a dual resolution (full blue line). The 2 canonical hyperplanes (dash blue line) contains the support vectors whose $\alpha _i > 0$. Other points have their $\alpha _i = 0$ and the equation of the hyperplane is only affected by the support vectors.\relax }}{24}{figure.caption.28}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Obtained hyperplane after a dual resolution (full blue line). The 2 canonical hyperplanes (dash blue line) contains the support vectors whose $\alpha _i > 0$. Other points have their $\alpha _i = 0$ and the equation of the hyperplane is only affected by the support vectors.\relax }}{24}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.12}{\ignorespaces Left: in two dimensions these two classes of data are mixed together, and it is not possible to separate them by a line: the data is not linearly separable. Right: using a Gaussian kernel, these two classes of data (cross and circle) become separable by a hyperplane in feature space, which maps to the nonlinear boundary shown, back in input space.\footnotemark \relax }}{25}{figure.caption.29}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Left: in two dimensions these two classes of data are mixed together, and it is not possible to separate them by a line: the data is not linearly separable. Right: using a Gaussian kernel, these two classes of data (cross and circle) become separable by a hyperplane in feature space, which maps to the nonlinear boundary shown, back in input space.\footnotemark \relax }}{25}{figure.caption.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.13}{\ignorespaces Illustration of the Gaussian kernel in the 1-dimensional input space for a small and large $\gamma $.\relax }}{26}{figure.caption.30}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Illustration of the Gaussian kernel in the 1-dimensional input space for a small and large $\gamma $.\relax }}{26}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.14}{\ignorespaces Geometric representation of SVM.\relax }}{27}{figure.caption.32}
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Geometric representation of SVM.\relax }}{27}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.15}{\ignorespaces Example of several SVMs and how to interpret the weight vector $\textbf {w}$\relax }}{28}{figure.caption.34}
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Example of several SVMs and how to interpret the weight vector $\textbf {w}$\relax }}{28}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.16}{\ignorespaces Illustration of SVM regression (left), showing the regression curve with the $\epsilon $-insensitive "tube" (right). Samples $\textbf {x}_i$ above the $\epsilon $-tube have $\xi _1 > 0$ and $\xi _1 = 0$, points below the $\epsilon $-tube have $\xi _2 = 0$ and $\xi _2 > 0$, and points inside the $\epsilon $-tube have $\xi = 0$.\relax }}{29}{figure.caption.35}
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Illustration of SVM regression (left), showing the regression curve with the $\epsilon $-insensitive "tube" (right). Samples $\textbf {x}_i$ above the $\epsilon $-tube have $\xi _1 > 0$ and $\xi _1 = 0$, points below the $\epsilon $-tube have $\xi _2 = 0$ and $\xi _2 > 0$, and points inside the $\epsilon $-tube have $\xi = 0$.\relax }}{29}{figure.caption.30}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{Time series metrics and Metric Learning}{33}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of a same sentence said by two different speakers. Time series are shifted, compressed and dilatated in the time.\relax }}{37}{figure.caption.41}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 3 toy time series. Time series in blue and red are two sinuso\IeC {\"\i }dal signals. Time series in green is a random signal.\relax }}{36}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of DTW grid\relax }}{39}{figure.caption.42}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The signal from Fig. \ref {fig:ExampleTimeSeriesMetrics3} and a signal $\textbf {x}_4$ which is signal $\textbf {x}_1$ and an added translation. Based on behavior comparison, $\textbf {x}_4$ is the closest to $\textbf {x}_1$.\relax }}{37}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces UMD dataset. The dataset is made of 3 classes : Up, Middle and Down. The 'Up' class has a characteristic upward bell at the beginning or at the end of the time series. The 'Down' class has a characteristic downward bell at the beginning or at the end of the time series. The 'Middle' class has no characteristic bell. Circle red show the region of interest of these bells. This region are local and standard global metric fails to show these characteristics.\relax }}{40}{figure.caption.44}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of a same sentence said by two different speakers. Time series are shifted, compressed and dilatated in the time.\relax }}{39}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Multi-scale amplitude-based measures $d^{Is}_A$\relax }}{41}{figure.caption.47}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Example of {\sc dtw} grid between 2 time series $\textbf {x}_{i}$ and $\textbf {x}_{j}$ (top) and the signals before and after warping (bottom). On the {\sc dtw} grid, the two signals can be represented on the left and bottom of the grid. The optimal path $\boldsymbol {\pi }^*$ is represented in green line and show to associate elements of $\textbf {x}_{i}$ to element of $\textbf {x}_{j}$. Background show in grey scale the value of the considered metric (amplitude-based distance $d_A$ in classical {\sc dtw})\relax }}{40}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Contour plot of the resulting combined metrics: $D_{Sig}$ ($1^{st}$ line), $D_{Lin}$ ($2^{nd}$ line), $D_{Geom}$ ($3^{rd}$ line) for different value of $\alpha $ ($D_{Sig}$: $\alpha =0;1;6$ and $D_{Lin}$ and $D_{Geom}$: $\alpha =0;0.5;1$). For $D_{Sig}$, the first and second dimensions are respectively the amplitude-based metrics $d_A$ and the temporal correlation $corT$; for $D_{Lin}$ and $D_{Geom}$, they correspond to $d_A$ and the behavior-based metric $d_B$. For small value of $\alpha $ (=0), the three metrics only includes $d_A$. For high value of $\alpha $ (=1), $D_{Lin}$ and $D_{Geom}$ only includes $d_B$.\relax }}{42}{figure.caption.49}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Example of 4 time series from the BME dataset, made of 3 classes : Begin, Middle and End. The 'Up' class has a characteristic bell at the beginning of the time series. The 'End' class has a characteristic bell at the end of the time series. The 'Middle' class has no characteristic bell. Orange circle show the region of interest of these bells for the class 'Begin'. This region is local and standard global metric fails to show these characteristics.\relax }}{41}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Pushed and pulled samples in the $k=3$ target neighborhood of $\textbf {x}_i$ before (left) and after (right) learning. The pushed (vs. pulled) samples are indicated by a white (vs. black) arrows (Weinberger \& Sault~\cite {Weinberger2009}).\relax }}{44}{figure.caption.51}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Multi-scale amplitude-based measures $d^{Is}_A$\relax }}{43}{figure.caption.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Contour plot of the resulting combined metrics: $D_{Lin}$ ($1^{st}$ line), $D_{Geom}$ ($2^{nd}$ line) and $D_{Sig}$ ($3^{rd}$ line), for different value of $\alpha $ ($D_{Sig}$: $\alpha =0;1;6$ and $D_{Lin}$ and $D_{Geom}$: $\alpha =0;0.5;1$). For $D_{Sig}$, the first and second dimensions are respectively the amplitude-based metrics $d_A$ and the temporal correlation $corT$; for $D_{Lin}$ and $D_{Geom}$, they correspond to $d_A$ and the behavior-based metric $d_B$.\relax }}{44}{figure.caption.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Pushed and pulled samples in the $k=3$ target neighborhood of $\textbf {x}_i$ before (left) and after (right) learning. The pushed (vs. pulled) samples are indicated by a white (vs. black) arrows (Weinberger \& Sault~\cite {Weinberger2009}).\relax }}{46}{figure.caption.47}
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
-\defcounter {refsection}{0}\relax 
-\ttl@tocsep 
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Projection in the pairwise space}{51}{chapter.3}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{$M^2TML$: formalization}{53}{chapter.4}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{$M^2TML$: implementation}{55}{chapter.5}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{$M^2TML$: Experiments}{57}{chapter.6}
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Detailed presentation of the datasets}{63}{appendix.A}
+\contentsline {xchapter}{Pairwise space and $M^2TML$ formalization}{53}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of embedding of time series $\textbf {x}_i$ from the temporal space (left) into the pairwise space (right). In this example, a pair of time series $(\textbf {x}_1, \textbf {x}_2)$ is projected into the pairwise space as a vector $\textbf {x}_{12}$ described by $p=3$ basic metrics: $\textbf {x}_{12} = [d_1(\textbf {x}_1, \textbf {x}_2), d_2(\textbf {x}_1, \textbf {x}_2), d_3(\textbf {x}_1, \textbf {x}_2)]^T$.\relax }}{54}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Solver library}{65}{appendix.B}
+\contentsline {xchapter}{$M^2TML$: implementation}{57}{chapter.4}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{SVM librairy}{67}{appendix.C}
+\contentsline {xchapter}{$M^2TML$: Experiments}{59}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\ttl@tocsep 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Detailed presentation of the datasets}{65}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Solver library}{67}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{SVM librairy}{69}{appendix.C}

@@ -1,7 +1,4 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Projection in the pairwise space}{\reset@font\mtcSfont 55}{section.5.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}M-NN M-diff strategy}{\reset@font\mtcSfont 55}{section.5.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Radius normalization}{\reset@font\mtcSfont 56}{section.5.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Solving the SVM problem}{\reset@font\mtcSfont 56}{section.5.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Definition of the dissimilarity measure}{\reset@font\mtcSfont 56}{section.5.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}Extension to regression problem}{\reset@font\mtcSfont 56}{section.5.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.7}Extension to multivariate problem}{\reset@font\mtcSfont 56}{section.5.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Dataset presentation}{\reset@font\mtcSfont 59}{section.5.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Experimental protocol}{\reset@font\mtcSfont 59}{section.5.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Results}{\reset@font\mtcSfont 59}{section.5.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Discussion}{\reset@font\mtcSfont 59}{section.5.4}}

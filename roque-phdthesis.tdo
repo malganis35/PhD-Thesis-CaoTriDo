@@ -5,42 +5,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {todo}{Figure: Testing a long text string}{2}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{\textbf {Comment [\uppercase {MR}3]:}~available?}{7}{section*.10}
+\contentsline {todo}{[biblio semi-supervis\IeC {\'e}]}{9}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{[biblio semi-supervis\IeC {\'e}]}{9}{section*.12}
+\contentsline {todo}{r\IeC {\'e}f\IeC {\'e}rences normalization}{15}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{r\IeC {\'e}f\IeC {\'e}rences normalization}{15}{section*.19}
+\contentsline {todo}{\textbf {Comment [\uppercase {CTD}3]:}~r\IeC {\'e}\IeC {\'e}crire + compl\IeC {\'e}ter avec Claude}{26}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{[biblio regression kNN]}{18}{section*.22}
+\contentsline {todo}{figure \IeC {\`a} refaire}{28}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{[biblio kNN pond\IeC {\'e}r\IeC {\'e}]}{18}{section*.23}
+\contentsline {todo}{Partie non encore r\IeC {\'e}dig\IeC {\'e}e. A faire \IeC {\`a} la fin.}{31}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{[biblio fuzzy kNN]}{18}{section*.24}
+\contentsline {todo}{\textbf {Comment [\uppercase {MR}4]:}~Plus les donn\IeC {\'e}es sont impr\IeC {\'e}cises, moins elle est importante}{35}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{\textbf {Comment [\uppercase {MR}4]:}~+ $k$-NN cr\IeC {\'e}dibiliste}{18}{section*.25}
+\contentsline {todo}{Figure: Ajouter la repr\IeC {\'e}sentation fr\IeC {\'e}quentielle des signaux}{36}{equation.2.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{\textbf {Comment [\uppercase {CTD}5]:}~r\IeC {\'e}\IeC {\'e}crire + compl\IeC {\'e}ter avec Claude}{26}{section*.31}
+\contentsline {todo}{A faire \IeC {\`a} la fin, pas urgent}{38}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{figure \IeC {\`a} refaire}{28}{section*.33}
+\contentsline {todo}{\textbf {Comment [\uppercase {MR}5]:}~Modifier figure. enlever 'one' et mettre la m\IeC {\^e}me \IeC {\'e}chelle temporelle}{38}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Partie non encore r\IeC {\'e}dig\IeC {\'e}e. A faire \IeC {\`a} la fin.}{31}{section*.36}
+\contentsline {todo}{ref}{41}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "amplitudes proches", on obtient une valeur de distance faible. }{35}{section*.37}
+\contentsline {todo}{ref}{42}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "spectres proches", on obtient une valeur de distance faible. }{35}{section*.38}
+\contentsline {todo}{ref}{42}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "formes proches", on obtient une valeur de distance faible. }{36}{section*.39}
+\contentsline {todo}{\textbf {Comment [\uppercase {MR}6]:}~Ajouter sur la figure la valeur de $\alpha $ et le nom des m\IeC {\'e}triques pour une meilleure visibilit\IeC {\'e}}{43}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{A faire \IeC {\`a} la fin, pas urgent}{36}{section*.40}
+\contentsline {todo}{A faire, le positionnement du Metric Learning avec l'aide du papier PRL}{45}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "valeurs proches" mais d\IeC {\'e}cal\IeC {\'e}s, on obtient une valeur de distance faible. (prendre DTW standard avec une fonction de co\IeC {\^u}t $D_E$ par exemple)}{38}{section*.43}
+\contentsline {todo}{ref}{47}{section*.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{ref}{39}{section*.45}
-\defcounter {refsection}{0}\relax 
-\contentsline {todo}{ref}{40}{section*.46}
-\defcounter {refsection}{0}\relax 
-\contentsline {todo}{ref}{41}{section*.48}
-\defcounter {refsection}{0}\relax 
-\contentsline {todo}{A faire, le positionnement du Metric Learning avec l'aide du papier PRL}{43}{section*.50}
-\defcounter {refsection}{0}\relax 
-\contentsline {todo}{ref}{45}{section*.52}
+\contentsline {todo}{Figure: Mettre une figure ici montrant la discretization. Faire 2 figures, la 1\IeC {\`e}re montre dans le domaine temporal et son \IeC {\'e}quivalent en classe. La 2\IeC {\`e}me est une figure entr\IeC {\'e}e/sortie}{54}{equation.3.1.2}

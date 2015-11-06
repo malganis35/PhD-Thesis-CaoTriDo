@@ -1,3 +1,6 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Pairwise embedding}{\reset@font\mtcSfont 51}{section.3.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Interpretation of the pairwise space}{\reset@font\mtcSfont 51}{section.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Pros \& Cons}{\reset@font\mtcSfont 52}{section.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Pairwise space representation}{\reset@font\mtcSfont 53}{section.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.1}Interpretation of the pairwise space}{\reset@font\mtcSSfont 55}{subsection.3.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.2}Pros \& Cons}{\reset@font\mtcSSfont 55}{subsection.3.1.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}$M^2TML$: LP optimization problem}{\reset@font\mtcSfont 55}{section.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}$M^2TML$: QP optimization problem}{\reset@font\mtcSfont 55}{section.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}$M^2TML$: SVM approximation}{\reset@font\mtcSfont 55}{section.3.4}}
