@@ -49,6 +49,44 @@
   \field{year}{1964}
 \endentry
 
+\entry{Altman1992}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Altman}{A.}%
+     {Ns}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Confidence intervals,Local linear re- gression,Model building,Model
+  checking,Smoothing.}
+  \strng{namehash}{AN1}
+  \strng{fullhash}{AN1}
+  \field{labelalpha}{Alt92}
+  \field{sortinit}{A}
+  \field{abstract}{%
+  Nonparametric regression is a set of techniques for es- timating a regression
+  curve without making strong as- sumptions about the shape of the true
+  regression func- tion. These techniques are therefore useful for building and
+  checking parametric models, as well as for data description. Kernel and
+  nearest-neighbor regression es- timators are local versions of univariate
+  location esti- mators, and so they can readily be introduced to be- ginning
+  students and consulting clients who are familiar with such summaries as the
+  sample mean and median.%
+  }
+  \verb{doi}
+  \verb 10.1080/00031305.1992.10475879
+  \endverb
+  \field{isbn}{0003-1305}
+  \field{issn}{0003-1305}
+  \field{number}{3}
+  \field{pages}{175\bibrangedash 185}
+  \field{title}{{An introduction to kernel and nearest-neighbor nonparametric
+  regression}}
+  \field{volume}{46}
+  \field{journaltitle}{The American Statistician}
+  \field{year}{1992}
+\endentry
+
 \entry{Abraham2010a}{inproceedings}{}
   \name{author}{2}{}{%
     {{}%
@@ -65,6 +103,7 @@
   \strng{namehash}{AZTP1}
   \strng{fullhash}{AZTP1}
   \field{labelalpha}{AT10}
+  \field{extraalpha}{1}
   \field{sortinit}{A}
   \field{abstract}{%
   Zero-inflated time series data are commonly encountered in many applications,
@@ -89,8 +128,58 @@
   \field{title}{{An Integrated Framework for Simultaneous Classification and
   Regression of Time-Series Data}}
   \verb{url}
-  \verb https://siam.org/proceedings/datamining/2010/dm10\_057\_abrahamz.pdf
+  \verb https://siam.org/proceedings/datamining/2010/dm10{\_}057{\_}abrahamz.pd
+  \verb f
   \endverb
+  \field{year}{2010}
+\endentry
+
+\entry{Abraham2010b}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Abraham}{A.}%
+     {Zubin}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tan}{T.}%
+     {PN}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AZTP2}
+  \strng{fullhash}{AZTP2}
+  \field{labelalpha}{AT10}
+  \field{extraalpha}{2}
+  \field{sortinit}{A}
+  \field{abstract}{%
+  Zero-inflated time series data are commonly encountered in many applications,
+  including climate and ecological modeling, disease monitoring, manufacturing
+  defect detection, and traffic monitoring. Such data often leads to poor model
+  fitting using standard regression methods because they tend to underestimate
+  the frequency of zeros and the magnitude of non-zero values. This paper
+  presents an integrated framework that simultaneously performs classification
+  and regression to accurately predict future values of a zero-inflated time
+  series. A regression model is initially applied to predict the value of the
+  time series. The regression output is then fed into a classification model to
+  determine whether the predicted value should be adjusted to zero. Our
+  regression and classification models are trained to optimize a joint
+  objective function that considers both classification errors on the time
+  series and regression errors on data points that have non-zero values. We
+  demonstrate the effectiveness of our framework in the context of its
+  application to a precipitation downscaling problem for climate impact
+  assessment studies. Read More:
+  http://epubs.siam.org/doi/abs/10.1137/1.9781611972801.57%
+  }
+  \field{isbn}{978-0-89871-703-7}
+  \field{pages}{653\bibrangedash 664}
+  \field{title}{{An Integrated Framework for Simultaneous Classification and
+  Regression of Time-Series Data}}
+  \verb{url}
+  \verb https://siam.org/proceedings/datamining/2010/dm10{\_}057{\_}abrahamz.pd
+  \verb f
+  \endverb
+  \field{journaltitle}{Proc of the ACM SIGKDD Int'l Conf on Data Mining}
   \field{year}{2010}
 \endentry
 
@@ -112,6 +201,50 @@
   \strng{namehash}{BDCJ1}
   \strng{fullhash}{BDCJ1}
   \field{labelalpha}{BC94}
+  \field{extraalpha}{1}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  Knowledge discovery in databases presents many interesting challenges within
+  the context of providing computer tools for exploring large data archives.
+  Electronic data repositories are growing qulckiy and contain data from
+  commercial, scientific, and other domains. Much of this data is inherently
+  temporal, such as stock prices or NASA telemetry data. Detecting patterns in
+  such data streams or time series is an important knowledge discovery task.
+  This paper describes some primary experiments with a dynamic programming
+  approach to the problem. The pattern detection algorithm is based on the
+  dynamic time warping technique used in the speech recognition field.
+  Keywords: dynamic programming, dynamic time warping, knowledge discovery,
+  pattern analysis, time series.%
+  }
+  \field{pages}{359\bibrangedash 370}
+  \field{title}{{Using dynamic time warping to find patterns in time series}}
+  \verb{url}
+  \verb http://www.aaai.org/Papers/Workshops/1994/WS-94-03/WS94-03-031.pdf
+  \endverb
+  \field{volume}{398}
+  \field{journaltitle}{Workshop on Knowledge Knowledge Discovery in Databases}
+  \field{year}{1994}
+\endentry
+
+\entry{Berndt1994c}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Berndt}{B.}%
+     {Donald}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Clifford}{C.}%
+     {James}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{dynamic programming,dynamic time warping,knowledge discovery,pat,tern
+  analysis,time series}
+  \strng{namehash}{BDCJ1}
+  \strng{fullhash}{BDCJ1}
+  \field{labelalpha}{BC94}
+  \field{extraalpha}{2}
   \field{sortinit}{B}
   \field{abstract}{%
   Knowledge discovery in databases presents many interesting challenges within
@@ -177,7 +310,8 @@
   \field{title}{{Pearson correlation coefficient}}
   \verb{url}
   \verb http://www.springerlink.com/index/10.1007/978-3-642-00296-0$\backslash$
-  \verb nhttp://link.springer.com/content/pdf/10.1007/978-3-642-00296-0\_5.pdf
+  \verb nhttp://link.springer.com/content/pdf/10.1007/978-3-642-00296-0{\_}5.pd
+  \verb f
   \endverb
   \field{journaltitle}{Noise Reduction in Speech Processing}
   \field{year}{2009}
@@ -234,6 +368,124 @@
   \verb http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.21.3818
   \endverb
   \field{year}{1992}
+\endentry
+
+\entry{Bellet2012}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Bellet}{B.}%
+     {Aur{\'{e}}lien}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Habrard}{H.}%
+     {Amaury}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sebban}{S.}%
+     {Marc}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BAHASM1}
+  \strng{fullhash}{BAHASM1}
+  \field{labelalpha}{BHS12}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  Similarity functions are a fundamental component of many learning algorithms.
+  When dealing with string or tree-structured data, measures based on the edit
+  distance are widely used, and there exist a few methods for learning them
+  from data. However, these methods offer no theoretical guarantee as to the
+  generalization ability and discriminative power of the learned similarities.
+  In this paper, we propose an approach to edit similarity learning based on
+  loss minimization, called GESL. It is driven by the notion of
+  (ϵ,$\gamma$,$\tau$)-goodness, a theory that bridges the gap between the
+  properties of a similarity function and its performance in classification.
+  Using the notion of uniform stability, we derive generalization guarantees
+  that hold for a large class of loss functions. We also provide experimental
+  results on two real-world datasets which show that edit similarities learned
+  with GESL induce more accurate and sparser classifiers than other (standard
+  or learned) edit similarities.%
+  }
+  \verb{doi}
+  \verb 10.1007/s10994-012-5293-8
+  \endverb
+  \field{isbn}{0885-6125}
+  \field{issn}{0885-6125, 1573-0565}
+  \field{number}{1-2}
+  \field{pages}{5\bibrangedash 35}
+  \field{title}{{Good edit similarity learning by loss minimization}}
+  \verb{url}
+  \verb http://link.springer.com/article/10.1007/s10994-012-5293-8$\backslash$n
+  \verb http://link.springer.com/article/10.1007{\%}2Fs10994-012-5293-8$\backsl
+  \verb ash$nhttp://link.springer.com/content/pdf/10.1007{\%}2Fs10994-012-5293-
+  \verb 8.pdf
+  \endverb
+  \field{volume}{89}
+  \field{journaltitle}{Machine Learning}
+  \field{year}{2012}
+\endentry
+
+\entry{Bellet2013a}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Bellet}{B.}%
+     {Aur{\'{e}}lien}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Habrard}{H.}%
+     {Amaury}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sebban}{S.}%
+     {Marc}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{(),edit distance,mahalanobis distance,metric learning,similarity
+  learning}
+  \strng{namehash}{BAHASM1}
+  \strng{fullhash}{BAHASM1}
+  \field{labelalpha}{BHS13}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  The need for appropriate ways to measure the distance or similarity between
+  data is ubiquitous in machine learning, pattern recognition and data mining,
+  but handcrafting such good metrics for specific problems is generally
+  difficult. This has led to the emergence of metric learning, which aims at
+  automatically learning a metric from data and has attracted a lot of interest
+  in machine learning and related fields for the past ten years. This survey
+  paper proposes a systematic review of the metric learning literature,
+  highlighting the pros and cons of each approach. We pay particular attention
+  to Mahalanobis distance metric learning, a well-studied and successful
+  framework, but additionally present a wide range of methods that have
+  recently emerged as powerful alternatives, including nonlinear metric
+  learning, similarity learning and local metric learning. Recent trends and
+  extensions, such as semi-supervised metric learning, metric learning for
+  histogram data and the derivation of generalization guarantees, are also
+  covered. Finally, this survey addresses metric learning for structured data,
+  in particular edit distance learning, and attempts to give an overview of the
+  remaining challenges in metric learning for the years to come.%
+  }
+  \verb{doi}
+  \verb 10.1073/pnas.0809777106
+  \endverb
+  \verb{eprint}
+  \verb 1306.6709
+  \endverb
+  \field{issn}{00401951}
+  \field{pages}{57}
+  \field{title}{{A Survey on Metric Learning for Feature Vectors and Structured
+  Data}}
+  \verb{url}
+  \verb http://arxiv.org/abs/1306.6709
+  \endverb
+  \field{journaltitle}{arXiv preprint arXiv:1306.6709}
+  \field{eprinttype}{arXiv}
+  \field{year}{2013}
 \endentry
 
 \entry{Bishop2006}{book}{}
@@ -301,44 +553,11 @@
   \endverb
   \field{volume}{4}
   \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th\`{e}se/Bibliographie/L
-  \verb ivre/Bishop - Pattern Recognition and Machine Learning.pdf:pdf
+  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th{\`{e}}se/Bibliographie
+  \verb /Livre/Bishop - Pattern Recognition and Machine Learning.pdf:pdf
   \endverb
   \field{eprinttype}{arXiv}
   \field{year}{2006}
-\endentry
-
-\entry{Bottou2007}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Bottou}{B.}%
-     {L}{L}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Lin}{L.}%
-     {CJ}{C.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{BLLC1}
-  \strng{fullhash}{BLLC1}
-  \field{labelalpha}{BL07}
-  \field{sortinit}{B}
-  \field{abstract}{%
-  Considerable efforts have been devoted to the implementation of efficient
-  optimization method for solving the Support Vector Machine dual problem. This
-  document proposes an historical perspective and and in depth review of the
-  algorithmic and computational issues associated with this problem.%
-  }
-  \field{isbn}{0262026252}
-  \field{pages}{1\bibrangedash 27}
-  \field{title}{{Support vector machine solvers}}
-  \verb{url}
-  \verb http://140.112.30.28/~cjlin/papers/bottou\_lin.pdf
-  \endverb
-  \field{journaltitle}{Large scale kernel machines}
-  \field{year}{2007}
 \endentry
 
 \entry{Brigham1967}{article}{}
@@ -375,9 +594,9 @@
   \field{pages}{63 \bibrangedash 70}
   \field{title}{{The fast Fourier transform}}
   \verb{url}
-  \verb http://ieeexplore.ieee.org/ielx5/6/5217195/05217220.pdf?tp=\&arnumber=5
-  \verb 217220\&isnumber=5217195$\backslash$nhttp://ieeexplore.ieee.org/stamp/s
-  \verb tamp.jsp?tp=\&arnumber=5217220
+  \verb http://ieeexplore.ieee.org/ielx5/6/5217195/05217220.pdf?tp={\&}arnumber
+  \verb =5217220{\&}isnumber=5217195$\backslash$nhttp://ieeexplore.ieee.org/sta
+  \verb mp/stamp.jsp?tp={\&}arnumber=5217220
   \endverb
   \field{volume}{4}
   \field{journaltitle}{Spectrum, IEEE}
@@ -443,6 +662,56 @@
   \field{year}{2002}
 \endentry
 
+\entry{Caiado2006c}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Caiado}{C.}%
+     {Jorge}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Crato}{C.}%
+     {Nuno}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pe{\~{n}}a}{P.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Autocorrelation function,Classification,Clustering,Euclidean
+  distance,Periodogram,Stationary and non-stationary time series}
+  \strng{namehash}{CJCNPD1}
+  \strng{fullhash}{CJCNPD1}
+  \field{labelalpha}{CCP06}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  The statistical discrimination and clustering literature has studied the
+  problem of identifying similarities in time series data. Some studies use
+  non-parametric approaches for splitting a set of time series into clusters by
+  looking at their Euclidean distances in the space of points. A new measure of
+  distance between time series based on the normalized periodogram is proposed.
+  Simulation results comparing this measure with others parametric and
+  non-parametric metrics are provided. In particular, the classification of
+  time series as stationary or as non-stationary is discussed. The use of both
+  hierarchical and non-hierarchical clustering algorithms is considered. An
+  illustrative example with economic time series data is also presented. ©
+  2005 Elsevier B.V. All rights reserved.%
+  }
+  \verb{doi}
+  \verb 10.1016/j.csda.2005.04.012
+  \endverb
+  \field{isbn}{01679473}
+  \field{issn}{01679473}
+  \field{number}{10}
+  \field{pages}{2668\bibrangedash 2684}
+  \field{title}{{A periodogram-based metric for time series classification}}
+  \field{volume}{50}
+  \field{journaltitle}{Computational Statistics and Data Analysis}
+  \field{year}{2006}
+\endentry
+
 \entry{Cover1967b}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -466,16 +735,16 @@
   This rule is independent of the underlying joint distribution on the sample
   points and their classifications, and hence the probability of
   error<tex>R</tex>of such a rule must be at least as great as the Bayes
-  probability of error<tex>R\^{}\{ast\}</tex>--the minimum probability of error
-  over all decision rules taking underlying probability structure into account.
-  However, in a large sample analysis, we will show in the<tex>M</tex>-category
-  case that<tex>R\^{}\{ast\} leq R leq R\^{}\{ast\}(2
-  --MR\^{}\{ast\}/(M-1))</tex>, where these bounds are the tightest possible,
-  for all suitably smooth underlying distributions. Thus for any number of
-  categories, the probability of error of the nearest neighbor rule is bounded
-  above by twice the Bayes probability of error. In this sense, it may be said
-  that half the classification information in an infinite sample set is
-  contained in the nearest neighbor.%
+  probability of error<tex>R{\^{}}{\{}ast{\}}</tex>--the minimum probability of
+  error over all decision rules taking underlying probability structure into
+  account. However, in a large sample analysis, we will show in
+  the<tex>M</tex>-category case that<tex>R{\^{}}{\{}ast{\}} leq R leq
+  R{\^{}}{\{}ast{\}}(2 --MR{\^{}}{\{}ast{\}}/(M-1))</tex>, where these bounds
+  are the tightest possible, for all suitably smooth underlying distributions.
+  Thus for any number of categories, the probability of error of the nearest
+  neighbor rule is bounded above by twice the Bayes probability of error. In
+  this sense, it may be said that half the classification information in an
+  infinite sample set is contained in the nearest neighbor.%
   }
   \verb{doi}
   \verb 10.1109/TIT.1967.1053964
@@ -488,6 +757,67 @@
   \field{volume}{13}
   \field{journaltitle}{IEEE Transactions on Information Theory}
   \field{year}{1967}
+\endentry
+
+\entry{Chatpatanasiri2010}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Chatpatanasiri}{C.}%
+     {Ratthachat}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Korsrilabutr}{K.}%
+     {Teesid}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tangchanachaianan}{T.}%
+     {Pasakorn}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kijsirikul}{K.}%
+     {Boonserm}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Dimensionality reduction,Distance metric learning,Kernel
+  alignment,Kernel machines,Representer theorem}
+  \strng{namehash}{CR+1}
+  \strng{fullhash}{CRKTTPKB1}
+  \field{labelalpha}{Cha+10}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  This paper focuses on developing a new framework of kernelizing Mahalanobis
+  distance learners. The new KPCA trick framework offers several practical
+  advantages over the classical kernel trick framework, e.g. no mathematical
+  formulas and no reprogramming are required for a kernel implementation, a way
+  to speed up an algorithm is provided with no extra work, the framework avoids
+  troublesome problems such as singularity. Rigorous representer theorems in
+  countably infinite dimensional spaces are given to validate our framework.
+  Furthermore, unlike previous works which always apply brute force methods to
+  select a kernel, we derive a kernel alignment formula based on quadratic
+  programming which can efficiently construct an appropriate kernel for a given
+  dataset. ?? 2010.%
+  }
+  \verb{doi}
+  \verb 10.1016/j.neucom.2009.11.037
+  \endverb
+  \field{issn}{09252312}
+  \field{number}{10-12}
+  \field{pages}{1570\bibrangedash 1579}
+  \field{title}{{A new kernelization framework for Mahalanobis distance
+  learning algorithms}}
+  \verb{url}
+  \verb http://dx.doi.org/10.1016/j.neucom.2009.11.037$\backslash$nhttp://ac.el
+  \verb s-cdn.com/S0925231210001165/1-s2.0-S0925231210001165-main.pdf?{\_}tid=9
+  \verb 23c9f62-a756-11e4-970c-00000aab0f6b{\&}acdnat=1422495279{\_}136843023ec
+  \verb d8d5dc1ba9d83e2539013
+  \endverb
+  \field{volume}{73}
+  \field{journaltitle}{Neurocomputing}
+  \field{year}{2010}
 \endentry
 
 \entry{Chatfield2004}{book}{}
@@ -640,10 +970,10 @@
   \field{labelalpha}{Coc77}
   \field{sortinit}{C}
   \field{abstract}{%
-  Commentary by : Cochran William C. Current Contents : \#19, May 9, 1977%
+  Commentary by : Cochran William C. Current Contents : {\#}19, May 9, 1977%
   }
   \field{pages}{1}
-  \field{title}{{Snedecor G W \& Cochran W G. Statistical methods applied to
+  \field{title}{{Snedecor G W {\&} Cochran W G. Statistical methods applied to
   experiments in agriculture and biology. 5th ed. Ames, Iowa: Iowa State
   University Press, 1956.}}
   \verb{url}
@@ -699,8 +1029,9 @@
   \field{title}{{On the Algorithmic Implementation of Multiclass Kernel-based
   Vector Machines}}
   \verb{url}
-  \verb http://machinelearning.wustl.edu/mlpapers/paper\_files/CrammerS01.pdf$\
-  \verb backslash$nhttp://www.jmlr.org/papers/volume2/crammer01a/crammer01a.pdf
+  \verb http://machinelearning.wustl.edu/mlpapers/paper{\_}files/CrammerS01.pdf
+  \verb $\backslash$nhttp://www.jmlr.org/papers/volume2/crammer01a/crammer01a.p
+  \verb df
   \endverb
   \field{volume}{2}
   \verb{file}
@@ -739,7 +1070,7 @@
   \verb esktop/Downloaded/Cao, Tay - 2001 - Financial Forecasting Using Support
   \verb  Vector Machines.pdf:pdf
   \endverb
-  \field{journaltitle}{Neural Computing \& Applications}
+  \field{journaltitle}{Neural Computing {\&} Applications}
   \field{year}{2001}
 \endentry
 
@@ -830,8 +1161,8 @@
   \verb esktop/Downloaded/Campbell, Ying - 2011 - Learning with Support Vector
   \verb Machines.pdf:pdf
   \endverb
-  \field{month}{02}
   \field{year}{2011}
+  \warn{\item Invalid format of field 'month'}
 \endentry
 
 \entry{AhlameDouzal-Chouakria2011}{article}{}
@@ -880,6 +1211,98 @@
   \endverb
   \field{journaltitle}{Pattern Recognition journal}
   \field{year}{2011}
+\endentry
+
+\entry{Douzal-Chouakria2012a}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Douzal-Chouakria}{D.-C.}%
+     {Ahlame}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Amblard}{A.}%
+     {C{\'{e}}cile}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Classification trees,Learning metric,Supervised classification,Time
+  series proximity measures}
+  \strng{namehash}{DCAAC2}
+  \strng{fullhash}{DCAAC2}
+  \field{labelalpha}{DCA12}
+  \field{sortinit}{D}
+  \field{abstract}{%
+  This paper proposes an extension of classification trees to time series input
+  variables. A new split criterion based on time series proximities is
+  introduced. First, the criterion relies on an adaptive (i.e., parameterized)
+  time series metric to cover both behaviors and values proximities. The
+  metrics parameters may change from one internal node to another to achieve
+  the best bisection of the set of time series. Second, the criterion involves
+  the automatic extraction of the most discriminating subsequences. The
+  proposed time series classification tree is applied to a wide range of
+  datasets: public and new, real and synthetic, univariate and multivariate
+  data. We show, through the experiments performed in this study, that the
+  proposed tree outperforms temporal trees using standard time series distances
+  and performs well compared to other competitive time series classifiers. ©
+  2011 Elsevier Ltd. All rights reserved.%
+  }
+  \verb{doi}
+  \verb 10.1016/j.patcog.2011.08.018
+  \endverb
+  \field{issn}{00313203}
+  \field{number}{3}
+  \field{pages}{1076\bibrangedash 1091}
+  \field{title}{{Classification trees for time series}}
+  \field{volume}{45}
+  \field{journaltitle}{Pattern Recognition}
+  \field{year}{2012}
+\endentry
+
+\entry{Douzal-Chouakria2010}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Douzal-Chouakria}{D.-C.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Diallo}{D.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Giroud}{G.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Classification,Clustering,Distance,Genes expression profiles,Time
+  series}
+  \strng{namehash}{DCADAGF1}
+  \strng{fullhash}{DCADAGF1}
+  \field{labelalpha}{DCDG10}
+  \field{sortinit}{D}
+  \field{abstract}{%
+  This paper addresses the clustering and classification of active genes during
+  the process of cell division. Cell division ensures the proliferation of
+  cells, but it becomes increasingly abnormal in cancer cells. The genes
+  studied here are described by their expression profiles (i.e. time series)
+  during the cell division cycle. This work focuses on evaluating the
+  efficiency of four major metrics for clustering and classifying genes
+  expression profiles and is based on a random-periods model for the expression
+  of cell-cycle genes. The model accounts for the observed attenuation in cycle
+  amplitude or duration, variations in the initial amplitude, and drift in the
+  expression profiles. ?? 2009 Elsevier B.V. All rights reserved.%
+  }
+  \verb{doi}
+  \verb 10.1016/j.patrec.2010.05.008
+  \endverb
+  \field{issn}{01678655}
+  \field{title}{{A random-periods model for the comparison of a metrics
+  efficiency to classify cell-cycle expressed genes}}
+  \field{journaltitle}{Pattern Recognition Letters}
+  \field{year}{2010}
 \endentry
 
 \entry{Chouakria2007}{article}{}
@@ -967,6 +1390,9 @@
   \verb http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=376493
   \endverb
   \field{volume}{25}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/Desktop/smc95.pdf:pdf
+  \endverb
   \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics}
   \field{year}{1995}
 \endentry
@@ -1126,6 +1552,241 @@
   \field{year}{2008}
 \endentry
 
+\entry{DUrso2009}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {D'Urso}{D.}%
+     {Pierpaolo}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Maharaj}{M.}%
+     {Elizabeth~Ann}{E.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Autocorrelation function,Crisp C-means clustering,Fuzzy C-means
+  clustering,Switching time series,Time series}
+  \strng{namehash}{DPMEA1}
+  \strng{fullhash}{DPMEA1}
+  \field{labelalpha}{DM09}
+  \field{sortinit}{D}
+  \field{abstract}{%
+  The traditional approaches to clustering a set of time series are generally
+  applicable if there is a fixed underlying structure to the time series so
+  that each will belong to one cluster or the other. However, time series often
+  display dynamic behaviour in their evolution over time. This dynamic
+  behaviour should be taken into account when attempting to cluster time
+  series. For instance, during a certain period, a time series might belong to
+  a certain cluster; afterwards its dynamics might be closer to that of another
+  cluster. In this case, the traditional clustering approaches are unlikely to
+  find and represent the underlying structure in the given time series. This
+  switch from one time state to another, which is typically vague, can be
+  naturally treated following a fuzzy approach. This paper proposes a fuzzy
+  clustering approach based on the autocorrelation functions of time series, in
+  which each time series is not assigned exclusively to only one cluster, but
+  it is allowed to belong to different clusters with various membership
+  degrees. ?? 2009 Elsevier B.V. All rights reserved.%
+  }
+  \verb{doi}
+  \verb 10.1016/j.fss.2009.04.013
+  \endverb
+  \field{isbn}{0165-0114}
+  \field{issn}{01650114}
+  \field{number}{24}
+  \field{pages}{3565\bibrangedash 3589}
+  \field{title}{{Autocorrelation-based fuzzy clustering of time series}}
+  \field{volume}{160}
+  \field{journaltitle}{Fuzzy Sets and Systems}
+  \field{year}{2009}
+\endentry
+
+\entry{Do2012}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Do}{D.}%
+     {Huyen}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kalousis}{K.}%
+     {Alexandros}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Jun}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Woznica}{W.}%
+     {Adam}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DH+2}
+  \strng{fullhash}{DHKAWJWA1}
+  \field{labelalpha}{Do+12}
+  \field{sortinit}{D}
+  \verb{eprint}
+  \verb arXiv:1201.4714v1
+  \endverb
+  \field{pages}{308\bibrangedash 317}
+  \field{title}{{A metric learning perspective of SVM: on the relation of LMNN
+  and SVM}}
+  \verb{url}
+  \verb http://cui.unige.ch/{~}wangjun/papers/svm{\_}lmnn{\_}aistats12.pdf
+  \endverb
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/Desktop/ML and SVM.pdf:pdf
+  \endverb
+  \field{journaltitle}{Proceedings of the 15th International Con- ference on
+  Artificial Intelligence and Statistics (AISTAS '12)}
+  \field{eprinttype}{arXiv}
+  \field{year}{2012}
+\endentry
+
+\entry{Duin2012}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Duin}{D.}%
+     {Robert P~W}{R.~P.~W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {P{\c{c}}kalska}{P.}%
+     {Elbieta}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Dissimilarity representation,Dissimilarity space,Representation
+  set,Structural pattern recognition,Vector space}
+  \strng{namehash}{DRPWPE1}
+  \strng{fullhash}{DRPWPE1}
+  \field{labelalpha}{DP12}
+  \field{sortinit}{D}
+  \field{abstract}{%
+  Human experts constitute pattern classes of natural objects based on their
+  observed appearance. Automatic systems for pattern recognition may be
+  designed on a structural description derived from sensor observations.
+  Alternatively, training sets of examples can be used in statistical learning
+  procedures. They are most powerful for vectorial object representations.
+  Unfortunately, structural descriptions do not match well with vectorial
+  representations. Consequently it is difficult to combine the structural and
+  statistical approaches to pattern recognition. Structural descriptions may be
+  used to compare objects. This leads to a set of pairwise dissimilarities from
+  which vectors can be derived for the purpose of statistical learning. The
+  resulting dissimilarity representation bridges thereby the structural and
+  statistical approaches. The dissimilarity space is one of the possible spaces
+  resulting from this representation. It is very general and easy to implement.
+  This paper gives a historical review and discusses the properties of the
+  dissimilarity space approaches illustrated by a set of examples on real world
+  datasets. © 2011 Elsevier B.V. All rights reserved.%
+  }
+  \verb{doi}
+  \verb 10.1016/j.patrec.2011.04.019
+  \endverb
+  \field{isbn}{0167-8655}
+  \field{issn}{01678655}
+  \field{number}{7}
+  \field{pages}{826\bibrangedash 832}
+  \field{title}{{The dissimilarity space: Bridging structural and statistical
+  pattern recognition}}
+  \field{volume}{33}
+  \field{journaltitle}{Pattern Recognition Letters}
+  \field{year}{2012}
+\endentry
+
+\entry{Dudani1976}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Dudani}{D.}%
+     {Sahibsingh~a.}{S.~a.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DSa1}
+  \strng{fullhash}{DSa1}
+  \field{labelalpha}{Dud76}
+  \field{sortinit}{D}
+  \field{abstract}{%
+  Among the simplest and most intuitively appealing classes of nonprobabilistic
+  classification procedures are those that weight the evidence of nearby sample
+  observations most heavily. More specifically, one might wish to weight the
+  evidence of a neighbor close to an unclassified observation more heavily than
+  the evidence of another neighbor which is at a greater distance from the
+  unclassified observation. One such classification rule is described which
+  makes use of a neighbor weighting function for the purpose of assigning a
+  class to an unclassified sample. The admissibility of such a rule is also
+  considered.%
+  }
+  \verb{doi}
+  \verb 10.1109/TSMC.1976.5408784
+  \endverb
+  \field{isbn}{0018-9472}
+  \field{issn}{00189472}
+  \field{number}{4}
+  \field{pages}{325\bibrangedash 327}
+  \field{title}{{DISTANCE-WEIGHTED k-NEAREST-NEIGHBOR RULE.}}
+  \field{volume}{SMC-6}
+  \field{journaltitle}{IEEE Transactions on Systems, Man and Cybernetics}
+  \field{year}{1976}
+\endentry
+
+\entry{Diaz2010}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {D{\'{\i}}az}{D.}%
+     {Sonia~P{\'{e}}rtega}{S.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vilar}{V.}%
+     {Jos{\'{e}}~A.}{J.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{ARMA processes,Dissimilarity measures,Local linear
+  regression,Non-linear processes,Stationary and non-stationary processes,Time
+  series clustering}
+  \strng{namehash}{DSPVJA1}
+  \strng{fullhash}{DSPVJA1}
+  \field{labelalpha}{DV10}
+  \field{sortinit}{D}
+  \field{abstract}{%
+  One key point in cluster analysis is to determine a similarity or
+  dissimilarity measure between data objects. When working with time series,
+  the concept of similarity can be established in different ways. In this
+  paper, several non-parametric statistics originally designed to test the
+  equality of the log-spectra of two stochastic processes are proposed as
+  dissimilarity measures between time series data. Their behavior in time
+  series clustering is analyzed throughout a simulation study, and compared
+  with the performance of several model-free and model-based dissimilarity
+  measures. Up to three different classification settings were considered: (i)
+  to distinguish between stationary and non-stationary time series, (ii) to
+  classify different ARMA processes and (iii) to classify several non-linear
+  time series models. As it was expected, the performance of a particular
+  dissimilarity metric strongly depended on the type of processes subjected to
+  clustering. Among all the measures studied, the non-parametric distances
+  showed the most robust behavior.%
+  }
+  \verb{doi}
+  \verb 10.1007/s00357-010-9064-6
+  \endverb
+  \field{issn}{0176-4268}
+  \field{number}{3}
+  \field{pages}{333\bibrangedash 362}
+  \field{title}{{Comparing Several Parametric and Nonparametric Approaches to
+  Time Series Clustering: A Simulation Study}}
+  \verb{url}
+  \verb http://www.scopus.com/inward/record.url?eid=2-s2.0-84871904170{\&}partn
+  \verb erID=tZOtx3y1
+  \endverb
+  \field{volume}{27}
+  \field{journaltitle}{Journal of Classification}
+  \field{year}{2010}
+\endentry
+
 \entry{Fan2008}{article}{}
   \name{author}{3}{}{%
     {{}%
@@ -1169,6 +1830,35 @@
   \endverb
   \field{journaltitle}{The Journal of Machine Learning}
   \field{year}{2008}
+\endentry
+
+\entry{Frambourg2013a}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Frambourg}{F.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Douzal-Chouakria}{D.-C.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gaussier}{G.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{FCDCAGE1}
+  \strng{fullhash}{FCDCAGE1}
+  \field{labelalpha}{FDCG13}
+  \field{sortinit}{F}
+  \field{booktitle}{Intelligent Data Analysis}
+  \field{pages}{198\bibrangedash 209}
+  \field{title}{{Learning multiple temporal matching for time series
+  classification}}
+  \field{year}{2013}
 \endentry
 
 \entry{Faloutsos1994}{article}{}
@@ -1259,7 +1949,7 @@
      {}{}%
      {}{}}%
   }
-  \keyw{Learning/Statistics \& Optimisation,Theory \& Algorithms}
+  \keyw{Learning/Statistics {\&} Optimisation,Theory {\&} Algorithms}
   \strng{namehash}{GJ+1}
   \strng{fullhash}{GJRSTHGESRRSTSR1}
   \field{labelalpha}{Gol+04}
@@ -1338,12 +2028,13 @@
   \field{pages}{1396\bibrangedash 400}
   \field{title}{{A Practical Guide to Support Vector Classification}}
   \verb{url}
-  \verb http://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf
+  \verb http://www.csie.ntu.edu.tw/{~}cjlin/papers/guide/guide.pdf
   \endverb
   \field{volume}{101}
   \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th\`{e}se/Bibliographie/S
-  \verb VM Librairie/A Practical Guide to Support Vector Classification.pdf:pdf
+  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th{\`{e}}se/Bibliographie
+  \verb /SVM Librairie/A Practical Guide to Support Vector Classification.pdf:p
+  \verb df
   \endverb
   \field{journaltitle}{BJU international}
   \field{eprinttype}{arXiv}
@@ -1386,10 +2077,10 @@
   \endverb
   \field{volume}{16}
   \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th\`{e}se/Bibliographie/S
-  \verb VM + Time Series/Hwang-KSCE Journal of Civil Engineering-2012\_Forecast
-  \verb ing performance of LS-SVM for nonlinear hydrological time series.pdf:pd
-  \verb f
+  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th{\`{e}}se/Bibliographie
+  \verb /SVM + Time Series/Hwang-KSCE Journal of Civil Engineering-2012{\_}Fore
+  \verb casting performance of LS-SVM for nonlinear hydrological time series.pd
+  \verb f:pdf
   \endverb
   \field{journaltitle}{KSCE Journal of Civil Engineering}
   \field{year}{2012}
@@ -1510,12 +2201,81 @@
   \endverb
   \field{volume}{60}
   \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th\`{e}se/Bibliographie/S
-  \verb VM + Time Series/Hu-Renewable Energy-2013\_A hybrid forecasting approac
-  \verb h applied to wind speed time series.pdf:pdf
+  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th{\`{e}}se/Bibliographie
+  \verb /SVM + Time Series/Hu-Renewable Energy-2013{\_}A hybrid forecasting app
+  \verb roach applied to wind speed time series.pdf:pdf
   \endverb
   \field{journaltitle}{Renewable Energy}
   \field{year}{2013}
+\endentry
+
+\entry{Jeong2011}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Jeong}{J.}%
+     {Young-Seon}{Y.-S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jeong}{J.}%
+     {Myong~K.}{M.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Omitaomu}{O.}%
+     {Olufemi~A.}{O.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Adaptive weights,Dynamic time warping,Modified logistic weight
+  function,Time series classification,Time series clustering,Weighted dynamic
+  time warping}
+  \strng{namehash}{JYSJMKOOA1}
+  \strng{fullhash}{JYSJMKOOA1}
+  \field{labelalpha}{JJO11}
+  \field{sortinit}{J}
+  \field{abstract}{%
+  Dynamic time warping (DTW), which finds the minimum path by providing
+  non-linear alignments between two time series, has been widely used as a
+  distance measure for time series classification and clustering. However, DTW
+  does not account for the relative importance regarding the phase difference
+  between a reference point and a testing point. This may lead to
+  misclassification especially in applications where the shape similarity
+  between two sequences is a major consideration for an accurate recognition.
+  Therefore, we propose a novel distance measure, called a weighted DTW (WDTW),
+  which is a penalty-based DTW. Our approach penalizes points with higher phase
+  difference between a reference point and a testing point in order to prevent
+  minimum distance distortion caused by outliers. The rationale underlying the
+  proposed distance measure is demonstrated with some illustrative examples. A
+  new weight function, called the modified logistic weight function (MLWF), is
+  also proposed to systematically assign weights as a function of the phase
+  difference between a reference point and a testing point. By applying
+  different weights to adjacent points, the proposed algorithm can enhance the
+  detection of similarity between two time series. We show that some popular
+  distance measures such as DTW and Euclidean distance are special cases of our
+  proposed WDTW measure. We extend the proposed idea to other variants of DTW
+  such as derivative dynamic time warping (DDTW) and propose the weighted
+  version of DDTW. We have compared the performances of our proposed procedures
+  with other popular approaches using public data sets available through the
+  UCR Time Series Data Mining Archive for both time series classification and
+  clustering problems. The experimental results indicate that the proposed
+  approaches can achieve improved accuracy for time series classification and
+  clustering problems.%
+  }
+  \verb{doi}
+  \verb 10.1016/j.patcog.2010.09.022
+  \endverb
+  \field{isbn}{0031-3203}
+  \field{issn}{00313203}
+  \field{number}{9}
+  \field{pages}{2231\bibrangedash 2240}
+  \field{title}{{Weighted dynamic time warping for time series classification}}
+  \verb{url}
+  \verb http://www.sciencedirect.com/science/article/pii/S003132031000484X
+  \endverb
+  \field{volume}{44}
+  \field{journaltitle}{Pattern Recognition}
+  \field{year}{2011}
 \endentry
 
 \entry{Jain1999}{article}{}
@@ -1591,9 +2351,9 @@
   \field{abstract}{%
   The classical filtering and prediction problem is re-examined using the Bode-
   Shannon representation of random processes and the ``state
-  transition\&apos;\&apos; method of analysis of dynamic systems. New results
-  are: (1) The formulation and methods of solution of the problem apply without
-  modifica- tion to stationary and nonstationary statistics and to
+  transition{\&}apos;{\&}apos; method of analysis of dynamic systems. New
+  results are: (1) The formulation and methods of solution of the problem apply
+  without modifica- tion to stationary and nonstationary statistics and to
   growing-memory and infinite- memory filters. (2) A nonlinear difference (or
   differential) equation is derived for the covariance matrix of the optimal
   estimation error. From the solution of this equation the co- efficients of
@@ -1616,6 +2376,165 @@
   \field{volume}{82}
   \field{journaltitle}{Transactions of the ASME Journal of Basic Engineering}
   \field{year}{1960}
+\endentry
+
+\entry{Keogh2011}{misc}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Keogh}{K.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhu}{Z.}%
+     {Q.}{Q.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hu}{H.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hao}{H.}%
+     {Y.}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Xi}{X.}%
+     {X.}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wei}{W.}%
+     {L.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ratanamahatana}{R.}%
+     {C.A.}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KE+1}
+  \strng{fullhash}{KEZQHBHYXXWLRC1}
+  \field{labelalpha}{Keo+11}
+  \field{sortinit}{K}
+  \field{title}{{The UCR Time Series Classification/Clustering Homepage}}
+  \verb{url}
+  \verb www.cs.ucr.edu/{~}eamonn/time{\_}series{\_}data/
+  \endverb
+  \field{year}{2011}
+\endentry
+
+\entry{Keller1985}{misc}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Keller}{K.}%
+     {James~M.}{J.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gray}{G.}%
+     {Michael~R.}{M.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Givens}{G.}%
+     {James~a.}{J.~a.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KJMGMRGJa1}
+  \strng{fullhash}{KJMGMRGJa1}
+  \field{labelalpha}{KGG85}
+  \field{sortinit}{K}
+  \field{abstract}{%
+  Classification of objects is an important area of research and application in
+  a variety of fields. In the presence of full knowledge of the underlying
+  probabilities, Bayes decision theory gives optimal error rates. In those
+  cases where this information is not present, many algorithms make use of
+  distance or similarity among samples as a means of classification. The
+  K-nearest neighbor decision rule has often been used in these pattern
+  recognition problems. One of the difficulties that arises when utilizing this
+  technique is that each of the labeled samples is given equal importance in
+  deciding the class memberships of the pattern to be classified, regardless of
+  their `typicalness'. The theory of fuzzy sets is introduced into the
+  K-nearest neighbor technique to develop a fuzzy version of the algorithm.
+  Three methods of assigning fuzzy memberships to the labeled samples are
+  proposed, and experimental results and comparisons to the crisp version are
+  presented.%
+  }
+  \field{booktitle}{IEEE Transactions on Systems, Man, and Cybernetics}
+  \verb{doi}
+  \verb 10.1109/TSMC.1985.6313426
+  \endverb
+  \field{isbn}{0018-9472}
+  \field{issn}{0018-9472}
+  \field{number}{4}
+  \field{pages}{580\bibrangedash 585}
+  \field{title}{{A fuzzy K-nearest neighbor algorithm}}
+  \field{volume}{SMC-15}
+  \field{year}{1985}
+\endentry
+
+\entry{Kruskall1983}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Kruskall}{K.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liberman}{L.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KJLM1}
+  \strng{fullhash}{KJLM1}
+  \field{labelalpha}{KL83}
+  \field{sortinit}{K}
+  \field{booktitle}{TimeWarps, String Edits and Macromolecules}
+  \field{edition}{Addison-We}
+  \field{title}{{The symmetric time warping algorithm: From continuous to
+  discrete. In TimeWarps}}
+  \field{year}{1983}
+\endentry
+
+\entry{Keogh2001a}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Keogh}{K.}%
+     {E~J}{E.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pazzani}{P.}%
+     {M~J}{M.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{dynamic time warping}
+  \strng{namehash}{KEJPMJ1}
+  \strng{fullhash}{KEJPMJ1}
+  \field{labelalpha}{KP01}
+  \field{sortinit}{K}
+  \field{abstract}{%
+  this paper we address both these problems by introducing a
+  modification$\backslash$nof DTW. The crucial difference is in the features we
+  consider when$\backslash$nattempting to find the correct warping. Rather than
+  use the raw data,$\backslash$nwe consider only the (estimated) local
+  derivatives of the data%
+  }
+  \verb{doi}
+  \verb 10.1137/1.9781611972719.1
+  \endverb
+  \field{pages}{1\bibrangedash 11}
+  \field{title}{{Derivative Dynamic Time Warping}}
+  \field{journaltitle}{Proceedings of the 1st SIAM International Conference on
+  Data Mining}
+  \field{year}{2001}
 \endentry
 
 \entry{Keogh2004}{article}{}
@@ -1670,8 +2589,53 @@
   \verb mic time warping.pdf:pdf
   \endverb
   \field{journaltitle}{Knowledge and Information Systems}
-  \field{month}{05}
   \field{year}{2004}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Kakizawa1998}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Kakizawa}{K.}%
+     {Yoshihide}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shumway}{S.}%
+     {Robert~H}{R.~H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Taniguchi}{T.}%
+     {Masanobu}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KYSRHTM1}
+  \strng{fullhash}{KYSRHTM1}
+  \field{labelalpha}{KST98}
+  \field{sortinit}{K}
+  \field{abstract}{%
+  ... Applications to problems of clustering and classifying earthquakes and
+  mining explosions are given. KEY WORDS: Chernoff; Divergence;
+  Kullback-Leibler; Minimum discrimination information; Robustness; Seismology
+  ; Spectral analysis. ... $\backslash$n%
+  }
+  \verb{doi}
+  \verb 10.1080/01621459.1998.10474114
+  \endverb
+  \field{isbn}{0162-1459$\backslash$n1537-274X}
+  \field{issn}{0162-1459}
+  \field{number}{441}
+  \field{pages}{328\bibrangedash 340}
+  \field{title}{{Discrimination and Clustering for Multivariate Time Series}}
+  \verb{url}
+  \verb http://www.tandfonline.com/doi/abs/10.1080/01621459.1998.10474114$\back
+  \verb slash$npapers2://publication/doi/10.1080/01621459.1998.10474114
+  \endverb
+  \field{volume}{93}
+  \field{journaltitle}{Journal of the American Statistical Association}
+  \field{year}{1998}
 \endentry
 
 \entry{Kijsirikul2002}{article}{}
@@ -1843,7 +2807,7 @@
   positive and unlabeled uncertain data). Experimental results on both
   synthetic and real-life datasets demonstrate the strong ability and
   efficiency of puuCVFDT to handle concept drift with uncertainty under
-  positive and unlabeled learning scenario. Even when 90\% of the samples in
+  positive and unlabeled learning scenario. Even when 90{\%} of the samples in
   the stream are unlabeled, the classification performance of the proposed
   algorithm is still compared to that of CVFDT, which is learned from fully
   labeled data without uncertainty. ?? 2012 Elsevier Inc. All rights reserved.%
@@ -1860,106 +2824,12 @@
   \endverb
   \field{volume}{213}
   \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th\`{e}se/Bibliographie/D
-  \verb ecision Tree/Liang-Elsevier-2012\_Learning very fast decision tree from
-  \verb  uncertain data streams with positive and unlabeled samples.pdf:pdf
+  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th{\`{e}}se/Bibliographie
+  \verb /Decision Tree/Liang-Elsevier-2012{\_}Learning very fast decision tree
+  \verb from uncertain data streams with positive and unlabeled samples.pdf:pdf
   \endverb
   \field{journaltitle}{Information Sciences}
   \field{year}{2012}
-\endentry
-
-\entry{McNames2002}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {McNames}{M.}%
-     {James}{J.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{Chaos,Embedding dimension,Local models,Metric optimization,Time series
-  prediction}
-  \strng{namehash}{MJ1}
-  \strng{fullhash}{MJ1}
-  \field{labelalpha}{McN02}
-  \field{sortinit}{M}
-  \field{abstract}{%
-  Local models have emerged as one of the most accurate methods of time series
-  prediction, but their performance is sensitive to the choice of
-  user-specified parameters such as the size of the neighborhood, the embedding
-  dimension, and the distance metric. This paper describes a new method of
-  optimizing these parameters to minimize the multi-step cross-validation
-  error. Empirical results indicate that multi-step optimization is susceptible
-  to shallow local minima unless the optimization is limited to 10 or fewer
-  steps ahead. The models optimized using the new method consistently performed
-  better than those optimized with adaptive analog forecasts. ?? 2002 Elsevier
-  Science B.V. All rights reserved.%
-  }
-  \verb{doi}
-  \verb 10.1016/S0925-2312(01)00647-6
-  \endverb
-  \field{issn}{09252312}
-  \field{number}{May 2001}
-  \field{pages}{279\bibrangedash 297}
-  \field{title}{{Local averaging optimization for chaotic time series
-  prediction}}
-  \field{volume}{48}
-  \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Desktop/Neurocomputing.pdf:pdf
-  \endverb
-  \field{journaltitle}{Neurocomputing}
-  \field{year}{2002}
-\endentry
-
-\entry{Morse2007}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Morse}{M.}%
-     {Michael~D}{M.~D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Patel}{P.}%
-     {Jignesh~M}{J.~M.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{clustering,time series,trajectory similarity}
-  \strng{namehash}{MMDPJM1}
-  \strng{fullhash}{MMDPJM1}
-  \field{labelalpha}{MP07}
-  \field{sortinit}{M}
-  \field{abstract}{%
-  A variety of techniques currently exist for measuring the similarity between
-  time series datasets. Of these techniques, the methods whosematching criteria
-  is bounded by a specified ǫ threshold value, such as the LCSS and the EDR
-  techniques, have been shown to be robust in the presence of noise, time
-  shifts, and data scaling. Our work proposes a new algorithm, called the Fast
-  Time Series Evaluation (FTSE) method, which can be used to evaluate such
-  threshold value techniques, including LCSS and EDR. Using FTSE,we show that
-  these techniques can be evaluated faster than using either traditional
-  dynamic programming or even warp-restricting methods such as the Sakoe-Chiba
-  band and the Itakura Parallelogram. We also show that FTSE can be used in a
-  framework that can evaluate a richer range of epsilon threshold-based scoring
-  techniques, of which EDR and LCSS are just two examples. This framework,
-  called Swale, extends the epsilon threshold-based scoring techniques to
-  include arbitrary match rewards and gap penalties. Through extensive
-  empirical evaluation, we show that Swale can obtain greater accuracy than
-  existing methods.%
-  }
-  \verb{doi}
-  \verb 10.1145/1247480.1247544
-  \endverb
-  \field{isbn}{9781595936868}
-  \field{pages}{569}
-  \field{title}{{An efficient and accurate method for evaluating time series
-  similarity}}
-  \verb{url}
-  \verb http://dl.acm.org/citation.cfm?id=1247544$\backslash$nhttp://portal.acm
-  \verb .org/citation.cfm?doid=1247480.1247544
-  \endverb
-  \field{journaltitle}{ACM SIGMOD international conference on Management of
-  data}
-  \field{year}{2007}
 \endentry
 
 \entry{Montero2014}{article}{}
@@ -1971,7 +2841,7 @@
      {}{}}%
     {{}%
      {Vilar}{V.}%
-     {Jos\'{e}}{J.}%
+     {Jos{\'{e}}}{J.}%
      {}{}%
      {}{}}%
   }
@@ -2028,7 +2898,7 @@
      {}{}%
      {}{}}%
     {{}%
-     {Mari\'{e}}{M.}%
+     {Mari{\'{e}}}{M.}%
      {S.}{S.}%
      {}{}%
      {}{}}%
@@ -2041,17 +2911,17 @@
   \field{sortinit}{N}
   \field{booktitle}{RFIA}
   \field{isbn}{9782953951523}
-  \field{title}{{Mesures de similarit\'{e} pour l’aide \`{a} l’analyse des
-  donn\'{e}es \'{e}nerg\'{e}tiques de b\^{a}timents}}
+  \field{title}{{Mesures de similarit{\'{e}} pour l'aide {\`{a}} l'analyse des
+  donn{\'{e}}es {\'{e}}nerg{\'{e}}tiques de b{\^{a}}timents}}
   \verb{url}
   \verb https://hal-cea.archives-ouvertes.fr/file/index/docid/661016/filename/a
-  \verb rticle53\_modif.pdf
+  \verb rticle53{\_}modif.pdf
   \endverb
   \verb{file}
   \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
-  \verb esktop/Downloaded/Najmeddine et al. - 2012 - Mesures de similarit\'{e}
-  \verb pour l’aide \`{a} l’analyse des donn\'{e}es \'{e}nerg\'{e}tiques de
-  \verb  b\^{a}timents.pdf:pdf
+  \verb esktop/Downloaded/Najmeddine et al. - 2012 - Mesures de similarit{\'{e}
+  \verb } pour l’aide {\`{a}} l’analyse des donn{\'{e}}es {\'{e}}nerg{\'{e}
+  \verb }tiques de b{\^{a}}timents.pdf:pdf
   \endverb
   \field{year}{2012}
 \endentry
@@ -2102,7 +2972,7 @@
   predict collective sentiment dynamics. We model the collective sentiment
   change without delving into micro analysis of individual tweets or users and
   their corresponding low level network structures. Experiments on large-scale
-  Twitter data show that the model can achieve above 85\% accuracy on
+  Twitter data show that the model can achieve above 85{\%} accuracy on
   directional sentiment prediction.%
   }
   \field{booktitle}{WISDOM}
@@ -2154,6 +3024,52 @@
   \field{year}{1973}
 \endentry
 
+\entry{Oncina2006}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Oncina}{O.}%
+     {Jose}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sebban}{S.}%
+     {Marc}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Finite-state transducers,Handwritten character recognition,Stochastic
+  edit distance}
+  \strng{namehash}{OJSM1}
+  \strng{fullhash}{OJSM1}
+  \field{labelalpha}{OS06}
+  \field{sortinit}{O}
+  \field{abstract}{%
+  Many pattern recognition algorithms are based on the nearest-neighbour search
+  and use the well-known edit distance, for which the primitive edit costs are
+  usually fixed in advance. In this article, we aim at learning an unbiased
+  stochastic edit distance in the form of a finite-state transducer from a
+  corpus of (input, output) pairs of strings. Contrary to the other standard
+  methods, which generally use the Expectation Maximisation algorithm, our
+  algorithm learns a transducer independently on the marginal probability
+  distribution of the input strings. Such an unbiased way to proceed requires
+  to optimise the parameters of a conditional transducer instead of a joint
+  one. We apply our new model in the context of handwritten digit recognition.
+  We show, carrying out a large series of experiments, that it always
+  outperforms the standard edit distance. ?? 2006 Pattern Recognition Society.%
+  }
+  \verb{doi}
+  \verb 10.1016/j.patcog.2006.03.011
+  \endverb
+  \field{isbn}{0031-3203}
+  \field{issn}{00313203}
+  \field{pages}{1575\bibrangedash 1587}
+  \field{title}{{Learning stochastic edit distance: Application in handwritten
+  character recognition}}
+  \field{volume}{39}
+  \field{journaltitle}{Pattern Recognition}
+  \field{year}{2006}
+\endentry
+
 \entry{PANAGIOTAKIS2008}{article}{}
   \name{author}{5}{}{%
     {{}%
@@ -2173,7 +3089,7 @@
      {}{}}%
     {{}%
      {ROMBAUT}{R.}%
-     {MICH\`{E}LE}{M.}%
+     {MICH{\`{E}}LE}{M.}%
      {}{}%
      {}{}}%
     {{}%
@@ -2199,7 +3115,7 @@
   recognition). Robust, adaptive and independent from color, illumination
   changes and the camera motion, the proposed features are combined in the
   Transferable Belief Model (TBM) framework providing a two-level (frames and
-  shot) video categorization. Experimental results of 97\% of accuracy for
+  shot) video categorization. Experimental results of 97{\%} of accuracy for
   individual/team sport categorization using a dataset of 252 real videos of
   athletic meetings, acquired by moving cameras under varying view angles,
   indicate the stability and the good performance of the proposed scheme.%
@@ -2225,8 +3141,8 @@
 \entry{Prekopcsak2012}{article}{}
   \name{author}{2}{}{%
     {{}%
-     {Prekopcs\'{a}k}{P.}%
-     {Zolt\'{a}n}{Z.}%
+     {Prekopcs{\'{a}}k}{P.}%
+     {Zolt{\'{a}}n}{Z.}%
      {}{}%
      {}{}}%
     {{}%
@@ -2272,6 +3188,110 @@
   \field{journaltitle}{Advances in Data Analysis and Classification}
   \field{eprinttype}{arXiv}
   \field{year}{2012}
+\endentry
+
+\entry{Pcekalska2002}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {P$\backslash$c{\{}e{\}}kalska}{P.}%
+     {El$\backslash$.{\{}z{\}}bieta}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Paclik}{P.}%
+     {Pavel}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Duin}{D.}%
+     {Robert P~W}{R.~P.~W.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{dissimilarity,embedding,fisher linear discriminant,nearest mean
+  classifier,pseudo euclidean space,support vector classifier}
+  \strng{namehash}{PEPPDRPW1}
+  \strng{fullhash}{PEPPDRPW1}
+  \field{labelalpha}{PPD02}
+  \field{sortinit}{P}
+  \field{abstract}{%
+  Usually, objects to be classified are represented by features. In this paper,
+  we discuss an alternative object representation based on dissimilarity
+  values. If such distances separate the classes well, the nearest neighbor
+  method offers a good solution. However, dissimilarities used in practice are
+  usually far from ideal and the performance of the nearest neighbor rule
+  suffers from its sensitivity to noisy examples. We show that other, more
+  global classification techniques are preferable to the nearest neighbor rule,
+  in such cases.For classification purposes, two different ways of using
+  generalized dissimilarity kernels are considered. In the first one, distances
+  are isometrically embedded in a pseudo-Euclidean space and the classification
+  task is performed there. In the second approach, classifiers are built
+  directly on distance kernels. Both approaches are described theoretically and
+  then compared using experiments with different dissimilarity measures and
+  datasets including degraded data simulating the problem of missing values.
+  http://www.crossref.org/jmlr{\_}DOI.html%
+  }
+  \verb{doi}
+  \verb 10.1162/15324430260185592
+  \endverb
+  \field{issn}{15324435}
+  \field{number}{2}
+  \field{pages}{175\bibrangedash 211}
+  \field{title}{{A Generalized Kernel Approach to Dissimilarity-based
+  Classification}}
+  \field{volume}{2}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Pc{\{}e{\}}kalska, Paclik, Duin - 2002 - A Generalize
+  \verb d Kernel Approach to Dissimilarity-based Classification.pdf:pdf
+  \endverb
+  \field{journaltitle}{Journal of Machine Learning Research}
+  \field{year}{2002}
+\endentry
+
+\entry{Rabiner1989}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Rabiner}{R.}%
+     {L.R.}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RL1}
+  \strng{fullhash}{RL1}
+  \field{labelalpha}{Rab89}
+  \field{sortinit}{R}
+  \field{abstract}{%
+  This tutorial provides an overview of the basic theory of
+  hidden$\backslash$nMarkov models (HMMs) as originated by L.E. Baum and T.
+  Petrie (1966) and$\backslash$ngives practical details on methods of
+  implementation of the theory along$\backslash$nwith a description of selected
+  applications of the theory to distinct$\backslash$nproblems in speech
+  recognition. Results from a number of original$\backslash$nsources are
+  combined to provide a single source of acquiring the$\backslash$nbackground
+  required to pursue further this area of research. The
+  author$\backslash$nfirst reviews the theory of discrete Markov chains and
+  shows how the$\backslash$nconcept of hidden states, where the observation is
+  a probabilistic$\backslash$nfunction of the state, can be used effectively.
+  The theory is$\backslash$nillustrated with two simple examples, namely
+  coin-tossing, and the$\backslash$nclassic balls-in-urns system. Three
+  fundamental problems of HMMs are$\backslash$nnoted and several practical
+  techniques for solving these problems are$\backslash$ngiven. The various
+  types of HMMs that have been studied, including$\backslash$nergodic as well
+  as left-right models, are described%
+  }
+  \verb{doi}
+  \verb 10.1109/5.18626
+  \endverb
+  \field{isbn}{1558601244}
+  \field{issn}{00189219}
+  \field{number}{2}
+  \field{pages}{257\bibrangedash 286}
+  \field{title}{{A tutorial on hidden Markov models and selected applications
+  in speech recognition}}
+  \field{volume}{77}
+  \field{journaltitle}{Proceedings of the IEEE}
+  \field{year}{1989}
 \endentry
 
 \entry{Ramasso2008}{article}{}
@@ -2336,6 +3356,95 @@
   \field{year}{2008}
 \endentry
 
+\entry{Rydell2008a}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Rydell}{R.}%
+     {Joakim}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Borga}{B.}%
+     {Magnus}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Knutsson}{K.}%
+     {Hans}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{biomedical MRI,canonical correlation analysis,correlation
+  estimator,correlation methods,general linear model,locally corrupted
+  signals,medical signal processing,multivariate correlation analysis,robust
+  correlation analysis,signal detection,synthetic functional MRI data}
+  \strng{namehash}{RJBMKH1}
+  \strng{fullhash}{RJBMKH1}
+  \field{labelalpha}{RBK08}
+  \field{sortinit}{R}
+  \field{abstract}{%
+  Correlation is often used to measure the similarity between signals and is an
+  important tool in signal and image processing. In some applications it is
+  common that signals are corrupted by local bursts of noise. This adversely
+  affects the performance of signal recognition algorithms. This paper presents
+  a novel correlation estimator, which is robust to locally corrupted signals.
+  The estimator is generalized to multivariate correlation analysis (general
+  linear model, GLM, and canonical correlation analysis, CCA). Synthetic
+  functional MRI data is used to demonstrate the estimator, and its robustness
+  is shown to increase the performance of signal detection.%
+  }
+  \verb{doi}
+  \verb 10.1109/ICASSP.2008.4517644
+  \endverb
+  \field{isbn}{1424414849}
+  \field{issn}{15206149}
+  \field{pages}{453\bibrangedash 456}
+  \field{title}{{Robust correlation analysis with an application to functional
+  MRI}}
+  \verb{url}
+  \verb http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=4517644
+  \endverb
+  \field{journaltitle}{Acoustics, Speech and Signal {\ldots}}
+  \field{year}{2008}
+\endentry
+
+\entry{Reyes2011}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Reyes}{R.}%
+     {Miguel}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RM1}
+  \strng{fullhash}{RM1}
+  \field{labelalpha}{Rey11}
+  \field{sortinit}{R}
+  \field{abstract}{%
+  We present a gesture recognition approach for depth video data based on a
+  novel Feature Weighting approach within the Dynamic Time Warping framework.
+  Depth features from human joints are compared through video sequences using
+  Dynamic Time Warping, and weights are assigned to features based on
+  inter-intra class gesture variability. Feature Weighting in Dynamic Time
+  Warping is then applied for recognizing begin-end of gestures in data
+  sequences. The obtained results recognizing several gestures in depth data
+  show high performance compared with classical Dynamic Time Warping approach.%
+  }
+  \verb{doi}
+  \verb 10.1109/ICCVW.2011.6130384
+  \endverb
+  \field{isbn}{978-1-4673-0063-6}
+  \field{pages}{1182\bibrangedash 1188}
+  \field{title}{{Feature weighting in dynamic time warping for gesture
+  recognition in depth data}}
+  \verb{url}
+  \verb http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=6130384
+  \endverb
+  \field{journaltitle}{Computer Vision Workshops (ICCV Workshops), 2011 IEEE
+  International Conference on}
+  \field{year}{2011}
+\endentry
+
 \entry{Rabiner1993}{book}{}
   \name{author}{2}{}{%
     {{}%
@@ -2377,6 +3486,66 @@
   \endverb
   \field{volume}{103}
   \field{year}{1993}
+\endentry
+
+\entry{Son2008}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Son}{S.}%
+     {Young~Sook}{Y.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Baek}{B.}%
+     {Jangsun}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Clustering,Modified correlation coefficient,Pearson’s correlation
+  coefficient,Similarity,Spearmann’s correlation coefficient,Time-course gene
+  expression data}
+  \strng{namehash}{SYSBJ1}
+  \strng{fullhash}{SYSBJ1}
+  \field{labelalpha}{SB08}
+  \field{sortinit}{S}
+  \field{abstract}{%
+  Gene expression levels are often measured consecutively in time through
+  microarray experiments to detect cellular processes underlying regulatory
+  effects observed and to assign functionality to genes whose function is yet
+  unknown. Clustering methods allow us to group genes that show similar
+  time-course expression profiles and that are thus likely to be co-regulated.
+  The correlation coefficient, the most well-liked similarity measure in the
+  context of gene expression data, is not very reliable in representing the
+  association of two temporal profile patterns. Moreover, the clustering
+  methods with the correlation coefficient generate the same clustering result
+  even when the time points are permuted arbitrarily. We propose a new
+  similarity measure for clustering time-course gene expression data. The
+  proposed measure is based on the correlation coefficient and the two indices
+  representing the concordance of temporal profile patterns and that of the
+  time points at which maximum and minimum expression levels are measured
+  between two profiles, respectively. We applied the hierarchical clustering
+  method with the proposed similarity measure to both synthetic and breast
+  cancer cell line data. We observed favorable results compared to the
+  correlation coefficient based method. The proposed similarity measure is
+  simple to implement, and it is much more consistent for clustering than the
+  correlation coefficient based method according to the cross-validation
+  criterion.%
+  }
+  \verb{doi}
+  \verb 10.1016/j.patrec.2007.09.015
+  \endverb
+  \field{isbn}{0167-8655}
+  \field{issn}{01678655}
+  \field{number}{3}
+  \field{pages}{232\bibrangedash 242}
+  \field{title}{{A modified correlation coefficient based similarity measure
+  for clustering time-course gene expression data}}
+  \verb{url}
+  \verb http://www.sciencedirect.com/science/article/pii/S0167865507003005
+  \endverb
+  \field{volume}{29}
+  \field{journaltitle}{Pattern Recognition Letters}
+  \field{year}{2008}
 \endentry
 
 \entry{Salvador}{article}{}
@@ -2436,6 +3605,7 @@
   \strng{namehash}{SHCS1}
   \strng{fullhash}{SHCS1}
   \field{labelalpha}{SC78}
+  \field{extraalpha}{1}
   \field{sortinit}{S}
   \field{abstract}{%
   This paper reports on an optimum dynamic programming (DP) based
@@ -2462,6 +3632,57 @@
   \field{issn}{00963518}
   \field{title}{{Dynamic Programming Algorithm Optimization for Spoken Word
   Recognition}}
+  \field{journaltitle}{IEEE transactions on acoustics, speech, and signal
+  processing}
+  \field{year}{1978}
+\endentry
+
+\entry{Sakoe1978b}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Sakoe}{S.}%
+     {Hiroaki}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chiba}{C.}%
+     {Seibi}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SHCS2}
+  \strng{fullhash}{SHCS2}
+  \field{labelalpha}{SC78}
+  \field{extraalpha}{2}
+  \field{sortinit}{S}
+  \field{abstract}{%
+  This paper reports on an optimum dynamic programming (DP) based
+  time-normalization algorithm for spoken word recognition. First, a general
+  principle of time-normalization is given using timewarping function. Then,
+  two time-normalized distance definitions, d e d symmetric and asymmetric
+  forms, are derived from the principle. These two forms are compared with each
+  other through theoretical discussions and experimental studies. The symmetric
+  form algorithm superiority is established. A new technique, called slope
+  constraint, is successfully introduced, iwn hich the warping function slope
+  isr estricted so as to improve discrimination between words in different
+  categories. The effective slope constraint characteristic is qualitatively
+  analyzed, and the optimum slope constraint condition is determined through
+  experiments. The optimized algorithm is then extensively subjected to
+  experimentat comparison with various DP-algorithms, previously applied to
+  spoken word recognition by different research groups. The experiment shows
+  that the present algorithm gives no more than about twothirds errors, even
+  compared to the best conventional algorithm.%
+  }
+  \verb{doi}
+  \verb 10.1109/TASSP.1978.1163055
+  \endverb
+  \field{isbn}{1558601244}
+  \field{issn}{00963518}
+  \field{number}{1}
+  \field{pages}{43\bibrangedash 49}
+  \field{title}{{Dynamic Programming Algorithm Optimization for Spoken Word
+  Recognition}}
+  \field{volume}{ASSP-26}
   \field{journaltitle}{IEEE transactions on acoustics, speech, and signal
   processing}
   \field{year}{1978}
@@ -2512,17 +3733,98 @@
   obscuring scarves.%
   }
   \verb{doi}
-  \verb 10.1007/3-540-47979-1\_52
+  \verb 10.1007/3-540-47979-1{\_}52
   \endverb
   \field{isbn}{978-3-540-43748-2}
   \field{pages}{776\bibrangedash 790}
   \field{title}{{Adjustment Learning and Relevant Component Analysis}}
   \verb{url}
-  \verb http://dx.doi.org/10.1007/3-540-47979-1\_52
+  \verb http://dx.doi.org/10.1007/3-540-47979-1{\_}52
   \endverb
   \field{volume}{2353}
   \field{journaltitle}{European Conference on Computer Vision (ECCV)}
   \field{year}{2002}
+\endentry
+
+\entry{Silverman1989}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Silverman}{S.}%
+     {B~W}{B.~W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jones}{J.}%
+     {M~C}{M.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SBWJMC1}
+  \strng{fullhash}{SBWJMC1}
+  \field{labelalpha}{SJ89}
+  \field{sortinit}{S}
+  \field{abstract}{%
+  In 1951, Evelyn Fix and J.L. Hodges, Jr. wrote a technical report which
+  contained prophetic work on nonparametric discriminant analysis and
+  probability density estimation, and which was never published by the authors.
+  The report introduced several important concepts for the first time. It is of
+  interest not only for historical reasons but also because it contains much
+  material that is still of contemporary relevance. Here, the report is printed
+  in full together with a commentary placing the paper in context and
+  interpreting its ideas in the light of more modern developments. /// En 1951,
+  E. Fix et J.L. Hodges, Jr. ont �crit un rapport technique proph�tique sur
+  l'analyse non-param�trique de discrimination et l'estimation de la
+  densit� de probabilit�, mais celui-ci ne fut jamais publi� par ses
+  auteurs. Ce rapport introduit plusieurs id�es nouvelles et importantes. Il
+  nous int�resse non seulement pour des raisons historiques, mais aussi parce
+  qu'il contient des concepts qui sont encore importants de nos jours. Nous le
+  publions ici en entier, accompagn� d'un commentaire qui l'interpr�te d'un
+  point de vue plus moderne.%
+  }
+  \verb{doi}
+  \verb 10.2307/1403796
+  \endverb
+  \field{isbn}{03067734}
+  \field{issn}{03067734}
+  \field{number}{3}
+  \field{pages}{pp. 233\bibrangedash 238}
+  \field{title}{{E. Fix and J.L. Hodges (1951): An Important Contribution to
+  Nonparametric Discriminant Analysis and Density Estimation: Commentary on Fix
+  and Hodges (1951)}}
+  \verb{url}
+  \verb http://www.jstor.org/stable/1403796
+  \endverb
+  \field{volume}{57}
+  \field{journaltitle}{International Statistical Review / Revue Internationale
+  de Statistique}
+  \field{year}{1989}
+\endentry
+
+\entry{Sahidullah2012a}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Sahidullah}{S.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Saha}{S.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SMSG1}
+  \strng{fullhash}{SMSG1}
+  \field{labelalpha}{SS12}
+  \field{extraalpha}{1}
+  \field{sortinit}{S}
+  \field{number}{4}
+  \field{pages}{543\bibrangedash 565}
+  \field{title}{{Design, analysis and experimental evaluation of block based
+  transformation in mfcc computation for speaker recognition}}
+  \field{volume}{54}
+  \field{journaltitle}{Speech Communication}
+  \field{year}{2012}
 \endentry
 
 \entry{Sahidullah2012}{article}{}
@@ -2541,9 +3843,10 @@
   \keyw{Block transform,Correlation matrix,DCT,Decorrelation technique,Linear
   transformation,MFCC,Missing feature theory,Narrow-band noise,Speaker
   recognition}
-  \strng{namehash}{SMSG1}
-  \strng{fullhash}{SMSG1}
+  \strng{namehash}{SMSG2}
+  \strng{fullhash}{SMSG2}
   \field{labelalpha}{SS12}
+  \field{extraalpha}{2}
   \field{sortinit}{S}
   \field{abstract}{%
   Standard Mel frequency cepstrum coefficient (MFCC) computation technique
@@ -2617,17 +3920,17 @@
   accuracy by enhancing Glide sampling for flexible polypeptides. In addition,
   scoring of the poses was improved by post-processing with physics-based
   implicit solvent MM- GBSA calculations. Using the best RMSD among the top 10
-  scoring poses as a metric, the success rate (RMSD ≤ 2.0 \AA for the
-  interface backbone atoms) increased from 21\% with default Glide SP settings
-  to 58\% with the enhanced peptide sampling and scoring protocol in the case
-  of redocking to the native protein structure. This approaches the accuracy of
-  the recently developed Rosetta FlexPepDock method (63\% success for these 19
-  peptides) while being over 100 times faster. Cross-docking was performed for
-  a subset of cases where an unbound receptor structure was available, and in
-  that case, 40\% of peptides were docked successfully. We analyze the results
-  and find that the optimized polypeptide protocol is most accurate for
-  extended peptides of limited size and number of formal charges, defining a
-  domain of applicability for this approach.%
+  scoring poses as a metric, the success rate (RMSD ≤ 2.0 {\AA} for the
+  interface backbone atoms) increased from 21{\%} with default Glide SP
+  settings to 58{\%} with the enhanced peptide sampling and scoring protocol in
+  the case of redocking to the native protein structure. This approaches the
+  accuracy of the recently developed Rosetta FlexPepDock method (63{\%} success
+  for these 19 peptides) while being over 100 times faster. Cross-docking was
+  performed for a subset of cases where an unbound receptor structure was
+  available, and in that case, 40{\%} of peptides were docked successfully. We
+  analyze the results and find that the optimized polypeptide protocol is most
+  accurate for extended peptides of limited size and number of formal charges,
+  defining a domain of applicability for this approach.%
   }
   \field{booktitle}{Journal of Chemical Information and Modeling}
   \verb{doi}
@@ -2642,8 +3945,8 @@
   \field{title}{{Learning with Kernels}}
   \field{volume}{53}
   \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th\`{e}se/Bibliographie/L
-  \verb ivre/Schokopf, Smola-Learning with Kernels.pdf:pdf
+  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th{\`{e}}se/Bibliographie
+  \verb /Livre/Schokopf, Smola-Learning with Kernels.pdf:pdf
   \endverb
   \field{eprinttype}{arXiv}
   \field{year}{2013}
@@ -2687,7 +3990,7 @@
   samples for training and 3035 samples for testing from the real life samples.
   Experiments show that the proposed features can provide a very good
   recognition result using Support Vector Machines at a recognition rate
-  94.14\%, compared with 91.25 \% obtained by MLP neural network classifier
+  94.14{\%}, compared with 91.25 {\%} obtained by MLP neural network classifier
   using the same features and test set.%
   }
   \field{pages}{300\bibrangedash 307}
@@ -2695,7 +3998,7 @@
   handwritten Arabic/Persian digits}}
   \field{volume}{1}
   \field{journaltitle}{Second Conference on Machine Vision and Image Processing
-  \& Applications (MVIP 2003)}
+  {\&} Applications (MVIP 2003)}
   \field{year}{2003}
 \endentry
 
@@ -2718,25 +4021,25 @@
   \field{sortinit}{T}
   \field{abstract}{%
   A practical step-by-step guide to wavelet analysis is given, with examples
-  taken from time series of the El Ni\~{n}o–Southern Oscillation (ENSO). The
-  guide includes a comparison to the windowed Fourier transform, the choice of
-  an appropriate wavelet basis function, edge effects due to finite-length time
-  series, and the relationship between wavelet scale and Fourier frequency. New
-  statistical significance tests for wavelet power spectra are developed by
-  deriving theoretical wavelet spectra for white and red noise processes and
-  using these to establish significance levels and confidence intervals. It is
-  shown that smoothing in time or scale can be used to increase the confidence
-  of the wavelet spectrum. Empirical formulas are given for the effect of
-  smoothing on significance levels and confidence intervals. Extensions to
-  wavelet analysis such as filtering, the power Hovm\"{o}ller, cross-wavelet
-  spectra, and coherence are described. The statistical significance tests are
-  used to give a quantitative measure of changes in ENSO variance on
-  interdecadal timescales. Using new datasets that extend back to 1871, the
-  Ni\~{n}o3 sea surface temperature and the Southern Oscillation index show
-  significantly higher power during 1880–1920 and 1960–90, and lower power
-  during 1920–60, as well as a possible 15-yr modulation of variance. The
-  power Hovm\"{o}ller of sea level pressure shows significant variations in
-  2–8-yr wavelet power in both longitude and time.%
+  taken from time series of the El Ni{\~{n}}o–Southern Oscillation (ENSO).
+  The guide includes a comparison to the windowed Fourier transform, the choice
+  of an appropriate wavelet basis function, edge effects due to finite-length
+  time series, and the relationship between wavelet scale and Fourier
+  frequency. New statistical significance tests for wavelet power spectra are
+  developed by deriving theoretical wavelet spectra for white and red noise
+  processes and using these to establish significance levels and confidence
+  intervals. It is shown that smoothing in time or scale can be used to
+  increase the confidence of the wavelet spectrum. Empirical formulas are given
+  for the effect of smoothing on significance levels and confidence intervals.
+  Extensions to wavelet analysis such as filtering, the power Hovm{\"{o}}ller,
+  cross-wavelet spectra, and coherence are described. The statistical
+  significance tests are used to give a quantitative measure of changes in ENSO
+  variance on interdecadal timescales. Using new datasets that extend back to
+  1871, the Ni{\~{n}}o3 sea surface temperature and the Southern Oscillation
+  index show significantly higher power during 1880–1920 and 1960–90, and
+  lower power during 1920–60, as well as a possible 15-yr modulation of
+  variance. The power Hovm{\"{o}}ller of sea level pressure shows significant
+  variations in 2–8-yr wavelet power in both longitude and time.%
   }
   \verb{doi}
   \verb 10.1175/1520-0477(1998)079<0061:APGTWA>2.0.CO;2
@@ -2749,115 +4052,6 @@
   \field{volume}{79}
   \field{journaltitle}{Bulletin of the American Meteorological Society}
   \field{year}{1998}
-\endentry
-
-\entry{Tan2005b}{book}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Tan}{T.}%
-     {Pang-Ning}{P.-N.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Steinbach}{S.}%
-     {Michael}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Kumar}{K.}%
-     {Vipin}{V.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{- credit risk assessments,credit scoring techniques,single classifiers}
-  \strng{namehash}{TPNSMKV1}
-  \strng{fullhash}{TPNSMKV1}
-  \field{labelalpha}{TSK05}
-  \field{sortinit}{T}
-  \field{abstract}{%
-  -This paper is review of current usage of data mining, machine learning and
-  other algorithms for credit risk assessment. We are witnessing importance of
-  credit risk assessment, especially after the global economic crisis on 2008.S
-  o, it is very important to have a proper way to deal with the credit risk and
-  provide powerful and accurate model for credit risk assessment. Many credit
-  scoring techniques such as statistical techniques (logistic regression,
-  discriminant analysis) or advanced techniques such as neural networks,
-  decision trees, genetic algorithm, or support vector machines are used for
-  credit risk assessment. Some of them are described in this article with
-  theirs advantages/disadvantages. Even with many models and methods, it is
-  still hard to say which model is the best or which classifier or which data
-  mining technique is the best. Each model depends on particular data set or
-  attributes set, so it is very important to develop flexible model which is
-  adaptable to every dataset or attribute set.%
-  }
-  \field{booktitle}{Addison Wesley}
-  \field{isbn}{9789604743179}
-  \field{pages}{500}
-  \field{title}{{Introduction to Data Mining}}
-  \field{year}{2005}
-\endentry
-
-\entry{Vlachos2006}{article}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Vlachos}{V.}%
-     {Michail}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hadjieleftheriou}{H.}%
-     {Marios}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Gunopulos}{G.}%
-     {Dimitrios}{D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Keogh}{K.}%
-     {Eamonn}{E.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{Dynamic time warping,Ensemble index,Longest common subsequence,Motion
-  capture,Trajectories}
-  \strng{namehash}{VM+1}
-  \strng{fullhash}{VMHMGDKE1}
-  \field{labelalpha}{Vla+06}
-  \field{sortinit}{V}
-  \field{abstract}{%
-  While most time series data mining research has concentrated on providing
-  solutions for a single distance function, in this work we motivate the need
-  for an index structure that can support multiple distance measures. Our
-  specific area of interest is the efficient retrieval and analysis of similar
-  trajectories. Trajectory datasets are very common in environmental
-  applications, mobility experiments, and video surveillance and are especially
-  important for the discovery of certain biological patterns. Our primary
-  similarity measure is based on the longest common subsequence (LCSS) model
-  that offers enhanced robustness, particularly for noisy data, which are
-  encountered very often in real-world applications. However, our index is able
-  to accommodate other distance measures as well, including the ubiquitous
-  Euclidean distance and the increasingly popular dynamic time warping (DTW).
-  While other researchers have advocated one or other of these similarity
-  measures, a major contribution of our work is the ability to support all
-  these measures without the need to restructure the index. Our framework
-  guarantees no false dismissals and can also be tailored to provide much
-  faster response time at the expense of slightly reduced precision/recall. The
-  experimental results demonstrate that our index can help speed up the
-  computation of expensive similarity measures such as the LCSS and the DTW.%
-  }
-  \verb{doi}
-  \verb 10.1007/s00778-004-0144-2
-  \endverb
-  \field{isbn}{1-58113-737-0}
-  \field{issn}{10668888}
-  \field{number}{1}
-  \field{pages}{1\bibrangedash 20}
-  \field{title}{{Indexing multidimensional time-series}}
-  \field{volume}{15}
-  \field{journaltitle}{VLDB Journal}
-  \field{year}{2006}
 \endentry
 
 \entry{Wang2002}{article}{}
@@ -2887,7 +4081,7 @@
   \field{title}{{Support Vector Machines ( SVM ) in bioinformatics
   Bioinformatics applications}}
   \verb{url}
-  \verb http://www.csie.ntu.edu.tw/~p88012/Bio\_SVM.pdf
+  \verb http://www.csie.ntu.edu.tw/{~}p88012/Bio{\_}SVM.pdf
   \endverb
   \field{journaltitle}{Bioinformatics}
   \field{year}{2002}
@@ -2911,6 +4105,7 @@
   \strng{namehash}{WKSL1}
   \strng{fullhash}{WKSL1}
   \field{labelalpha}{WS09}
+  \field{extraalpha}{1}
   \field{sortinit}{W}
   \field{abstract}{%
   The accuracy of k-nearest neighbor (kNN) classification depends significantly
@@ -2944,7 +4139,66 @@
   \verb{file}
   \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
   \verb esktop/Downloaded/Weinberger, Saul - 2009 - Distance Metric Learning fo
-  \verb r Large Margin Nearest Neighbor Classification.pdf:pdf
+  \verb r Large Margin Nearest Neighbor Classification(2).pdf:pdf
+  \endverb
+  \field{journaltitle}{Journal of Machine Learning Research}
+  \field{year}{2009}
+\endentry
+
+\entry{Weinberger2009a}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Weinberger}{W.}%
+     {Kilian~Q}{K.~Q.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Saul}{S.}%
+     {Lawrence~K}{L.~K.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Metric learning,convex optimization,ing,mahalanobis distance,metric
+  learn-,multi-class classification,semi-definite programming,support vector
+  machines}
+  \strng{namehash}{WKQSLK1}
+  \strng{fullhash}{WKQSLK1}
+  \field{labelalpha}{WS09}
+  \field{extraalpha}{2}
+  \field{sortinit}{W}
+  \field{abstract}{%
+  The accuracy of k-nearest neighbor (kNN) classification depends significantly
+  on the metric used to compute distances between different examples. In this
+  paper, we show how to learn a Mahalanobis distance metric for kNN
+  classification from labeled examples. The Mahalanobis metric can equivalently
+  be viewed as a global linear transformation of the input space that precedes
+  kNN classification using Euclidean distances. In our approach, the metric is
+  trained with the goal that the k-nearest neighbors always belong to the same
+  class while examples from different classes are separated by a large margin.
+  As in support vector machines (SVMs), the margin criterion leads to a convex
+  optimization based on the hinge loss. Unlike learning in SVMs, however, our
+  approach requires no modification or extension for problems in multiway (as
+  opposed to binary) classification. In our framework, the Mahalanobis distance
+  metric is obtained as the solution to a semidefinite program. On several data
+  sets of varying size and difficulty, we find that metrics trained in this way
+  lead to significant improvements in kNN classification. Sometimes these
+  results can be further improved by clustering the training examples and
+  learning an individual metric within each cluster. We show how to learn and
+  combine these local metrics in a globally integrated manner.%
+  }
+  \verb{doi}
+  \verb 10.1126/science.277.5323.215
+  \endverb
+  \field{isbn}{1532-4435}
+  \field{issn}{1532-4435}
+  \field{pages}{207\bibrangedash 244}
+  \field{title}{{Distance Metric Learning for Large Margin Nearest Neighbor
+  Classification}}
+  \field{volume}{10}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Weinberger, Saul - 2009 - Distance Metric Learning fo
+  \verb r Large Margin Nearest Neighbor Classification(2).pdf:pdf
   \endverb
   \field{journaltitle}{Journal of Machine Learning Research}
   \field{year}{2009}
@@ -3010,6 +4264,60 @@
   \verb http://dl.acm.org/citation.cfm?id=1143974
   \endverb
   \field{year}{2006}
+\endentry
+
+\entry{Xu2012}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Xu}{X.}%
+     {Zhixiang}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Weinberger}{W.}%
+     {Kilian~Q.}{K.~Q.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chapelle}{C.}%
+     {Olivier}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{distance learning,mahalanobis distance,metric learning,semi-definite
+  programming,support vector machines}
+  \strng{namehash}{XZWKQCO1}
+  \strng{fullhash}{XZWKQCO1}
+  \field{labelalpha}{XWC12}
+  \field{sortinit}{X}
+  \field{abstract}{%
+  Recent work in metric learning has significantly improved the
+  state-of-the-art in k-nearest neighbor classification. Support vector
+  machines (SVM), particularly with RBF kernels, are amongst the most popular
+  classification algorithms that uses distance metrics to compare examples.
+  This paper provides an empirical analysis of the efficacy of three of the
+  most popular Mahalanobis metric learning algorithms as pre-processing for SVM
+  training. We show that none of these algorithms generate metrics that lead to
+  particularly satisfying improvements for SVM-RBF classification. As a remedy
+  we introduce support vector metric learning (SVML), a novel algorithm that
+  seamlessly combines the learning of a Mahalanobis metric with the training of
+  the RBF-SVM parameters. We demonstrate the capabilities of SVML on nine
+  benchmark data sets of varying sizes and difficulties. In our study, SVML
+  outperforms all alternative state-of-the-art metric learning algorithms in
+  terms of accuracy and establishes itself as a serious alternative to the
+  standard Euclidean metric with model selection by cross validation.%
+  }
+  \verb{eprint}
+  \verb 1208.3422
+  \endverb
+  \field{pages}{1\bibrangedash 17}
+  \field{title}{{Distance Metric Learning for Kernel Machines}}
+  \verb{url}
+  \verb http://arxiv.org/abs/1208.3422
+  \endverb
+  \field{journaltitle}{Arxiv}
+  \field{eprinttype}{arXiv}
+  \field{year}{2012}
 \endentry
 
 \entry{Yin2008}{inproceedings}{}
@@ -3096,6 +4404,148 @@
   \field{year}{1999}
 \endentry
 
+\entry{Zhang2006a}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Zhang}{Z.}%
+     {Hui}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ho}{H.}%
+     {T.B. Tb Tu~Bao}{T.~T. T.~B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhang}{Z.}%
+     {Yang}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lin}{L.}%
+     {M.S. Mao-Song~Ms}{M.~M.-S.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{2005,attracted increasing interest in,clustering,data mining,feature
+  extraction,financial domains,in the bioinformatics and,of
+  dimension-,particularly for long time,received,september 4,series,such as
+  those arising,the last decade,the widely known curse,time series,time series
+  clustering has,wavelet}
+  \strng{namehash}{ZH+1}
+  \strng{fullhash}{ZHHTTTBZYLMMSM1}
+  \field{labelalpha}{Zha+06}
+  \field{sortinit}{Z}
+  \field{abstract}{%
+  Thewidelyknowncurse of dimension- ality howto choose the appropriate
+  dimension is a challenging task especially for clustering problem in the
+  absence of data labels that has not been well studied in the literature. I
+  this paper we propose an unsupervised feature extraction algorithm using
+  orthogonal wavelet transform for automatically choosing the dimensionality of
+  features. The feature extraction algorithm selects the feature dimensionality
+  by leveraging twoconflicting requirements, i.e., lower dimensionality and
+  lower sum of squared errors between the features and the original time
+  series. The proposed feature extraction algorithm is efficient with time
+  complexityO(mn) when using Haar wavelet. Encouraging experimental results are
+  obtained on several synthetic and real-world time series datasets.%
+  }
+  \field{number}{3}
+  \field{pages}{305\bibrangedash 319}
+  \field{title}{{Unsupervised Feature Extraction for Time Series Clustering
+  Using Orthogonal Wavelet Transform.}}
+  \verb{url}
+  \verb http://scholar.google.com/scholar?hl=en{\&}btnG=Search{\&}q=intitle:Uns
+  \verb upervised+Feature+Extraction+for+Time+Series+Clustering+Using+Orthogona
+  \verb l+Wavelet+Transform{\#}0$\backslash$nhttp://www.freepatentsonline.com/a
+  \verb rticle/Informatica/158092585.html$\backslash$nhttp://search.ebscohost.c
+  \verb om
+  \endverb
+  \field{volume}{30}
+  \field{journaltitle}{Guest Editor}
+  \field{year}{2006}
+\endentry
+
+\entry{ZhangX.-L.Z.-G.Luo2014}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Zhang}{Z.}%
+     {X.-L.}{X.-L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Luo}{L.}%
+     {Z.-G.}{Z.-G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Li}{L.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ZXLLZGLM1}
+  \strng{fullhash}{ZXLLZGLM1}
+  \field{labelalpha}{ZLL14}
+  \field{sortinit}{Z}
+  \field{number}{6}
+  \field{pages}{1072\bibrangedash 1082}
+  \field{title}{{Merge-weighted dynamic time warping for speech recognition}}
+  \field{volume}{29}
+  \field{journaltitle}{Journal of Computer Science and Technology}
+  \field{year}{2014}
+\endentry
+
+\entry{Zhang2010}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Zhang}{Z.}%
+     {Yu}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yeung}{Y.}%
+     {Dit-Yan}{D.-Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{metric learning,multi-task learning,transfer learning}
+  \strng{namehash}{ZYYDY1}
+  \strng{fullhash}{ZYYDY1}
+  \field{labelalpha}{ZY10}
+  \field{sortinit}{Z}
+  \field{abstract}{%
+  Distance metric learning plays a very crucial role in many data mining
+  algorithms because the performance of an algorithm relies heavily on choosing
+  a good metric. However, the labeled data available in many applications is
+  scarce and hence the metrics learned are often unsatisfactory. In this paper,
+  we consider a transfer learning setting in which some related source tasks
+  with labeled data are available to help the learning of the target task. We
+  first propose a convex formulation for multi-task metric learning by modeling
+  the task relationships in the form of a task covariance matrix. Then we
+  regard transfer learning as a special case of multitask learning and adapt
+  the formulation of multi-task metric learning to the transfer learning
+  setting for our method, called transfer metric learning (TML). In TML, we
+  learn the metric and the task covariances between the source tasks and the
+  target task under a unified convex formulation. To solve the convex
+  optimization problem, we use an alternating method in which each subproblem
+  has an efficient solution. Experimental results on some commonly used
+  transfer learning applications demonstrate the effectiveness of our method.
+  © 2010 ACM.%
+  }
+  \verb{doi}
+  \verb 10.1145/1835804.1835954
+  \endverb
+  \field{isbn}{9781450300551}
+  \field{pages}{1199}
+  \field{title}{{Transfer metric learning by learning task relationships}}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?doid=1835804.1835954
+  \endverb
+  \field{journaltitle}{Proceedings of the 16th ACM SIGKDD international
+  conference on Knowledge discovery and data mining - KDD '10}
+  \field{year}{2010}
+\endentry
+
 \entry{Dreyfus2006}{book}{}
   \name{author}{1}{}{%
     {{}%
@@ -3104,79 +4554,82 @@
      {}{}%
      {}{}}%
   }
-  \keyw{Bio-ing\'{e}nierie,Machine \`{a} Vecteurs
-  Supports,Pr\'{e}vision,Reconaissance de formes,Robotique et commande de
-  processus,R\'{e}seaux de neurones,cartes topologiques,data mining}
+  \keyw{Bio-ing{\'{e}}nierie,Machine {\`{a}} Vecteurs
+  Supports,Pr{\'{e}}vision,Reconaissance de formes,Robotique et commande de
+  processus,R{\'{e}}seaux de neurones,cartes topologiques,data mining}
   \strng{namehash}{GST1}
   \strng{fullhash}{GST1}
   \field{labelalpha}{{G. }06}
   \field{sortinit}{{G}}
   \field{abstract}{%
-  En une vingtaine d’ann\'{e}es, l’apprentissage artificiel est devenu une
-  branche majeure des math\'{e}matiques appliqu\'{e}es, \`{a} l’intersection
-  des statistiques et de l’intelligence artificielle. Son objectif est de
-  r\'{e}aliser des mod\`{e}les qui apprennent « par l’exemple » : il
-  s’appuie sur des donn\'{e}es num\'{e}riques (r\'{e}sultats de mesures ou de
-  simulations), contrairement aux mod\`{e}les « de connaissances » qui
-  s’appuient sur des \'{e}quations issues des premiers principes de la
-  physique, de la chimie, de la biologie, de l’\'{e}conomie, etc.
-  L’apprentis- sage statistique est d’une grande utilit\'{e} lorsque l’on
-  cherche \`{a} mod\'{e}liser des processus complexes, souvent non
-  lin\'{e}aires, pour lesquels les connaissances th\'{e}oriques sont trop
-  impr\'{e}cises pour permettre des pr\'{e}dictions pr\'{e}cises. Ses domaines
-  d’applications sont multiples : fouille de donn\'{e}es, bio-informatique,
-  g\'{e}nie des proc\'{e}d\'{e}s, aide au diagnostic m\'{e}dical,
-  t\'{e}l\'{e}communications, interface cerveau-machines, et bien d’autres.
-  Cet ouvrage refl\`{e}te en partie l’\'{e}volution de cette discipline,
-  depuis ses balbutiements au d\'{e}but des ann\'{e}es 1980, jusqu’\`{a} sa
-  situation actuelle ; il n’a pas du tout la pr\'{e}tention de faire un
-  point, m\^{e}me partiel, sur l’ensemble des d\'{e}veloppements pass\'{e}s
-  et actuels, mais plut\^{o}t d’insister sur les principes et sur les
-  m\'{e}thodes \'{e}prouv\'{e}s, dont les bases scientifiques sont s\^{u}res.
-  Dans un domaine sans cesse parcouru de modes multiples et
-  \'{e}ph\'{e}m\`{e}res, il est utile, pour qui cherche \`{a} acqu\'{e}rir les
-  connaissances et principes de base, d’insister sur les aspects p\'{e}rennes
-  du domaine. Cet ouvrage fait suite \`{a} R\'{e}seaux de neurones,
-  m\'{e}thodologies et applications, des m\^{e}mes auteurs, paru en 2000,
-  r\'{e}\'{e}dit\'{e} en 2004, chez le m\^{e}me \'{e}diteur, puis publi\'{e} en
-  traduction anglaise chez Springer. Consacr\'{e} essentiellement aux
-  r\'{e}seaux de neurones et aux cartes auto-adaptatives, il a largement
-  contribu\'{e} \`{a} populariser ces techniques et \`{a} convaincre leurs
-  utilisateurs qu’il est possible d’obtenir des r\'{e}sultats remarquables,
-  \`{a} condition de mettre en \oe uvre une m\'{e}thodologie de conception
-  rigoureuse, scientifique- ment fond\'{e}e, dans un domaine o\`{u}
-  l’empirisme a longtemps tenu lieu de m\'{e}thode. Tout en restant
-  fid\`{e}le \`{a} l’esprit de cet ouvrage, combinant fondements
-  math\'{e}matiques et m\'{e}thodologie de mise en \oe uvre, les auteurs ont
-  \'{e}largi le champ de la pr\'{e}sentation, afin de permettre au lecteur
-  d’aborder d’autres m\'{e}thodes d’apprentissage statistique que celles
-  qui sont directement d\'{e}crites dans cet ouvrage. En effet, les succ\`{e}s
-  de l’apprentissage dans un grand nombre de domaines ont pouss\'{e} au
-  d\'{e}veloppement de tr\`{e}s nombreuses variantes, souvent destin\'{e}es
-  \`{a} r\'{e}pondre efficacement aux exigences de telle ou telle classe
-  d’applications. Toutes ces variantes ont n\'{e}anmoins des bases
-  th\'{e}oriques et des aspects m\'{e}thodolo- giques communs, qu’il est
-  important d’avoir pr\'{e}sents \`{a} l’esprit. Le terme
-  d’apprentissage, comme celui de r\'{e}seau de neurones, \'{e}voque
-  \'{e}videmment le fonctionnement du cerveau. Il ne faut pourtant pas
-  s’attendre \`{a} trouver ici d’explications sur les m\'{e}canismes de
-  traitement des informations dans les syst\`{e}mes nerveux ; ces derniers sont
-  d’une grande complexit\'{e}, r\'{e}sultant de processus \'{e}lectriques et
-  chimiques subtils, encore mal compris en d\'{e}pit de la grande quantit\'{e}
-  de donn\'{e}es exp\'{e}rimentales disponibles. Si les m\'{e}thodes
-  d’apprentissage statistique peuvent \^{e}tre d’une grande utilit\'{e}
-  pour cr\'{e}er des mod\`{e}les empiriques de telle ou telle fonction
-  r\'{e}alis\'{e}e par le syst\`{e}me nerveux, celles qui sont d\'{e}crites
-  dans cet ouvrage n’ont aucunement la pr\'{e}tention d’imiter, m\^{e}me
-  vaguement, le fonctionne- ment du cerveau. L’apprentissage artificiel,
-  notamment statistique, permettra-t-il un jour de donner aux ordinateurs des
-  capacit\'{e}s analogues \`{a} celles des \^{e}tres humains ? Se
-  rapprochera-t-on de cet objectif en perfectionnant les techniques actuelles
-  d’apprentissage, ou bien des approches radicalement nouvelles sont-elles
-  indispensables ? Faut-il s’inspirer de ce que l’on sait, ou croit savoir,
-  sur le fonctionnement du cerveau ? Ces questions font l’objet de d\'{e}bats
-  passionn\'{e}s, et passionnants, au sein de la communaut\'{e} scientifique :
-  on n’en trouvera pas les r\'{e}ponses ici.%
+  En une vingtaine d’ann{\'{e}}es, l’apprentissage artificiel est devenu
+  une branche majeure des math{\'{e}}matiques appliqu{\'{e}}es, {\`{a}}
+  l’intersection des statistiques et de l’intelligence artificielle. Son
+  objectif est de r{\'{e}}aliser des mod{\`{e}}les qui apprennent « par
+  l’exemple » : il s’appuie sur des donn{\'{e}}es num{\'{e}}riques
+  (r{\'{e}}sultats de mesures ou de simulations), contrairement aux
+  mod{\`{e}}les « de connaissances » qui s’appuient sur des {\'{e}}quations
+  issues des premiers principes de la physique, de la chimie, de la biologie,
+  de l’{\'{e}}conomie, etc. L’apprentis- sage statistique est d’une
+  grande utilit{\'{e}} lorsque l’on cherche {\`{a}} mod{\'{e}}liser des
+  processus complexes, souvent non lin{\'{e}}aires, pour lesquels les
+  connaissances th{\'{e}}oriques sont trop impr{\'{e}}cises pour permettre des
+  pr{\'{e}}dictions pr{\'{e}}cises. Ses domaines d’applications sont
+  multiples : fouille de donn{\'{e}}es, bio-informatique, g{\'{e}}nie des
+  proc{\'{e}}d{\'{e}}s, aide au diagnostic m{\'{e}}dical,
+  t{\'{e}}l{\'{e}}communications, interface cerveau-machines, et bien
+  d’autres. Cet ouvrage refl{\`{e}}te en partie l’{\'{e}}volution de cette
+  discipline, depuis ses balbutiements au d{\'{e}}but des ann{\'{e}}es 1980,
+  jusqu’{\`{a}} sa situation actuelle ; il n’a pas du tout la
+  pr{\'{e}}tention de faire un point, m{\^{e}}me partiel, sur l’ensemble des
+  d{\'{e}}veloppements pass{\'{e}}s et actuels, mais plut{\^{o}}t d’insister
+  sur les principes et sur les m{\'{e}}thodes {\'{e}}prouv{\'{e}}s, dont les
+  bases scientifiques sont s{\^{u}}res. Dans un domaine sans cesse parcouru de
+  modes multiples et {\'{e}}ph{\'{e}}m{\`{e}}res, il est utile, pour qui
+  cherche {\`{a}} acqu{\'{e}}rir les connaissances et principes de base,
+  d’insister sur les aspects p{\'{e}}rennes du domaine. Cet ouvrage fait
+  suite {\`{a}} R{\'{e}}seaux de neurones, m{\'{e}}thodologies et applications,
+  des m{\^{e}}mes auteurs, paru en 2000, r{\'{e}}{\'{e}}dit{\'{e}} en 2004,
+  chez le m{\^{e}}me {\'{e}}diteur, puis publi{\'{e}} en traduction anglaise
+  chez Springer. Consacr{\'{e}} essentiellement aux r{\'{e}}seaux de neurones
+  et aux cartes auto-adaptatives, il a largement contribu{\'{e}} {\`{a}}
+  populariser ces techniques et {\`{a}} convaincre leurs utilisateurs qu’il
+  est possible d’obtenir des r{\'{e}}sultats remarquables, {\`{a}} condition
+  de mettre en {\oe}uvre une m{\'{e}}thodologie de conception rigoureuse,
+  scientifique- ment fond{\'{e}}e, dans un domaine o{\`{u}} l’empirisme a
+  longtemps tenu lieu de m{\'{e}}thode. Tout en restant fid{\`{e}}le {\`{a}}
+  l’esprit de cet ouvrage, combinant fondements math{\'{e}}matiques et
+  m{\'{e}}thodologie de mise en {\oe}uvre, les auteurs ont {\'{e}}largi le
+  champ de la pr{\'{e}}sentation, afin de permettre au lecteur d’aborder
+  d’autres m{\'{e}}thodes d’apprentissage statistique que celles qui sont
+  directement d{\'{e}}crites dans cet ouvrage. En effet, les succ{\`{e}}s de
+  l’apprentissage dans un grand nombre de domaines ont pouss{\'{e}} au
+  d{\'{e}}veloppement de tr{\`{e}}s nombreuses variantes, souvent
+  destin{\'{e}}es {\`{a}} r{\'{e}}pondre efficacement aux exigences de telle ou
+  telle classe d’applications. Toutes ces variantes ont n{\'{e}}anmoins des
+  bases th{\'{e}}oriques et des aspects m{\'{e}}thodolo- giques communs,
+  qu’il est important d’avoir pr{\'{e}}sents {\`{a}} l’esprit. Le terme
+  d’apprentissage, comme celui de r{\'{e}}seau de neurones, {\'{e}}voque
+  {\'{e}}videmment le fonctionnement du cerveau. Il ne faut pourtant pas
+  s’attendre {\`{a}} trouver ici d’explications sur les m{\'{e}}canismes de
+  traitement des informations dans les syst{\`{e}}mes nerveux ; ces derniers
+  sont d’une grande complexit{\'{e}}, r{\'{e}}sultant de processus
+  {\'{e}}lectriques et chimiques subtils, encore mal compris en d{\'{e}}pit de
+  la grande quantit{\'{e}} de donn{\'{e}}es exp{\'{e}}rimentales disponibles.
+  Si les m{\'{e}}thodes d’apprentissage statistique peuvent {\^{e}}tre
+  d’une grande utilit{\'{e}} pour cr{\'{e}}er des mod{\`{e}}les empiriques de
+  telle ou telle fonction r{\'{e}}alis{\'{e}}e par le syst{\`{e}}me nerveux,
+  celles qui sont d{\'{e}}crites dans cet ouvrage n’ont aucunement la
+  pr{\'{e}}tention d’imiter, m{\^{e}}me vaguement, le fonctionne- ment du
+  cerveau. L’apprentissage artificiel, notamment statistique, permettra-t-il
+  un jour de donner aux ordinateurs des capacit{\'{e}}s analogues {\`{a}}
+  celles des {\^{e}}tres humains ? Se rapprochera-t-on de cet objectif en
+  perfectionnant les techniques actuelles d’apprentissage, ou bien des
+  approches radicalement nouvelles sont-elles indispensables ? Faut-il
+  s’inspirer de ce que l’on sait, ou croit savoir, sur le fonctionnement du
+  cerveau ? Ces questions font l’objet de d{\'{e}}bats passionn{\'{e}}s, et
+  passionnants, au sein de la communaut{\'{e}} scientifique : on n’en
+  trouvera pas les r{\'{e}}ponses ici.%
   }
   \field{edition}{Eyrolles}
   \field{isbn}{9782212114645}
@@ -3202,7 +4655,7 @@
   \strng{fullhash}{W1}
   \field{labelalpha}{{Wie}42}
   \field{sortinit}{{W}}
-  \field{title}{{Extrapolation, Interpolation \& Smoothing of Stationary Time
+  \field{title}{{Extrapolation, Interpolation {\&} Smoothing of Stationary Time
   Series - With Engineering Applications}}
   \list{institution}{1}{%
     {Report of the Services 19, Research Project DIC-6037 MIT}%

@@ -5,34 +5,54 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {todo}{Figure: Testing a long text string}{2}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{[biblio semi-supervis\IeC {\'e}]}{9}{section*.11}
+\contentsline {todo}{[biblio semi-supervis\IeC {\'e}]}{8}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{r\IeC {\'e}f\IeC {\'e}rences normalization}{15}{section*.18}
+\contentsline {todo}{ref sylvain?}{14}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{\textbf {Comment [\uppercase {CTD}3]:}~r\IeC {\'e}\IeC {\'e}crire + compl\IeC {\'e}ter avec Claude}{26}{section*.26}
+\contentsline {todo}{r\IeC {\'e}f\IeC {\'e}rences normalization}{14}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{figure \IeC {\`a} refaire}{28}{section*.28}
+\contentsline {todo}{\textbf {Comment [\uppercase {AD}3]:}~dit d'enlever 1\IeC {\`e}re phrase mais Mich\IeC {\`e}le dit de garder}{16}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Partie non encore r\IeC {\'e}dig\IeC {\'e}e. A faire \IeC {\`a} la fin.}{31}{section*.31}
+\contentsline {todo}{\textbf {Comment [\uppercase {AR}4]:}~Ahlame trouve que ce n'est pas clair. A refaire}{16}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{\textbf {Comment [\uppercase {MR}4]:}~Plus les donn\IeC {\'e}es sont impr\IeC {\'e}cises, moins elle est importante}{35}{section*.32}
+\contentsline {todo}{\textbf {Comment [\uppercase {AD}5]:}~Expliquer d'avantage}{17}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Figure: Ajouter la repr\IeC {\'e}sentation fr\IeC {\'e}quentielle des signaux}{36}{equation.2.2.5}
+\contentsline {todo}{\textbf {Comment [\uppercase {AD}6]:}~Mettre dans les figures des + et - pour les classes}{18}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{A faire \IeC {\`a} la fin, pas urgent}{38}{section*.35}
+\contentsline {todo}{Partie non encore r\IeC {\'e}dig\IeC {\'e}e. A faire \IeC {\`a} la fin.}{29}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{\textbf {Comment [\uppercase {MR}5]:}~Modifier figure. enlever 'one' et mettre la m\IeC {\^e}me \IeC {\'e}chelle temporelle}{38}{section*.37}
+\contentsline {todo}{A refaire compl\IeC {\`e}tement \IeC {\`a} la fin.}{29}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{ref}{41}{section*.40}
+\contentsline {todo}{Ajouter virtual sensors?}{32}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{ref}{42}{section*.41}
+\contentsline {todo}{Figure: Ajouter une figure pour les 2 repr\IeC {\'e}sentations des ST multivari\IeC {\'e}es}{32}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{ref}{42}{section*.43}
+\contentsline {todo}{\textbf {Comment [\uppercase {CTD}7]:}~je pr\IeC {\'e}f\IeC {\`e}re garder l'espace pour + de visibilit\IeC {\'e}}{33}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{\textbf {Comment [\uppercase {MR}6]:}~Ajouter sur la figure la valeur de $\alpha $ et le nom des m\IeC {\'e}triques pour une meilleure visibilit\IeC {\'e}}{43}{section*.45}
+\contentsline {todo}{Figure: repr\IeC {\'e}sentation m\IeC {\'e}trique}{34}{Item.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{A faire, le positionnement du Metric Learning avec l'aide du papier PRL}{45}{section*.46}
+\contentsline {todo}{\textbf {Comment [\uppercase {SMA}8]:}~reformulation \IeC {\`a} revoir: let's try to}{35}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{ref}{47}{section*.48}
+\contentsline {todo}{Figure: Ajouter la repr\IeC {\'e}sentation fr\IeC {\'e}quentielle des signaux}{36}{equation.2.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {todo}{Figure: Mettre une figure ici montrant la discretization. Faire 2 figures, la 1\IeC {\`e}re montre dans le domaine temporal et son \IeC {\'e}quivalent en classe. La 2\IeC {\`e}me est une figure entr\IeC {\'e}e/sortie}{54}{equation.3.1.2}
+\contentsline {todo}{A faire \IeC {\`a} la fin, pas urgent}{38}{section*.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{\textbf {Comment [\uppercase {SMA}9]:}~formulation totale \IeC {\`a} revoir}{38}{section*.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{\textbf {Comment [\uppercase {MR}10]:}~Modifier figure. enlever 'one' et mettre la m\IeC {\^e}me \IeC {\'e}chelle temporelle}{38}{section*.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{\textbf {Comment [\uppercase {AD}11]:}~Ahlame pas fan des notations}{38}{section*.45}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{ref}{41}{section*.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{A faire, avec papier PRL et papier Aur\IeC {\'e}lien Bellet}{43}{section*.49}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{ref}{46}{section*.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{Mich\IeC {\`e}le pense que l'\IeC {\'e}tat, cette section est dure \IeC {\`a} comprendre. D'apr\IeC {\`e}s Mich\IeC {\`e}le, il faut 1) soit prendre + de place pour expliquer la signification g\IeC {\'e}om\IeC {\'e}trique 2) ou soit ne pas mettre cette partie car \IeC {\'e}tant compliqu\IeC {\'e}e, cela pourrait nuire au lecteur. Qu'en penses tu Ahlame?}{65}{section*.61}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{ref}{70}{section*.66}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{ref}{70}{section*.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{Note sur le neighborhood scaling en test?}{79}{section*.74}

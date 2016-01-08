@@ -1,6 +1,12 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Pairwise space representation}{\reset@font\mtcSfont 53}{section.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.1}Interpretation of the pairwise space}{\reset@font\mtcSSfont 55}{subsection.3.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.2}Pros \& Cons}{\reset@font\mtcSSfont 55}{subsection.3.1.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}$M^2TML$: LP optimization problem}{\reset@font\mtcSfont 55}{section.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}$M^2TML$: QP optimization problem}{\reset@font\mtcSfont 55}{section.3.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}$M^2TML$: SVM approximation}{\reset@font\mtcSfont 55}{section.3.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Motivations}{\reset@font\mtcSfont 51}{section.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Dissimilarity space}{\reset@font\mtcSfont 54}{section.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Pairwise embedding}{\reset@font\mtcSSfont 55}{subsection.3.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Interpretation in the dissimilarity space}{\reset@font\mtcSSfont 55}{subsection.3.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Linear Programming ({\sc lp}) formalization}{\reset@font\mtcSfont 56}{section.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}Quadratic Programming ({\sc qp}) formalization}{\reset@font\mtcSfont 59}{section.3.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.5}Support Vector Machine ({\sc svm}) approximation}{\reset@font\mtcSfont 62}{section.3.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.1}Motivations}{\reset@font\mtcSSfont 62}{subsection.3.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.2}Similarities and differences in the constraints}{\reset@font\mtcSSfont 63}{subsection.3.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.3}Similarities and differences in the objective function}{\reset@font\mtcSSfont 64}{subsection.3.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.4}Geometric interpretation}{\reset@font\mtcSSfont 65}{subsection.3.5.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.6}Conclusion of the chapter}{\reset@font\mtcSfont 66}{section.3.6}}

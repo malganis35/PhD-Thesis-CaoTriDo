@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.15)  6 NOV 2015 10:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.15)  8 JAN 2016 16:32
 entering extended mode
 **roque-phdthesis.tex
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.tex
@@ -1482,30 +1482,57 @@ ikzlibrarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 )
 \c@@todonotes@numberoftodonotes=\count322
-))
+)
 ("C:\Program Files (x86)\MikeTeX\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen199
+)
+("C:\Program Files (x86)\MikeTeX\tex\latex\calrsfs\calrsfs.sty"
+\symrsfscript=\mathgroup7
+)
+("C:\Program Files (x86)\MikeTeX\tex\latex\algorithms\algorithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+("C:\Program Files (x86)\MikeTeX\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count323
+\float@exts=\toks53
+\float@box=\box66
+\@float@everytoks=\toks54
+\@floatcapt=\box67
+)
+\@float@every@algorithm=\toks55
+\c@algorithm=\count324
+))
+("C:\Program Files (x86)\MikeTeX\tex\latex\algorithms\algorithmic.sty"
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count325
+\c@ALC@line=\count326
+\c@ALC@rem=\count327
+\c@ALC@depth=\count328
+\ALC@tlm=\skip91
+\algorithmicindent=\skip92
 )
 \@input{0-configuration/macros.aux}
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\0-configuration/mac
 ros.tex"
-\c@definition=\count323
-\c@theoreme=\count324
-\c@remarque=\count325
-\c@propriete=\count326
-\c@exemple=\count327
+\c@definition=\count329
+\c@theoreme=\count330
+\c@remarque=\count331
+\c@propriete=\count332
+\c@exemple=\count333
  ("C:\Program Files (x86)\MikeTeX\tex\latex\oberdiek\ifdraft.sty"
 Package: ifdraft 2008/08/11 v1.3 Detect class options draft and final (HO)
 )
 ("C:\Program Files (x86)\MikeTeX\tex\latex\soul\soul.sty"
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks53
-\SOUL@lasttoken=\toks54
-\SOUL@cmds=\toks55
-\SOUL@buffer=\toks56
-\SOUL@token=\toks57
-\SOUL@spaceskip=\skip91
+\SOUL@word=\toks56
+\SOUL@lasttoken=\toks57
+\SOUL@cmds=\toks58
+\SOUL@buffer=\toks59
+\SOUL@token=\toks60
+\SOUL@spaceskip=\skip93
 \SOUL@ttwidth=\dimen200
 \SOUL@uldp=\dimen201
 \SOUL@ulht=\dimen202
@@ -1519,8 +1546,8 @@ File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.0 (rcs-revision 1.9)
 )
 \highlight@previous=\dimen203
 \highlight@current=\dimen204
-\c@akmctr=\count328
-\c@mycomment=\count329
+\c@akmctr=\count334
+\c@mycomment=\count335
 )
 Package biblatex Info: Trying to load language 'american'...
 Package biblatex Info: ... file 'american.lbx' found.
@@ -1537,8 +1564,8 @@ File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count330
-\@quotereset=\count331
+\@quotelevel=\count336
+\@quotereset=\count337
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.aux
 "
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\1-opening/titlepage
@@ -1555,28 +1582,22 @@ t-part.aux")
 ine-learning.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-2-basi
 c-metrics.aux")
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-3-adva
-nced-metrics.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-1-conc
 lusion-first-part.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-2-seco
 nd-part.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-3-pair
-wise-space.aux")
+wise-space2.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-6-M2TM
-L-algo.aux"
-
-LaTeX Warning: Label `sec:unchapitre' multiply defined.
-
-)
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-7-expe
-riments.aux"
-
-LaTeX Warning: Label `sec:unchapitre' multiply defined.
-
-)
+L-algo.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-2-conc
 lusion-second-part.aux")
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-3-thir
+d-part.aux")
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-7-expe
+riments.aux")
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-3-conc
+lusion-third-part.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/3-0-conc
 lusion.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-1-fi
@@ -1592,7 +1613,9 @@ ird-appendix.aux"
 
 LaTeX Warning: Label `chap:publications' multiply defined.
 
-))
+)
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-4-fo
+rth-appendix.aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
@@ -1614,12 +1637,12 @@ Package nag Info: Command \RaggedLeft not defined, skipping amendment on input
 line 35.
 Package nag Info: Command \RaggedRight not defined, skipping amendment on input
  line 35.
-\c@minilofdepth=\count332
-\c@minilotdepth=\count333
-\c@partlofdepth=\count334
-\c@partlotdepth=\count335
-\c@sectlofdepth=\count336
-\c@sectlotdepth=\count337
+\c@minilofdepth=\count338
+\c@minilotdepth=\count339
+\c@partlofdepth=\count340
+\c@partlotdepth=\count341
+\c@sectlofdepth=\count342
+\c@sectlotdepth=\count343
 Package minitoc(hints) Info: I0049
 (minitoc(hints))             ==> You requested the hints option. 
 (minitoc(hints))             Some hints are eventually given below.
@@ -1656,19 +1679,19 @@ Package minitoc(hints) Warning: W0023
 
 ("C:\Program Files (x86)\MikeTeX\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
+\scratchcounter=\count344
 \scratchdimen=\dimen205
-\scratchbox=\box66
-\nofMPsegments=\count339
-\nofMParguments=\count340
-\everyMPshowfont=\toks58
-\MPscratchCnt=\count341
+\scratchbox=\box68
+\nofMPsegments=\count345
+\nofMParguments=\count346
+\everyMPshowfont=\toks61
+\MPscratchCnt=\count347
 \MPscratchDim=\dimen206
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
-\everyMPtoPDFconversion=\toks59
+\MPnumerator=\count348
+\makeMPintoPDFobject=\count349
+\everyMPtoPDFconversion=\toks62
 )
-\AtBeginShipoutBox=\box67
+\AtBeginShipoutBox=\box69
 Package hyperref Info: Link coloring ON on input line 35.
  ("C:\Program Files (x86)\MikeTeX\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1676,7 +1699,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files (x86)\MikeTeX\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count344
+\c@section@level=\count350
 )
 LaTeX Info: Redefining \ref on input line 35.
 LaTeX Info: Redefining \pageref on input line 35.
@@ -1689,6 +1712,7 @@ LaTeX Info: Redefining \nameref on input line 35.
 \@outlinefile=\write7
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': document ha
@@ -1704,7 +1728,18 @@ Package biblatex Warning: Data encoding is 'utf8'.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'roque-phdthesis.bbl' found.
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.bbl
-")
+"
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Campbell2011':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Keogh2004':
+(biblatex)                - Invalid format of field 'month'.
+
+)
 Package biblatex Info: Reference section=0 on input line 35.
 Package biblatex Info: Reference segment=0 on input line 35.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
@@ -1785,12 +1820,23 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <13> not available
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <6.5> not available
 (Font)              size <6> substituted on input line 28.
 
-<images/background-eps-converted-to.pdf, id=166, 532.99126pt x 790.955pt>
+LaTeX Font Info:    Try loading font information for OMS+rsfs on input line 28.
+
+("C:\Program Files (x86)\MikeTeX\tex\latex\calrsfs\omsrsfs.fd")
+
+LaTeX Font Warning: Font shape `OMS/rsfs/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 28.
+
+
+LaTeX Font Warning: Font shape `OMS/rsfs/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 28.
+
+<images/background-eps-converted-to.pdf, id=178, 532.99126pt x 790.955pt>
 File: images/background-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/background-eps-converted-to.pdf>
 Package pdftex.def Info: images/background-eps-converted-to.pdf used on input l
-ine 109.
+ine 113.
 (pdftex.def)             Requested size: 537.80457pt x 798.09792pt.
  [1
 
@@ -1805,7 +1851,7 @@ rs/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/background-eps-conve
 rted-to.pdf>] [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
@@ -1813,7 +1859,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.161 \end{titlepage}
+l.164 \end{titlepage}
                       [1
 
 
@@ -1821,7 +1867,7 @@ l.161 \end{titlepage}
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \titlepage
+l.167 \titlepage
                  [2
 
 ])
@@ -1852,21 +1898,27 @@ Package minitoc Info: I0033
 (minitoc)             Writing roque-phdthesis.mtc11.
 Package minitoc Info: I0033
 (minitoc)             Writing roque-phdthesis.mtc12.
+Package minitoc Info: I0033
+(minitoc)             Writing roque-phdthesis.mtc13.
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.tdo
-")
+" [1
+
+
+
+
+])
 \tf@tdo=\write8
- [1
 
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-
-]
+[2]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\1-opening/acknowled
-gements.tex" [2
-
-
-]
+gements.tex"
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
  ("C:\Program Files (x86)\MikeTeX\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -1874,12 +1926,47 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
 )
-[3] [4
+[3
+
+
+] [4
 
 
 ]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.toc
-" [5])
+"
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 81.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 93.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 95.
+
+[5]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 97.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 109.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 109.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6])
 \tf@toc=\write9
 
 
@@ -1888,11 +1975,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.lof
-" [7
+[7] [8
 
 ]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.lof
+"
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 37.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 39.
+
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 53.
@@ -1915,7 +2013,150 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8])
+[10]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 59.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 59.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 59.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 61.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 61.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 61.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 61.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 83.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 83.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 83.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 85.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 87.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 87.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 87.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 87.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 101.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 103.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 123.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 123.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 125.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 125.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 125.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 125.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 127.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 127.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 127.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 127.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 127.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 129.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 129.
+
+)
 \tf@lof=\write10
 
 
@@ -1924,20 +2165,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] [10
+[13] [14
 
 ]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.lot
-")
+"
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 43.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 43.
+
+)
 \tf@lot=\write11
- [11] [12
+ [15] [16
 
 ]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\1-opening/acronyms.
-tex") [13
+tex") [17
 
 
-] [14
+] [18
 
 
 ]
@@ -2045,73 +2295,65 @@ ine-learning.tex" [6
 Chapter 1.
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-3") [7] <images/time_series_example.png, id=547, 681.747pt x 201.75375pt>
-File: images/time_series_example.png Graphic file (type png)
+3"
 
-<use images/time_series_example.png>
-Package pdftex.def Info: images/time_series_example.png used on input line 30.
-(pdftex.def)             Requested size: 398.38567pt x 117.90077pt.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 34.
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 10.
 
-("C:\Program Files (x86)\MikeTeX\tex\latex\base\t1cmtt.fd"
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 16.
 
-[8 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/time_serie
-s_example.png>]
-Overfull \hbox (1.04123pt too wide) in paragraph at lines 56--56
+[7]
+Overfull \hbox (1.04123pt too wide) in paragraph at lines 34--34
 \T1/cmr/m/n/10.95 supervisé]  
  []
 
 
-Overfull \hbox (1.04123pt too wide) in paragraph at lines 56--56
+Overfull \hbox (1.04123pt too wide) in paragraph at lines 34--34
 \T1/cmr/m/n/10.95 supervisé]  
  []
 
 
-Overfull \hbox (1.04123pt too wide) in paragraph at lines 56--56
+Overfull \hbox (1.04123pt too wide) in paragraph at lines 34--34
 \T1/cmr/m/n/10.95 supervisé]  
  []
 
 
-Overfull \hbox (1.04123pt too wide) in paragraph at lines 56--56
+Overfull \hbox (1.04123pt too wide) in paragraph at lines 34--34
 \T1/cmr/m/n/10.95 supervisé]  
  []
 
+<images/Overfitting.png, id=723, 287.8755pt x 287.27325pt>
+File: images/Overfitting.png Graphic file (type png)
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[9] <images/Dataset.png, id=591, 638.385pt x 473.3685pt>
-File: images/Dataset.png Graphic file (type png)
-
-<use images/Dataset.png>
-Package pdftex.def Info: images/Dataset.png used on input line 74.
-(pdftex.def)             Requested size: 398.38567pt x 295.40675pt.
-
-<images/LearningFramework.png, id=592, 890.1255pt x 448.074pt>
-File: images/LearningFramework.png Graphic file (type png)
-
-<use images/LearningFramework.png>
-Package pdftex.def Info: images/LearningFramework.png used on input line 83.
-(pdftex.def)             Requested size: 398.38567pt x 200.54434pt.
+<use images/Overfitting.png>
+Package pdftex.def Info: images/Overfitting.png used on input line 48.
+(pdftex.def)             Requested size: 177.05879pt x 176.6961pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Overfitting.png, id=594, 287.8755pt x 287.27325pt>
-File: images/Overfitting.png Graphic file (type png)
+<images/GridSearch.png, id=726, 340.8735pt x 338.4645pt>
+File: images/GridSearch.png Graphic file (type png)
 
-<use images/Overfitting.png>
-Package pdftex.def Info: images/Overfitting.png used on input line 93.
-(pdftex.def)             Requested size: 177.05879pt x 176.6961pt.
+<use images/GridSearch.png>
+Package pdftex.def Info: images/GridSearch.png used on input line 57.
+(pdftex.def)             Requested size: 177.05879pt x 175.81146pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/Cross_validation2.jpg, id=727, 651.93562pt x 258.9675pt>
+File: images/Cross_validation2.jpg Graphic file (type jpg)
+
+<use images/Cross_validation2.jpg>
+Package pdftex.def Info: images/Cross_validation2.jpg used on input line 64.
+(pdftex.def)             Requested size: 442.65375pt x 175.8387pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2119,8 +2361,49 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Dataset.p
-ng>]
+[8]
+Underfull \vbox (badness 2922) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Overfittin
+g.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/GridSe
+arch.png>] <images/LearningFramework.png, id=749, 890.1255pt x 448.074pt>
+File: images/LearningFramework.png Graphic file (type png)
+
+<use images/LearningFramework.png>
+Package pdftex.def Info: images/LearningFramework.png used on input line 85.
+(pdftex.def)             Requested size: 442.65375pt x 222.82628pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/Dataset.png, id=750, 634.16925pt x 473.3685pt>
+File: images/Dataset.png Graphic file (type png)
+
+<use images/Dataset.png>
+Package pdftex.def Info: images/Dataset.png used on input line 92.
+(pdftex.def)             Requested size: 398.38567pt x 297.37141pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Cross_val
+idation2.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2129,29 +2412,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/LearningF
 ramework.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images
-/Overfitting.png>] <images/GridSearch.png, id=607, 340.8735pt x 338.4645pt>
-File: images/GridSearch.png Graphic file (type png)
-
-<use images/GridSearch.png>
-Package pdftex.def Info: images/GridSearch.png used on input line 102.
-(pdftex.def)             Requested size: 154.9315pt x 153.84148pt.
-
-<images/Cross_validation2.jpg, id=608, 651.93562pt x 258.9675pt>
-File: images/Cross_validation2.jpg Graphic file (type jpg)
-
-<use images/Cross_validation2.jpg>
-Package pdftex.def Info: images/Cross_validation2.jpg used on input line 109.
-(pdftex.def)             Requested size: 398.38567pt x 158.25444pt.
-
+/Dataset.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/GridSearc
-h.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Cross_
-validation2.jpg>]
+[12]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 161.
+
+ ("C:\Program Files (x86)\MikeTeX\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2159,32 +2432,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [13]
-Underfull \vbox (badness 7704) has occurred while \output is active []
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 174.
 
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[14]
-Overfull \hbox (0.6786pt too wide) in paragraph at lines 188--188
+Overfull \hbox (0.6786pt too wide) in paragraph at lines 176--176
 [][][][]\T1/cmr/m/n/10.95 références 
  []
 
 
-Overfull \hbox (0.6786pt too wide) in paragraph at lines 188--188
+Overfull \hbox (0.6786pt too wide) in paragraph at lines 176--176
 [][][][]\T1/cmr/m/n/10.95 références 
  []
 
 
-Overfull \hbox (0.6786pt too wide) in paragraph at lines 188--188
+Overfull \hbox (0.6786pt too wide) in paragraph at lines 176--176
 [][][][]\T1/cmr/m/n/10.95 références 
  []
 
 
-Overfull \hbox (0.6786pt too wide) in paragraph at lines 188--188
+Overfull \hbox (0.6786pt too wide) in paragraph at lines 176--176
 [][][][]\T1/cmr/m/n/10.95 références 
  []
 
@@ -2198,37 +2466,131 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15] <images/SkewedData.png, id=652, 848.16875pt x 639.38875pt>
-File: images/SkewedData.png Graphic file (type png)
+[14] <images/SkewedData2.png, id=803, 544.434pt x 448.074pt>
+File: images/SkewedData2.png Graphic file (type png)
 
-<use images/SkewedData.png>
-Package pdftex.def Info: images/SkewedData.png used on input line 203.
-(pdftex.def)             Requested size: 265.59494pt x 200.21825pt.
+<use images/SkewedData2.png>
+Package pdftex.def Info: images/SkewedData2.png used on input line 191.
+(pdftex.def)             Requested size: 265.59494pt x 218.59415pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
 [][]\T1/cmr/m/n/9 source: [][]$\T1/cmtt/m/n/9 http : / / www . r -[] statistics
  . com / 2013 / 05 / log -[] transformations -[] for -[] skewed -[] and -[] wid
 e -[]$
  []
 
 
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 197.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SkewedDat
-a.png>]
+[15 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SkewedDat
+a2.png>]
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 204--204
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
 
-LaTeX Warning: Citation 'Silverman1989' on page 17 undefined on input line 231.
+
+Overfull \hbox (2.72957pt too wide) in paragraph at lines 204--204
+\T1/cmr/bx/n/10 [AD3]: \T1/cmr/m/n/10 dit 
+ []
 
 
-<images/kNN_example.png, id=670, 419.76825pt x 309.5565pt>
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 204--204
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (2.72957pt too wide) in paragraph at lines 204--204
+\T1/cmr/bx/n/10 [AD3]: \T1/cmr/m/n/10 dit 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 204--204
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (2.72957pt too wide) in paragraph at lines 204--204
+\T1/cmr/bx/n/10 [AD3]: \T1/cmr/m/n/10 dit 
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 204--204
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (2.72957pt too wide) in paragraph at lines 204--204
+\T1/cmr/bx/n/10 [AD3]: \T1/cmr/m/n/10 dit 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 204.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 204.
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 219--219
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (23.91884pt too wide) in paragraph at lines 219--219
+\T1/cmr/bx/n/10 [AR4]: \T1/cmr/m/n/10 Ahlame 
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 219--219
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (23.91884pt too wide) in paragraph at lines 219--219
+\T1/cmr/bx/n/10 [AR4]: \T1/cmr/m/n/10 Ahlame 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 219--219
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (23.91884pt too wide) in paragraph at lines 219--219
+\T1/cmr/bx/n/10 [AR4]: \T1/cmr/m/n/10 Ahlame 
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 219--219
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (23.91884pt too wide) in paragraph at lines 219--219
+\T1/cmr/bx/n/10 [AR4]: \T1/cmr/m/n/10 Ahlame 
+ []
+
+Missing character: There is no ; in font nullfont!
+<images/kNN_example.png, id=822, 419.76825pt x 309.5565pt>
 File: images/kNN_example.png Graphic file (type png)
 
 <use images/kNN_example.png>
-Package pdftex.def Info: images/kNN_example.png used on input line 235.
-(pdftex.def)             Requested size: 199.19283pt x 146.89442pt.
+Package pdftex.def Info: images/kNN_example.png used on input line 225.
+(pdftex.def)             Requested size: 177.05879pt x 130.5702pt.
+
+Overfull \vbox (2.07687pt too high) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2236,20 +2598,92 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/kNN_examp
+[16 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/kNN_examp
 le.png>]
-
-LaTeX Warning: Citation 'Altman1992' on page 18 undefined on input line 251.
-
-
-LaTeX Warning: Citation 'Dudani1976' on page 18 undefined on input line 251.
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 240--240
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
 
 
-LaTeX Warning: Citation 'Keller1985' on page 18 undefined on input line 251.
+Overfull \hbox (5.92323pt too wide) in paragraph at lines 240--240
+\T1/cmr/bx/n/10 [AD5]: \T1/cmr/m/n/10 Ex- 
+ []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (0.71654pt too wide) in paragraph at lines 240--240
+\T1/cmr/m/n/10 d'avantage  
+ []
 
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 240--240
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (5.92323pt too wide) in paragraph at lines 240--240
+\T1/cmr/bx/n/10 [AD5]: \T1/cmr/m/n/10 Ex- 
+ []
+
+
+Overfull \hbox (0.71654pt too wide) in paragraph at lines 240--240
+\T1/cmr/m/n/10 d'avantage  
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 240--240
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (5.92323pt too wide) in paragraph at lines 240--240
+\T1/cmr/bx/n/10 [AD5]: \T1/cmr/m/n/10 Ex- 
+ []
+
+
+Overfull \hbox (0.71654pt too wide) in paragraph at lines 240--240
+\T1/cmr/m/n/10 d'avantage  
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 240--240
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (5.92323pt too wide) in paragraph at lines 240--240
+\T1/cmr/bx/n/10 [AD5]: \T1/cmr/m/n/10 Ex- 
+ []
+
+
+Overfull \hbox (0.71654pt too wide) in paragraph at lines 240--240
+\T1/cmr/m/n/10 d'avantage  
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 271.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 282.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 282.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 282.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 284.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 284.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2257,30 +2691,63 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]
+[17]
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 289--289
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
 
-LaTeX Warning: Reference `chap:formalization' on page 19 undefined on input lin
-e 293.
+
+Overfull \hbox (11.33858pt too wide) in paragraph at lines 289--289
+\T1/cmr/bx/n/10 [AD6]: \T1/cmr/m/n/10 Met- 
+ []
 
 
-<images/Plusieurs_separatrice_lineaire2.png, id=720, 418.66759pt x 314.00069pt>
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 289--289
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (11.33858pt too wide) in paragraph at lines 289--289
+\T1/cmr/bx/n/10 [AD6]: \T1/cmr/m/n/10 Met- 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 289--289
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (11.33858pt too wide) in paragraph at lines 289--289
+\T1/cmr/bx/n/10 [AD6]: \T1/cmr/m/n/10 Met- 
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 289--289
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (11.33858pt too wide) in paragraph at lines 289--289
+\T1/cmr/bx/n/10 [AD6]: \T1/cmr/m/n/10 Met- 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+<images/Plusieurs_separatrice_lineaire2.png, id=878, 418.66759pt x 314.00069pt>
 File: images/Plusieurs_separatrice_lineaire2.png Graphic file (type png)
 <use images/Plusieurs_separatrice_lineaire2.png>
 Package pdftex.def Info: images/Plusieurs_separatrice_lineaire2.png used on inp
-ut line 302.
-(pdftex.def)             Requested size: 265.59494pt x 199.19656pt.
+ut line 293.
+(pdftex.def)             Requested size: 221.32687pt x 165.99792pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-<images/Separatrice_lineaire_avec_marges2.png, id=723, 418.66759pt x 314.00069p
-t>
+<images/Separatrice_lineaire_avec_marges2.png, id=881, 404.712pt x 303.534pt>
 File: images/Separatrice_lineaire_avec_marges2.png Graphic file (type png)
- <use images/Separatrice_lineaire_avec_marges2.png>
+
+<use images/Separatrice_lineaire_avec_marges2.png>
 Package pdftex.def Info: images/Separatrice_lineaire_avec_marges2.png used on i
 nput line 311.
-(pdftex.def)             Requested size: 265.59494pt x 199.19656pt.
+(pdftex.def)             Requested size: 265.59494pt x 199.20758pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2288,7 +2755,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
+[18 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Plusieurs
+_separatrice_lineaire2.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2298,16 +2766,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Plusieurs
-_separatrice_lineaire2.png (PNG copy)>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Separatri
+[19 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Separatri
 ce_lineaire_avec_marges2.png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 354.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 354.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 354.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2317,15 +2790,36 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22] <images/SVM_SV2.png, id=798, 418.66759pt x 325.215pt>
+[20]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 378.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21] <images/SVM_SV2.png, id=954, 404.712pt x 314.3745pt>
 File: images/SVM_SV2.png Graphic file (type png)
 
 <use images/SVM_SV2.png>
-Package pdftex.def Info: images/SVM_SV2.png used on input line 404.
-(pdftex.def)             Requested size: 265.59494pt x 206.31073pt.
+Package pdftex.def Info: images/SVM_SV2.png used on input line 398.
+(pdftex.def)             Requested size: 265.59494pt x 206.32213pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 405.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--413
+
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2333,19 +2827,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23] <images/SVM_nonlinear2.png, id=816, 733.74126pt x 347.2975pt>
+[22 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_SV2.p
+ng>] <images/SVM_nonlinear2.png, id=969, 733.74126pt x 347.2975pt>
 File: images/SVM_nonlinear2.png Graphic file (type png)
 
 <use images/SVM_nonlinear2.png>
-Package pdftex.def Info: images/SVM_nonlinear2.png used on input line 434.
+Package pdftex.def Info: images/SVM_nonlinear2.png used on input line 431.
 (pdftex.def)             Requested size: 398.38567pt x 188.56592pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 437.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2353,19 +2845,224 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_SV2.p
-ng>]
-Underfull \hbox (badness 10000) in paragraph at lines 449--449
+[23 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_nonli
+near2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 [][][][]$\T1/cmtt/m/n/9 https : / / www . quora . com / Support -[] Vector -[] 
 Machines / What -[] is -[] the -[] intuition -[] behind -[] Gaussian -[]$
  []
 
-<images/Kernel_Gaussian2.png, id=830, 555.07375pt x 209.78375pt>
+<images/Kernel_Gaussian2.png, id=985, 369.17924pt x 166.82326pt>
 File: images/Kernel_Gaussian2.png Graphic file (type png)
 
 <use images/Kernel_Gaussian2.png>
-Package pdftex.def Info: images/Kernel_Gaussian2.png used on input line 453.
-(pdftex.def)             Requested size: 265.59494pt x 100.37814pt.
+Package pdftex.def Info: images/Kernel_Gaussian2.png used on input line 450.
+(pdftex.def)             Requested size: 265.59494pt x 120.02101pt.
+
+Underfull \vbox (badness 2469) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Kernel_Ga
+ussian2.png>] <images/SVM_interpretation2.png, id=1003, 404.712pt x 303.534pt>
+File: images/SVM_interpretation2.png Graphic file (type png)
+
+<use images/SVM_interpretation2.png>
+Package pdftex.def Info: images/SVM_interpretation2.png used on input line 509.
+
+(pdftex.def)             Requested size: 309.85626pt x 232.4019pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/Weight_interpretation3.png, id=1008, 635.976pt x 460.119pt>
+File: images/Weight_interpretation3.png Graphic file (type png)
+
+<use images/Weight_interpretation3.png>
+Package pdftex.def Info: images/Weight_interpretation3.png used on input line 5
+20.
+(pdftex.def)             Requested size: 442.65375pt x 320.25568pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 521.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 521.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 525.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 526.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
+
+LaTeX Warning: Text page 26 contains only floats.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_inter
+pretation2.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/imag
+es/Weight_interpretation3.png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 532.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 539.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 540.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 548.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 549.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 549.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 549.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 549.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 549.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27] <images/SVR_tube.png, id=1047, 420.97275pt x 200.54926pt>
+File: images/SVR_tube.png Graphic file (type png)
+
+<use images/SVR_tube.png>
+Package pdftex.def Info: images/SVR_tube.png used on input line 554.
+(pdftex.def)             Requested size: 354.12434pt x 168.70197pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 555.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 555.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 585.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVR_tube.
+png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 597.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 624.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 624.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-2-basi
+c-metrics.tex"
+Chapter 2.
+
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
+4"
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 12.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 13.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 13.
+
+) [31
+
+
+
+]
+Overfull \hbox (2.0pt too wide) in paragraph at lines 45--46
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+<images/time_series_example.png, id=1110, 681.747pt x 201.75375pt>
+File: images/time_series_example.png Graphic file (type png)
+
+<use images/time_series_example.png>
+Package pdftex.def Info: images/time_series_example.png used on input line 51.
+(pdftex.def)             Requested size: 442.65375pt x 130.99985pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2380,46 +3077,45 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_nonli
-near2.png>]
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 492--492
+[32]
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 78--78
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (30.41725pt too wide) in paragraph at lines 492--492
-\T1/cmr/bx/n/10 [CTD3]: \T1/cmr/m/n/10 réécrire 
+Overfull \hbox (5.61775pt too wide) in paragraph at lines 78--78
+\T1/cmr/bx/n/10 [CTD7]: \T1/cmr/m/n/10 je 
  []
 
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 492--492
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 78--78
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (30.41725pt too wide) in paragraph at lines 492--492
-\T1/cmr/bx/n/10 [CTD3]: \T1/cmr/m/n/10 réécrire 
+Overfull \hbox (5.61775pt too wide) in paragraph at lines 78--78
+\T1/cmr/bx/n/10 [CTD7]: \T1/cmr/m/n/10 je 
  []
 
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 492--492
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 78--78
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (30.41725pt too wide) in paragraph at lines 492--492
-\T1/cmr/bx/n/10 [CTD3]: \T1/cmr/m/n/10 réécrire 
+Overfull \hbox (5.61775pt too wide) in paragraph at lines 78--78
+\T1/cmr/bx/n/10 [CTD7]: \T1/cmr/m/n/10 je 
  []
 
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 492--492
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 78--78
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (30.41725pt too wide) in paragraph at lines 492--492
-\T1/cmr/bx/n/10 [CTD3]: \T1/cmr/m/n/10 réécrire 
+Overfull \hbox (5.61775pt too wide) in paragraph at lines 78--78
+\T1/cmr/bx/n/10 [CTD7]: \T1/cmr/m/n/10 je 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -2429,92 +3125,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Kernel_Ga
-ussian2.png>]
-<images/SVM_interpretation2.png, id=861, 418.66759pt x 314.00069pt>
-File: images/SVM_interpretation2.png Graphic file (type png)
-
-<use images/SVM_interpretation2.png>
-Package pdftex.def Info: images/SVM_interpretation2.png used on input line 506.
-
-(pdftex.def)             Requested size: 265.59494pt x 199.19656pt.
+[33 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/time_seri
+es_example.png>]
+Overfull \hbox (2.0pt too wide) in paragraph at lines 88--89
+[]
+ []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[27 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_inter
-pretation2.png>]
-<images/Weight_interpretation2.png, id=868, 625.1355pt x 456.5055pt>
-File: images/Weight_interpretation2.png Graphic file (type png)
-
-<use images/Weight_interpretation2.png>
-Package pdftex.def Info: images/Weight_interpretation2.png used on input line 5
-17.
-(pdftex.def)             Requested size: 420.5197pt x 307.08305pt.
-
-Underfull \vbox (badness 3000) has occurred while \output is active []
-
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[28 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Weight_in
-terpretation2.png>] <images/SVR_tube.png, id=883, 420.97275pt x 200.54926pt>
-File: images/SVR_tube.png Graphic file (type png)
-
-<use images/SVR_tube.png>
-Package pdftex.def Info: images/SVR_tube.png used on input line 545.
-(pdftex.def)             Requested size: 354.12434pt x 168.70197pt.
-
-Underfull \vbox (badness 6542) has occurred while \output is active []
-
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[29 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVR_tube.
-png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[30])
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[31]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-2-basi
-c-metrics.tex" [32
-
-
-
-]
-Chapter 2.
-
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-4")
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-[33]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2522,75 +3143,74 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [34]
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 112--112
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (11.61629pt too wide) in paragraph at lines 112--112
-\T1/cmr/bx/n/10 [MR4]: \T1/cmr/m/n/10 Plus 
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 112--112
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (11.61629pt too wide) in paragraph at lines 112--112
-\T1/cmr/bx/n/10 [MR4]: \T1/cmr/m/n/10 Plus 
- []
-
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 112--112
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (11.61629pt too wide) in paragraph at lines 112--112
-\T1/cmr/bx/n/10 [MR4]: \T1/cmr/m/n/10 Plus 
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 112--112
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (11.61629pt too wide) in paragraph at lines 112--112
-\T1/cmr/bx/n/10 [MR4]: \T1/cmr/m/n/10 Plus 
- []
-
-Missing character: There is no ; in font nullfont!
-<images/ExampleTimeSeriesMetrics3.png, id=957, 418.66759pt x 314.00069pt>
+<images/ExampleTimeSeriesMetrics3.png, id=1151, 418.66759pt x 314.00069pt>
 File: images/ExampleTimeSeriesMetrics3.png Graphic file (type png)
 
 <use images/ExampleTimeSeriesMetrics3.png>
 Package pdftex.def Info: images/ExampleTimeSeriesMetrics3.png used on input lin
-e 116.
-(pdftex.def)             Requested size: 309.85626pt x 232.39519pt.
+e 167.
+(pdftex.def)             Requested size: 265.59494pt x 199.19656pt.
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 172--172
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (10.68596pt too wide) in paragraph at lines 172--172
+\T1/cmr/bx/n/10 [SMA8]: \T1/cmr/m/n/10 re- 
+ []
 
 
-LaTeX Warning: Reference `fig:ExampleTimeSeriesMetrics3_freq' on page 35 undefi
-ned on input line 139.
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 172--172
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
 
+
+Overfull \hbox (10.68596pt too wide) in paragraph at lines 172--172
+\T1/cmr/bx/n/10 [SMA8]: \T1/cmr/m/n/10 re- 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 172--172
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (10.68596pt too wide) in paragraph at lines 172--172
+\T1/cmr/bx/n/10 [SMA8]: \T1/cmr/m/n/10 re- 
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 172--172
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (10.68596pt too wide) in paragraph at lines 172--172
+\T1/cmr/bx/n/10 [SMA8]: \T1/cmr/m/n/10 re- 
+ []
+
+Missing character: There is no ; in font nullfont!
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35]
-Overfull \hbox (2.0pt too wide) in paragraph at lines 147--148
+[35 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/ExampleTi
+meSeriesMetrics3.png>]
+
+LaTeX Warning: Reference `fig:ExampleTimeSeriesMetrics3_freq' on page 36 undefi
+ned on input line 190.
+
+
+Overfull \hbox (2.0pt too wide) in paragraph at lines 198--199
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
@@ -2600,14 +3220,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/ExampleTi
-meSeriesMetrics3.png>]
-<images/ExampleTimeSeriesMetrics4.png, id=994, 418.66759pt x 314.00069pt>
+[36]
+<images/ExampleTimeSeriesMetrics4.png, id=1184, 418.66759pt x 314.00069pt>
 File: images/ExampleTimeSeriesMetrics4.png Graphic file (type png)
 
 <use images/ExampleTimeSeriesMetrics4.png>
 Package pdftex.def Info: images/ExampleTimeSeriesMetrics4.png used on input lin
-e 194.
+e 246.
 (pdftex.def)             Requested size: 309.85626pt x 232.39519pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2621,58 +3240,144 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [37 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/ExampleTi
 meSeriesMetrics4.png>]
-<images/Voice_Example.png, id=1012, 307.74976pt x 347.49825pt>
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 283--283
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (14.29619pt too wide) in paragraph at lines 283--283
+\T1/cmr/bx/n/10 [SMA9]: \T1/cmr/m/n/10 for- 
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 283--283
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (14.29619pt too wide) in paragraph at lines 283--283
+\T1/cmr/bx/n/10 [SMA9]: \T1/cmr/m/n/10 for- 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 283--283
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (14.29619pt too wide) in paragraph at lines 283--283
+\T1/cmr/bx/n/10 [SMA9]: \T1/cmr/m/n/10 for- 
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 283--283
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (14.29619pt too wide) in paragraph at lines 283--283
+\T1/cmr/bx/n/10 [SMA9]: \T1/cmr/m/n/10 for- 
+ []
+
+Missing character: There is no ; in font nullfont!
+<images/Voice_Example.png, id=1199, 307.74976pt x 347.49825pt>
 File: images/Voice_Example.png Graphic file (type png)
 
 <use images/Voice_Example.png>
-Package pdftex.def Info: images/Voice_Example.png used on input line 235.
+Package pdftex.def Info: images/Voice_Example.png used on input line 287.
 (pdftex.def)             Requested size: 221.32687pt x 249.9228pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 239--239
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 291--291
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (15.86525pt too wide) in paragraph at lines 239--239
-\T1/cmr/bx/n/10 [MR5]: \T1/cmr/m/n/10 Mod- 
+Overfull \hbox (21.61385pt too wide) in paragraph at lines 291--291
+\T1/cmr/bx/n/10 [MR10]: \T1/cmr/m/n/10 Mod- 
  []
 
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 239--239
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 291--291
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (15.86525pt too wide) in paragraph at lines 239--239
-\T1/cmr/bx/n/10 [MR5]: \T1/cmr/m/n/10 Mod- 
+Overfull \hbox (21.61385pt too wide) in paragraph at lines 291--291
+\T1/cmr/bx/n/10 [MR10]: \T1/cmr/m/n/10 Mod- 
  []
 
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 239--239
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 291--291
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (15.86525pt too wide) in paragraph at lines 239--239
-\T1/cmr/bx/n/10 [MR5]: \T1/cmr/m/n/10 Mod- 
+Overfull \hbox (21.61385pt too wide) in paragraph at lines 291--291
+\T1/cmr/bx/n/10 [MR10]: \T1/cmr/m/n/10 Mod- 
  []
 
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 239--239
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 291--291
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (15.86525pt too wide) in paragraph at lines 239--239
-\T1/cmr/bx/n/10 [MR5]: \T1/cmr/m/n/10 Mod- 
+Overfull \hbox (21.61385pt too wide) in paragraph at lines 291--291
+\T1/cmr/bx/n/10 [MR10]: \T1/cmr/m/n/10 Mod- 
  []
 
 Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 302--302
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (29.86183pt too wide) in paragraph at lines 302--302
+\T1/cmr/bx/n/10 [AD11]: \T1/cmr/m/n/10 Ahlame 
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 302--302
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (29.86183pt too wide) in paragraph at lines 302--302
+\T1/cmr/bx/n/10 [AD11]: \T1/cmr/m/n/10 Ahlame 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 302--302
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (29.86183pt too wide) in paragraph at lines 302--302
+\T1/cmr/bx/n/10 [AD11]: \T1/cmr/m/n/10 Ahlame 
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 302--302
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (29.86183pt too wide) in paragraph at lines 302--302
+\T1/cmr/bx/n/10 [AD11]: \T1/cmr/m/n/10 Ahlame 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+LaTeX Warning: Marginpar on page 38 moved.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2680,9 +3385,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [38]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2690,43 +3392,43 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [39 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Voice_Exa
-mple.png>] <images/DTWgrid2.png, id=1041, 418.66759pt x 314.00069pt>
+mple.png>] <images/DTWgrid2.png, id=1234, 421.78267pt x 337.05232pt>
 File: images/DTWgrid2.png Graphic file (type png)
 
 <use images/DTWgrid2.png>
-Package pdftex.def Info: images/DTWgrid2.png used on input line 282.
-(pdftex.def)             Requested size: 221.32687pt x 165.99792pt.
+Package pdftex.def Info: images/DTWgrid2.png used on input line 335.
+(pdftex.def)             Requested size: 221.32687pt x 176.86253pt.
 
-<images/DTWwarpedSignals.png, id=1042, 696.53328pt x 314.00069pt>
+<images/DTWwarpedSignals.png, id=1235, 696.53328pt x 314.00069pt>
 File: images/DTWwarpedSignals.png Graphic file (type png)
 
 <use images/DTWwarpedSignals.png>
-Package pdftex.def Info: images/DTWwarpedSignals.png used on input line 283.
+Package pdftex.def Info: images/DTWwarpedSignals.png used on input line 336.
 (pdftex.def)             Requested size: 398.38567pt x 179.59073pt.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 284.
+(nag)                Use \scshape or \textsc instead on input line 337.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 284.
+(nag)                Use \scshape or \textsc instead on input line 337.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 284.
+(nag)                Use \scshape or \textsc instead on input line 337.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 284.
+(nag)                Use \scshape or \textsc instead on input line 337.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 284.
+(nag)                Use \scshape or \textsc instead on input line 337.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 284.
+(nag)                Use \scshape or \textsc instead on input line 337.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2739,104 +3441,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [40 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/DTWgrid2.
-png (PNG copy)> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/imag
-es/DTWwarpedSignals.png (PNG copy)>]
-<images/BME_local.png, id=1053, 667.87448pt x 295.9332pt>
-File: images/BME_local.png Graphic file (type png)
-
-<use images/BME_local.png>
-Package pdftex.def Info: images/BME_local.png used on input line 304.
-(pdftex.def)             Requested size: 354.12434pt x 156.91609pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[41 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/BME_local
-.png>] <images/Intervalles2.png, id=1068, 432.4155pt x 320.397pt>
-File: images/Intervalles2.png Graphic file (type png)
-
-<use images/Intervalles2.png>
-Package pdftex.def Info: images/Intervalles2.png used on input line 330.
-(pdftex.def)             Requested size: 354.12434pt x 262.3899pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[42] <images/CombinedMetrics.png, id=1081, 2153.646pt x 1748.934pt>
+png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/DTWwarpe
+dSignals.png (PNG copy)>]
+<images/CombinedMetrics.png, id=1245, 2336.73pt x 2317.458pt>
 File: images/CombinedMetrics.png Graphic file (type png)
 
 <use images/CombinedMetrics.png>
-Package pdftex.def Info: images/CombinedMetrics.png used on input line 377.
-(pdftex.def)             Requested size: 442.65375pt x 359.46782pt.
+Package pdftex.def Info: images/CombinedMetrics.png used on input line 380.
+(pdftex.def)             Requested size: 442.65375pt x 438.97786pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 381--381
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (25.89058pt too wide) in paragraph at lines 381--381
-\T1/cmr/bx/n/10 [MR6]: \T1/cmr/m/n/10 Ajouter 
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 381--381
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (25.89058pt too wide) in paragraph at lines 381--381
-\T1/cmr/bx/n/10 [MR6]: \T1/cmr/m/n/10 Ajouter 
- []
-
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 381--381
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (25.89058pt too wide) in paragraph at lines 381--381
-\T1/cmr/bx/n/10 [MR6]: \T1/cmr/m/n/10 Ajouter 
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 381--381
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (25.89058pt too wide) in paragraph at lines 381--381
-\T1/cmr/bx/n/10 [MR6]: \T1/cmr/m/n/10 Ajouter 
- []
-
-Missing character: There is no ; in font nullfont!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[43 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Intervall
-es2.png>]
-
-LaTeX Warning: Marginpar on page 44 moved.
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 400.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2848,42 +3467,227 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/CombinedM
+[41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/CombinedM
 etrics.png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 412.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 416.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 422.
+
 
 Package nag Warning: Command \centerline is TeX. 
 (nag)                Use \centering or center environment instead on input line
- 424.
+ 427.
 
 
-<./images/TargetImposterRepresentationCao.png, id=1102, 906.38625pt x 363.60844
+<./images/TargetImposterRepresentationCao.png, id=1265, 906.38625pt x 363.60844
 pt>
 File: ./images/TargetImposterRepresentationCao.png Graphic file (type png)
  <use ./images/TargetImposterRepresentationCao.png>
 Package pdftex.def Info: ./images/TargetImposterRepresentationCao.png used on i
-nput line 424.
-(pdftex.def)             Requested size: 354.12434pt x 142.06194pt.
+nput line 427.
+(pdftex.def)             Requested size: 301.00784pt x 120.75125pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 433.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 434.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45]
+[43]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 451.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 481.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/TargetImp
+[44 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/TargetImp
 osterRepresentationCao.png>]
 
-LaTeX Warning: Marginpar on page 47 moved.
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 483.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 483.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 485.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 485.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 485.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 485.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 492.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 492.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 492.
+
+<images/RelationSVM_LMNN2.png, id=1296, 658.25925pt x 262.581pt>
+File: images/RelationSVM_LMNN2.png Graphic file (type png)
+
+<use images/RelationSVM_LMNN2.png>
+Package pdftex.def Info: images/RelationSVM_LMNN2.png used on input line 496.
+(pdftex.def)             Requested size: 442.65375pt x 176.57742pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 497.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 497.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 497.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 497.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 497.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 497.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 502.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 502.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 502.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 502.
+
+<images/RelationSVM_LMNN.png, id=1300, 554.67226pt x 245.11575pt>
+File: images/RelationSVM_LMNN.png Graphic file (type png)
+
+<use images/RelationSVM_LMNN.png>
+Package pdftex.def Info: images/RelationSVM_LMNN.png used on input line 506.
+(pdftex.def)             Requested size: 398.38567pt x 176.05307pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 507.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 507.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 507.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 507.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 507.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 507.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 507.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 507.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/RelationS
+VM_LMNN2.png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 511.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 511.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 511.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 511.
 
 )
 
@@ -2892,35 +3696,141 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[47]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-3-adva
-nced-metrics.tex")
+[46 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/RelationS
+VM_LMNN.png>]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-1-conc
-lusion-first-part.tex" [48
+lusion-first-part.tex"
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 2.
 
 
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 4.
+
+) [47
+
+
+
+]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-2-seco
+nd-part.tex" [48
 
 
 
 ]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 4.
-
-) [49]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-2-seco
-nd-part.tex" [50
+(nag)                Use \scshape or \textsc instead on input line 1.
 
 
-
-]) [51]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-3-pair
-wise-space.tex" [52
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 1.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
 
-]
-Chapter 3.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@Acount' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@Bcount' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\aftergroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\aftergroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\afterassignment' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@next' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@next' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\global' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endgroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\global' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\advance' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\c@nag@sins' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
@@ -2934,31 +3844,67 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
 
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-5") <images/PairwiseEmbedding.png, id=1157, 629.35126pt x 323.70938pt>
-File: images/PairwiseEmbedding.png Graphic file (type png)
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 5.
 
-<use images/PairwiseEmbedding.png>
-Package pdftex.def Info: images/PairwiseEmbedding.png used on input line 40.
-(pdftex.def)             Requested size: 354.12434pt x 182.14534pt.
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 5.
+
+) [49]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-3-pair
+wise-space2.tex" [50
+
+
+
+]
+Chapter 3.
+
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
+5"
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 5.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 6.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 7.
+
+)
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 14.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 14.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 38.
+
+[51] <images/SonyAIBO2.png, id=1379, 839.5365pt x 378.213pt>
+File: images/SonyAIBO2.png Graphic file (type png)
+
+<use images/SonyAIBO2.png>
+Package pdftex.def Info: images/SonyAIBO2.png used on input line 65.
+(pdftex.def)             Requested size: 442.65375pt x 199.41313pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[53]
-
-Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 61.
-
-
-Overfull \hbox (2.0pt too wide) in paragraph at lines 66--67
-[]
- []
+<images/ECG2002.png, id=1380, 946.737pt x 536.0025pt>
+File: images/ECG2002.png Graphic file (type png)
+ <use images/ECG2002.png>
+Package pdftex.def Info: images/ECG2002.png used on input line 73.
+(pdftex.def)             Requested size: 309.85626pt x 175.42555pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
-
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2970,85 +3916,380 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[54 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/PairwiseE
-mbedding.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 92.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 92.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 92.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 97.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 97.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 97.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 105.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 105.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 105.
-
+[52]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[55])
+[53 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SonyAIBO2
+.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/ECG2002
+.png>]
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[56]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-6-M2TM
-L-algo.tex"
-Chapter 4.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 107.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-6")
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-[57
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 110.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 110.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 110.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-])
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54] <images/PairwiseEmbedding.png, id=1446, 629.35126pt x 323.70938pt>
+File: images/PairwiseEmbedding.png Graphic file (type png)
+
+<use images/PairwiseEmbedding.png>
+Package pdftex.def Info: images/PairwiseEmbedding.png used on input line 144.
+(pdftex.def)             Requested size: 398.38567pt x 204.91104pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/PairwiseE
+mbedding.png>] <images/ContreExample.png, id=1454, 598.6365pt x 251.7405pt>
+File: images/ContreExample.png Graphic file (type png)
+
+<use images/ContreExample.png>
+Package pdftex.def Info: images/ContreExample.png used on input line 174.
+(pdftex.def)             Requested size: 442.65375pt x 186.14676pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 181.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@Acount' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@Bcount' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\aftergroup' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\aftergroup' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\afterassignment' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@next' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@next' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\global' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endgroup' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\global' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\advance' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\c@nag@sins' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 185.
+
+<images/Transposition_Pairwise.png, id=1457, 699.8145pt x 466.1415pt>
+File: images/Transposition_Pairwise.png Graphic file (type png)
+
+<use images/Transposition_Pairwise.png>
+Package pdftex.def Info: images/Transposition_Pairwise.png used on input line 1
+99.
+(pdftex.def)             Requested size: 398.38567pt x 265.35489pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[56 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/ContreExa
+mple.png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 204.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 204.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 221.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 221.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 221.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 221.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 222.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[57 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Transposi
+tion_Pairwise.png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 227.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 243.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 244.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 244.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 244.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@Acount' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@Bcount' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\aftergroup' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\aftergroup' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\afterassignment' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@next' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@next' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\global' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endgroup' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\global' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\advance' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\c@nag@sins' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 247.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 253.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 253.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -3056,9 +4297,637 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [58]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-7-expe
-riments.tex"
-Chapter 5.
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 295.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 307.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[60] <images/Kernel_nonHomogene.png, id=1527, 625.1355pt x 264.38776pt>
+File: images/Kernel_nonHomogene.png Graphic file (type png)
+
+<use images/Kernel_nonHomogene.png>
+Package pdftex.def Info: images/Kernel_nonHomogene.png used on input line 412.
+(pdftex.def)             Requested size: 398.38567pt x 168.48949pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@Acount' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@Bcount' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\aftergroup' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\aftergroup' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\afterassignment' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@next' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@next' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\global' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endgroup' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\global' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\advance' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\c@nag@sins' on input line 421.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 421.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 433.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 433.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 433.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 433.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 433.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 433.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 433.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 434.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 434.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 434.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 435.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 435.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 435.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 436.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[61 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Kernel_no
+nHomogene.png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 437.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 437.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 437.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 450.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 450.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 459.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[62]
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 497.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--498
+
+ []
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 499.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 499.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 501.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 501.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 501.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 504.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[63]
+<images/Neighborhood_scaling_problem.png, id=1563, 494.44725pt x 296.307pt>
+File: images/Neighborhood_scaling_problem.png Graphic file (type png)
+
+<use images/Neighborhood_scaling_problem.png>
+Package pdftex.def Info: images/Neighborhood_scaling_problem.png used on input 
+line 507.
+(pdftex.def)             Requested size: 354.12434pt x 212.21507pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 508.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 508.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 508.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 508.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 508.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 508.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[64 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Neighborh
+ood_scaling_problem.png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 576.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 576.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 576.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--578
+
+ []
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 581.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 581.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 581.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 581.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 581.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
+
+ []
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 583.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 583.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 583.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 583.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 583.
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 590.
+
+<images/InterpretationLP.png, id=1582, 720.89325pt x 293.29575pt>
+File: images/InterpretationLP.png Graphic file (type png)
+
+<use images/InterpretationLP.png>
+Package pdftex.def Info: images/InterpretationLP.png used on input line 590.
+(pdftex.def)             Requested size: 442.65375pt x 180.09608pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 592.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 592.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package nag Warning: Command \centerline is TeX. 
+(nag)                Use \centering or center environment instead on input line
+ 599.
+
+<images/InterpretationLP_SVM.png, id=1583, 706.43925pt x 305.943pt>
+File: images/InterpretationLP_SVM.png Graphic file (type png)
+
+<use images/InterpretationLP_SVM.png>
+Package pdftex.def Info: images/InterpretationLP_SVM.png used on input line 599
+.
+(pdftex.def)             Requested size: 442.65375pt x 191.69939pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 601.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 601.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 601.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 601.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 601.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 601.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 601.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 601.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 605.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[65]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 607.
+
+
+Underfull \vbox (badness 2351) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[66 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Interpret
+ationLP.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/
+InterpretationLP_SVM.png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 629.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 629.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 629.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 629.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[67]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-6-M2TM
+L-algo.tex" [68
+
+
+
+]
+Chapter 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@Acount' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@Bcount' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\aftergroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\aftergroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\afterassignment' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@next' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@next' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\global' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endgroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\global' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\advance' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\c@nag@sins' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
@@ -3072,79 +4941,1398 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@Acount' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@Bcount' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\aftergroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\aftergroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\afterassignment' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@next' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@next' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\global' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@A' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endgroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\global' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\advance' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\c@nag@sins' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\calc@B' on input line 1.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 1.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 1.
+
+
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-7")) [59
+6"
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 5.
+
+)
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 15.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 15.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 15.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 15.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 15.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 34.
+
+[69] <images/BME_local.png, id=1626, 667.87448pt x 295.9332pt>
+File: images/BME_local.png Graphic file (type png)
+
+<use images/BME_local.png>
+Package pdftex.def Info: images/BME_local.png used on input line 38.
+(pdftex.def)             Requested size: 354.12434pt x 156.91609pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 55.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 55.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 26.80927pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[70 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/BME_local
+.png>] <images/Intervalles3.png, id=1641, 432.4155pt x 320.397pt>
+File: images/Intervalles3.png Graphic file (type png)
+
+<use images/Intervalles3.png>
+Package pdftex.def Info: images/Intervalles3.png used on input line 61.
+(pdftex.def)             Requested size: 309.85626pt x 229.59055pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[71 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Intervall
+es3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+
+Underfull \vbox (badness 2253) has occurred while \output is active []
+
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 126.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 126.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 26.80927pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[72] <images/Strategy_neighborhood.png, id=1664, 552.26324pt x 380.622pt>
+File: images/Strategy_neighborhood.png Graphic file (type png)
+
+<use images/Strategy_neighborhood.png>
+Package pdftex.def Info: images/Strategy_neighborhood.png used on input line 15
+4.
+(pdftex.def)             Requested size: 420.5197pt x 289.82745pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[73] <images/Neighborhood_scaling.png, id=1682, 679.338pt x 275.8305pt>
+File: images/Neighborhood_scaling.png Graphic file (type png)
+
+<use images/Neighborhood_scaling.png>
+Package pdftex.def Info: images/Neighborhood_scaling.png used on input line 179
+.
+(pdftex.def)             Requested size: 442.65375pt x 179.73383pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 186.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 192.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 193.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 193.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 26.80927pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[74 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Strategy_
+neighborhood.png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 198.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 209.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 209.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 209.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 209.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 209.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 209.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[75 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Neighborh
+ood_scaling.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+
+ []
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 214.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 215.
+
+
+<images/Dissimilarity_def_scalar_product.png, id=1702, 938.3055pt x 451.6875pt>
+File: images/Dissimilarity_def_scalar_product.png Graphic file (type png)
+<use images/Dissimilarity_def_scalar_product.png>
+Package pdftex.def Info: images/Dissimilarity_def_scalar_product.png used on in
+put line 222.
+(pdftex.def)             Requested size: 442.65375pt x 213.08574pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 223.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 223.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<images/Dissimilarity_def_norm_scalar_product.png, id=1704, 1052.733pt x 385.44
+pt>
+File: images/Dissimilarity_def_norm_scalar_product.png Graphic file (type png)
+ <use images/Dissimilarity_def_norm_scalar_product.png>
+Package pdftex.def Info: images/Dissimilarity_def_norm_scalar_product.png used 
+on input line 236.
+(pdftex.def)             Requested size: 442.65375pt x 162.06601pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 237.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 237.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/3D_diss.png, id=1705, 819.06pt x 352.9185pt>
+File: images/3D_diss.png Graphic file (type png)
+ <use images/3D_diss.png>
+Package pdftex.def Info: images/3D_diss.png used on input line 255.
+(pdftex.def)             Requested size: 442.65375pt x 190.7347pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 269.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 269.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 26.80927pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[76]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[77 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Dissimila
+rity_def_scalar_product.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/M
+anuscrit/images/Dissimilarity_def_norm_scalar_product.png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 291.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 291.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 26.80927pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[78 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/3D_diss.p
+ng>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 307.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 307.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 307.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 307.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 307.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 313.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 315.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 318.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 319.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 334.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 336.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 338.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 5924) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[79]
+
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 354.
+
+<images/Discretize_binning.png, id=1760, 690.78075pt x 301.125pt>
+File: images/Discretize_binning.png Graphic file (type png)
+
+<use images/Discretize_binning.png>
+Package pdftex.def Info: images/Discretize_binning.png used on input line 361.
+(pdftex.def)             Requested size: 221.32687pt x 96.48143pt.
+
+Underfull \vbox (badness 3907) has occurred while \output is active []
+
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 367.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 367.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 26.80927pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[80 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Discretiz
+e_binning.png>]
+<images/Discretize_binning_border_effect.png, id=1774, 392.667pt x 320.99925pt>
+File: images/Discretize_binning_border_effect.png Graphic file (type png)
+<use images/Discretize_binning_border_effect.png>
+Package pdftex.def Info: images/Discretize_binning_border_effect.png used on in
+put line 370.
+(pdftex.def)             Requested size: 177.05879pt x 144.7422pt.
+
+
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 384.
+
+<images/pairwise_label_tube.png, id=1776, 582.37575pt x 367.3725pt>
+File: images/pairwise_label_tube.png Graphic file (type png)
+
+<use images/pairwise_label_tube.png>
+Package pdftex.def Info: images/pairwise_label_tube.png used on input line 390.
+
+(pdftex.def)             Requested size: 287.72223pt x 181.50519pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 399.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 399.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[81 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Discretiz
+e_binning_border_effect.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/M
+anuscrit/images/pairwise_label_tube.png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 401.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 403.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 403.
+
+)
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 90.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 90.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 26.80927pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[82]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-2-conc
+lusion-second-part.tex") [83
 
 
 
 ]
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-2-conc
-lusion-second-part.tex" [60
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-3-thir
+d-part.tex" [84
 
 
 
-]) [61]
+]) [85]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-7-expe
+riments.tex" [86
+
+
+
+]
+Chapter 5.
+
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
+7")
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 14.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 14.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 17.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 17.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[][]\T1/cmr/m/n/9 PowerCons: [][]$\T1/cmtt/m/n/9 https : / / archive . ics . uc
+i . edu / ml / datasets / Individual + household + electric + power +$
+ []
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 19.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 20.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 23.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 23.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 23.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+[87]
+
+Package nag Warning: `center' environment in table.
+(nag)                Maybe you want \centering instead on input line 68.
+
+<images/dataset_exp.png, id=1831, 857.604pt x 631.158pt>
+File: images/dataset_exp.png Graphic file (type png)
+
+<use images/dataset_exp.png>
+Package pdftex.def Info: images/dataset_exp.png used on input line 76.
+(pdftex.def)             Requested size: 376.25838pt x 276.91103pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[88]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 84.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 84.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 84.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 159.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 159.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 159.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 159.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 159.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 159.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 160.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 160.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 160.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 160.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[89 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/dataset_e
+xp.png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 164.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 164.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 164.
+
+
+Underfull \vbox (badness 1406) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[90]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 172.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 172.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 176.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 176.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 177.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 177.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 177.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 177.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 178.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 178.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 178.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 179.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 179.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 252.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/SonyAIBO_weight_V2.png, id=1857, 418.66759pt x 314.00069pt>
+File: images/SonyAIBO_weight_V2.png Graphic file (type png)
+
+<use images/SonyAIBO_weight_V2.png>
+Package pdftex.def Info: images/SonyAIBO_weight_V2.png used on input line 259.
+(pdftex.def)             Requested size: 265.59494pt x 199.19656pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 260.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 260.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 260.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 260.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 264.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 264.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 264.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 264.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 264.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 264.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 264.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 264.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 264.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 264.
+
+<images/Stand_m2tml.png, id=1861, 418.66759pt x 314.00069pt>
+File: images/Stand_m2tml.png Graphic file (type png)
+
+<use images/Stand_m2tml.png>
+Package pdftex.def Info: images/Stand_m2tml.png used on input line 267.
+(pdftex.def)             Requested size: 265.59494pt x 199.19656pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 268.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 268.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 268.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 268.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 268.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 268.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 268.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 268.
+
+<images/Unimod_m2tml.png, id=1862, 418.66759pt x 314.00069pt>
+File: images/Unimod_m2tml.png Graphic file (type png)
+
+<use images/Unimod_m2tml.png>
+Package pdftex.def Info: images/Unimod_m2tml.png used on input line 273.
+(pdftex.def)             Requested size: 265.59494pt x 199.19656pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 274.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 274.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 274.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 274.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 274.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 274.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 274.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 274.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 274.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 274.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 279.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 279.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 279.
+
+
+Package nag Warning: Command \it is an old LaTeX 2.09 command. 
+(nag)                Use \itshape or \textit instead on input line 280.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 280.
+
+<images/FaceFour.png, id=1865, 680.5425pt x 297.5115pt>
+File: images/FaceFour.png Graphic file (type png)
+
+<use images/FaceFour.png>
+Package pdftex.def Info: images/FaceFour.png used on input line 285.
+(pdftex.def)             Requested size: 442.65375pt x 193.51637pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 286.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 286.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 286.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 286.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[91]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[92]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[93 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SonyAIBO_
+weight_V2.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/image
+s/Stand_m2tml.png (PNG copy)>])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[94 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Unimod_m2
+tml.png (PNG copy)> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/
+images/FaceFour.png>]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-3-conc
+lusion-third-part.tex") [95
+
+
+
+]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/3-0-conc
-lusion.tex" [62
+lusion.tex" [96
 
 
 
-]) [63]
+]) [97]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-1-fi
-rst-appendix.tex" [64
+rst-appendix.tex" [98
 
 
 
 ]
 Appendix A.
-) [65]
+) [99]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-2-se
-cond-appendix.tex" [66
+cond-appendix.tex" [100
 
 
 
 ]
 Appendix B.
-) [67]
+) [101]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-3-th
-ird-appendix.tex" [68
+ird-appendix.tex" [102
 
 
 
 ]
 Appendix C.
-) [69] [70
+) [103]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-4-fo
+rth-appendix.tex" [104
 
 
-] [71]
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+]
+Appendix D.
+) [105] [106
 
-[72]
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[73]
+] [107]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[74]
+[108]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[75] [76
+[109]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[110]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[111]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[112]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[113] [114
 
 ]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\4-closing/abstract.
@@ -3175,17 +6363,29 @@ Package minitoc(hints) Warning: W0033
 (minitoc(hints))                The caption package should be 
 (minitoc(hints))                loaded BEFORE the minitoc package.
 
+Package minitoc(hints) Info: I0053
+(minitoc(hints))             You have loaded the float package; 
+(minitoc(hints))             please be aware that the minitoc package 
+(minitoc(hints))             facilities can not be used for new types 
+(minitoc(hints))             of floats defined by the float package.
 
 Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the roque-phdthesis.log file.
 
 
-Package nag Warning: 15 complaints in total.
+Package nag Warning: 433 complaints in total.
 
-[77]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
+[115]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[116]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.aux
 "
@@ -3203,20 +6403,22 @@ t-part.aux")
 ine-learning.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-2-basi
 c-metrics.aux")
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-3-adva
-nced-metrics.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-1-conc
 lusion-first-part.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-2-seco
 nd-part.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-3-pair
-wise-space.aux")
+wise-space2.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-6-M2TM
 L-algo.aux")
-("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-7-expe
-riments.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-2-conc
 lusion-second-part.aux")
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-3-thir
+d-part.aux")
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/2-7-expe
+riments.aux")
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/0-3-conc
+lusion-third-part.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\2-chapters/3-0-conc
 lusion.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-1-fi
@@ -3224,11 +6426,13 @@ rst-appendix.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-2-se
 cond-appendix.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-3-th
-ird-appendix.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 120.
+ird-appendix.aux")
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-4-fo
+rth-appendix.aux"))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
 Package rerunfilecheck Info: File `roque-phdthesis.out' has not changed.
-(rerunfilecheck)             Checksum: B35CF41789231F69237F7866C13EF489;2833.
+(rerunfilecheck)             Checksum: DBF746586180F325C9C86A644CF3BE5D;3088.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3240,24 +6444,28 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                roque-phdthesis
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'roque-phdthesis.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
  ) 
 Here is how much of TeX's memory you used:
- 39788 strings out of 493921
- 879587 string characters out of 3146064
- 1312942 words of memory out of 3000000
- 41527 multiletter control sequences out of 15000+200000
- 47938 words of font info for 137 fonts, out of 3000000 for 9000
+ 40714 strings out of 493921
+ 898493 string characters out of 3146064
+ 1397439 words of memory out of 3000000
+ 42185 multiletter control sequences out of 15000+200000
+ 48419 words of font info for 134 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 59i,20n,86p,1671b,3248s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not ex
+ 59i,21n,86p,1782b,3263s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exis
 t, replaced by a fixed one
@@ -3297,55 +6505,62 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 
  <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\ectt1095.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
-knappen\ec\dpi600\ecrm2074.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fo
-nts\pk\ljfour\jknappen\ec\dpi600\ecbx0900.pk> <C:\Users\SESA245227\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0800.pk> <C:\Users\SESA2452
-27\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt0900.pk> <C:
+knappen\ec\dpi600\eccc0900.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fo
+nts\pk\ljfour\jknappen\ec\dpi600\eccc2488.pk> <C:\Users\SESA245227\AppData\Loca
+l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0900.pk> <C:\Users\SESA2452
+27\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0800.pk> <C:
 \Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
 crm0900.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
-pen\ec\dpi600\ecrm0600.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\
-pk\ljfour\jknappen\ec\dpi600\eccc1440.pk> <C:\Users\SESA245227\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <C:\Users\SESA245227\A
-ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Use
-rs\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1
-000.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecti1095.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\l
-jfour\jknappen\ec\dpi600\eccc1095.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\SESA245227\AppDa
-ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\S
-ESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.
+pen\ec\dpi600\ectt0900.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\
+pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\SESA245227\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1000.pk> <C:\Users\SESA245227\A
+ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk> <C:\Use
+rs\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2
+074.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecrm1000.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\l
+jfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\SESA245227\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\S
+ESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.
 pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\d
-pi600\ecrm1728.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\jknappen\ec\dpi600\ecxc1440.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9
-\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\SESA245227\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\SESA2
-45227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> 
+pi600\eccc1200.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
+r\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9
+\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\SESA245227\AppData\L
+ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk> <C:\Users\SESA2
+45227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecxc1440.pk> 
 <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
-0\ecbx2488.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\ecbx1200.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\SESA245227\AppData\Local
-\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk><C:/Program Files (x
-86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/M
-ikeTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MikeTe
-X/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MikeTeX/fon
-ts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/MikeTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/pub
-lic/amsfonts/cm/cmmi9.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/am
-sfonts/cm/cmmib10.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfon
-ts/cmextra/cmmib8.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/
-cmr17.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmr6.p
-fb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/
-Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program
- Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files 
-(x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)
-/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MikeT
-eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MikeTeX/fon
-ts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/MikeTeX/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on roque-phdthesis.pdf (95 pages, 2051124 bytes).
+0\ecrm1440.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\ecbx1095.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\SESA245227\AppData\Local
+\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\SESA24522
+7\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\
+Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
+rm1200.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknapp
+en\ec\dpi600\ecbx1440.pk><C:/Program Files (x86)/MikeTeX/fonts/type1/public/ams
+fonts/cm/cmex10.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/c
+mmi12.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmmi6.
+pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C
+:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
+ram Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Fi
+les (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files 
+(x86)/MikeTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Program Files 
+(x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/
+MikeTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MikeTe
+X/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MikeTeX/fonts
+/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/
+public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/
+amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/
+cmsy6.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
+:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C
+:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C
+:/Program Files (x86)/MikeTeX/fonts/type1/hoekwater/rsfs/rsfs10.pfb><C:/Program
+ Files (x86)/MikeTeX/fonts/type1/hoekwater/rsfs/rsfs7.pfb>
+Output written on roque-phdthesis.pdf (138 pages, 3473587 bytes).
 PDF statistics:
- 2386 PDF objects out of 2487 (max. 8388607)
- 390 named destinations out of 1000 (max. 500000)
- 468 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3296 PDF objects out of 3580 (max. 8388607)
+ 597 named destinations out of 1000 (max. 500000)
+ 607 words of extra memory for PDF output out of 10000 (max. 10000000)
 
