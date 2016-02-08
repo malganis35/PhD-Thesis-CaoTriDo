@@ -24,14 +24,14 @@ In this chapter, we recall some concepts of machine learning. First, we review t
 In this section, we review some terminology used in machine learning. First, we recall the principle of machine learning. Then, we detail how to design a framework for supervised learning. After that, we present model evaluation. Finally, we review data normalization. 
 
 \subsection{Machine learning principle}
-The idea of machine learning (also referred as pattern learning or pattern recognition) is to imitate with algorithms executed on computers, the ability of living beings to learn from examples. For instance, to teach a child how to read letters, we show him during a training phase, labeled examples of letters ('A', 'B', 'C', etc.) written in different styles and fonts. We don't give him a complete and analytic description of the topology of the characters but labeled examples. Then, during a testing phase, we want the child to be able to recognize and to label correctly the letters that have been seen during the training, and also to generalize to new instances \cite{Dreyfus2006}. 
+The idea of machine learning (also known as pattern learning or pattern recognition) is to imitate with algorithms executed on computers, the ability of living beings to learn from examples. For instance, to teach a child how to read letters, we show him during a training phase, labeled examples of letters ('A', 'B', 'C', etc.) written in different styles and fonts. We don't give him a complete and analytic description of the topology of the characters but labeled examples. Then, during a testing phase, we want the child to be able to recognize and to label correctly the letters that have been seen during the training, and also to generalize to new instances \cite{Dreyfus2006}. 
 
 Let $X=\{\textbf{x}_i,y_i\}_{i=1}^n$ be a training set of $n$ vector samples $\textbf{x}_i \in \mathbb{R}^p$ and $y_i$ their corresponding labels. The aim of supervised machine learning is to learn a relationship (model) $f$ between the samples $\textbf{x}_i$ and their labels $y_i$ based on examples \cite{Bishop2006,Dreyfus2006,Duda1973}. %This relationship can include static relationships, correlations, dynamic relationship, etc. 
-After the training phase based on labeled examples $(\textbf{x}_i,y_i)$, the model $f$ has to be able to generalize on the testing phase, i.e., to give a correct prediction $y_j$ for new instances $\textbf{x}_j$ that haven't been seen during the training.
+After the training phase based on labeled examples $(\textbf{x}_i,y_i)$, the model $f$ has to be able to generalize on the testing phase, \textit{i.e.}, to give a correct prediction $\hat{y}_j$ for new instances $\textbf{x}_j$ that haven't been seen during the training.
 
-When $y_i$ are class labels (e.g., class 'A', 'B', 'C' in the case of child's reading), learning the model $f$ is a classification problem; when $y_i$ is a continuous value (e.g., the energy consumption in a building), learning $f$ is a regression problem. 
+When $y_i$ are class labels (\textit{e.g.}, class 'A', 'B', 'C' in the case of child's reading), learning the model $f$ is a classification problem; when $y_i$ is a continuous value (\textit{e.g.}, the energy consumption in a building), learning $f$ is a regression problem. 
 % Both problems corresponds to supervised learning as $\textbf{x}_i$ and $y_i$ are known during the training phase . 
-For both problems, when a part of the labels $y_i$ are known and an other part of $y_i$ is unknown during training, learning $f$ is a semi-supervised problem \todo{[biblio semi-supervisé]}. Note that when the labels $y_i$ are totally unknown, learning $f$ refers to a clustering problem (unsupervised learning) \cite{Jain1999,Chen1996}, out of the scope of this work.
+For both problems, when a part of the labels $y_i$ are known and an other part of $y_i$ is unknown during training, learning $f$ is a semi-supervised problem \cite{Zhu2007}. Note that when the labels $y_i$ are totally unknown, learning $f$ refers to a clustering problem (unsupervised learning) \cite{Jain1999,Chen1996}, out of the scope of this work.
 
 
 
@@ -41,7 +41,7 @@ For both problems, when a part of the labels $y_i$ are known and an other part o
 %	\item Learning framework (train, validation, test): la plupart des algorithmes requiert l'optimisation d'un hyper-paramètre. Le jeu de train permet d'apprendre les meilleurs hyper-paramètres.
 %	\item Cross-validation (pourquoi on fait de la cross-validation, comment on la fait (Faire un schéma))
 %\end{itemize}	
-A key objective of supervised learning algorithms is to build models $f$ with good generalization abilities, i.e., models $f$ that correctly predict the labels $y_j$ of new unknown samples $\textbf{x}_j$. There exists two types of errors committed by a classification or regression model $f$: training error and generalization error. \textbf{Training error} is the error on the training set and \textbf{generalization error} is the error on the testing set. A good supervised model $f$ must not only fit the training data $X$ well, it must also accurately classify records it has never seen before (test set $X_{Test}$). In other words, a good model $f$ must have low training error as well as low generalization error. This is important because a model that fits the training data too much can have a poorer generalization error than a model with a higher training error. Such a situation is known as model overfitting (Fig. \ref{fig:Overfitting}).
+A key objective of supervised learning algorithms is to build models $f$ with good generalization capabilities, \textit{i.e.}, models $f$ that correctly predict the labels $y_j$ of new unknown samples $\textbf{x}_j$. There exists two types of errors committed by a classification or regression model $f$: training error and generalization error. \textbf{Training error} is the error on the training set and \textbf{generalization error} is the error on the testing set. A good supervised model $f$ must not only fit the training data $X$ well, it must also accurately classify records it has never seen before (test set $X_{Test}$). In other words, a good model $f$ must have low training error as well as low generalization error. This is important because a model that fits the training data too much can have a poorer generalization error than a model with a higher training error. Such a situation is known as model overfitting (Fig. \ref{fig:Overfitting}).
 
 \begin{figure}[h!]
 	\centering
@@ -50,7 +50,7 @@ A key objective of supervised learning algorithms is to build models $f$ with go
 	\label{fig:Overfitting}
 \end{figure}
 
-In most cases, learning algorithms require to tune some hyper-parameters. A first approach could consists in trying all the possible combinations of hyper-parameters values and keep the one with the lowest training error. However, as discussed above, the model with the lowest training error is not always the one with the best generalization error.  To avoid overfitting, the training set can be divided into 2 sets: a learning and a validation set. Suppose we have two hyper-parameters to tune: $C$ and $\gamma$. We make a grid search for each combination $(C,\gamma)$ of the hyper-parameters, that is in this case a 2-dimensional grid (Fig. \ref{fig:GridSearch}). For each combination (a cell of the grid), the model is learnt on the learning set and evaluated on the validation set. At the end, the model with the lowest error on the validation set is retained. This process is referred as the model selection. 
+In most cases, learning algorithms require to tune some hyper-parameters. A first approach could consist in trying all the possible combinations of hyper-parameters values and keep the one with the lowest training error. However, as discussed above, the model with the lowest training error is not always the one with the best generalization error.  To avoid overfitting, the training set can be divided into 2 sets: a learning and a validation set. Suppose we have two hyper-parameters to tune: $C$ and $\gamma$. We make a grid search for each combination $(C,\gamma)$ of the hyper-parameters, that is in this case a 2-dimensional grid (Fig. \ref{fig:GridSearch}). For each combination (a cell of the grid), the model is learnt on the learning set and evaluated on the validation set. At the end, the model with the lowest error on the validation set is retained. This process is referred as the model selection. 
 
 \begin{figure}[h!]
 	\centering
@@ -169,32 +169,32 @@ R^2 = 1- \frac{\sum_{j=1}^m (\hat{y}_j-y_j)^2}{\sum_{j=1}^m (\bar{y}-y_j)^2}
 
 \subsection{Data normalization}
 \label{sec:data_normalization}
-Real dataset are often subjected to noise or uneven scaling. Before applying any learning protocol, it is often necessary to pre-process the data: data scaling, data filtering (e.g., de-noising), outlier removal, etc. We focus on data normalization (data scaling) in our work.
+Real dataset are often subjected to noise or uneven scaling. Before applying any learning protocol, it is often necessary to pre-process the data: data scaling, data filtering (\textit{e.g.}, de-noising), outlier removal, etc. We focus on data normalization (data scaling) in our work.
 
-Part 2 of Sarle's Neural Networks FAQ (1997) \footnote{\url{http://www.faqs.org/faqs/ai-faq/neural-nets/}} explains the importance of data normalization for neural networks but they can be applied to any learning algorithms. The main advantage of normalization is to avoid attributes in greater numeric ranges to dominate those in smaller numeric ranges. Another advantage is to avoid numerical difficulties during the calculation. For example, in the case of Support Vector Machine ({\sc svm}), because kernel values usually depend on the inner products of feature vectors, i.e. the linear kernel and the polynomial kernel, large attribute values might cause numerical problems \cite{Hsu2008}. 
+Part 2 of Sarle's Neural Networks FAQ (1997) \footnote{\url{http://www.faqs.org/faqs/ai-faq/neural-nets/}} explains the importance of data normalization for neural networks but they can be applied to any learning algorithms. The main advantage of normalization is to avoid attributes in greater numeric ranges to dominate those in smaller numeric ranges. Another advantage is to avoid numerical difficulties during the calculation. For example, in the case of Support Vector Machine ({\sc svm}), because kernel values usually depend on the inner products of feature vectors, \textit{i.e.} the linear kernel and the polynomial kernel, large attribute values might cause numerical problems \cite{Hsu2008}. 
 
 In most cases, it is recommended to scale each attribute to the range [-1; +1] or [0; 1]. Many normalization methods have been proposed such as Min/Max normalization, Z-normalization or normalization of the log distribution \todo{références normalization}. Let $X=\{\textbf{x}_i,y_i\}_{i=1}^n$ be a training set, $\textbf{x}_i$ being a sample described by $p$ features $x_1, \ldots, x_p$. We define $\mu_j$ and $\sigma_j$ as the mean and the standard deviation of a variable $x_j$, applying the Z-normalized variable $x^{norm}_j$ is given by:
 \begin{equation}
 x^{norm}_j = \frac{x_j-\mu_j}{\sigma_j}
 \end{equation}
-Note that the underlying assumption supposes that the variable $x_j$ is normally distributed: data evolves between $[-\infty;+\infty]$ and are coming from a Gaussian process. In some cases, the data are skewed such as monetary amounts or incomes. These data are sometimes log-normally distributed, e.g., the log of the data is normally distributed (Fig. \ref{fig:SkewedData}). The underlying idea is to take the log of the data ($x^{ln}_j$) to restore the symmetry, and then, to apply a Z-normalization of this transformation:
-\begin{align}
-x^{ln}_j 		& = \ln(x_j); \\
-x^{ln,norm}_j & = \frac{x^{ln}_j-\mu^{ln}_j}{\sigma^{ln}_j} \\
-x^{norm}_j 	& = \exp(x^{ln,norm}_j)
-\end{align}
+%Note that the underlying assumption supposes that the variable $x_j$ is normally distributed: data evolves between $[-\infty;+\infty]$ and are coming from a Gaussian process. In some cases, the data are skewed such as monetary amounts or incomes. These data are sometimes log-normally distributed, \textit{e.g.}, the log of the data is normally distributed (Fig. \ref{fig:SkewedData}). The underlying idea is to take the log of the data ($x^{ln}_j$) to restore the symmetry, and then, to apply a Z-normalization of this transformation:
+%\begin{align}
+%x^{ln}_j 		& = \ln(x_j); \\
+%x^{ln,norm}_j & = \frac{x^{ln}_j-\mu^{ln}_j}{\sigma^{ln}_j} \\
+%x^{norm}_j 	& = \exp(x^{ln,norm}_j)
+%\end{align}
+%
+%\noindent where $\ln$ denotes the Natural Logarithm function, $\mu^{ln}_j$ and $\sigma^{ln}_j$ the mean and the standard deviation of a variable $x^{ln}_j$.
+%
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=0.6\linewidth]{images/SkewedData2}
+%	\caption{A nearly log-normal distribution, and its log transform \protect\footnotemark}
+%	\label{fig:SkewedData}
+%\end{figure}
+%\footnotetext{source: \url{http://www.r-statistics.com/2013/05/log-transformations-for-skewed-and-wide-distributions-from-practical-data-science-with-r/}}
 
-\noindent where $\ln$ denotes the Natural Logarithm function, $\mu^{ln}_j$ and $\sigma^{ln}_j$ the mean and the standard deviation of a variable $x^{ln}_j$.
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.6\linewidth]{images/SkewedData2}
-	\caption{A nearly log-normal distribution, and its log transform \protect\footnotemark}
-	\label{fig:SkewedData}
-\end{figure}
-\footnotetext{source: \url{http://www.r-statistics.com/2013/05/log-transformations-for-skewed-and-wide-distributions-from-practical-data-science-with-r/}}
-
-Finally, we recall some precautions to the practitioner in the learning protocol, experimented by Hsu \& al. in the context of {\sc svm} \cite{Hsu2008}. First, training and testing data must be scaled using the same method. Second, training and testing data must not be scaled separately. Third, the whole dataset must not be scaled together at the same time. These often leads to poorer results. A proper way to do normalization is to scale the training data, store the parameters of the normalization (e.g. $\mu_i$ and $\sigma_i$ for Z-normalization), then apply the same normalization to the testing data. 
+Finally, we recall some precautions to the practitioner in the learning protocol, experimented by Hsu \& al. in the context of {\sc svm} \cite{Hsu2008}. First, training and testing data must be scaled using the same method. Second, training and testing data must not be scaled separately. Third, the whole dataset must not be scaled together at the same time. These often leads to poorer results. A proper way to do normalization is to scale the training data, store the parameters of the normalization (\textit{e.g.} $\mu_i$ and $\sigma_i$ for Z-normalization), then apply the same normalization to the testing data. 
 
 
 %------------------------------------------------------------------------------
@@ -217,7 +217,7 @@ Finally, we recall some precautions to the practitioner in the learning protocol
 %\end{itemize}
 
 \mycomment[AR]{Ahlame trouve que ce n'est pas clair. A refaire}A simple approach to classify samples is to consider that "close" samples have a great probability to belong to the same class. Given a test sample $\textbf{x}_j$, one can use the class $y_i$ of its nearest neighbor $\textbf{x}_i$ in the training set in order to predict its labels: $\hat{y}_j=y_i$. \\
-\indent More generally, we can consider the $k$ nearest neighbors of $\textbf{x}_j$. The class $y_j$ of a test sample $\textbf{x}_j$ is assigned with a voting scheme among them, i.e., using the majority of the class of nearest neighbors. This algorithm is referred as the $k$-Nearest Neighbors algorithm ($k$-NN) 
+\indent More generally, we can consider the $k$ nearest neighbors of $\textbf{x}_j$. The class $y_j$ of a test sample $\textbf{x}_j$ is assigned with a voting scheme among them, \textit{i.e.}, using the majority of the class of nearest neighbors. This algorithm is referred as the $k$-Nearest Neighbors algorithm ($k$-NN) 
 \cite{Silverman1989,Cover1967b}. Fig. \ref{fig:kNN_example} illustrates the concept for a neighborhood of $k=3$ and $k=5$.
 
 \begin{figure}[h!]
@@ -248,7 +248,7 @@ However, the $k$-NN algorithm presents some disadvantages, mainly due to its com
 %The importance of defining adapted metrics for time series will be discussed in Chapter \ref{sec:Chapter_metrics}.
 
 
-% \textcolor{red}{Accuracy evaluation answers one of the most important questions about a similarity measure: why is this a good measure for describing the (dis)similarity between time series? Surprisingly, we found that accuracy evaluation is usually insufficient in existing literature: it has been either based on subjective evaluation, e.g., [4, 9], or using clustering with small data sets which are not statistically significant, e.g., [31, 40]. In this work, we use an objective evaluation method recently proposed [25]. The idea is to use a one nearest neighbor (1NN) classifier [17, 32] on la- belled data to evaluate the efficacy of the distance measure used. Specifically, each time series has a correct class label, and the classifier tries to predict the label as that of its nearest neighbor in the training set. There are several advantages with this approach. First, it is well known that the underlying distance metric is critical to the performance of 1NN classifier [32], hence, the accuracy of the 1NN classifier directly reflects the effectiveness of the similarity measure. Second, the 1NN classifier is straightforward to implement and is parameter free, which makes it easy for anyone to reproduce our results. Third, it has been proved that the error ratio of 1NN classifier is at most twice the Bayes error ratio [36]. Finally, we note that while there have been attempts to classify time series with decision trees, neural networks, Bayesian networks, supporting vector machines etc., the best published results (by a large margin) come from simple nearest neighbor methods [42]}
+% \textcolor{red}{Accuracy evaluation answers one of the most important questions about a similarity measure: why is this a good measure for describing the (dis)similarity between time series? Surprisingly, we found that accuracy evaluation is usually insufficient in existing literature: it has been either based on subjective evaluation, \textit{e.g.}, [4, 9], or using clustering with small data sets which are not statistically significant, \textit{e.g.}, [31, 40]. In this work, we use an objective evaluation method recently proposed [25]. The idea is to use a one nearest neighbor (1NN) classifier [17, 32] on la- belled data to evaluate the efficacy of the distance measure used. Specifically, each time series has a correct class label, and the classifier tries to predict the label as that of its nearest neighbor in the training set. There are several advantages with this approach. First, it is well known that the underlying distance metric is critical to the performance of 1NN classifier [32], hence, the accuracy of the 1NN classifier directly reflects the effectiveness of the similarity measure. Second, the 1NN classifier is straightforward to implement and is parameter free, which makes it easy for anyone to reproduce our results. Third, it has been proved that the error ratio of 1NN classifier is at most twice the Bayes error ratio [36]. Finally, we note that while there have been attempts to classify time series with decision trees, neural networks, Bayesian networks, supporting vector machines etc., the best published results (by a large margin) come from simple nearest neighbor methods [42]}
 
 % Cons of the kNN
 %Curse of Dimensionality
@@ -295,7 +295,7 @@ We first present an intuition of maximum margin concept. We give the primal form
 \label{fig:Plusieurs_separatrice_lineaire}
 \end{figure}
 
-\noindent Vapnik \& al. \cite{Cortes1995} propose to choose the separating hyperplane that maximizes the margin, e.g. the hyperplane that leaves as much distance as possible between the hyperplane and the closest samples $\textbf{x}_i$ of each class, called the support vectors. This distance is equal to $\frac{1}{||\textbf{w}||_2}$. We denote $||\textbf{w}||_2$, the $L_2$-norm of the vector $\textbf{w}$ and $||\textbf{w}||_1$ the $L_1$-norm of $\textbf{w}$:
+\noindent Vapnik \& al. \cite{Cortes1995} propose to choose the separating hyperplane that maximizes the margin, \textit{e.g.} the hyperplane that leaves as much distance as possible between the hyperplane and the closest samples $\textbf{x}_i$ of each class, called the support vectors. This distance is equal to $\frac{1}{||\textbf{w}||_2}$. We denote $||\textbf{w}||_2$, the $L_2$-norm of the vector $\textbf{w}$ and $||\textbf{w}||_1$ the $L_1$-norm of $\textbf{w}$:
 \begin{align}
 	||\textbf{w}||_2 & = \sqrt{\textbf{w}^T \textbf{w}} = \sqrt{\sum\limits_{h=1}^{p} w_h^2}\\
 	||\textbf{w}||_1 & = \sum\limits_{h=1}^{p} |w_h|
@@ -413,13 +413,13 @@ From the dual objective in Eq. \ref{eq:dualSVM}, we note that the samples $\text
 
 The intuition behind using such mapping is that for many datasets, it is not possible to find a hyperplan that can separate the two classes in the input space if the problem is not linearly separable. However, by applying a transformation $\Phi$, data might become linearly separable in a higher dimensional space. Fig. \ref{fig:SVM_nonlinear} illustrates the idea: in the original 2-dimensional space (left), the two classes can't be separated by a line. However, with a third dimension such that the $+1$ (circle) labeled points are moved forward and the $-1$ (cross) labeled moved back the two classes become separable.
 
-In most of the case, the mapping function $\Phi$ does not need to be known since we only need the dot product $\Phi(\textbf{x}_i) . \Phi(\textbf{x}_j)$. Therefore, we can use any kernel function $K$ such that: $K(\textbf{x}_i,\textbf{x}_j)= \Phi(\textbf{x}_i) . \Phi(\textbf{x}_j)$. We call Gram matrix $G$, the matrix containing all $K(\textbf{x}_i,\textbf{x}_j)$:
+In most of the case, the mapping function $\Phi$ does not need to be known since we only need the dot product $\Phi(\textbf{x}_i) . \Phi(\textbf{x}_j)$. Therefore, we can use any kernel function $\kappa$ such that: $\kappa(\textbf{x}_i,\textbf{x}_j)= \Phi(\textbf{x}_i) . \Phi(\textbf{x}_j)$. We call Gram matrix $G$, the matrix containing all $\kappa(\textbf{x}_i,\textbf{x}_j)$:
 \begin{equation*}
-	G = (K(\textbf{x}_i,\textbf{x}_j))_{1 \leq i,j \leq n} = 
+	G = (\kappa(\textbf{x}_i,\textbf{x}_j))_{1 \leq i,j \leq n} = 
 	\begin{pmatrix}
-	K(\textbf{x}_1,\textbf{x}_1) & ... & K(\textbf{x}_1,\textbf{x}_n) \\
+	\kappa(\textbf{x}_1,\textbf{x}_1) & ... & \kappa(\textbf{x}_1,\textbf{x}_n) \\
 	... & & ... \\
-	K(\textbf{x}_n,\textbf{x}_1) & ... & K(\textbf{x}_n,\textbf{x}_n) 
+	\kappa(\textbf{x}_n,\textbf{x}_1) & ... & \kappa(\textbf{x}_n,\textbf{x}_n) 
 	\end{pmatrix}
 \end{equation*}
 
@@ -436,14 +436,14 @@ In most of the case, the mapping function $\Phi$ does not need to be known since
 
 Many kernels have been proposed in the literature such as the polynomial, sigmoid, exponential or wavelet kernels \cite{Schlkopf2013}. The most popular ones that we will use in our work are respectively the Linear and the Gaussian (or Radial Basis Function ({\sc rbf})) kernels:
 \begin{align}
-	& K(\textbf{x}_i,\textbf{x}_j)= \textbf{x}_i ^T \textbf{x}_j \\
-	& K(\textbf{x}_i,\textbf{x}_j)
+	& \kappa(\textbf{x}_i,\textbf{x}_j)= \textbf{x}_i ^T \textbf{x}_j \\
+	& \kappa(\textbf{x}_i,\textbf{x}_j)
 	= \exp(-\frac{||\textbf{x}_j-\textbf{x}_i||_2^2}{2\sigma^2})
 	= \exp(-\gamma||\textbf{x}_j-\textbf{x}_i||_2^2)
 \end{align}
 where $\gamma = \frac{1}{2\sigma^2}$ is the parameter of the Gaussian kernel and $||\textbf{x}_j-\textbf{x}_i||_2$ is the Euclidean distance between $\textbf{x}_i$ and $\textbf{x}_j$. Note that the Linear kernel is the identity transformation. In practice, for large scale problem (when the number of dimensions $p$ is high), using a Linear kernel is sufficient  \cite{Fan2008}.
 
-The Gaussian kernel computed between a sample $\textbf{x}_j$ and a support vector $\textbf{x}_i$ is an exponentially decaying function in the input space. The maximum value of the kernel ($K(\textbf{x}_i,\textbf{x}_j)$=1) is attained at the support vector (when $\textbf{x}_i=\textbf{x}_j$). Then, the value of the kernel decreases uniformly in all directions around the support vector, with distance and ranges between zero and one. It can thus be interpreted as a similarity measure. Geometrically speaking, it leads to hyper-spherical contours of the kernel function as shown in Fig. \ref{fig:Kernel_Gaussian} \footnote{\url{https://www.quora.com/Support-Vector-Machines/What-is-the-intuition-behind-Gaussian-kernel-in-SVM}}. The parameter $\gamma$ controls the decreasing speed of the sphere. In practice, this parameter is learnt during the training phase.
+The Gaussian kernel computed between a sample $\textbf{x}_j$ and a support vector $\textbf{x}_i$ is an exponentially decaying function in the input space. The maximum value of the kernel ($\kappa(\textbf{x}_i,\textbf{x}_j)$=1) is attained at the support vector (when $\textbf{x}_i=\textbf{x}_j$). Then, the value of the kernel decreases uniformly in all directions around the support vector, with distance and ranges between zero and one. It can thus be interpreted as a similarity measure. Geometrically speaking, it leads to hyper-spherical contours of the kernel function as shown in Fig. \ref{fig:Kernel_Gaussian} \footnote{\url{https://www.quora.com/Support-Vector-Machines/What-is-the-intuition-behind-Gaussian-kernel-in-SVM}}. The parameter $\gamma$ controls the decreasing speed of the sphere. In practice, this parameter is learnt during the training phase.
 
 \begin{figure}[h!]
 \centering
@@ -456,7 +456,7 @@ The Gaussian kernel computed between a sample $\textbf{x}_j$ and a support vecto
 By applying the kernel trick to the soft margin formulation in Eqs. \ref{eq:dualSVM}, \ref{constraintdual1} and \ref{constraintdual4}, the following optimization problem allows to learn non-linear classifiers:
 \begin{align}
 	& \argmax_{\boldsymbol{\alpha}} \left( 
-	\sum\limits_{i=1}^{n} \alpha_i - \frac{1}{2} \sum\limits_{i=1}^{n} \sum\limits_{j=1}^{n} \alpha_i \alpha_j y_i y_j K(\textbf{x}_i , \textbf{x}_j) 
+	\sum\limits_{i=1}^{n} \alpha_i - \frac{1}{2} \sum\limits_{i=1}^{n} \sum\limits_{j=1}^{n} \alpha_i \alpha_j y_i y_j \kappa(\textbf{x}_i , \textbf{x}_j) 
 	\right) 
 	\label{eq:dualSVM2kernel}\\
 	& \textbf{s.t. } \sum\limits_{i=1}^{n}\alpha_i y_i = 0 \label{constraintdual3kernel}\\
@@ -465,15 +465,15 @@ By applying the kernel trick to the soft margin formulation in Eqs. \ref{eq:dual
 
 \noindent The decision function $f$ becomes:
 \begin{equation}
-f(\textbf{x}_j) = sign(\sum\limits_{i=1}^{n} \alpha_i^*y_i K(\textbf{x}_i,\textbf{x}_j) + b^*) \label{decisionDualKernel}
+f(\textbf{x}_j) = sign(\sum\limits_{i=1}^{n} \alpha_i^*y_i \kappa(\textbf{x}_i,\textbf{x}_j) + b^*) \label{decisionDualKernel}
 \end{equation} 
 \noindent Let $n_{SV}$ be the number of support vectors ($n_{SV} \leq n$). To recover $b^*$, we recall that for support vectors $\textbf{x}_i$:
 \begin{equation}
-	y_j \left( \sum\limits_{i=1}^{n_{SV}} \alpha_i^* y_i K(\textbf{x}_i,\textbf{x}_j) + b^* \right) = 1
+	y_j \left( \sum\limits_{i=1}^{n_{SV}} \alpha_i^* y_i \kappa(\textbf{x}_i,\textbf{x}_j) + b^* \right) = 1
 \end{equation}
 From this, we can solve $b^*$ using an arbitrarily chosen support vector $\textbf{x}_i$:
 \begin{equation}
-	b^* = \frac{1}{y_j} - \sum\limits_{i=1}^{n_{SV}} \alpha_i^* y_i K(\textbf{x}_i,\textbf{x}_j)
+	b^* = \frac{1}{y_j} - \sum\limits_{i=1}^{n_{SV}} \alpha_i^* y_i \kappa(\textbf{x}_i,\textbf{x}_j)
 \end{equation}
 \noindent Note that in this case, we can't recover the weight vector $\textbf{w}^*$ but it is not useful here for the decision function.
 
@@ -496,7 +496,7 @@ From this, we can solve $b^*$ using an arbitrarily chosen support vector $\textb
 
 
 \noindent \textbf{Interpretation in the primal} \\
-We recall that $\textbf{x}_i$ is a sample in $p$ dimensions: $x_1, \ldots, x_p$. Geometrically, the vector $\textbf{w}$ represents the direction of the hyperplane and points towards the direction of positive decision function $f(x) \geq 0$ (Fig. \ref{fig:SVM_interpretation}). The absolute value of the bias $|b|$ is equal to the distance of the hyperplane to the origin point $\textbf{x}=\textbf{0}$\footnote{$\textbf{0}$ stands for the null vector: $\textbf{0} = [0, \ldots ,0]^T$} if the norm of the vector $\textbf{w}$ is equal to 1. In the soft margin problem, the slack variables $\xi_i$ can be interpreted as follows:
+We recall that $\textbf{x}_i$ is a sample in $p$ dimensions: $x_1, \ldots, x_p$. Geometrically, the vector $\textbf{w}$ represents the direction of the hyperplane and points towards the direction of positive decision function $f(\textbf{x}) \geq 0$ (Fig. \ref{fig:SVM_interpretation}). The absolute value of the bias $|b|$ is equal to the distance of the hyperplane to the origin point $\textbf{x}=\textbf{0}$\footnote{$\textbf{0}$ stands for the null vector: $\textbf{0} = [0, \ldots ,0]^T$} if the norm of the vector $\textbf{w}$ is equal to 1. In the soft margin problem, the slack variables $\xi_i$ can be interpreted as follows:
 \begin{itemize}
 	\item $\xi = 0$ implies that $\textbf{x}_i$ is correctly classified and is either on the margin or on the correct side of the margin.
 	\item $0 < \xi \leq 1$ implies that $\textbf{x}_i$ lies inside the margin, but on the correct side of the decision boundary
@@ -511,7 +511,7 @@ We recall that $\textbf{x}_i$ is a sample in $p$ dimensions: $x_1, \ldots, x_p$.
 	\label{fig:SVM_interpretation}
 \end{figure}
 
-In the primal, the weight vector $\textbf{w} = [w_1, \ldots, w_p]^T$ contains as many elements as there are dimensions in the dataset, i.e., $\textbf{w} \in \mathbb{R}^p$. The magnitude of each element in $\textbf{w}$ denotes the importance of the corresponding variable for the classification problem. If the element of $\textbf{w}$ for some variable is 0, these variables are not used for the classification problem.
+In the primal, the weight vector $\textbf{w} = [w_1, \ldots, w_p]^T$ contains as many elements as there are dimensions in the dataset, \textit{i.e.}, $\textbf{w} \in \mathbb{R}^p$. The magnitude of each element in $\textbf{w}$ denotes the importance of the corresponding variable for the classification problem. If the element of $\textbf{w}$ for some variable is 0, these variables are not used for the classification problem.
 
 In order to visualize the above interpretation of the weight vector $\textbf{w}$, let us examine several hyperplanes $\textbf{w}^T\textbf{x}+b=0$ shown in Fig. \ref*{fig:Weight_interpretation} with $p=2$. Fig. \ref{fig:Weight_interpretation}(a) shows a hyperplane where elements of $\textbf{w}$ are the same for both variables $x_1$ and $x_2$. The interpretation is that both variables contribute equally for classification of objects into positive and negative. Fig. \ref{fig:Weight_interpretation}(b) shows a hyperplane where the element of $\textbf{w}$ for $x_1$ is 1, while that for $x_2$ is 0. This is interpreted as that $x_1$ is important but $x_2$ is not. An opposite example is shown in Fig. \ref{fig:Weight_interpretation}(c) where $x_2$ is considered to be important but $x_1$ is not. Finally, Fig. \ref{fig:Weight_interpretation}(d) provides a 3-dimensional example ($p=3$) where an element of $\textbf{w}$ for $x_3$ is 0 and all other elements are equal to 1. The interpretation is that $x_1$ and $x_2$ are important but $x_3$ is not.
 
@@ -539,7 +539,7 @@ From this, for every datapoint $\textbf{x}_i$, either $\alpha_i^* = 0$ or $y_i(\
 \subsubsection{Variants of {\sc svm}}
 From the primal formulation of {\sc svm} (Eqs. \ref{eq:objectiveSVM} \& \ref{eq:constraintsSVM}), some works investigate the effect of modifications in the regularization and loss term \cite{Hsu2008}.
 
-First, the two common regularizers are $||\textbf{w}||_1$ and $||\textbf{w}||_2$. The former is referred to as $L_1$-Regularizer while the latter is $L_2$-Regularizer. $L_1$-Regularizer is used to obtain sparser models than $L_2$-Regularizer, i.e., the vector $\textbf{w}$ will contain many elements $w_i$ that will equal to zero. Thus, it can be used for variable selection.
+First, the two common regularizers are $||\textbf{w}||_1$ and $||\textbf{w}||_2$. The former is referred to as $L_1$-Regularizer while the latter is $L_2$-Regularizer. $L_1$-Regularizer is used to obtain sparser models than $L_2$-Regularizer, \textit{i.e.}, the vector $\textbf{w}$ will contain many elements $w_i$ that will equal to zero. Thus, it can be used for variable selection.
 
 Secondly, the two common loss functions $\xi_i$ are $\max(1-y_i \textbf{w}^T \textbf{x}_i, 0)$ and $[\max(1-y_i \textbf{w}^T \textbf{x}_i, 0)]^2$. The former is referred to as $L_1$-Loss and the latter is $L_2$-Loss function. $L_2$-loss function will penalize more slack variables $\xi_i$ during training and would be more sensitive to outliers. Theorically, it should lead to less error in training and poorer generalization in most of the case \cite{Hsu2008}. In general, $L_1$-Loss is preferred.
 

@@ -2,62 +2,52 @@
 \defcounter {refsection}{0}\relax 
 \select@language {american}
 \defcounter {refsection}{0}\relax 
-\ttl@tocsep 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Related work}{5}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.1}{\ignorespaces Confusion matrix for a 2-class problem.\relax }}{10}{table.caption.14}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Related work}{7}{chapter.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.1}{\ignorespaces Confusion matrix for a 2-class problem.\relax }}{12}{table.caption.16}
+\contentsline {xchapter}{Time series metrics and metric learning}{29}{chapter.2}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Time series metrics and metric learning}{31}{chapter.2}
+\contentsline {xchapter}{Multi-modal and Multi-scale \\ Time series Metric Learning (M$^2$TML)}{49}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\ttl@tocsep 
-\defcounter {refsection}{0}\relax 
-\ttl@tocsep 
+\contentsline {table}{\numberline {3.1}{\ignorespaces The different formalizations for \textsc {m$^2$tml}\relax }}{72}{table.caption.90}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Metric Learning in dissimilarity space: formalization}{51}{chapter.3}
+\contentsline {xchapter}{Experiments}{73}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.1}{\ignorespaces The different formalizations for Metric Learning in Dissimilarity space\relax }}{67}{table.caption.64}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Dataset description giving the number of classes (Nb. Class), the number of time series for the training (Nb. Train) and the testing (Nb. Test) sets, and the length of each time series (TS length).\relax }}{74}{table.caption.91}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.2}{\ignorespaces Considered metric in the experiments\relax }}{75}{table.caption.93}
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Multi-modal and Multi-scale Time series Metric Learning ({\sc m}$^2${\sc tml}) solution}{69}{chapter.4}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Parameter ranges\relax }}{76}{table.caption.95}
 \defcounter {refsection}{0}\relax 
-\ttl@tocsep 
+\contentsline {table}{\numberline {4.4}{\ignorespaces 1-NN test error rates for standard, \textit {a priori} combined and {\sc m}$^2${\sc tml} measures.\relax }}{77}{table.caption.97}
 \defcounter {refsection}{0}\relax 
-\ttl@tocsep 
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Experiments}{87}{chapter.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces Dataset description giving the number of classes (Nb. Class), the number of time series for the training (Nb. Train) and the testing (Nb. Test) sets, and the length of each time series (TS length).\relax }}{88}{table.caption.78}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Parameter ranges\relax }}{90}{table.caption.80}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.3}{\ignorespaces 1-NN error rates for standard and {\sc m}$^2${\sc tml} measures.\relax }}{90}{table.caption.81}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.4}{\ignorespaces Top 5 multi-modal and multi-scale features involved in $D$\relax }}{92}{table.caption.82}
-\defcounter {refsection}{0}\relax 
-\ttl@tocsep 
+\contentsline {table}{\numberline {4.5}{\ignorespaces Top 5 multi-modal and multi-scale features involved in $D$\relax }}{81}{table.caption.99}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Detailed presentation of the datasets}{99}{appendix.A}
+\contentsline {xchapter}{Detailed presentation of the datasets}{93}{appendix.A}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Solver library}{101}{appendix.B}
+\contentsline {xchapter}{Solver library}{95}{appendix.B}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{SVM library}{103}{appendix.C}
+\contentsline {xchapter}{SVM library}{97}{appendix.C}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{QP resolution}{105}{appendix.D}
+\contentsline {xchapter}{QP resolution}{99}{appendix.D}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{SVM equivalency}{101}{appendix.E}

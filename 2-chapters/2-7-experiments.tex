@@ -9,59 +9,55 @@
 %	\item Données Schneider? ou Expliquer les problématiques de Schneider
 %\end{itemize}
 \fbox{  \parbox{0.9\textwidth}{
-		In this chapter, we evaluate the efficiency of our proposed algorithm {\sc m}$^2${\sc tml} on public datasets for classification problems of univariate time series. \\
-		First, we describe the datasets. Secondly, we detail the experimental protocol. Finally, we present and discuss the obtained results.
+		In this chapter, we evaluate the efficiency of the proposed {\sc m}$^2${\sc tml} algorithm on public datasets for classification problems of univariate time series. First, we describe the datasets. Secondly, we detail the experimental protocol. Finally, we present and discuss the obtained results.
 	}  }
 %-----------------------------------------------------------------------------
 \section{Description}
-The efficiency of the  learned multi-modal and multi-scale dissimilarities $D$ and $D_{\mathcal{H}}$ is evaluated through  a $1-$NN classification on 30 public datasets \footnote{PowerCons:   \url{https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption}, {\sc bme} and {\sc umd}:  \url{http://ama.liglab.fr/~douzal/tools.html}.} \cite{Keogh2011}. The considered data encompass time series that involve global or local temporal differences, require or not time warping, with  linearly or non linearly separable  neighborhoods. Table \ref{tab:DatasetDescription} gives a description of the datasets considered for our experiments and Fig. \ref{fig:dataset} gives the temporal representation of some of them. The learnt metrics $D$ and $D_{\mathcal{H}}$ are compared to five alternative uni-modal metrics covering: 
-\begin{enumerate}
-	\item The  standard  Euclidean distance and dynamic time warping referenced as $d_A$ (Eq. \ref{eq:A}) and  {\sc dtw}
-	\item The behavior-based measures  $d_B$ (Eq. \ref{eq:B}) and $d_{B-\mbox{\sc dtw}}$ its counterpart  for asynchronous time series, that is $d_B$ is evaluated once time series synchronized by dynamic programing
-	\item The frequential-based metric  $d_F$ (Eq. \ref{eq:F}). 
-\end{enumerate}
-The alternative  metrics are evaluated  as usual by involving the all time series elements ({\it i.e.} at the global scale). For  $D$ and $D_{\mathcal{H}}$, we consider a 21-dimensional embedding space  $\mathcal{E}$ that relies, for synchronous (resp. asynchronous) data,  on 3 log-normalized dissimilarities $d_{A}^{s}$, $d_{B}^{s}$ (resp. {\sc dtw}$^{s}$, $d_{B-\mbox{\sc dtw}}^{s}$), and $d_{F}^{s}$, at 7 temporal granularities $s \in \{0,...,6\}$ obtained by binary segmentation as described in Section \ref{sec:multiscale}. \\
+The efficiency of the  learned multi-modal and multi-scale dissimilarities $D$ and $D_{\mathcal{H}}$ is evaluated through  a $1-$NN classification on 30 public datasets\footnote{PowerCons:   \url{https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption}, {\sc bme} and {\sc umd}:  \url{http://ama.liglab.fr/~douzal/tools.html}.}\cite{Keogh2011}. 
+The $1-$NN classifier is used to make the results comparable with the results of the UCR time series data mining archive.
+%\footnote{\url{http://www.cs.ucr.edu/~eamonn/time_series_data/}}
+Time series comes from several fields (simulated data, medical data, electrical data, etc.), are from variable lengths (from small ($q=24$) to long lengths ($q=1882$)) and the number of classes to discriminate evolves between 1 and 37 classes. Note that some of the datasets have a small number of time series in the training set ($n < 30$) and others have a large number of time series in the training set ($n > 100$). The results using standard metrics (Euclidean distance, Dynamic time warping) show both easy and challenging classifications problems, the latter being opened for improvements. The datasets encompass time series that involve global or local temporal differences, require or not time warping, with  linearly or non linearly separable neighborhoods, discussed later. Table \ref{tab:DatasetDescription} gives a description of the datasets considered in the experiments and Fig. \ref{fig:dataset} gives the temporal representation for some of the datasets. Note that for some datasets (\textit{e.g.}, SonyAIBO, ECG200, FaceFour, PowerConsumption), it is visually difficult to  discriminate the classes using one modality (value, behavior, frequential).
 
 \begin{table}[h!]
 	\small
 	\begin{center}
 		\renewcommand{\arraystretch}{1}
-		\resizebox{0.7\textwidth}{!}{
+		\resizebox{0.65\textwidth}{!}{
 			\begin{tabular}{lcccc}
 				\hline
 				Dataset    	& Nb. Class & Nb. Train 
 				& Nb. Test  & TS length\\
 				\hline
-				Trace 				& 4 & 100 & 100  & 275 \\
-				CBF 				& 3 & 30  & 900  & 128 \\
-				CC					& 6 & 300 & 300  & 60  \\
-				UMDsmooth 			& 3 & 360 & 1440 & 150 \\
-				BMEsmooth 			& 3 & 300 & 1500 & 128 \\
-				DiatomSizeReduc 	& 4 & 16  & 306  & 345 \\
-				ItalyPowerDemand 	& 2 & 67  & 1029 & 24  \\
-				Symbols 			& 6 & 25  & 995  & 398 \\
-				GunPoint			& 2 & 50  & 150  & 150 \\
-				FacesUCR			& 14& 200 & 2050 & 131 \\
-				TwoLeadECG 			& 2 & 23  & 1139 & 82  \\
-				CinCECGtorso		& 4 & 40  & 1380 & 1639\\
-				ECG200				& 2 & 100 & 100  & 96  \\
-				MoteStrain			& 2 & 20  & 1252 & 84  \\
-				Lighting2			& 2 & 60  & 61   & 637 \\
-				OliveOil			& 4 & 30  & 30   & 570 \\
-				SonyAIBOII			& 2 & 27  & 953  & 65  \\
-				FISH				& 7 & 175 & 175  & 463 \\
-				FaceFour			& 4 & 24  & 88   & 350 \\
-				Coffee				& 2 & 28  & 28   & 286 \\
-				ECG5Days			& 2 & 23  & 861  & 136 \\
-				SwedishLeaf			& 15& 500 & 625  & 128 \\
-				MedicalImages		& 10& 381 & 760  & 99 \\
-				Lighting7			& 7 & 70  & 73   & 319 \\
-				SonyAIBO			& 2 & 20  & 601  & 70  \\
-				PowerCons			& 2 & 73  & 292  & 144 \\
-				Adiac				& 37& 390 & 391  & 176 \\
-				OSULeaf				& 6 & 200 & 242  & 427 \\
-				Beef				& 5 & 30  & 30   & 470 \\
-				InlineSkate			& 7 & 100 & 550  & 1882\\	    
+				1 ItalyPowerD 	 	& 2 & 67  & 1029 & 24  \\
+				2 CinCECGtorso		& 4 & 40  & 1380 & 1639\\
+				3 ECG200			& 2 & 100 & 100  & 96  \\
+				4 SonyAIBOII		& 2 & 27  & 953  & 65  \\
+				5 Coffee			& 2 & 28  & 28   & 286 \\
+				6 ECG5Days			& 2 & 23  & 861  & 136 \\
+				7 SonyAIBO			& 2 & 20  & 601  & 70  \\
+				8 Adiac				& 37& 390 & 391  & 176 \\
+				9 Beef				& 5 & 30  & 30   & 470 \\
+				10 Trace 			& 4 & 100 & 100  & 275 \\
+				11 CBF 				& 3 & 30  & 900  & 128 \\
+				12 CC				& 6 & 300 & 300  & 60  \\
+				13 UMDsmooth		& 3 & 360 & 1440 & 150 \\					
+				14 BMEsmooth		& 3 & 300 & 1500 & 128 \\	
+				15 DiatomSizeReduc 	& 4 & 16  & 306  & 345 \\
+				16 Symbols 			& 6 & 25  & 995  & 398 \\						
+				17 GunPoint			& 2 & 50  & 150  & 150 \\
+				18 FacesUCR			& 14& 200 & 2050 & 131 \\
+				19 TwoLeadECG 		& 2 & 23  & 1139 & 82  \\
+				20 MoteStrain		& 2 & 20  & 1252 & 84  \\				
+				21 Lighting2		& 2 & 60  & 61   & 637 \\
+				22 OliveOil			& 4 & 30  & 30   & 570 \\				
+				23 FISH				& 7 & 175 & 175  & 463 \\				
+				24 FaceFour			& 4 & 24  & 88   & 350 \\
+				25 SwedishLeaf		& 15& 500 & 625  & 128 \\
+				26 MedicalImages	& 10& 381 & 760  & 99 \\				
+				27 Lighting7		& 7 & 70  & 73   & 319 \\
+				28 PowerCons		& 2 & 73  & 292  & 144 \\						
+				29 OSULeaf			& 6 & 200 & 242  & 427 \\
+				30 InlineSkate		& 7 & 100 & 550  & 1882\\	    
 				\hline
 			\end{tabular}
 		}
@@ -73,110 +69,183 @@ The alternative  metrics are evaluated  as usual by involving the all time serie
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.85\linewidth]{images/dataset_exp}
-	\caption{Temporal representation of some datasets (SonyAIBO, ECG200, BME, UMD, FaceFour, PowerConsumption) considered in our experiments.}
+	\includegraphics[width=0.95\linewidth]{images/dataset_exp}
+	\caption{Temporal representation of some datasets (SonyAIBO, ECG200, BME, UMD, FaceFour, PowerConsumption) considered in the experiments.}
 	\label{fig:dataset}
 \end{figure}
 
-\newpage
+\noindent The results of the learned metrics $D$ and $D_{\mathcal{H}}$ are compared to those of three \textit{a priori} combined metrics $D_{Lin}, D_{Geom}, D_{Sig}$ (Eqs. \ref{eq:DLin}, \ref{eq:DGeom}, \ref{eq:DSig}) and five alternative uni-modal metrics covering: 
+\begin{enumerate}
+	\item The standard  Euclidean distance $d_A$ (Eq. \ref{eq:A}) and Dynamic time warping {\sc dtw}
+	\item The behavior-based measures  $d_B$ (Eq. \ref{eq:B}) and $d_{B-\mbox{\sc dtw}}$ its counterpart  for asynchronous time series, that is $d_B$ is evaluated once time series synchronized by dynamic programing
+	\item The frequential-based metric  $d_F$ (Eq. \ref{eq:F}). 
+\end{enumerate}
+Table \ref{tab:metric} recalls briefly the considered metrics in the experiments.
+\begin{table}[h!]
+	\small
+	\centering
+	\renewcommand{\arraystretch}{0.85}
+	\resizebox{1\textwidth}{!}{
+		\setlength{\tabcolsep}{1pt}
+		\begin{tabular}{llll}
+			\hline
+			Symbol & Name & Equation reference & Description \\
+			\hline
+			$d_A$ 				& Value-based dissimilarity			& Eq. \ref{eq:A} 				& Euclidean distance\\
+			$d_B$ 				& Behavior-based dissimilarity 		& Eq. \ref{eq:B} 				& Behavior metric based on cort\\
+			\textsc{dtw}		& Dynamic time warping 				& Eqs. \ref{eq:DTW} \& \ref{eq:A}& Euclidean distance after alignment\\
+			$d_{B-\mbox{\sc dtw}}$ & Behavior-based aligned dissimilarity & Eqs. \ref{eq:DTW} \& \ref{eq:B}& Behavior metric based on cort after alignment\\
+			$d_F$ 				& Frequential-based dissimilarity 	& Eq. \ref{eq:F} 				& Frequential based on Fourier transform\\
+			$D_{Lin}$ 			& Linear combined metric 			& Eq. \ref{eq:DLin} 			& Combines $d_A$ and $d_B$ (resp. \textsc{dtw} and $d_{B-\mbox{\sc dtw}}$) \\
+			$D_{Geom}$ 			& Geometric combined metric 		& Eq. \ref{eq:DGeom} 			& Combines $d_A$ and $d_B$ (resp. \textsc{dtw} and $d_{B-\mbox{\sc dtw}}$) \\
+			$D_{Sig}$ 			& Sigmoid combined metric 			& Eq. \ref{eq:DSig} 			& Combines $d_A$ and $d_B$ (resp. \textsc{dtw} and $d_{B-\mbox{\sc dtw}}$) \\
+			$D$ 				& Linear learned metric 				& Eq. \ref{eq:dissimilarity_learn} 			 & \textsc{m$^2$tml} linear combined metric\\ 
+			$D_{\mathcal{H}}$  	& Non-linear learned metric 			& Eq. \ref{eq:dissimilarity_learn_NonLinear} & \textsc{m$^2$tml} non-linear combined metric with a Gaussian kernel\\
+			\hline
+		\end{tabular}}
+		\caption{Considered metric in the experiments}
+		\label{tab:metric}
+	\end{table}
+	
+The \textit{a priori} combined metrics ($D_{Lin}, D_{Geom}, D_{Sig}$) relies, for synchronous (resp. asynchronous), on 2 log-normalized dissimilarities $d_{A}$, $d_{B}$ (resp. {\sc dtw}, $d_{B-\mbox{\sc dtw}}$). The alternative metrics and the \textit{a priori} combined metrics are evaluated  as usual by involving the all time series elements ({\it i.e.} at the global scale). For $D$ and $D_{\mathcal{H}}$, we consider a 21-dimensional embedding space  $\mathcal{E}$ that relies, for synchronous (resp. asynchronous) data, on 3 log-normalized dissimilarities $d_{A}^{s}$, $d_{B}^{s}$ (resp. {\sc dtw}$^{s}$, $d_{B-\mbox{\sc dtw}}^{s}$), and $d_{F}^{s}$, at 7 temporal granularities $s \in \{0,...,6\}$ obtained by binary segmentation, described in Section \ref{sec:Pairwise_embedding}.
+
 %-----------------------------------------------------------------------------
 \section{Experimental protocol}
-The combined metrics  $D$ and $D_{\mathcal{H}}$  ($K$ as the Gaussian kernel) are learned under $L_1$ and $L_2$ regularization, respectively. The parameters are estimated on a validation set by line/grid search.  A cross-validation and  stratified sampling for unbalanced datasets are used (Section \ref{sec:model_selection}).  Particularly, for each  couple ($r$, $\lambda$) $r \in \{1, 4, 10\}$ and $\lambda \in \{0, 10, 30\}$, the pairwise {\sc svm} parameters ($C,\alpha, \gamma$) are learned by grid search as indicated in Table \ref{tab:param}. The temporal order $r$ is noise-dependent,  typically 1  is retained for noise-free data. The parameter $\lambda$ corresponds to the strength of the '{\it push'} term; precisely, if  no, moderate or  strong '{\it push}'  is required during the training process, a $\lambda$ value of  0, 10 and 30 is learned, respectively.
-
-\noindent The parameters retained are those that:
+The different metrics can be split into two categories. For those without parameters to tune ($d_A$, \textsc{dtw}), the $1-$NN classifier is applied directly on the test set. For those that require to tune parameters ($d_B$, $d_{B-\mbox{\sc dtw}}$, $D_{Lin}$, $D_{Geom}$, $D_{Sig}$, $D$, $D_{\mathcal{H}}$), we recall briefly the grid search and cross-validation procedure (Section \ref{sec:model_selection}). When a learning algorithm requires to tune some parameters, to avoid overfitting, the training set can be divided into two sets: a learning and a validation set. The model is learnt for each combination of parameters (grid search) on the learning set and evaluated on the validation set. The model with the lowest error on the validation set is retained. An other alternative is cross-validation, which partitions the training set into $v$ folds, performs the learning on one subset, and validates on the $v-1$ other subsets. To take into account of variability within the data, multiple rounds of cross-validation are performed using different partitions, and the validation results are averaged over the rounds. Note that for unbalanced datasets in classification problems, it is recommended to use stratified sampling \todo{ref}. Table \ref{tab:param} resumes the parameter ranges for each metric. We recall that the parameters retained are those that:
 \begin{itemize}
-	\item \textbf{First}, minimize the average classification error $Err$ on  the validation set (Section \ref{sec:model_selection} \& Section \ref{sec:ClassificationEvaluation}).
-	\item \textbf{Secondly}, in the case of multiple solutions ($C,\alpha, \gamma$)  leading to equal performances, the most discriminant one is retained (i.e. making closer positive pairs and far a way negative pairs). Precisely, it minimizes the ratio $\frac{d_{intra}}{d_{inter}}$ where $d_{intra}$ and $d_{inter}$ stands respectively to the mean of all intraclass and interclass distances according to the considered metric $D$ or $D_{\mathcal{H}}$.
+	\item[-] \textbf{First}, minimize the average classification error on the validation set.
+	\item[-] \textbf{Secondly}, in the case of multiple solutions leading to equal performances, the most discriminant one is retained (\textit{i.e.}, making closer pull pairs and far away push pairs). Precisely, it minimizes the ratio $\frac{d_{intra}}{d_{inter}}$ where $d_{intra}$ and $d_{inter}$ stands respectively to the mean of all intraclass and interclass distances.
 \end{itemize} 
+\noindent As $D$ and $D_{\mathcal{H}}$ involves several parameters to be tuned, we detail hereafter the procedure. The combined metrics $D$ and $D_{\mathcal{H}}$  ($\kappa$ as the Gaussian kernel) are learned respectively under $L_1$ and $L_2$ regularization, using \textsc{liblinear}  and \textsc{libsvm} libraries \cite{Fan2008,Hsu2008}. The parameters are estimated on a validation set by line/grid search. A cross-validation and stratified sampling for unbalanced datasets are used.  Particularly, for each  couple ($r$, $\lambda$) $r \in \{1, 4, 10\}$ and $\lambda \in \{0, 10, 30\}$, the pairwise {\sc svm} parameters ($C,\alpha, \gamma$) are learned by grid search as indicated in Table \ref{tab:param}. The temporal order $r$ for the behavior-based metrics $d_B$ is noise-dependent, typically 1 is retained for noise-free data. The parameter $\lambda$ corresponds to the strength of the '{\it push}' term; precisely, if no, moderate or  strong '{\it push}'  is required during the training process, a $\lambda$ value of  0, 10 and 30 is learned, respectively. 
 
 \begin{table}[h!]
 	\small
 	\centering
 	\renewcommand{\arraystretch}{0.85}
-	\resizebox{0.6\textwidth}{!}{
+	\resizebox{1\textwidth}{!}{
 		\setlength{\tabcolsep}{1pt}
-		\begin{tabular}{lcc}
+		\begin{tabular}{lccl}
 			\hline
-			& Parameter & Ranges \\
+			Dissimilarity & Parameter & Ranges & Description\\
 			\hline
-			$d_{B}$                 & $r$       & $\{1, 2, 3, , ..., T-1\}$ \\
-			$D$, $D_{\mathcal{H}}$  & $\lambda$ & $\{0, 10, 30\}$ \\
-			$D$, $D_{\mathcal{H}}$  & $C$       & $\{10^{-3}, 0.5, 1, 5, 10, 20, 30, ..., 150\}$ \\
-			$D$, $D_{\mathcal{H}}$  & $\alpha$  & $\{1,2,3\}$     \\
-			$D_{\mathcal{H}}$       & $\gamma$  & $\{10^{-3}, 10^{-2}, ..., 10^{3}\}$ \\
+			$d_{B}$                 & $r$       & $\{1, 2, 3, , \ldots, q-1\}$ 					& Order of behavior-based metric\\
+			$D_{Lin}, D_{Geom}, D_{Sig}$ & $\alpha$ & $\{0,0.1, \ldots, 1\}$ 					& Trade-off between value and behavior components\\
+			$D$, $D_{\mathcal{H}}$  & $\lambda$ & $\{0, 10, 30\}$ 								& Strength of the '{\it push}' term \\
+			$D$, $D_{\mathcal{H}}$  & $C$       & $\{10^{-3}, 0.5, 1, 5, 10, 20, 30, ..., 150\}$& Parameter of \textsc{svm}\\
+			$D$, $D_{\mathcal{H}}$  & $\alpha$  & $\{1,2,3\}$     								& Size of the $m=\alpha.k$ neighborhood\\
+			$D_{\mathcal{H}}$       & $\gamma$  & $\{10^{-3}, 10^{-2}, \ldots, 10^{3}\}$ 		& Parameter of the Gaussian kernel\\
 			\hline
 		\end{tabular}}
 		\caption{Parameter ranges}
 		\label{tab:param}
 \end{table}
 	
+
 %-----------------------------------------------------------------------------
-\section{Results}
+\newpage
+\section{Results and discussion}
+In this section, we present first a summary table of the quantitivative results obtained in the experiment. Secondly, we present an analysis of the performances of the different metrics. Finally, we present the ability of our proposed approach \textsc{m$^2$tml} to extract discriminative features.
+
+\subsection{Results}
+Table \ref{tab-resu} reports the 1-NN classification test errors when based on uni-modal metrics  (first 5 columns), on three \textit{a priori} combined metrics ($D_{Lin}, D_{Geom}, D_{Sig}$) and on  $D$ and $D_{\mathcal{H}}$. The results for each dataset that are statistically and significantly better than the rest are indicated in bold (z-test at  5\% risk detailed in Section \ref{sec:ClassificationEvaluation}). The last column '{\sc warp}' indicates the synchronous (\checkmark) or asynchronous ($\times$) data type. 
+\todo{Michèle trouve que ce serait bien de ranger les datasets par warp/non-warp et de classer des moins challenge au plus challenge pour aider la lecture.}
 \begin{table}[h!]
 	\small
 	\centering
 	\renewcommand{\arraystretch}{0.8}
-	\resizebox{0.9\textwidth}{!}{
+	\resizebox{1\textwidth}{!}{
 		\setlength{\tabcolsep}{1pt}
-		\begin{tabular}{|l|ccccc|ccc|}
+		\begin{tabular}{|l|ccccc|ccc|ccc|}
 			\hline
-			& \multicolumn{5}{c|}{Alternative uni-modal metrics} & \multicolumn{2}{c}{{\sc m}$^2${\sc tml}} & {\sc warp}  \\
-			\cline{2-9} 
-			Dataset & $d_A$ & $d_B$ & $d_F$ & $\mbox{\sc dtw}$ & $d_{B-\mbox{\sc dtw}}$ & $D (\lambda^*)$ & $D_{\mathcal{H}} (\lambda^*)$ & {\sc warp}  \\
+			& \multicolumn{5}{c|}{Alternative uni-modal metrics} & \multicolumn{3}{c|}{A priori combinations} & \multicolumn{2}{c}{{\sc m}$^2${\sc tml}} & {\sc warp}  \\
+			\cline{2-12} 
+			Dataset & $d_A$ & $d_B$ & $d_F$ & $\mbox{\sc dtw}$ & $d_{B-\mbox{\sc dtw}}$ & $D_{Lin}$ & $D_{Geom}$ & $D_{Sig}$ & $D (\lambda^*)$ & $D_{\mathcal{H}} (\lambda^*)$ & {\sc warp}  \\
 			\hline
-			1 CC                  & 0.120 & 0.113 & 0.383 & \textbf{0.007} & 0.027     & \textbf{0.003} (0) & \textbf{0.007} (0) & \checkmark \\
-			2 GunPoint            & 0.087 & 0.113 & \textbf{0.027} & 0.093 & \textbf{0.027}     & \textbf{0.020} (10) & \textbf{0.040} (10) & \checkmark \\
-			3 CBF                 & 0.148 & 0.140 & 0.382 & \textbf{0.003} & \textbf{0.000}        & 0.031 (30) & \textbf{0.003} (0)  & \checkmark \\
-			4 OSULeaf             & 0.484 & 0.475 & 0.426 & 0.409 & \textbf{0.265}    & 0.380 (0)  & 0.376 (0)  & \checkmark \\
-			5 SwedishLeaf         & 0.211 & 0.186 & 0.146 & 0.208 & \textbf{0.109} & \textbf{0.110} (0) & \textbf{0.114} (0) & \checkmark \\
-			6 Trace               & 0.240 & 0.240 & 0.140 & \textbf{0.000}    & \textbf{0.000}        & \textbf{0.000} (0)    & \textbf{0.010} (0)  & \checkmark \\
-			7 FaceFour            & 0.216 & 0.216 & 0.239 & 0.170 & 0.136     & \textbf{0.000} (0)     & 0.034 (0)  & \checkmark \\
-			8 Lighting2           & \textbf{0.246} & \textbf{0.246} & \textbf{0.148} & \textbf{0.131}& \textbf{0.213}     & \textbf{0.148} (0)  & \textbf{0.131} (0) & \checkmark \\
-			9 Lighting7           & 0.425 & 0.411 & \textbf{0.316} & \textbf{0.274} & \textbf{0.288}     & 0.397 (0)  & \textbf{0.233} (0) & \checkmark \\
-			10 ECG200              & \textbf{0.120} & \textbf{0.070}& 0.160 & 0.230& 0.190    & \textbf{0.080} (0)  & \textbf{0.080} (0) & $\times$  \\
-			11 Adiac               & 0.389 & \textbf{0.297} & \textbf{0.261} & 0.396 & 0.338     & 0.358 (0)  & 0.361 (0) & $\times$\\
-			12 FISH                & 0.217 & \textbf{0.149} & 0.229 & \textbf{0.166} & \textbf{0.137}   & \textbf{0.149} (0)  & 0.240 (0) & \checkmark  \\
-			13 Beef                & 0.467 & 0.300 & 0.500 & 0.500 & 0.500     & \textbf{0.033} (0) & 0.267 (0) & $\times$   \\
-			14 Coffee              & 0.250 & \textbf{0.000}    & 0.357 & 0.179 & 0.143     & \textbf{0.000} (0)     & \textbf{0.000} (10) &$\times$  \\
-			15 OliveOil            & \textbf{0.133} & \textbf{0.133} & \textbf{0.167} & \textbf{0.200} & \textbf{0.100}    & \textbf{0.167} (0)  & \textbf{0.100} (10) & \checkmark \\
-			16 CinCECGtorso        & 0.103 & 0.367 & 0.167 & 0.349 & 0.367  & \textbf{0.092} (0)  & \textbf{0.079} (0) & $\times$   \\
-			17 DiatomSizeR     	& 0.065 & 0.076 & 0.069 & \textbf{0.033} & \textbf{0.029}     & \textbf{0.026} (0)  & \textbf{0.029} (0) & \checkmark \\
-			18 ECG5Days            & 0.203 & 0.153 & \textbf{0.006} & 0.232 & 0.236    & \textbf{0.007} (10) & 0.024 (0)  & $\times$   \\
-			19 FacesUCR            & 0.231 & 0.227 & 0.175 & 0.095 & 0.102     & \textbf{0.068}  (10) & \textbf{0.059} (0) & \checkmark \\
-			20 InlineSkate         & \textbf{0.658} & \textbf{0.658} & 0.675 & \textbf{0.616} & \textbf{0.623}     & 0.733  (10) & \textbf{0.625} (0) & \checkmark \\
-			21 ItalyPowerD     	& 0.045 & \textbf{0.028}& 0.078 & 0.050 & 0.055    & \textbf{0.028} (30) & \textbf{0.037} (10) & $\times$  \\
-			22 MedicalImages       & 0.316 & 0.313 & 0.345 & \textbf{0.263} & 0.290     & \textbf{0.237} (0) & \textbf{0.236} (10) & \checkmark \\
-			23 MoteStrain          & \textbf{0.121} & 0.263& 0.278 & 0.165& 0.171     & 0.185 (0)  & 0.153 (10) & \checkmark \\
-			24 SonyAIBOII          & \textbf{0.141} & \textbf{0.142} & \textbf{0.128} & 0.169 & 0.194     & \textbf{0.155} (0)  & \textbf{0.131} (0) & $\times$  \\
-			25 SonyAIBO            & 0.305 & 0.308 & 0.258 & 0.275 & 0.343     & \textbf{0.188} (0)  & \textbf{0.165} (30) & $\times$   \\
-			26 Symbols             & 0.101 & 0.111 & 0.080 & \textbf{0.050} & \textbf{0.043}     & \textbf{0.034} (30) & \textbf{0.046} (30) & \checkmark \\
-			27 TwoLeadECG          & 0.253 & 0.153 & 0.103 & 0.096 & \textbf{0.008}   & \textbf{0.006} (0)  & \textbf{0.016} (10) & \checkmark \\
-			28 PowerCons           & \textbf{0.366} & 0.445 & \textbf{0.315} & 0.397 & 0.401     & \textbf{0.318} (0)  & \textbf{0.308} (0) & \checkmark \\
-			29 BME 				& 0.173 & 0.180 & 0.373 & 0.107 & 0.120     & \textbf{0.040} (30) & \textbf{0.000} (10) 	     & \checkmark \\
-			30 UMD 				& 0.194 & 0.222 & 0.299 & 0.118 & \textbf{0.090}     & 0.104  (0)     & \textbf{0.042} (0) & \checkmark \\ 
+			1 ItalyPowerD     	& 0.045 & \textbf{0.028}& 0.078 & 0.050 & 0.055    & \textbf{0.028} & \textbf{0.028} & \textbf{0.030} & \textbf{0.028} (30) & \textbf{0.037} (10) & $\times$  \\
+			2 CinCECGtorso        & 0.103 & 0.367 & 0.167 & 0.349 & 0.367  & \textbf{0.094} & \textbf{0.094} & \textbf{0.093} & \textbf{0.092} (0)  & \textbf{0.079} (0) & $\times$   \\				
+			3 ECG200              & \textbf{0.120} & \textbf{0.070}& 0.160 & 0.230& 0.190    & \textbf{0.070} & \textbf{0.070} & \textbf{0.070} & \textbf{0.080} (0)  & \textbf{0.080} (0) & $\times$  \\
+			4 SonyAIBOII          & \textbf{0.141} & \textbf{0.142} & \textbf{0.128} & 0.169 & 0.194     & \textbf{0.142} & \textbf{0.142} & \textbf{0.144} & \textbf{0.155} (0)  & \textbf{0.131} (0) & $\times$  \\			
+			5 Coffee              & 0.250 & \textbf{0.000}    & 0.357 & 0.179 & 0.143     & \textbf{0.000} & \textbf{0.000} & \textbf{0.071} & \textbf{0.000} (0)     & \textbf{0.000} (10) &$\times$  \\						
+			6 ECG5Days            & 0.203 & 0.153 & \textbf{0.006} & 0.232 & 0.236    & 0.203 & 0.203 & 0.203 & \textbf{0.007} (10) & 0.024 (0)  & $\times$   \\
+			7 SonyAIBO            & 0.305 & 0.308 & 0.258 & 0.275 & 0.343     & 0.308 & 0.308 & 0.293 & \textbf{0.188} (0)  & \textbf{0.165} (30) & $\times$   \\							
+			8 Adiac               & 0.389 & \textbf{0.297} & \textbf{0.261} & 0.396 & 0.338     & 0.373 & 0.363 & 0.402 & 0.358 (0)  & 0.361 (0) & $\times$\\
+			9 Beef                & 0.467 & 0.300 & 0.500 & 0.500 & 0.500     & 0.367 & 0.267 & 0.467 & \textbf{0.033} (0) & 0.267 (0) & $\times$   \\	
+			\hline		
+			10 Trace               & 0.240 & 0.240 & 0.140 & \textbf{0.000}    & \textbf{0.000}        & \textbf{0.000} & \textbf{0.000} & \textbf{0.000} & \textbf{0.000} (0)    & \textbf{0.010} (0)  & \checkmark \\	
+			11 CBF                 & 0.148 & 0.140 & 0.382 & \textbf{0.003} & \textbf{0.000}        & \textbf{0.000} & \textbf{0.000} & \textbf{0.000} & 0.031 (30) & \textbf{0.003} (0)  & \checkmark \\										
+			12 CC                  & 0.120 & 0.113 & 0.383 & \textbf{0.007} & 0.027     & \textbf{0.007} & \textbf{0.007} & \textbf{0.007} &\textbf{0.003} (0) & \textbf{0.007} (0) & \checkmark \\
+			13 UMDsmooth 		& 0.023 & 0.017 & 0.094 & 0.011 & 0.016 & & & & 0.000  () & \textbf{0.003} () & \checkmark \\ 
+			14 BMEsmooth        & 0.029 & 0.016 & 0.090 & 0.044 & 0.045 & & & & \textbf{0.000} () & 0.247 () 	     & \checkmark \\			
+			15 DiatomSizeR     	& 0.065 & 0.076 & 0.069 & \textbf{0.033} & \textbf{0.029}     & \textbf{0.033} & \textbf{0.033} & \textbf{0.042} & \textbf{0.026} (0)  & \textbf{0.029} (0) & \checkmark \\			
+			16 Symbols             & 0.101 & 0.111 & 0.080 & \textbf{0.050} & \textbf{0.043}     & \textbf{0.051} & \textbf{0.050} & \textbf{0.052} & \textbf{0.034} (30) & \textbf{0.046} (30) & \checkmark \\
+			17 GunPoint            & 0.087 & 0.113 & \textbf{0.027} & 0.093 & \textbf{0.027}     & \textbf{0.027} & \textbf{0.027} & \textbf{0.040} & \textbf{0.020} (10) & \textbf{0.040} (10) & \checkmark \\
+			18 FacesUCR            & 0.231 & 0.227 & 0.175 & 0.095 & 0.102     & 0.098 & 0.098 & 0.099 & \textbf{0.068}  (10) & \textbf{0.059} (0) & \checkmark \\
+			19 TwoLeadECG          & 0.253 & 0.153 & 0.103 & 0.096 & \textbf{0.008}   & \textbf{0.005} & \textbf{0.005} & 0.018 & \textbf{0.006} (0)  & 0.016 (10) & \checkmark \\
+			20 MoteStrain          & \textbf{0.121} & 0.263& 0.278 & 0.165& 0.171     & 0.260 & 0.248 & 0.188 & 0.185 (0)  & 0.153 (10) & \checkmark \\						
+			21 Lighting2           & \textbf{0.246} & \textbf{0.246} & \textbf{0.148} & \textbf{0.131} & \textbf{0.213} & \textbf{0.131} & \textbf{0.131} & \textbf{0.131} & \textbf{0.148} (0)  & \textbf{0.131} (0) & \checkmark \\
+			22 OliveOil            & \textbf{0.133} & \textbf{0.133} & \textbf{0.167} & \textbf{0.200} & \textbf{0.100}    & \textbf{0.133} & \textbf{0.133} & \textbf{0.133} & \textbf{0.167} (0)  & \textbf{0.100} (10) & \checkmark \\			
+			23 FISH                & 0.217 & \textbf{0.149} & 0.229 & \textbf{0.166} & \textbf{0.137}   & \textbf{0.109} & \textbf{0.137} & \textbf{0.126} & \textbf{0.149} (0)  & 0.240 (0) & \checkmark  \\			
+			24 FaceFour            & 0.216 & 0.216 & 0.239 & 0.170 & 0.136 & 0.170 & 0.170 & 0.170 & \textbf{0.000} (0)     & 0.034 (0)  & \checkmark \\
+			25 SwedishLeaf         & 0.211 & 0.186 & 0.146 & 0.208 & \textbf{0.109} & \textbf{0.115} & \textbf{0.110} & \textbf{0.125} & \textbf{0.110} (0) & \textbf{0.114} (0) & \checkmark \\			
+			26 MedicalImages       & 0.316 & 0.313 & 0.345 & \textbf{0.263} & 0.290     & \textbf{0.263} & \textbf{0.263} & \textbf{0.263} & \textbf{0.237} (0) & \textbf{0.236} (10) & \checkmark \\
+			27 Lighting7           & \textbf{0.425} & \textbf{0.411} & \textbf{0.316} & \textbf{0.274} & \textbf{0.288}     & \textbf{0.342} & \textbf{0.356} & \textbf{0.342} & \textbf{0.397} (0)  & \textbf{0.233} (0) & \checkmark \\
+			28 PowerCons           & \textbf{0.366} & 0.445 & \textbf{0.315} & 0.397 & 0.401     & 0.401 & 0.401 & 0.401 & \textbf{0.318} (0)  & \textbf{0.308} (0) & \checkmark \\												
+			29 OSULeaf             & 0.484 & 0.475 & 0.426 & 0.409 & \textbf{0.265}    & \textbf{0.264} & \textbf{0.264} & \textbf{0.322} & 0.380 (0)  & 0.376 (0)  & \checkmark \\
+			30 InlineSkate         & \textbf{0.658} & \textbf{0.658} & 0.675 & \textbf{0.616} & \textbf{0.623}     & \textbf{0.605} & \textbf{0.605} & \textbf{0.602} & 0.733  (10) & \textbf{0.625} (0) & \checkmark \\
 			\hline
 		\end{tabular}
 	}
-	\caption{1-NN  error rates for standard and {\sc m}$^2${\sc tml} measures.}
+	\caption{1-NN test error rates for standard, \textit{a priori} combined and {\sc m}$^2${\sc tml} measures.}
 	\label{tab-resu}
 \end{table}
 %\vspace{-1cm}
-Table \ref{tab-resu} reports the  1-NN classification test errors for uni-modal and {\sc m}$^2${\sc tml} metrics; the results that are  statistically and significantly better than the rest are indicated in bold (z-test at  5\% risk detailed in Section \ref{sec:ClassificationEvaluation}). In particular, we compare the $1$-NN error rates when based on uni-modal metrics  (first 5 columns) and on  $D$ and $D_{\mathcal{H}}$. The last column '{\sc warp}' indicates the synchronous (\checkmark) or asynchronous ($\times$) data type. 
+
 
 
 %-----------------------------------------------------------------------------
-\section{Discussion}
+\newpage
+%\section{Discussion}
+\subsection{Comparison of the classification performances on the test set}
 From Table \ref{tab-resu}, we can see first that the 1-NN classification reaches  the best results in: 
 \begin{enumerate}
-	\item Less than one-third of the data when based on $d_A$, $d_B$ or $d_F$ 
-	\item Slightly more than one-third for  $\mbox{\sc dtw}$ and $d_{B-\mbox{\sc dtw}}$ 
-	\item More than two-thirds (23 times on 30)  when based on  $D$ or  $D_{\mathcal{H}}$.
+	\item Less than one-third of the data when based on unimodal metrics $d_A$, $d_B$ or $d_F$
+	\item Slightly more than one-third for unimodal metrics $\mbox{\sc dtw}$ and $d_{B-\mbox{\sc dtw}}$ 
+	\item Two-thirds (19 - 20 times on 30) when based on \textit{a priori} combined metrics $D_{Lin}$, $D_{Geom}$ and $D_{Sig}$
+	\item More than two-thirds (23 times on 30)  when based on learned metrics $D$ or  $D_{\mathcal{H}}$.
 \end{enumerate}
 % i) less than one-third of the data when based on $d_A$, $d_B$ or $d_F$, ii) slightly more than one-third for  $\mbox{\sc dtw}$ and $d_{B-\mbox{\sc dtw}}$ and iii) more than two-thirds (23 times on 30)  when based on  $D$ or  $D_{\mathcal{H}}$.
 Particularly, note that for nearly all datasets for which an uni-modal metric succeeds,  the {\sc m}$^2${\sc tml} metrics succeed similarly or lead to equivalent results.  
-However, for  several challenging datasets ({\it e.g.} FaceFour, Beef, FaceUCR, SonyAIBO, BME) {\sc m}$^2${\sc tml} realizes drastic improvements, to the best of our knowledge never achieved before  for these challenging public data. For instance, the impressive scores of 3\% obtained for Beef against an  error rate  varying from 30\% to 50\% for alternative metrics,   and of 0\% obtained for FaceFour  v.s. 13\% to 23\% for alternative metrics.  Finally, $D$ and $D_{\mathcal{H}}$ are all the more outperforming if only compared to the standard metrics $d_A$ (the Euclidean distance) and {\sc dtw}. \\
-Thanks to the $L_1$ regularization, the learned {\sc svm} reveals  the features that most differentiate positive from negative pairs.  Table \ref{tab-feature} shows the sparse, muti-modal and multi-scale potential of {\sc m}$^2${\sc tml} approach.  It gives for each dataset, the weights of the top five 'discriminative' features that contribute to the definition of $D$.  For instance,   for FaceFour $D$ reaches the 0\% by combining, in the order of importance, the behavior,  frequential and amplitude modalities, at the global ($I^0$) and  local ($I^4$, $I^5$, $I^2$) scales. For Beef, besides the impressive error rate of 3\%, the learned model is very sparse as $D$ involves only the behavior modality based on   the segment $I^3$ ($d_B^3$). Similarly for Coffee, the obtained 0\% involves  only the behavior and frequential modalities at several scales. \\ 
-In Fig.  \ref{fig:w} we plot the  the weights  of all features for SonyAIBO case as an example, that illustrates  the sparsity of the {\sc m}$^2${\sc tml} approach. In summary, we can  emphasize  that for almost all datasets, the definition of  $D$ involves no more than five features (the most contributive ones), that  assesses not only the model's sparsity but also  the representativeness of the revealed features.
+However, for  several challenging datasets ({\it e.g.} FaceFour, Beef, FaceUCR, SonyAIBO, BME), {\sc m}$^2${\sc tml} realizes drastic improvements, to the best of our knowledge never achieved before  for these challenging public data. For instance, the impressive scores of 3\% obtained for Beef against an  error rate  varying from 30\% to 50\% for alternative metrics,   and of 0\% obtained for FaceFour  v.s. 13\% to 23\% for alternative metrics.  Finally, $D$ and $D_{\mathcal{H}}$ are all the more outperforming if only compared to the standard metrics $d_A$ (the Euclidean distance) and {\sc dtw}. 
+
+\noindent If we compare the \textit{a priori} combined metrics ($D_{Lin}$, $D_{Geom}$, $D_{Sig}$) based on only the unimodal metrics involved in the combination (either $d_A$ and $d_B$ or $\mbox{\sc dtw}$ and $d_{B-\mbox{\sc dtw}}$), we observe that \textit{a priori} combined metrics achieved on two-third of the data with an equivalent or better score. Compared to the learnt metrics ($D$, $D_{\mathcal{H}}$), the results are globally similar except for 8 datasets where the learned metrics perform better (FaceFour, Beef, ECG5Days, FaceUCR, SonyAIBO, PowerCons, BME, UMD) and one where the \textit{a priori} combined metrics perform better (OSULeaf). Note that the combined metric $D_{Sig}$ is limited to two components and can't be easily extend to other metrics in its combination. $D_{Lin}$ and $D_{Geom}$ could be easily extended and a proposition could be:
+\begin{align}
+	D_{Lin}(\textbf{x}_i,\textbf{x}_j) = \sum\limits_{h=1}^{p} \alpha_h d_h(\textbf{x}_i,\textbf{x}_j) \\
+	D_{Geom}(\textbf{x}_i,\textbf{x}_j) = \prod\limits_{h=1}^{p} \alpha_h d_h(\textbf{x}_i,\textbf{x}_j)
+\end{align}
+However, by considering $p$ metrics $d_h$ the resulting models requires to optimize $p$ parameters. The grid search to find the best parameters $\alpha_h$ can become time consuming. \\
+%\begin{itemize}
+%	\item a priori vs unimodal : juste en prenant en compte les unimodales associées (dA,dB) les métriques combinées atteignent des scores équivalents ou meilleurs (CincECGTorso) sur les 2/3 des bases.
+%	\item a priori vs learnt metric : on observe que les métriques apprises atteignent des scores similaires aux métriques a priori sauf sur certaines bases où la métrique apprise est meilleure (FaceFour, Beef, ECG5Days, FaceUCR, SonyAIBO, PowerCons, BME, UMD) et une seule où la métrique combinée a priori est meilleure (OSULeaf).
+%	\item l'inconvénient de la métrique a priori est qu'elle ne permet de combiner que 2 modalités au niveau global. Dans le cadre de la métrique linéaire et exponentielle, on pourrait facilement étendre en ajoutant des métriques. Par exemple : $D_Lin = \sum\limits_{h=1}^{p} \alpha_h d_h$. L'inconvénient est qu'il y aurait autant de paramètres à optimiser qu'il y aurait de métriques 
+%\end{itemize}
+
+In the second part,  we perform a graphical analysis for a global comparison on the whole datasets.  In Fig. \ref{fig:error2}-a,  each dataset is projected according to, on the x-axis its best error rate obtained for $D$ and  $D_{\mathcal{H}}$, and on y-axis  its best performance w.r.t  the standard metrics $d_A$  and  {\sc dtw}. In Fig. \ref{fig:error2}-b,  the y-axis is related to the best error rate w.r.t {\sc dtw} and $d_{B-\mbox{\sc dtw}}$, the two most performant uni-modal metrics. For both plots we can note that the datasets are principally  projected above the first bisector, indicating higher error rates mostly obtained for alternative metrics than for {\sc m}$^2${\sc tml}. For the less challenging datasets (near the origin of each graph), although almost projected near the bisector denoting equal performances for the compared metrics, {\sc m}$^2${\sc tml}  still  bring improvements with projections clearly positioned  above the bisector.  Finally, from Fig. \ref{fig:error2} (b) we can see that {\sc m}$^2${\sc tml} metrics perform significantly lower than $d_{B-\mbox{\sc dtw}}$ on OSUleaf, while InlineSkate dataset remains challenging for all studied metrics.
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[]{\includegraphics[width = 3in]{Stand_m2tml}}
+	\subfloat[]{\includegraphics[width = 3in]{Unimod_m2tml}} \   
+	\caption{(a) Standard (Euclidean distance $d_A$  and {\sc dtw}) {\it vs.} {\sc m}$^2${\sc tml} ($D$ and $D_{\mathcal{H}}$) metrics. (b) Best Uni-modal ({\sc dtw} and $d_{B-\mbox{\sc dtw}}$) {\it vs.} {\sc m}$^2${\sc tml} ($D$  and $D_{\mathcal{H}}$) metrics.}
+	\label{fig:error2}
+\end{figure}
+
+
+\subsection{Analysis of the discriminative features}
+For the learnt metric $D$, thanks to the $L_1$ regularization, the learned {\sc svm} reveals the features that most differentiate pull from push pairs. We recall that the weight for each feature can be analyzed through the weight vector $\textbf{w}$ obtained by learning the {\sc svm} classifier. Table \ref{tab-feature} shows the sparse, muti-modal and multi-scale potential of {\sc m}$^2${\sc tml} approach.  It gives for each dataset, the weights of the top five 'discriminative' features that contribute to the definition of $D$.  For instance,   for FaceFour $D$ reaches an error of 0\% by combining, in the order of importance, the behavior $d_{B-\mbox{\sc dtw}}$,  frequential $d_F$ and amplitude {\sc dtw} modalities, at the global ($I^0$) and  local ($I^4$, $I^5$, $I^2$) scales. For Beef, besides the impressive error rate of 3\%, the learned model is very sparse as $D$ involves only the behavior modality based on the segment $I^3$ ($d_B^3$). Similarly for Coffee, the obtained 0\% involves  only the behavior and frequential modalities at several scales. Note that if we look at only the most discriminative feature (1st column), the {\sc m}$^2${\sc tml} method helps to localize discriminative modality and a specific temporal scale that could not be easily guessed \textit{a priori} (\textit{e.g.}, Lightning7: behavior modality on the segment $I_6$ ($d_{B-\mbox{\sc dtw}}^6$), OliveOil: frequential modality on the segment $I_5$ ($d_F^5$), TwoLeadECG: behavior modality on the segment $I_4$ ($d_{B-\mbox{\sc dtw}}^4$)). \\ 
+
+\noindent In Fig. \ref{fig:w}, we plot the weights of all features for SonyAIBO, Beef, CincECGtorso and FaceFour cases as an example. It illustrates both the sparsity of the {\sc m}$^2${\sc tml} approach (Beef, CincECGtorso and FaceFour) and the ability of the algorithm to combine all the features into the metric $D$ (SonyAIBO). In particular, the approach is able to either select one single feature (Beef) or combine several selected features (CinCECGTorso, FaceFour). Fig. \ref{fig:temporal_rep} illustrates the temporal locations of the most discriminative features for these datasets. Note that from looking at the temporal representation, it is not easy to determine \textit{a priori} which modality (value, behavior, frequential) and at which temporal scale is the most discriminative feature to separate the classes.
+
+\noindent In summary, we can emphasize that for almost all datasets, the definition of  $D$ involves no more than five features (the most contributive ones), that assesses not only the model's sparsity but also  the representativeness of the revealed features.
 \begin{table}[h!]
 	%	\small
 	\centering
@@ -256,40 +325,67 @@ In Fig.  \ref{fig:w} we plot the  the weights  of all features for SonyAIBO case
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{images/SonyAIBO_weight_V2}
-	\caption{SonyAIBO:  {\sc m}$^2${\sc tml} feature weights}
+	\subfloat[SonyAIBO]{\includegraphics[width = 3in]{SonyAIBO_weight_V2}} 
+	\subfloat[Beef]{\includegraphics[width = 3in]{Beef_NoDelay_bar}}\    
+	\subfloat[CinC ECG torso]{\includegraphics[width = 3in]{CinC_ECG_torso_NoDelay_bar}}
+	\subfloat[FaceFour]{\includegraphics[width = 3in]{FaceFour_DTW_bar}} 
+	\caption{{\sc m}$^2${\sc tml} feature weights for 4 datasets.}
 	\label{fig:w}
 \end{figure}
 
-In the second part,  we perform a graphical analysis for a global comparison on the whole datasets.  In Fig. \ref{fig:error1},  each dataset is projected according to, on the x-axis its best error rate obtained for $D$ and  $D_{\mathcal{H}}$, and on y-axis  its best performance w.r.t  the standard metrics $d_A$  and  {\sc dtw}. In Fig. \ref{fig:error2},  the y-axis is related to the best error rate w.r.t {\sc dtw} and $d_{B-\mbox{\sc dtw}}$, the two most performant uni-modal metrics. For both plots we can note that the datasets are principally  projected above the first bisector, indicating higher error rates mostly obtained for alternative metrics than for {\sc m}$^2${\sc tml}. For the less challenging datasets, although almost projected near the bisector denoting equal performances for the compared metrics, {\sc m}$^2${\sc tml}  still  bring improvements with projections clearly positioned  above the bisector.  Finally, from Fig. \ref{fig:error2} we can see that {\sc m}$^2${\sc tml} metrics perform significantly lower than $d_{B-\mbox{\sc dtw}}$ on OSUleaf, while InlineSkate dataset remains challenging for all studied metrics.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{images/Stand_m2tml}
-	\caption{Standard (Euclidean distance $d_A$  and {\sc dtw}) {\it vs.} {\sc m}$^2${\sc tml} ($D$ and $D_{\mathcal{H}}$) metrics }
-	\label{fig:error1}
-\end{figure}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.6\linewidth]{images/Unimod_m2tml}
-	\caption{Best Uni-modal ({\sc dtw} and $d_{B-\mbox{\sc dtw}}$) {\it vs.} {\sc m}$^2${\sc tml} ($D$  and $D_{\mathcal{H}}$) metrics }
-	\label{fig:error2}
+	\subfloat[SonyAIBO]{\includegraphics[width = 2.7in]{SonyAIBORobotSurface_NoDelay_TS}} 
+	\subfloat[Beef]{\includegraphics[width = 2.7in]{Beef_NoDelay_TS}} \   
+	\subfloat[CinC ECG torso]{\includegraphics[width = 2.7in]{CinC_ECG_torso_NoDelay_TS}}
+	\subfloat[FaceFour]{\includegraphics[width = 2.7in]{FaceFour_DTW_TS}} 
+	\caption{Temporal representation of the top {\sc m}$^2${\sc tml} feature weights for 4 datasets.}
+	\label{fig:temporal_rep}
 \end{figure}
 
 
-In the last part we compare the global effect of the alternative and {\sc m}$^2${\sc tml} metrics  on the 1-NN neighborhood distribution and class discrimination. For that, an  {\sc mds}\footnote{matlab function: mdscale for metrics and non metrics} is used to vizualize  the distribution of samples according to their pairwise  dissimilarities.
-For instance, for FaceFour, Fig. \ref{fig:mds} shows the first obtained plans and their corresponding stresses, the classes being indicated in different symbols and colors. We can see distinctly the effect of the learned  $D$ that leads to  more compact and more isolated classes with  robust  neighborhoods for 1-NN classification ({\it i.e.} closer positive pairs and far away negative pairs) than  the best alternative metric $d_{B-\mbox{\sc dtw}}$ that shows more overlapping classes and heterogeneous neighborhoods.
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.6\linewidth]{images/Stand_m2tml}
+%	\caption{Standard (Euclidean distance $d_A$  and {\sc dtw}) {\it vs.} {\sc m}$^2${\sc tml} ($D$ and $D_{\mathcal{H}}$) metrics }
+%	\label{fig:error1}
+%\end{figure}
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.6\linewidth]{images/Unimod_m2tml}
+%	\caption{Best Uni-modal ({\sc dtw} and $d_{B-\mbox{\sc dtw}}$) {\it vs.} {\sc m}$^2${\sc tml} ($D$  and $D_{\mathcal{H}}$) metrics }
+%	\label{fig:error2}
+%\end{figure}
+
 \begin{figure}[h!]
 	\centering
-	% \includegraphics[width=0.6\linewidth]{images/FaceFourALL_DTWDB_1} \hspace{-0.45cm}
-	% \includegraphics[width=0.6\linewidth]{images/FaceFourALL_D_Delay_1}
-	\includegraphics[width=1\linewidth]{images/FaceFour}
-	\caption{{\sc mds} visualization of the $d_{B-\mbox{\sc dtw}}$ (left) and $D$ (right) dissimilarities for FaceFour data}
+	\subfloat[FaceFour ($d_{B-\mbox{\sc dtw}}$, stress: 20,1\%)]{\includegraphics[width = 3in]{FaceFourALL_DTWDB_2}} 
+	\subfloat[FaceFour ($D$, stress: 17,2\%)]{\includegraphics[width = 3in]{FaceFourALL_D_Delay_2}} \  
+%	\subfloat[]{\includegraphics[width = 3in]{CinC_ECG_torso_MDS_DA}} 
+%	\subfloat[]{\includegraphics[width = 3in]{CinC_ECG_torso_MDS_After}}  
+	\caption{{\sc mds} visualization of the $d_{B-\mbox{\sc dtw}}$ (Fig. a) and $D$ (Fig. b) dissimilarities for FaceFour}
 	\label{fig:mds}
-\end{figure} 
+\end{figure}
 
 \newpage
+\subsection{Effect on the neighborhood before and after learning}
+In the last part, we compare the global effect of the alternative and {\sc m}$^2${\sc tml} metrics  on the 1-NN neighborhood distribution and class discrimination. For that, a MultiDimensional Scaling ({\sc mds})\footnote{Matlab function: mdscale for metrics and non metrics} is used to visualize the distribution of samples according to their pairwise  dissimilarities. Briefly, {\sc mds} is a method of visualizing the proximity between samples in a dataset. A {\sc mds} algorithm aims to place each sample in $P$-dimensional space (in general, $P=2$ or $3$) such that the between-object distances are preserved as well as possible. Classical {\sc mds} takes an input matrix giving dissimilarities between pairs of samples and outputs a coordinate for each sample whose configuration minimizes a loss function called stress. Note that the {\sc mds} representation has no link with the dissimilarity space representation whose dimensions are basic temporal metrics.
+
+For FaceFour, Fig. \ref{fig:mds} shows the first obtained plans and their corresponding stresses, the classes being indicated in different symbols and colors. We can see distinctly the effect of the learned  $D$ that leads to  more compact and more isolated classes with  robust  neighborhoods for 1-NN classification ({\it i.e.} closer pull pairs and far away push pairs) than  the best alternative metric $d_{B-\mbox{\sc dtw}}$ that shows more overlapping classes and heterogeneous neighborhoods.
+%\begin{figure}[h!]
+%	\centering
+%	% \includegraphics[width=0.6\linewidth]{images/FaceFourALL_DTWDB_1} \hspace{-0.45cm}
+%	% \includegraphics[width=0.6\linewidth]{images/FaceFourALL_D_Delay_1}
+%	\includegraphics[width=1\linewidth]{FaceFour}
+%	\caption{{\sc mds} visualization of the $d_{B-\mbox{\sc dtw}}$ (left) and $D$ (right) dissimilarities for FaceFour data}
+%	\label{fig:mds}
+%\end{figure} 
+
 \section{Conclusion of the chapter}
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "../roque-phdthesis"
 %%% End: 
+% This paper proposes a new Multi-modal and Multi-scale Temporal Metric Learning ({\sc m}$^2${\sc tml}) framework  for large margin time series nearest neighbors classification. 
+% For this, time series are embedded  into a  dissimilarity space  where a  function combining several modalities at different temporal scales can be learned,  driven jointly by a pairwise {\sc svm} and nearest neighbors metric learning framework.  Thanks to the 'kernel trick',  the {\sc m}$^2${\sc tml} approach  provides a temporal metric learning solution for linear as well as  non linear contexts. A sparse and interpretable variant of the solution  shows the ability of the learned temporal metric to localize accurately discriminative  modalities as well as their temporal scales.   
+The large conducted experiments and the impressive performances obtained  attest the efficiency of the   learned {\sc m}$^2${\sc tml} metrics for time series nearest neighbors classification. Finally, let us underline the merit of the {\sc m}$^2${\sc tml}  solution, that not only leads to equivalent or better performances from the standard metrics (Euclidean distance, Dynamic time warping), but also provides a comprehensive and fine-grained information about  which modalities are mostly discriminant, how they should be combined and precisely at which temporal granularity. 

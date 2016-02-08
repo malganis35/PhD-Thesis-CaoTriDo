@@ -103,7 +103,6 @@
   \strng{namehash}{AZTP1}
   \strng{fullhash}{AZTP1}
   \field{labelalpha}{AT10}
-  \field{extraalpha}{1}
   \field{sortinit}{A}
   \field{abstract}{%
   Zero-inflated time series data are commonly encountered in many applications,
@@ -134,55 +133,6 @@
   \field{year}{2010}
 \endentry
 
-\entry{Abraham2010b}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Abraham}{A.}%
-     {Zubin}{Z.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Tan}{T.}%
-     {PN}{P.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{AZTP2}
-  \strng{fullhash}{AZTP2}
-  \field{labelalpha}{AT10}
-  \field{extraalpha}{2}
-  \field{sortinit}{A}
-  \field{abstract}{%
-  Zero-inflated time series data are commonly encountered in many applications,
-  including climate and ecological modeling, disease monitoring, manufacturing
-  defect detection, and traffic monitoring. Such data often leads to poor model
-  fitting using standard regression methods because they tend to underestimate
-  the frequency of zeros and the magnitude of non-zero values. This paper
-  presents an integrated framework that simultaneously performs classification
-  and regression to accurately predict future values of a zero-inflated time
-  series. A regression model is initially applied to predict the value of the
-  time series. The regression output is then fed into a classification model to
-  determine whether the predicted value should be adjusted to zero. Our
-  regression and classification models are trained to optimize a joint
-  objective function that considers both classification errors on the time
-  series and regression errors on data points that have non-zero values. We
-  demonstrate the effectiveness of our framework in the context of its
-  application to a precipitation downscaling problem for climate impact
-  assessment studies. Read More:
-  http://epubs.siam.org/doi/abs/10.1137/1.9781611972801.57%
-  }
-  \field{isbn}{978-0-89871-703-7}
-  \field{pages}{653\bibrangedash 664}
-  \field{title}{{An Integrated Framework for Simultaneous Classification and
-  Regression of Time-Series Data}}
-  \verb{url}
-  \verb https://siam.org/proceedings/datamining/2010/dm10{\_}057{\_}abrahamz.pd
-  \verb f
-  \endverb
-  \field{journaltitle}{Proc of the ACM SIGKDD Int'l Conf on Data Mining}
-  \field{year}{2010}
-\endentry
-
 \entry{Berndt1994a}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -201,50 +151,6 @@
   \strng{namehash}{BDCJ1}
   \strng{fullhash}{BDCJ1}
   \field{labelalpha}{BC94}
-  \field{extraalpha}{1}
-  \field{sortinit}{B}
-  \field{abstract}{%
-  Knowledge discovery in databases presents many interesting challenges within
-  the context of providing computer tools for exploring large data archives.
-  Electronic data repositories are growing qulckiy and contain data from
-  commercial, scientific, and other domains. Much of this data is inherently
-  temporal, such as stock prices or NASA telemetry data. Detecting patterns in
-  such data streams or time series is an important knowledge discovery task.
-  This paper describes some primary experiments with a dynamic programming
-  approach to the problem. The pattern detection algorithm is based on the
-  dynamic time warping technique used in the speech recognition field.
-  Keywords: dynamic programming, dynamic time warping, knowledge discovery,
-  pattern analysis, time series.%
-  }
-  \field{pages}{359\bibrangedash 370}
-  \field{title}{{Using dynamic time warping to find patterns in time series}}
-  \verb{url}
-  \verb http://www.aaai.org/Papers/Workshops/1994/WS-94-03/WS94-03-031.pdf
-  \endverb
-  \field{volume}{398}
-  \field{journaltitle}{Workshop on Knowledge Knowledge Discovery in Databases}
-  \field{year}{1994}
-\endentry
-
-\entry{Berndt1994c}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Berndt}{B.}%
-     {Donald}{D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Clifford}{C.}%
-     {James}{J.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{dynamic programming,dynamic time warping,knowledge discovery,pat,tern
-  analysis,time series}
-  \strng{namehash}{BDCJ1}
-  \strng{fullhash}{BDCJ1}
-  \field{labelalpha}{BC94}
-  \field{extraalpha}{2}
   \field{sortinit}{B}
   \field{abstract}{%
   Knowledge discovery in databases presents many interesting challenges within
@@ -660,56 +566,6 @@
   \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine
   Intelligence}
   \field{year}{2002}
-\endentry
-
-\entry{Caiado2006c}{article}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Caiado}{C.}%
-     {Jorge}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Crato}{C.}%
-     {Nuno}{N.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Pe{\~{n}}a}{P.}%
-     {Daniel}{D.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{Autocorrelation function,Classification,Clustering,Euclidean
-  distance,Periodogram,Stationary and non-stationary time series}
-  \strng{namehash}{CJCNPD1}
-  \strng{fullhash}{CJCNPD1}
-  \field{labelalpha}{CCP06}
-  \field{sortinit}{C}
-  \field{abstract}{%
-  The statistical discrimination and clustering literature has studied the
-  problem of identifying similarities in time series data. Some studies use
-  non-parametric approaches for splitting a set of time series into clusters by
-  looking at their Euclidean distances in the space of points. A new measure of
-  distance between time series based on the normalized periodogram is proposed.
-  Simulation results comparing this measure with others parametric and
-  non-parametric metrics are provided. In particular, the classification of
-  time series as stationary or as non-stationary is discussed. The use of both
-  hierarchical and non-hierarchical clustering algorithms is considered. An
-  illustrative example with economic time series data is also presented. ©
-  2005 Elsevier B.V. All rights reserved.%
-  }
-  \verb{doi}
-  \verb 10.1016/j.csda.2005.04.012
-  \endverb
-  \field{isbn}{01679473}
-  \field{issn}{01679473}
-  \field{number}{10}
-  \field{pages}{2668\bibrangedash 2684}
-  \field{title}{{A periodogram-based metric for time series classification}}
-  \field{volume}{50}
-  \field{journaltitle}{Computational Statistics and Data Analysis}
-  \field{year}{2006}
 \endentry
 
 \entry{Cover1967b}{article}{}
@@ -1213,98 +1069,6 @@
   \field{year}{2011}
 \endentry
 
-\entry{Douzal-Chouakria2012a}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Douzal-Chouakria}{D.-C.}%
-     {Ahlame}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Amblard}{A.}%
-     {C{\'{e}}cile}{C.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{Classification trees,Learning metric,Supervised classification,Time
-  series proximity measures}
-  \strng{namehash}{DCAAC2}
-  \strng{fullhash}{DCAAC2}
-  \field{labelalpha}{DCA12}
-  \field{sortinit}{D}
-  \field{abstract}{%
-  This paper proposes an extension of classification trees to time series input
-  variables. A new split criterion based on time series proximities is
-  introduced. First, the criterion relies on an adaptive (i.e., parameterized)
-  time series metric to cover both behaviors and values proximities. The
-  metrics parameters may change from one internal node to another to achieve
-  the best bisection of the set of time series. Second, the criterion involves
-  the automatic extraction of the most discriminating subsequences. The
-  proposed time series classification tree is applied to a wide range of
-  datasets: public and new, real and synthetic, univariate and multivariate
-  data. We show, through the experiments performed in this study, that the
-  proposed tree outperforms temporal trees using standard time series distances
-  and performs well compared to other competitive time series classifiers. ©
-  2011 Elsevier Ltd. All rights reserved.%
-  }
-  \verb{doi}
-  \verb 10.1016/j.patcog.2011.08.018
-  \endverb
-  \field{issn}{00313203}
-  \field{number}{3}
-  \field{pages}{1076\bibrangedash 1091}
-  \field{title}{{Classification trees for time series}}
-  \field{volume}{45}
-  \field{journaltitle}{Pattern Recognition}
-  \field{year}{2012}
-\endentry
-
-\entry{Douzal-Chouakria2010}{article}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Douzal-Chouakria}{D.-C.}%
-     {A.}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Diallo}{D.}%
-     {A.}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Giroud}{G.}%
-     {F.}{F.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{Classification,Clustering,Distance,Genes expression profiles,Time
-  series}
-  \strng{namehash}{DCADAGF1}
-  \strng{fullhash}{DCADAGF1}
-  \field{labelalpha}{DCDG10}
-  \field{sortinit}{D}
-  \field{abstract}{%
-  This paper addresses the clustering and classification of active genes during
-  the process of cell division. Cell division ensures the proliferation of
-  cells, but it becomes increasingly abnormal in cancer cells. The genes
-  studied here are described by their expression profiles (i.e. time series)
-  during the cell division cycle. This work focuses on evaluating the
-  efficiency of four major metrics for clustering and classifying genes
-  expression profiles and is based on a random-periods model for the expression
-  of cell-cycle genes. The model accounts for the observed attenuation in cycle
-  amplitude or duration, variations in the initial amplitude, and drift in the
-  expression profiles. ?? 2009 Elsevier B.V. All rights reserved.%
-  }
-  \verb{doi}
-  \verb 10.1016/j.patrec.2010.05.008
-  \endverb
-  \field{issn}{01678655}
-  \field{title}{{A random-periods model for the comparison of a metrics
-  efficiency to classify cell-cycle expressed genes}}
-  \field{journaltitle}{Pattern Recognition Letters}
-  \field{year}{2010}
-\endentry
-
 \entry{Chouakria2007}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -1344,6 +1108,52 @@
   proximity}}
   \field{journaltitle}{Advances in Data Analysis and Classification}
   \field{year}{2007}
+\endentry
+
+\entry{Deza2009}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Deza}{D.}%
+     {Michel~Marie}{M.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Deza}{D.}%
+     {Elena}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DMMDE1}
+  \strng{fullhash}{DMMDE1}
+  \field{labelalpha}{DD09}
+  \field{sortinit}{D}
+  \field{abstract}{%
+  Distance metrics and distances have become an essential tool in many areas of
+  pure and applied Mathematics, and this encyclopedia is the first one to treat
+  the ...%
+  }
+  \field{booktitle}{Media}
+  \verb{doi}
+  \verb 10.1007/978-3-642-00234-2
+  \endverb
+  \verb{eprint}
+  \verb 0505065
+  \endverb
+  \field{isbn}{9783642002335}
+  \field{issn}{14338351}
+  \field{pages}{590}
+  \field{title}{{Encyclopedia of Distances}}
+  \verb{url}
+  \verb http://www.springerlink.com/index/10.1007/978-3-642-00234-2
+  \endverb
+  \field{volume}{2006}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/Google Drive/Th{\`{e}}se/Bibliographie
+  \verb /Livre/Deza - 2014 - Encyclopedia of Distances - Livre.pdf:pdf
+  \endverb
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{arXiv:gr-qc}
+  \field{year}{2009}
 \endentry
 
 \entry{Denoeux1995}{article}{}
@@ -1552,55 +1362,6 @@
   \field{year}{2008}
 \endentry
 
-\entry{DUrso2009}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {D'Urso}{D.}%
-     {Pierpaolo}{P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Maharaj}{M.}%
-     {Elizabeth~Ann}{E.~A.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{Autocorrelation function,Crisp C-means clustering,Fuzzy C-means
-  clustering,Switching time series,Time series}
-  \strng{namehash}{DPMEA1}
-  \strng{fullhash}{DPMEA1}
-  \field{labelalpha}{DM09}
-  \field{sortinit}{D}
-  \field{abstract}{%
-  The traditional approaches to clustering a set of time series are generally
-  applicable if there is a fixed underlying structure to the time series so
-  that each will belong to one cluster or the other. However, time series often
-  display dynamic behaviour in their evolution over time. This dynamic
-  behaviour should be taken into account when attempting to cluster time
-  series. For instance, during a certain period, a time series might belong to
-  a certain cluster; afterwards its dynamics might be closer to that of another
-  cluster. In this case, the traditional clustering approaches are unlikely to
-  find and represent the underlying structure in the given time series. This
-  switch from one time state to another, which is typically vague, can be
-  naturally treated following a fuzzy approach. This paper proposes a fuzzy
-  clustering approach based on the autocorrelation functions of time series, in
-  which each time series is not assigned exclusively to only one cluster, but
-  it is allowed to belong to different clusters with various membership
-  degrees. ?? 2009 Elsevier B.V. All rights reserved.%
-  }
-  \verb{doi}
-  \verb 10.1016/j.fss.2009.04.013
-  \endverb
-  \field{isbn}{0165-0114}
-  \field{issn}{01650114}
-  \field{number}{24}
-  \field{pages}{3565\bibrangedash 3589}
-  \field{title}{{Autocorrelation-based fuzzy clustering of time series}}
-  \field{volume}{160}
-  \field{journaltitle}{Fuzzy Sets and Systems}
-  \field{year}{2009}
-\endentry
-
 \entry{Do2012}{article}{}
   \name{author}{4}{}{%
     {{}%
@@ -1733,60 +1494,6 @@
   \field{year}{1976}
 \endentry
 
-\entry{Diaz2010}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {D{\'{\i}}az}{D.}%
-     {Sonia~P{\'{e}}rtega}{S.~P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Vilar}{V.}%
-     {Jos{\'{e}}~A.}{J.~A.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{ARMA processes,Dissimilarity measures,Local linear
-  regression,Non-linear processes,Stationary and non-stationary processes,Time
-  series clustering}
-  \strng{namehash}{DSPVJA1}
-  \strng{fullhash}{DSPVJA1}
-  \field{labelalpha}{DV10}
-  \field{sortinit}{D}
-  \field{abstract}{%
-  One key point in cluster analysis is to determine a similarity or
-  dissimilarity measure between data objects. When working with time series,
-  the concept of similarity can be established in different ways. In this
-  paper, several non-parametric statistics originally designed to test the
-  equality of the log-spectra of two stochastic processes are proposed as
-  dissimilarity measures between time series data. Their behavior in time
-  series clustering is analyzed throughout a simulation study, and compared
-  with the performance of several model-free and model-based dissimilarity
-  measures. Up to three different classification settings were considered: (i)
-  to distinguish between stationary and non-stationary time series, (ii) to
-  classify different ARMA processes and (iii) to classify several non-linear
-  time series models. As it was expected, the performance of a particular
-  dissimilarity metric strongly depended on the type of processes subjected to
-  clustering. Among all the measures studied, the non-parametric distances
-  showed the most robust behavior.%
-  }
-  \verb{doi}
-  \verb 10.1007/s00357-010-9064-6
-  \endverb
-  \field{issn}{0176-4268}
-  \field{number}{3}
-  \field{pages}{333\bibrangedash 362}
-  \field{title}{{Comparing Several Parametric and Nonparametric Approaches to
-  Time Series Clustering: A Simulation Study}}
-  \verb{url}
-  \verb http://www.scopus.com/inward/record.url?eid=2-s2.0-84871904170{\&}partn
-  \verb erID=tZOtx3y1
-  \endverb
-  \field{volume}{27}
-  \field{journaltitle}{Journal of Classification}
-  \field{year}{2010}
-\endentry
-
 \entry{Fan2008}{article}{}
   \name{author}{3}{}{%
     {{}%
@@ -1861,59 +1568,35 @@
   \field{year}{2013}
 \endentry
 
-\entry{Faloutsos1994}{article}{}
+\entry{Frambourg2013}{article}{}
   \name{author}{3}{}{%
     {{}%
-     {Faloutsos}{F.}%
-     {Christos}{C.}%
+     {Frambourg}{F.}%
+     {C{\'{e}}dric}{C.}%
      {}{}%
      {}{}}%
     {{}%
-     {Ranganathan}{R.}%
-     {M.}{M.}%
+     {Douzal-chouakria}{D.-c.}%
+     {Ahlame}{A.}%
      {}{}%
      {}{}}%
     {{}%
-     {Manolopoulos}{M.}%
-     {Yannis}{Y.}%
+     {Gaussier}{G.}%
+     {Eric}{E.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{FCRMMY1}
-  \strng{fullhash}{FCRMMY1}
-  \field{labelalpha}{FRM94}
+  \strng{namehash}{FCDcAGE1}
+  \strng{fullhash}{FCDcAGE1}
+  \field{labelalpha}{FDcG13}
   \field{sortinit}{F}
-  \field{abstract}{%
-  We present an ecient indexing method to locate 1-dimensional subsequences
-  within a collection of sequences, such that the subsequences match a given
-  (query) pattern within a specified tolerance. The idea is to map each data
-  sequence into a small set of multidimensional rectangles in feature space.
-  Then, these rectangles can be readily indexed using traditional spatial
-  access methods, like the R*-tree [9]. In more detail, we use a sliding window
-  over the data sequence and extract its features; the result is a trail in
-  feature space. We propose an efficient and effective algorithm to divide such
-  trails into sub-trails, which are subsequently represented by their Minimum
-  Bounding Rectangles (MBRs). We also examine queries of varying lengths, and
-  we show how to handle each case eciently. We implemented our method and
-  carried out experiments on synthetic and real data (stock price movements).
-  We compared the method to sequential scanning, which is the only obvious
-  competitor. The results were excellent: our method accelerated the search
-  time from 3 times up to 100 times.%
-  }
-  \verb{doi}
-  \verb 10.1145/191843.191925
+  \field{title}{{Apprentissage de couplages pour la discrimination de
+  s{\'{e}}ries temporelles}}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/Desktop/22488{\_}FRAMBOURG{\_}2013{\_}
+  \verb archivage.pdf:pdf
   \endverb
-  \field{isbn}{0897916395}
-  \field{issn}{01635808}
-  \field{number}{2}
-  \field{pages}{419\bibrangedash 429}
-  \field{title}{{Fast subsequence matching in time-series databases}}
-  \verb{url}
-  \verb http://portal.acm.org/citation.cfm?doid=191843.191925
-  \endverb
-  \field{volume}{23}
-  \field{journaltitle}{ACM SIGMOD Record}
-  \field{year}{1994}
+  \field{year}{2013}
 \endentry
 
 \entry{Goldberger2004}{article}{}
@@ -2478,65 +2161,6 @@
   \field{year}{1985}
 \endentry
 
-\entry{Kruskall1983}{book}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Kruskall}{K.}%
-     {J.}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Liberman}{L.}%
-     {M.}{M.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{KJLM1}
-  \strng{fullhash}{KJLM1}
-  \field{labelalpha}{KL83}
-  \field{sortinit}{K}
-  \field{booktitle}{TimeWarps, String Edits and Macromolecules}
-  \field{edition}{Addison-We}
-  \field{title}{{The symmetric time warping algorithm: From continuous to
-  discrete. In TimeWarps}}
-  \field{year}{1983}
-\endentry
-
-\entry{Keogh2001a}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Keogh}{K.}%
-     {E~J}{E.~J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Pazzani}{P.}%
-     {M~J}{M.~J.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{dynamic time warping}
-  \strng{namehash}{KEJPMJ1}
-  \strng{fullhash}{KEJPMJ1}
-  \field{labelalpha}{KP01}
-  \field{sortinit}{K}
-  \field{abstract}{%
-  this paper we address both these problems by introducing a
-  modification$\backslash$nof DTW. The crucial difference is in the features we
-  consider when$\backslash$nattempting to find the correct warping. Rather than
-  use the raw data,$\backslash$nwe consider only the (estimated) local
-  derivatives of the data%
-  }
-  \verb{doi}
-  \verb 10.1137/1.9781611972719.1
-  \endverb
-  \field{pages}{1\bibrangedash 11}
-  \field{title}{{Derivative Dynamic Time Warping}}
-  \field{journaltitle}{Proceedings of the 1st SIAM International Conference on
-  Data Mining}
-  \field{year}{2001}
-\endentry
-
 \entry{Keogh2004}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -2591,51 +2215,6 @@
   \field{journaltitle}{Knowledge and Information Systems}
   \field{year}{2004}
   \warn{\item Invalid format of field 'month'}
-\endentry
-
-\entry{Kakizawa1998}{article}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Kakizawa}{K.}%
-     {Yoshihide}{Y.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Shumway}{S.}%
-     {Robert~H}{R.~H.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Taniguchi}{T.}%
-     {Masanobu}{M.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{KYSRHTM1}
-  \strng{fullhash}{KYSRHTM1}
-  \field{labelalpha}{KST98}
-  \field{sortinit}{K}
-  \field{abstract}{%
-  ... Applications to problems of clustering and classifying earthquakes and
-  mining explosions are given. KEY WORDS: Chernoff; Divergence;
-  Kullback-Leibler; Minimum discrimination information; Robustness; Seismology
-  ; Spectral analysis. ... $\backslash$n%
-  }
-  \verb{doi}
-  \verb 10.1080/01621459.1998.10474114
-  \endverb
-  \field{isbn}{0162-1459$\backslash$n1537-274X}
-  \field{issn}{0162-1459}
-  \field{number}{441}
-  \field{pages}{328\bibrangedash 340}
-  \field{title}{{Discrimination and Clustering for Multivariate Time Series}}
-  \verb{url}
-  \verb http://www.tandfonline.com/doi/abs/10.1080/01621459.1998.10474114$\back
-  \verb slash$npapers2://publication/doi/10.1080/01621459.1998.10474114
-  \endverb
-  \field{volume}{93}
-  \field{journaltitle}{Journal of the American Statistical Association}
-  \field{year}{1998}
 \endentry
 
 \entry{Kijsirikul2002}{article}{}
@@ -3249,51 +2828,6 @@
   \field{year}{2002}
 \endentry
 
-\entry{Rabiner1989}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Rabiner}{R.}%
-     {L.R.}{L.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{RL1}
-  \strng{fullhash}{RL1}
-  \field{labelalpha}{Rab89}
-  \field{sortinit}{R}
-  \field{abstract}{%
-  This tutorial provides an overview of the basic theory of
-  hidden$\backslash$nMarkov models (HMMs) as originated by L.E. Baum and T.
-  Petrie (1966) and$\backslash$ngives practical details on methods of
-  implementation of the theory along$\backslash$nwith a description of selected
-  applications of the theory to distinct$\backslash$nproblems in speech
-  recognition. Results from a number of original$\backslash$nsources are
-  combined to provide a single source of acquiring the$\backslash$nbackground
-  required to pursue further this area of research. The
-  author$\backslash$nfirst reviews the theory of discrete Markov chains and
-  shows how the$\backslash$nconcept of hidden states, where the observation is
-  a probabilistic$\backslash$nfunction of the state, can be used effectively.
-  The theory is$\backslash$nillustrated with two simple examples, namely
-  coin-tossing, and the$\backslash$nclassic balls-in-urns system. Three
-  fundamental problems of HMMs are$\backslash$nnoted and several practical
-  techniques for solving these problems are$\backslash$ngiven. The various
-  types of HMMs that have been studied, including$\backslash$nergodic as well
-  as left-right models, are described%
-  }
-  \verb{doi}
-  \verb 10.1109/5.18626
-  \endverb
-  \field{isbn}{1558601244}
-  \field{issn}{00189219}
-  \field{number}{2}
-  \field{pages}{257\bibrangedash 286}
-  \field{title}{{A tutorial on hidden Markov models and selected applications
-  in speech recognition}}
-  \field{volume}{77}
-  \field{journaltitle}{Proceedings of the IEEE}
-  \field{year}{1989}
-\endentry
-
 \entry{Ramasso2008}{article}{}
   \name{author}{4}{}{%
     {{}%
@@ -3353,58 +2887,6 @@
   belief model : AAAApplication to athletics jumps}}
   \field{volume}{11}
   \field{journaltitle}{Pattern Analysis and Applications}
-  \field{year}{2008}
-\endentry
-
-\entry{Rydell2008a}{article}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Rydell}{R.}%
-     {Joakim}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Borga}{B.}%
-     {Magnus}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Knutsson}{K.}%
-     {Hans}{H.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{biomedical MRI,canonical correlation analysis,correlation
-  estimator,correlation methods,general linear model,locally corrupted
-  signals,medical signal processing,multivariate correlation analysis,robust
-  correlation analysis,signal detection,synthetic functional MRI data}
-  \strng{namehash}{RJBMKH1}
-  \strng{fullhash}{RJBMKH1}
-  \field{labelalpha}{RBK08}
-  \field{sortinit}{R}
-  \field{abstract}{%
-  Correlation is often used to measure the similarity between signals and is an
-  important tool in signal and image processing. In some applications it is
-  common that signals are corrupted by local bursts of noise. This adversely
-  affects the performance of signal recognition algorithms. This paper presents
-  a novel correlation estimator, which is robust to locally corrupted signals.
-  The estimator is generalized to multivariate correlation analysis (general
-  linear model, GLM, and canonical correlation analysis, CCA). Synthetic
-  functional MRI data is used to demonstrate the estimator, and its robustness
-  is shown to increase the performance of signal detection.%
-  }
-  \verb{doi}
-  \verb 10.1109/ICASSP.2008.4517644
-  \endverb
-  \field{isbn}{1424414849}
-  \field{issn}{15206149}
-  \field{pages}{453\bibrangedash 456}
-  \field{title}{{Robust correlation analysis with an application to functional
-  MRI}}
-  \verb{url}
-  \verb http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=4517644
-  \endverb
-  \field{journaltitle}{Acoustics, Speech and Signal {\ldots}}
   \field{year}{2008}
 \endentry
 
@@ -3488,66 +2970,6 @@
   \field{year}{1993}
 \endentry
 
-\entry{Son2008}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Son}{S.}%
-     {Young~Sook}{Y.~S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Baek}{B.}%
-     {Jangsun}{J.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{Clustering,Modified correlation coefficient,Pearson’s correlation
-  coefficient,Similarity,Spearmann’s correlation coefficient,Time-course gene
-  expression data}
-  \strng{namehash}{SYSBJ1}
-  \strng{fullhash}{SYSBJ1}
-  \field{labelalpha}{SB08}
-  \field{sortinit}{S}
-  \field{abstract}{%
-  Gene expression levels are often measured consecutively in time through
-  microarray experiments to detect cellular processes underlying regulatory
-  effects observed and to assign functionality to genes whose function is yet
-  unknown. Clustering methods allow us to group genes that show similar
-  time-course expression profiles and that are thus likely to be co-regulated.
-  The correlation coefficient, the most well-liked similarity measure in the
-  context of gene expression data, is not very reliable in representing the
-  association of two temporal profile patterns. Moreover, the clustering
-  methods with the correlation coefficient generate the same clustering result
-  even when the time points are permuted arbitrarily. We propose a new
-  similarity measure for clustering time-course gene expression data. The
-  proposed measure is based on the correlation coefficient and the two indices
-  representing the concordance of temporal profile patterns and that of the
-  time points at which maximum and minimum expression levels are measured
-  between two profiles, respectively. We applied the hierarchical clustering
-  method with the proposed similarity measure to both synthetic and breast
-  cancer cell line data. We observed favorable results compared to the
-  correlation coefficient based method. The proposed similarity measure is
-  simple to implement, and it is much more consistent for clustering than the
-  correlation coefficient based method according to the cross-validation
-  criterion.%
-  }
-  \verb{doi}
-  \verb 10.1016/j.patrec.2007.09.015
-  \endverb
-  \field{isbn}{0167-8655}
-  \field{issn}{01678655}
-  \field{number}{3}
-  \field{pages}{232\bibrangedash 242}
-  \field{title}{{A modified correlation coefficient based similarity measure
-  for clustering time-course gene expression data}}
-  \verb{url}
-  \verb http://www.sciencedirect.com/science/article/pii/S0167865507003005
-  \endverb
-  \field{volume}{29}
-  \field{journaltitle}{Pattern Recognition Letters}
-  \field{year}{2008}
-\endentry
-
 \entry{Salvador}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -3605,7 +3027,6 @@
   \strng{namehash}{SHCS1}
   \strng{fullhash}{SHCS1}
   \field{labelalpha}{SC78}
-  \field{extraalpha}{1}
   \field{sortinit}{S}
   \field{abstract}{%
   This paper reports on an optimum dynamic programming (DP) based
@@ -3632,57 +3053,6 @@
   \field{issn}{00963518}
   \field{title}{{Dynamic Programming Algorithm Optimization for Spoken Word
   Recognition}}
-  \field{journaltitle}{IEEE transactions on acoustics, speech, and signal
-  processing}
-  \field{year}{1978}
-\endentry
-
-\entry{Sakoe1978b}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Sakoe}{S.}%
-     {Hiroaki}{H.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Chiba}{C.}%
-     {Seibi}{S.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{SHCS2}
-  \strng{fullhash}{SHCS2}
-  \field{labelalpha}{SC78}
-  \field{extraalpha}{2}
-  \field{sortinit}{S}
-  \field{abstract}{%
-  This paper reports on an optimum dynamic programming (DP) based
-  time-normalization algorithm for spoken word recognition. First, a general
-  principle of time-normalization is given using timewarping function. Then,
-  two time-normalized distance definitions, d e d symmetric and asymmetric
-  forms, are derived from the principle. These two forms are compared with each
-  other through theoretical discussions and experimental studies. The symmetric
-  form algorithm superiority is established. A new technique, called slope
-  constraint, is successfully introduced, iwn hich the warping function slope
-  isr estricted so as to improve discrimination between words in different
-  categories. The effective slope constraint characteristic is qualitatively
-  analyzed, and the optimum slope constraint condition is determined through
-  experiments. The optimized algorithm is then extensively subjected to
-  experimentat comparison with various DP-algorithms, previously applied to
-  spoken word recognition by different research groups. The experiment shows
-  that the present algorithm gives no more than about twothirds errors, even
-  compared to the best conventional algorithm.%
-  }
-  \verb{doi}
-  \verb 10.1109/TASSP.1978.1163055
-  \endverb
-  \field{isbn}{1558601244}
-  \field{issn}{00963518}
-  \field{number}{1}
-  \field{pages}{43\bibrangedash 49}
-  \field{title}{{Dynamic Programming Algorithm Optimization for Spoken Word
-  Recognition}}
-  \field{volume}{ASSP-26}
   \field{journaltitle}{IEEE transactions on acoustics, speech, and signal
   processing}
   \field{year}{1978}
@@ -4204,6 +3574,59 @@
   \field{year}{2009}
 \endentry
 
+\entry{Wang2012}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Wang}{W.}%
+     {Jun}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Woznica}{W.}%
+     {Adam}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kalousis}{K.}%
+     {Alexandros}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WJWAKA1}
+  \strng{fullhash}{WJWAKA1}
+  \field{labelalpha}{WWK12}
+  \field{sortinit}{W}
+  \field{abstract}{%
+  We study the problem of learning local metrics for nearest neighbor
+  classification. Most previous works on local metric learning learn a number
+  of local unrelated metrics. While this ”independence” approach delivers
+  an increased flexibility its downside is the considerable risk of
+  overfitting. We present a newparametric local metric learning method in which
+  we learn a smooth metric matrix function over the data manifold. Using an
+  approximation error bound of the metric matrix function we learn local
+  metrics as linear combinations of basis metrics defined on anchor points over
+  different regions of the instance space. We constrain the metric matrix
+  function by imposing on the linear combinations manifold regularization which
+  makes the learned metric matrix function vary smoothly along the geodesics of
+  the data manifold. Our metric learning method has excellent performance both
+  in terms of predictive power and scalability. We experimented with several
+  large- scale classification problems, tens of thousands of instances, and
+  compared it with several state of the art metric learning methods, both
+  global and local, as well as to SVM with automatic kernel selection, all of
+  which it outperforms in a significant manner.%
+  }
+  \field{isbn}{9781627480031}
+  \field{issn}{10495258}
+  \field{pages}{1\bibrangedash 9}
+  \field{title}{{Parametric local metric learning for nearest neighbor
+  classification}}
+  \verb{url}
+  \verb http://arxiv.org/abs/1209.3056
+  \endverb
+  \field{journaltitle}{arXiv preprint arXiv:1209.3056}
+  \field{year}{2012}
+\endentry
+
 \entry{Xi2006a}{inproceedings}{}
   \name{author}{5}{}{%
     {{}%
@@ -4404,65 +3827,40 @@
   \field{year}{1999}
 \endentry
 
-\entry{Zhang2006a}{article}{}
-  \name{author}{4}{}{%
+\entry{Zhu2007}{article}{}
+  \name{author}{1}{}{%
     {{}%
-     {Zhang}{Z.}%
-     {Hui}{H.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Ho}{H.}%
-     {T.B. Tb Tu~Bao}{T.~T. T.~B.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Zhang}{Z.}%
-     {Yang}{Y.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Lin}{L.}%
-     {M.S. Mao-Song~Ms}{M.~M.-S.~M.}%
+     {Zhu}{Z.}%
+     {Xiaojin}{X.}%
      {}{}%
      {}{}}%
   }
-  \keyw{2005,attracted increasing interest in,clustering,data mining,feature
-  extraction,financial domains,in the bioinformatics and,of
-  dimension-,particularly for long time,received,september 4,series,such as
-  those arising,the last decade,the widely known curse,time series,time series
-  clustering has,wavelet}
-  \strng{namehash}{ZH+1}
-  \strng{fullhash}{ZHHTTTBZYLMMSM1}
-  \field{labelalpha}{Zha+06}
+  \keyw{learning}
+  \strng{namehash}{ZX1}
+  \strng{fullhash}{ZX1}
+  \field{labelalpha}{Zhu07}
   \field{sortinit}{Z}
   \field{abstract}{%
-  Thewidelyknowncurse of dimension- ality howto choose the appropriate
-  dimension is a challenging task especially for clustering problem in the
-  absence of data labels that has not been well studied in the literature. I
-  this paper we propose an unsupervised feature extraction algorithm using
-  orthogonal wavelet transform for automatically choosing the dimensionality of
-  features. The feature extraction algorithm selects the feature dimensionality
-  by leveraging twoconflicting requirements, i.e., lower dimensionality and
-  lower sum of squared errors between the features and the original time
-  series. The proposed feature extraction algorithm is efficient with time
-  complexityO(mn) when using Haar wavelet. Encouraging experimental results are
-  obtained on several synthetic and real-world time series datasets.%
+  We review the literature on semi-supervised learning, which is an area in
+  machine learning and more generally, artificial intelligence. There has been
+  a whole spectrum of interesting ideas on how to learn from both labeled and
+  unlabeled data, i.e. semi-supervised learning. This document originates as a
+  chapter in the authors doctoral thesis (Zhu, 2005). However the author will
+  update the online version regularly to incorporate the latest development in
+  the field.%
   }
-  \field{number}{3}
-  \field{pages}{305\bibrangedash 319}
-  \field{title}{{Unsupervised Feature Extraction for Time Series Clustering
-  Using Orthogonal Wavelet Transform.}}
-  \verb{url}
-  \verb http://scholar.google.com/scholar?hl=en{\&}btnG=Search{\&}q=intitle:Uns
-  \verb upervised+Feature+Extraction+for+Time+Series+Clustering+Using+Orthogona
-  \verb l+Wavelet+Transform{\#}0$\backslash$nhttp://www.freepatentsonline.com/a
-  \verb rticle/Informatica/158092585.html$\backslash$nhttp://search.ebscohost.c
-  \verb om
+  \verb{doi}
+  \verb 10.1.1.146.2352
   \endverb
-  \field{volume}{30}
-  \field{journaltitle}{Guest Editor}
-  \field{year}{2006}
+  \field{isbn}{1530}
+  \field{pages}{1\bibrangedash 59}
+  \field{title}{{Semi-Supervised Learning Literature Survey}}
+  \verb{url}
+  \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.146.2352{\&}re
+  \verb p=rep1{\&}type=pdf
+  \endverb
+  \field{journaltitle}{Sciences-New York}
+  \field{year}{2007}
 \endentry
 
 \entry{ZhangX.-L.Z.-G.Luo2014}{article}{}

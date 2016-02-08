@@ -1,19 +1,19 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.1}Classification, Regression}{\reset@font\mtcSfont 7}{section.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.1}Machine learning principle}{\reset@font\mtcSSfont 7}{subsection.1.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.2}Model selection in supervised learning}{\reset@font\mtcSSfont 8}{subsection.1.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.3}Model evaluation}{\reset@font\mtcSSfont 12}{subsection.1.1.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.1.3.a}Classification evaluation}{\reset@font\mtcSSSfont 12}{subsubsection.1.1.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.1.3.b}Regression evaluation}{\reset@font\mtcSSSfont 13}{subsubsection.1.1.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.4}Data normalization}{\reset@font\mtcSSfont 14}{subsection.1.1.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}Machine learning algorithms}{\reset@font\mtcSfont 16}{section.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.1}$k$-Nearest Neighbors ($k$-NN) classifier}{\reset@font\mtcSSfont 16}{subsection.1.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.2}Support Vector Machine ({\sc svm}) algorithm}{\reset@font\mtcSSfont 17}{subsection.1.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.a}Intuition}{\reset@font\mtcSSSfont 18}{subsubsection.1.2.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.b}Primal formulation}{\reset@font\mtcSSSfont 19}{subsubsection.1.2.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.c}Dual formulation}{\reset@font\mtcSSSfont 20}{subsubsection.1.2.2.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.d}Kernel trick}{\reset@font\mtcSSSfont 22}{subsubsection.1.2.2.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.e}Interpretation}{\reset@font\mtcSSSfont 25}{subsubsection.1.2.2.5}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.f}Variants of {\sc svm}}{\reset@font\mtcSSSfont 27}{subsubsection.1.2.2.6}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.g}Extensions of {\sc svm}}{\reset@font\mtcSSSfont 27}{subsubsection.1.2.2.7}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.3}Other classification algorithms}{\reset@font\mtcSSfont 29}{subsection.1.2.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}Conclusion of the chapter}{\reset@font\mtcSfont 29}{section.1.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.1}Classification, Regression}{\reset@font\mtcSfont 5}{section.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.1}Machine learning principle}{\reset@font\mtcSSfont 5}{subsection.1.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.2}Model selection in supervised learning}{\reset@font\mtcSSfont 6}{subsection.1.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.3}Model evaluation}{\reset@font\mtcSSfont 10}{subsection.1.1.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.1.3.a}Classification evaluation}{\reset@font\mtcSSSfont 10}{subsubsection.1.1.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.1.3.b}Regression evaluation}{\reset@font\mtcSSSfont 11}{subsubsection.1.1.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.4}Data normalization}{\reset@font\mtcSSfont 12}{subsection.1.1.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}Machine learning algorithms}{\reset@font\mtcSfont 13}{section.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.1}$k$-Nearest Neighbors ($k$-NN) classifier}{\reset@font\mtcSSfont 13}{subsection.1.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.2}Support Vector Machine ({\sc svm}) algorithm}{\reset@font\mtcSSfont 14}{subsection.1.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.a}Intuition}{\reset@font\mtcSSSfont 15}{subsubsection.1.2.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.b}Primal formulation}{\reset@font\mtcSSSfont 16}{subsubsection.1.2.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.c}Dual formulation}{\reset@font\mtcSSSfont 17}{subsubsection.1.2.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.d}Kernel trick}{\reset@font\mtcSSSfont 19}{subsubsection.1.2.2.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.e}Interpretation}{\reset@font\mtcSSSfont 22}{subsubsection.1.2.2.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.f}Variants of {\sc svm}}{\reset@font\mtcSSSfont 24}{subsubsection.1.2.2.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.g}Extensions of {\sc svm}}{\reset@font\mtcSSSfont 24}{subsubsection.1.2.2.7}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.3}Other classification algorithms}{\reset@font\mtcSSfont 26}{subsection.1.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}Conclusion of the chapter}{\reset@font\mtcSfont 26}{section.1.3}}

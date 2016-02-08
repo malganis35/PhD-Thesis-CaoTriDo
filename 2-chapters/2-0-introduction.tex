@@ -5,44 +5,59 @@
 %\minitoc
 
 \section*{Motivation}
+%\begin{itemize}
+%	\item Mettre le contexte de la thèse : thèse CIFRE avec Schneider et 2 laboratoires de Grenoble.
+%	\item Qu’est-ce qu’une série temporelle ? (réponse d’un système dynamique complexe (= pas de modèle du système)
+%	\item Motiver l’intérêt des séries temporelles dans les applications aujourd’hui:  données de plus en plus présentes dans de nombreux domaines divers et variés
+%	\item Les séries temporelles sont impliquées dans des problèmes de classification, régression et clustering
+%	\item Pourquoi sont-elles challenging ? (délais, dynamique)
+%	\item Intérêt dans le cadre des activités de Schneider Electric
+%\end{itemize}
+The work of this PhD is in the context of a CIFRE\footnote[1]{Conventions Industrielles de Formation par la REcherche} thesis with Schneider Electric and two public research laboratories, the LIG\footnote[2]{Laboratoire d'Informatique de Grenoble} and the GIPSA-lab\footnote[3]{Grenoble Images Parole Signal Automatique}. Within Schneider Electric, the PhD took place in the Analytics for Solutions (A4S) team, part of the Technology and Strategy entity whose main missions are {\color{red}à compléter par Sylvain} \todo{A compléter par Sylvain}. Among the wide activities of the A4S team, in the context of physical system modeling (\textit{e.g.}, building, sensor network, Internet of Things), two topics are at least studied: modeling by physical models (white/grey box) and modeling by machine learning algorithms (black-box). With the increase of the amount of data and sensors that collects data, modeling accurately systems through \textit{a priori} equations (white/grey box) for some prediction tasks has become more and more difficult. Within the vast amount of applications in Schneider Electric, some applications in particular involve temporal data, \textit{e.g.}, forecasting the energy consumption in a building, virtual sensors, fault detection. More generally, Schneider Electric, like many other companies and other diverse application domains (medicine, marketing, meteorology, etc.) has taken a growing interest these last decades in machine learning problems (classification, regression, clustering) that involves time series of one or several dimensions, of different sampling, of two or more classes, etc. A time series can be seen in signal processing and in control theory as the response of a dynamic system. Contrary to static data, time series are more challenging in the sense that the temporal aspect (\textit{i.e.}, order of appearance of the observations) is an additional key information. \\
+
+\section*{Problem statement and contributions}
+In this work, we focus on classification problems of monovariate time series (data of 1 dimension) with a fixed sampling rate and of same lengths. Among the wide variety of algorithms that exist in machine learning, some approaches (\textit{e.g.}, $k$-Nearest Neighbors ($k$-NN)) classify samples using a concept of neighborhood based on the comparison between samples. In general, the concept of 'near' and 'far' between samples is expressed through a distance measure. Time series can be compared based not only on their amplitudes like static data but also on other characteristics or modalities such that their dynamic or frequency components. Many metrics for time series have been proposed in the literature such that the euclidean distance \cite{Ding2008}, the temporal correlation \cite{Frambourg2013}, the Fourier-based distance \cite{Sahidullah2012a}. A detailed review of the major metrics is proposed in \cite{Montero2014}. In general, the existing metrics involve one modality at the global scale (\textit{i.e.}, implying systematically all the time series observations). We believe also that the multi-scale aspect of time series, not present in static data, could enrich the definition of the existing metrics. 
+
+% \section*{Problem statement (with words)}
+%\begin{itemize}
+%	\item Dans de nombreux algorithmes de classification ou de régression (kNN, SVM), la comparaison des individus (séries temporelles) reposent sur une notion de distance entre individus (séries temporelles).
+%	\item Contrairement aux données statiques, les données temporelles peuvent être comparés sur la base de plusieurs modalités (valeurs, forme, distance entre spectre, etc.) et à différentes échelles. La « métrique idéale », càd, celle qui permettra de résoudre au mieux le problème de classification/régression peut donc impliquer plusieurs modalités.
+%	\item Objectif de notre travail : Apprendre une métrique adéquate tenant compte de plusieurs modalités et de plusieurs échelles en vue d’une classification/régression kNN
+%\end{itemize}
+In this work, our objective is to learn a combined multi-modal and multi-scale time series metric for a robust $k$-NN classifier. The main contributions of the PhD are:
 \begin{itemize}
-	\item Qu’est-ce qu’une série temporelle ? (réponse d’un système dynamique complexe (= pas de modèle du système)
-	\item Motiver l’intérêt des séries temporelles dans les applications aujourd’hui:  données de plus en plus présentes dans de nombreux domaines divers et variés
-	\item Les séries temporelles sont impliquées dans des problèmes de classification, régression et clustering
-	\item Pourquoi sont-elles challenging ? (délais, dynamique)
-	\item On fait face à la fois, à un problème de small et big data
+	\item[-] The definition of a new space representation: the dissimilarity space which embeds a pair of time series into a vector described by basic temporal metrics.
+	\item[-] The definition of basic temporal metrics that involves one modality at one specific scale.
+	\item[-] The learning of a multi-modal and multi-scale temporal metric for a large margin $k$-NN classifier of univariate time series. 
+	\item[-] The definition of the general problem of learning a combined metric as a metric learning problem using the dissimilarity representation. 
+	\item[-] The proposition of a framework based on Support Vector Machine (\textsc{svm}) and a linear and non-linear solution to define the combined metric that satisfies at least the properties of a dissimilarity measure.
+	\item[-] The comparison of the proposed approach with standard metrics on a large number of public datasets.
+	\item[-] The analysis of the proposed approach to extract the discriminative features that are involved in the definition of the learned combined metric. 
 \end{itemize}
 
 
-\section*{Problem statement (with words)}
-\begin{itemize}
-	\item Dans de nombreux algorithmes de classification ou de régression (kNN, SVM), la comparaison des individus (séries temporelles) reposent sur une notion de distance entre individus (séries temporelles).
-	\item Contrairement aux données statiques, les données temporelles peuvent être comparés sur la base de plusieurs modalités (valeurs, forme, distance entre spectre, etc.) et à différentes échelles. La « métrique idéale », càd, celle qui permettra de résoudre au mieux le problème de classification/régression peut donc impliquer plusieurs modalités.
-	\item Objectif de notre travail : Apprendre une métrique adéquate tenant compte de plusieurs modalités et de plusieurs échelles en vue d’une classification/régression kNN
-\end{itemize}
+%\section*{PhD contributions}
+%\begin{itemize}
+%	\item Définition d’un nouvel espace de représentation: la représentation par paires
+%	\item Apprentissage d’une métrique multimodale et multi-échelle en vue d’une classification kNN à vaste marge de séries temporelles monovariées.
+%	\item Définition du problème d’apprentissage de métrique combinée (Metric Learning) dans l’espace des paires sous la forme d'un problème général d'optimisation.
+%	\item Comparaison de la méthode proposée avec des métriques classiques sur un vaste jeu de données (30 bases) de la littérature dans le cadre de la classification univariée de séries temporelles
+%	\item Donner une solution interprétable.
+%\end{itemize}
 
-\section*{PhD contributions}
-\begin{itemize}
-	\item Définition d’un nouvel espace de représentation: la représentation par paires
-	\item Apprentissage d’une métrique multimodale et multi-échelle en vue d’une classification kNN à vaste marge de séries temporelles monovariées.
-	\item Extension/Transposition du problème d’apprentissage de métrique (Metric Learning) dans l’espace des paires
-	\item Comparaison de la méthode proposée avec des métriques classiques sur un vaste jeu de données (30 bases) de la littérature dans le cadre de la classification univariée de séries temporelles
-	\item Extension du framework d’apprentissage de métrique au problème de régression de séries temporelles univariés
-	\item Extension du framework d’apprentissage de métrique au problème de classification/régression de séries temporelles multivariés. 
-	\item Donner une solution interprétable.
-	\item Donner un algorithme à la fois pour les small et big data.
-\end{itemize}
+\section*{Organization of the manuscript}
+\indent The first part makes a review of existing methods in machine learning and metrics for time series. The first chapter presents classical approaches in machine learning. In particular, we recall the general principle, framework and focus on two standard machine learning algorithms: the $k$-Nearest Neighbors ($k$-NN) and the Support Vector Machine (\textsc{svm}) approach. In the second chapter, we review some basic terminology for time series and recall three types of metrics proposed at least for time series: amplitude-, behavior- and frequential-based. \\
+\noindent The second part of the manuscript propose a multi-modal and multi-scale metric learning (\textsc{m$^2$tml}) method. In the third chapter, we first review the concept of metric learning for static data and focus on a framework of metric learning for nearest neighbors classification proposed by Weinberger \& Saul \cite{Weinberger2009a}. Secondly, we present a new space representation, the pairwise dissimilarity space based on a multi-modal and multi-scale time series description and their corresponding basic metrics. Then, we formalize the general \textsc{m$^2$tml} optimization problem using the pairwise dissimilarity space representation. From the general formalization, we propose at least three different formalizations. The first and second proposition involve different regularizers, allowing to learn an \textit{a priori} linear or non-linear form of the combined metric. The third proposition presents a framework based on \textsc{svm} and a solution to build the combined metric, in the linear and non-linear context, satisfying at least the properties of a dissimilarity measure. Finally, Chapter 4 presents the experiments conducted on a wide range of 30 public and challenging datasets, and discusses the results obtained.
 
-\section*{Organisation du manuscrit}
-Présenter les différents chapitres
+% Présenter les différents chapitres
 
-Note pour Ahlame, Michèle et Sylvain: Pour ajouter des commentaires dans le fichier .TEX, merci de les ajouter sous cette forme:
-\begin{itemize}
-	\item dans le texte : \myincomment[CTD]{Initial in [CAO] then your comment in the bracket}
-	\item dans la marge : \mycomment[CTD]{Initial in [CAO] then your comment in the bracket}
-\end{itemize}
-If you think that they are missing figures, you can add them with a description with this command line :
-\missingfigure{Testing a long text string}
+%Note pour Ahlame, Michèle et Sylvain: Pour ajouter des commentaires dans le fichier .TEX, merci de les ajouter sous cette forme:
+%\begin{itemize}
+%	\item dans le texte : \myincomment[CTD]{Initial in [CAO] then your comment in the bracket}
+%	\item dans la marge : \mycomment[CTD]{Initial in [CAO] then your comment in the bracket}
+%\end{itemize}
+%If you think that they are missing figures, you can add them with a description with this command line :
+%\missingfigure{Testing a long text string}
 
 
 \newpage
@@ -51,30 +66,36 @@ If you think that they are missing figures, you can add them with a description 
 \begin{tabular}{ll}
 	$\textbf{x}_i$ 							& a vector sample / a time series \\ 
 	$y_i$ 									& a label (discrete or continous) \\
-	$\textbf{X} = \{(\textbf{x}_i , y_i)\}_{i=1}^n$ & a set of $n \in \mathbb{N}$ labeled time series \\
+	$\hat{y}_i$ 							& a predicted label (discrete or continous) \\
+	$X = \{\textbf{x}_i , y_i\}_{i=1}^n$ & a training set of $n \in \mathbb{N}$ labeled time series\\
+	$X_{Test}=\{\textbf{x}_j,y_j\}_{j=1}^m$ & a test set of $m \in \mathbb{N}$ labeled time series\\
+	$d_A$		& Amplitude-based distance \\
+	$d_B$		& Behavior-based distance \\
+	$d_F$		& Frequential-based distance \\
 	$d_E$		& Euclidean distance \\
 	$L_q$		& Minkovski q-norm \\
 	$||\textbf{x}||_q$	& q-norm of the vector $\textbf{x}$ \\
-	$d_A$		& Value-based distance \\
-	$corr$  	& Pearson correlation \\
 	$cort$  	& Temporal correlation \\
-	$d_F$   	& Euclidean distance between the Fourier spectrum \\
-	$D$ 		& Distance \\
+	$D$ 		& Linear learned combined distance \\
+	$D_\mathcal{H}$ 		& Non-linear learned combined distance \\
+	$\kappa$	& Kernel function \\
+	$\phi(\textbf{x}_i)$ & embedding function from the original space to the Hilbert space  \\	
 	$\textbf{x}_{ij}$ 	& a pair of time series $\textbf{x}_i$ and $\textbf{x}_j$ \\
 	$y_{ij}$			& the pairwise label of $\textbf{x}_{ij}$ \\
 	$t$			& time stamp/index with $t=1,...,T$ \\
-	$T$			& length of the time series (supposed fixed) \\
+	$q$			& length of the time series (supposed fixed) \\
 	$f$			& frequential index \\	
 	$F$			& length of the Fourier transform \\
-	$\xi$		& Relaxation term \\
+	$\xi$		& Slack varialbe \\
 	$p$			& number of metric measure considered in the metric learning 	process \\
 	$r$			& order of the temporal correlation \\
 	$k$			& number of nearest neighbors \\
-	$K(\textbf{x}_i,\textbf{x}_j)$ & Kernel function between $\textbf{x}_i$ and $\textbf{x}_j$ \\
-	$\phi(\textbf{x}_i)$ & embedding function from the original space to the Hilbert space  \\
 	$C$ 		& Hyper-parameter of the SVM (trade-off)\\ 
-	$\alpha$	& \\
-	$\lambda$	& \\
+	$\alpha$	& Parameter to control the size of the neighborhood\\
+	$\lambda$	& Parameter to control the push term\\
+	$\textbf{w}$ & weight vector \\
+	$v$			& number of folds in cross-validation
+
 \end{tabular} 
 
 
