@@ -19,8 +19,6 @@ In this chapter, we recall some concepts of machine learning. First, we review t
 %----------------------------------------------------------------------------
 \section{Classification, Regression}
 
-% We are going to detail now a few number of machine learning algorithms used classically to solve classification or regression problems. Other algorithms are popular nowadays such as Deep neural network, Decision tree or Relevance vector machine. We focus on $k$-Nearest Neighbors ($k$-NN) and Support Vector Machine ({\sc svm}) because these algorithms are based on the comparison of samples (time series in our case) through a distance measure, notion detailed in the next chapters.
-
 In this section, we review some terminology used in machine learning. First, we recall the principle of machine learning. Then, we detail how to design a framework for supervised learning. After that, we present model evaluation. Finally, we review data normalization. 
 
 \subsection{Machine learning principle}
@@ -152,13 +150,14 @@ As the concept of classes is restricted to classification problems, the performa
 MAE = \frac{1}{m} \sum_{j=1}^m|\hat{y}_j-y_j|
 \end{equation}
 
-A commonly used performance metrics is the Root Mean Squared Error function ($RMSE$) that computes the root of the mean square error, a risk metric corresponding to the expected value of the squared (quadratic) error loss.
+A commonly used performance metrics is the Root Mean Squared Error function ($RMSE$) that computes the root of the mean square error: 
+%a risk metric corresponding to the expected value of the squared (quadratic) error loss.
 
 \begin{equation}
 RMSE = \sqrt{\frac{1}{m} \sum_{j=1}^m(\hat{y}_j-y_j)^2}
 \end{equation}
 
-Many works rely on the $R^2$ function, the coefficient of determination. It provides a measure of how well future samples are likely to be predicted by the model \footnote{\url{http://scikit-learn.org/stable/modules/model_evaluation.html}}. It can also be interpreted as a measure of how the model $f$ is better than a constant model \todo{ref sylvain?}. 
+Many works rely on the $R^2$ measure, the coefficient of determination. It provides a measure of how well future samples are likely to be predicted by the model\footnote{\url{http://scikit-learn.org/stable/modules/model_evaluation.html}}. It can also be interpreted as a measure of how the model $f$ is better than a constant model.\mycomment[CTD]{ref sylvain pour appuyer car j'ai du mal à bien comprendre} 
 
 \begin{equation}
 R^2 = 1- \frac{\sum_{j=1}^m (\hat{y}_j-y_j)^2}{\sum_{j=1}^m (\bar{y}-y_j)^2}
@@ -173,7 +172,7 @@ Real dataset are often subjected to noise or uneven scaling. Before applying any
 
 Part 2 of Sarle's Neural Networks FAQ (1997) \footnote{\url{http://www.faqs.org/faqs/ai-faq/neural-nets/}} explains the importance of data normalization for neural networks but they can be applied to any learning algorithms. The main advantage of normalization is to avoid attributes in greater numeric ranges to dominate those in smaller numeric ranges. Another advantage is to avoid numerical difficulties during the calculation. For example, in the case of Support Vector Machine ({\sc svm}), because kernel values usually depend on the inner products of feature vectors, \textit{i.e.} the linear kernel and the polynomial kernel, large attribute values might cause numerical problems \cite{Hsu2008}. 
 
-In most cases, it is recommended to scale each attribute to the range [-1; +1] or [0; 1]. Many normalization methods have been proposed such as Min/Max normalization, Z-normalization or normalization of the log distribution \todo{références normalization}. Let $X=\{\textbf{x}_i,y_i\}_{i=1}^n$ be a training set, $\textbf{x}_i$ being a sample described by $p$ features $x_1, \ldots, x_p$. We define $\mu_j$ and $\sigma_j$ as the mean and the standard deviation of a variable $x_j$, applying the Z-normalized variable $x^{norm}_j$ is given by:
+In most cases, it is recommended to scale each attribute to the range [-1; +1] or [0; 1]. Many normalization methods have been proposed such as Min/Max normalization or Z-normalization \cite{Mohamad2013}. Let $X=\{\textbf{x}_i,y_i\}_{i=1}^n$ be a training set, $\textbf{x}_i$ being a sample described by $p$ features $x_1, \ldots, x_p$. We define $\mu_j$ and $\sigma_j$ as the mean and the standard deviation of a variable $x_j$, applying the Z-normalized variable $x^{norm}_j$ is given by:
 \begin{equation}
 x^{norm}_j = \frac{x_j-\mu_j}{\sigma_j}
 \end{equation}
@@ -193,18 +192,16 @@ x^{norm}_j = \frac{x_j-\mu_j}{\sigma_j}
 %	\label{fig:SkewedData}
 %\end{figure}
 %\footnotetext{source: \url{http://www.r-statistics.com/2013/05/log-transformations-for-skewed-and-wide-distributions-from-practical-data-science-with-r/}}
-
-Finally, we recall some precautions to the practitioner in the learning protocol, experimented by Hsu \& al. in the context of {\sc svm} \cite{Hsu2008}. First, training and testing data must be scaled using the same method. Second, training and testing data must not be scaled separately. Third, the whole dataset must not be scaled together at the same time. These often leads to poorer results. A proper way to do normalization is to scale the training data, store the parameters of the normalization (\textit{e.g.} $\mu_i$ and $\sigma_i$ for Z-normalization), then apply the same normalization to the testing data. 
+Finally, we recall some precautions to the practitioner in the learning protocol, experimented by Hsu \& al. in the context of {\sc svm} \cite{Hsu2008}. First, training and testing data must be scaled using the same method. Secondly, training and testing data must not be scaled separately. Thirdly, the whole dataset must not be scaled together at the same time as it often leads to poorer results. A proper way to do normalization is to scale the training data, store the parameters of the normalization (\textit{e.g.} $\mu_i$ and $\sigma_i$ for Z-normalization), then apply the same normalization parameters to the testing data. 
 
 
 %------------------------------------------------------------------------------
 \newpage
 \section{Machine learning algorithms}
 
-\mycomment[AD]{dit d'enlever 1ère phrase mais Michèle dit de garder}Many algorithms have been proposed in the context of supervised learning, such as Deep Neural Networks, Decision Trees or Relevance Vector Machines ({\sc rvm}). Our proposition relies on both results from Support Vector Machines ({\sc svm}) in the context of $k$-Nearest Neighbors ($k$-NN) classification. We limit the section to present these two algorithms. 
-% We focus on $k$-Nearest Neighbors ($k$-NN) and Support Vector Machine ({\sc svm}). % The interest of these two is that they are based on the comparison of samples (time series in our case) through a distance measure, notion detailed in the next chapters.  
+% \mycomment[AD]{dit d'enlever 1ère phrase mais Michèle dit de garder}
+Many algorithms have been proposed in the context of supervised learning, such as Deep Neural Networks, Decision Trees, $k$-Nearest Neighbors ($k$-NN) or Support Vector Machine ({\sc svm}). In Decision Trees, the aim is to build a decision tree by recursively partitioning the sample space \cite{Alppaydin2011a}. The tree consists of nodes that splits the sample space into sub-spaces, and leaf nodes that are associated to classes. In Deep Neural Networks, most of the propositions aims to learn a representation of the data by extracting features using a cascade of layers \cite{Lee2009}, then to use a neural network algorithm to learn a model from these features. Note that one main advantage of Decision Trees from Deep Neural Networks is that by using the features from the sample space, the model is still interpretable. In this section, we focus and detail two approaches: $k$-Nearest Neighbors ($k$-NN) and Support Vector Machine ({\sc svm}).
 
-% We are going to detail now a few number of machine learning algorithms used classically to solve classification or regression problems. Other algorithms are popular nowadays such as Deep neural network, Decision tree or Relevance vector machine. We focus on $k$-Nearest Neighbors ($k$-NN) and Support Vector Machine ({\sc svm}) because these algorithms are based on the comparison of samples (time series in our case) through a distance measure, notion detailed in the next chapters.
 
 \subsection{$k$-Nearest Neighbors ($k$-NN) classifier}
 \label{sec:kNN}
@@ -216,8 +213,9 @@ Finally, we recall some precautions to the practitioner in the learning protocol
 %	\item Donner les arguments qui permettent de dire pourquoi utiliser un 1-NN permet de faire une évaluation de métriques (Ding)
 %\end{itemize}
 
-\mycomment[AR]{Ahlame trouve que ce n'est pas clair. A refaire}A simple approach to classify samples is to consider that "close" samples have a great probability to belong to the same class. Given a test sample $\textbf{x}_j$, one can use the class $y_i$ of its nearest neighbor $\textbf{x}_i$ in the training set in order to predict its labels: $\hat{y}_j=y_i$. \\
-\indent More generally, we can consider the $k$ nearest neighbors of $\textbf{x}_j$. The class $y_j$ of a test sample $\textbf{x}_j$ is assigned with a voting scheme among them, \textit{i.e.}, using the majority of the class of nearest neighbors. This algorithm is referred as the $k$-Nearest Neighbors algorithm ($k$-NN) 
+% \mycomment[AR]{Ahlame trouve que ce n'est pas clair. A refaire}
+A simple approach to classify samples is to consider that "close" samples have a great probability to belong to the same class. Given a test sample $\textbf{x}_j$, one can use the class $y_i$ of its nearest neighbor $\textbf{x}_i$ in the training set in order to predict its labels: $\hat{y}_j=y_i$. \\
+\noindent More generally, we can consider the $k$ nearest neighbors of $\textbf{x}_j$. The class $y_j$ of a test sample $\textbf{x}_j$ is assigned with a voting scheme among them, \textit{i.e.}, using the majority of the class of nearest neighbors. This algorithm is referred as the $k$-Nearest Neighbors algorithm ($k$-NN) 
 \cite{Silverman1989,Cover1967b}. Fig. \ref{fig:kNN_example} illustrates the concept for a neighborhood of $k=3$ and $k=5$.
 
 \begin{figure}[h!]
@@ -227,24 +225,24 @@ Finally, we recall some precautions to the practitioner in the learning protocol
 \label{fig:kNN_example}
 \end{figure}
 
-\indent In the $k$-NN algorithm, the notion of "closeness" between samples $\textbf{x}_i$ is based on the computation of a metric \footnote{A clarification of the terms metric, distance, dissimilarity, etc. will be given in Chapter \ref{sec:Chapter_metrics}. For now, we refer all of them as metrics.} $D$. For static data, frequently used metrics are the Euclidean distance, the Minkowski distance or the Mahalanobis distance. Considering a training set $X$ of $n$ samples, solving the 1-NN classification problem is equivalent to solve the following optimization problem: for a new sample $\textbf{x}_j$, $\forall i \in \{1...n\}$,
+\indent In the $k$-NN algorithm, the notion of "closeness" between samples $\textbf{x}_i$ is based on the computation of a metric\footnote{A clarification of the terms metric, distance, dissimilarity, etc. will be given in Chapter \ref{sec:Chapter_metrics}. For now, we refer all of them as metrics.} $D$. For static data, frequently used metrics are the Euclidean distance, the Minkowski distance or the Mahalanobis distance. Considering a training set $X$ of $n$ samples, solving the 1-NN classification problem is equivalent to solve the following optimization problem: for a new sample $\textbf{x}_j$, $\forall i \in \{1,\ldots,n\}$,
 \begin{equation}
 y_j = y_{i^*}
 \end{equation}
-where $i^*={\underset{i \in \{1...n\}}{\argmin}   D(\textbf{x}_i,\textbf{x}_j)}$.
+where $i^*={\underset{i \in \{1,\ldots,n\}}{\argmin}  \text{ } D(\textbf{x}_i,\textbf{x}_j)}$.
 
-The $k$-NN algorithm can be extended to estimate continous labels (regression problems). The procedure is similar. The label $y_j$ is defined as :
+The $k$-NN algorithm can be extended to estimate continous labels (regression problems). In that case, the label $y_j$ is defined as :
 \begin{equation}
 y_j = \frac{1}{k}\sum_{i=1}^{k} y_{i}
 \end{equation}
-where $i$ corresponds to the index of the $k$-nearest neighbors \cite{Altman1992}. There exists other variants of the $k$-NN algorithms. In a weighed $k$-NN, the approach consists in weighting the $k$-NN decision by assigning to each neighbor $\textbf{x}_i$ from an unknown sample $\textbf{x}_j$, a weight $w_i$ defined as a function of the distance $D(\textbf{x}_i, \textbf{x}_j)$ \cite{Dudani1976}. To cope with uncertainty or imprecision in the labeling of the training data $\textbf{x}_i$, other authors propose in a fuzzy $k$-NN to determine the membership degree in each class of an unseen sample $\textbf{x}_j$ by combining the memberships of its neighbors \cite{Keller1985}. \mycomment[AD]{Expliquer d'avantage} Denoeux propose a framework based on Dempster-Shafer theory where the $k$-NN rule takes into account the non-representativity of training data, the weighting rule and uncertainty in the labeling \cite{Denoeux1995}.
+where $i$ corresponds to the index of the $k$-nearest neighbors \cite{Altman1992}. There exists other variants of the $k$-NN algorithms. In a weighed $k$-NN, the approach consists in weighting the $k$-NN decision by assigning to each neighbor $\textbf{x}_i$ from an unknown sample $\textbf{x}_j$, a weight defined as a function of the distance $D(\textbf{x}_i, \textbf{x}_j)$ \cite{Dudani1976}. To cope with uncertainty or imprecision in the labeling of the training data $\textbf{x}_i$, other authors propose in a fuzzy $k$-NN to determine the membership degree in each class of an unseen sample $\textbf{x}_j$ by combining the memberships of its neighbors \cite{Keller1985}. \mycomment[AD]{Expliquer d'avantage} Denoeux propose a framework based on Dempster-Shafer theory where the $k$-NN rule takes into account the non-representativity of training data, the weighting rule and uncertainty in the labeling \cite{Denoeux1995}.
 
 % in weighting each neighbors labels $y_{i}$ by a factor equal to the inverse of the distance $\frac{1}{D(\textbf{x}_i, \textbf{x}_j)}$ \cite{Dudani1976}. To cope with uncertainty or imprecision in the labelling of the training data, some authors propose in a fuzzy $k$-NN to determine the membership degree of an unseen pattern in each class by combining the memberships of its neighbors. assign a degree of membership of a training vector $\textbf{x}_i$ memberships of samples $\textbf{x}_j$ to classes. in a fuzzy $k$-NN, the idea is to assign memberships of samples $\textbf{x}_j$ to classes. The class membership is a function of the sample’s distance $D(\textbf{x}_i, \textbf{x}_j)$ from its $k$-NN training samples\todo{[biblio fuzzy kNN]}; in a credibilist $k$-NN\mycomment[MR]{+ $k$-NN crédibiliste} \cite{Denoeux1995}
 
-Despite its simplicity, the $k$-NN algorithm has been shown to be successful on time series classification problems \cite{Belongie2002,Xi2006a,Ding2008}. 
+Despite its implementation simplicity, the $k$-NN algorithm has been shown to be successful on time series classification problems \cite{Belongie2002,Xi2006a,Ding2008}. 
 %presents many advantages and
 % \mycomment[AD]{Ahlame trouve que le discours s'éloigne et on devrait supprimer jusqu'à la fin des avantages}One main advantage is that a 1-NN classifier can be used to evaluate and compare the efficiency of different metrics \cite{Ding2008}. First, the underlying metric is critical in the performance of the 1-NN classifier \cite{Tan2005b}. Thus, the accuracy of the 1-NN classifier directly reflects the effectiveness of the metric. Second, 1-NN classifier is easy to implement and doesn't need to learn any hyper-parameters, which make it straightforward for anyone to reproduce results. All of this advantages allows one who want to evaluate a benchmark of metrics. Other methods to compare metrics exists such as clustering with small data sets which are not statistically significant, or compare the compactness of the metric \cite{Morse2007,Vlachos2006}. The 1-NN algorithm will be used in our experiments to compare the performances different metrics used for time series.
-However, the $k$-NN algorithm presents some disadvantages, mainly due to its computational complexity, both in memory space (storage of the training samples $\textbf{x}_i$) and time (search of the neighbors) \cite{Duda1973}. Suppose that we have $n$ labeled training samples in $p$ dimensions, and find the closest neighbors to a test sample $\textbf{x}_j$ ($k = 1$). In the most simple approach, we look at each stored samples $\textbf{x}_i$ ($i=1...n$) one by one, calculate its distance to $\textbf{x}_j$ (D($\textbf{x}_i$,$\textbf{x}_j$)) and retain the index of the current closest one. For the standard Euclidean distance, each metric computation is $O(p)$ and thus the search is $O(pn)$. Finally, note that using standard metrics (such as the Euclidean distance) in the $k$-NN relies on all $p$ dimensions in its computation and thus assumes that all dimensions have the same effect on the metric. This assumption may be wrong and can impact the classification performances. 
+However, the $k$-NN algorithm presents some disadvantages, mainly due to its computational complexity, both in memory space (storage of the training samples $\textbf{x}_i$) and time (search of the neighbors) \cite{Duda1973}. Suppose that we have $n$ labeled training samples in $p$ dimensions, and find the closest neighbors to a test sample $\textbf{x}_j$ ($k = 1$). In the most simple approach, we look at each stored samples $\textbf{x}_i$ ($i=1,\ldots,n$) one by one, calculate its distance to $\textbf{x}_j$ ($D(\textbf{x}_i$,$\textbf{x}_j$)) and retain the index of the current closest one. For the standard Euclidean distance, each metric computation is $O(p)$ and thus the search is $O(pn)$. Finally, note that using standard metrics (such as the Euclidean distance) in the $k$-NN relies on all $p$ dimensions in its computation and thus assumes that all dimensions have the same effect on the metric. This assumption may be wrong and can impact the classification performances. 
 %The importance of defining adapted metrics for time series will be discussed in Chapter \ref{sec:Chapter_metrics}.
 
 
@@ -279,23 +277,24 @@ However, the $k$-NN algorithm presents some disadvantages, mainly due to its com
 %	\item Expliquer que dans le cadre de données non-balancées, il faut ajouter des termes pour rebalancer l'équation du {\sc svm}
 %\end{itemize}
 
-Support Vector Machine ({\sc svm}) is a classification method introduced in 1992 by Boser, Guyon, and Vapnik \cite{Boser1992,Cortes1995} to solve at first linearly separable problems. The {\sc svm} classifier has demonstrated high accuracy, ability to deal with high-dimensional data, good generalization properties and interpretation for various applications from recognizing handwritten digits, to face identification, text categorization, bioinformatics and database marketing \cite{Wang2002,Yang1999,Heisele2001,Sadri2003,Campbell2011}. {\sc svm}s belong to the category of kernel methods, algorithms that depends on the data only through dot-products \cite{Schlkopf2013}. It allows thus to solve non-linear problems. This section gives a brief overview of the mathematical key points and interpretation of the method. For more informations, the reader can consult \cite{Schlkopf2013,Campbell2011,Cortes1995}.
+Support Vector Machine ({\sc svm}) is a classification method introduced in 1992 by Boser, Guyon, and Vapnik \cite{Boser1992,Cortes1995} to solve at first linearly separable problems. The {\sc svm} classifier has demonstrated high accuracy, ability to deal with high-dimensional data, good generalization properties and interpretation for various applications from recognizing handwritten digits, to face identification, text categorization, bioinformatics and database marketing \cite{Wang2002,Yang1999,Heisele2001,Sadri2003,Campbell2011}. {\sc svm}s belong to the category of kernel methods, algorithms that depends on the data only through dot-products \cite{Schlkopf2013}. It allows thus to solve non-linear problems. This section gives a brief overview of the mathematical key points and interpretation of the method. For more information, the reader can consult \cite{Schlkopf2013,Campbell2011,Cortes1995}.
 
 We first present an intuition of maximum margin concept. We give the primal formulation of the {\sc svm} optimization problem. Then, by transforming the latter formulation into its dual form, the kernel trick can be applied to learn non-linear classifiers. Finally, we detail how we can interpret the obtained coefficients and how {\sc svm}s can be extended for regression problems.
 
 
 
 \subsubsection{Intuition}
-\mycomment[AD]{Mettre dans les figures des + et - pour les classes}Let $\{\textbf{x}_i,y_i\}_{i=1}^n$ be a set of $n$ samples $\textbf{x}_i \in \mathbb{R}^p$ and their labels $y_i= \pm 1$ (2 class-problem). The objective is to learn a hyperplane, whose equation is $\textbf{w}^T \textbf{x} + b = 0$, that can separate samples of class +1 from the ones of class -1. When the problem is linearly separable such as in Fig. \ref{fig:Plusieurs_separatrice_lineaire}, there exists an infinite number of valid hyperplanes. 
+% \mycomment[AD]{Mettre dans les figures des + et - pour les classes}
+Let $\{\textbf{x}_i,y_i\}_{i=1}^n$ be a set of $n$ samples $\textbf{x}_i \in \mathbb{R}^p$ and their labels $y_i= \pm 1$ (2 class-problem). The objective is to learn a hyperplane, whose equation is $\textbf{w}^T \textbf{x} + b = 0$\footnote{$\textbf{w}^T$ denotes the transpose of the vector $\textbf{w}$}, that can separate samples of class +1 from the ones of class -1. When the problem is linearly separable such as in Fig. \ref{fig:Plusieurs_separatrice_lineaire}, there exists an infinite number of valid hyperplanes. 
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.5\linewidth]{images/Plusieurs_separatrice_lineaire2}
-\caption{Example of linear classifiers in a 2-dimensional classification problem. For a set of points of classes +1 and -1 that are linearly separable, there exists an infinite number of separating hyperplanes corresponding to $\textbf{w}^T\textbf{x} + b = 0.$ }
+\caption{Example of linear classifiers in a 2-dimensional classification problem. For a set of samples of classes +1 and -1 that are linearly separable, there exists an infinite number of separating hyperplanes corresponding to $\textbf{w}^T\textbf{x} + b = 0.$ }
 \label{fig:Plusieurs_separatrice_lineaire}
 \end{figure}
 
-\noindent Vapnik \& al. \cite{Cortes1995} propose to choose the separating hyperplane that maximizes the margin, \textit{e.g.} the hyperplane that leaves as much distance as possible between the hyperplane and the closest samples $\textbf{x}_i$ of each class, called the support vectors. This distance is equal to $\frac{1}{||\textbf{w}||_2}$. We denote $||\textbf{w}||_2$, the $L_2$-norm of the vector $\textbf{w}$ and $||\textbf{w}||_1$ the $L_1$-norm of $\textbf{w}$:
+\noindent Vapnik \& al. \cite{Cortes1995} propose to choose the separating hyperplane that maximizes the margin, \textit{i.e.} the hyperplane that leaves as much distance as possible between the hyperplane and the closest samples $\textbf{x}_i$ of each class, called the support vectors. This distance is equal to $\frac{1}{||\textbf{w}||_2}$. We denote $||\textbf{w}||_2$, the $L_2$-norm of the vector $\textbf{w}$ and $||\textbf{w}||_1$ the $L_1$-norm of $\textbf{w}$:
 \begin{align}
 	||\textbf{w}||_2 & = \sqrt{\textbf{w}^T \textbf{w}} = \sqrt{\sum\limits_{h=1}^{p} w_h^2}\\
 	||\textbf{w}||_1 & = \sum\limits_{h=1}^{p} |w_h|
@@ -308,7 +307,7 @@ f(\textbf{x}_j) = sign(\textbf{w}^T \textbf{x}_j + b) \label{eq:decision_functio
 
 \begin{figure}
 \centering
-\includegraphics[width=0.6\linewidth]{images/Separatrice_lineaire_avec_marges2}
+\includegraphics[width=0.55\linewidth]{images/Separatrice_lineaire_avec_marges2}
 \caption{The argument inside the decision function of a classifier is $\textbf{w}^T\textbf{x} + b$. The separating hyperplane corresponding to $\textbf{w}^T\textbf{x} + b = 0$ is shown as a line in this 2-dimensional plot. This hyperplane separates the two classes of data with points on one side labeled $y_i = +1$ ($\textbf{w}^T\textbf{x}_i + b \geq 0$) and points on the other side labeled $y_i=-1$ ($\textbf{w}^T\textbf{x}_i + b < 0$). Support vectors are circled in purple and lies on the hyperplanes $\textbf{w}^T\textbf{x} + b = +1$ and $\textbf{w}^T\textbf{x} + b = -1$}
 \label{fig:Separatrice_lineaire_avec_marges}
 \end{figure}
@@ -321,7 +320,7 @@ f(\textbf{x}_j) = sign(\textbf{w}^T \textbf{x}_j + b) \label{eq:decision_functio
 Finding $\textbf{w}$ and $b$ by maximizing the margin $\frac{1}{||\textbf{w}||_2}$ is equivalent to minimizing the norm of $\textbf{w}$ such that all samples from the training set are correctly classified:
 	\begin{align}
 		& \argmin_{\textbf{w},b} \frac{1}{2} ||\textbf{w}||_2^2 \label{eq:objectiveSVM}\\
-		& \textbf{s.t. } y_i(\textbf{w} ^T\textbf{x}_i+b) \geq 1 \label{eq:constraintsSVM}
+		& \textbf{s.t. } \forall i = 1,\ldots,n: \quad y_i(\textbf{w} ^T\textbf{x}_i+b) \geq 1 \label{eq:constraintsSVM}
 	\end{align}
 This is a constrained optimization problem in which we minimize an objective function (Eq. \ref{eq:objectiveSVM}) subject to constraints (Eq. \ref{eq:constraintsSVM}). This formulation is referred as the primal hard margin problem. When the problem is not linearly separable, slack variables $\xi_i \geq 0$ are introduced to relax the optimization problem:
 	\begin{align}
@@ -331,29 +330,28 @@ This is a constrained optimization problem in which we minimize an objective fun
 		\frac{1}{2}||\textbf{w}||^2_2}^{Regularization}
 	+ C \overbrace{\sum\limits_{i=1}^{n}\xi_i}^{Loss} \right) 
 	\label{eq:objectiveSVM2}\\
-	& \textbf{s.t. } y_i(\textbf{w}^T\textbf{x}_i+b) \geq 1 -\xi_i \label{eq:constraintsSVM2} \\
+	& \textbf{s.t. } \forall i = 1,\ldots,n: \nonumber \\
+	& y_i(\textbf{w}^T\textbf{x}_i+b) \geq 1 -\xi_i \label{eq:constraintsSVM2} \\
 	&  \xi_i \geq 0 \label{eq:constraintsSVM20}
 	\end{align}
-\noindent where $C > 0$ is a penalty hyper-parameter. 
-	
-This formulation is referred as the primal soft margin problem. It is a quadratic programming optimization problem subjected to constraints. Thus, it is a convex problem: any local solutions is a global solution. The objective function in Eq.~\ref{eq:objectiveSVM2} is made of two terms. The first one, the regularization term, penalizes the complexity of the model and thus, controls the ability of the algorithm to generalize on new samples. The second one, the loss term, is an adaptation term to the data. The hyper-parameter $C$ is a trade-off between the regularization and the loss term. When $C$ tends to $+\infty$, all the slack variables $\xi_i$ have to be equal to zero for the loss not to be infinite. The problem is thus equivalent to the primal hard margin problem. The hyper-parameter $C$ is learnt during the training phase (Section \ref{sec:model_selection}). 
+\noindent where $C > 0$ is a penalty hyper-parameter. This formulation is referred as the primal soft margin problem. It is a quadratic programming optimization problem subjected to constraints. Thus, it is a convex problem: any local solutions is a global solution. The objective function in Eq.~\ref{eq:objectiveSVM2} is made of two terms. The first one, the regularization term, penalizes the complexity of the model, controlling the ability of the algorithm to generalize on new samples. The second one, the loss term, is an adaptation term to the data. The hyper-parameter $C$ is a trade-off between the regularization and the loss term. When $C$ tends to $+\infty$, all the slack variables $\xi_i$ have to be equal to zero in order to not have an infinite loss term. The problem is thus equivalent to the primal hard margin problem. The hyper-parameter $C$ is learnt during the training phase (Section \ref{sec:model_selection}). 
 
 
 \subsubsection{Dual formulation}
 \label{sec:dualSVM}
 From the primal formulation, it is possible to have an equivalent dual form. This latter formulation allows samples $\textbf{x}_i$ to appear in the optimization problem through dot-products only. The kernel trick can be applied to extend the methods to learn non-linear classifiers.
 
-First, to simplify the calculation development, let consider the hard margin formulation in Eqs. \ref{eq:objectiveSVM2}, \ref{eq:constraintsSVM2} and \ref{eq:constraintsSVM20}. As a constrained optimization problem, the formulation is equivalent to the minimization of a Lagrange function $L(\textbf{w},b)$, consisting of the sum of the objective function and the $n$ constraints multiplied by their respective Lagrange multipliers $\boldsymbol{\alpha} = [\alpha_1, \ldots, \alpha_n]^T$: 
+First, to simplify the calculation development, let consider the hard margin formulation in Eqs. \ref{eq:objectiveSVM}, \ref{eq:constraintsSVM} and \ref{eq:constraintsSVM20}. As a constrained optimization problem, the formulation is equivalent to the minimization of a Lagrange function $L(\textbf{w},b)$, consisting of the sum of the objective function (Eq. \ref{eq:objectiveSVM}) and the $n$ constraints (Eq. \ref{eq:constraintsSVM}) multiplied by their respective Lagrange multipliers $\boldsymbol{\alpha} = [\alpha_1, \ldots, \alpha_n]^T$: 
 \begin{align}
 	& \argmax_{\boldsymbol{\alpha}} \left( L(\textbf{w},b) = \frac{1}{2}(\textbf{w}^T\textbf{w})-\sum\limits_{i=1}^{n}\alpha_i(y_i(\textbf{w}^T\textbf{x}_i+b)-1) \right) \label{eq:Lagrange} \\
-	& \textbf{s.t. } \forall i = 1...n: \nonumber \\
+	& \textbf{s.t. } \forall i = 1,\ldots,n: \nonumber \\
 	& \alpha_i \geq 0 \label{KKT1}\\
 	& y_i(\textbf{w}^T\textbf{x}_i+b)-1 \geq 0 \label{KKT2}\\
 	& \alpha_i (y_i(\textbf{w}^T\textbf{x}_i+b)-1) = 0 \label{KKT3}
 \end{align}
-\noindent where $\alpha_i \geq 0$ are the Lagrange multipliers. In optimization theory, Eq. \ref{KKT1}, \ref{KKT2} and \ref{KKT3} are called the Karush-Kuhn-Tucker ({\sc kkt}) conditions. It corresponds to the set of conditions which must be satisfied at the optimum of a constrained optimization problem. The {\sc kkt} conditions will play an important role in the interpretation of {\sc svm} in Section \ref{subsec:interpretation}. 
+\noindent where $\alpha_i \geq 0$ are the Lagrange multipliers. In optimization theory, Eqs. \ref{KKT1}, \ref{KKT2} and \ref{KKT3} are called the Karush-Kuhn-Tucker ({\sc kkt}) conditions \cite{Bishop2006}. It corresponds to the set of conditions which must be satisfied at the optimum of a constrained optimization problem. The {\sc kkt} conditions will play an important role in the interpretation of {\sc svm} in Section \ref{subsec:interpretation}. 
 
-\noindent At the maximum value of $L(\textbf{w},b)$, we assume the derivatives with respect to $b$ and $\textbf{w}$ are set to zero:
+\noindent At the maximum value of $L(\textbf{w},b)$, we assume that the derivatives with respect to $b$ and $\textbf{w}$ are set to zero:
 \begin{align*}
 \frac{\partial L}{\partial b} &= - \sum\limits_{i=1}^{n}\alpha_i y_i = 0 \\
 \frac{\partial L}{\partial \textbf{w}} &= \textbf{w}-\sum\limits_{i=1}^{n}\alpha_i y_i \textbf{x}_i = 0
@@ -375,8 +373,8 @@ First, to simplify the calculation development, let consider the hard margin for
 	& \alpha_i \geq 0 \label{constraintdual2}
 \end{align}
 
-\noindent The dual objective in Eq. \ref{eq:dualSVM} is quadratic in the parameters $\alpha_i$. Adding the constraints in Eqs. \ref{constraintdual1} and \ref{constraintdual2}, it is a constrained quadratic programming optimization problem ({\sc qp}). Note that while the primal formulation is minimization, the equivalent dual formulation is maximization. It can be shown that the objective functions of both formulations reach the same value when the solution is found \cite{Campbell2011}. \\
-In the same spirit, considering the soft margin primal problem, it can be shown that it leads to the same formulation \cite{Campbell2011} (Eqs. \ref{eq:dualSVM} and \ref{constraintdual1}), except that 
+\noindent The dual objective in Eq. \ref{eq:dualSVM} is quadratic in the parameters $\alpha_i$. Adding the constraints in Eqs. \ref{constraintdual1} and \ref{constraintdual2}, it is a constrained quadratic programming optimization problem ({\sc qp}). Note that while the primal formulation is minimization, the equivalent dual formulation is maximization. It can be shown that the objective functions of both formulations (primal and dual) reach the same value when the solution is found \cite{Campbell2011}. \\
+In the same spirit, considering the soft margin primal problem, it can be shown that it leads to the same formulation in Eqs. \ref{eq:dualSVM} and \ref{constraintdual1} \cite{Campbell2011}, except that 
 the Lagrange multipliers $\alpha_i$ are upper bounded by the trade-off $C$ in the soft margin formulation:
 \begin{align}
 	& 0 \leq \alpha_i \leq C  \label{constraintdual4}
@@ -390,7 +388,7 @@ At the optimality point, Eq. \ref{KKT3} leads $\alpha_i^* = 0$ for all datapoint
 
 \noindent From Eqs. \ref{eq:decision_function} \& \ref{eq:w_dual}, to classify a new sample $\textbf{x}_j$, the decision function for a binary classification problem is:
 \begin{equation}
-	f(\textbf{x}_j) = sign(\sum\limits_{i=1}^{n} \alpha_i^*y_i(\textbf{x}_i^T\textbf{x}_j) + b^*) \label{decisionDual}
+	f(\textbf{x}_j) = sign\left( \sum\limits_{i=1}^{n} \alpha_i^*y_i(\textbf{x}_i^T\textbf{x}_j) + b^* \right)  \label{decisionDual}
 \end{equation} 
 
 \begin{figure}[h!]
@@ -438,8 +436,8 @@ Many kernels have been proposed in the literature such as the polynomial, sigmoi
 \begin{align}
 	& \kappa(\textbf{x}_i,\textbf{x}_j)= \textbf{x}_i ^T \textbf{x}_j \\
 	& \kappa(\textbf{x}_i,\textbf{x}_j)
-	= \exp(-\frac{||\textbf{x}_j-\textbf{x}_i||_2^2}{2\sigma^2})
-	= \exp(-\gamma||\textbf{x}_j-\textbf{x}_i||_2^2)
+	= \exp\left( -\frac{||\textbf{x}_j-\textbf{x}_i||_2^2}{2\sigma^2}\right) 
+	= \exp\left( -\gamma||\textbf{x}_j-\textbf{x}_i||_2^2\right) 
 \end{align}
 where $\gamma = \frac{1}{2\sigma^2}$ is the parameter of the Gaussian kernel and $||\textbf{x}_j-\textbf{x}_i||_2$ is the Euclidean distance between $\textbf{x}_i$ and $\textbf{x}_j$. Note that the Linear kernel is the identity transformation. In practice, for large scale problem (when the number of dimensions $p$ is high), using a Linear kernel is sufficient  \cite{Fan2008}.
 
@@ -465,7 +463,7 @@ By applying the kernel trick to the soft margin formulation in Eqs. \ref{eq:dual
 
 \noindent The decision function $f$ becomes:
 \begin{equation}
-f(\textbf{x}_j) = sign(\sum\limits_{i=1}^{n} \alpha_i^*y_i \kappa(\textbf{x}_i,\textbf{x}_j) + b^*) \label{decisionDualKernel}
+f(\textbf{x}_j) = sign\left( \sum\limits_{i=1}^{n} \alpha_i^*y_i \kappa(\textbf{x}_i,\textbf{x}_j) + b^*\right)  \label{decisionDualKernel}
 \end{equation} 
 \noindent Let $n_{SV}$ be the number of support vectors ($n_{SV} \leq n$). To recover $b^*$, we recall that for support vectors $\textbf{x}_i$:
 \begin{equation}
@@ -498,9 +496,9 @@ From this, we can solve $b^*$ using an arbitrarily chosen support vector $\textb
 \noindent \textbf{Interpretation in the primal} \\
 We recall that $\textbf{x}_i$ is a sample in $p$ dimensions: $x_1, \ldots, x_p$. Geometrically, the vector $\textbf{w}$ represents the direction of the hyperplane and points towards the direction of positive decision function $f(\textbf{x}) \geq 0$ (Fig. \ref{fig:SVM_interpretation}). The absolute value of the bias $|b|$ is equal to the distance of the hyperplane to the origin point $\textbf{x}=\textbf{0}$\footnote{$\textbf{0}$ stands for the null vector: $\textbf{0} = [0, \ldots ,0]^T$} if the norm of the vector $\textbf{w}$ is equal to 1. In the soft margin problem, the slack variables $\xi_i$ can be interpreted as follows:
 \begin{itemize}
-	\item $\xi = 0$ implies that $\textbf{x}_i$ is correctly classified and is either on the margin or on the correct side of the margin.
-	\item $0 < \xi \leq 1$ implies that $\textbf{x}_i$ lies inside the margin, but on the correct side of the decision boundary
-	\item $\xi \geq 1$ implies that $\textbf{x}_i$ lies on 	the wrong side of the decision boundary and is misclassified.
+	\item $\xi_i = 0$ implies that $\textbf{x}_i$ is correctly classified and is either on the margin or on the correct side of the margin.
+	\item $0 < \xi_i \leq 1$ implies that $\textbf{x}_i$ lies inside the margin, but on the correct side of the decision boundary.
+	\item $\xi_i \geq 1$ implies that $\textbf{x}_i$ lies on the wrong side of the decision boundary and is misclassified.
 \end{itemize}
 % of the samples $\textbf{x}_i$ that lies within the two canonical hyperplanes are equal to zero. Outside of these canonical hyperplanes, the slack variables $\xi_i > 0$ are equal to the distance to the hyperplane.
 
@@ -541,7 +539,7 @@ From the primal formulation of {\sc svm} (Eqs. \ref{eq:objectiveSVM} \& \ref{eq:
 
 First, the two common regularizers are $||\textbf{w}||_1$ and $||\textbf{w}||_2$. The former is referred to as $L_1$-Regularizer while the latter is $L_2$-Regularizer. $L_1$-Regularizer is used to obtain sparser models than $L_2$-Regularizer, \textit{i.e.}, the vector $\textbf{w}$ will contain many elements $w_i$ that will equal to zero. Thus, it can be used for variable selection.
 
-Secondly, the two common loss functions $\xi_i$ are $\max(1-y_i \textbf{w}^T \textbf{x}_i, 0)$ and $[\max(1-y_i \textbf{w}^T \textbf{x}_i, 0)]^2$. The former is referred to as $L_1$-Loss and the latter is $L_2$-Loss function. $L_2$-loss function will penalize more slack variables $\xi_i$ during training and would be more sensitive to outliers. Theorically, it should lead to less error in training and poorer generalization in most of the case \cite{Hsu2008}. In general, $L_1$-Loss is preferred.
+Secondly, the two common loss functions $\xi_i$ are $\max(1-y_i (\textbf{w}^T \textbf{x}_i+b), 0)$ and $[\max(1-y_i(\textbf{w}^T \textbf{x}_i+b), 0)]^2$. The former is referred to as $L_1$-Loss and the latter is $L_2$-Loss function. $L_2$-loss function will penalize more slack variables $\xi_i$ during training and would be more sensitive to outliers. Theorically, it should lead to less error in training and poorer generalization in most of the case \cite{Hsu2008}. In general, $L_1$-Loss is preferred.
 
 
 
@@ -575,7 +573,7 @@ E_{\epsilon} (f(\textbf{x}_i)-y_i) =
 		+ C \overbrace{\sum\limits_{i=1}^{n}(\xi_{i_1}+\xi_{i_2})}^{Loss}
 		\right) 
 		\label{eq:objectiveSVR}\\
-		& \textbf{s.t. } \forall i=1 \ldots n: \nonumber\\
+		& \textbf{s.t. } \forall i=1, \ldots, n: \nonumber\\
 		& y_i-(\textbf{w}^T\textbf{x}_i+b) \geq \epsilon -\xi_{i_1} \\
 		& (\textbf{w}^T\textbf{x}_i+b)-y_i \geq \epsilon -\xi_{i_2} \\
 		&  \xi_{i_1} \geq 0 \\
@@ -589,7 +587,7 @@ E_{\epsilon} (f(\textbf{x}_i)-y_i) =
 		\sum\limits_{i=1}^{n} y_i(\alpha_{i_1}-\alpha_{i_2})
 		-\frac{1}{2} \sum\limits_{i=1}^{n} \sum\limits_{j=1}^{n} (\alpha_{i_1}-\alpha_{i_2})(\alpha_{j_1}-\alpha_{j_2}) (\textbf{x}_i.\textbf{x}_j)
 		\right) \\ 
-		& \textbf{s.t. } \forall i=1 \ldots n: \nonumber\\
+		& \textbf{s.t. } \forall i=1, \ldots, n: \nonumber\\
 		& \sum\limits_{i=1}^{n} \alpha_{i_1} = \sum\limits_{i=1}^{n} \alpha_{i_2} \\
 		& 0 \leq \alpha_{i_1} \leq C \\
 		& 0 \leq \alpha_{i_2} \leq C
@@ -598,19 +596,19 @@ E_{\epsilon} (f(\textbf{x}_i)-y_i) =
 \begin{align}
 	& f(\textbf{x}_j) = \textbf{w}^T\textbf{x}_j+b \\ 
 	& f(\textbf{x}_j) = \sum\limits_{i=1}^{n} (\alpha_{i_1}^*-\alpha_{i_2}^*)(\textbf{x}_i.\textbf{x}_j) + b \\	
-	& f(\textbf{x}_j) = \sum\limits_{i=1}^{n} (\alpha_{i_1}^*-\alpha_{i_2}^*)K(\textbf{x}_i,\textbf{x}_j) + b
+	& f(\textbf{x}_j) = \sum\limits_{i=1}^{n} (\alpha_{i_1}^*-\alpha_{i_2}^*)\kappa(\textbf{x}_i,\textbf{x}_j) + b
 \end{align}	
 More informations about the calculation development can be found in \cite{Bishop2006}.
 
-\subsection{Other classification algorithms}
-\todo[inline]{Partie non encore rédigée. A faire à la fin.}
-\begin{itemize}
-	\item Positionner les travaux par rapport aux autres méthodes d'apprentissage supervisé
-	\item S'intéresser au Deep neural network (à la mode en ce moment)
-	\item RVM, Decision Tree, 
-	\item Ne pas trop développer
-	\item Dans notre cas, on ne s'intéressera pas à ce type d'algorithmes (type deep learning) car il ne repose pas sur une notion de distance et les features qui sont trouvés ne sont pas interprétables
-\end{itemize}
+%\subsection{Other classification algorithms}
+%\todo[inline]{Partie non encore rédigée. A faire à la fin.}
+%\begin{itemize}
+%	\item Positionner les travaux par rapport aux autres méthodes d'apprentissage supervisé
+%	\item S'intéresser au Deep neural network (à la mode en ce moment)
+%	\item RVM, Decision Tree, 
+%	\item Ne pas trop développer
+%	\item Dans notre cas, on ne s'intéressera pas à ce type d'algorithmes (type deep learning) car il ne repose pas sur une notion de distance et les features qui sont trouvés ne sont pas interprétables
+%\end{itemize}
 
 
 
@@ -620,10 +618,10 @@ More informations about the calculation development can be found in \cite{Bishop
 %	\item The concept of order of temporal data in not take into account (dynamic, frequence, etc.)
 %	\item Introduction to next chapter: all of these algorithms (kNN, {\sc svm}, etc.) are based on a notion of distance or similarity between objects to compare/classify. Let consider now the object time series and let recall the concept of distance between time series
 %\end{itemize}
-\todo[inline]{A refaire complètement à la fin.}
-This chapter reviews the different steps in a machine learning framework: data normalization, model selection and model evaluation. We focus on two machine learning algorithms used in our proposition: the $k$-Nearest Neighbors ($k$-NN) and the Support Vector Machine ({\sc svm}). In the following, we consider the $k$-NN as our classifier. The {\sc svm} will be used in our work for its large margin concept. 
+% \todo[inline]{A refaire complètement à la fin.}
+This chapter reviews the different steps in a machine learning framework: data normalization, model selection and model evaluation. We focus on two machine learning algorithms: the $k$-Nearest Neighbors ($k$-NN) and the Support Vector Machine ({\sc svm}). In the following, we consider the $k$-NN as our classifier. The {\sc svm} will be used in our work for its large margin concept, a key part of one of our algorithms. 
 
-Our objective being the learning of a metric that optimizes the performances of the $k$-NN classifier, we review in the next section some metrics proposed for time series as well as metric learning concept for static data.
+Our objective being the learning of a metric that optimizes the performances of the $k$-NN classifier, we review in the next section some metrics proposed for time series.
 
 %To make the classification or regression of time series, a commonly hypothesis is to consider time series as static data and then to apply classical machine learning algorithms, such as a $k$-Nearest Neighbors ($k$-NN) or a Support Vector Machine ({\sc svm}) approach. For that, the practitioner has to be careful on the design of his learning framework: data must be separated into a training and testing set, data have to be normalized depending on their distributions, cross-validation must be operated on the training set to learn the best fitting of the hyper-parameters and finally, performance metrics and statistical tests should be used to compare the performances of different classifiers.
 %

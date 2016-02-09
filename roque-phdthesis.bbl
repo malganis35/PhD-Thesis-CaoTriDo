@@ -49,6 +49,116 @@
   \field{year}{1964}
 \endentry
 
+\entry{Alppaydin2011a}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Alppaydin}{A.}%
+     {Ethem}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{5}{}{%
+    {{}%
+     {Dietterich}{D.}%
+     {Thomas}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bishop}{B.}%
+     {Christopher}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Heckerman}{H.}%
+     {David}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jordan}{J.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kearns}{K.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AE1}
+  \strng{fullhash}{AE1}
+  \field{labelalpha}{Alp11}
+  \field{sortinit}{A}
+  \field{abstract}{%
+  Machine learning is programming computers to optimize a performance criterion
+  using example data or past experience. We need learning in cases where we
+  cannot directly write a computer program to solve a given problem, but need
+  example data or experience. One case where learning is necessary is when
+  human expertise does not exist, or when humans are unable to explain their
+  expertise. Consider the recognition of spoken speech—that is, converting
+  the acoustic speech signal to an ASCII text; we can do this task seemingly
+  without any difficulty, but we are unable to explain how we do it. Different
+  people utter the same word differently due to differences in age, gender, or
+  accent. In machine learning, the ap- proach is to collect a large collection
+  of sample utterances from different people and learn to map these to words.
+  Another case is when the problem to be solved changes in time, or depends on
+  the particular environment. We would like to have general- purpose systems
+  that can adapt to their circumstances, rather than ex- plicitly writing a
+  different program for each special circumstance. Con- sider routing packets
+  over a computer network. The path maximizing the quality of service from a
+  source to destination changes continuously as the network traffic changes. A
+  learning routing program is able to adapt to the best path by monitoring the
+  network traffic. Another ex- ample is an intelligent user interface that can
+  adapt to the biometrics of its user—namely, his or her accent, handwriting,
+  working habits, and so forth. Already, there are many successful applications
+  of machine learning in various domains: There are commercially available
+  systems for rec- ognizing speech and handwriting. Retail companies analyze
+  their past sales data to learn their customers’ behavior to improve
+  customer relationship management. Financial institutions analyze past
+  transactions to predict customers’ credit risks. Robots learn to optimize
+  their behav- ior to complete a task using minimum resources. In
+  bioinformatics, the huge amount of data can only be analyzed and knowledge
+  extracted us- ing computers. These are only some of the applications that
+  we—that is, you and I—will discuss throughout this book. We can only
+  imagine what future applications can be realized using machine learning: Cars
+  that can drive themselves under different road and weather conditions, phones
+  that can translate in real time to and from a foreign language, autonomous
+  robots that can navigate in a new environment, for example, on the surface of
+  another planet. Machine learning is certainly an exciting field to be working
+  in! The book discusses many methods that have their bases in different
+  fields: statistics, pattern recognition, neural networks, artificial intelli-
+  gence, signal processing, control, and data mining. In the past, research in
+  these different communities followed different paths with different emphases.
+  In this book, the aim is to incorporate them together to give a unified
+  treatment of the problems and the proposed solutions to them. This is an
+  introductory textbook, intended for senior undergraduate and graduate-level
+  courses on machine learning, as well as engineers working in the industry who
+  are interested in the application of these methods. The prerequisites are
+  courses on computer programming, prob- ability, calculus, and linear algebra.
+  The aim is to have all learning algo- rithms sufficiently explained so it
+  will be a small step fromthe equations given in the book to a computer
+  program. For some cases, pseudocode of algorithms are also included to make
+  this task easier. The book can be used for a one-semester course by sampling
+  from the chapters, or it can be used for a two-semester course, possibly by
+  dis- cussing extra research papers; in such a case, I hope that the
+  references at the end of each chapter are useful. The Web page is
+  http://www.cmpe.boun.edu.tr/∼ethem/i2ml/ where I will post information
+  related to the book that becomes available after the book goes to press, for
+  example, errata. I welcome your feedback via email to alpaydin@boun.edu.tr.%
+  }
+  \field{isbn}{9780262012430}
+  \field{pages}{579}
+  \field{title}{{Introduction to Machine Learning Second Edition}}
+  \list{location}{1}{%
+    {The MIT Press Cambridge, Massachusetts London, England}%
+  }
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Alppaydin - 2011 - Introduction to Machine Learning S
+  \verb econd Edition.pdf:pdf
+  \endverb
+  \field{year}{2011}
+\endentry
+
 \entry{Altman1992}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -2258,6 +2368,67 @@
   \field{year}{2002}
 \endentry
 
+\entry{Lee2009}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Lee}{L.}%
+     {Honglak}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pham}{P.}%
+     {Pt}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Largman}{L.}%
+     {Y}{Y}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ng}{N.}%
+     {Ay}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LH+1}
+  \strng{fullhash}{LHPPLYNA1}
+  \field{labelalpha}{Lee+09}
+  \field{sortinit}{L}
+  \field{abstract}{%
+  In recent years, deep learning approaches have gained significant interest as
+  a way of building hierarchical representations from unlabeled data. However,
+  to our knowledge, these deep learning approaches have not been extensively
+  studied for auditory data. In this paper, we apply convolutional deep belief
+  networks to audio data and empirically evaluate them on various audio
+  classification tasks. In the case of speech data, we show that the learned
+  features correspond to phones/phonemes. In addition, our feature
+  representations learned from unlabeled audio data show very good performance
+  for multiple audio classification tasks. We hope that this paper will inspire
+  more research on deep learning approaches applied to a wide range of audio
+  recognition tasks.%
+  }
+  \verb{doi}
+  \verb 10.1145/1553374.1553453
+  \endverb
+  \field{isbn}{9781605585161}
+  \field{issn}{02643294}
+  \field{pages}{1\bibrangedash 9}
+  \field{title}{{Unsupervised feature learning for audio classification using
+  convolutional deep belief networks.}}
+  \verb{url}
+  \verb https://papers.nips.cc/paper/3674-unsupervised-feature-learning-for-aud
+  \verb io-classification-using-convolutional-deep-belief-networks.pdf
+  \endverb
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/Desktop/3674-unsupervised-feature-lear
+  \verb ning-for-audio-classification-using-convolutional-deep-belief-networks.
+  \verb pdf:pdf
+  \endverb
+  \field{journaltitle}{Nips}
+  \field{year}{2009}
+\endentry
+
 \entry{Lhermitte2011a}{article}{}
   \name{author}{4}{}{%
     {{}%
@@ -2409,6 +2580,51 @@
   \endverb
   \field{journaltitle}{Information Sciences}
   \field{year}{2012}
+\endentry
+
+\entry{Mohamad2013}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Mohamad}{M.}%
+     {Ismail~Bin}{I.~B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Usman}{U.}%
+     {Dauda}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Clustering,Decimal scaling,K-means,Min-max,Standardization,Z-score}
+  \strng{namehash}{MIBUD1}
+  \strng{fullhash}{MIBUD1}
+  \field{labelalpha}{MU13}
+  \field{sortinit}{M}
+  \field{abstract}{%
+  Data clustering is an important data exploration technique with many
+  applications in data mining. K-means is one of the most well known methods of
+  data mining that partitions a dataset into groups of patterns, many methods
+  have been proposed to improve the performance of the K-means algorithm.
+  Standardization is the central preprocessing step in data mining, to
+  standardize values of features or attributes from different dynamic range
+  into a specific range. In this paper, we have analyzed the performances of
+  the three standardization methods on conventional K-means algorithm. By
+  comparing the results on infectious diseases datasets, it was found that the
+  result obtained by the z-score standardization method is more effective and
+  efficient than min-max and decimal scaling standardization methods.%
+  }
+  \field{issn}{20407459}
+  \field{number}{17}
+  \field{pages}{3299\bibrangedash 3303}
+  \field{title}{{Standardization and its effects on K-means clustering
+  algorithm}}
+  \field{volume}{6}
+  \verb{file}
+  \verb :C$\backslash$:/Users/SESA245227/Desktop/v6-3299-3303.pdf:pdf
+  \endverb
+  \field{journaltitle}{Research Journal of Applied Sciences, Engineering and
+  Technology}
+  \field{year}{2013}
 \endentry
 
 \entry{Montero2014}{article}{}

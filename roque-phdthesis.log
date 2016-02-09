@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.15)  8 FEB 2016 11:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.15)  8 FEB 2016 15:44
 entering extended mode
 **roque-phdthesis.tex
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.tex
@@ -2197,31 +2197,31 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 
-] <images/Overfitting.png, id=706, 287.8755pt x 287.27325pt>
+] <images/Overfitting.png, id=692, 287.8755pt x 287.27325pt>
 File: images/Overfitting.png Graphic file (type png)
 
 <use images/Overfitting.png>
-Package pdftex.def Info: images/Overfitting.png used on input line 48.
+Package pdftex.def Info: images/Overfitting.png used on input line 46.
 (pdftex.def)             Requested size: 177.05879pt x 176.6961pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/GridSearch.png, id=709, 340.8735pt x 338.4645pt>
+<images/GridSearch.png, id=695, 340.8735pt x 338.4645pt>
 File: images/GridSearch.png Graphic file (type png)
 
 <use images/GridSearch.png>
-Package pdftex.def Info: images/GridSearch.png used on input line 57.
+Package pdftex.def Info: images/GridSearch.png used on input line 55.
 (pdftex.def)             Requested size: 177.05879pt x 175.81146pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Cross_validation2.jpg, id=710, 651.93562pt x 258.9675pt>
+<images/Cross_validation2.jpg, id=696, 651.93562pt x 258.9675pt>
 File: images/Cross_validation2.jpg Graphic file (type jpg)
 
 <use images/Cross_validation2.jpg>
-Package pdftex.def Info: images/Cross_validation2.jpg used on input line 64.
+Package pdftex.def Info: images/Cross_validation2.jpg used on input line 62.
 (pdftex.def)             Requested size: 442.65375pt x 175.8387pt.
 
 
@@ -2245,21 +2245,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [7 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Overfittin
 g.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/GridSe
-arch.png>] <images/LearningFramework.png, id=732, 890.1255pt x 448.074pt>
+arch.png>] <images/LearningFramework.png, id=718, 890.1255pt x 448.074pt>
 File: images/LearningFramework.png Graphic file (type png)
 
 <use images/LearningFramework.png>
-Package pdftex.def Info: images/LearningFramework.png used on input line 85.
+Package pdftex.def Info: images/LearningFramework.png used on input line 83.
 (pdftex.def)             Requested size: 442.65375pt x 222.82628pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Dataset.png, id=733, 634.16925pt x 473.3685pt>
+<images/Dataset.png, id=719, 634.16925pt x 473.3685pt>
 File: images/Dataset.png Graphic file (type png)
 
 <use images/Dataset.png>
-Package pdftex.def Info: images/Dataset.png used on input line 92.
+Package pdftex.def Info: images/Dataset.png used on input line 90.
 (pdftex.def)             Requested size: 398.38567pt x 297.37141pt.
 
 
@@ -2292,11 +2292,56 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 161.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 160.
 
  ("C:\Program Files (x86)\MikeTeX\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 160--160
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (9.53346pt too wide) in paragraph at lines 160--160
+\T1/cmr/bx/n/10 [CTD1]: \T1/cmr/m/n/10 ref 
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 160--160
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (9.53346pt too wide) in paragraph at lines 160--160
+\T1/cmr/bx/n/10 [CTD1]: \T1/cmr/m/n/10 ref 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 160--160
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (9.53346pt too wide) in paragraph at lines 160--160
+\T1/cmr/bx/n/10 [CTD1]: \T1/cmr/m/n/10 ref 
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 160--160
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (9.53346pt too wide) in paragraph at lines 160--160
+\T1/cmr/bx/n/10 [CTD1]: \T1/cmr/m/n/10 ref 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2306,31 +2351,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [11]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 174.
-
-
-Overfull \hbox (0.6786pt too wide) in paragraph at lines 176--176
-[][][][]\T1/cmr/m/n/10.95 références 
- []
-
-
-Overfull \hbox (0.6786pt too wide) in paragraph at lines 176--176
-[][][][]\T1/cmr/m/n/10.95 références 
- []
-
-
-Overfull \hbox (0.6786pt too wide) in paragraph at lines 176--176
-[][][][]\T1/cmr/m/n/10.95 références 
- []
-
-
-Overfull \hbox (0.6786pt too wide) in paragraph at lines 176--176
-[][][][]\T1/cmr/m/n/10.95 références 
- []
+(nag)                Use \scshape or \textsc instead on input line 173.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 197.
+(nag)                Use \scshape or \textsc instead on input line 195.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2339,106 +2364,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12]
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 204--204
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (2.72957pt too wide) in paragraph at lines 204--204
-\T1/cmr/bx/n/10 [AD1]: \T1/cmr/m/n/10 dit 
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 204--204
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (2.72957pt too wide) in paragraph at lines 204--204
-\T1/cmr/bx/n/10 [AD1]: \T1/cmr/m/n/10 dit 
- []
-
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 204--204
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (2.72957pt too wide) in paragraph at lines 204--204
-\T1/cmr/bx/n/10 [AD1]: \T1/cmr/m/n/10 dit 
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 204--204
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (2.72957pt too wide) in paragraph at lines 204--204
-\T1/cmr/bx/n/10 [AD1]: \T1/cmr/m/n/10 dit 
- []
-
-Missing character: There is no ; in font nullfont!
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 204.
+(nag)                Use \scshape or \textsc instead on input line 203.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 204.
+(nag)                Use \scshape or \textsc instead on input line 203.
 
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 219--219
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (23.91884pt too wide) in paragraph at lines 219--219
-\T1/cmr/bx/n/10 [AR2]: \T1/cmr/m/n/10 Ahlame 
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 219--219
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (23.91884pt too wide) in paragraph at lines 219--219
-\T1/cmr/bx/n/10 [AR2]: \T1/cmr/m/n/10 Ahlame 
- []
-
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 219--219
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (23.91884pt too wide) in paragraph at lines 219--219
-\T1/cmr/bx/n/10 [AR2]: \T1/cmr/m/n/10 Ahlame 
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 219--219
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (23.91884pt too wide) in paragraph at lines 219--219
-\T1/cmr/bx/n/10 [AR2]: \T1/cmr/m/n/10 Ahlame 
- []
-
-Missing character: There is no ; in font nullfont!
-<images/kNN_example.png, id=789, 419.76825pt x 309.5565pt>
+<images/kNN_example.png, id=780, 419.76825pt x 309.5565pt>
 File: images/kNN_example.png Graphic file (type png)
 
 <use images/kNN_example.png>
-Package pdftex.def Info: images/kNN_example.png used on input line 225.
+Package pdftex.def Info: images/kNN_example.png used on input line 223.
 (pdftex.def)             Requested size: 177.05879pt x 130.5702pt.
-
-Overfull \vbox (2.07687pt too high) has occurred while \output is active []
-
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2448,90 +2387,82 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [13 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/kNN_examp
 le.png>]
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 240--240
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 238--238
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (5.92323pt too wide) in paragraph at lines 240--240
-\T1/cmr/bx/n/10 [AD3]: \T1/cmr/m/n/10 Ex- 
+Overfull \hbox (5.92323pt too wide) in paragraph at lines 238--238
+\T1/cmr/bx/n/10 [AD2]: \T1/cmr/m/n/10 Ex- 
  []
 
 
-Overfull \hbox (0.71654pt too wide) in paragraph at lines 240--240
+Overfull \hbox (0.71654pt too wide) in paragraph at lines 238--238
 \T1/cmr/m/n/10 d'avantage  
  []
 
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 240--240
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 238--238
 [][][][]\T1/cmr/bx/n/10 Comment 
  []
 
 
-Overfull \hbox (5.92323pt too wide) in paragraph at lines 240--240
-\T1/cmr/bx/n/10 [AD3]: \T1/cmr/m/n/10 Ex- 
+Overfull \hbox (5.92323pt too wide) in paragraph at lines 238--238
+\T1/cmr/bx/n/10 [AD2]: \T1/cmr/m/n/10 Ex- 
  []
 
 
-Overfull \hbox (0.71654pt too wide) in paragraph at lines 240--240
-\T1/cmr/m/n/10 d'avantage  
- []
-
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 240--240
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (5.92323pt too wide) in paragraph at lines 240--240
-\T1/cmr/bx/n/10 [AD3]: \T1/cmr/m/n/10 Ex- 
- []
-
-
-Overfull \hbox (0.71654pt too wide) in paragraph at lines 240--240
-\T1/cmr/m/n/10 d'avantage  
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 240--240
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (5.92323pt too wide) in paragraph at lines 240--240
-\T1/cmr/bx/n/10 [AD3]: \T1/cmr/m/n/10 Ex- 
- []
-
-
-Overfull \hbox (0.71654pt too wide) in paragraph at lines 240--240
+Overfull \hbox (0.71654pt too wide) in paragraph at lines 238--238
 \T1/cmr/m/n/10 d'avantage  
  []
 
 Missing character: There is no ; in font nullfont!
 
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 238--238
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (5.92323pt too wide) in paragraph at lines 238--238
+\T1/cmr/bx/n/10 [AD2]: \T1/cmr/m/n/10 Ex- 
+ []
+
+
+Overfull \hbox (0.71654pt too wide) in paragraph at lines 238--238
+\T1/cmr/m/n/10 d'avantage  
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 238--238
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (5.92323pt too wide) in paragraph at lines 238--238
+\T1/cmr/bx/n/10 [AD2]: \T1/cmr/m/n/10 Ex- 
+ []
+
+
+Overfull \hbox (0.71654pt too wide) in paragraph at lines 238--238
+\T1/cmr/m/n/10 d'avantage  
+ []
+
+Missing character: There is no ; in font nullfont!
+
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 271.
+(nag)                Use \scshape or \textsc instead on input line 269.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 282.
+(nag)                Use \scshape or \textsc instead on input line 280.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 282.
+(nag)                Use \scshape or \textsc instead on input line 280.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 282.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 284.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 284.
+(nag)                Use \scshape or \textsc instead on input line 280.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2540,62 +2471,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 289--289
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 282.
 
 
-Overfull \hbox (11.33858pt too wide) in paragraph at lines 289--289
-\T1/cmr/bx/n/10 [AD4]: \T1/cmr/m/n/10 Met- 
- []
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 282.
 
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 289--289
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (11.33858pt too wide) in paragraph at lines 289--289
-\T1/cmr/bx/n/10 [AD4]: \T1/cmr/m/n/10 Met- 
- []
-
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 289--289
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (11.33858pt too wide) in paragraph at lines 289--289
-\T1/cmr/bx/n/10 [AD4]: \T1/cmr/m/n/10 Met- 
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 289--289
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (11.33858pt too wide) in paragraph at lines 289--289
-\T1/cmr/bx/n/10 [AD4]: \T1/cmr/m/n/10 Met- 
- []
-
-Missing character: There is no ; in font nullfont!
-
-<images/Plusieurs_separatrice_lineaire2.png, id=844, 418.66759pt x 314.00069pt>
+<images/Plusieurs_separatrice_lineaire2.png, id=831, 418.66759pt x 314.00069pt>
 File: images/Plusieurs_separatrice_lineaire2.png Graphic file (type png)
 <use images/Plusieurs_separatrice_lineaire2.png>
 Package pdftex.def Info: images/Plusieurs_separatrice_lineaire2.png used on inp
-ut line 293.
+ut line 292.
 (pdftex.def)             Requested size: 221.32687pt x 165.99792pt.
 
-<images/Separatrice_lineaire_avec_marges2.png, id=847, 404.712pt x 303.534pt>
-File: images/Separatrice_lineaire_avec_marges2.png Graphic file (type png)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<use images/Separatrice_lineaire_avec_marges2.png>
-Package pdftex.def Info: images/Separatrice_lineaire_avec_marges2.png used on i
-nput line 311.
-(pdftex.def)             Requested size: 265.59494pt x 199.20758pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2605,8 +2498,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [15 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Plusieurs
 _separatrice_lineaire2.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<images/Separatrice_lineaire_avec_marges2.png, id=848, 404.712pt x 303.534pt>
+File: images/Separatrice_lineaire_avec_marges2.png Graphic file (type png)
 
+<use images/Separatrice_lineaire_avec_marges2.png>
+Package pdftex.def Info: images/Separatrice_lineaire_avec_marges2.png used on i
+nput line 310.
+(pdftex.def)             Requested size: 243.4609pt x 182.59885pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2618,19 +2516,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ce_lineaire_avec_marges2.png>]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 354.
+(nag)                Use \scshape or \textsc instead on input line 352.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 354.
+(nag)                Use \scshape or \textsc instead on input line 352.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 354.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+(nag)                Use \scshape or \textsc instead on input line 352.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2641,7 +2535,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [17]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 378.
+(nag)                Use \scshape or \textsc instead on input line 376.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2653,21 +2547,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18] <images/SVM_SV2.png, id=919, 404.712pt x 314.3745pt>
+[18] <images/SVM_SV2.png, id=913, 404.712pt x 314.3745pt>
 File: images/SVM_SV2.png Graphic file (type png)
 
 <use images/SVM_SV2.png>
-Package pdftex.def Info: images/SVM_SV2.png used on input line 398.
+Package pdftex.def Info: images/SVM_SV2.png used on input line 396.
 (pdftex.def)             Requested size: 265.59494pt x 206.32213pt.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 405.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 411--413
-
- []
+(nag)                Use \scshape or \textsc instead on input line 403.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2676,38 +2565,45 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [19 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_SV2.p
-ng>] <images/SVM_nonlinear2.png, id=934, 733.74126pt x 347.2975pt>
+ng>]
+Underfull \hbox (badness 10000) in paragraph at lines 409--411
+
+ []
+
+<images/SVM_nonlinear2.png, id=929, 733.74126pt x 347.2975pt>
 File: images/SVM_nonlinear2.png Graphic file (type png)
 
 <use images/SVM_nonlinear2.png>
-Package pdftex.def Info: images/SVM_nonlinear2.png used on input line 431.
+Package pdftex.def Info: images/SVM_nonlinear2.png used on input line 429.
 (pdftex.def)             Requested size: 398.38567pt x 188.56592pt.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 437.
+(nag)                Use \scshape or \textsc instead on input line 435.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[20 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_nonli
-near2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
 [][][][]$\T1/cmtt/m/n/9 https : / / www . quora . com / Support -[] Vector -[] 
 Machines / What -[] is -[] the -[] intuition -[] behind -[] Gaussian -[]$
  []
 
-<images/Kernel_Gaussian2.png, id=950, 369.17924pt x 166.82326pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20] <images/Kernel_Gaussian2.png, id=946, 369.17924pt x 166.82326pt>
 File: images/Kernel_Gaussian2.png Graphic file (type png)
 
 <use images/Kernel_Gaussian2.png>
-Package pdftex.def Info: images/Kernel_Gaussian2.png used on input line 450.
+Package pdftex.def Info: images/Kernel_Gaussian2.png used on input line 448.
 (pdftex.def)             Requested size: 265.59494pt x 120.02101pt.
 
-Underfull \vbox (badness 2469) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -2716,54 +2612,60 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Kernel_Ga
-ussian2.png>] <images/SVM_interpretation2.png, id=968, 404.712pt x 303.534pt>
+[21 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_nonli
+near2.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Ke
+rnel_Gaussian2.png>]
+<images/SVM_interpretation2.png, id=960, 404.712pt x 303.534pt>
 File: images/SVM_interpretation2.png Graphic file (type png)
 
 <use images/SVM_interpretation2.png>
-Package pdftex.def Info: images/SVM_interpretation2.png used on input line 509.
+Package pdftex.def Info: images/SVM_interpretation2.png used on input line 507.
 
 (pdftex.def)             Requested size: 309.85626pt x 232.4019pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Weight_interpretation3.png, id=973, 635.976pt x 460.119pt>
-File: images/Weight_interpretation3.png Graphic file (type png)
-
-<use images/Weight_interpretation3.png>
-Package pdftex.def Info: images/Weight_interpretation3.png used on input line 5
-20.
-(pdftex.def)             Requested size: 442.65375pt x 320.25568pt.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 521.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 521.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 525.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 526.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]
+[22] <images/Weight_interpretation3.png, id=978, 635.976pt x 460.119pt>
+File: images/Weight_interpretation3.png Graphic file (type png)
 
-LaTeX Warning: Text page 23 contains only floats.
+<use images/Weight_interpretation3.png>
+Package pdftex.def Info: images/Weight_interpretation3.png used on input line 5
+18.
+(pdftex.def)             Requested size: 442.65375pt x 320.25568pt.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 519.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 519.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 523.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 524.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 530.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2772,43 +2674,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_inter
-pretation2.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/imag
-es/Weight_interpretation3.png>]
+pretation2.png>]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 532.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 539.
+(nag)                Use \scshape or \textsc instead on input line 537.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 540.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 548.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 549.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 549.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 549.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 549.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 549.
+(nag)                Use \scshape or \textsc instead on input line 538.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2816,24 +2689,46 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24] <images/SVR_tube.png, id=1012, 420.97275pt x 200.54926pt>
+[24 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Weight_in
+terpretation3.png>]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 546.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 547.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 547.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 547.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 547.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 547.
+
+<images/SVR_tube.png, id=1004, 420.97275pt x 200.54926pt>
 File: images/SVR_tube.png Graphic file (type png)
 
 <use images/SVR_tube.png>
-Package pdftex.def Info: images/SVR_tube.png used on input line 554.
+Package pdftex.def Info: images/SVR_tube.png used on input line 552.
 (pdftex.def)             Requested size: 354.12434pt x 168.70197pt.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 555.
+(nag)                Use \scshape or \textsc instead on input line 553.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 555.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 585.
+(nag)                Use \scshape or \textsc instead on input line 553.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2849,15 +2744,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 png>]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 597.
+(nag)                Use \scshape or \textsc instead on input line 583.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 624.
+(nag)                Use \scshape or \textsc instead on input line 595.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 624.
+(nag)                Use \scshape or \textsc instead on input line 622.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 622.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2895,7 +2798,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 15.
 
-) [29] <images/multivariate_time_series.png, id=1080, 507.69675pt x 289.08pt>
+) [29] <images/multivariate_time_series.png, id=1075, 507.69675pt x 289.08pt>
 File: images/multivariate_time_series.png Graphic file (type png)
 
 <use images/multivariate_time_series.png>
@@ -2906,7 +2809,7 @@ Package pdftex.def Info: images/multivariate_time_series.png used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/time_series_example.png, id=1083, 681.747pt x 201.75375pt>
+<images/time_series_example.png, id=1078, 681.747pt x 201.75375pt>
 File: images/time_series_example.png Graphic file (type png)
 
 <use images/time_series_example.png>
@@ -2947,7 +2850,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 83--83
 
 
 Overfull \hbox (5.61775pt too wide) in paragraph at lines 83--83
-\T1/cmr/bx/n/10 [CTD5]: \T1/cmr/m/n/10 je 
+\T1/cmr/bx/n/10 [CTD3]: \T1/cmr/m/n/10 je 
  []
 
 
@@ -2957,7 +2860,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 83--83
 
 
 Overfull \hbox (5.61775pt too wide) in paragraph at lines 83--83
-\T1/cmr/bx/n/10 [CTD5]: \T1/cmr/m/n/10 je 
+\T1/cmr/bx/n/10 [CTD3]: \T1/cmr/m/n/10 je 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -2968,7 +2871,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 83--83
 
 
 Overfull \hbox (5.61775pt too wide) in paragraph at lines 83--83
-\T1/cmr/bx/n/10 [CTD5]: \T1/cmr/m/n/10 je 
+\T1/cmr/bx/n/10 [CTD3]: \T1/cmr/m/n/10 je 
  []
 
 
@@ -2978,11 +2881,11 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 83--83
 
 
 Overfull \hbox (5.61775pt too wide) in paragraph at lines 83--83
-\T1/cmr/bx/n/10 [CTD5]: \T1/cmr/m/n/10 je 
+\T1/cmr/bx/n/10 [CTD3]: \T1/cmr/m/n/10 je 
  []
 
 Missing character: There is no ; in font nullfont!
-<images/Representation_Metric.png, id=1113, 601.0455pt x 267.399pt>
+<images/Representation_Metric.png, id=1108, 601.0455pt x 267.399pt>
 File: images/Representation_Metric.png Graphic file (type png)
 
 <use images/Representation_Metric.png>
@@ -2998,7 +2901,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [32 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Represent
 ation_Metric.png>]
-<images/ExampleTimeSeriesMetrics3.png, id=1130, 418.66759pt x 314.00069pt>
+<images/ExampleTimeSeriesMetrics3.png, id=1125, 418.66759pt x 314.00069pt>
 File: images/ExampleTimeSeriesMetrics3.png Graphic file (type png)
 
 <use images/ExampleTimeSeriesMetrics3.png>
@@ -3016,7 +2919,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 183--183
 
 
 Overfull \hbox (10.68596pt too wide) in paragraph at lines 183--183
-\T1/cmr/bx/n/10 [SMA6]: \T1/cmr/m/n/10 re- 
+\T1/cmr/bx/n/10 [SMA4]: \T1/cmr/m/n/10 re- 
  []
 
 
@@ -3026,7 +2929,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 183--183
 
 
 Overfull \hbox (10.68596pt too wide) in paragraph at lines 183--183
-\T1/cmr/bx/n/10 [SMA6]: \T1/cmr/m/n/10 re- 
+\T1/cmr/bx/n/10 [SMA4]: \T1/cmr/m/n/10 re- 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3037,7 +2940,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 183--183
 
 
 Overfull \hbox (10.68596pt too wide) in paragraph at lines 183--183
-\T1/cmr/bx/n/10 [SMA6]: \T1/cmr/m/n/10 re- 
+\T1/cmr/bx/n/10 [SMA4]: \T1/cmr/m/n/10 re- 
  []
 
 
@@ -3047,7 +2950,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 183--183
 
 
 Overfull \hbox (10.68596pt too wide) in paragraph at lines 183--183
-\T1/cmr/bx/n/10 [SMA6]: \T1/cmr/m/n/10 re- 
+\T1/cmr/bx/n/10 [SMA4]: \T1/cmr/m/n/10 re- 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3084,7 +2987,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [34 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/ExampleTi
 meSeriesMetrics3.png>]
-<images/ExampleTimeSeriesMetrics4.png, id=1160, 418.66759pt x 314.00069pt>
+<images/ExampleTimeSeriesMetrics4.png, id=1155, 418.66759pt x 314.00069pt>
 File: images/ExampleTimeSeriesMetrics4.png Graphic file (type png)
 
 <use images/ExampleTimeSeriesMetrics4.png>
@@ -3108,7 +3011,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 294--294
 
 
 Overfull \hbox (14.29619pt too wide) in paragraph at lines 294--294
-\T1/cmr/bx/n/10 [SMA7]: \T1/cmr/m/n/10 for- 
+\T1/cmr/bx/n/10 [SMA5]: \T1/cmr/m/n/10 for- 
  []
 
 
@@ -3118,7 +3021,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 294--294
 
 
 Overfull \hbox (14.29619pt too wide) in paragraph at lines 294--294
-\T1/cmr/bx/n/10 [SMA7]: \T1/cmr/m/n/10 for- 
+\T1/cmr/bx/n/10 [SMA5]: \T1/cmr/m/n/10 for- 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3129,7 +3032,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 294--294
 
 
 Overfull \hbox (14.29619pt too wide) in paragraph at lines 294--294
-\T1/cmr/bx/n/10 [SMA7]: \T1/cmr/m/n/10 for- 
+\T1/cmr/bx/n/10 [SMA5]: \T1/cmr/m/n/10 for- 
  []
 
 
@@ -3139,7 +3042,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 294--294
 
 
 Overfull \hbox (14.29619pt too wide) in paragraph at lines 294--294
-\T1/cmr/bx/n/10 [SMA7]: \T1/cmr/m/n/10 for- 
+\T1/cmr/bx/n/10 [SMA5]: \T1/cmr/m/n/10 for- 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3151,7 +3054,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [36 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/ExampleTi
 meSeriesMetrics4.png>]
-<images/Voice_Example2.png, id=1184, 243.309pt x 296.307pt>
+<images/Voice_Example2.png, id=1179, 243.309pt x 296.307pt>
 File: images/Voice_Example2.png Graphic file (type png)
 
 <use images/Voice_Example2.png>
@@ -3164,7 +3067,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 302--302
 
 
 Overfull \hbox (15.86525pt too wide) in paragraph at lines 302--302
-\T1/cmr/bx/n/10 [MR8]: \T1/cmr/m/n/10 Mod- 
+\T1/cmr/bx/n/10 [MR6]: \T1/cmr/m/n/10 Mod- 
  []
 
 
@@ -3174,7 +3077,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 302--302
 
 
 Overfull \hbox (15.86525pt too wide) in paragraph at lines 302--302
-\T1/cmr/bx/n/10 [MR8]: \T1/cmr/m/n/10 Mod- 
+\T1/cmr/bx/n/10 [MR6]: \T1/cmr/m/n/10 Mod- 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3185,7 +3088,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 302--302
 
 
 Overfull \hbox (15.86525pt too wide) in paragraph at lines 302--302
-\T1/cmr/bx/n/10 [MR8]: \T1/cmr/m/n/10 Mod- 
+\T1/cmr/bx/n/10 [MR6]: \T1/cmr/m/n/10 Mod- 
  []
 
 
@@ -3195,7 +3098,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 302--302
 
 
 Overfull \hbox (15.86525pt too wide) in paragraph at lines 302--302
-\T1/cmr/bx/n/10 [MR8]: \T1/cmr/m/n/10 Mod- 
+\T1/cmr/bx/n/10 [MR6]: \T1/cmr/m/n/10 Mod- 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3206,7 +3109,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 313--313
 
 
 Overfull \hbox (24.11324pt too wide) in paragraph at lines 313--313
-\T1/cmr/bx/n/10 [AD9]: \T1/cmr/m/n/10 Ahlame 
+\T1/cmr/bx/n/10 [AD7]: \T1/cmr/m/n/10 Ahlame 
  []
 
 
@@ -3216,7 +3119,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 313--313
 
 
 Overfull \hbox (24.11324pt too wide) in paragraph at lines 313--313
-\T1/cmr/bx/n/10 [AD9]: \T1/cmr/m/n/10 Ahlame 
+\T1/cmr/bx/n/10 [AD7]: \T1/cmr/m/n/10 Ahlame 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3227,7 +3130,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 313--313
 
 
 Overfull \hbox (24.11324pt too wide) in paragraph at lines 313--313
-\T1/cmr/bx/n/10 [AD9]: \T1/cmr/m/n/10 Ahlame 
+\T1/cmr/bx/n/10 [AD7]: \T1/cmr/m/n/10 Ahlame 
  []
 
 
@@ -3237,7 +3140,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 313--313
 
 
 Overfull \hbox (24.11324pt too wide) in paragraph at lines 313--313
-\T1/cmr/bx/n/10 [AD9]: \T1/cmr/m/n/10 Ahlame 
+\T1/cmr/bx/n/10 [AD7]: \T1/cmr/m/n/10 Ahlame 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3255,14 +3158,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [37 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Voice_Exa
-mple2.png>] <images/DTWgrid2.png, id=1204, 421.78267pt x 337.05232pt>
+mple2.png>] <images/DTWgrid2.png, id=1199, 421.78267pt x 337.05232pt>
 File: images/DTWgrid2.png Graphic file (type png)
 
 <use images/DTWgrid2.png>
 Package pdftex.def Info: images/DTWgrid2.png used on input line 346.
 (pdftex.def)             Requested size: 265.59494pt x 212.23608pt.
 
-<images/DTWwarpedSignals.png, id=1205, 696.53328pt x 314.00069pt>
+<images/DTWwarpedSignals.png, id=1200, 696.53328pt x 314.00069pt>
 File: images/DTWwarpedSignals.png Graphic file (type png)
 
 <use images/DTWwarpedSignals.png>
@@ -3322,7 +3225,7 @@ dSignals.png (PNG copy)>]
 
 LaTeX Warning: Marginpar on page 40 moved.
 
-<images/CombinedMetrics.png, id=1230, 2336.73pt x 2317.458pt>
+<images/CombinedMetrics.png, id=1225, 2336.73pt x 2317.458pt>
 File: images/CombinedMetrics.png Graphic file (type png)
 
 <use images/CombinedMetrics.png>
@@ -3369,7 +3272,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [41 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/CombinedM
-etrics.png>] <images/SkewedData2.png, id=1246, 544.434pt x 448.074pt>
+etrics.png>] <images/SkewedData2.png, id=1241, 544.434pt x 448.074pt>
 File: images/SkewedData2.png Graphic file (type png)
 
 <use images/SkewedData2.png>
@@ -3424,7 +3327,7 @@ Package nag Warning: Command \centerline is TeX.
  503.
 
 
-<./images/TargetImposterRepresentationCao.png, id=1280, 906.38625pt x 363.60844
+<./images/TargetImposterRepresentationCao.png, id=1275, 906.38625pt x 363.60844
 pt>
 File: ./images/TargetImposterRepresentationCao.png Graphic file (type png)
  <use ./images/TargetImposterRepresentationCao.png>
@@ -3507,7 +3410,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 568.
 
-<images/RelationSVM_LMNN2.png, id=1308, 658.25925pt x 262.581pt>
+<images/RelationSVM_LMNN2.png, id=1303, 658.25925pt x 262.581pt>
 File: images/RelationSVM_LMNN2.png Graphic file (type png)
 
 <use images/RelationSVM_LMNN2.png>
@@ -3554,7 +3457,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 578.
 
-<images/RelationSVM_LMNN.png, id=1312, 554.67226pt x 245.11575pt>
+<images/RelationSVM_LMNN.png, id=1307, 554.67226pt x 245.11575pt>
 File: images/RelationSVM_LMNN.png Graphic file (type png)
 
 <use images/RelationSVM_LMNN.png>
@@ -3676,7 +3579,7 @@ Overfull \hbox (12.25627pt too wide) in paragraph at lines 44--44
 
 LaTeX Warning: Marginpar on page 50 moved.
 
-<images/SonyAIBO3.png, id=1371, 602.25pt x 292.09125pt>
+<images/SonyAIBO3.png, id=1366, 602.25pt x 292.09125pt>
 File: images/SonyAIBO3.png Graphic file (type png)
 
 <use images/SonyAIBO3.png>
@@ -3708,8 +3611,8 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 114--114
  []
 
 
-Overfull \hbox (21.12785pt too wide) in paragraph at lines 114--114
-\T1/cmr/bx/n/10 [SMA10]: \T1/cmr/m/n/10 Ap- 
+Overfull \hbox (15.37926pt too wide) in paragraph at lines 114--114
+\T1/cmr/bx/n/10 [SMA8]: \T1/cmr/m/n/10 Ap- 
  []
 
 
@@ -3718,8 +3621,8 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 114--114
  []
 
 
-Overfull \hbox (21.12785pt too wide) in paragraph at lines 114--114
-\T1/cmr/bx/n/10 [SMA10]: \T1/cmr/m/n/10 Ap- 
+Overfull \hbox (15.37926pt too wide) in paragraph at lines 114--114
+\T1/cmr/bx/n/10 [SMA8]: \T1/cmr/m/n/10 Ap- 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3729,8 +3632,8 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 114--114
  []
 
 
-Overfull \hbox (21.12785pt too wide) in paragraph at lines 114--114
-\T1/cmr/bx/n/10 [SMA10]: \T1/cmr/m/n/10 Ap- 
+Overfull \hbox (15.37926pt too wide) in paragraph at lines 114--114
+\T1/cmr/bx/n/10 [SMA8]: \T1/cmr/m/n/10 Ap- 
  []
 
 
@@ -3739,8 +3642,8 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 114--114
  []
 
 
-Overfull \hbox (21.12785pt too wide) in paragraph at lines 114--114
-\T1/cmr/bx/n/10 [SMA10]: \T1/cmr/m/n/10 Ap- 
+Overfull \hbox (15.37926pt too wide) in paragraph at lines 114--114
+\T1/cmr/bx/n/10 [SMA8]: \T1/cmr/m/n/10 Ap- 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3757,8 +3660,8 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 117--117
  []
 
 
-Overfull \hbox (29.6952pt too wide) in paragraph at lines 117--117
-\T1/cmr/bx/n/10 [MR11]: \T1/cmr/m/n/10 ajouter 
+Overfull \hbox (23.94661pt too wide) in paragraph at lines 117--117
+\T1/cmr/bx/n/10 [MR9]: \T1/cmr/m/n/10 ajouter 
  []
 
 
@@ -3767,8 +3670,8 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 117--117
  []
 
 
-Overfull \hbox (29.6952pt too wide) in paragraph at lines 117--117
-\T1/cmr/bx/n/10 [MR11]: \T1/cmr/m/n/10 ajouter 
+Overfull \hbox (23.94661pt too wide) in paragraph at lines 117--117
+\T1/cmr/bx/n/10 [MR9]: \T1/cmr/m/n/10 ajouter 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3778,8 +3681,8 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 117--117
  []
 
 
-Overfull \hbox (29.6952pt too wide) in paragraph at lines 117--117
-\T1/cmr/bx/n/10 [MR11]: \T1/cmr/m/n/10 ajouter 
+Overfull \hbox (23.94661pt too wide) in paragraph at lines 117--117
+\T1/cmr/bx/n/10 [MR9]: \T1/cmr/m/n/10 ajouter 
  []
 
 
@@ -3788,29 +3691,8 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 117--117
  []
 
 
-Overfull \hbox (29.6952pt too wide) in paragraph at lines 117--117
-\T1/cmr/bx/n/10 [MR11]: \T1/cmr/m/n/10 ajouter 
- []
-
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 117--117
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (29.73686pt too wide) in paragraph at lines 117--117
-\T1/cmr/bx/n/10 [SMA12]: \T1/cmr/m/n/10 modif 
- []
-
-
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 117--117
-[][][][]\T1/cmr/bx/n/10 Comment 
- []
-
-
-Overfull \hbox (29.73686pt too wide) in paragraph at lines 117--117
-\T1/cmr/bx/n/10 [SMA12]: \T1/cmr/m/n/10 modif 
+Overfull \hbox (23.94661pt too wide) in paragraph at lines 117--117
+\T1/cmr/bx/n/10 [MR9]: \T1/cmr/m/n/10 ajouter 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3821,7 +3703,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 117--117
 
 
 Overfull \hbox (29.73686pt too wide) in paragraph at lines 117--117
-\T1/cmr/bx/n/10 [SMA12]: \T1/cmr/m/n/10 modif 
+\T1/cmr/bx/n/10 [SMA10]: \T1/cmr/m/n/10 modif 
  []
 
 
@@ -3831,7 +3713,28 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 117--117
 
 
 Overfull \hbox (29.73686pt too wide) in paragraph at lines 117--117
-\T1/cmr/bx/n/10 [SMA12]: \T1/cmr/m/n/10 modif 
+\T1/cmr/bx/n/10 [SMA10]: \T1/cmr/m/n/10 modif 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 117--117
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (29.73686pt too wide) in paragraph at lines 117--117
+\T1/cmr/bx/n/10 [SMA10]: \T1/cmr/m/n/10 modif 
+ []
+
+
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 117--117
+[][][][]\T1/cmr/bx/n/10 Comment 
+ []
+
+
+Overfull \hbox (29.73686pt too wide) in paragraph at lines 117--117
+\T1/cmr/bx/n/10 [SMA10]: \T1/cmr/m/n/10 modif 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3859,7 +3762,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 135--135
 
 
 Overfull \hbox (15.85136pt too wide) in paragraph at lines 135--135
-\T1/cmr/bx/n/10 [SMA13]: \T1/cmr/m/n/10 la- 
+\T1/cmr/bx/n/10 [SMA11]: \T1/cmr/m/n/10 la- 
  []
 
 
@@ -3869,7 +3772,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 135--135
 
 
 Overfull \hbox (15.85136pt too wide) in paragraph at lines 135--135
-\T1/cmr/bx/n/10 [SMA13]: \T1/cmr/m/n/10 la- 
+\T1/cmr/bx/n/10 [SMA11]: \T1/cmr/m/n/10 la- 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3880,7 +3783,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 135--135
 
 
 Overfull \hbox (15.85136pt too wide) in paragraph at lines 135--135
-\T1/cmr/bx/n/10 [SMA13]: \T1/cmr/m/n/10 la- 
+\T1/cmr/bx/n/10 [SMA11]: \T1/cmr/m/n/10 la- 
  []
 
 
@@ -3890,14 +3793,14 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 135--135
 
 
 Overfull \hbox (15.85136pt too wide) in paragraph at lines 135--135
-\T1/cmr/bx/n/10 [SMA13]: \T1/cmr/m/n/10 la- 
+\T1/cmr/bx/n/10 [SMA11]: \T1/cmr/m/n/10 la- 
  []
 
 Missing character: There is no ; in font nullfont!
 
 LaTeX Warning: Marginpar on page 52 moved.
 
-<images/PairwiseEmbedding2.png, id=1420, 503.481pt x 258.9675pt>
+<images/PairwiseEmbedding2.png, id=1415, 503.481pt x 258.9675pt>
 File: images/PairwiseEmbedding2.png Graphic file (type png)
 
 <use images/PairwiseEmbedding2.png>
@@ -3910,7 +3813,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 156--156
 
 
 Overfull \hbox (34.62456pt too wide) in paragraph at lines 156--156
-\T1/cmr/bx/n/10 [SMA14]: \T1/cmr/m/n/10 Propo- 
+\T1/cmr/bx/n/10 [SMA12]: \T1/cmr/m/n/10 Propo- 
  []
 
 
@@ -3920,7 +3823,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 156--156
 
 
 Overfull \hbox (34.62456pt too wide) in paragraph at lines 156--156
-\T1/cmr/bx/n/10 [SMA14]: \T1/cmr/m/n/10 Propo- 
+\T1/cmr/bx/n/10 [SMA12]: \T1/cmr/m/n/10 Propo- 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3931,7 +3834,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 156--156
 
 
 Overfull \hbox (34.62456pt too wide) in paragraph at lines 156--156
-\T1/cmr/bx/n/10 [SMA14]: \T1/cmr/m/n/10 Propo- 
+\T1/cmr/bx/n/10 [SMA12]: \T1/cmr/m/n/10 Propo- 
  []
 
 
@@ -3941,7 +3844,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 156--156
 
 
 Overfull \hbox (34.62456pt too wide) in paragraph at lines 156--156
-\T1/cmr/bx/n/10 [SMA14]: \T1/cmr/m/n/10 Propo- 
+\T1/cmr/bx/n/10 [SMA12]: \T1/cmr/m/n/10 Propo- 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3959,7 +3862,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 166--166
 
 
 Overfull \hbox (24.09935pt too wide) in paragraph at lines 166--166
-\T1/cmr/bx/n/10 [SMA15]: \T1/cmr/m/n/10 Bas- 
+\T1/cmr/bx/n/10 [SMA13]: \T1/cmr/m/n/10 Bas- 
  []
 
 
@@ -3969,7 +3872,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 166--166
 
 
 Overfull \hbox (24.09935pt too wide) in paragraph at lines 166--166
-\T1/cmr/bx/n/10 [SMA15]: \T1/cmr/m/n/10 Bas- 
+\T1/cmr/bx/n/10 [SMA13]: \T1/cmr/m/n/10 Bas- 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -3980,7 +3883,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 166--166
 
 
 Overfull \hbox (24.09935pt too wide) in paragraph at lines 166--166
-\T1/cmr/bx/n/10 [SMA15]: \T1/cmr/m/n/10 Bas- 
+\T1/cmr/bx/n/10 [SMA13]: \T1/cmr/m/n/10 Bas- 
  []
 
 
@@ -3990,11 +3893,11 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 166--166
 
 
 Overfull \hbox (24.09935pt too wide) in paragraph at lines 166--166
-\T1/cmr/bx/n/10 [SMA15]: \T1/cmr/m/n/10 Bas- 
+\T1/cmr/bx/n/10 [SMA13]: \T1/cmr/m/n/10 Bas- 
  []
 
 Missing character: There is no ; in font nullfont!
-<images/Intervalles3.png, id=1435, 432.4155pt x 320.397pt>
+<images/Intervalles3.png, id=1430, 432.4155pt x 320.397pt>
 File: images/Intervalles3.png Graphic file (type png)
 
 <use images/Intervalles3.png>
@@ -4014,7 +3917,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[53] <images/Pairwise_interpretation.png, id=1443, 638.98724pt x 272.217pt>
+[53] <images/Pairwise_interpretation.png, id=1438, 638.98724pt x 272.217pt>
 File: images/Pairwise_interpretation.png Graphic file (type png)
 
 <use images/Pairwise_interpretation.png>
@@ -4031,7 +3934,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [54 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Intervall
 es3.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Pair
 wise_interpretation.png>]
-<images/ContreExample.png, id=1452, 728.7225pt x 316.7835pt>
+<images/ContreExample.png, id=1447, 728.7225pt x 316.7835pt>
 File: images/ContreExample.png Graphic file (type png)
 
 <use images/ContreExample.png>
@@ -4061,7 +3964,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 233--233
 
 
 Overfull \hbox (24.73808pt too wide) in paragraph at lines 233--233
-\T1/cmr/bx/n/10 [SMA16]: \T1/cmr/m/n/10 met- 
+\T1/cmr/bx/n/10 [SMA14]: \T1/cmr/m/n/10 met- 
  []
 
 
@@ -4077,7 +3980,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 233--233
 
 
 Overfull \hbox (24.73808pt too wide) in paragraph at lines 233--233
-\T1/cmr/bx/n/10 [SMA16]: \T1/cmr/m/n/10 met- 
+\T1/cmr/bx/n/10 [SMA14]: \T1/cmr/m/n/10 met- 
  []
 
 
@@ -4094,7 +3997,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 233--233
 
 
 Overfull \hbox (24.73808pt too wide) in paragraph at lines 233--233
-\T1/cmr/bx/n/10 [SMA16]: \T1/cmr/m/n/10 met- 
+\T1/cmr/bx/n/10 [SMA14]: \T1/cmr/m/n/10 met- 
  []
 
 
@@ -4110,7 +4013,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 233--233
 
 
 Overfull \hbox (24.73808pt too wide) in paragraph at lines 233--233
-\T1/cmr/bx/n/10 [SMA16]: \T1/cmr/m/n/10 met- 
+\T1/cmr/bx/n/10 [SMA14]: \T1/cmr/m/n/10 met- 
  []
 
 
@@ -4137,7 +4040,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 261--261
 
 
 Overfull \hbox (20.43358pt too wide) in paragraph at lines 261--261
-\T1/cmr/bx/n/10 [SMA17]: \T1/cmr/m/n/10 En- 
+\T1/cmr/bx/n/10 [SMA15]: \T1/cmr/m/n/10 En- 
  []
 
 
@@ -4147,7 +4050,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 261--261
 
 
 Overfull \hbox (20.43358pt too wide) in paragraph at lines 261--261
-\T1/cmr/bx/n/10 [SMA17]: \T1/cmr/m/n/10 En- 
+\T1/cmr/bx/n/10 [SMA15]: \T1/cmr/m/n/10 En- 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -4158,7 +4061,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 261--261
 
 
 Overfull \hbox (20.43358pt too wide) in paragraph at lines 261--261
-\T1/cmr/bx/n/10 [SMA17]: \T1/cmr/m/n/10 En- 
+\T1/cmr/bx/n/10 [SMA15]: \T1/cmr/m/n/10 En- 
  []
 
 
@@ -4168,7 +4071,7 @@ Overfull \hbox (3.36172pt too wide) in paragraph at lines 261--261
 
 
 Overfull \hbox (20.43358pt too wide) in paragraph at lines 261--261
-\T1/cmr/bx/n/10 [SMA17]: \T1/cmr/m/n/10 En- 
+\T1/cmr/bx/n/10 [SMA15]: \T1/cmr/m/n/10 En- 
  []
 
 Missing character: There is no ; in font nullfont!
@@ -4178,7 +4081,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[56] <images/Strategy_neighborhood.png, id=1476, 576.35326pt x 398.08725pt>
+[56] <images/Strategy_neighborhood.png, id=1471, 576.35326pt x 398.08725pt>
 File: images/Strategy_neighborhood.png Graphic file (type png)
 
 <use images/Strategy_neighborhood.png>
@@ -4197,7 +4100,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [57 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Strategy_
 neighborhood.png>]
-<images/Transposition_Pairwise4.png, id=1490, 1338.1995pt x 796.1745pt>
+<images/Transposition_Pairwise4.png, id=1485, 1338.1995pt x 796.1745pt>
 File: images/Transposition_Pairwise4.png Graphic file (type png)
 
 <use images/Transposition_Pairwise4.png>
@@ -4356,14 +4259,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 903--904
 
  []
 
-<images/projected_norm.png, id=1585, 576.35326pt x 411.939pt>
+<images/projected_norm.png, id=1580, 576.35326pt x 411.939pt>
 File: images/projected_norm.png Graphic file (type png)
 
 <use images/projected_norm.png>
 Package pdftex.def Info: images/projected_norm.png used on input line 925.
 (pdftex.def)             Requested size: 265.59494pt x 189.82736pt.
 
-<images/Dissimilarity_def_norm_scalar_product.png, id=1587, 1052.733pt x 385.44
+<images/Dissimilarity_def_norm_scalar_product.png, id=1582, 1052.733pt x 385.44
 pt>
 File: images/Dissimilarity_def_norm_scalar_product.png Graphic file (type png)
  <use images/Dissimilarity_def_norm_scalar_product.png>
@@ -4378,7 +4281,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [67 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/projected
-_norm.png>] <images/3D_diss.png, id=1595, 819.06pt x 352.9185pt>
+_norm.png>] <images/3D_diss.png, id=1590, 819.06pt x 352.9185pt>
 File: images/3D_diss.png Graphic file (type png)
 
 <use images/3D_diss.png>
@@ -4421,7 +4324,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1032--1034
 
  []
 
-<images/Neighborhood_scaling.png, id=1620, 834.11626pt x 335.45325pt>
+<images/Neighborhood_scaling.png, id=1615, 834.11626pt x 335.45325pt>
 File: images/Neighborhood_scaling.png Graphic file (type png)
 
 <use images/Neighborhood_scaling.png>
@@ -4552,7 +4455,7 @@ i . edu / ml / datasets / Individual + household + electric + power +$
 Package nag Warning: `center' environment in table.
 (nag)                Maybe you want \centering instead on input line 64.
 
-<images/dataset_exp.png, id=1695, 857.604pt x 631.158pt>
+<images/dataset_exp.png, id=1690, 857.604pt x 631.158pt>
 File: images/dataset_exp.png Graphic file (type png)
 
 <use images/dataset_exp.png>
@@ -4817,14 +4720,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[78] <images/Stand_m2tml.png, id=1761, 418.66759pt x 314.00069pt>
+[78] <images/Stand_m2tml.png, id=1756, 418.66759pt x 314.00069pt>
 File: images/Stand_m2tml.png Graphic file (type png)
 
 <use images/Stand_m2tml.png>
 Package pdftex.def Info: images/Stand_m2tml.png used on input line 236.
 (pdftex.def)             Requested size: 216.81pt x 162.6105pt.
 
-<images/Unimod_m2tml.png, id=1762, 418.66759pt x 314.00069pt>
+<images/Unimod_m2tml.png, id=1757, 418.66759pt x 314.00069pt>
 File: images/Unimod_m2tml.png Graphic file (type png)
 
 <use images/Unimod_m2tml.png>
@@ -5236,21 +5139,21 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/SonyAIBO_weight_V2.png, id=1772, 418.66759pt x 314.00069pt>
+<images/SonyAIBO_weight_V2.png, id=1767, 418.66759pt x 314.00069pt>
 File: images/SonyAIBO_weight_V2.png Graphic file (type png)
 
 <use images/SonyAIBO_weight_V2.png>
 Package pdftex.def Info: images/SonyAIBO_weight_V2.png used on input line 328.
 (pdftex.def)             Requested size: 216.81pt x 162.6105pt.
 
-<images/Beef_NoDelay_bar.png, id=1773, 722.7pt x 582.978pt>
+<images/Beef_NoDelay_bar.png, id=1768, 722.7pt x 582.978pt>
 File: images/Beef_NoDelay_bar.png Graphic file (type png)
 
 <use images/Beef_NoDelay_bar.png>
 Package pdftex.def Info: images/Beef_NoDelay_bar.png used on input line 329.
 (pdftex.def)             Requested size: 216.81pt x 174.89474pt.
 
-<images/CinC_ECG_torso_NoDelay_bar.png, id=1774, 722.7pt x 592.614pt>
+<images/CinC_ECG_torso_NoDelay_bar.png, id=1769, 722.7pt x 592.614pt>
 File: images/CinC_ECG_torso_NoDelay_bar.png Graphic file (type png)
 
 <use images/CinC_ECG_torso_NoDelay_bar.png>
@@ -5258,7 +5161,7 @@ Package pdftex.def Info: images/CinC_ECG_torso_NoDelay_bar.png used on input li
 ne 330.
 (pdftex.def)             Requested size: 216.81pt x 177.78557pt.
 
-<images/FaceFour_DTW_bar.png, id=1775, 722.7pt x 542.025pt>
+<images/FaceFour_DTW_bar.png, id=1770, 722.7pt x 542.025pt>
 File: images/FaceFour_DTW_bar.png Graphic file (type png)
 
 <use images/FaceFour_DTW_bar.png>
@@ -5282,7 +5185,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 (nag)                Use \scshape or \textsc instead on input line 332.
 
 
-<images/SonyAIBORobotSurface_NoDelay_TS.png, id=1776, 418.66759pt x 314.00069pt
+<images/SonyAIBORobotSurface_NoDelay_TS.png, id=1771, 418.66759pt x 314.00069pt
 >
 File: images/SonyAIBORobotSurface_NoDelay_TS.png Graphic file (type png)
  <use images/SonyAIBORobotSurface_NoDelay_TS.png>
@@ -5290,14 +5193,14 @@ Package pdftex.def Info: images/SonyAIBORobotSurface_NoDelay_TS.png used on inp
 ut line 338.
 (pdftex.def)             Requested size: 195.12877pt x 146.34898pt.
 
-<images/Beef_NoDelay_TS.png, id=1777, 418.66759pt x 314.00069pt>
+<images/Beef_NoDelay_TS.png, id=1772, 418.66759pt x 314.00069pt>
 File: images/Beef_NoDelay_TS.png Graphic file (type png)
 
 <use images/Beef_NoDelay_TS.png>
 Package pdftex.def Info: images/Beef_NoDelay_TS.png used on input line 339.
 (pdftex.def)             Requested size: 195.12877pt x 146.34898pt.
 
-<images/CinC_ECG_torso_NoDelay_TS.png, id=1778, 418.66759pt x 314.00069pt>
+<images/CinC_ECG_torso_NoDelay_TS.png, id=1773, 418.66759pt x 314.00069pt>
 File: images/CinC_ECG_torso_NoDelay_TS.png Graphic file (type png)
 
 <use images/CinC_ECG_torso_NoDelay_TS.png>
@@ -5305,7 +5208,7 @@ Package pdftex.def Info: images/CinC_ECG_torso_NoDelay_TS.png used on input lin
 e 340.
 (pdftex.def)             Requested size: 195.12877pt x 146.34898pt.
 
-<images/FaceFour_DTW_TS.png, id=1779, 419.2906pt x 314.00069pt>
+<images/FaceFour_DTW_TS.png, id=1774, 419.2906pt x 314.00069pt>
 File: images/FaceFour_DTW_TS.png Graphic file (type png)
 
 <use images/FaceFour_DTW_TS.png>
@@ -5331,7 +5234,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/FaceFourALL_DTWDB_2.png, id=1780, 422.32782pt x 316.18124pt>
+<images/FaceFourALL_DTWDB_2.png, id=1775, 422.32782pt x 316.18124pt>
 File: images/FaceFourALL_DTWDB_2.png Graphic file (type png)
 
 <use images/FaceFourALL_DTWDB_2.png>
@@ -5347,7 +5250,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 362.
 
-<images/FaceFourALL_D_Delay_2.png, id=1781, 422.32782pt x 316.18124pt>
+<images/FaceFourALL_D_Delay_2.png, id=1776, 422.32782pt x 316.18124pt>
 File: images/FaceFourALL_D_Delay_2.png Graphic file (type png)
 
 <use images/FaceFourALL_D_Delay_2.png>
@@ -5475,7 +5378,7 @@ lusion.tex" [84
 
 
 ] [85]
-<images/SonyAIBO_temp.png, id=1829, 586.5915pt x 231.86626pt>
+<images/SonyAIBO_temp.png, id=1824, 586.5915pt x 231.86626pt>
 File: images/SonyAIBO_temp.png Graphic file (type png)
 
 <use images/SonyAIBO_temp.png>
@@ -5504,14 +5407,14 @@ temp.png>]
 Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 55.
 
-<images/Discretize_binning.png, id=1848, 690.78075pt x 301.125pt>
+<images/Discretize_binning.png, id=1843, 690.78075pt x 301.125pt>
 File: images/Discretize_binning.png Graphic file (type png)
 
 <use images/Discretize_binning.png>
 Package pdftex.def Info: images/Discretize_binning.png used on input line 62.
 (pdftex.def)             Requested size: 265.59494pt x 115.77954pt.
 
-<images/Discretize_binning_border_effect.png, id=1850, 392.667pt x 320.99925pt>
+<images/Discretize_binning_border_effect.png, id=1845, 392.667pt x 320.99925pt>
 File: images/Discretize_binning_border_effect.png Graphic file (type png)
 <use images/Discretize_binning_border_effect.png>
 Package pdftex.def Info: images/Discretize_binning_border_effect.png used on in
@@ -5525,7 +5428,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 85.
 
-<images/pairwise_label_tube.png, id=1852, 582.37575pt x 367.3725pt>
+<images/pairwise_label_tube.png, id=1847, 582.37575pt x 367.3725pt>
 File: images/pairwise_label_tube.png Graphic file (type png)
 
 <use images/pairwise_label_tube.png>
@@ -5670,7 +5573,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 68.
 
-<images/Neighborhood_scaling_problem.png, id=1928, 494.44725pt x 296.307pt>
+<images/Neighborhood_scaling_problem.png, id=1923, 494.44725pt x 296.307pt>
 File: images/Neighborhood_scaling_problem.png Graphic file (type png)
 
 <use images/Neighborhood_scaling_problem.png>
@@ -5799,6 +5702,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [110]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[111] [112
+
+]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\4-closing/abstract.
 tex"
 Underfull \hbox (badness 10000) in paragraph at lines 2--14
@@ -5872,16 +5784,14 @@ Package minitoc(hints) Warning: W0024
 
 Package nag Warning: 344 complaints in total.
 
-[111
-
-]
+[113]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[112]
+[114]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
 
@@ -5920,7 +5830,7 @@ fth-appendix.aux"))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
 Package rerunfilecheck Info: File `roque-phdthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4CE47C90C8E8A3500BA340B00FC8D83D;2456.
+(rerunfilecheck)             Checksum: 23AC766F7BF95CA0F64269E64C244006;2455.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -5936,15 +5846,18 @@ Package logreq Info: Writing requests to 'roque-phdthesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
  ) 
 Here is how much of TeX's memory you used:
- 40820 strings out of 493921
- 898851 string characters out of 3146064
- 1380616 words of memory out of 3000000
- 42268 multiletter control sequences out of 15000+200000
+ 40808 strings out of 493921
+ 898455 string characters out of 3146064
+ 1387987 words of memory out of 3000000
+ 42259 multiletter control sequences out of 15000+200000
  50651 words of font info for 142 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  59i,24n,87p,2115b,3246s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.20} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.21} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.20} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.19} has been referenced but does not exis
 t, replaced by a fixed one
@@ -6060,9 +5973,9 @@ am Files (x86)/MikeTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Progr
 am Files (x86)/MikeTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Progr
 am Files (x86)/MikeTeX/fonts/type1/hoekwater/rsfs/rsfs10.pfb><C:/Program Files 
 (x86)/MikeTeX/fonts/type1/hoekwater/rsfs/rsfs7.pfb>
-Output written on roque-phdthesis.pdf (132 pages, 3747112 bytes).
+Output written on roque-phdthesis.pdf (134 pages, 3773365 bytes).
 PDF statistics:
- 3346 PDF objects out of 3580 (max. 8388607)
- 626 named destinations out of 1000 (max. 500000)
+ 3357 PDF objects out of 3580 (max. 8388607)
+ 623 named destinations out of 1000 (max. 500000)
  586 words of extra memory for PDF output out of 10000 (max. 10000000)
 
