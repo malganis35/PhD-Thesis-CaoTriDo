@@ -13,10 +13,10 @@
 %	\item Pourquoi sont-elles challenging ? (délais, dynamique)
 %	\item Intérêt dans le cadre des activités de Schneider Electric
 %\end{itemize}
-The work of this PhD is in the context of a CIFRE\footnote[1]{Conventions Industrielles de Formation par la REcherche} thesis with Schneider Electric and two public research laboratories, the LIG\footnote[2]{Laboratoire d'Informatique de Grenoble} and the GIPSA-lab\footnote[3]{Grenoble Images Parole Signal Automatique}. Within Schneider Electric, the PhD took place in the Analytics for Solutions (A4S) team, part of the Technology and Strategy entity whose main missions are {\color{red}à compléter par Sylvain} \todo{A compléter par Sylvain}. Among the wide activities of the A4S team, in the context of physical system modeling (\textit{e.g.}, building, sensor network, Internet of Things), two topics are at least studied: modeling by physical models (white/grey box) and modeling by machine learning algorithms (black-box). With the increase of the amount of data and sensors that collects data, modeling accurately systems through \textit{a priori} equations (white/grey box) for some prediction tasks has become more and more difficult. Within the vast amount of applications in Schneider Electric, some applications in particular involve temporal data, \textit{e.g.}, forecasting the energy consumption in a building, virtual sensors, fault detection. More generally, Schneider Electric, like many other companies and other diverse application domains (medicine, marketing, meteorology, etc.) has taken a growing interest these last decades in machine learning problems (classification, regression, clustering) that involves time series of one or several dimensions, of different sampling, of two or more classes, etc. A time series can be seen in signal processing and in control theory as the response of a dynamic system. Contrary to static data, time series are more challenging in the sense that the temporal aspect (\textit{i.e.}, order of appearance of the observations) is an additional key information. \\
+The work of this PhD is in the context of a CIFRE\footnote[1]{Conventions Industrielles de Formation par la REcherche} thesis with Schneider Electric and two public research laboratories, LIG\footnote[2]{Laboratoire d'Informatique de Grenoble} and GIPSA-lab\footnote[3]{Grenoble Images Parole Signal Automatique}. Within Schneider Electric, the PhD took place in the Analytics for Solutions (A4S) team, part of the Technology and Strategy entity. Among the wide rage of activities of the A4S team, in the context of system modeling (\textit{e.g.}, buildings, sensor networks, Internet of Things), two topics are at least studied: modeling by physical models (white/grey-box) and modeling by machine learning algorithms (black-box). With the increase of the amount of data and sensors that collect data, modeling accurately systems through \textit{a priori} equations (white/grey-box) for some prediction tasks has become more and more difficult. Within the vast amount of applications in Schneider Electric, some applications involve in particular temporal data, \textit{e.g.}, forecasting the energy consumption in a building, virtual sensors for industrial processes, fault detection and prediction for assets maintenance. More generally, Schneider Electric, like many other companies in various application domains (medicine, marketing, meteorology, etc.) has taken a growing interest these last decades in machine learning problems (classification, regression, clustering) that involve time series of one or several dimensions, of different samplings, etc. A time series can be seen in signal processing and in control theory as the response of a dynamic system. Contrary to static data, time series are more challenging in the sense that the temporal aspect (\textit{i.e.}, order of appearance of the observations) is an additional key information. \\
 
 \section*{Problem statement and contributions}
-In this work, we focus on classification problems of monovariate time series (data of 1 dimension) with a fixed sampling rate and of same lengths. Among the wide variety of algorithms that exist in machine learning, some approaches (\textit{e.g.}, $k$-Nearest Neighbors ($k$-NN)) classify samples using a concept of neighborhood based on the comparison between samples. In general, the concept of 'near' and 'far' between samples is expressed through a distance measure. Time series can be compared based not only on their amplitudes like static data but also on other characteristics or modalities such as their dynamic or frequency components. Many metrics for time series have been proposed in the literature such as the euclidean distance \cite{Ding2008}, the temporal correlation \cite{Frambourg2013}, the Fourier-based distance \cite{Sahidullah2012a}. A detailed review of the major metrics is proposed in \cite{Montero2014}. In general, the existing metrics involve one modality at the global scale (\textit{i.e.}, implying systematically all the time series observations). We believe also that the multi-scale aspect of time series, not present in static data, could enrich the definition of the existing metrics. 
+In this work, we focus on classification problems of monovariate time series (data of 1 dimension) with a fixed sampling rate and of same fixed lengths. Among the wide variety of algorithms that exist in machine learning, some approaches (\textit{e.g.}, $k$-Nearest Neighbors ($k$-NN)) classify samples using a concept of neighborhood based on the comparison between samples. In general, the concepts of 'near' and 'far' between samples is expressed through a distance measure. Time series can be compared based not only on their amplitudes like static data but also on other characteristics, called modalities, such as their dynamics or frequency components. Many metrics for time series have been proposed in the literature such as the Euclidean distance \cite{Ding2008}, the temporal correlation \cite{Frambourg2013a}, the Fourier-based distance \cite{Sahidullah2012a}. A detailed review of the major metrics is proposed in \cite{Montero2014}. In general, existing metrics involve one modality (characteristic) at the global scale (\textit{i.e.}, involving systematically all the time series observations). We believe also that the multi-scale aspect of time series (\textit{i.e.}, involving a temporal part of the observations), not present in static data, could enrich the definition of the existing metrics. 
 
 % \section*{Problem statement (with words)}
 %\begin{itemize}
@@ -26,8 +26,8 @@ In this work, we focus on classification problems of monovariate time series (da
 %\end{itemize}
 In this work, our objective is to learn a combined multi-modal and multi-scale time series metric for a robust $k$-NN classifier. The main contributions of the PhD are:
 \begin{itemize}
-	\item[-] The definition of a new space representation: the dissimilarity space which embeds a pair of time series into a vector described by basic temporal metrics.
-	\item[-] The definition of basic temporal metrics that involves one modality at one specific scale.
+	\item[-] The definition of a new space representation: the pairwise dissimilarity space where each pair of time series is embedded as a vector described by basic temporal metrics.
+	\item[-] The definition of basic temporal metrics that involve one modality at one specific scale.
 	\item[-] The learning of a multi-modal and multi-scale temporal metric for a large margin $k$-NN classifier of univariate time series. 
 	\item[-] The definition of the general problem of learning a combined metric as a metric learning problem using the dissimilarity representation. 
 	\item[-] The proposition of a framework based on Support Vector Machine (\textsc{svm}) and a linear and non-linear solution to define the combined metric that satisfies at least the properties of a dissimilarity measure.
@@ -46,8 +46,8 @@ In this work, our objective is to learn a combined multi-modal and multi-scale t
 %\end{itemize}
 
 \section*{Organization of the manuscript}
-\indent The first part makes a review of existing methods in machine learning and metrics for time series. The first chapter presents classical approaches in machine learning. In particular, we recall the general principle, framework and focus on two standard machine learning algorithms: the $k$-Nearest Neighbors ($k$-NN) and the Support Vector Machine (\textsc{svm}) approach. In the second chapter, we review some basic terminology for time series and recall three types of metrics proposed at least for time series: amplitude-, behavior- and frequential-based. \\
-\noindent The second part of the manuscript propose a multi-modal and multi-scale metric learning (\textsc{m$^2$tml}) method. In the third chapter, we first review the concept of metric learning for static data and focus on a framework of metric learning for nearest neighbors classification proposed by Weinberger \& Saul \cite{Weinberger2009a}. Secondly, we present a new space representation, the pairwise dissimilarity space based on a multi-modal and multi-scale time series description and their corresponding basic metrics. Then, we formalize the general \textsc{m$^2$tml} optimization problem using the pairwise dissimilarity space representation. From the general formalization, we propose at least three different formalizations. The first and second proposition involve different regularizers, allowing to learn an \textit{a priori} linear or non-linear form of the combined metric. The third proposition presents a framework based on \textsc{svm} and a solution to build the combined metric, in the linear and non-linear context, satisfying at least the properties of a dissimilarity measure. Finally, Chapter 4 presents the experiments conducted on a wide range of 30 public and challenging datasets, and discusses the results obtained.
+\indent The first part makes a review of existing methods in machine learning and metrics for time series. The first chapter presents classical approaches in machine learning. We recall the general principle and framework in supervised learning and focus on two machine learning algorithms: the $k$-Nearest Neighbors ($k$-NN) and the Support Vector Machine (\textsc{svm}). In the second chapter, we review some basic terminology for time series and recall at least three types of metrics proposed for time series: amplitude-, behavior- and frequential-based. \\
+\noindent The second part of the manuscript proposes a Multi-modal and Multi-scale Temporal Metric Learning (\textsc{m$^2$tml}) approach for a robust $k$-NN classifier of time series. In the third chapter, we first review the concept of metric learning for static data and focus on a framework of metric learning for nearest neighbors classification proposed by Weinberger \& Saul \cite{Weinberger2009}. We then present a new space representation, the pairwise dissimilarity space based on a multi-modal and multi-scale time series description and their corresponding basic metrics. Then, we formalize the general \textsc{m$^2$tml} optimization problem using the pairwise dissimilarity space representation. From the general formalization, we propose at least three different formalizations. The first and second propositions involve different regularizers, allowing to learn an \textit{a priori} linear or non-linear form of the combined metric. The third proposition presents a framework based on \textsc{svm} and a solution to build the combined metric, in the linear and non-linear context, satisfying at least the properties of a dissimilarity measure. Finally, Chapter 4 presents the experiments conducted on a wide range of 30 public and challenging datasets, and discusses the results obtained.
 
 % Présenter les différents chapitres
 
@@ -59,45 +59,42 @@ In this work, our objective is to learn a combined multi-modal and multi-scale t
 %If you think that they are missing figures, you can add them with a description with this command line :
 %\missingfigure{Testing a long text string}
 
-
 \newpage
-\section*{Notations}
+\section*{Industrial motivations: analytics context within Schneider Electric}
+\begin{itemize}
+	\item Idée : raccrocher les problématiques de Schneider aux problématiques scientifiques
+	\item Part 1 : Problème autour de la segmentation des séries temporelles : qu'est ce qu'une série temporelle en industrie?
+	\item Part 2 : Les types de problèmes en Machine Learning en lien avec le voca de l'industrie
+	\item L'évolution des technologies dans la collecte des données ces dernières décennies a posé de nouveaux intérêts et enjeux : comment tirer parti au mieux des données massives provenant de plusieurs sources pour aider les industries à être plus efficaces dans leurs activités de développement de solutions (services, etc.) qui leur permettent d'être plus efficaces (construction de modèles, coût, temps, précision, etc.).
+	\item Le terme à la mode "Analytics" est souvent utilisés pour désigner ces efforts mais les frontières de sa définition reste assez flous (donner des exemples?). Ceci peut générer des incompréhensions entre les domaines (industries, recherche, etc.).
+	\item Dans le même temps, l'évolution des technologies a permis de donner une nouvelle dimension dans l'étude des données : la temporalité. Pour désigner des données qui évoluent dans le temps, on utilise souvent le terme de séries temporelles mais la définition mathématiques et industrielles (y compris pour différents domaines ou applications) peuvent connaître quelques différences.
+	\item L'idée ici est de 1) Poser une définition des Analytics; 2) Formaliser le terme de séries temporelles; 3) Donner les liens de voca entre l'académique et l'industrie. 
+	\item La définition d'un terme comme "Analytics" doit répondre à 2 questions : qu'est ce que c'est, et qu'est ce que ça fait (what it is, what it does): "Analytics is the process of developing actionable insights through problem definition and the application of statistical models and analysis against existing and/or simulated future data."
+	\item Expliquer ce que veut dire "actionable insights"
+	\item Prendre la définition des Analytics de l'équipe
+	\item Définir le terme séries temporelles (peut être vues comme une extension des données statiques en tenant compte de la séquentialité des données) En industrie, une série temporelle peut représenter différents objets ou entités en fonction du choix de segmentation/découpage qui leur ai fait (\textit{i.e.}, choisir le début et la fin de la série temporelle). Pas très claire et intuitif pour moi
+	\item Problème de la segmentation des séries temporelles : liés à l'application.
+	\begin{itemize}
+		\item si le but est de reconnaître un pattern dans une longue série temporelle
+		\item si le but est de prédire une valeur à partir d'une fenêtre temporelle
+		\item etc.
+	\end{itemize}
+	\item Les problèmes généraux des Analytics pour les séries temporelles 
+	\begin{itemize}
+		\item Supervisé / semi-supervisé
+		\begin{itemize}
+			\item Classification : assign a time series to a pre-defined class
+			\begin{itemize}
+				\item One-class = outlier detection. (Application: Fault dectection)
+				\item Two-class (particular case of multi-class problems)
+				\item Multi-class = classification. (Application: diagnosis, situation assement, pattern matching)
+			\end{itemize}
+			\item Régression : predict a (real) number = scoring, prediction, regression (Application: Virtual Sensor, Forecasting)
+		\end{itemize}
+		\item Clustering : separate a dataset into distinct non-given groups/class = profiling, segmentation.
+	\end{itemize}
+\end{itemize}
 
-\begin{tabular}{ll}
-	$\textbf{x}_i$ 							& a vector sample / a time series \\ 
-	$y_i$ 									& a label (discrete or continous) \\
-	$\hat{y}_i$ 							& a predicted label (discrete or continous) \\
-	$X = \{\textbf{x}_i , y_i\}_{i=1}^n$ & a training set of $n \in \mathbb{N}$ labeled time series\\
-	$X_{Test}=\{\textbf{x}_j,y_j\}_{j=1}^m$ & a test set of $m \in \mathbb{N}$ labeled time series\\
-	$d_A$		& Amplitude-based distance \\
-	$d_B$		& Behavior-based distance \\
-	$d_F$		& Frequential-based distance \\
-	$d_E$		& Euclidean distance \\
-	$L_q$		& Minkovski q-norm \\
-	$||\textbf{x}||_q$	& q-norm of the vector $\textbf{x}$ \\
-	$cort$  	& Temporal correlation \\
-	$D$ 		& Linear learned combined distance \\
-	$D_\mathcal{H}$ 		& Non-linear learned combined distance \\
-	$\kappa$	& Kernel function \\
-	$\phi(\textbf{x}_i)$ & embedding function from the original space to the Hilbert space  \\	
-	$\textbf{x}_{ij}$ 	& a pair of time series $\textbf{x}_i$ and $\textbf{x}_j$ \\
-	$y_{ij}$			& the pairwise label of $\textbf{x}_{ij}$ \\
-	$t$			& time stamp/index with $t=1,...,T$ \\
-	$q$			& length of the time series (supposed fixed) \\
-	$f$			& frequential index \\	
-	$F$			& length of the Fourier transform \\
-	$\xi$		& Slack varialbe \\
-	$p$			& number of metric measure considered in the metric learning 	process \\
-	$r$			& order of the temporal correlation \\
-	$k$			& number of nearest neighbors \\
-	$C$ 		& Hyper-parameter of the SVM (trade-off)\\ 
-	$\alpha$	& Parameter to control the size of the neighborhood\\
-	$\lambda$	& Parameter to control the push term\\
-	$\textbf{w}$ & weight vector \\
-	$v$			& number of folds in cross-validation
-
-\end{tabular} 
-
-
-
+In the last decades, the evolution in data collection technologies has raised new interests and challenges: how to get the best from the massive growing amount data coming from several sources to help industries in their activities to develop solutions (services, etc.) that can make them more effective (\textit{e.g.}, cost, time or accuracy in system modeling\footnote{the word modeling is used in its broad sense, encompassing prediction, fault detection, profiling, etc.}). The word "Analytics" is often used to describe the efforts that goes in that sense. However, like many other buzz-words, the frontier of its definition may be vague and it can lead to misunterstading or the appearance of several words for a same concept, either between various actors (industrial, academics, etc.) or worst, between collaborators working in the same company but in different teams. \\
+Meanwhile, the ability of collecting easily data has allowed to take into account of an other characteristics in the data: the temporality. To designate data that evolves over the time, the word "time series" is often used but the
 

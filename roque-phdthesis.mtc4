@@ -1,16 +1,18 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Definition of a time series}{\reset@font\mtcSfont 29}{section.2.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Properties and representation of a metric}{\reset@font\mtcSfont 32}{section.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Unimodal metrics for time series}{\reset@font\mtcSfont 33}{section.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Amplitude-based metrics}{\reset@font\mtcSSfont 33}{subsection.2.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Frequential-based metrics}{\reset@font\mtcSSfont 34}{subsection.2.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.3}Behavior-based metrics}{\reset@font\mtcSSfont 35}{subsection.2.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.4}Other metrics and Kernels for time series}{\reset@font\mtcSSfont 36}{subsection.2.3.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Time series alignment and dynamic programming approach}{\reset@font\mtcSfont 37}{section.2.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Combined metrics for time series}{\reset@font\mtcSfont 39}{section.2.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.1}Combination functions}{\reset@font\mtcSSfont 39}{subsection.2.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.2}Impact of normalization}{\reset@font\mtcSSfont 40}{subsection.2.5.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Metric learning}{\reset@font\mtcSfont 43}{section.2.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.1}Review on metric learning work}{\reset@font\mtcSSfont 43}{subsection.2.6.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.2}Large Margin Nearest Neighbors ({\sc lmnn})}{\reset@font\mtcSSfont 44}{subsection.2.6.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.3}Parallels between {\sc lmnn} and {\sc svm}}{\reset@font\mtcSSfont 46}{subsection.2.6.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.7}Conclusion of the chapter}{\reset@font\mtcSfont 47}{section.2.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.1}Classification, Regression}{\reset@font\mtcSfont 9}{section.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.1}Machine learning principle}{\reset@font\mtcSSfont 9}{subsection.1.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.2}Model selection in supervised learning}{\reset@font\mtcSSfont 10}{subsection.1.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.3}Model evaluation}{\reset@font\mtcSSfont 14}{subsection.1.1.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.1.3.a}Classification evaluation}{\reset@font\mtcSSSfont 14}{subsubsection.1.1.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.1.3.b}Regression evaluation}{\reset@font\mtcSSSfont 15}{subsubsection.1.1.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.4}Data normalization}{\reset@font\mtcSSfont 16}{subsection.1.1.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}Machine learning algorithms}{\reset@font\mtcSfont 17}{section.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.1}$k$-Nearest Neighbors ($k$-NN) classifier}{\reset@font\mtcSSfont 17}{subsection.1.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.2}Support Vector Machine (SVM) algorithm}{\reset@font\mtcSSfont 18}{subsection.1.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.a}Intuition}{\reset@font\mtcSSSfont 19}{subsubsection.1.2.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.b}Primal formulation}{\reset@font\mtcSSSfont 21}{subsubsection.1.2.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.c}Dual formulation}{\reset@font\mtcSSSfont 21}{subsubsection.1.2.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.d}Kernel trick}{\reset@font\mtcSSSfont 23}{subsubsection.1.2.2.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.e}Interpretation}{\reset@font\mtcSSSfont 27}{subsubsection.1.2.2.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.f}Variants of SVM}{\reset@font\mtcSSSfont 29}{subsubsection.1.2.2.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.g}Extensions of SVM}{\reset@font\mtcSSSfont 29}{subsubsection.1.2.2.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}Conclusion of the chapter}{\reset@font\mtcSfont 31}{section.1.3}}

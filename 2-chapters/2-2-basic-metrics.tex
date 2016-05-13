@@ -1,4 +1,4 @@
-\chapter{Time series metrics and metric learning}
+\chapter{Time series metrics}
 \label{sec:Chapter_metrics}
 \minitoc
 
@@ -17,37 +17,39 @@
 %\end{itemize}
 
 \fbox{  \parbox{0.9\textwidth}{
-		In this chapter, we first present the definition of time series. Then, we recall the general properties of a metric and introduce some metrics proposed for time series. In particular, we focus on amplitude-based, behavior-based and  frequential-based metrics. As real time series are subject to varying size and delays, we recall the concept of alignment and dynamic programming. Then, we present some proposed combined metrics for time series. Finally, we review the concept of metric learning.
+		In this chapter, we first present the definition of time series. Then, we recall the general properties of a metric and introduce some metrics proposed for time series. In particular, we focus on amplitude-based, behavior-based and  frequential-based metrics. As real time series are subject to varying size and delays, we recall the concept of alignment and dynamic programming. Finally, we present some proposed combined metrics for time series.
 		% In this chapter, we review different metrics for time series. In classification problems, time series are expected to be similar if they belong to the same class. The concept of similarity among time series is directly linked to the concept of metrics. \\
 		
-		% In the following, we consider time series as an object. They may be compared either on all their observations $x_{it}$, a part of them or in a window. We first recall the properties of a metric. Then, we review three types of metrics (amplitude-based, behavior-based, frequential-based) and kernels adapted to time series. As real time series are subjected to varying delays, we recall the concept of alignment and dynamic programming. We show how these metrics can be used to define either metrics that can capture local characteristics of time series, or metrics that combine multiple modalities. Finally, as $k$-NN performances is directly impacted by the choice of the metric, we review some insights on Metric Learning investigated in the case of static data.
+		% In the following, we consider time series as an object. They may be compared either on all their observations $x_{it}$, a part of them or in a window. We first recall the properties of a metric. Then, we review three types of metrics (amplitude-based, behavior-based, frequential-based) and kernels adapted to time series. As real time series are subject to varying delays, we recall the concept of alignment and dynamic programming. We show how these metrics can be used to define either metrics that can capture local characteristics of time series, or metrics that combine multiple modalities. Finally, as $k$-NN performances is directly impacted by the choice of the metric, we review some insights on Metric Learning investigated in the case of static data.
 	}  }
 
 
-\section{Definition of a time series}
+\section{Definition of time series}
 % We call time series, a collection of numerical observations made sequentially in the time. It is characterized by a finite number of realized observations made at discrete instants of time $t=1,...,T$. 
 Time series are data that 
 % may occur in physical sciences (meteorology, marine science, geophysics), marketing or process control \cite{Chatfield2004}. Time series 
-can be frequently found in various emerging applications such as sensor networks, smart buildings, social media networks or Internet of Things (IoT) \cite{Najmeddine2012,Nguyen2012,Yin2008}. They are involved in many learning problems such as recognizing a human movement in a video, detecting a particular operating mode, etc. \todo{Ajouter virtual sensors?} \cite{PANAGIOTAKIS2008,Ramasso2008}. In \textbf{clustering} problems, one would like to organize similar time series together into homogeneous groups. In \textbf{classification} problems, the aim is to assign time series to one of several predefined categories (e.g., different types of defaults in a machine). In \textbf{regression} problems, the objective is to predict a continuous value from observed time series (e.g., forecasting the measurement of a power meter from pressure and temperature sensors). Due to their temporal and structured nature, time series constitute complex data to be analyzed by classic machine learning approaches.
+can be frequently found in various emerging applications such as sensor networks, smart buildings, social media networks or Internet of Things (IoT) \cite{Najmeddine2012,Nguyen2012,Yin2008}. They are involved in many learning problems such as recognizing a human movement in a video, detecting a particular operating mode, etc.  \cite{PANAGIOTAKIS2008,Ramasso2008}. In \textbf{clustering} problems, one would like to organize similar time series together into homogeneous groups. In \textbf{classification} problems, the aim is to assign time series to one of several predefined categories (\textit{e.g.}, different types of defaults in a machine). In \textbf{regression} problems, the objective is to predict a continuous value from observed time series (\textit{e.g.}, forecasting the measurement of a power meter from pressure and temperature sensors). Due to their temporal and structured nature, time series constitute complex data to be analyzed by classic machine learning approaches.
 
-For physical systems, a time series of duration $T$ can be seen as a signal, sampled at a frequency $f_e$, in a temporal window $[0;T]$. From a mathematical perspective, a time series of length $Q$ is a collection of a finite number of observations made sequentially at discrete time instants $t=1,...,Q$. Note that $Q=Tf_e$. 
+For physical systems, a time series of duration $T$ can be seen as a signal, sampled at a frequency $f_e$, in a temporal window $[0;T]$. From a mathematical perspective, a time series of length $q$ is a collection of a finite number of observations made sequentially at discrete time instants $t=1,...,q$. Note that $q=Tf_e$. 
 
-Let $\textbf{x}_i=(x_{i1}, x_{i2}, ..., x_{iQ})$ be a univariate time series of length $Q$. Each observation $x_{it}$ is bounded (i.e., the infinity is not a valid value: $x_{it} \neq \pm \infty$). The time series $\textbf{x}_i$ is said to be univariate if the collection of observations $x_{it}$ ($t=1,...,Q$) comes from the observation of one variable (i.e., the temperature measured by one sensor). When simultaneous observation of $p$ variables (several sensors such as the temperature, the pressure, etc.) are made at the same time, the time series is said to be multivariate. From this, one possible representation would be: 
-\begin{equation*}
-	\textbf{x}_i=(x_{i1,1}, ..., x_{i1,p},x_{i2,2}, ..., x_{i2,2}, ..., x_{iQ,p})
-\end{equation*}
-\noindent where $\textbf{x}_{it,j}$ is the observation of the time series $\textbf{x}_{i}$ at the time instant $t$ along the variable $x_j$. An other possible representation could consider a multivariate time series $\textbf{x}_i$ as the union of multiple univariate time series. In this case: 
-\begin{equation*}
-	\textbf{x}_i=(\textbf{x}_{i,1}, ...., \textbf{x}_{i,p})=(x_{i1,1}, ..., x_{iQ,1},x_{i1,2}, ..., x_{i1,p}, ..., x_{iQ,p})
-\end{equation*}
-where $\textbf{x}_{i,j} = (\textbf{x}_{i1,j}, \ldots, \textbf{x}_{iQ,j})$. For simplification purpose, we only consider univariate time series in the following. 
+Let $\textbf{x}_i=(x_{i1}, x_{i2}, ..., x_{iq})$ be a univariate time series of length $q$. Each observation $x_{it}$ is bounded (\textit{i.e.}, the infinity is not a valid value: $x_{it} \neq \pm \infty$). The time series $\textbf{x}_i$ is said to be univariate if the collection of observations $x_{it}$ ($t=1,...,q$) comes from the observation of one variable (\textit{e.g.}, the temperature measured by one sensor). When simultaneous observation of $p$ variables (several sensors such as the temperature, the pressure, etc.) are made at the same time, the time series is said to be multivariate. From this, one possible representation would be $\textbf{x}_i=(\textbf{x}_{i,1}, ...., \textbf{x}_{i,p})=(x_{i1,1}, ..., x_{iq,1},x_{i1,2}, ..., x_{i1,p}, ..., x_{iq,p})$.
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=1\linewidth]{multivariate_time_series}
-	\caption{2 modes of representation}
-	\label{fig:multivarite_time_series}
-\end{figure}
+%(Fig. \ref{fig:multivarite_time_series}, red circle): 
+%\begin{equation*}
+%	\textbf{x}_i=(x_{i1,1}, ..., x_{i1,p},x_{i2,2}, ..., x_{i2,2}, ..., x_{iq,p})
+%\end{equation*}
+%\noindent where $\textbf{x}_{it,j}$ is the observation of the time series $\textbf{x}_{i}$ at the time instant $t$ along the variable $x_j$. Another possible representation could consider a multivariate time series $\textbf{x}_i$ as the union of multiple univariate time series (Fig. \ref{fig:multivarite_time_series}, green circle). In this case: 
+%\begin{equation*}
+%	\textbf{x}_i=(\textbf{x}_{i,1}, ...., \textbf{x}_{i,p})=(x_{i1,1}, ..., x_{iq,1},x_{i1,2}, ..., x_{i1,p}, ..., x_{iq,p})
+%\end{equation*}
+%where $\textbf{x}_{i,j} = (\textbf{x}_{i1,j}, \ldots, \textbf{x}_{iq,j})$. For simplification purpose, we only consider univariate time series in the following.
+%
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.9\linewidth]{multivariate_time_series}
+%	\caption{Two examples of representation of multivariate time series}
+%	\label{fig:multivarite_time_series}
+%\end{figure}
 
 Some authors propose to extract representative features from time series. Fig.~\ref{fig:time_series_example} illustrates a model for time series proposed by Chatfield in \cite{Chatfield2004}. It states that a time series can be decomposed into 3 components: a trend, a cycle (periodic component) and a residual (irregular variations). 
 
@@ -59,10 +61,10 @@ Some authors propose to extract representative features from time series. Fig.~\
 \end{figure}
 \footnotetext{This time series can be downloaded from \url{http://www.york.ac.uk/depts/maths/data/ts/ts04.dat}}
 
-\noindent According to Chatfield, most time series exhibit either or both a long term change in the mean (trend) and a periodic (cyclic) component. The trend can be linear, quadratic, etc. The cyclic component is a variation at a fixed period of time (seasonality) such as for example the seasonal variation of temperature. In practice, the 3 features (trend, cycle, residuals) are rarely sufficient for the classification or regression of real time series. \\
+\noindent According to Chatfield, most time series exhibit either or both a long term change in the mean (trend) and a periodic (cyclic) component. The trend can be linear, quadratic, etc. The cyclic component is a variation at a fixed period of time (seasonality) such as for example the seasonal variation of temperature. In practice, the 3 features (trend, cycle, residuals) are rarely sufficient for the classification or regression of real time series.
 % In our work, we propose to focus on the raw time series and do not try to extract global features from the time series.
 
-Other authors made the hypothesis of time independency between the observations $x_{it}$. They consider time series as a static vector data and use classic machine learning algorithms \cite{Liang2012,Cao2001,Hu2013,Hwang2012}. Our work focuses on classification and regression problems, and on time series comparison through metrics.
+Other authors made the hypothesis of time independency between the observations $x_{it}$. They consider time series as a static vector data and use classic machine learning algorithms \cite{Liang2012,Cao2001,Hu2013,Hwang2012}. Our work focuses on classification problems, and on time series comparison through metrics.
 
 
 % Nous désignons par données temporelles des données numériques évoluant dans le temps, dites communément séries temporelles, ou des suites chronologiques de données symboliques dites séquences temporelles. Plus généralement, on désigne par données de séquences toute collection de données ordonnées selon un critère qui peut être sémantique, biologique, temporel ou autre ; c’est le cas, par exemple, des séquences de mots dans un texte ; on parle alors d’ordre syntaxique, de séquences d’acides aminés composant une chaîne d’ADN ou de peptides constituant une protéine.
@@ -79,34 +81,43 @@ Other authors made the hypothesis of time independency between the observations 
 %	\item Dans la suite du travail, on va tout assimiler au mot métrique pour une meilleure simplicité
 %\end{itemize}
 
-A mapping $D:\mathbb{R}^p \times \mathbb{R}^p \rightarrow \mathbb{R}^+$ over a vector space $\mathbb{R}^p$ is called a metric or a distance if for all vectors $\forall \textbf{x}_i, \textbf{x}_j, \textbf{x}_l \in \mathbb{R}^p$, it satisfies the properties \cite{Deza2009}:
-\mycomment[CTD]{je préfère garder l'espace pour + de visibilité}\begin{enumerate}
+A mapping $D:\mathbb{R}^p \times \mathbb{R}^p \rightarrow \mathbb{R}^+$ over a vector space $\mathbb{R}^p$ is called a \textbf{metric} or a distance if for all vectors $\forall \textbf{ } \textbf{x}_i, \textbf{x}_j, \textbf{x}_l \in \mathbb{R}^p$, it satisfies the properties 1 to 4\cite{Deza2009}:
+%\mycomment[CTD]{je préfère garder l'espace pour + de visibilité}
+\begin{enumerate}
 	\item {\makebox[6cm]{$D(\textbf{x}_i, \textbf{x}_j) \geq 0$\hfill} (positivity)}
 	\item {\makebox[6cm]{$D(\textbf{x}_i, \textbf{x}_j) = D(\textbf{x}_j, \textbf{x}_i)$\hfill} (symmetry)}	
 	\item {\makebox[6cm]{$D(\textbf{x}_i, \textbf{x}_j) = 0 \Leftrightarrow  \textbf{x}_i=\textbf{x}_j$\hfill} (distinguishability)}
 	\item {\makebox[6cm]{$D(\textbf{x}_i, \textbf{x}_j) + D(\textbf{x}_j, \textbf{x}_l) \geq D(\textbf{x}_i, \textbf{x}_l)$\hfill} (triangular inequality)}
+	\item {\makebox[6cm]{$D(\textbf{x}_i, \textbf{x}_i) = 0$\hfill} (reflexivity)}
 \end{enumerate}
-A mapping $D$ that satisfies at least properties 1, 2 and 3 in its implication, called reflexivity ($\textbf{x}_i=\textbf{x}_j \Rightarrow  D(\textbf{x}_i, \textbf{x}_j) = 0$) is called a dissimilarity, and the one that satisfies at least properties 1, 2, 4 a pseudo-metric. A metric, a dissimilarity and a pseudo metric can be both interpretated as a measure of how "different" two samples are. Note that theu can be used for comparisons of several samples: if a time series $\textbf{x}_i$ is expected to be closer to $\textbf{x}_j$ than to $\textbf{x}_l$, then $D(\textbf{x}_i,\textbf{x}_j) \leq D(\textbf{x}_i,\textbf{x}_l)$. On the contrary, the mapping is called a similarity $S$ when the sample $\textbf{x}_i$ is expected to be closer to $\textbf{x}_j$ than to $\textbf{x}_l$ and then $S(\textbf{x}_i,\textbf{x}_j) \geq S(\textbf{x}_i,\textbf{x}_l)$. To simplify the discussion in the following, we refer to pseudo-metric and dissimilarity as metrics, pointing out the distinction only when necessary.
 
-Metric can be represented in two ways (Fig. \ref{fig:Representation_Metric}). First, data points (samples $\textbf{x}_i$) can be fixed and the distance sphere is shown. Secondly, the distance sphere can be fixed and the data points and the axis are moving.
-\todo{figure à revoir}
+\noindent A mapping $D$ that satisfies at least properties 1, 2 and 5 is called a \textbf{dissimilarity}, and the one that satisfies at least properties 1, 2, 4 a \textbf{pseudo-metric}. A metric, a dissimilarity and a pseudo metric can be both interpretated as a measure of how "different" two samples are: if a sample $\textbf{x}_i$ is expected to be closer to $\textbf{x}_j$ than to $\textbf{x}_l$, then $D(\textbf{x}_i,\textbf{x}_j) \leq D(\textbf{x}_i,\textbf{x}_l)$. 
+% A mapping is called a similarity $S$ when the sample $\textbf{x}_i$ is expected to be closer to $\textbf{x}_j$ than to $\textbf{x}_l$ and then $S(\textbf{x}_i,\textbf{x}_j) \geq S(\textbf{x}_i,\textbf{x}_l)$. 
+A mapping $S:\mathbb{R}^p \times \mathbb{R}^p \rightarrow \mathbb{R}$ is called a \textbf{similarity} on $\mathbb{R}^p$ if $S$ satisfies the properties of positivity, symmetry and the inequality: $\forall \textbf{ } \textbf{x}_i, \textbf{x}_j, \textbf{ } S(\textbf{x}_i,\textbf{x}_j) \leq S(\textbf{x}_i,\textbf{x}_i)$.
+To simplify the discussion in the following, we refer to pseudo-metric and dissimilarity as metrics, pointing out the distinction only when necessary.
+
+Metric can be represented in two ways (Fig. \ref{fig:Representation_Metric}). First, in Fig. (a), data points (samples $\textbf{x}_i$ and $\textbf{x}$) can be fixed and the distance sphere is shown for each metric (\textit{e.g.}, the Manhattan, Euclidean and Infinite distance). Secondly, by fixing a data point $\textbf{x}_i$, the distance sphere is fixed and the data point $\textbf{x}$ changes according to the considered distance at hand ($\textbf{x}_{Manhattan}$ for the Manhattan distance, $\textbf{x}_{Euclidean}$ for the Euclidean distance, $\textbf{x}_{Infinite}$ for the Infinite distance). For example, the latter representation is used by Weinberger and Saul in \cite{Weinberger2009} to illustrate the effect of an initial Euclidean distance and a learned Mahalanobis metric to purify the neighborhood of data points. This concept will be explored in Chapter \ref{sec:TML}.
+
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Representation_Metric}
-	\caption{Example of metric representation: (a) data points can be fixed and the distance sphere is shown. (b) sphere can be fixed and the data points and the axis are moving.}
+	\includegraphics[width=0.75\linewidth]{Representation_Metric}
+	\caption[Example of metric representation]{Example of metric representation: (a) Data points are fixed and the distance sphere is shown for each metric given a constant. (b) The distance sphere is fixed and the data points $\textbf{x}$ are moving according to each distance.}
 	\label{fig:Representation_Metric}
 \end{figure}
 
+Given the pairwise dissimilarities between samples, some algorithms such as MultiDimensional Scaling ({\sc mds}) \cite{Carroll1980} or Isomap \cite{Geng2005} have been proposed to visualize the proximity between samples in a dataset. Briefly, a {\sc mds} algorithm aims to place each sample in a $P$-dimensional space (in general, $P=2$ or $3$) such that the between-object distances are preserved as well as possible. Classical {\sc mds} takes an input matrix giving dissimilarities between pairs of samples and outputs a coordinate for each sample whose configuration minimizes a loss function called stress. An example of applications is given in Fig. \ref{fig:MDS_example}: the distances between pairs of cities is given and the aim is to reconstruct a two dimensional map that reproduces the best the given distances. More generally, we can take benefice of this algorithm for any other type of data (samples, time series, etc.) if the given dissimilarity matrix is given.
 
-
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{MDS_example}
+	\caption[Example of {\sc mds}]{Example of {\sc mds}. (a) Distances between ten cities in miles. (b) Two dimensional plot of the ten cities from a classical {\sc mds}\protect\footnotemark.}
+	\label{fig:MDS_example}
+\end{figure}
+\footnotetext{source: \url{http://www.bristol.ac.uk/media-library/sites/cmm/migrated/documents/chapter3.pdf}}
 %-----------------------------------------------------------------------------
 \section{Unimodal metrics for time series}
 \label{sec:metric_time_series}
-Defining and evaluating metrics for time series has become an active area of research for a wide variety of problems in machine learning \cite{Ding2008, Najmeddine2012}. In the following, we suppose that time series have the same duration $T$ and have been regularly sampled at the frequency $f_e$. Therefore, they have the same length $Q=Tf_e$. Let $\textbf{x}_i=(x_{i1}, x_{i2}, ..., x_{iQ})$ and $\textbf{x}_j=(x_{i1}, x_{i2}, ..., x_{iQ})$ be two univariate time series of length $Q$. 
-
-A large number of distance measures have been proposed in the literature \cite{Montero2014}. Contrary to static data, time series may exhibit modalities and specificities due to their temporal nature (e.g., value, shape, frequency, delay, temporal locality). In this section, we review 3 categories of time series metrics used in our work: amplitude-based, frequential-based and behavior-based.
-
-
+In the following, we suppose that time series have the same duration $T$ and have been regularly sampled at the frequency $f_e$. Therefore, they have the same length $q=Tf_e$. Let $\textbf{x}_i=(x_{i1}, x_{i2}, ..., x_{iq})$ and $\textbf{x}_j=(x_{j1}, x_{j2}, ..., x_{jq})$ be two univariate time series of length $q$. 
 
 %To illustrate the effect of different metrics, we will consider some toy examples of time series, illustrated in Fig. \ref{fig:ExampleTimeSeriesMetrics}. The objective is to determine which time series is closer to $\textbf{x}_1$. Based on the amplitude of the signals, it is straightforward that $\textbf{x}_2$ is the closest to $\textbf{x}_3$. However, if we consider the shape of the signal, $\textbf{x}_1$ is the closest to $\textbf{x}_3$. $\textbf{x}_1$ and $\textbf{x}_4$ can be considered also as the closest in value if we delete the effect of delays between the two time series. Finally, it seems that $\textbf{x}_1$ and $\textbf{x}_5$ share the same frequential components.
 %
@@ -117,6 +128,30 @@ A large number of distance measures have been proposed in the literature \cite{M
 %\label{fig:ExampleTimeSeriesMetrics}
 %\end{figure}
 %\todo[  size=\tiny, color=green]{Reparler avec Michèle et Sylvain de la figure. J'aimerai pouvoir trouver 5 séries temporelles qui couvrirait ces cas.}
+
+
+
+\subsection{General review of unimodal metrics for time series}
+%\todo[inline]{A faire à la fin, pas urgent}
+%\begin{itemize}
+%	\item Il existe dans la littérature de nombreuses autres métriques pour les séries temporelles (laisser la porte ouverte).
+%	\item Certaines métriques sont utilisées dans le domaine temporelle
+%	\item D'autres métriques sont utilisés dans d'autres représentations (Wavelet, etc.)
+%	\item Certaines combinent la représentation temporelles et fréquentielles (Représentation spectrogramme en temps-fréquence)
+%	\item Se baser sur l'article "TSclust : An R Package for Time Series Clustering".
+%	\item Fermer le cadre : dans la suite de notre travail, on ne va pas les utiliser mais elles pourront être intégrées dans le framework qui suivra au chapitre suivant
+%\end{itemize}
+
+Defining and evaluating metrics for time series has become an active area of research for a wide variety of problems in machine learning \cite{Ding2008, Najmeddine2012}. For example, as explained in \cite{Montero2014}, a crucial question in clustering is to determine what we mean by "similar" samples, \textit{i.e.}, defining a suitable metrics between two samples. The idea is not restricted to clustering and can be naturally extended to other machine learning problems (supervised, semi-supervised).
+Due to their temporal nature, time series may be compared based on different characteristics, called \textbf{modalities}, such as their amplitude, shape or frequency. Contrary to static data, time series may be also subject to temporal specificities such as delays. From the surge of research, one can identify at least three categories: metrics in the time domain, metrics in a feature-extracted domain, metrics based on models.
+
+The first category (metrics in the time domain) aims to compare the closeness of time series observations in the temporal domain. Without being exhaustive, many variants cover the Minkowski distance or the Frechet distance \cite{Maurice1906} for amplitude comparison, and the correlation-based distances \cite{Douzal-Chouakria2003,AhlameDouzal-Chouakria2012,Chouakria2007,Benesty2009}for behavior comparison. \\
+The second category (metrics in a feature extracted domain) aims to project the time series in an other domain, such as the frequential domain or the symbolic representation, and to compute a distance in the projected domain. For frequential-based distance, many measures have been proposed such as the periodogram-based distance \cite{Caiado2006c} or the dissimilarity measure based on the discrete wavelet transform \cite{Chan2008}. Based on the symbolic representation SAX (Symbolic Aggregate approXimation), a dissimilarity measure between symbols have been proposed in \cite{Lin2003b}. \\
+In the third category (metrics based on models), the aim is to assume a model of the time series and to compute the dissimilarity between the evaluated models. Most of the propositions assume that time series are generated by either an ARIMA (AutoRegressive Integrated Moving Average) or ARMA (AutoRegressive Moving Average) process \cite{Kalpakis,Martin2000}. Some work have considered alternative models such as the Markov chains \cite{Ramoni2002} or the hidden Markov models \cite{Smyth1997}. Based on the ARIMA or ARMA model, a number of metrics have been proposed, such as the Piccolo distance \cite{Piccolo1990} or the Maharaj distance \cite{Maharaj1996}, which evaluate the distance between the parameters of the estimated model.
+
+In the following, we focus on three types of metrics for time series, two in the time domain (amplitude-based and behavior-based distance) and one in the frequential domain (frequential-based distance).
+
+
 
 
 
@@ -133,7 +168,7 @@ A large number of distance measures have been proposed in the literature \cite{M
 
 The most usual comparison measures are amplitude-based metrics, where time series are compared in the temporal domain on their amplitudes regardless of their behaviors or frequential characteristics. Among these metrics, there are the commonly used Euclidean distance that compares elements observed at the same time \cite{Ding2008}: 
 \begin{equation}	
-	d_E(\textbf{x}_i,\textbf{x}_j) = \sqrt{\sum\limits_{t=1}^{Q} (x_{it}-x_{jt})^2}
+	d_E(\textbf{x}_i,\textbf{x}_j) = \sqrt{\sum\limits_{t=1}^{q} (x_{it}-x_{jt})^2}
 \label{eq:A}
 \end{equation}
 Note that the Euclidean distance is a particular case of the Minkowski $L_p$ norm ($p=2$). An other amplitude-based metric is the Mahalanobis distance \cite{Prekopcsak2012}, defined as a dissimilarity measure weighted by a matrix \textbf{M}:
@@ -142,12 +177,12 @@ Note that the Euclidean distance is a particular case of the Minkowski $L_p$ nor
 	\label{eq:dM}
 \end{equation}
 
-If the covariance matrix $\textbf{M}$ is the identity matrix, the Mahalanobis distance is equal to the Euclidean distance. If the covariance matrix $\textbf{M}$ is diagonal, then the resulting distance measure is called a normalized Euclidean distance:
+If the covariance matrix $\textbf{M}$ is the identity matrix, the Mahalanobis distance is equal to the Euclidean distance. If the covariance matrix $\textbf{M}$ is diagonal, then the resulting distance measure is called the normalized Euclidean distance:
 \begin{equation}	
-d_M(\textbf{x}_i,\textbf{x}_j) = \sqrt{\sum\limits_{t=1}^{Q}\frac{(x_{it}-x_{jt})^2}{m_t}}
+d_M(\textbf{x}_i,\textbf{x}_j) = \sqrt{\sum\limits_{t=1}^{q}\frac{(x_{it}-x_{jt})^2}{m_t}}
 \label{eq:dM2}
 \end{equation}
-\noindent where $m_t$ is the variance of the $x_{it}$ and $x_{jt}$ over the sample set. Note that this is equivalent to normalize each feature: $x'_{il} = x_{il}/\sqrt{m_l}$ and use the Euclidean distance on the normalized features.
+\noindent where $m_t$ is the variance of the $x_{it}$ and $x_{jt}$ over the sample set. Note that this is equivalent to normalize each feature: $x'_{it} = x_{it}/\sqrt{m_t}$ and use the Euclidean distance on the normalized features $x'_{it}$.
 %\noindent In particular, when $\textbf{M}$ is a diagonal matrix, the previous formula becomes: 
 %%\textbf{M} &= 	
 %%\begin{pmatrix}
@@ -175,12 +210,12 @@ In the following of the work, we consider the standard Euclidean distance $d_E$ 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.6\linewidth]{images/ExampleTimeSeriesMetrics3}
-\caption{3 toy time series. Time series in blue and red are two sinusoïdal signals. Time series in green is a random signal.}
+\includegraphics[width=0.55\linewidth]{Example2_temporal}
+\caption[3 toy time series in the temporal domain.]{3 toy time series in the temporal domain. Time series in blue and red are two sinusoidal signals. Time series in green is a random signal.}
 \label{fig:ExampleTimeSeriesMetrics3}
 \end{figure}
 
-In the example of Fig. \ref{fig:ExampleTimeSeriesMetrics3}, the aim is \mycomment[SMA]{reformulation à revoir: let's try to} to determine which time series ($\textbf{x}_2$ or $\textbf{x}_3$) is the closest to $\textbf{x}_1$. The amplitude-based distance $d_A$ states that $\textbf{x}_2$ is closer to $\textbf{x}_1$ than $\textbf{x}_3$ since $d_A(\textbf{x}_1,\textbf{x}_2) = 7.8816 < d_A(\textbf{x}_1,\textbf{x}_3)= 31.2250$.
+In the example of Fig. \ref{fig:ExampleTimeSeriesMetrics3}, let's try to determine which time series ($\textbf{x}_2$ or $\textbf{x}_3$) is the closest to $\textbf{x}_1$. The amplitude-based distance $d_A$ states that $\textbf{x}_1$ is closer to $\textbf{x}_3$ than to $\textbf{x}_2$ since $d_A(\textbf{x}_1,\textbf{x}_3) = 24.1909 < d_A(\textbf{x}_1,\textbf{x}_2) = 29.0818$.
 
 
 
@@ -191,14 +226,14 @@ In the example of Fig. \ref{fig:ExampleTimeSeriesMetrics3}, the aim is \mycommen
 %	\item On peut définir une distance dans la représentation de Fourier.
 %	\item Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "spectres proches", on obtient une valeur de distance faible. 
 %\end{itemize}
-The second category, commonly used in signal processing, relies on comparing time series based on their frequential properties (e.g. Fourier Transform, Wavelet, Mel-Frequency Cepstral Coefficients \cite{Sahidullah2012,Torrence1998,Brigham1967}). In our work, we limit the frequential comparison to Discrete Fourier Transform \cite{Lhermitte2011a}, but other frequential properties can be used as well. Thus, for time series comparison, first the time series $\textbf{x}_i$ are transformed into their Fourier representation $\tilde{\textbf{x}}_i=[\tilde{x}_{i1}, ...,  \tilde{x}_{iF}]$, with $\tilde{x}_{if}$ the complex component at frequential index $f$. The Euclidean distance is then used  between their respective complex number modules $|\tilde{x}_{if}|$:
+The second category, commonly used in signal processing, relies on comparing time series based on their frequential properties (\textit{e.g.}, Fourier Transform, Wavelet, Mel-Frequency Cepstral Coefficients \cite{Sahidullah2012,Torrence1998,Brigham1967}). In this work, we limit the frequential comparison to Discrete Fourier Transform \cite{Lhermitte2011a}, but other frequential properties can be used as well. Thus, for time series comparison, first the time series $\textbf{x}_i$ are transformed into their Fourier representation $\tilde{\textbf{x}}_i=[\tilde{x}_{i1}, ...,  \tilde{x}_{iF}]$, with $\tilde{x}_{if}$ the complex components at frequential index $f=\{1,\ldots,F\}$. Inspired from the amplitude-based metric in the temporal domain (Section \ref{sec:TSmetrics}), we propose a frequential-based metric based on the Euclidean distance between the complex number modules $|\tilde{x}_{if}|$ of the time series projected in the Fourier domain:
 \begin{equation}
 d_{F}(\textbf{x}_i,\textbf{x}_j) = \sqrt{\sum_{f=1}^{F} 
 	(|\tilde{x}_{if}|-|\tilde{x}_{jf}|)^2}
 \label{eq:F}
 \end{equation}
 
-In the example of Fig. \ref{fig:ExampleTimeSeriesMetrics3}, the frequential-based distance $d_F$ states that the time series $\textbf{x}_3$ is closer to $\textbf{x}_1$ than $\textbf{x}_2$ since $d_F(\textbf{x}_1,\textbf{x}_3) = 0.8519 < d_F(\textbf{x}_1,\textbf{x}_2) = 0.9250$. This can be illustrated in the Frequency domain (Fig. \ref{fig:ExampleTimeSeriesMetrics3_freq})
+In the example of Fig. \ref{fig:ExampleTimeSeriesMetrics3}, recall that the Euclidean distance $d_A$ states that $\textbf{x}_1$ is closer to $\textbf{x}_3$ than $\textbf{x}_2$. However, in the frequency domain (Fig. \ref{fig:freq}), the frequential-based distance $d_F$ states that $\textbf{x}_1$ is closer to $\textbf{x}_2$ than to $\textbf{x}_3$ since $d_F(\textbf{x}_1,\textbf{x}_2) = 0.0835 < d_F(\textbf{x}_1,\textbf{x}_3) = 1.0124$. 
 
 %\begin{figure}[h!]
 %	\centering
@@ -206,7 +241,21 @@ In the example of Fig. \ref{fig:ExampleTimeSeriesMetrics3}, the frequential-base
 %	\caption{Frequency representation of the signal from Fig. \ref{fig:ExampleTimeSeriesMetrics3}. The spectrum (based on the comparison between frequencies) shows more similarities between signal $\textbf{x}_1$ (blue) and $\textbf{x}_3$ (red) than in the temporal domain (based on the comparison between temporal time t).}
 %	\label{fig:ExampleTimeSeriesMetrics3_freq}
 %\end{figure}
-\missingfigure{Ajouter la représentation fréquentielle des signaux}
+%\begin{figure}[h!]
+%	\centering
+%	\subfloat[]{\includegraphics[width = 3in]{Example2_temporal}} 
+%	\subfloat[]{\includegraphics[width = 3in]{Example2_frequency}} \  
+%	\caption{3 toy time series. Time series in blue and red are two sinusoïdal signals. Time series in green is a random signal.}
+%	\label{fig:freq}
+%\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{Example2_frequency}
+	\caption[3 toy time series in the frequency domain]{3 toy time series in the frequency domain: blue and red are the spectrum of the Fourier transform of two sinusoidal signals; green is the spectrum of the Fourier transform of a random signal.}
+	\label{fig:freq}
+\end{figure}
+
 
 
 \subsection{Behavior-based metrics}
@@ -218,11 +267,11 @@ In the example of Fig. \ref{fig:ExampleTimeSeriesMetrics3}, the frequential-base
 %	\item Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "formes proches", on obtient une valeur de distance faible. 
 %\end{itemize}
 
-The third category of metrics aims to compare time series based on their shape or behavior despite the range of their amplitudes. By time series of similar behavior, it is generally intended that for all temporal window $[t,t']$, they increase or decrease simultaneously with the same growth rate. On the contrary, they are said of opposite behavior if for all $[t,t']$, if one time series increases, the other one decreases and (vise-versa) with the same growth rate in absolute value. Finally, time series are considered of different behaviors if they are not similar, nor opposite. Many applications refer to the Pearson correlation~\cite{Abraham2010a,Benesty2009} for behavior comparison. A generalization of the Pearson correlation is introduced in~\cite{AhlameDouzal-Chouakria2011}: 
+The third category of metrics aims to compare time series based on their shape or behavior despite the range of their amplitudes. By time series of similar behavior, it is generally intended that for all temporal window $[t,t']$, they increase or decrease simultaneously with the same growth rate. On the contrary, they are said of opposite behavior if for all $[t,t']$, if one time series increases, the other one decreases and (vise-versa) with the same growth rate in absolute value. Finally, time series are considered of different behaviors if they are not similar, nor opposite. Many applications refer to the Pearson correlation~\cite{Abraham2010a,Benesty2009} for behavior comparison. A generalization of the Pearson correlation is introduced in~\cite{Douzal-Chouakria2003,AhlameDouzal-Chouakria2012,Chouakria2007}: 
 \begin{equation}	
 	cort_r(\textbf{x}_i,\textbf{x}_j) = 
 	\frac{
-		\sum\limits_{t,t'=1}^Q 
+		\sum\limits_{t,t'=1}^q 
 		{
 			(x_{it}-x_{it'})
 			(x_{jt}-x_{jt'})
@@ -230,23 +279,25 @@ The third category of metrics aims to compare time series based on their shape o
 	}
 	{
 		\sqrt{
-			\sum\limits_{t,t'=1}^Q  
+			\sum\limits_{t,t'=1}^q  
 			{(x_{it}-x_{it'})^2}
 		} 
 		\sqrt{
-			\sum\limits_{t,t'=1}^Q  
+			\sum\limits_{t,t'=1}^q  
 			{(x_{jt}-x_{jt'})^2}
 		} 	 
 	}
 \label{eq:corTr}
 \end{equation}
 
-\noindent where $|t-t'| \leq r$, $r \in [1,..., Q-1]$. The parameter $r$ can be tuned or fixed a priori. It measures the importance of noise in data. For non-noisy data, low orders $r$ is generally sufficient. For noisy data, the practitioner can either use de-noising data technics (Kalman or Wiener filtering \cite{Kalman1960,WienerN1942}), or fix a high order $r$.
+\noindent where $|t-t'| \leq r$, $r \in [1,..., q-1]$. The parameter $r$ can be tuned or fixed \textit{a priori} and depends on the importance of noise in data. For non-noisy data, low orders $r$ is generally sufficient. For noisy data, the practitioner can either use de-noising data technics (Kalman or Wiener filtering \cite{Kalman1960,WienerN1942}), or fix a high order $r$. This parameter can be seen as a temporal window where the time series are compared.
 
-The temporal correlation $cort$ computes the sum of growth rate between $\textbf{x}_i$ and $\textbf{x}_j$ between all pairs of values observed at $[t ,t']$ for $t' \leq t+r$ ($r$-order differences). The value $cort_r(\textbf{x}_i,\textbf{x}_j) = +1$ means that $\textbf{x}_i$ and $\textbf{x}_j$  have similar behavior, i.e, there exists some constant $c$ such that $\textbf{x}_i = \textbf{x}_j+c$. The value $cort_r(\textbf{x}_i,\textbf{x}_j) = -1$ means that $\textbf{x}_i$ and $\textbf{x}_j$ have opposite behavior, i.e, there exists some constant $c$ such that $\textbf{x}_i = -\textbf{x}_j+c$. Finally, $cort_r(\textbf{x}_i,\textbf{x}_j) = 0$ expresses that their growth rates are stochastically linearly independent (different behaviors). 
+% The temporal correlation $cort$ computes the sum of growth rate between $\textbf{x}_i$ and $\textbf{x}_j$ between all pairs of values observed at $[t ,t']$ for $t' \leq t+r$ ($r$-order differences). The value $cort_r(\textbf{x}_i,\textbf{x}_j) = +1$ means that $\textbf{x}_i$ and $\textbf{x}_j$  have similar behavior, \textit{i.e.}, there exists some constant $c$ such that $\textbf{x}_i = \textbf{x}_j+c$. The value $cort_r(\textbf{x}_i,\textbf{x}_j) = -1$ means that $\textbf{x}_i$ and $\textbf{x}_j$ have opposite behavior, \textit{i.e.}, there exists some constant $c$ such that $\textbf{x}_i = -\textbf{x}_j+c$. Finally, $cort_r(\textbf{x}_i,\textbf{x}_j) = 0$ expresses that their growth rates are stochastically linearly independent (different behaviors). 
+
+The temporal correlation $cort$ computes the sum of growth rate between $\textbf{x}_i$ and $\textbf{x}_j$ between all pairs of values observed at $[t ,t']$ for $t' \leq t+r$ ($r$-order differences). The value $cort_r(\textbf{x}_i,\textbf{x}_j) = +1$ means that $\textbf{x}_i$ and $\textbf{x}_j$  have similar behavior. The value $cort_r(\textbf{x}_i,\textbf{x}_j) = -1$ means that $\textbf{x}_i$ and $\textbf{x}_j$ have opposite behavior. Finally, $cort_r(\textbf{x}_i,\textbf{x}_j) = 0$ expresses that their growth rates are stochastically linearly independent (different behaviors). 
 
 % When $r=1$, Eq.~\eqref{eq:corTr} leads to the temporal correlation coefficient $cort$ \cite{AhlameDouzal-Chouakria2011}. 
-When $r=Q-1$, it leads to the Pearson correlation. As $cort_r$ is a similarity measure, it can be transformed into a dissimilarity measure:
+When $r=q-1$, it leads to the Pearson correlation. As $cort_r$ is a similarity measure, it can be transformed into a dissimilarity measure:
 \begin{equation}
 	d_B(\textbf{x}_i,\textbf{x}_j) = \frac{1 - cort_r(\textbf{x}_i,\textbf{x}_j)}{2}
 	\label{eq:B}
@@ -255,28 +306,14 @@ When $r=Q-1$, it leads to the Pearson correlation. As $cort_r$ is a similarity m
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/ExampleTimeSeriesMetrics4}
-	\caption{The signal from Fig. \ref{fig:ExampleTimeSeriesMetrics3} and a signal $\textbf{x}_4$ which is signal $\textbf{x}_1$ and an added translation. Based on behavior comparison, $\textbf{x}_4$ is the closest to $\textbf{x}_1$.}
+	\caption[4 toys time series in the temporal domain.]{The signal from Fig. \ref{fig:ExampleTimeSeriesMetrics3} and a signal $\textbf{x}_4$ which is signal $\textbf{x}_1$ and an added translation. Based on behavior comparison, $\textbf{x}_4$ is the closest to $\textbf{x}_1$.}
 	\label{fig:ExampleTimeSeriesMetrics4}
 \end{figure}
 
-\noindent Considering Fig. \ref{fig:ExampleTimeSeriesMetrics4}, we obtain:
-\begin{align*}
-d_B(\textbf{x}_1,\textbf{x}_2) &= 0.477 \\  
-d_B(\textbf{x}_1,\textbf{x}_3) &= 1 \\  
-d_B(\textbf{x}_1,\textbf{x}_4) &= 0 \\ 
-\label{key}
-\end{align*}  
+\noindent Considering Fig. \ref{fig:ExampleTimeSeriesMetrics4}, the behavior-based metric $d_B$ states that $\textbf{x}_1$ is closer to $\textbf{x}_4$ than to $\textbf{x}_2$ or $\textbf{x}_3$ since $d_B(\textbf{x}_1,\textbf{x}_2) = 0.477$,  
+$d_B(\textbf{x}_1,\textbf{x}_3) = 1$ and  
+$d_B(\textbf{x}_1,\textbf{x}_4) = 0$. 
 
-\subsection{Other metrics and Kernels for time series}
-\todo[inline]{A faire à la fin, pas urgent}
-\begin{itemize}
-	\item Il existe dans la littérature de nombreuses autres métriques pour les séries temporelles (laisser la porte ouverte).
-	\item Certaines métriques sont utilisées dans le domaine temporelle
-	\item D'autres métriques sont utilisés dans d'autres représentations (Wavelet, etc.)
-	\item Certaines combinent la représentation temporelles et fréquentielles (Représentation spectrogramme en temps-fréquence)
-	\item Se baser sur l'article "TSclust : An R Package for Time Series Clustering".
-	\item Fermer le cadre : dans la suite de notre travail, on ne va pas les utiliser mais elles pourront être intégrées dans le framework qui suivra au chapitre suivant
-\end{itemize}
 
 
 %-----------------------------------------------------------------------------
@@ -291,16 +328,17 @@ d_B(\textbf{x}_1,\textbf{x}_4) &= 0 \\
 %	\item Prendre le GRAPHIQUE GENERAL et faire le calcul des distances entre les courbes et montrer que pour 2 courbes qui ont des "valeurs proches" mais décalés, on obtient une valeur de distance faible. (prendre DTW standard avec une fonction de coût $D_E$ par exemple)
 %\end{itemize}
 
-\mycomment[SMA]{formulation totale à revoir} In some applications, time series needs to be compared at different time $t$ (i.e. energy data \cite{Najmeddine2012}) whereas in others, comparing time series on the same time $t$ is essential (i.e. gene expression \cite{Chouakria2007}). When time series are asynchronous (i.e. varying delays or dynamic changes), they must be aligned before any analysis process. The asynchronous effects can be of various natures: time shifting (phase shift in signal processing), time compression or time dilatation. For example, in the case of voice recognition (Fig. \ref{fig:Voice_Example}), it is straightforward that a same sentence said by two different speakers will produce different time series: one speaker may speak faster than the other; one speaker may take more time on some vowels, etc.
+% \mycomment[SMA]{formulation totale à revoir} 
+In some applications, time series needs to be compared at different time $t$ (\textit{i.e.}, energy data \cite{Najmeddine2012}) whereas in others, comparing time series on the same time $t$ is essential (\textit{i.e.}, gene expression \cite{Chouakria2007}). When time series are asynchronous (\textit{i.e.}, varying delays or dynamic changes), they must be aligned before any analysis process. The asynchronous effects can be of various natures: time shifting (phase shift in signal processing), time compression or time dilatation. For example, in the case of voice recognition (Fig. \ref{fig:Voice_Example}), it is straightforward that a same sentence said by two different speakers will produce different time series: one speaker may speak faster than the other; one speaker may take more time on some vowels, etc.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.5\linewidth]{images/Voice_Example2}
-\caption{Example of a same sentence said by two different speakers. Time series are shifted, compressed and dilatated in the time.}
+\caption[Example of a same sentence said by two different speakers.]{Example of a same sentence said by two different speakers. Time series are shifted, compressed and dilatated in the time.}
 \label{fig:Voice_Example}
 \end{figure}
-\mycomment[MR]{Modifier figure. enlever 'one' et mettre la même échelle temporelle}
-To cope with delays and dynamic changes, dynamic programming approach has been introduced \cite{Berndt1994a}. An alignment $\boldsymbol{\pi}$ of length $|\boldsymbol{\pi}_{ij}|=m$ between two time series $\textbf{x}_i$ and $\textbf{x}_j$ of length $Q$ is defined as the set of $m$ ($Q \leq m \leq 2Q-1$) couples of aligned elements of $\textbf{x}_i$ to $m$ elements of $\textbf{x}_j$:
+% \mycomment[MR]{Modifier figure. enlever 'one' et mettre la même échelle temporelle}
+To cope with delays and dynamic changes, dynamic programming approach has been introduced \cite{Berndt1994a}. An alignment $\boldsymbol{\pi}$ of length $|\boldsymbol{\pi}_{ij}|=m$ between two time series $\textbf{x}_i$ and $\textbf{x}_j$ of length $q$ is defined as the set of $m$ ($q \leq m \leq 2q-1$) couples of aligned elements of $\textbf{x}_i$ to $m$ elements of $\textbf{x}_j$:
 \begin{equation}
 \boldsymbol{\pi}_{ij} = 
 \left(  
@@ -310,11 +348,11 @@ To cope with delays and dynamic changes, dynamic programming approach has been i
 (\pi_i(m),\pi_j(m))
 \right) 
 \end{equation}
-\mycomment[AD]{Ahlame pas fan des notations}
-\noindent where the applications $\pi_i$ and $\pi_j$ defined from $\{1, ..., m\}$ to $\{1, ..., Q\}$ obey the following boundary monotonicity conditions: 
+% \mycomment[AD]{Ahlame pas fan des notations}
+\noindent where the applications $\pi_i$ and $\pi_j$ defined from $\{1, ..., m\}$ to $\{1, ..., q\}$ obey the following boundary monotonicity conditions: 
 \begin{align}
-& 1 = \pi_i(1) \leq \pi_i(2) \leq ... \leq \pi_i(m) = Q \\
-& 1 = \pi_j(1) \leq \pi_j(2) \leq ... \leq \pi_j(m) = Q 
+& 1 = \pi_i(1) \leq \pi_i(2) \leq ... \leq \pi_i(m) = q \\
+& 1 = \pi_j(1) \leq \pi_j(2) \leq ... \leq \pi_j(m) = q 
 \end{align}
 $\forall l \in \{1, ..., m\}$, 
 \begin{align}
@@ -322,7 +360,8 @@ $\forall l \in \{1, ..., m\}$,
 \text{  and  \qquad} & \pi_j(l+1) \leq \pi_j(l)+1 \\
 \text{  and  \qquad} & ( \pi_i(l+1)-\pi_i(l) ) - ( \pi_j(l+1)-\pi_j(l)) \geq 1 . 
 \end{align}
-In the following, we denote $\boldsymbol{\pi}=\boldsymbol{\pi}_{ij}$ to simplify the notation. Intuitively, an alignment $\boldsymbol{\pi}$ defines a way to associate elements of two time series. Alignments can be described by paths in the $Q \times Q$ grid that crosses the elements of $\textbf{x}_i$ and $\textbf{x}_j$ (Fig. \ref{fig:DTWgrid}). We denote $\boldsymbol{\pi}$ a valid alignment and $A_{ij}$, the set of all possible alignments between $\textbf{x}_i$ and $\textbf{x}_j$ ($\boldsymbol{\pi} \in A$). To find the best alignment $\boldsymbol{\pi}^*$ between two time series $\textbf{x}_i$ and $\textbf{x}_j$, the Dynamic Time Warping (\textsc{dtw}) algorithm has been proposed \cite{Keogh2004,Salvador}.
+
+\noindent In the following, we denote $\boldsymbol{\pi}=\boldsymbol{\pi}_{ij}$ to simplify the notation. Intuitively, an alignment $\boldsymbol{\pi}$ defines a way to associate elements of two time series. Alignments can be described by paths in the $q \times q$ grid that crosses the elements of $\textbf{x}_i$ and $\textbf{x}_j$ (Fig. \ref{fig:DTWgrid}). We denote $\boldsymbol{\pi}$ a valid alignment and $A_{ij}$, the set of all possible alignments between $\textbf{x}_i$ and $\textbf{x}_j$ ($\boldsymbol{\pi} \in A$). To find the best alignment $\boldsymbol{\pi}^*$ between two time series $\textbf{x}_i$ and $\textbf{x}_j$, the Dynamic Time Warping (\textsc{dtw}) algorithm has been proposed \cite{Keogh2004,Salvador}.
 
 \textsc{dtw} requires to choose a cost function $\varphi$ to be optimised, such as a dissimilarity function ($d_A, d_B$, $d_F$, etc.). Standard \textsc{dtw} uses the Euclidean distance $d_A$ (Eq. \ref{eq:A}) as the cost function~\cite{Berndt1994a}. The warp path $\boldsymbol{\pi}$ is optimized for the chosen cost function $\varphi$:
 \begin{equation}
@@ -331,7 +370,7 @@ In the following, we denote $\boldsymbol{\pi}=\boldsymbol{\pi}_{ij}$ to simplify
 \label{eq:DTW}
 \end{equation}
 
-\noindent When the cost function $\varphi$ is a similarity measure, the optimization involves maximization instead of minimization. When other constraints are applied on $\boldsymbol{\pi}$, Eq. \eqref{eq:DTW} leads to other variants of \textsc{dtw} (Sakoe-Shiba \cite{Sakoe1978a}, Itakura parallelogram \cite{Rabiner1993}). Finally, the warped signals $\textbf{x}_{i,\boldsymbol{\pi}^*}$ and $\textbf{x}_{j,\boldsymbol{\pi}^*}$ are defined as:
+\noindent When the cost function $\varphi$ is a similarity measure (Section \ref{sec:property_metric}), the optimization involves maximization instead of minimization. When other constraints are applied on $\boldsymbol{\pi}$, Eq. \eqref{eq:DTW} leads to other variants of \textsc{dtw} (Sakoe-Shiba \cite{Sakoe1978b}, Itakura parallelogram \cite{Rabiner1993}). Finally, the warped signals $\textbf{x}_{i,\boldsymbol{\pi}^*}$ and $\textbf{x}_{j,\boldsymbol{\pi}^*}$ are defined as:
 \begin{align}
 \textbf{x}_{i,\boldsymbol{\pi}^*} 
 &= (x_{i\pi_i(1)}, ..., 
@@ -345,16 +384,18 @@ x_{j\pi_j(m)})
 	\centering
 	\includegraphics[width=0.6\linewidth]{images/DTWgrid2}
 	\includegraphics[width=0.9\linewidth]{images/DTWwarpedSignals}
-	\caption{Example of {\sc dtw} grid between 2 time series $\textbf{x}_{i}$ and $\textbf{x}_{j}$ (top) and the signals before and after warping (bottom). On the {\sc dtw} grid, the two signals can be represented on the left and bottom of the grid. The optimal path $\boldsymbol{\pi}^*$ is represented in green line and shows how to associate elements of $\textbf{x}_{i}$ to element of $\textbf{x}_{j}$. Background show in grey scale the value of the considered metric (amplitude-based distance $d_A$ in classical {\sc dtw})}
+	\caption[Example of {\sc dtw} grid between 2 time series $\textbf{x}_{i}$ and $\textbf{x}_{j}$ (top) and the signals before and after warping (bottom)]{Example of {\sc dtw} grid between 2 time series $\textbf{x}_{i}$ and $\textbf{x}_{j}$ (top) and the signals before and after warping (bottom). On the {\sc dtw} grid, the two signals can be represented on the left and bottom of the grid. The optimal path $\boldsymbol{\pi}^*$ is represented in green line and shows how to associate elements of $\textbf{x}_{i}$ to element of $\textbf{x}_{j}$. Background show in grey scale the value of the considered metric (amplitude-based distance $d_A$ in classical {\sc dtw})}
 	\label{fig:DTWgrid}
 \end{figure}
 
 
 Once an optimal alignment $\boldsymbol{\pi}^*$ has been found, and whatever cost function $\varphi$ have been chosen to find it, the metric presented in Section \ref{sec:metric_time_series} (amplitude-based $d_A$, behavior-based $d_B$, frequential-based $d_F$) can be then computed on the warped signals $\textbf{x}_{i,\boldsymbol{\pi}^*}$ and $\textbf{x}_{j,\boldsymbol{\pi}^*}$. In the following, we suppose that the best alignment $\boldsymbol{\pi}^*$ is found. For simplification purpose, we refer to $\textbf{x}_{i,\boldsymbol{\pi}^*}$ and $\textbf{x}_{j,\boldsymbol{\pi}^*}$ as $\textbf{x}_{i}$ and $\textbf{x}_{j}$. 
-\todo{voir si je mets la dtw avec fonction de coût cort dans les annexes}
+% \todo{voir si je mets la dtw avec fonction de coût cort dans les annexes}
 
 
 %-----------------------------------------------------------------------------
+\clearpage
+\newpage
 \section{Combined metrics for time series}
 %\begin{itemize}
 %	\item Certains travaux dans la littérature propose des combinaisons : linéaire, exponentielle, sigmoïde.
@@ -366,46 +407,42 @@ Once an optimal alignment $\boldsymbol{\pi}^*$ has been found, and whatever cost
 %		\item Pour répondre à ces problèmes, certains auteurs proposent d'apprendre une métrique en vue de la tâche d'analyse considérée (classification, régression, clustering).
 %	\end{itemize}
 %\end{itemize}
+In most classification problems, it is not known \textit{a priori} if time series of a same class exhibits same modalities (characteristics) based on their amplitude, behavior or frequential components alone. In some cases, several components (amplitude, behavior and/or frequential) may be implied. 
 
 \subsection{Combination functions}
-In most classification problems, it is not known a priori if time series of a same class exhibits same characteristics based on their amplitude,  behavior or frequential components alone. In some cases, several components (amplitude, behavior and/or frequential) may be implied. 
-
-A first technic considers a classifier for each $p$ metric and combines the decision of the $p$ resulting classifiers. This methods is referred as post-fusion \todo{ref}, not considered in our work. Other propositions show the benefit of involving both behavior and amplitude components through a combination function. They combines the unimodal metrics together to obtain a single metric used after that in a classifier. This is called pre-fusion. The most basic combination functions that we could use combines two unimodal metrics through linear and geometric functions. For example, with $d_A$ and $d_B$, we obtain: 
+A first technic considers a classifier for each $p$ metric and combines the decision of the $p$ resulting classifiers. This methods is referred to as post-fusion \cite{Zhang2013}, not considered in our work. Other propositions show the benefit of involving both behavior and amplitude components through a combination function. They combines the unimodal metrics together to obtain a single metric used after that in a classifier. This is called pre-fusion. The most basic combination functions that we could use combines two unimodal metrics through a linear or geometric function. For example, with $d_A$ and $d_B$, we obtain: 
 \begin{align}
-D_{Lin}(\textbf{x}_i,\textbf{x}_j) &= \alpha d_{B}(\textbf{x}_i,\textbf{x}_j) + (1-\alpha) d_A(\textbf{x}_i,\textbf{x}_j)  \label{eq:DLin}   \\
-D_{Geom}(\textbf{x}_i,\textbf{x}_j) &= (d_{B}(\textbf{x}_i,\textbf{x}_j))^\alpha  (d_A(\textbf{x}_i,\textbf{x}_j))^{1-\alpha} \label{eq:DGeom}
+D_{Lin}(\textbf{x}_i,\textbf{x}_j) &= \beta d_{B}(\textbf{x}_i,\textbf{x}_j) + (1-\beta) d_A(\textbf{x}_i,\textbf{x}_j)  \label{eq:DLin}   \\
+D_{Geom}(\textbf{x}_i,\textbf{x}_j) &= (d_{B}(\textbf{x}_i,\textbf{x}_j))^\beta  (d_A(\textbf{x}_i,\textbf{x}_j))^{1-\beta} \label{eq:DGeom}
 \end{align}
-
-\noindent where $\alpha \in [0;1]$ defines the trade-off between the amplitude $d_A$ and the behavior $d_B$ components, and is thus application dependent. For example, in classification problems, we could learnt it through a grid search procedure. Without being restrictive, these combinations can be extended to take into account more unimodal metrics. \\
-More specific work on $d_A$ and $cort$ propose to combine the two components through a sigmoid combination function \cite{AhlameDouzal-Chouakria2011}:
+\noindent where $\beta \in [0;1]$ defines the trade-off between the amplitude $d_A$ and the behavior $d_B$ components, and is thus application dependent. For example, in classification problems, this parameter can be learned through a grid search procedure (Section \ref{sec:model_selection}). Without being restrictive, these combinations can be extended to take into account more unimodal metrics. \\
+More specific work on $d_A$ and $cort$ propose to combine the two components through a sigmoid combination function \cite{AhlameDouzal-Chouakria2012,Chouakria2007}:
 \begin{equation}	
-D_{Sig}(\textbf{x}_i,\textbf{x}_j) = \frac{2d_A(\textbf{x}_i,\textbf{x}_j)}{1+\exp(\alpha cort_r(\textbf{x}_i,\textbf{x}_j))}
-= \frac{2d_A(\textbf{x}_i,\textbf{x}_j)}{1+\exp(\alpha (1-2d_B(\textbf{x}_i,\textbf{x}_j)))}
+D_{Sig}(\textbf{x}_i,\textbf{x}_j) = \frac{2d_A(\textbf{x}_i,\textbf{x}_j)}{1+\exp(\beta cort_r(\textbf{x}_i,\textbf{x}_j))}
+= \frac{2d_A(\textbf{x}_i,\textbf{x}_j)}{1+\exp(\beta (1-2d_B(\textbf{x}_i,\textbf{x}_j)))}
 \label{eq:DSig}
 \end{equation}
-\noindent where $\alpha$ is a parameter that defines the compromise between behavior and amplitude components.
+\noindent where $\beta$ is a parameter that defines the compromise between behavior and amplitude components.
 
-Fig.\ref{fig:ContourLine} illustrates the value of the resulting combined metrics ($D_{Lin}$, $D_{Geom}$ and $D_{Sig}$) in 2-dimensional space using contour plots for different values of the trade-off $\alpha$. For small value of $\alpha$ ($\alpha=0$), the three metrics only includes $d_A$. For high value of $\alpha$ ($\alpha=1$), $D_{Lin}$ and $D_{Geom}$ only includes $d_B$. For $\alpha=6$ and for small values of $d_B$, $D_{Sig}$ mostly includes $d_B$ while for large value of $d_B$, $D_{Sig}$ mostly includes $d_A$. 
+Fig. \ref{fig:ContourLine} illustrates the value of the resulting combined metrics ($D_{Lin}$, $D_{Geom}$ and $D_{Sig}$) in 2-dimensional space using contour plots for different values of the trade-off $\beta$. For small value of $\beta$ ($\beta=0$), the three metrics only includes $d_A$. For high value of $\beta$ ($\beta=1$), $D_{Lin}$ and $D_{Geom}$ only includes $d_B$. For $\beta=6$ and for small values of $d_B$, $D_{Sig}$ mostly includes $d_B$ while for large value of $d_B$, $D_{Sig}$ mostly includes $d_A$. \\
 % $D_{Sig}$ doesn't include completely $cort$. 
 Note that these combinations are fixed and defined independently from the analysis task at hand. Moreover, in the case of $D_{Sig}$, 
 % only two variables are taking into account in these combined metrics and 
-the component $cort_r$ can be seen as a penalizing factor of $d_A$: it doesn't represent a real compromise between value and behavior components. Finally, one could extend $D_{Lin}$ and $D_{Geom}$ by adding metrics, but that would imply to add parameters. The grid search to find the best parameters would thus become time consuming.
+the component $cort_r$ can be seen as a penalizing factor of $d_A$. Finally, one could extend $D_{Lin}$ and $D_{Geom}$ by adding metrics, but that would imply to add parameters. The grid search to find the best parameters would become time consuming.
 % To overcome these limits, other authors propose to learn the metric $D$ for a robust $k$-NN classifier. 
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{images/CombinedMetrics}
-	\caption{Contour plot of the resulting combined metrics: $D_{Lin}$ ($1^{st}$ line), $D_{Geom}$ ($2^{nd}$ line) and $D_{Sig}$ ($3^{rd}$ line), for different values of $\alpha$. For the three combined metrics, the first and second dimensions are respectively the amplitude-based metrics $d_A$ and the behavior-based metric $d_B$.}
+	\caption[Contour plot of the resulting combined metrics: $D_{Lin}$ ($1^{st}$ line), $D_{Geom}$ ($2^{nd}$ line) and $D_{Sig}$ ($3^{rd}$ line), for different values of $\beta$.]{Contour plot of the resulting combined metrics: $D_{Lin}$ ($1^{st}$ line), $D_{Geom}$ ($2^{nd}$ line) and $D_{Sig}$ ($3^{rd}$ line), for different values of $\beta$. For the three combined metrics, the first and second dimensions are respectively the amplitude-based metrics $d_A$ and the behavior-based metric $d_B$.}
 	\label{fig:ContourLine}
 \end{figure}
 
-\subsection{Impact of normalization}
-
-In most cases, it is recommended to scale each attribute to the range [-1; +1] or [0; 1]. Many normalization methods have been proposed such as Min/Max normalization, Z-normalization or normalization of the log distribution \todo{références normalization}. Let $X=\{\textbf{x}_i,y_i\}_{i=1}^n$ be a training set, $\textbf{x}_i$ being a sample described by $p$ features $x_1, \ldots, x_p$. We define $\mu_j$ and $\sigma_j$ as the mean and the standard deviation of a variable $x_j$, applying the Z-normalized variable $x^{norm}_j$ is given by:
-\begin{equation}
-x^{norm}_j = \frac{x_j-\mu_j}{\sigma_j}
-\end{equation}
-Note that the underlying assumption supposes that the variable $x_j$ is normally distributed: data evolves between $[-\infty;+\infty]$ and are coming from a Gaussian process. In some cases, the data are skewed such as monetary amounts or incomes. These data are sometimes log-normally distributed, \textit{e.g.}, the log of the data is normally distributed (Fig. \ref{fig:SkewedData}). The underlying idea is to take the log of the data ($x^{ln}_j$) to restore the symmetry, and then, to apply a Z-normalization of this transformation:
+\newpage
+\subsection{Proposition of normalization of distances}
+\label{sec:log_normalization}
+When combining several metrics into a single metric, it is necessary to normalize the metrics involved in the combination to avoid one metric from another to have a larger impact in the combination. Classically, to normalize data, Z-normalization is used (Section \ref{sec:data_normalization}). In that case, we suppose that the variables $x_j$ are normally distributed: data evolves between $[-\infty;+\infty]$ and are coming from a Gaussian process. \\
+In some cases, the data are skewed such as monetary amounts, incomes or distances. These data may be log-normally distributed, \textit{e.g.}, the log of the data is normally distributed (Fig. \ref{fig:SkewedData}). Some works proposes to take the log of the data ($x^{ln}_j$) to restore the symmetry, and then, to apply a Z-normalization of this transformation \cite{Zumel}:
 \begin{align}
 x^{ln}_j 		& = \ln(x_j); \\
 x^{ln,norm}_j & = \frac{x^{ln}_j-\mu^{ln}_j}{\sigma^{ln}_j} \\
@@ -417,188 +454,153 @@ x^{norm}_j 	& = \exp(x^{ln,norm}_j)
 \begin{figure}
 	\centering
 	\includegraphics[width=0.6\linewidth]{images/SkewedData2}
-	\caption{A nearly log-normal distribution, and its log transform \protect\footnotemark}
+	\caption{A nearly log-normal distribution, and its log transform\protect\footnotemark}
 	\label{fig:SkewedData}
 \end{figure}
 \footnotetext{source: \url{http://www.r-statistics.com/2013/05/log-transformations-for-skewed-and-wide-distributions-from-practical-data-science-with-r/}}
 
 
-\todo[inline]{Compléter avec le mail de Sylvain. Partie peut être à mettre en annexe}
-Avec Cao on a discuté de la normalisation log hier et du coup j'ai regardé comment la justifier un peu mieux. Voici une intuition "avec les mains" montrant que l'on peut approximer la distribution de la distance euclidienne DE avec une loi log-normale:
 
-
-Version simple : 1 feature, 
-1. On considère pour simplifier des données à 1 dimension (1 feature pour les vecteurs d'exemples). Soit x cette feature. On considère qu'elle suit une loi normale de variance (1/2) et de moyenne Mu.
-
-2. la différence entre deux exemples x et y,  d = (x-y) = (x + (-y)), suit donc une loi normale de moyenne zéro et de variance 1.  Explication:
-* inverse de lois normale y = loi normale avec inverse de la moyenne et même variance ; 
-* puis somme de deux lois normales (x) et (-y) = loi normale de moyenne égale à la somme des moyennes et variance égale à la somme des variances 
-Voir: \url{https://en.wikipedia.org/wiki/Sum_of_normally_distributed_random_variables}
-
-3. Le carré de la distance euclidienne entre deux exemples x et y est $DE^2 = (x-y)^2 = d^2$ . Puisque d suit une loi normale de variance 1, $DE^2$ suit une loi du $chi^2$ non centrée d'ordre k=1.
-Voir: \url{https://fr.wikipedia.org/wiki/Loi_du_%CF%87%C2%B2_non_centr%C3%A9e}
-
-4. Certaines personnes ont prouvé que la loi du $Xhi^2$ peut être approximée par une loi log-normale : \url{http://www.rennes.supelec.fr/ren/perso/cmoy/papers/URSI_4pages.pdf}
-(il faudrait regarder un peu mieux si il y a des hypothèses là-dedans)
-
-5. puisque $log(DE) = log(sqrt(DE^2)) = 1/2*log(DE^2)$  , alors log(DE) suit une loi normale (car la loi d'une variable normale multipliée par une constante est normale). 
-
-=> DE peut donc être approximée par une loi log-normale
-
-
-Extension à DE sur plusieurs features avec covariance diagonale égale à (1/2)I
-1. on considère qu'elles sont tirées d'une distribution jointe normale multivariée (une gaussienne en n dimension, avec covariance identité*1/2)
-2. fonctionne encore 
-3. Fonctionne encore : "la loi du $chi^2$ non centrée est le carré de la norme d'un vecteur aléatoire de loi N(mean, covariance=Identité). Simplement cela augmente l'ordre k de la distribution, k devient le nombre de features.
-
-
-Extension à (co-)variances non (1/2) 
-mon intuition est que si une feature a une variance beaucoup plus importante que les autres elle va "tuer" la variabilité des autres et donc ça va faire comme si il n'y avait qu'une seule feature.
-Du coup je pense que l'on retombe sur une loi du $chi^2$, mais avec un ordre k plus réduit (k < nb de features)
-
-
-\url{https://mail.google.com/mail/u/0/#search/sylvain+normalisation/14fb15fd972e75bc}
-
-%-----------------------------------------------------------------------------
-\section{Metric learning}
-%\begin{itemize}
-%	\item Placer le contexte : travaux réalisés dans le cadre de la classification de données statiques.
-%	\item Présenter l'intuition du Metric Learning sur la base des travaux de Weinberger.
-%	\item Donner la terminologie (target, imposter, push, pull)
-%	\item Objectif : push des imposters et pull des targets
-%	\item Formalisation du problème (optimisation)
-%	\item Limites:
-%	\begin{itemize}
-%		\item On apprend les poids d'une distance de Mahalanobis
-%		\item L'apprentissage ne prend pas en compte l'aspect multi-modal dans les données
-%	\end{itemize}
-%\end{itemize}
-In this section, we first review metric learning concepts. Then, we focus on the framework proposed by Weinberger \& Saul for Large Margin Nearest Neighbor ({\sc lmnn}) classification \cite{Weinberger2009}.
-
-\subsection{Review on metric learning work}
-In the case of static data, many work have demonstrated that $k$-NN classification performances depends highly on the considered metric and can be improved by learning an appropriate metric \cite{Shental2002,Goldberger2004,Chopra2005}. Metric Learning can be defined as a process that aims to learn a distance from labeled examples by making closer samples that are expected to be similar, and far away those expected to be dissimilar.
-
-\todo[inline]{A faire, avec papier PRL et papier Aurélien Bellet. Refaire cette intro avec les notes de Sylvain.} 
-%Similar and dissimilar samples, are inherently task- and application dependent, generally given a priori and fixed during the learning process. From the surge of recent research in metric learning, one can identify mainly two categories: the linear and non linear approaches. The former is the most popular, it defines the majority of the propositions, and focuses mainly on the Mahalanobis distance learning. The latter relies on non linear Metric Learning, although more expressive, the optimization problems are more expensive to solve in general.
-%
-%Contrary to flat data, Metric Learning for structured data (e.g. sequence, time series, trees, graphs) remains less numerous. While for sequence data most of the works focus on string edit
-%distance to learn the edit cost matrix [21, 20], Metric Learning for time series is still in its infancy. Without being exhaustive, major recent proposals rely on weighted variants of dynamic time warping to learn alignments under phase or amplitude constraints [22, 23, 24], or enlarging temporal alignments to learn discriminative matching guided by local variance/covariance [25].
-
-
-\subsection{Large Margin Nearest Neighbors ({\sc lmnn})}
-\label{LMNN}
-Let $\textbf{X}=\{\textbf{x}_i,y_i\}_{i=1}^N$ be a set of $N$ static vector samples, ${\textbf{x}_i \in \mathbb{R}^{p}}$, $p$ being the number of descriptive features and $y_i$ the class labels. Weinberger \& Saul proposed in~\cite{Weinberger2009} an approach to learn a metric $D$ for a large margin $k$-NN in the case of static data. 
-
-Large Margin Nearest Neighbor ({\sc lmnn}) approach is based on two intuitions: according to the learnt metric $D$, first, each training sample $\textbf{x}_i$ should have the same label $y_i$ as its $k$ nearest neighbors; second, training samples with different labels should be widely separated. For this, the concept of \textbf{target} and \textbf{imposters} for each training sample $\textbf{x}_i$ is introduced. The training sample $\textbf{x}_i$ is referred as a \textbf{center point}. Given a metric $D$, target neighbors of $\textbf{x}_i$, noted $j \rightsquigarrow i$, are the $k$ closest $\textbf{x}_j$ of the same class $(y_j=y_i)$, while imposters of $\textbf{x}_i$, denoted, $l \nrightarrow i$, are the $\textbf{x}_l$ of different class $(y_l \neq y_i)$ that invade the perimeter defined by the farthest targets of $\textbf{x}_i$. 
-Mathematically, for a sample $\textbf{x}_i$, an imposter $\textbf{x}_l$ is defined by an inequality related to the targets $\textbf{x}_j$: $\forall l, \exists j \in j \rightsquigarrow i /$
-\begin{align}
-D(\textbf{x}_i,\textbf{x}_l) &\leq D(\textbf{x}_i,\textbf{x}_j) + 1
-\end{align}
-% ||L(\textbf{x}_i-\textbf{x}_l)||^2 & \leq ||L(\textbf{x}_i-\textbf{x}_j)||^2 + 1 \\
-Geometrically, an imposter $\textbf{x}_{l}$ is a sample that invades the target neighborhood plus one unit margin as illustrated in Fig. \ref{fig:TargetImposterRepresentation}. The target neighborhood is defined with respect to an initial metric. Without prior knowledge, L2-norm is often used. Metric Learning by {\sc lmnn} aims at minimizing the number of impostors invading the target neighborhood. By adding a margin of safety of one, the model is ensured to be robust to small amounts of noise in the training sample (large margin). The learned metric $D$ pulls the targets $\textbf{x}_j$ and pushes the imposters $\textbf{x}_{l}$ as shown in Fig. \ref{fig:TargetImposterRepresentation}.
-
-\begin{figure}[h!]
-	\centering
-	\begin{minipage}[b]{0.85\linewidth}		
-		\centerline{\includegraphics[width=0.8\linewidth]{./images/TargetImposterRepresentationCao}}
-	\end{minipage}
-	\caption{Pushed and pulled samples in the $k=3$ target neighborhood of $\textbf{x}_i$ before (left) and after (right) learning. The pushed (vs. pulled) samples are indicated by a white (vs. black) arrows (Weinberger \& Saul~\cite{Weinberger2009}).}
-	\label{fig:TargetImposterRepresentation}
-\end{figure}
-
-{\sc lmnn} approach learns a Mahalanobis distance $D$ for a robust $k$-NN. We recall that the $k$-NN decision rule will correctly classify a sample if the majority of its $k$ nearest neighbors share the same label (Section \ref{sec:kNN}). 
-The objective of {\sc lmnn} is to increase the number of samples with this property by learning a linear transformation $\textbf{L}$ of the input space ($\textbf{x}_i=\textbf{L}.\textbf{x}_i$) before applying the $k$-NN classification:
-\begin{equation}
-	D(\textbf{x}_i,\textbf{x}_j) = ||\textbf{L}(\textbf{x}_i-\textbf{x}_j)||_2^2
-	\label{eq:lin}
-\end{equation}
-Commonly, the squared distances can be expressed in terms of the square matrix:
-\begin{equation}
-\textbf{M} = \textbf{L}'\textbf{L}
-\end{equation}
-It is proved that any matrix \textbf{M} formed as below from a real-valued matrix \textbf{L} is positive semidefinite (i.e., no negative eigenvalues) \cite{Weinberger2009}. Using the matrix \textbf{M}, squared distances can be expressed as:
-\begin{equation}
-D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j) = (\textbf{x}_i-\textbf{x}_j)\textbf{M}(\textbf{x}_i-\textbf{x}_j)
-\end{equation}
-\noindent The computation of the learned metric $D_\textbf{M}$ can thus be seen as a two steps procedure: first, it computes a linear transformation of the samples $\textbf{x}_i$ given by the transformation $\textbf{L}$; second, it computes the Euclidean distance in the transformed space:
-\begin{equation}
-D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j) = D^2(\textbf{L} \textbf{x}_i,\textbf{L} \textbf{x}_j)
-\end{equation}
-Learning the linear transformation $\textbf{L}$ is thus equivalent to learn the corresponding Mahalanobis metric $D$ parametrized by $\textbf{M}$. This equivalence leads to two different approaches to metric learning: we can either estimate the linear transformation $\textbf{L}$, or estimate a positive semidefinite matrix $\textbf{M}$. {\sc lmnn} solution refers on the latter one.
-
-
-
-%\subsection{Intuition}
+%%-----------------------------------------------------------------------------
+%\section{Metric learning}
 %%\begin{itemize}
-%%	\item Se placer dans le contexte kNN
+%%	\item Placer le contexte : travaux réalisés dans le cadre de la classification de données statiques.
+%%	\item Présenter l'intuition du Metric Learning sur la base des travaux de Weinberger.
+%%	\item Donner la terminologie (target, imposter, push, pull)
+%%	\item Objectif : push des imposters et pull des targets
+%%	\item Formalisation du problème (optimisation)
+%%	\item Limites:
+%%	\begin{itemize}
+%%		\item On apprend les poids d'une distance de Mahalanobis
+%%		\item L'apprentissage ne prend pas en compte l'aspect multi-modal dans les données
+%%	\end{itemize}
 %%\end{itemize}
+%In this section, we first review metric learning concepts. Then, we focus on the framework proposed by Weinberger \& Saul for Large Margin Nearest Neighbor ({\sc lmnn}) classification \cite{Weinberger2009}.
 %
-%Intuitively, the algorithm is based on the simple observation that the kNN decision rule will correctly classify an example if its k-nearest neighbors share the same label. The algorithm attempts to increase the number of training examples with this property by learning a linear transformation of the input space that precedes kNNclassification using Euclidean distances. The linear transformation is derived by minimizing a loss function that consists of two terms. The first term penalizes large distances between examples in the same class that are desired as k-nearest neighbors, while the second term penalizes small distances between exampleswith non-matching labels. Minimizing these terms yields a linear transformation of the input space that increases the number of training examples whose k-nearest neighbors have matching labels. The Euclidean distances in the transformed space can equivalently be viewed as Mahalanobis distances in the original space. We exploit this equivalence to cast the problem of distance metric learning as a problem in convex optimization. Our
-Mathematically, it can be formalized as an optimization problem involving two competiting terms for each sample $\textbf{x}_i$: one term penalizes large distances between nearby inputs with the same label (pull), while the other term penalizes small distances between inputs with different labels (push). For all samples $\textbf{x}_i$, this implies a minimization problem:
-\begin{equation}
-\begin{aligned}
-&\displaystyle 		\argmin_{\textbf{M},\xi} \text{  } \underbrace{
-	\sum\limits_{i,j \rightsquigarrow i}
-	D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j)
-}_{pull}
-+
-C
-\underbrace{
-	\sum\limits_{i,j \rightsquigarrow i,l \nrightarrow i} \frac{1+y_{il}}{2}.\xi_{ijl}
-}
-_{push} \\
-&\text{s.t.  } \forall j \rightsquigarrow i, l \nrightarrow i, \\
-& D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_l) - D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j)  \geq 1-\xi_{ijl} \\
-& \xi_{ijl} \geq 0 \\
-& \textbf{M} \succeq 0
-\label{eq:OptimizationProblem}
-\end{aligned}
-\end{equation}
-\noindent where $C$ is a trade-off between the push and pull term and $y_{il}=-1$ if $y_i=y_l$ (same class) and $+1$ otherwise (different classes). Generally, the parameter $C$ is tuned via cross validation and grid search. Similarly to Support Vector Machine ({\sc svm}) approach, slack variables $\xi_{ijl}$ are introduced to relax the optimization problem. 
+%\subsection{Review on metric learning work}
+%In the case of static data, many work have demonstrated that $k$-NN classification performances depends highly on the considered metric and can be improved by learning an appropriate metric \cite{Shental2002,Goldberger2004,Chopra2005}. Metric Learning can be defined as a process that aims to learn a distance from labeled examples by making closer samples that are expected to be similar, and far away those expected to be dissimilar.
+%
+%\todo[inline]{A faire, avec papier PRL et papier Aurélien Bellet. Refaire cette intro avec les notes de Sylvain.} 
+%%Similar and dissimilar samples, are inherently task- and application dependent, generally given a priori and fixed during the learning process. From the surge of recent research in metric learning, one can identify mainly two categories: the linear and non linear approaches. The former is the most popular, it defines the majority of the propositions, and focuses mainly on the Mahalanobis distance learning. The latter relies on non linear Metric Learning, although more expressive, the optimization problems are more expensive to solve in general.
+%%
+%%Contrary to flat data, Metric Learning for structured data (e.g. sequence, time series, trees, graphs) remains less numerous. While for sequence data most of the works focus on string edit
+%%distance to learn the edit cost matrix [21, 20], Metric Learning for time series is still in its infancy. Without being exhaustive, major recent proposals rely on weighted variants of dynamic time warping to learn alignments under phase or amplitude constraints [22, 23, 24], or enlarging temporal alignments to learn discriminative matching guided by local variance/covariance [25].
+%
+%
+%\subsection{Large Margin Nearest Neighbors ({\sc lmnn})}
+%\label{LMNN}
+%Let $\textbf{X}=\{\textbf{x}_i,y_i\}_{i=1}^N$ be a set of $N$ static vector samples, ${\textbf{x}_i \in \mathbb{R}^{p}}$, $p$ being the number of descriptive features and $y_i$ the class labels. Weinberger \& Saul proposed in~\cite{Weinberger2009} an approach to learn a metric $D$ for a large margin $k$-NN in the case of static data. 
+%
+%Large Margin Nearest Neighbor ({\sc lmnn}) approach is based on two intuitions: according to the learnt metric $D$, first, each training sample $\textbf{x}_i$ should have the same label $y_i$ as its $k$ nearest neighbors; second, training samples with different labels should be widely separated. For this, the concept of \textbf{target} and \textbf{imposters} for each training sample $\textbf{x}_i$ is introduced. The training sample $\textbf{x}_i$ is referred as a \textbf{center point}. Given a metric $D$, target neighbors of $\textbf{x}_i$, noted $j \rightsquigarrow i$, are the $k$ closest $\textbf{x}_j$ of the same class $(y_j=y_i)$, while imposters of $\textbf{x}_i$, denoted, $l \nrightarrow i$, are the $\textbf{x}_l$ of different class $(y_l \neq y_i)$ that invade the perimeter defined by the farthest targets of $\textbf{x}_i$. 
+%Mathematically, for a sample $\textbf{x}_i$, an imposter $\textbf{x}_l$ is defined by an inequality related to the targets $\textbf{x}_j$: $\forall l, \exists j \in j \rightsquigarrow i /$
+%\begin{align}
+%D(\textbf{x}_i,\textbf{x}_l) &\leq D(\textbf{x}_i,\textbf{x}_j) + 1
+%\end{align}
+%% ||L(\textbf{x}_i-\textbf{x}_l)||^2 & \leq ||L(\textbf{x}_i-\textbf{x}_j)||^2 + 1 \\
+%Geometrically, an imposter $\textbf{x}_{l}$ is a sample that invades the target neighborhood plus one unit margin as illustrated in Fig. \ref{fig:TargetImposterRepresentation}. The target neighborhood is defined with respect to an initial metric. Without prior knowledge, L2-norm is often used. Metric Learning by {\sc lmnn} aims at minimizing the number of impostors invading the target neighborhood. By adding a margin of safety of one, the model is ensured to be robust to small amounts of noise in the training sample (large margin). The learned metric $D$ pulls the targets $\textbf{x}_j$ and pushes the imposters $\textbf{x}_{l}$ as shown in Fig. \ref{fig:TargetImposterRepresentation}.
+%
+%\begin{figure}[h!]
+%	\centering
+%	\begin{minipage}[b]{0.85\linewidth}		
+%		\centerline{\includegraphics[width=0.8\linewidth]{./images/TargetImposterRepresentationCao}}
+%	\end{minipage}
+%	\caption{Pushed and pulled samples in the $k=3$ target neighborhood of $\textbf{x}_i$ before (left) and after (right) learning. The pushed (vs. pulled) samples are indicated by a white (vs. black) arrows (Weinberger \& Saul~\cite{Weinberger2009}).}
+%	\label{fig:TargetImposterRepresentation}
+%\end{figure}
+%
+%{\sc lmnn} approach learns a Mahalanobis distance $D$ for a robust $k$-NN. We recall that the $k$-NN decision rule will correctly classify a sample if the majority of its $k$ nearest neighbors share the same label (Section \ref{sec:kNN}). 
+%The objective of {\sc lmnn} is to increase the number of samples with this property by learning a linear transformation $\textbf{L}$ of the input space ($\textbf{x}_i=\textbf{L}.\textbf{x}_i$) before applying the $k$-NN classification:
+%\begin{equation}
+%	D(\textbf{x}_i,\textbf{x}_j) = ||\textbf{L}(\textbf{x}_i-\textbf{x}_j)||_2^2
+%	\label{eq:lin}
+%\end{equation}
+%Commonly, the squared distances can be expressed in terms of the square matrix:
+%\begin{equation}
+%\textbf{M} = \textbf{L}'\textbf{L}
+%\end{equation}
+%It is proved that any matrix \textbf{M} formed as below from a real-valued matrix \textbf{L} is positive semidefinite (i.e., no negative eigenvalues) \cite{Weinberger2009}. Using the matrix \textbf{M}, squared distances can be expressed as:
+%\begin{equation}
+%D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j) = (\textbf{x}_i-\textbf{x}_j)\textbf{M}(\textbf{x}_i-\textbf{x}_j)
+%\end{equation}
+%\noindent The computation of the learned metric $D_\textbf{M}$ can thus be seen as a two steps procedure: first, it computes a linear transformation of the samples $\textbf{x}_i$ given by the transformation $\textbf{L}$; second, it computes the Euclidean distance in the transformed space:
+%\begin{equation}
+%D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j) = D^2(\textbf{L} \textbf{x}_i,\textbf{L} \textbf{x}_j)
+%\end{equation}
+%Learning the linear transformation $\textbf{L}$ is thus equivalent to learn the corresponding Mahalanobis metric $D$ parametrized by $\textbf{M}$. This equivalence leads to two different approaches to metric learning: we can either estimate the linear transformation $\textbf{L}$, or estimate a positive semidefinite matrix $\textbf{M}$. {\sc lmnn} solution refers on the latter one.
+%
+%
+%
+%%\subsection{Intuition}
+%%%\begin{itemize}
+%%%	\item Se placer dans le contexte kNN
+%%%\end{itemize}
+%%
+%%Intuitively, the algorithm is based on the simple observation that the kNN decision rule will correctly classify an example if its k-nearest neighbors share the same label. The algorithm attempts to increase the number of training examples with this property by learning a linear transformation of the input space that precedes kNNclassification using Euclidean distances. The linear transformation is derived by minimizing a loss function that consists of two terms. The first term penalizes large distances between examples in the same class that are desired as k-nearest neighbors, while the second term penalizes small distances between exampleswith non-matching labels. Minimizing these terms yields a linear transformation of the input space that increases the number of training examples whose k-nearest neighbors have matching labels. The Euclidean distances in the transformed space can equivalently be viewed as Mahalanobis distances in the original space. We exploit this equivalence to cast the problem of distance metric learning as a problem in convex optimization. Our
+%Mathematically, it can be formalized as an optimization problem involving two competiting terms for each sample $\textbf{x}_i$: one term penalizes large distances between nearby inputs with the same label (pull), while the other term penalizes small distances between inputs with different labels (push). For all samples $\textbf{x}_i$, this implies a minimization problem:
+%\begin{equation}
+%\begin{aligned}
+%&\displaystyle 		\argmin_{\textbf{M},\xi} \text{  } \underbrace{
+%	\sum\limits_{i,j \rightsquigarrow i}
+%	D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j)
+%}_{pull}
+%+
+%C
+%\underbrace{
+%	\sum\limits_{i,j \rightsquigarrow i,l \nrightarrow i} \frac{1+y_{il}}{2}.\xi_{ijl}
+%}
+%_{push} \\
+%&\text{s.t.  } \forall j \rightsquigarrow i, l \nrightarrow i, \\
+%& D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_l) - D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j)  \geq 1-\xi_{ijl} \\
+%& \xi_{ijl} \geq 0 \\
+%& \textbf{M} \succeq 0
+%\label{eq:OptimizationProblem}
+%\end{aligned}
+%\end{equation}
+%\noindent where $C$ is a trade-off between the push and pull term and $y_{il}=-1$ if $y_i=y_l$ (same class) and $+1$ otherwise (different classes). Generally, the parameter $C$ is tuned via cross validation and grid search. Similarly to Support Vector Machine ({\sc svm}) approach, slack variables $\xi_{ijl}$ are introduced to relax the optimization problem. 
+%
+%\subsection{Parallels between {\sc lmnn} and {\sc svm}}
+%\label{sec:LMNN_SVM}
+%Many connections can be made between {\sc lmnn} and {\sc svm}: both are convex optimization problem based on a regularized and a loss term. In particular, Do \& al. investigate this relationship and have shown that {\sc svm} can be formulated as a metric learning problem \cite{Do2012}. The Mahalanobis distance $\textbf{M}$ learned by {\sc lmnn} can be expressed as a quadratic mapping $\boldsymbol{\phi}$. For a center point $\textbf{x}_i$, for any sample $\textbf{x}$, we have \cite{Do2012}: 
+%\begin{align}
+%	D^2_\textbf{M}(\textbf{x}_i,\textbf{x}) & = D^2(\textbf{L} \textbf{x}_i,\textbf{L} \textbf{x}) \\
+%	D^2_\textbf{M}(\textbf{x}_i,\textbf{x}) & = \textbf{w}_i^T \boldsymbol{\phi}(\textbf{x}) + b_i
+%\end{align}	 
+%\noindent where $\textbf{w}_i$ and $b_i$ are the coefficient of the hyperplane $H_i$ in the quadratic space $\boldsymbol{\phi}$. 
+%
+%Do \& al. show that {\sc lmnn} can be seen as a set of local {\sc svm} classifiers in the quadratic space induced by $\boldsymbol{\phi}$. For each center point $\textbf{x}_i$, {\sc lmnn} tries in its objective function to have its target neighbors $\textbf{x}_j$ to have small value $\textbf{w}_i^T \boldsymbol{\phi}(\textbf{x}_j) + b_i$, i.e. be at the small distance from the hyperplane $H_i$. Minimizing the target neighbor distances from the hyperplane $H_i$ makes the distance between support vectors and $H_i$ small. Fig. \ref{fig:RelationSVM_LMNN2} gives the equivalent point of view from the original space (Fig. \ref{fig:RelationSVM_LMNN2}(a)) into the quadratic space (Fig. \ref{fig:RelationSVM_LMNN2}(b)). The circle $\textbf{C}_i$ with the center $\textbf{L}\textbf{x}_i$ in Fig. \ref{fig:RelationSVM_LMNN2}(a) corresponds to the hyperplane $H_i$ in Fig. \ref{fig:RelationSVM_LMNN2}(b).
+%
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=1\linewidth]{images/RelationSVM_LMNN2}
+%	\caption{(a) Standard {\sc lmnn} model view (b) {\sc lmnn} model view under an {\sc svm}-like interpretation \cite{Do2012}}
+%	\label{fig:RelationSVM_LMNN2}
+%\end{figure}
+%
+%
+%Geometrically, {\sc svm} margin is defined globally with respect to a hyperplane, while {\sc lmnn} margin is defined locally with respect to a center point $\textbf{x}_i$. Fig. \ref{fig:RelationSVM_LMNN}(a) illustrates the different local linear models in the quadratic space. The optimization process of {\sc lmnn} combines the different local {\sc svm} hyperplane by bringing each point $\boldsymbol{\phi }(\textbf{x}_i)$ around a consensus hyperplane $H$.
+%
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.9\linewidth]{images/RelationSVM_LMNN}
+%	\caption{(a) {\sc lmnn} in a local {\sc svm}-like view (b) {\sc lmnn} in an {\sc svm} metric learning view \cite{Do2012}}
+%	\label{fig:RelationSVM_LMNN}
+%\end{figure}
+%
+%From these connections, some authors extends the {\sc lmnn} approach to work in non-linear feature spaces by using the “kernel trick” \todo{ref}. Finally, note that {\sc lmnn} differs from {\sc svm} in which {\sc lmnn} requires no modification for multiclass problems.
 
-\subsection{Parallels between {\sc lmnn} and {\sc svm}}
-\label{sec:LMNN_SVM}
-Many connections can be made between {\sc lmnn} and {\sc svm}: both are convex optimization problem based on a regularized and a loss term. In particular, Do \& al. investigate this relationship and have shown that {\sc svm} can be formulated as a metric learning problem \cite{Do2012}. The Mahalanobis distance $\textbf{M}$ learned by {\sc lmnn} can be expressed as a quadratic mapping $\boldsymbol{\phi}$. For a center point $\textbf{x}_i$, for any sample $\textbf{x}$, we have \cite{Do2012}: 
-\begin{align}
-	D^2_\textbf{M}(\textbf{x}_i,\textbf{x}) & = D^2(\textbf{L} \textbf{x}_i,\textbf{L} \textbf{x}) \\
-	D^2_\textbf{M}(\textbf{x}_i,\textbf{x}) & = \textbf{w}_i^T \boldsymbol{\phi}(\textbf{x}) + b_i
-\end{align}	 
-\noindent where $\textbf{w}_i$ and $b_i$ are the coefficient of the hyperplane $H_i$ in the quadratic space $\boldsymbol{\phi}$. 
-
-Do \& al. show that {\sc lmnn} can be seen as a set of local {\sc svm} classifiers in the quadratic space induced by $\boldsymbol{\phi}$. For each center point $\textbf{x}_i$, {\sc lmnn} tries in its objective function to have its target neighbors $\textbf{x}_j$ to have small value $\textbf{w}_i^T \boldsymbol{\phi}(\textbf{x}_j) + b_i$, i.e. be at the small distance from the hyperplane $H_i$. Minimizing the target neighbor distances from the hyperplane $H_i$ makes the distance between support vectors and $H_i$ small. Fig. \ref{fig:RelationSVM_LMNN2} gives the equivalent point of view from the original space (Fig. \ref{fig:RelationSVM_LMNN2}(a)) into the quadratic space (Fig. \ref{fig:RelationSVM_LMNN2}(b)). The circle $\textbf{C}_i$ with the center $\textbf{L}\textbf{x}_i$ in Fig. \ref{fig:RelationSVM_LMNN2}(a) corresponds to the hyperplane $H_i$ in Fig. \ref{fig:RelationSVM_LMNN2}(b).
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=1\linewidth]{images/RelationSVM_LMNN2}
-	\caption{(a) Standard {\sc lmnn} model view (b) {\sc lmnn} model view under an {\sc svm}-like interpretation \cite{Do2012}}
-	\label{fig:RelationSVM_LMNN2}
-\end{figure}
-
-
-Geometrically, {\sc svm} margin is defined globally with respect to a hyperplane, while {\sc lmnn} margin is defined locally with respect to a center point $\textbf{x}_i$. Fig. \ref{fig:RelationSVM_LMNN}(a) illustrates the different local linear models in the quadratic space. The optimization process of {\sc lmnn} combines the different local {\sc svm} hyperplane by bringing each point $\boldsymbol{\phi }(\textbf{x}_i)$ around a consensus hyperplane $H$.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.9\linewidth]{images/RelationSVM_LMNN}
-	\caption{(a) {\sc lmnn} in a local {\sc svm}-like view (b) {\sc lmnn} in an {\sc svm} metric learning view \cite{Do2012}}
-	\label{fig:RelationSVM_LMNN}
-\end{figure}
-
-From these connections, some authors extends the {\sc lmnn} approach to work in non-linear feature spaces by using the “kernel trick” \todo{ref}. Finally, note that {\sc lmnn} differs from {\sc svm} in which {\sc lmnn} requires no modification for multiclass problems.
 
 
 
-
-
+\newpage
 %-----------------------------------------------------------------------------
 \section{Conclusion of the chapter}
-To cope with modalities inherent to time series (amplitude, behavior, frequency, etc.), we review in this chapter several unimodal metrics for time series, in particular, the Euclidean distance $d_A$, the Temporal correlation $d_B$ or the Fourier-based distance $d_F$. 
+To cope with modalities (characteristics) inherent to time series (amplitude, behavior, frequency, etc.), we review in this chapter several unimodal metrics for time series, in particular, the Euclidean distance $d_A$, the behavior-based distance $d_B$ and the Fourier-based distance $d_F$. 
 % Depending on the considered modality (amplitude, behavior, frequency), adapted metrics for time series have been proposed in the literature such as the Euclidean distance $d_A$, the Temporal correlation $d_B$ or the Fourier-based distance $d_F$.
-In practice, real time series may be subjected to delays and need to be re-aligned before any analysis task. For that, the Dynamic Time Warping (\textsc{dtw}) algorithm is used in practice. 
+In practice, real time series may be subject to delays and need to be re-aligned before any analysis task. For that, the Dynamic Time Warping (\textsc{dtw}) algorithm is used in practice. 
 % To capture local characteristics, the previous metrics $(d_A, d_B, d_F)$ can be computed on smaller intervals. Many strategies exist such as the dichotomy or the sliding window.
-However, these metrics ($d_A, d_B, d_F$) only include one modality. In general, several modalities may be implied and authors proposed to combine temporal metrics together. They mainly combine the Euclidean distance $d_A$ and the Temporal correlation $d_B$. 
+However, the metrics $d_A, d_B$ and $d_F$ only include one modality. In general, several modalities may be implied and some combined metric have been proposed, but the propositions are often limited to two modalities and the metrics are defined independently from the analysis task. 
 
-As $k$-NN performances is impacted by the choice of the metric, other work propose in the case of static data to learn the metric in order to optimize the $k$-NN classification. In the following, we extend this framework to learn a combined metric for a large margin $k$-NN classifier of time series.
+As $k$-NN performances is impacted by the choice of the metric, other work propose in the case of static data to learn the metric in order to optimize the $k$-NN classification. In the following, inspired from these ideas, we propose framework to learn a combined metric for a large margin $k$-NN classifier of time series.
 
 % After that, we will take an insight on Metric Learning approaches which aims to learn a metric that makes closer samples that are expected to be similar, and far away those expected to be dissimilar.
 

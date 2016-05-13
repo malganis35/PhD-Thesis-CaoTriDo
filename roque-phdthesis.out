@@ -1,36 +1,34 @@
-\BOOKMARK [0][]{chapter*.6}{Table des sigles et acronymes}{}% 1
-\BOOKMARK [0][]{chapter*.7}{Introduction}{}% 2
-\BOOKMARK [0][]{chapter.1}{Related work}{}% 3
-\BOOKMARK [1][]{section.1.1}{Classification, Regression}{chapter.1}% 4
-\BOOKMARK [1][]{section.1.2}{Machine learning algorithms}{chapter.1}% 5
-\BOOKMARK [1][]{section.1.3}{Conclusion of the chapter}{chapter.1}% 6
-\BOOKMARK [0][]{chapter.2}{Time series metrics and metric learning}{}% 7
-\BOOKMARK [1][]{section.2.1}{Definition of a time series}{chapter.2}% 8
-\BOOKMARK [1][]{section.2.2}{Properties and representation of a metric}{chapter.2}% 9
-\BOOKMARK [1][]{section.2.3}{Unimodal metrics for time series}{chapter.2}% 10
-\BOOKMARK [1][]{section.2.4}{Time series alignment and dynamic programming approach}{chapter.2}% 11
-\BOOKMARK [1][]{section.2.5}{Combined metrics for time series}{chapter.2}% 12
-\BOOKMARK [1][]{section.2.6}{Metric learning}{chapter.2}% 13
-\BOOKMARK [1][]{section.2.7}{Conclusion of the chapter}{chapter.2}% 14
+\BOOKMARK [0][]{chapter*.5}{List of Acronyms}{}% 1
+\BOOKMARK [0][]{chapter*.6}{Introduction}{}% 2
+\BOOKMARK [0][]{chapter*.7}{Notations}{}% 3
+\BOOKMARK [0][]{chapter.1}{Related work}{}% 4
+\BOOKMARK [1][]{section.1.1}{Classification, Regression}{chapter.1}% 5
+\BOOKMARK [1][]{section.1.2}{Machine learning algorithms}{chapter.1}% 6
+\BOOKMARK [1][]{section.1.3}{Conclusion of the chapter}{chapter.1}% 7
+\BOOKMARK [0][]{chapter.2}{Time series metrics}{}% 8
+\BOOKMARK [1][]{section.2.1}{Definition of time series}{chapter.2}% 9
+\BOOKMARK [1][]{section.2.2}{Properties and representation of a metric}{chapter.2}% 10
+\BOOKMARK [1][]{section.2.3}{Unimodal metrics for time series}{chapter.2}% 11
+\BOOKMARK [1][]{section.2.4}{Time series alignment and dynamic programming approach}{chapter.2}% 12
+\BOOKMARK [1][]{section.2.5}{Combined metrics for time series}{chapter.2}% 13
+\BOOKMARK [1][]{section.2.6}{Conclusion of the chapter}{chapter.2}% 14
 \BOOKMARK [0][]{chapter.3}{Multi-modal and Multi-scale \040Time series Metric Learning \(M2TML\)}{}% 15
 \BOOKMARK [1][]{section.3.1}{Motivations}{chapter.3}% 16
-\BOOKMARK [1][]{section.3.2}{Multi-modal and multi-scale dissimilarity space}{chapter.3}% 17
-\BOOKMARK [1][]{section.3.3}{M2TML general problem}{chapter.3}% 18
-\BOOKMARK [1][]{section.3.4}{Linear formalization for M2TML}{chapter.3}% 19
-\BOOKMARK [1][]{section.3.5}{Quadratic formalization for M2TML}{chapter.3}% 20
-\BOOKMARK [1][]{section.3.6}{SVM-based formalization for M2TML}{chapter.3}% 21
-\BOOKMARK [1][]{section.3.7}{SVM-based solution and algorithm for M2TML}{chapter.3}% 22
-\BOOKMARK [1][]{section.3.8}{Conclusion}{chapter.3}% 23
-\BOOKMARK [0][]{chapter.4}{Experiments}{}% 24
-\BOOKMARK [1][]{section.4.1}{Description}{chapter.4}% 25
-\BOOKMARK [1][]{section.4.2}{Experimental protocol}{chapter.4}% 26
-\BOOKMARK [1][]{section.4.3}{Results and discussion}{chapter.4}% 27
-\BOOKMARK [1][]{section.4.4}{Conclusion of the chapter}{chapter.4}% 28
-\BOOKMARK [0][]{chapter*.97}{Conclusion}{}% 29
-\BOOKMARK [0][]{chapter*.103}{List of articles}{}% 30
-\BOOKMARK [0][]{appendix.A}{Detailed presentation of the datasets}{}% 31
-\BOOKMARK [0][]{appendix.B}{Solver library}{}% 32
-\BOOKMARK [0][]{appendix.C}{SVM library}{}% 33
-\BOOKMARK [0][]{appendix.D}{QP resolution}{}% 34
-\BOOKMARK [0][]{appendix.E}{SVM equivalency}{}% 35
-\BOOKMARK [0][]{appendix*.106}{Bibliography}{}% 36
+\BOOKMARK [1][]{section.3.2}{A recall on Large Margin Nearest Neighbors \(LMNN\)}{chapter.3}% 17
+\BOOKMARK [1][]{section.3.3}{Multi-modal and multi-scale pairwise dissimilarity space}{chapter.3}% 18
+\BOOKMARK [1][]{section.3.4}{M2TML general problem}{chapter.3}% 19
+\BOOKMARK [1][]{section.3.5}{Linear formalization for M2TML}{chapter.3}% 20
+\BOOKMARK [1][]{section.3.6}{Quadratic formalization for M2TML}{chapter.3}% 21
+\BOOKMARK [1][]{section.3.7}{SVM-based formalization for M2TML}{chapter.3}% 22
+\BOOKMARK [1][]{section.3.8}{SVM-based solution and algorithm for M2TML}{chapter.3}% 23
+\BOOKMARK [1][]{section.3.9}{Conclusion of the chapter}{chapter.3}% 24
+\BOOKMARK [0][]{chapter.4}{Experiments}{}% 25
+\BOOKMARK [1][]{section.4.1}{Description}{chapter.4}% 26
+\BOOKMARK [1][]{section.4.2}{Experimental protocol}{chapter.4}% 27
+\BOOKMARK [1][]{section.4.3}{Results and discussion}{chapter.4}% 28
+\BOOKMARK [1][]{section.4.4}{Conclusion of the chapter}{chapter.4}% 29
+\BOOKMARK [0][]{chapter*.56}{Conclusion}{}% 30
+\BOOKMARK [0][]{chapter*.61}{List of publications}{}% 31
+\BOOKMARK [0][]{appendix.A}{Quadratic formalization development}{}% 32
+\BOOKMARK [0][]{appendix.B}{Link between SVM and the Quadratic formalization}{}% 33
+\BOOKMARK [0][]{appendix*.62}{Bibliography}{}% 34

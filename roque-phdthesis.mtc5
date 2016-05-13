@@ -1,20 +1,12 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Motivations}{\reset@font\mtcSfont 50}{section.3.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Multi-modal and multi-scale dissimilarity space}{\reset@font\mtcSfont 52}{section.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Pairwise embedding}{\reset@font\mtcSSfont 52}{subsection.3.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Multi-scale description for time series}{\reset@font\mtcSSfont 53}{subsection.3.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Interpretation in the dissimilarity space}{\reset@font\mtcSSfont 53}{subsection.3.2.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}M$^2$TML general problem}{\reset@font\mtcSfont 55}{section.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}General formalization for M$^2$TML}{\reset@font\mtcSSfont 55}{subsection.3.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.2}Push and pull set definition}{\reset@font\mtcSSfont 56}{subsection.3.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.3}Interpretation in the dissimilarity space}{\reset@font\mtcSSfont 58}{subsection.3.3.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}Linear formalization for M$^2$TML}{\reset@font\mtcSfont 59}{section.3.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.5}Quadratic formalization for M$^2$TML}{\reset@font\mtcSfont 61}{section.3.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.1}Primal and dual formalization}{\reset@font\mtcSSfont 61}{subsection.3.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.2}Non-linear combined metric}{\reset@font\mtcSSfont 63}{subsection.3.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.3}Link between SVM and the quadratic formalization}{\reset@font\mtcSSfont 64}{subsection.3.5.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.6}SVM-based formalization for M$^2$TML}{\reset@font\mtcSfont 66}{section.3.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.1}Support Vector Machine (\textsc {svm}) resolution}{\reset@font\mtcSSfont 66}{subsection.3.6.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.2}Linearly separable Pull and Push sets}{\reset@font\mtcSSfont 67}{subsection.3.6.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.3}Non-linearly separable Pull and Push sets}{\reset@font\mtcSSfont 69}{subsection.3.6.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.7}SVM-based solution and algorithm for M$^2$TML}{\reset@font\mtcSfont 70}{section.3.7}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.8}Conclusion}{\reset@font\mtcSfont 71}{section.3.8}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Definition of time series}{\reset@font\mtcSfont 33}{section.2.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Properties and representation of a metric}{\reset@font\mtcSfont 35}{section.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Unimodal metrics for time series}{\reset@font\mtcSfont 37}{section.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}General review of unimodal metrics for time series}{\reset@font\mtcSSfont 37}{subsection.2.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Amplitude-based metrics}{\reset@font\mtcSSfont 38}{subsection.2.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.3}Frequential-based metrics}{\reset@font\mtcSSfont 39}{subsection.2.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.4}Behavior-based metrics}{\reset@font\mtcSSfont 40}{subsection.2.3.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Time series alignment and dynamic programming approach}{\reset@font\mtcSfont 40}{section.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Combined metrics for time series}{\reset@font\mtcSfont 44}{section.2.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.1}Combination functions}{\reset@font\mtcSSfont 44}{subsection.2.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.2}Proposition of normalization of distances}{\reset@font\mtcSSfont 45}{subsection.2.5.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Conclusion of the chapter}{\reset@font\mtcSfont 47}{section.2.6}}

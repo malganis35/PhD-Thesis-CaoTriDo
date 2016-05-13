@@ -37,7 +37,8 @@
 
 % Include the title pages
 % (the first is made mandatory by UDG and the second is more traditional)
-\include{1-opening/titlepage}
+% \include{1-opening/titlepage}
+\includepdf[pages={1}]{1-opening/PageGarde.pdf}
 
 % Build a per-chapter table of content
 \dominitoc
@@ -46,11 +47,12 @@
 \pagenumbering{roman}
 \frontmatter
 
+% Include To do list
+%\listoftodos
+
+
 % Include the acknowledgements page
 \cleardoublepage
-\listoftodos
-
-
 \include{1-opening/acknowledgements}
 
 % Build the general table of contents
@@ -77,6 +79,7 @@
 
 % Include the chapters
 \include{2-chapters/2-0-introduction}
+\include{2-chapters/2-01-Notations}
 
 % \include{2-chapters/0-1-first-part}
 \include{2-chapters/2-1-machine-learning}
@@ -85,7 +88,8 @@
 % \include{2-chapters/0-1-conclusion-first-part}
 
 % \include{2-chapters/0-2-second-part}
-\include{2-chapters/2-3-pairwise-space3}
+\include{2-chapters/2-3-pairwise-space4}
+% \include{2-chapters/2-3-pairwise-space3} % Version Ahlame
 %\include{2-chapters/2-3-pairwise-space2}
 % \include{2-chapters/2-3-pairwise-space}
 %\include{2-chapters/2-6-M2TML-algo}
@@ -104,9 +108,9 @@
 %%% Appendices are included here %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \appendix
-\include{3-appendices/3-1-first-appendix}
-\include{3-appendices/3-2-second-appendix}
-\include{3-appendices/3-3-third-appendix}
+% \include{3-appendices/3-1-first-appendix}
+% \include{3-appendices/3-2-second-appendix}
+% \include{3-appendices/3-3-third-appendix}
 \include{3-appendices/3-4-forth-appendix}
 \include{3-appendices/3-5-fifth-appendix}
 

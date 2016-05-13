@@ -2,158 +2,144 @@
 \defcounter {refsection}{0}\relax 
 \select@language {american}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{Table des sigles et acronymes}{xv}{chapter*.6}
+\contentsline {starchapter}{List of Acronyms}{xi}{chapter*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{Introduction}{1}{chapter*.7}
+\contentsline {starchapter}{Introduction}{1}{chapter*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Related work}{5}{chapter.1}
+\contentsline {starchapter}{Notations}{7}{chapter*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Classification, Regression}{5}{section.1.1}
+\contentsline {chapter}{\numberline {1}Related work}{9}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}Machine learning principle}{5}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.1}Classification, Regression}{9}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.2}Model selection in supervised learning}{6}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.1}Machine learning principle}{9}{subsection.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.3}Model evaluation}{10}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.2}Model selection in supervised learning}{10}{subsection.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.3.a}Classification evaluation}{10}{subsubsection.1.1.3.1}
+\contentsline {subsection}{\numberline {1.1.3}Model evaluation}{14}{subsection.1.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.3.b}Regression evaluation}{11}{subsubsection.1.1.3.2}
+\contentsline {subsubsection}{\numberline {1.1.3.a}Classification evaluation}{14}{subsubsection.1.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.4}Data normalization}{12}{subsection.1.1.4}
+\contentsline {subsubsection}{\numberline {1.1.3.b}Regression evaluation}{15}{subsubsection.1.1.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Machine learning algorithms}{13}{section.1.2}
+\contentsline {subsection}{\numberline {1.1.4}Data normalization}{16}{subsection.1.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}$k$-Nearest Neighbors ($k$-NN) classifier}{13}{subsection.1.2.1}
+\contentsline {section}{\numberline {1.2}Machine learning algorithms}{17}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Support Vector Machine ({\sc svm}) algorithm}{14}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.1}$k$-Nearest Neighbors ($k$-NN) classifier}{17}{subsection.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.2.a}Intuition}{15}{subsubsection.1.2.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Support Vector Machine (SVM) algorithm}{18}{subsection.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.2.b}Primal formulation}{16}{subsubsection.1.2.2.2}
+\contentsline {subsubsection}{\numberline {1.2.2.a}Intuition}{19}{subsubsection.1.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.2.c}Dual formulation}{17}{subsubsection.1.2.2.3}
+\contentsline {subsubsection}{\numberline {1.2.2.b}Primal formulation}{21}{subsubsection.1.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.2.d}Kernel trick}{19}{subsubsection.1.2.2.4}
+\contentsline {subsubsection}{\numberline {1.2.2.c}Dual formulation}{21}{subsubsection.1.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.2.e}Interpretation}{22}{subsubsection.1.2.2.5}
+\contentsline {subsubsection}{\numberline {1.2.2.d}Kernel trick}{23}{subsubsection.1.2.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.2.f}Variants of {\sc svm}}{24}{subsubsection.1.2.2.6}
+\contentsline {subsubsection}{\numberline {1.2.2.e}Interpretation}{27}{subsubsection.1.2.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.2.g}Extensions of {\sc svm}}{25}{subsubsection.1.2.2.7}
+\contentsline {subsubsection}{\numberline {1.2.2.f}Variants of SVM}{29}{subsubsection.1.2.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Conclusion of the chapter}{27}{section.1.3}
+\contentsline {subsubsection}{\numberline {1.2.2.g}Extensions of SVM}{29}{subsubsection.1.2.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Time series metrics and metric learning}{29}{chapter.2}
+\contentsline {section}{\numberline {1.3}Conclusion of the chapter}{31}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Definition of a time series}{29}{section.2.1}
+\contentsline {chapter}{\numberline {2}Time series metrics}{33}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Properties and representation of a metric}{32}{section.2.2}
+\contentsline {section}{\numberline {2.1}Definition of time series}{33}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Unimodal metrics for time series}{33}{section.2.3}
+\contentsline {section}{\numberline {2.2}Properties and representation of a metric}{35}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Amplitude-based metrics}{33}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.3}Unimodal metrics for time series}{37}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Frequential-based metrics}{34}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.1}General review of unimodal metrics for time series}{37}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Behavior-based metrics}{35}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.2}Amplitude-based metrics}{38}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.4}Other metrics and Kernels for time series}{36}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.3}Frequential-based metrics}{39}{subsection.2.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Time series alignment and dynamic programming approach}{37}{section.2.4}
+\contentsline {subsection}{\numberline {2.3.4}Behavior-based metrics}{40}{subsection.2.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Combined metrics for time series}{39}{section.2.5}
+\contentsline {section}{\numberline {2.4}Time series alignment and dynamic programming approach}{40}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Combination functions}{39}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.5}Combined metrics for time series}{44}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Impact of normalization}{40}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.1}Combination functions}{44}{subsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Metric learning}{43}{section.2.6}
+\contentsline {subsection}{\numberline {2.5.2}Proposition of normalization of distances}{45}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.1}Review on metric learning work}{43}{subsection.2.6.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.2}Large Margin Nearest Neighbors ({\sc lmnn})}{44}{subsection.2.6.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.3}Parallels between {\sc lmnn} and {\sc svm}}{46}{subsection.2.6.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Conclusion of the chapter}{47}{section.2.7}
+\contentsline {section}{\numberline {2.6}Conclusion of the chapter}{47}{section.2.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Multi-modal and Multi-scale \\ Time series Metric Learning (M$^2$TML)}{49}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Motivations}{50}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Multi-modal and multi-scale dissimilarity space}{52}{section.3.2}
+\contentsline {section}{\numberline {3.2}A recall on Large Margin Nearest Neighbors (LMNN)}{52}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Pairwise embedding}{52}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Multi-modal and multi-scale pairwise dissimilarity space}{54}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Multi-scale description for time series}{53}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3.1}Pairwise embedding}{54}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Interpretation in the dissimilarity space}{53}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.3.2}Interpretation in the pairwise dissimilarity space}{55}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}M$^2$TML general problem}{55}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.3}Multi-scale description for time series}{56}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}General formalization for M$^2$TML}{55}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}M$^2$TML general problem}{57}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Push and pull set definition}{56}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4.1}General formalization for M$^2$TML}{57}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Interpretation in the dissimilarity space}{58}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.4.2}Push and pull set definition}{59}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Linear formalization for M$^2$TML}{59}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.3}Interpretation in the pairwise dissimilarity space}{61}{subsection.3.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Quadratic formalization for M$^2$TML}{61}{section.3.5}
+\contentsline {section}{\numberline {3.5}Linear formalization for M$^2$TML}{62}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}Primal and dual formalization}{61}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.6}Quadratic formalization for M$^2$TML}{63}{section.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.2}Non-linear combined metric}{63}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.6.1}Primal and dual formalization}{64}{subsection.3.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.3}Link between SVM and the quadratic formalization}{64}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.6.2}Non-linear combined metric}{67}{subsection.3.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}SVM-based formalization for M$^2$TML}{66}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.3}Link between SVM and the quadratic formalization}{68}{subsection.3.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.1}Support Vector Machine (\textsc {svm}) resolution}{66}{subsection.3.6.1}
+\contentsline {section}{\numberline {3.7}SVM-based formalization for M$^2$TML}{70}{section.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.2}Linearly separable Pull and Push sets}{67}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.7.1}Support Vector Machine (\textsc {svm}) resolution}{70}{subsection.3.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.3}Non-linearly separable Pull and Push sets}{69}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.7.2}Solution for the linearly separable Pull and Push sets}{71}{subsection.3.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}SVM-based solution and algorithm for M$^2$TML}{70}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.3}Solution for the non-linearly separable Pull and Push sets}{73}{subsection.3.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.8}Conclusion}{71}{section.3.8}
+\contentsline {section}{\numberline {3.8}SVM-based solution and algorithm for M$^2$TML}{74}{section.3.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Experiments}{73}{chapter.4}
+\contentsline {section}{\numberline {3.9}Conclusion of the chapter}{76}{section.3.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Description}{73}{section.4.1}
+\contentsline {chapter}{\numberline {4}Experiments}{77}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Experimental protocol}{76}{section.4.2}
+\contentsline {section}{\numberline {4.1}Description}{77}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Results and discussion}{77}{section.4.3}
+\contentsline {section}{\numberline {4.2}Experimental protocol}{80}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Results}{77}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.3}Results and discussion}{81}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Comparison of the classification performances on the test set}{78}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.1}Results}{81}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Analysis of the discriminative features}{79}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.2}Comparison of the classification performances on the test set}{82}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Effect on the neighborhood before and after learning}{81}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.3}Analysis of the discriminative features}{83}{subsection.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Conclusion of the chapter}{83}{section.4.4}
+\contentsline {subsection}{\numberline {4.3.4}Effect on the neighborhood before and after learning}{85}{subsection.4.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{Conclusion}{85}{chapter*.97}
+\contentsline {section}{\numberline {4.4}Conclusion of the chapter}{85}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{List of articles}{91}{chapter*.103}
+\contentsline {starchapter}{Conclusion}{89}{chapter*.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Detailed presentation of the datasets}{93}{appendix.A}
+\contentsline {starchapter}{List of publications}{95}{chapter*.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Solver library}{95}{appendix.B}
+\contentsline {chapter}{\numberline {A}Quadratic formalization development}{97}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}SVM library}{97}{appendix.C}
+\contentsline {chapter}{\numberline {B}Link between SVM and the Quadratic formalization}{99}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}QP resolution}{99}{appendix.D}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {E}SVM equivalency}{101}{appendix.E}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {E.0.0.a}Similarities and differences in the constraints}{101}{subsubsection.E.0.0.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {E.0.0.b}Similarities and differences in the objective function}{102}{subsubsection.E.0.0.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{Bibliography}{111}{appendix*.106}
+\contentsline {starchapter}{Bibliography}{109}{appendix*.62}

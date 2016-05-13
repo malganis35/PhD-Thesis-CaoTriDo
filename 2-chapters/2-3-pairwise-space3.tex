@@ -9,7 +9,7 @@
 %	\item Le cadre : on suppose que l'on a p métriques.
 %\end{itemize}
 \fbox{  \parbox{0.9\textwidth}{
-		In this chapter, we first motivate the problem of learning a multi-modal and multi-scale temporal metric for nearest neighbors classification. Secondly, we introduce the concept of dissimilarity space. Thirdly, we formalize the general problem of learning a combined metric. Then, we propose three different formalizations (Linear, Quadratic and \textsc{svm}-based), each involving a different regularization term. We give an interpretation of the solution and study the properties of the obtained metric. Finally, we give the algorithm.
+		In this chapter, we first motivate the problem of Multi-modal and Multi-scale Temporal Metric Learning (\textsc{m$^2$tml}) for nearest neighbors classification. Secondly, we recall the Large Margin Nearest Neighbors (\textsc{lmnn}) framework proposed by Weinberger \& Saul. Thirdly, we introduce the concept of dissimilarity space. Then, we formalize the general problem of \textsc{m$^2$tml}. After that, we propose three different formalizations (Linear, Quadratic and \textsc{svm}-based), each involving a different regularization term. We give an interpretation of the solution and study the properties of the obtained metric. Finally, we give the algorithm.
 	}  }
 
 
@@ -41,14 +41,14 @@
 %Furthermore, in some applications, the most discriminative characteristic between time series of different classes can be localized on a smaller part of the signal. A crucial key to localize discriminative features is to define metrics that involves totally or partially time series elements rather than systematically the whole elements. In the most challenging applications, it appears that both factors (modality, scale) are needed to discriminate the classes. Some works propose to combine several modalities through a priori models as in \cite{Douzal-Chouakria2010,Douzal-Chouakria2012a,Son2008}. 
 %Fig. \ref{fig:SonyAIBO} shows an example of significant improvement in classification performances by taking into account in the metric definition, several modalities (amplitude $d_A$, behavior $d_B$, frequential $d_F$) located at different scales (illustrated in the figure). The performance of the learnt combined metric is compared with the ones of the standard metrics that take into account for each, only one modality on a global scale (involving all time series elements).  
 
-\todo{Intro modifié pour tenir compte des chapitres précédents} This work focuses on designing a 'good' metric for classification of time series.\todo{Formulation du pb à valider} The definition of a metric to compare samples is a fundamental issue in data analysis or machine learning. As seen in Chapter 2, temporal data can be compared based on one or several characteristics, called modalities (amplitude, behavior, frequency), they may be subjected to delays, and in some classification applications, the most discriminative characteristic between time series of different classes can be localized on a smaller part of the signal (scale). We believe that the definition of a temporal metric should consider at least these different aspects (modality, delay, scale) in order to improve the performance of a classifier. Fig. \ref{fig:SonyAIBO} illustrates a result obtained with our proposition. There is a significant improvement in classification performances by taking into account in the metric definition, several modalities (amplitude $d_A$, behavior $d_B$, frequential $d_F$) located at different scales (illustrated by black rectangles in the figure). The performance of the learned combined metric is compared with the ones of the standard metrics that take into account for each, only one modality on a global scale (involving all time series elements).  
+This work focuses on defining a 'good' metric for classification of time series. The definition of a metric to compare samples is a fundamental issue in data analysis or machine learning. As seen in Chapter 2, temporal data can be compared based on one or several characteristics, called modalities (amplitude, behavior, frequency) and they may be subjected to delays. In some classification applications, the most discriminative characteristic between time series of different classes can be localized on a smaller part of the signal (scale). We believe that the definition of a temporal metric should consider at least these different aspects (modality, delay, scale) in order to improve the performance of a classifier. Fig. \ref{fig:SonyAIBO} illustrates a result obtained with our proposition. There is a significant improvement in classification performances by taking into account in the metric definition, several modalities (amplitude $d_A$, behavior $d_B$, frequential $d_F$) located at different scales (illustrated by black rectangles in the figure). The performance of the learned combined metric is compared with the ones of the standard metrics that take into account for each, only one modality on a global scale (involving all time series elements).  
 
 
 
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\linewidth]{SonyAIBO3}
+	\includegraphics[width=0.75\linewidth]{SonyAIBO3}
 	\caption{SonyAIBO dataset and error rate using a $k$NN ($k=1$) with standard metrics (Euclidean distance, Dynamic Time Warping, temporal correlation) and a learned combined metric $D$. The figure shows the 4 major metrics involve in the combined metric $D$ and their respective temporal scale (black rectangles).}
 	\label{fig:SonyAIBO}
 \end{figure}
@@ -110,17 +110,90 @@
 %	\item S'appuyer sur le papier de Aurélien Bellet
 %\end{itemize}
 
-\todo{Correction d'anglais et précision des phrases} Our aim is to take leverage from the metric learning framework \cite{Weinberger2009a,Bellet2012} to learn a multi-modal and multi-scale temporal metric for time series nearest neighbors classification. Specifically, our objective is to learn from the data a linear or non linear function that combines several temporal modalities at several temporal scales, that satisfies metric properties (Section \ref{sec:property_metric}), and that generalizes the case of unimodal metrics at the global scale. \\
-Metric learning can be defined as learning, from the data and for a task, a pairwise function (\textit{i.e.} a similarity, dissimilarity or a distance) that brings closer samples that are expected to be similar, and pushes \todo{separate} far away those expected to be dissimilar. Such similarity and dissimilarity expectations, is inherently task- and application-dependent, generally given \textit{a priori} and fixed during the learning process. Metric learning has become an active area of research in the last decade for various machine learning problems (supervised, semi-supervised, unsupervised, online learning) and has received many interests in its theoretical background (generalization guarantees) \cite{Bellet2013a}. From the surge of recent research in metric learning, one can identify mainly two categories: the linear and non linear approaches. The former is the most popular, it defines the majority of the propositions, and focuses mainly on the Mahalanobis distance learning \cite{Weinberger2009}. The latter addresses non linear metric learning which aims at capturing non linear structure in the data, \textit{e.g.}, Kernel Principal Component Analysis (KPCA) and Support Vector Metric Learning (SVML). In both cases, the metric is directly learned in the original space (\textit{i.e.}, space described by the features of the samples).\mycomment[SMA]{Appuyer différence} In KPCA, the aim is to project the data into a non linear feature space and learn the metric in that projected space \cite{Zhang2010,Chatpatanasiri2010}. In SVML, the Mahalanobis distance is learned jointly with the learning of the SVM model in order to minimize the validation error \cite{Xu2012}. In general, the optimization problems in non linear approaches is more expensive to solve that in linear approaches, and the methods tends to favor overfitting as the constraints are generally easier to satisfy in a nonlinear kernel space. A more detailed review on metric learning is done in \cite{Bellet2013a}.\\
+Our aim is to take leverage from the metric learning framework \cite{Weinberger2009a,Bellet2012} to learn a multi-modal and multi-scale temporal metric for time series nearest neighbors classification. Specifically, our objective is to learn from the data a linear or non linear function that combines several temporal modalities at several temporal scales, that satisfies metric properties (Section \ref{sec:property_metric}), and that generalizes the case of unimodal metrics at the global scale. \\
+Metric learning can be defined as learning, from the data and for a task, a pairwise function (\textit{i.e.} a similarity, dissimilarity or a distance) that brings closer samples that are expected to be similar, and pushes far away those expected to be dissimilar. Such similarity and dissimilarity expectations, is inherently task- and application-dependent, generally given \textit{a priori} and fixed during the learning process. Metric learning has become an active area of research in the last decade for various machine learning problems (supervised, semi-supervised, unsupervised, online learning) and has received many interests in its theoretical background (generalization guarantees) \cite{Bellet2013a}. From the surge of recent research in metric learning, one can identify mainly two categories: the linear and non linear approaches. The former is the most popular, it defines the majority of the propositions, and focuses mainly on the Mahalanobis distance learning \cite{Weinberger2009}. The latter addresses non linear metric learning which aims at capturing non linear structure in the data, \textit{e.g.}, Kernel Principal Component Analysis (KPCA) and Support Vector Metric Learning (SVML). In both cases, the metric is directly learned in the original space (\textit{i.e.}, space described by the features of the samples). In KPCA, the aim is to project the data into a non linear feature space and learn the metric in that projected space \cite{Zhang2010,Chatpatanasiri2010}. In SVML, the Mahalanobis distance is learned jointly with the learning of the SVM model in order to minimize the validation error \cite{Xu2012}. In general, the optimization problems in non linear approaches is more expensive to solve that in linear approaches, and the methods tends to favor overfitting as the constraints are generally easier to satisfy in a nonlinear kernel space. A more detailed review on metric learning is done in \cite{Bellet2013a}.\\
 Contrary to static data, metric learning for structured data (\textit{e.g.} sequence, time series, trees, graphs, strings) is less frequent. While for sequence data most of the works focus on string edit distance to learn the edit cost matrix \cite{Oncina2006,Bellet2012}, metric learning for time series is still in its infancy. Without being exhaustive, major recent proposals rely on weighted variants of dynamic time warping to learn alignments under phase or amplitude constraints \cite{Reyes2011,Jeong2011,ZhangX.-L.Z.-G.Luo2014}, enlarging alignment learning framework to multiple temporal matching guided by both global and local discriminative features \cite{Frambourg2013a}. For most of these propositions, temporal metric learning process is systematically: a) Uni-modal (amplitude-based), the divergence between aligned elements being either the Euclidean or the Mahalanobis distance and b) Uni-scale (global level), involving all time series elements at once, which restricts its potential to capture local characteristics. We believe that perpectives for metric learning, in the case of time series, should include multi-modal and multi-scale aspects.
 
-We propose in this work to learn a multi-modal and multi-scale temporal metric for a robust $k$-NN classifier. For this, the main idea is to embed time series into a pairwise dissimilarity space\mycomment[MR]{ajouter pairwise pour différencier} where a linear function combining several modalities at different temporal scales can be learned, driven by a large margin optimization process inspired from the nearest neighbors metric learning framework \cite{Weinberger2009a} \mycomment[SMA]{modif pour dire que le processus est général et pas que SVM}. Thanks to the "kernel trick", the proposed solution is extended to non-linear temporal metric learning context. A sparse and interpretable variant of the proposed metrics confirms its ability to localize finely discriminative modalities as well as their temporal scales. In the following, the term metric is used to reference both a distance or a dissimilarity measure.
+We propose in this work to learn a multi-modal and multi-scale temporal metric for a robust $k$-NN classifier. For this, the main idea is to embed time series into a pairwise dissimilarity space where a linear function combining several modalities at different temporal scales can be learned, driven by a large margin optimization process inspired from the nearest neighbors metric learning framework \cite{Weinberger2009a}. Thanks to the "kernel trick", the proposed solution is extended to non-linear temporal metric learning context. A sparse and interpretable variant of the proposed metrics confirms its ability to localize finely discriminative modalities as well as their temporal scales. In the following, the term metric is used to reference both a distance or a dissimilarity measure.
 
-In this chapter, we first present the concept of pairwise dissimilarity space. Then, we formalize the general problem of learning a combined metric for a robust $k$-NN as the learning a function in the dissimilarity space. From the general formalization, we propose three formalizations (Linear, Quadratic and \textsc{svm}-based), give an interpretation of the solutions and study the properties of the learned metrics. Finally, we give the algorithm. Note that these formalizations don't concern only time series and can be applied to learn a combined metric on any type of data. \todo{Mettre la section LMNN ici?}
+In this chapter, we first recall the Large Margin Nearest Neighbors ({\sc lmnn}) proposed by Weiberger \& Saul. Secondly, we introduce the concept of pairwise dissimilarity space. We formalize the general problem of learning a combined metric for a robust $k$-NN as the learning a function in the dissimilarity space. From the general formalization, we propose three formalizations (Linear, Quadratic and \textsc{svm}-based), give an interpretation of the solutions and study the properties of the learned metrics. Finally, we give the algorithm. Note that these formalizations don't concern only time series and can be applied to learn a combined metric on any type of data. 
+
+
+\section{A recall on Large Margin Nearest Neighbors (LMNN)}
+\label{LMNN}
+\todo{Section à revoir}
+Let $\textbf{X}=\{\textbf{x}_i,y_i\}_{i=1}^N$ be a set of $N$ static vector samples, ${\textbf{x}_i \in \mathbb{R}^{p}}$, $p$ being the number of descriptive features and $y_i$ the class labels. Weinberger \& Saul proposed in~\cite{Weinberger2009} an approach to learn a metric $D$ for a large margin $k$-NN in the case of static data. 
+
+Large Margin Nearest Neighbor ({\sc lmnn}) approach is based on two intuitions: according to the learnt metric $D$, first, each training sample $\textbf{x}_i$ should have the same label $y_i$ as its $k$ nearest neighbors; second, training samples with different labels should be widely separated. For this, the concept of \textbf{target} and \textbf{imposters} for each training sample $\textbf{x}_i$ is introduced. The training sample $\textbf{x}_i$ is referred as a \textbf{center point}. Given a metric $D$, target neighbors of $\textbf{x}_i$, noted $j \rightsquigarrow i$, are the $k$ closest $\textbf{x}_j$ of the same class $(y_j=y_i)$, while imposters of $\textbf{x}_i$, denoted, $l \nrightarrow i$, are the $\textbf{x}_l$ of different class $(y_l \neq y_i)$ that invade the perimeter defined by the farthest targets of $\textbf{x}_i$. 
+Mathematically, for a sample $\textbf{x}_i$, an imposter $\textbf{x}_l$ is defined by an inequality related to the targets $\textbf{x}_j$: $\forall l, \exists j \in j \rightsquigarrow i /$
+\begin{align}
+	D(\textbf{x}_i,\textbf{x}_l) &\leq D(\textbf{x}_i,\textbf{x}_j) + 1
+\end{align}
+% ||L(\textbf{x}_i-\textbf{x}_l)||^2 & \leq ||L(\textbf{x}_i-\textbf{x}_j)||^2 + 1 \\
+Geometrically, an imposter $\textbf{x}_{l}$ is a sample that invades the target neighborhood plus one unit margin as illustrated in Fig. \ref{fig:TargetImposterRepresentation}. The target neighborhood is defined with respect to an initial metric. Without prior knowledge, L2-norm is often used. Metric Learning by {\sc lmnn} aims at minimizing the number of impostors invading the target neighborhood. By adding a margin of safety of one, the model is ensured to be robust to small amounts of noise in the training sample (large margin). The learned metric $D$ pulls the targets $\textbf{x}_j$ and pushes the imposters $\textbf{x}_{l}$ as shown in Fig. \ref{fig:TargetImposterRepresentation}.
+
+\begin{figure}[h!]
+	\centering
+	\begin{minipage}[b]{0.85\linewidth}		
+		\centerline{\includegraphics[width=0.8\linewidth]{./images/TargetImposterRepresentationCao}}
+	\end{minipage}
+	\caption{Pushed and pulled samples in the $k=3$ target neighborhood of $\textbf{x}_i$ before (left) and after (right) learning. The pushed (vs. pulled) samples are indicated by a white (vs. black) arrows (Weinberger \& Saul~\cite{Weinberger2009}).}
+	\label{fig:TargetImposterRepresentation}
+\end{figure}
+
+{\sc lmnn} approach learns a Mahalanobis distance $D$ for a robust $k$-NN. We recall that the $k$-NN decision rule will correctly classify a sample if the majority of its $k$ nearest neighbors share the same label (Section \ref{sec:kNN}). 
+The objective of {\sc lmnn} is to increase the number of samples with this property by learning a linear transformation $\textbf{L}$ of the input space ($\textbf{x}_i=\textbf{L}.\textbf{x}_i$) before applying the $k$-NN classification:
+\begin{equation}
+D(\textbf{x}_i,\textbf{x}_j) = ||\textbf{L}(\textbf{x}_i-\textbf{x}_j)||_2^2
+\label{eq:lin}
+\end{equation}
+Commonly, the squared distances can be expressed in terms of the square matrix:
+\begin{equation}
+\textbf{M} = \textbf{L}'\textbf{L}
+\end{equation}
+It is proved that any matrix \textbf{M} formed as below from a real-valued matrix \textbf{L} is positive semidefinite (i.e., no negative eigenvalues) \cite{Weinberger2009}. Using the matrix \textbf{M}, squared distances can be expressed as:
+\begin{equation}
+D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j) = (\textbf{x}_i-\textbf{x}_j)\textbf{M}(\textbf{x}_i-\textbf{x}_j)
+\end{equation}
+\noindent The computation of the learned metric $D_\textbf{M}$ can thus be seen as a two steps procedure: first, it computes a linear transformation of the samples $\textbf{x}_i$ given by the transformation $\textbf{L}$; second, it computes the Euclidean distance in the transformed space:
+\begin{equation}
+D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j) = D^2(\textbf{L} \textbf{x}_i,\textbf{L} \textbf{x}_j)
+\end{equation}
+Learning the linear transformation $\textbf{L}$ is thus equivalent to learn the corresponding Mahalanobis metric $D$ parametrized by $\textbf{M}$. This equivalence leads to two different approaches to metric learning: we can either estimate the linear transformation $\textbf{L}$, or estimate a positive semidefinite matrix $\textbf{M}$. {\sc lmnn} solution refers on the latter one.
+
+
+
+%\subsection{Intuition}
+%%\begin{itemize}
+%%	\item Se placer dans le contexte kNN
+%%\end{itemize}
+%
+%Intuitively, the algorithm is based on the simple observation that the kNN decision rule will correctly classify an example if its k-nearest neighbors share the same label. The algorithm attempts to increase the number of training examples with this property by learning a linear transformation of the input space that precedes kNNclassification using Euclidean distances. The linear transformation is derived by minimizing a loss function that consists of two terms. The first term penalizes large distances between examples in the same class that are desired as k-nearest neighbors, while the second term penalizes small distances between exampleswith non-matching labels. Minimizing these terms yields a linear transformation of the input space that increases the number of training examples whose k-nearest neighbors have matching labels. The Euclidean distances in the transformed space can equivalently be viewed as Mahalanobis distances in the original space. We exploit this equivalence to cast the problem of distance metric learning as a problem in convex optimization. Our
+Mathematically, it can be formalized as an optimization problem involving two competiting terms for each sample $\textbf{x}_i$: one term penalizes large distances between nearby inputs with the same label (pull), while the other term penalizes small distances between inputs with different labels (push). For all samples $\textbf{x}_i$, this implies a minimization problem:
+\begin{equation}
+\begin{aligned}
+&\displaystyle 		\argmin_{\textbf{M},\xi} \text{  } \underbrace{
+	\sum\limits_{i,j \rightsquigarrow i}
+	D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j)
+}_{pull}
++
+C
+\underbrace{
+	\sum\limits_{i,j \rightsquigarrow i,l \nrightarrow i} \frac{1+y_{il}}{2}.\xi_{ijl}
+}
+_{push} \\
+&\text{s.t.  } \forall j \rightsquigarrow i, l \nrightarrow i, \\
+& D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_l) - D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j)  \geq 1-\xi_{ijl} \\
+& \xi_{ijl} \geq 0 \\
+& \textbf{M} \succeq 0
+\label{eq:OptimizationProblem}
+\end{aligned}
+\end{equation}
+\noindent where $C$ is a trade-off between the push and pull term and $y_{il}=-1$ if $y_i=y_l$ (same class) and $+1$ otherwise (different classes). Generally, the parameter $C$ is tuned via cross validation and grid search. Similarly to Support Vector Machine ({\sc svm}) approach, slack variables $\xi_{ijl}$ are introduced to relax the optimization problem. 
 
 
 %---------------------------------------------------------------------------
-\section{Multi-modal and multi-scale dissimilarity space} \todo{titre à changer?}
+\section{Multi-modal and multi-scale pairwise dissimilarity space}
 %\section{Pairwise dissimilarity space} 
 \label{sec:Pairwise_embedding}
 %\begin{itemize}
@@ -129,12 +202,12 @@ In this chapter, we first present the concept of pairwise dissimilarity space. T
 %	\item Label des pairwise
 %\end{itemize}
 \todo{ref: dissimilarity space \cite{Pcekalska2002,Duin2012}}
-In this section, we first present the concept of dissimilarity space for multi-modal metrics. Then, in the case of time series, we enrich this representation with a multi-scale description. 
+In this section, we first present the concept of pairwise dissimilarity space for multi-modal description. Then, in the case of time series, we enrich this representation with a multi-scale description. 
 
 \subsection{Pairwise embedding}
-Let $\{\textbf{x}_{i}, y_{i}\}_{i=1}^n$ be a set of $n$ time series $\textbf{x}_i = [x_{i1}, \ldots, x_{iq}] \in \mathbb{R}^q$ labeled $y_{i}$ \mycomment[SMA]{label maintenant?}. Let  $d_1, \ldots , d_p$ be $p$ given metrics that allow to compare samples $\textbf{x}_{i}$. As discussed in Chapter \ref{sec:Chapter_metrics}, three naturally modalities are involved for time series comparison: amplitude-based $d_A$, behavior-based $d_B$ and frequential-based $d_F$. Our objective is to learn a metric $D$ that combines the $p$ basic temporal metrics for a robust $k$-NN classifier.
+Let $\{\textbf{x}_{i}, y_{i}\}_{i=1}^n$ be a set of $n$ time series $\textbf{x}_i = [x_{i1}, \ldots, x_{iq}] \in \mathbb{R}^q$ labeled $y_{i}$. Let  $d_1, \ldots , d_p$ be $p$ given metrics that allow to compare samples $\textbf{x}_{i}$. As discussed in Chapter \ref{sec:Chapter_metrics}, three naturally modalities are involved for time series comparison: amplitude-based $d_A$, behavior-based $d_B$ and frequential-based $d_F$. Our objective is to learn a metric $D$ that combines the $p$ basic temporal metrics for a robust $k$-NN classifier.
 
-The computation of a metric $d$, and $D$, always takes into account a pair of samples $(\textbf{x}_i,\textbf{x}_j)$. We introduce a new space representation referred as the \textbf{dissimilarity space}. We note $\varphi$ an embedding function that maps each pair of time
+The computation of a metric $d$, and $D$, always takes into account a pair of samples $(\textbf{x}_i,\textbf{x}_j)$. We introduce a new space representation referred as the \textbf{pairwise dissimilarity space}. We note $\varphi$ an embedding function that maps each pair of time
 series $(\textbf{x}_i, \textbf{x}_j)$ to a vector $\textbf{x}_{ij}$ in a dissimilarity space $\mathcal{E} = \mathbb{R}^p$ whose dimensions are $d_1, \ldots, d_p$ (Fig. \ref{fig:PairwiseEmbedding}):
 \begin{equation}
 \begin{aligned}
@@ -153,7 +226,7 @@ series $(\textbf{x}_i, \textbf{x}_j)$ to a vector $\textbf{x}_{ij}$ in a dissimi
 	\label{fig:PairwiseEmbedding}
 \end{figure}
 
-\noindent A metric $D$ that combines the $p$ metrics $d_1, \ldots, d_p$ can be seen as a function of the dissimilarity space: \mycomment[SMA]{Proposition pour mettre en valeur que c'est une fonction}
+\noindent A metric $D$ that combines the $p$ metrics $d_1, \ldots, d_p$ can be seen as a function of the dissimilarity space:
 \begin{equation}
 \begin{aligned}
 D : \mathbb{R}^p & \rightarrow \mathbb{R} \\
@@ -161,11 +234,44 @@ D : \mathbb{R}^p & \rightarrow \mathbb{R} \\
 \end{aligned}
 \label{eq:metric}
 \end{equation}
-In that space, the norm of a pairwise vector $||\textbf{x}_{ij}||$ refers to the proximity between the time series $\textbf{x}_i$ and $\textbf{x}_j$. In particular, if $||\textbf{x}_{ij}||=0$ then $\textbf{x}_j$ is identical to $\textbf{x}_i$ according to all metrics $d_h$. Note that in this space, the proximity between pairs can't be interpreted.
+In that space, the norm of a pairwise vector $||\textbf{x}_{ij}||$ refers to the proximity between the time series $\textbf{x}_i$ and $\textbf{x}_j$. In particular, if $||\textbf{x}_{ij}||=0$ then $\textbf{x}_j$ is identical to $\textbf{x}_i$ according to all metrics $d_h$. Note that in the pairwise dissimilarity space, the proximity between pairs can't be interpreted.
 
-\subsection{Multi-scale description for time series} \mycomment[SMA]{Basculer en chap 2?}
-As illustrated in Fig. \ref{fig:SonyAIBO}, the multi-modal representation in the dissimilarity space can be enriched for time series by measuring each unimodal metric $d_h$ at different scales. Note that the distance measures (amplitude-based $d_A$, frequential-based $d_F$, behavior-based $d_B$) in Eqs. \ref{eq:A}, \ref{eq:F} and \ref{eq:B} implies systematically the total time series elements $x_{it}$ and thus, restricts the distance measures to capture local temporal differences. In our work, we provide a multi-scale framework for time series comparison using a hierarchical structure. Many methods exist in the literature such as the sliding window or the dichotomy \todo{ref}. We detail here the latter one. \\
-\indent A multi-scale description can be obtained by repeatedly segmenting a time series expressed at a given temporal scale to induce its description at a more local level. Many approaches have been proposed assuming fixed either the number of the segments or their lengths. In our work, we consider a binary segmentation at each level. Let $I=[a;b]$ be a temporal interval of size $(b-a)$. The interval $I$ is decomposed into two equal overlapped intervals $I_L$ (left interval) and $I_R$ (right interval). A parameter $\alpha$ allows to overlap the two intervals $I_L$ and $I_R$, covering discriminating subsequences in the central region of $I$ (around $\frac{b+a}{2}$): $I = [a;b]; I_L = [a;a+\alpha(b-a)]; I_R = [b-\alpha(b-a);b]$. 
+\subsection{Interpretation in the pairwise dissimilarity space}
+%\begin{itemize}
+%	\item Proximity to the origin (les individus sont identiques)
+%	\item Proximity of 2 pairwise points in the pairwise space 
+%	\item Norm in the pairwise space
+%	\item Representation of combined metric in the pairwise space
+%	\item perte de la classe initiale des individus. L'information qui nous reste est : les 2 individus sont de la même classe ou sont de classes différentes.
+%\end{itemize}
+
+In this section, we give more detailed interpretations in the dissimilarity space. 
+We recall that the norm of a pairwise vector is given by: 
+\begin{equation}
+||\textbf{x}_{ij}|| = \sum\limits_{h=1}^{p} d_h(\textbf{x}_{i},\textbf{x}_{j})
+\end{equation}
+In the following, we denote the norm as an initial distance in the dissimilarity space and call it $D_0$. Note that other initial metric could have been possible. The norm of a pairwise vector $\textbf{x}_{ij}$ can be interpreted as a proximity measure: the lower the norm of $\textbf{x}_{ij}$ is, the closer are the time series $\textbf{x}_{i}$ and $\textbf{x}_{j}$. Two pairwise vectors $\textbf{x}_{ij}$ and $\textbf{x}_{kl}$ that are on a same line that passes through the origin $\textbf{x}_{ii} = \textbf{0}$ represent differences in the the same proportions between their respective modalities (Fig. \ref{fig:pairwise_interpretation}). 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{Pairwise_interpretation}
+	\caption{Example of two pairwise vectors $\textbf{x}_{12}$ and $\textbf{x}_{34}$ close in the pairwise space. However, the time series $\textbf{x}_{1}$ and $\textbf{x}_{3}$ are not similar in the temporal space.}
+	\label{fig:pairwise_interpretation}
+\end{figure}
+
+The Euclidean distance $\sqrt{\sum\limits_{h=1}^{p} (d_h(\textbf{x}_{i},\textbf{x}_{j})-d_h(\textbf{x}_{k},\textbf{x}_{l}))^2}$ between two pairwise vectors $\textbf{x}_{ij}$ and $\textbf{x}_{kl}$ represents the similarity between the differences among the same modalities, in the same proportions. Note that if the Euclidean distance is close to 0 ($\textbf{x}_{ij}$ and $\textbf{x}_{kl}$ are close in the dissimilarity space), it doesn't mean that the time series $\textbf{x}_{i}$, $\textbf{x}_{j}$, $\textbf{x}_{k}$ and $\textbf{x}_{l}$ are similar. Fig \ref{fig:ContreExample} shows an example of two pairwise vectors $\textbf{x}_{ij}$ and $\textbf{x}_{kl}$ close together in the pairwise space. However, in the temporal space, the time series $\textbf{x}_{1}$ and $\textbf{x}_{3}$ are not similar for example. It means that $\textbf{x}_i$ is as similar to $\textbf{x}_j$ as $\textbf{x}_k$ is to $\textbf{x}_l$, \textit{i.e.}, the distance $D_0$ between $\textbf{x}_i$ and $\textbf{x}_j$ is roughly the same than the distance $D_0$ between $\textbf{x}_k$ and $\textbf{x}_l$.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.85\linewidth]{ContreExample}
+	\caption{Example of two pairwise vectors $\textbf{x}_{12}$ and $\textbf{x}_{34}$ close in the pairwise space. However, the time series $\textbf{x}_{1}$ and $\textbf{x}_{3}$ are not similar in the temporal space.}
+	\label{fig:ContreExample}
+\end{figure}
+
+
+\subsection{Multi-scale description for time series}
+The multi-modal representation in the dissimilarity space can be enriched for time series by measuring each unimodal metric $d_h$ at different scales. Note that the distance measures (amplitude-based $d_A$, frequential-based $d_F$, behavior-based $d_B$) in Eqs. \ref{eq:A}, \ref{eq:F} and \ref{eq:B} implies systematically the total time series elements $x_{it}$ and thus, restricts the distance measures to capture local temporal differences. In our work, we provide a multi-scale framework for time series comparison using a hierarchical structure. Many methods exist in the literature such as the sliding window \cite{Keogh2003a} or the dichotomy \cite{AhlameDouzal-Chouakria2011}. We detail here the latter one. \\
+\indent A multi-scale description can be obtained by repeatedly segmenting a time series expressed at a given temporal scale to induce its description at a more local level. Many approaches have been proposed assuming fixed either the number of the segments or their lengths \cite{Fu2011b}. In our work, we consider a binary segmentation at each level. Let $I=[a;b]$ be a temporal interval of size $(b-a)$. The interval $I$ is decomposed into two equal overlapped intervals $I_L$ (left interval) and $I_R$ (right interval). A parameter $\alpha$ allows to overlap the two intervals $I_L$ and $I_R$, covering discriminating subsequences in the central region of $I$ (around $\frac{b+a}{2}$): $I = [a;b]; I_L = [a;a+\alpha(b-a)]; I_R = [b-\alpha(b-a);b]$. 
 %\begin{align}
 %	I &= [a;b] \\
 %	I_L &= [a;a+\alpha(b-a)] \\
@@ -181,44 +287,12 @@ d^{Is}_A(\textbf{x}_i,\textbf{x}_j) = \sqrt{\sum\limits_{t \in Is} (x_{it}-x_{jt
 The local behaviors- and frequential- based measures $d^{Is}_B$ and $d^{Is}_F$ are obtained similarly.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{images/Intervalles3}
+	\includegraphics[width=0.6\linewidth]{images/Intervalles3}
 	\caption{Multi-scale decomposition}
 	\label{fig:Intervalles}
 \end{figure}
 
 \noindent In the following, for simplification purpose, we consider $d_1, \ldots, d_p$ as the set of multi-modal and multi-scale metrics.
-
-\subsection{Interpretation in the dissimilarity space}
-%\begin{itemize}
-%	\item Proximity to the origin (les individus sont identiques)
-%	\item Proximity of 2 pairwise points in the pairwise space 
-%	\item Norm in the pairwise space
-%	\item Representation of combined metric in the pairwise space
-%	\item perte de la classe initiale des individus. L'information qui nous reste est : les 2 individus sont de la même classe ou sont de classes différentes.
-%\end{itemize}
-
-In this section, we give more detailed interpretations in the dissimilarity space. \todo{Sous section ajoutée, ok pour SMA et MR}
-We recall that the norm of a pairwise vector is given by: 
-\begin{equation}
-||\textbf{x}_{ij}|| = \sum\limits_{h=1}^{p} d_h(\textbf{x}_{i},\textbf{x}_{j})
-\end{equation}
-In the following, we denote the norm as an initial distance in the dissimilarity space and call it $D_0$. The norm of a pairwise vector $\textbf{x}_{ij}$ can be interpreted as a proximity measure: the lower the norm of $\textbf{x}_{ij}$ is, the closer are the time series $\textbf{x}_{i}$ and $\textbf{x}_{j}$. Two pairwise vectors $\textbf{x}_{ij}$ and $\textbf{x}_{kl}$ that are on a same line that passes through the origin $\textbf{x}_{ii} = \textbf{0}$ represent differences in the the same proportions between their respective modalities (Fig. ??). 
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=1\linewidth]{Pairwise_interpretation}
-	\caption{Example of two pairwise vectors $\textbf{x}_{12}$ and $\textbf{x}_{34}$ close in the pairwise space. However, the time series $\textbf{x}_{1}$ and $\textbf{x}_{3}$ are not similar in the temporal space.}
-	\label{fig:pairwise_interpretation}
-\end{figure}
-
-The euclidean distance $\sqrt{\sum\limits_{h=1}^{p} (d_h(\textbf{x}_{i},\textbf{x}_{j})-d_h(\textbf{x}_{k},\textbf{x}_{l}))^2}$ between two pairwise vectors $\textbf{x}_{ij}$ and $\textbf{x}_{kl}$ represent the similarity between the differences among the same modality, in the same proportion. Note that if the euclidean distance is close to 0 ($\textbf{x}_{ij}$ and $\textbf{x}_{kl}$ are close in the dissimilarity space) it doesn't mean that the time series $\textbf{x}_{i}$, $\textbf{x}_{j}$, $\textbf{x}_{k}$ and $\textbf{x}_{l}$ are similar. Fig \ref{fig:ContreExample} shows an example of two pairwise vectors $\textbf{x}_{ij}$ and $\textbf{x}_{kl}$ close together in the pairwise space. However, in the temporal space, the time series $\textbf{x}_{1}$ and $\textbf{x}_{3}$ are not similar for example. It means that $\textbf{x}_i$ is as similar to $\textbf{x}_j$ as $\textbf{x}_k$ is to $\textbf{x}_l$, \textit{i.e.}, the distance $D_0$ between $\textbf{x}_i$ and $\textbf{x}_j$ is roughly the same than the distance $D_0$ between $\textbf{x}_k$ and $\textbf{x}_l$.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.85\linewidth]{ContreExample}
-	\caption{Example of two pairwise vectors $\textbf{x}_{12}$ and $\textbf{x}_{34}$ close in the pairwise space. However, the time series $\textbf{x}_{1}$ and $\textbf{x}_{3}$ are not similar in the temporal space.}
-	\label{fig:ContreExample}
-\end{figure}
 
 % A metric $D$ that combines the $p$ unimodal metrics $d_1, \ldots, d_p$ can be seen as a function of the pairwise space. It can be noticed that when the time series $\textbf{x}_i$ are embedded in the pairwise, the information of their original class $y_i$ is lost. Any multi-class problem is transformed in the pairwise space as a binary classification problem.
 
@@ -228,14 +302,19 @@ The euclidean distance $\sqrt{\sum\limits_{h=1}^{p} (d_h(\textbf{x}_{i},\textbf{
 In this section, we propose to define the Multimodal and Multiscale Time series Metric Learning ({\sc m$^2$tml}) problem in the initial space as a general problem of learning a function in the dissimilarity space. First, we give the intuition and formalize the general optimization problem. Secondly, we propose different strategies to define the neighborhood.
 
 \subsection{General formalization for M$^2$TML} 
-Our objective is to learn a dissimilarity $D=f(d_1, \ldots, d_p)$ in $\mathcal{E}$, the embedding space, that combines the $p$ dissimilarities $d_1, \ldots, d_p$ for a robust $k$-NN classifier. The function $f$ can be linear or non-linear and must satisfy at least the properties of a dissimilarity, \textit{i.e.}, positivity ($D(\textbf{x}_{ij} \geq 0)$), reflexivity ($D(\textbf{x}_{ii})=0 \text{ }\forall i$) and symmetry ($D(\textbf{x}_{ij}) = D(\textbf{x}_{ji}) \text{ } \forall i,j$) (Section \ref{sec:property_metric}). To simplify the discussion in the following, we refer to dissimilarity as metrics. The proposition is based on two standard intuitions in metric learning, \textit{i.e.}, for each time series $\textbf{x}_i$, the metric $D$ should bring closer the time series $\textbf{x}_j$ of the same class ($y_j=y_i$) while pushing the time series $\textbf{x}_l$ of different classes ($y_l \neq y_i$). These two sets are called respectively $Pull_i$ and $Push_i$. 
-% Fig. \ref{fig:Transposition_Pairwise2} illustrates that concept.
-\todo{figure enlevée ici car trop tôt}Formally, the metric learning problem can be written as an optimization problem that involves both a regularizion term $R(Pull)$\mycomment[SMA]{mettre $R(D,Pull)$?} and a loss term $L(Push)$ under constraints that controls the push term:
+Our objective is to learn a dissimilarity $D=f(d_1, \ldots, d_p)$ in $\mathcal{E}$, the embedding space, that combines the $p$ dissimilarities $d_1, \ldots, d_p$ for a robust $k$-NN classifier. The function $f$ can be linear or non-linear and must satisfy at least the properties of a dissimilarity, \textit{i.e.}, positivity ($D(\textbf{x}_{ij} \geq 0)$), reflexivity ($D(\textbf{x}_{ii})=0 \text{ }\forall i$) and symmetry ($D(\textbf{x}_{ij}) = D(\textbf{x}_{ji}) \text{ } \forall i,j$) (Section \ref{sec:property_metric}). To simplify the discussion in the following, we refer dissimilarity as metrics.
 
+The proposition is based on two standard intuitions in metric learning, \textit{i.e.}, for each time series $\textbf{x}_i$, the metric $D$ should bring closer the time series $\textbf{x}_j$ of the same class ($y_j=y_i$) while pushing the time series $\textbf{x}_l$ of different classes ($y_l \neq y_i$). These two sets are called respectively $Pull_i$ and $Push_i$. 
+% Fig. \ref{fig:Transposition_Pairwise2} illustrates that concept.
+In addition, to ensure to have a robust $k$-NN, a safety margin between the resulting metric values between the sets $Pull_i$ and $Push_i$ must be considered. Our proposition is inspired from the \textsc{lmnn} framework where the optimization problem involves a pull term that penalizes large distances between sample of same labels. It can be interpreted as a regularization term on $Pull_i$. In \textsc{lmnn}, the push term penalizes small distances between samples of different labels ($Push_i$). It can be interpreted as a loss term on $Push_i$. To ensure a safety margin between similar and dissimilar samples, a constraint is added: $D^2(\textbf{x}_i,\textbf{x}_l)-D^2(\textbf{x}_i,\textbf{x}_j) \geq 1 - \xi_{ijl}$.
+
+Similarly, we formalize the \textsc{m$^2$tml} problem as an optimization problem involving both a regularization term on $D$ and the pull set $Pull_i$, denoted $R_{Pull}(D)$, and a loss term on $\xi$ and the push set $Push_i$, denoted $L_{Push}(\xi)$, under constraints that controls the push term to ensure a large margin between $Pull_i$ and $Push_i$:
 \begin{equation}
 \begin{aligned}
-&\displaystyle 		\argmin_{D,\xi} \left[  R(Pull) + L(Push) \right] \\
-&\text{s.t. \textit{constraints} }
+\displaystyle 	& \argmin_{D,\xi} \left\lbrace R_{Pull}(D) + L_{Push}(\xi) \right\rbrace  \\
+& \text{s.t. } 	\forall i, j \in Pull_i, l \in Push_i, \\
+				& \qquad D(\textbf{x}_{il})-D(\textbf{x}_{ij}) \geq 1 - \xi_{ijl} \\
+				& \qquad \xi_{ijl} \geq 0 
 \end{aligned}
 \end{equation}
 
@@ -244,12 +323,12 @@ Our objective is to learn a dissimilarity $D=f(d_1, \ldots, d_p)$ in $\mathcal{E
 \begin{equation}
 \begin{aligned}
 &\displaystyle 		\argmin_{D,\xi} \left\lbrace \underbrace{
-	\vphantom{ \sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}} \frac{1-y_{il}}{2} \xi_{ijl} }
+	\vphantom{ \sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}}  \xi_{ijl} }
 	\sum_{\substack{i \\ j \in Pull_i}}D(\textbf{x}_{ij})
 }_{pull}
 + C
 \underbrace{
-	\sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}} \frac{1-y_{il}}{2} \xi_{ijl}
+	\sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}} \xi_{ijl}
 }
 _{push} \right\rbrace  \\
 &\text{s.t.  } \forall i = 1, \ldots, n, \forall j \in Pull_i, l \in Push_i, \\
@@ -258,7 +337,7 @@ _{push} \right\rbrace  \\
 \label{eq:OriginalOptimizationProblem_Objective} 
 \end{aligned}
 \end{equation}
-\noindent where $y_{il} = -1$ if $y_i \neq y_l$ and +1 otherwise, \mycomment[SMA]{Enlever les $y_{il}$, ils ne servent plus}$\xi_{ijl}$ are the slack variables and $C$, the trade-off between the pull and push costs. In the next section, we detailed different strategies to define the $Pull_i$ and $Push_i$ sets. 
+\noindent where $\xi_{ijl}$ are the slack variables and $C$, the trade-off between the pull (regularization) and push (loss) costs. In the next section, we detailed different strategies to define the $Pull_i$ and $Push_i$ sets. 
 
 %\begin{figure}[t]
 %	\centering
@@ -267,17 +346,19 @@ _{push} \right\rbrace  \\
 %	\label{fig:Transposition_Pairwise2}
 %\end{figure}
 
+\newpage
 \subsection{Push and pull set definition}
-To build the pairwise training set, we associate for each $\textbf{x}_i$, two sets, $Pull_i$ and $Push_i$, where the two sets are chosen according to one of the following strategies, illustrated in Fig \ref{fig:Strategy_neighborhood}: \todo{Ajouter une remarque sur $D_0$?}
+To build the pairwise training set, we associate for each $\textbf{x}_i$, two sets, $Pull_i$ and $Push_i$, where the two sets are chosen according to one of the following strategies, illustrated in Fig \ref{fig:Strategy_neighborhood}: 
 \begin{enumerate}
 	\item \textbf{$k$-NN vs impostors}: for a given $\textbf{x}_i$, the sets of pairs to pull and to push corresponds respectively to:
 	\begin{align}
-		\forall i\in 1, \ldots, n, \quad Pull_i & = \{\textbf{x}_{ij} \text{ } / \text{ }  \text{$y_j = y_i$, $||\textbf{x}_{ij}||_2$ is among the $k$-lowest norms} \} \label{eq:pull1}\\
-		Push_i & = \{\textbf{x}_{il} \text{ } / \text{ } \text{$y_l \neq y_i$, } ||\textbf{x}_{il}||_2 \leq \max\limits_{\textbf{x}_{ij} \in Pull_i} ||\textbf{x}_{ij}||_2\} \label{eq:push1}
+		\forall i\in 1, \ldots, n, \quad Pull_i & = \{\textbf{x}_{ij} \text{ } / \text{ }  \text{$y_j = y_i$, $D_0(\textbf{x}_{ij})$ is among the $k$-lowest distance} \} \label{eq:pull1}\\
+		Push_i & = \{\textbf{x}_{il} \text{ } / \text{ } \text{$y_l \neq y_i$, } D_0(\textbf{x}_{il}) \leq \max\limits_{\textbf{x}_{ij} \in Pull_i} D_0(\textbf{x}_{ij})\} \label{eq:push1}
 	\end{align}
+	We recall that we choose the norm $D_0(\textbf{x}_{ij}) = ||\textbf{x}_{ij}||_2$ as our initial distance $D_0$.
 	\item \textbf{$k$-NN vs all}: for a given $\textbf{x}_i$, the sets of pairs to pull and to push corresponds respectively to:	
 	\begin{align}
-	\forall i\in 1, \ldots, n, \quad Pull_i & = \{\textbf{x}_{ij} \text{ } / \text{ } \text{$y_j = y_i$, $||\textbf{x}_{ij}||_2$ is among the $k$-lowest norms} \} \\
+	\forall i\in 1, \ldots, n, \quad Pull_i & = \{\textbf{x}_{ij} \text{ } / \text{ } \text{$y_j = y_i$, $D_0(\textbf{x}_{ij})$ is among the $k$-lowest distance} \} \\
 	Push_i & = \{\textbf{x}_{il} \text{ } / \text{ } \text{$y_l \neq y_i$} \}
 	\end{align}
 	\item \textbf{$m$-NN$^+$ vs $m$-NN$^-$}: for a given $\textbf{x}_i$, the pull and push sets are defined respectively as 
@@ -285,19 +366,19 @@ To build the pairwise training set, we associate for each $\textbf{x}_i$, two se
 	and the $m$-nearest neighbor of $\textbf{x}_i$ of a different class ($y_j \neq y_i$)
 	More precisely, our proposition states: $m=\alpha.k$ with $\alpha \geq 1$. Other propositions for $m$ are possible:
 	\begin{align}
-	\forall i\in 1, \ldots, n, \quad Pull_i & = \{\textbf{x}_{ij} \text{ } / \text{ } \text{$y_j = y_i$, $||\textbf{x}_{ij}||_2$ is among the $m$-lowest norms} \} \label{eq:mnn+}\\
-	Push_i & = \{\textbf{x}_{il} \text{ } / \text{ } \text{s.t. $y_l \neq y_i$, $||\textbf{x}_{il}||_2$ is among the $m$-lowest norms} \} \label{eq:mnn-}
+	\forall i\in 1, \ldots, n, \quad Pull_i & = \{\textbf{x}_{ij} \text{ } / \text{ } \text{$y_j = y_i$, $D_0(\textbf{x}_{ij})$ is among the $m$-lowest distance} \} \label{eq:mnn+}\\
+	Push_i & = \{\textbf{x}_{il} \text{ } / \text{ } \text{s.t. $y_l \neq y_i$, $D_0(\textbf{x}_{il})$ is among the $m$-lowest distance} \} \label{eq:mnn-}
 	\end{align}
 	In the following, we denote $m\text{-NN}^+ = \bigcup\limits_{i} Pull_i$ and $m\text{-NN}^- = \bigcup\limits_{i} Push_i$
 \end{enumerate}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{images/Strategy_neighborhood}
+	\includegraphics[width=1\linewidth]{images/Strategy_neighborhood}
 	\caption{Example of different strategies to build $Pull_i$ and $Push_i$ sets for a $k=2$ neighborhood.}
 	\label{fig:Strategy_neighborhood}
 \end{figure}
 
-Finally, let discuss about the similarities and differences between \textsc{lmnn} (Weinberger \& Saul~\cite{Weinberger2009}) and our \textsc{m$^2$tml} proposition. In \textsc{lmnn}, the sets $Pull_i$ and $Push_i$ are defined according the \textbf{$k$-NN vs impostors} strategy (Eqs. \ref{eq:pull1} \& \ref{eq:push1}) and may be unbalanced. The sets are defined and fixed during the optimization process according to an initial metric (Euclidean distance). In \textsc{m$^2$tml} the sets $Pull_i$ and $Push_i$ are defined according the \textbf{$k$-NN vs impostors} strategy (Eqs. \ref{eq:mnn+} \& \ref{eq:mnn-}) and are balanced. The sets are defined and fixed during the optimization process according to an initial metric (Euclidean distance), but the $m$-neighborhood is larger than the $k$-neighborhood. By considering a neighborhood larger than the $k$-neighborhood (\textbf{$k$-NN vs impostors} strategy), we believe that the generalization properties of the learnt metric $D$ would be improved. 
+Finally, let discuss about the similarities and differences between \textsc{lmnn} (Weinberger \& Saul~\cite{Weinberger2009}) and our \textsc{m$^2$tml} proposition. In \textsc{lmnn}, the sets $Pull_i$ and $Push_i$ are defined according the \textbf{$k$-NN vs impostors} strategy (Eqs. \ref{eq:pull1} \& \ref{eq:push1}) and may be unbalanced. The sets are defined and fixed during the optimization process according to an initial metric $D_0$. In \textsc{m$^2$tml} the sets $Pull_i$ and $Push_i$ are defined according the \textbf{$k$-NN vs impostors} strategy (Eqs. \ref{eq:mnn+} \& \ref{eq:mnn-}) and are balanced. The sets are defined and fixed during the optimization process according to the initial metric $D_0$, but the $m$-neighborhood is larger than the $k$-neighborhood. By considering a neighborhood larger than the $k$-neighborhood (\textbf{$k$-NN vs impostors} strategy), we believe that the generalization properties of the learnt metric $D$ would be improved. 
 
 %\noindent Even if the optimization problem in Eq. \ref{eq:OriginalOptimizationProblem_Objective} is similar to the one of Large Margin Nearest Neighbors ({\sc lmnn}) proposed by Weinberger \& Saul in ~\cite{Weinberger2009} (Eq. \ref{eq:OptimizationProblem}), let recall the main points:
 %\begin{itemize}
@@ -317,15 +398,16 @@ Finally, let discuss about the similarities and differences between \textsc{lmnn
 %	\item The learnt metric $D$ is a combined metric of several unimodal metrics measured at different scales.
 %\end{itemize}
 
+\newpage
 \subsection{Interpretation in the dissimilarity space}
-In this section, we give more detailed interpretations of the \textsc{m$^2$tml} problem in the dissimilarity space. \todo{Ajout ok pour SMA et MR}Our objective is to learn a metric $D$ as a linear or non-linear combination of the $p$ unimodal metrics $d_1, \ldots, d_p$. The metric $D$ can be seen as a function of the dissimilarity space that should:
+In this section, we give more detailed interpretations of the \textsc{m$^2$tml} problem in the dissimilarity space. Our objective is to learn a metric $D$ as a linear or non-linear combination of the $p$ unimodal metrics $d_1, \ldots, d_p$. The metric $D$ can be seen as a function of the dissimilarity space that should:
 \begin{itemize}
 	\item \textbf{pull} to the origin $\textbf{x}_{ii} = \textbf{0}$ the pairs $\textbf{x}_{ij}$ of $Pull_i$
 	\item \textbf{push} away from the origin all the pairs $\textbf{x}_{il}$ of $Push_i$
 \end{itemize}
 Fig. \ref{fig:Transposition_Pairwise} illustrates the idea in the original space and in the dissimilarity space: first, we build the sets $Pull_i$ and $Push_i$ according to an initial metric $D_0$; secondly, we optimize the metric $D$ so that the pairs $Pull_i$ are pulled to the origin and the pairs $Push_i$ are pushed away from the origin.
 
-\begin{figure}[t!]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{Transposition_Pairwise4}
 	\caption{Metric learning problem from the original space (top) to the dissimilarity space (bottom) for a $k=3$ neighborhood of $\textbf{x}_i$. Before learning (left), push samples $\textbf{x}_l$ invade the targets perimeter $\textbf{x}_j$. In the pairwise space, this is equivalent to have push pairwise vectors $\textbf{x}_{il}$ with an initial distance $D_0$ lower than the distance of pull pairwise vectors $\textbf{x}_{ij}$. The aim of metric learning is to learn a metric $D$ to push $\textbf{x}_{il}$ (black arrow) and pull $\textbf{x}_{ij}$ from the origin (white arrow).}
@@ -342,7 +424,7 @@ Fig. \ref{fig:Transposition_Pairwise} illustrates the idea in the original space
 
 
 
-In the following, we propose different regularizers for the pull term $R(Pull)$. First, we use a linear regularization. Secondly, we use a quadratic regularization that enables to extend the method to learn non-linear function for $D$ by using the "kernel" trick. Thirdly, we formulate the problem as a \textsc{svm} problem to solve a large margin problem between $Pull_i$ and $Push_i$ sets, and then, induce a combined metric $D$. Finally, we sum up the retained solution (\textsc{svm}-based solution) and give the main steps of the algorithm.
+In the following, we propose different regularizers for the pull term $R_{Pull}(D)$. First, we use a linear regularization. Secondly, we use a quadratic regularization that enables to extend the method to learn non-linear function for $D$ by using the "kernel" trick. Thirdly, we formulate the problem as a \textsc{svm} problem to solve a large margin problem between $Pull_i$ and $Push_i$ sets, and then, define the combined metric $D$ based on the \textsc{svm} solution. Finally, we sum up the retained solution (\textsc{svm}-based solution) and give the main steps of the algorithm.
 
 
 %--------------------------------------------------------------------------------
@@ -351,42 +433,49 @@ In the following, we propose different regularizers for the pull term $R(Pull)$.
 %	\item Formaliser le problème sous forme d'un problème d'optimisation sous contraintes
 %\end{itemize}
 
-In this section, we define the problem of learning a combined metric $D$ as a linear combination in the dissimilarity space using a linear regularizer. First, we give the optimization problem. Then, we discuss on the properties of the learnt metric $D$. \\
-\noindent Let $\textbf{X} = \{\textbf{x}_{ij},y_{ij}\}_{i,j=1}^n$ be a set of pairwise vectors $\textbf{x}_{ij}=[d_1(\textbf{x}_i,\textbf{x}_j), ..., d_p(\textbf{x}_i,\textbf{x}_j)]^T$  described by $p$ metrics $d_1, \ldots, d_p$ and labeled $y_{ij} = -1$ if $y_i \neq y_j$ and +1 otherwise. We consider a linear combination of the $p$ metrics:
+In this section, we define the problem of learning a combined metric $D$ as a linear combination in the dissimilarity space using a linear regularizer. First, we give the optimization problem. Then, we discuss the properties of the learned metric $D$.
+
+\noindent Let $\textbf{X} = \{\textbf{x}_{ij}\}_{i,j=1}^n$ be a set of pairwise vectors $\textbf{x}_{ij}=[d_1(\textbf{x}_i,\textbf{x}_j), ..., d_p(\textbf{x}_i,\textbf{x}_j)]^T$  described by $p$ metrics $d_1, \ldots, d_p$. We consider a linear combination of the $p$ metrics:
 \begin{equation}
 D(\textbf{x}_{ij})=\textbf{w}^T\textbf{x}_{ij} = \sum_{h=1}^p w_h.d_h(\textbf{x}_i,\textbf{x}_j)
 \label{eq:D_linear}
 \end{equation}
-where $\textbf{w}=[w_1, \ldots, w_p]^T$ is the vector of weights $w_h$. From Eq. \ref{eq:OriginalOptimizationProblem_Objective}, learning a linear combined metric $D$ can be formalized as follow:
-
-\begin{equation}
-\begin{aligned}
+where $\textbf{w}=[w_1, \ldots, w_p]^T$ is the vector of weights $w_h$. From Eq. \ref{eq:OriginalOptimizationProblem_Objective}, by choosing $R_{Pull}(D) = R_{Pull}(\textbf{w}) = \sum\limits_{i, j \in Pull_i} \textbf{w}^T\textbf{x}_{ij}$ learning a linear combined metric $D$ can be formalized as follow:
+\begin{align}
 		&\displaystyle 		\argmin_{\textbf{w},\xi}
 		\left\lbrace \underbrace{
-		\vphantom{ \sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}} \frac{1-y_{il}}{2} \xi_{ijl} }
+		\vphantom{ \sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}} \xi_{ijl} }
 			\sum\limits_{\substack{i \\ j \in Pull_i}} \textbf{w}^T\textbf{x}_{ij}
 		}_{pull}					
 		+	
 		C \underbrace{				
-			\sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}} \frac{1-y_{il}}{2} \xi_{ijl}
-		}_{push} \right\rbrace \\
- 		&\text{s.t.  } \forall i = 1, \ldots, n, \forall j \in Pull_i, l \in Push_i, \\
-		& \qquad \textbf{w}^T(\textbf{x}_{il}-\textbf{x}_{ij}) \geq 1-\xi_{ijl}  \\
-		& \qquad \xi_{ijl} \geq 0 \\
-		& \qquad \forall h=1, \ldots, p, \quad w_h \geq 0
-		\label{eq:MMLPrimal} 
-\end{aligned}
-\end{equation}
+			\sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}}  \xi_{ijl}
+		}_{push} \right\rbrace \nonumber \\
+ 		&\text{s.t.  } \forall i = 1, \ldots, n, \forall j \in Pull_i, l \in Push_i, \label{eq:MMLPrimal} \\
+		& \qquad \textbf{w}^T(\textbf{x}_{il}-\textbf{x}_{ij}) \geq 1-\xi_{ijl}  \nonumber \\
+		& \qquad \xi_{ijl} \geq 0 \nonumber \\
+		& \nonumber \\
+		& \qquad \forall h=1, \ldots, p, \quad w_h \geq 0 \label{eq:MMLPrimal_constraint_pos}
+\end{align}
 
-\noindent where $\xi_{ijl}$ are the slack variables, $C$ the trade-off between the pull and push costs, and $Pull_i$ and $Push_i$ are defined in Eqs. \ref{eq:mnn+} \& \ref{eq:mnn-}. \todo{Voir si ce n'est pas redondant avec la partie interprétation}Similarly to \textsc{svm}, note that the slack variables $\xi_{ijl}$ can be interpreted. In particular, the pairs $\textbf{x}_{ij}$ and $\textbf{x}_{il}$ that violate the constraints ($\textbf{w}^T \textbf{x}_{il} < \textbf{w}^T \textbf{x}_{ij}$) will be penalized in the objective function. They corresponds to push pairs $\textbf{x}_{il}$ that invades the neighborhood of the pull pairs $\textbf{x}_{ij}$.
+\noindent where $\xi_{ijl}$ are the slack variables, $C$ the trade-off between the pull and push costs, and $Pull_i$ and $Push_i$ are defined in Eqs. \ref{eq:mnn+} \& \ref{eq:mnn-}. 
+% \todo{Voir si ce n'est pas redondant avec la partie interprétation}Similarly to \textsc{svm}, note that the slack variables $\xi_{ijl}$ can be interpreted. In particular, the pairs $\textbf{x}_{ij}$ and $\textbf{x}_{il}$ that violate the constraints ($\textbf{w}^T \textbf{x}_{il} < \textbf{w}^T \textbf{x}_{ij}$) will be penalized in the objective function. They corresponds to push pairs $\textbf{x}_{il}$ that invades the neighborhood of the pull pairs $\textbf{x}_{ij}$.
 
 The problem is very similar to a $C$-\textsc{svm} classification problem. When $C$ is infinite, we have a "strict" problem: the solver will try to find a direction $\textbf{w}$ in the dissimilarity space $\mathcal{E}$ for which all $\xi_{ijl} = 0$, that means that only pull samples should be in the close neighborhood of each $\textbf{x}_i$. Let denote $\textbf{x}_{ij}^*$ and $\textbf{x}_{il}^*$, the vectors for which $\xi_{ijl} = 0$. In that case, if a solution is found, the margin $\displaystyle  \min_{i,j,l}(||\textbf{x}_{il}^* - \textbf{x}_{ij}^*||_2)$ can be derived from the tightest constraint, for which equality holds:
 \begin{align*}
 	\textbf{w}^T(\textbf{x}_{il}^* - \textbf{x}_{ij}^*) & = 1 \\
-	\textbf{w}^T(\textbf{x}_{il}^* - \textbf{x}_{ij}^*)^T(\textbf{x}_{il}^* - \textbf{x}_{ij}^*)\textbf{w} & = 1 \\
-	||\textbf{x}_{il}^* - \textbf{x}_{ij}^*||_2^2 & = \frac{1}{||\textbf{w}||_2^2} \\
+	||\textbf{w}||_2  ||\textbf{x}_{il}^* - \textbf{x}_{ij}^*||_2 & = 1 \\
 	||\textbf{x}_{il}^* - \textbf{x}_{ij}^*||_2 & = \frac{1}{||\textbf{w}||_2}
-\end{align*} 
+\end{align*}
+%\begin{align*}
+%	\textbf{w}^T(\textbf{x}_{il}^* - \textbf{x}_{ij}^*) & = 1 \\
+%	\textbf{w}^T(\textbf{x}_{il}^* - \textbf{x}_{ij}^*)^T(\textbf{x}_{il}^* - \textbf{x}_{ij}^*)\textbf{w} & = 1 \\
+%	||\textbf{x}_{il}^* - \textbf{x}_{ij}^*||_2^2 & = \frac{1}{||\textbf{w}||_2^2} \\
+%	||\textbf{x}_{il}^* - \textbf{x}_{ij}^*||_2 & = \frac{1}{||\textbf{w}||_2}
+%\end{align*} 
+
+ 
+
 
 \noindent Concerning the properties of $D$, positivity is ensured with the constraints $w_h \geq 0$ and because $d_1, \ldots, d_p$ are dissimilarity measures ($d_h \geq 0$). As the metric $D$ is defined as a linear combination of dissimilarity measures $d_1, \ldots, d_p$, it can be shown that symmetry and reflexivity is verified.
 
@@ -395,7 +484,7 @@ The problem is very similar to a $C$-\textsc{svm} classification problem. When $
 In this section, we define the problem of learning $D$ as a linear or non-linear combination in the dissimilarity space using a quadratic regularizer. First, we give the optimization problem and its dual formulation form involving only dot products. Then, we discuss on the properties of the learnt metric $D$. Finally, we study a link between \textsc{svm} and the quadratic formalization. \\
 
 \subsection{Primal and dual formalization}
-The formulation in Eq. \ref{eq:MMLPrimal} suppose that the metric $D$ is a linear combination of the metrics $d_h$. The linear formalization being similar to the one of \textsc{svm}, it can be derived into its dual form to extend the method to find non-linear solutions for $D$. For that, we propose to change the linear regularizer $R(Pull)$ in the objective function of Eq. \ref{eq:MMLPrimal} into a quadratic regularizer: 
+The formulation in Eq. \ref{eq:MMLPrimal} suppose that the metric $D$ is a linear combination of the metrics $d_h$. The linear formalization being similar to the one of a L1-regularized \textsc{svm}, it can be derived into its dual form to extend the method to find non-linear solutions for $D$. For that, we propose to change the linear regularizer $R(Pull)$ in the objective function of Eq. \ref{eq:MMLPrimal} into a quadratic regularizer: 
 \begin{equation}
 \begin{aligned}
 &\displaystyle 		\argmin_{\textbf{w},\xi}
@@ -403,7 +492,7 @@ The formulation in Eq. \ref{eq:MMLPrimal} suppose that the metric $D$ is a linea
 		R(Pull)				
 +	
 C 			
-	\sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}} \frac{1-y_{il}}{2} \xi_{ijl}
+	\sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}} \xi_{ijl}
 \right\rbrace \\
 &\text{s.t.  } \forall i = 1, \ldots, n, \forall j \in Pull_i, l \in Push_i, \\
 & \qquad \textbf{w}^T(\textbf{x}_{il}-\textbf{x}_{ij}) \geq 1-\xi_{ijl}  \\
@@ -455,7 +544,7 @@ where $\textbf{X}_{pull} = \bigcup_i Pull_i $ be a $(m.n) \times p$ matrix conta
 	+					
 	C
 	\underbrace{
-	\sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}} \frac{1-y_{il}}{2} \xi_{ijl}
+	\sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}}  \xi_{ijl}
 	}_{push}
 	\right\rbrace  \\
 	&\text{s.t.  } \forall i = 1, \ldots, n, \forall j \in Pull_i, l \in Push_i, \\
@@ -471,7 +560,7 @@ where $\textbf{X}_{pull} = \bigcup_i Pull_i $ be a $(m.n) \times p$ matrix conta
 L(\textbf{w},\xi,\boldsymbol{\alpha},\textbf{r}) 
 = & 
 \frac{1}{2} \textbf{w}^T \textbf{M} \textbf{w}
-+ C \sum\limits_{ijl} \frac{1-y_{il}}{2} \xi_{ijl} - \sum\limits_{ijl}r_{ijl} \xi_{ijl} \\
++ C \sum\limits_{ijl} \xi_{ijl} - \sum\limits_{ijl}r_{ijl} \xi_{ijl} \\
 &  - \sum\limits_{ijl} \alpha_{ijl}\left( \textbf{w}^T(\textbf{x}_{il}-\textbf{x}_{ij}-1+\xi_{ijl} \right))
 \label{eq:OptimizationDual}
 \end{aligned}
@@ -1167,7 +1256,7 @@ For simplification purpose, we denote $\textbf{x}_{ij}$ as $\textbf{x}_{ij}^{nor
 %\end{figure}
 
 \newpage
-\section{Conclusion}
+\section{Conclusion of the chapter}
 To learn a multi-modal and multi-scale temporal combined metric, we propose in this chapter to embed time series into a dissimilarity space. The multi-modal and multi-scale metric learning (\textsc{m$^2$tml}) problem can be formalized as a problem of learning a function in the dissimilarity space, that ensures the properties of a dissimilarity. We formulate the \textsc{m$^2$tml} problem into a general optimization problem involving a pull and push term. Choosing a $m$-neighborhood, greater than the $k$-neighborhood allows to generalize better the learnt metric. From the general formalization, we propose three different formalizations (Linear, Quadratic, \textsc{svm}-based). Table \ref{tab:resume_methode} sums up the characteristics of each formalization and the induced dissimilarity.
 
 \begin{table}[h!]

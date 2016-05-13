@@ -1,28 +1,36 @@
-\begin{vcenterpage}
+\chapter*{}
+\thispagestyle{empty}
+%\begin{vcenterpage}
 \noindent\rule[2pt]{\textwidth}{0.5pt}
 \\
 {\large\textbf{Résumé ---}}
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit. Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis.
-\\
-\\
-{\large\textbf{Mots clés :}}
-    Série temporelle, Apprentissage de métrique, $k$-NN, SVM, classification, régression.
+    La définition d'une métrique entre des séries temporelles est un élément important pour de nombreuses tâches en analyse ou en fouille de données, tel que le clustering, la classification ou la prédiction. Les séries temporelles présentent naturellement différentes caractéristiques, que nous appelons modalités, sur lesquelles elles peuvent être comparées, comme leurs valeurs, leurs formes ou leurs contenus fréquentielles. Ces caractéristiques peuvent être exprimées avec des délais variables et à différentes granularités ou localisations temporelles \textemdash exprimées globalement ou localement. Combiner plusieurs modalités à plusieurs échelles pour apprendre une métrique adaptée est un challenge clé pour de nombreuses applications réelles impliquant des données temporelles. Cette thèse propose une approche pour l'Apprentissage d'une Métrique Multi-modal et Multi-scale ({\sc m}$^2${\sc tml}) en vue d'une classification robuste par plus proches voisins. La solution est basée sur la projection des paires de séries temporelles dans un espace de dissimilarités, dans lequel un processus d'optimisation à vaste marge est opéré pour apprendre la métrique. La solution {\sc m}$^2${\sc tml} est proposée à la fois dans le contexte linéaire et non-linéaire, et est étudiée pour différents types de régularisation. Une variante parcimonieuse et interprétable de la solution montre le potentiel de la métrique temporelle apprise à pouvoir localiser finement les modalités discriminantes, ainsi que leurs échelles temporelles en vue de la tâche d'analyse considérée. L'approche est testée sur un vaste nombre de 30 bases de données publiques et challenging, couvrant des images, traces, données {\sc ecg}, qui sont linéairement ou non-linéairement séparables. Les expériences montrent l'efficacité et le potentiel de la méthode {\sc m}$^2${\sc tml} pour la classification de séries temporelles par plus proches voisins.
+%\\
+%\\
+%{\large\textbf{Mots clés :}}
+%    Série temporelle, Apprentissage de métrique, $k$-NN, SVM, classification.
 \\
 \noindent\rule[2pt]{\textwidth}{0.5pt}
 %\vspace{0.5cm}
 %\vspace{0.1cm}
 
+
+
+\newpage
+\thispagestyle{empty}
+
+\begin{vcenterpage}
 \noindent\rule[2pt]{\textwidth}{0.5pt}
 %\begin{center}
 %{\large\textbf{Title in english\\}}
 %\end{center}
-{\large\textbf{Abstract ---}}
-    The definition  of  a metric between time series is inherent to several data analysis and mining tasks, including clustering, classification or forecasting.  Time series  data  present naturally several modalities covering their amplitude, behavior or frequential spectrum, that may be expressed with varying delays and at multiple temporal scales \textemdash exhibited globally or locally.  Combining several modalities at multiple temporal scales to learn a holistic metric is a key challenge for many real temporal data applications.  This paper proposes a Multi-modal and Multi-scale Temporal Metric Learning ({\sc m}$^2${\sc tml}) approach  for maximum margin time series nearest neighbors classification. The solution refers to embedding time series into a dissimilarity space where a pairwise {\sc svm} is used to learn the metric. The {\sc m}$^2${\sc tml}  solution  is proposed for  both linear and non linear contexts. A sparse and interpretable variant of the solution  shows the ability of the learned temporal metric to localize accurately discriminative  modalities as well as their temporal scales. 
+{\large\textbf{Summary ---}}
+    The definition of a metric between time series is inherent to several data analysis and mining tasks, including clustering, classification or forecasting. Time series data present naturally several characteristics, called modalities, covering their amplitude, behavior or frequential spectrum, that may be expressed with varying delays and at different temporal granularity and localization \textemdash exhibited globally or locally.  Combining several modalities at multiple temporal scales to learn a holistic metric is a key challenge for many real temporal data applications.  This PhD proposes a Multi-modal and Multi-scale Temporal Metric Learning ({\sc m}$^2${\sc tml}) approach for robust time series nearest neighbors classification. The solution is based on the embedding of pairs of time series into a pairwise dissimilarity space, in which a large margin optimization process is performed to learn the metric. The {\sc m}$^2${\sc tml}  solution is proposed for  both linear and non linear contexts, and is studied for different regularizers. A sparse and interpretable variant of the solution  shows the ability of the learned temporal metric to localize accurately discriminative  modalities as well as their temporal scales. 
     A wide range of 30 public and challenging datasets, encompassing images, traces and {\sc ecg} data, that are  linearly or non linearly separable, are used to show the efficiency and the potential of  {\sc m}$^2${\sc tml} for time series nearest neighbors classification.
-\\
-\\
-{\large\textbf{Keywords:}}
-    Time series, Metric Learning, $k$-NN, SVM, classification.
+%\\
+%\\
+%{\large\textbf{Keywords:}}
+%    Time series, Metric Learning, $k$-NN, SVM, classification.
 \\
 \noindent\rule[2pt]{\textwidth}{0.5pt}
 \begin{center}

@@ -1,8 +1,98 @@
-\chapter{QP resolution}
+\chapter{Quadratic formalization development}
 \label{chap:app:qp_resolution}
 
+\noindent \textbf{Objective} \\
+We recall the Lagrangian function:
+\begin{equation}
+\begin{aligned}
+L(\textbf{w},\xi,\boldsymbol{\alpha},\textbf{r}) 
+= & 
+\frac{1}{2} \textbf{w}^T \textbf{M} \textbf{w}
++ C \sum\limits_{ijl} \xi_{ijl} - \sum\limits_{ijl}r_{ijl} \xi_{ijl} \\
+&  - \sum\limits_{ijl} \alpha_{ijl}\left( \textbf{w}^T(\textbf{x}_{il}-\textbf{x}_{ij})-1+\xi_{ijl} \right)
+\label{eq:OptimizationDual_A}
+\end{aligned}
+\end{equation}
+\noindent where $\alpha_{ijl} \geq 0$ and $r_{ijl} \geq 0$ are the Lagrange multipliers. 
+
+\noindent The objective is to show that the Lagrangian is equal to:
+\begin{equation}
+\begin{aligned}
+L(\textbf{w},\xi,\boldsymbol{\alpha},\textbf{r}) 
+= & 
+\sum\limits_{ijl} \alpha_{ijl} 
+- \frac{1}{2} \sum\limits_{ijl} \sum\limits_{i'j'l'}
+\alpha_{ijl} \alpha_{i'j'l'}
+(\textbf{x}_{il}-\textbf{x}_{ij})^T
+\textbf{M}^{-1}
+(\textbf{x}_{i'l'}-\textbf{x}_{i'j'})
+\end{aligned}
+\label{eq:OptimDual_A}
+\end{equation}
+\noindent where:
+\begin{align}
+& \textbf{w} = \textbf{M}^{-1}  
+\sum\limits_{ijl} \alpha_{ijl}(\textbf{x}_{il}-\textbf{x}_{ij}) \label{Eq:eqn_w_A} 
+\\ 
+& r_{ijl} = C - \alpha_{ijl} \quad \Leftrightarrow \quad C - \alpha_{ijl}-r_{ijl}= 0 \label{Eq:eqn_w2_A}
+\end{align}
 
 
+\noindent \textbf{Calcul development} \\
+%\begin{equation}
+\begin{align}
+L(\textbf{w},\xi,\boldsymbol{\alpha},\textbf{r}) 
+= & 
+\frac{1}{2} \textbf{w}^T \textbf{M} \textbf{w}
++ C \sum\limits_{ijl} \xi_{ijl} - \sum\limits_{ijl}r_{ijl} \xi_{ijl} \\
+&  - \sum\limits_{ijl} \alpha_{ijl}\left( \textbf{w}^T(\textbf{x}_{il}-\textbf{x}_{ij})-1+\xi_{ijl} \right) \nonumber \\
+L(\textbf{w},\xi,\boldsymbol{\alpha},\textbf{r})
+= & 
+\frac{1}{2} \textbf{M}^{-1}  
+\sum\limits_{i'j'l'} \alpha_{i'j'l'}(\textbf{x}_{i'l'}-\textbf{x}_{i'j'}) \textbf{M} 
+\textbf{M}^{-1}  
+\sum\limits_{ijl} \alpha_{ijl}(\textbf{x}_{il}-\textbf{x}_{ij}) \\
+& + C \sum\limits_{ijl} \xi_{ijl} - \sum\limits_{ijl}r_{ijl} \xi_{ijl} \nonumber \\
+&  - \sum\limits_{ijl} \alpha_{ijl}\left( \textbf{M}^{-1}  
+\sum\limits_{i'j'l'} \alpha_{i'j'l'}(\textbf{x}_{i'l'}-\textbf{x}_{i'j'})
+(\textbf{x}_{il}-\textbf{x}_{ij})-1+\xi_{ijl} \right) \nonumber
+\end{align}
+%\nonumber
+%\end{equation}
+
+%\begin{equation}
+\begin{align}
+L(\textbf{w},\xi,\boldsymbol{\alpha},\textbf{r}) 
+= & 
+\frac{1}{2} \textbf{M}^{-1}  
+\sum\limits_{i'j'l'} \alpha_{i'j'l'}(\textbf{x}_{i'l'}-\textbf{x}_{i'j'}) \textbf{M} 
+\textbf{M}^{-1}  
+\sum\limits_{ijl} \alpha_{ijl}(\textbf{x}_{il}-\textbf{x}_{ij}) \\
+& + C \sum\limits_{ijl} \xi_{ijl} - \sum\limits_{ijl}r_{ijl} \xi_{ijl} \nonumber \\
+&  - \sum\limits_{ijl} \alpha_{ijl} \textbf{M}^{-1}  
+\sum\limits_{i'j'l'} \alpha_{i'j'l'}(\textbf{x}_{i'l'}-\textbf{x}_{i'j'})
+(\textbf{x}_{il}-\textbf{x}_{ij}) \nonumber \\
+& + \sum\limits_{ijl} \alpha_{ijl} \nonumber \\
+& - \sum\limits_{ijl} \alpha_{ijl} \xi_{ijl} \nonumber \\
+L(\textbf{w},\xi,\boldsymbol{\alpha},\textbf{r}) 
+= & 
+\frac{1}{2}
+\sum\limits_{ijl} \sum\limits_{i'j'l'} \alpha_{ijl}\alpha_{i'j'l'}(\textbf{x}_{il}-\textbf{x}_{ij})\textbf{M}^{-1}  (\textbf{x}_{i'l'}-\textbf{x}_{i'j'}) \\
+& + \sum\limits_{ijl} (C-r_{ijl}-\alpha_{ijl})  \xi_{ijl} \nonumber \\
+& -
+\sum\limits_{ijl} \sum\limits_{i'j'l'} \alpha_{ijl}\alpha_{i'j'l'}(\textbf{x}_{il}-\textbf{x}_{ij})\textbf{M}^{-1}  (\textbf{x}_{i'l'}-\textbf{x}_{i'j'}) \nonumber\\
+& + \sum\limits_{ijl} \alpha_{ijl}  \nonumber \\
+L(\textbf{w},\xi,\boldsymbol{\alpha},\textbf{r}) 
+= & 
+\sum\limits_{ijl} \alpha_{ijl} 
+- \frac{1}{2} \sum\limits_{ijl} \sum\limits_{i'j'l'}
+\alpha_{ijl} \alpha_{i'j'l'}
+(\textbf{x}_{il}-\textbf{x}_{ij})^T
+\textbf{M}^{-1}
+(\textbf{x}_{i'l'}-\textbf{x}_{i'j'})
+\end{align}
+%\nonumber
+%\end{equation}
 
 %%% Local Variables: 
 %%% mode: latex
