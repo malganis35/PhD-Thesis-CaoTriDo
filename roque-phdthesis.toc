@@ -58,11 +58,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Amplitude-based metrics}{36}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Frequential-based metrics}{37}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Frequential-based metrics}{36}{subsection.2.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.4}Behavior-based metrics}{38}{subsection.2.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Time series alignment and dynamic programming approach}{38}{section.2.4}
+\contentsline {section}{\numberline {2.4}Time series alignment and dynamic programming approach}{39}{section.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Combined metrics for time series}{42}{section.2.5}
 \defcounter {refsection}{0}\relax 

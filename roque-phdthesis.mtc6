@@ -1,21 +1,21 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Motivations}{\reset@font\mtcSfont 50}{section.3.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}A recall on Large Margin Nearest Neighbors (LMNN)}{\reset@font\mtcSfont 52}{section.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Multi-modal and multi-scale pairwise dissimilarity space}{\reset@font\mtcSfont 54}{section.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}Pairwise embedding}{\reset@font\mtcSSfont 54}{subsection.3.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.2}Interpretation in the pairwise dissimilarity space}{\reset@font\mtcSSfont 55}{subsection.3.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.3}Multi-scale description for time series}{\reset@font\mtcSSfont 56}{subsection.3.3.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}M$^2$TML general problem}{\reset@font\mtcSfont 57}{section.3.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.1}General formalization for M$^2$TML}{\reset@font\mtcSSfont 57}{subsection.3.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.2}Push and pull set definition}{\reset@font\mtcSSfont 59}{subsection.3.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.3}Interpretation in the pairwise dissimilarity space}{\reset@font\mtcSSfont 61}{subsection.3.4.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.5}Linear formalization for M$^2$TML}{\reset@font\mtcSfont 62}{section.3.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.6}Quadratic formalization for M$^2$TML}{\reset@font\mtcSfont 63}{section.3.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.1}Primal and dual formalization}{\reset@font\mtcSSfont 64}{subsection.3.6.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.2}Non-linear combined metric}{\reset@font\mtcSSfont 67}{subsection.3.6.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.3}Link between SVM and the quadratic formalization}{\reset@font\mtcSSfont 68}{subsection.3.6.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.7}SVM-based formalization for M$^2$TML}{\reset@font\mtcSfont 70}{section.3.7}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.1}Support Vector Machine (\textsc {svm}) resolution}{\reset@font\mtcSSfont 70}{subsection.3.7.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.2}Solution for the linearly separable Pull and Push sets}{\reset@font\mtcSSfont 71}{subsection.3.7.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.3}Solution for the non-linearly separable Pull and Push sets}{\reset@font\mtcSSfont 73}{subsection.3.7.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.8}SVM-based solution and algorithm for M$^2$TML}{\reset@font\mtcSfont 74}{section.3.8}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.9}Conclusion of the chapter}{\reset@font\mtcSfont 76}{section.3.9}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Motivations}{\reset@font\mtcSfont 48}{section.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}A recall on Large Margin Nearest Neighbors (LMNN)}{\reset@font\mtcSfont 50}{section.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Multi-modal and multi-scale pairwise dissimilarity space}{\reset@font\mtcSfont 52}{section.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}Pairwise embedding}{\reset@font\mtcSSfont 52}{subsection.3.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.2}Interpretation in the pairwise dissimilarity space}{\reset@font\mtcSSfont 53}{subsection.3.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.3}Multi-scale description for time series}{\reset@font\mtcSSfont 54}{subsection.3.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}M$^2$TML general problem}{\reset@font\mtcSfont 55}{section.3.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.1}General formalization for M$^2$TML}{\reset@font\mtcSSfont 55}{subsection.3.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.2}Push and pull set definition}{\reset@font\mtcSSfont 57}{subsection.3.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.3}Interpretation in the pairwise dissimilarity space}{\reset@font\mtcSSfont 59}{subsection.3.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.5}Linear formalization for M$^2$TML}{\reset@font\mtcSfont 60}{section.3.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.6}Quadratic formalization for M$^2$TML}{\reset@font\mtcSfont 61}{section.3.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.1}Primal and dual formalization}{\reset@font\mtcSSfont 62}{subsection.3.6.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.2}Non-linear combined metric}{\reset@font\mtcSSfont 65}{subsection.3.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.3}Link between SVM and the quadratic formalization}{\reset@font\mtcSSfont 66}{subsection.3.6.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.7}SVM-based formalization for M$^2$TML}{\reset@font\mtcSfont 68}{section.3.7}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.1}Support Vector Machine (\textsc {svm}) resolution}{\reset@font\mtcSSfont 68}{subsection.3.7.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.2}Solution for the linearly separable Pull and Push sets}{\reset@font\mtcSSfont 69}{subsection.3.7.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.7.3}Solution for the non-linearly separable Pull and Push sets}{\reset@font\mtcSSfont 71}{subsection.3.7.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.8}SVM-based solution and algorithm for M$^2$TML}{\reset@font\mtcSfont 72}{section.3.8}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.9}Conclusion of the chapter}{\reset@font\mtcSfont 74}{section.3.9}}

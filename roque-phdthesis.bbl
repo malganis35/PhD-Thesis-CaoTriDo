@@ -385,7 +385,9 @@
   \verb http://arxiv.org/abs/1306.6709
   \endverb
   \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Desktop/ML Learning survey.pdf:pdf
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Bellet, Habrard, Sebban - 2013 - A Survey on Metric L
+  \verb earning for Feature Vectors and Structured Data.pdf:pdf
   \endverb
   \field{type}{techreport}
   \field{eprinttype}{arXiv}
@@ -653,8 +655,8 @@
   non-parametric metrics are provided. In particular, the classification of
   time series as stationary or as non-stationary is discussed. The use of both
   hierarchical and non-hierarchical clustering algorithms is considered. An
-  illustrative example with economic time series data is also presented. ©
-  2005 Elsevier B.V. All rights reserved.%
+  illustrative example with economic time series data is also presented.
+  {\textcopyright} 2005 Elsevier B.V. All rights reserved.%
   }
   \verb{doi}
   \verb 10.1016/j.csda.2005.04.012
@@ -691,12 +693,16 @@
   the classification of the nearest of a set of previously classified points.
   This rule is independent of the underlying joint distribution on the sample
   points and their classifications, and hence the probability of
-  error<tex>R</tex>of such a rule must be at least as great as the Bayes
-  probability of error<tex>R{\^{}}{\{}ast{\}}</tex>--the minimum probability of
-  error over all decision rules taking underlying probability structure into
-  account. However, in a large sample analysis, we will show in
-  the<tex>M</tex>-category case that<tex>R{\^{}}{\{}ast{\}} leq R leq
-  R{\^{}}{\{}ast{\}}(2 --MR{\^{}}{\{}ast{\}}/(M-1))</tex>, where these bounds
+  error{\textless}tex{\textgreater}R{\textless}/tex{\textgreater}of such a rule
+  must be at least as great as the Bayes probability of
+  error{\textless}tex{\textgreater}R{\^{}}{\{}ast{\}}{\textless}/tex{\textgreater}--the
+  minimum probability of error over all decision rules taking underlying
+  probability structure into account. However, in a large sample analysis, we
+  will show in
+  the{\textless}tex{\textgreater}M{\textless}/tex{\textgreater}-category case
+  that{\textless}tex{\textgreater}R{\^{}}{\{}ast{\}} leq R leq
+  R{\^{}}{\{}ast{\}}(2
+  --MR{\^{}}{\{}ast{\}}/(M-1)){\textless}/tex{\textgreater}, where these bounds
   are the tightest possible, for all suitably smooth underlying distributions.
   Thus for any number of categories, the probability of error of the nearest
   neighbor rule is bounded above by twice the Bayes probability of error. In
@@ -1333,7 +1339,9 @@
   \endverb
   \field{volume}{25}
   \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Desktop/smc95.pdf:pdf
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Denoeux - 1995 - A k-nearest neighbor classification
+  \verb rule based on Dempster-Shafer theory.pdf:pdf
   \endverb
   \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics}
   \field{year}{1995}
@@ -1622,74 +1630,73 @@
   \field{labelalpha}{Dre+06}
   \field{sortinit}{D}
   \field{abstract}{%
-  En une vingtaine d’ann{\'{e}}es, l’apprentissage artificiel est devenu
-  une branche majeure des math{\'{e}}matiques appliqu{\'{e}}es, {\`{a}}
-  l’intersection des statistiques et de l’intelligence artificielle. Son
+  En une vingtaine d'ann{\'{e}}es, l'apprentissage artificiel est devenu une
+  branche majeure des math{\'{e}}matiques appliqu{\'{e}}es, {\`{a}}
+  l'intersection des statistiques et de l'intelligence artificielle. Son
   objectif est de r{\'{e}}aliser des mod{\`{e}}les qui apprennent « par
-  l’exemple » : il s’appuie sur des donn{\'{e}}es num{\'{e}}riques
+  l'exemple » : il s'appuie sur des donn{\'{e}}es num{\'{e}}riques
   (r{\'{e}}sultats de mesures ou de simulations), contrairement aux
-  mod{\`{e}}les « de connaissances » qui s’appuient sur des {\'{e}}quations
+  mod{\`{e}}les « de connaissances » qui s'appuient sur des {\'{e}}quations
   issues des premiers principes de la physique, de la chimie, de la biologie,
-  de l’{\'{e}}conomie, etc. L’apprentis- sage statistique est d’une
-  grande utilit{\'{e}} lorsque l’on cherche {\`{a}} mod{\'{e}}liser des
-  processus complexes, souvent non lin{\'{e}}aires, pour lesquels les
-  connaissances th{\'{e}}oriques sont trop impr{\'{e}}cises pour permettre des
-  pr{\'{e}}dictions pr{\'{e}}cises. Ses domaines d’applications sont
-  multiples : fouille de donn{\'{e}}es, bio-informatique, g{\'{e}}nie des
+  de l'{\'{e}}conomie, etc. L'apprentis- sage statistique est d'une grande
+  utilit{\'{e}} lorsque l'on cherche {\`{a}} mod{\'{e}}liser des processus
+  complexes, souvent non lin{\'{e}}aires, pour lesquels les connaissances
+  th{\'{e}}oriques sont trop impr{\'{e}}cises pour permettre des
+  pr{\'{e}}dictions pr{\'{e}}cises. Ses domaines d'applications sont multiples
+  : fouille de donn{\'{e}}es, bio-informatique, g{\'{e}}nie des
   proc{\'{e}}d{\'{e}}s, aide au diagnostic m{\'{e}}dical,
-  t{\'{e}}l{\'{e}}communications, interface cerveau-machines, et bien
-  d’autres. Cet ouvrage refl{\`{e}}te en partie l’{\'{e}}volution de cette
-  discipline, depuis ses balbutiements au d{\'{e}}but des ann{\'{e}}es 1980,
-  jusqu’{\`{a}} sa situation actuelle ; il n’a pas du tout la
-  pr{\'{e}}tention de faire un point, m{\^{e}}me partiel, sur l’ensemble des
-  d{\'{e}}veloppements pass{\'{e}}s et actuels, mais plut{\^{o}}t d’insister
-  sur les principes et sur les m{\'{e}}thodes {\'{e}}prouv{\'{e}}s, dont les
-  bases scientifiques sont s{\^{u}}res. Dans un domaine sans cesse parcouru de
-  modes multiples et {\'{e}}ph{\'{e}}m{\`{e}}res, il est utile, pour qui
-  cherche {\`{a}} acqu{\'{e}}rir les connaissances et principes de base,
-  d’insister sur les aspects p{\'{e}}rennes du domaine. Cet ouvrage fait
-  suite {\`{a}} R{\'{e}}seaux de neurones, m{\'{e}}thodologies et applications,
-  des m{\^{e}}mes auteurs, paru en 2000, r{\'{e}}{\'{e}}dit{\'{e}} en 2004,
-  chez le m{\^{e}}me {\'{e}}diteur, puis publi{\'{e}} en traduction anglaise
-  chez Springer. Consacr{\'{e}} essentiellement aux r{\'{e}}seaux de neurones
-  et aux cartes auto-adaptatives, il a largement contribu{\'{e}} {\`{a}}
-  populariser ces techniques et {\`{a}} convaincre leurs utilisateurs qu’il
-  est possible d’obtenir des r{\'{e}}sultats remarquables, {\`{a}} condition
-  de mettre en {\oe}uvre une m{\'{e}}thodologie de conception rigoureuse,
-  scientifique- ment fond{\'{e}}e, dans un domaine o{\`{u}} l’empirisme a
-  longtemps tenu lieu de m{\'{e}}thode. Tout en restant fid{\`{e}}le {\`{a}}
-  l’esprit de cet ouvrage, combinant fondements math{\'{e}}matiques et
-  m{\'{e}}thodologie de mise en {\oe}uvre, les auteurs ont {\'{e}}largi le
-  champ de la pr{\'{e}}sentation, afin de permettre au lecteur d’aborder
-  d’autres m{\'{e}}thodes d’apprentissage statistique que celles qui sont
-  directement d{\'{e}}crites dans cet ouvrage. En effet, les succ{\`{e}}s de
-  l’apprentissage dans un grand nombre de domaines ont pouss{\'{e}} au
-  d{\'{e}}veloppement de tr{\`{e}}s nombreuses variantes, souvent
-  destin{\'{e}}es {\`{a}} r{\'{e}}pondre efficacement aux exigences de telle ou
-  telle classe d’applications. Toutes ces variantes ont n{\'{e}}anmoins des
-  bases th{\'{e}}oriques et des aspects m{\'{e}}thodolo- giques communs,
-  qu’il est important d’avoir pr{\'{e}}sents {\`{a}} l’esprit. Le terme
-  d’apprentissage, comme celui de r{\'{e}}seau de neurones, {\'{e}}voque
-  {\'{e}}videmment le fonctionnement du cerveau. Il ne faut pourtant pas
-  s’attendre {\`{a}} trouver ici d’explications sur les m{\'{e}}canismes de
-  traitement des informations dans les syst{\`{e}}mes nerveux ; ces derniers
-  sont d’une grande complexit{\'{e}}, r{\'{e}}sultant de processus
-  {\'{e}}lectriques et chimiques subtils, encore mal compris en d{\'{e}}pit de
-  la grande quantit{\'{e}} de donn{\'{e}}es exp{\'{e}}rimentales disponibles.
-  Si les m{\'{e}}thodes d’apprentissage statistique peuvent {\^{e}}tre
-  d’une grande utilit{\'{e}} pour cr{\'{e}}er des mod{\`{e}}les empiriques de
-  telle ou telle fonction r{\'{e}}alis{\'{e}}e par le syst{\`{e}}me nerveux,
-  celles qui sont d{\'{e}}crites dans cet ouvrage n’ont aucunement la
-  pr{\'{e}}tention d’imiter, m{\^{e}}me vaguement, le fonctionne- ment du
-  cerveau. L’apprentissage artificiel, notamment statistique, permettra-t-il
-  un jour de donner aux ordinateurs des capacit{\'{e}}s analogues {\`{a}}
-  celles des {\^{e}}tres humains ? Se rapprochera-t-on de cet objectif en
-  perfectionnant les techniques actuelles d’apprentissage, ou bien des
-  approches radicalement nouvelles sont-elles indispensables ? Faut-il
-  s’inspirer de ce que l’on sait, ou croit savoir, sur le fonctionnement du
-  cerveau ? Ces questions font l’objet de d{\'{e}}bats passionn{\'{e}}s, et
-  passionnants, au sein de la communaut{\'{e}} scientifique : on n’en
-  trouvera pas les r{\'{e}}ponses ici.%
+  t{\'{e}}l{\'{e}}communications, interface cerveau-machines, et bien d'autres.
+  Cet ouvrage refl{\`{e}}te en partie l'{\'{e}}volution de cette discipline,
+  depuis ses balbutiements au d{\'{e}}but des ann{\'{e}}es 1980, jusqu'{\`{a}}
+  sa situation actuelle ; il n'a pas du tout la pr{\'{e}}tention de faire un
+  point, m{\^{e}}me partiel, sur l'ensemble des d{\'{e}}veloppements
+  pass{\'{e}}s et actuels, mais plut{\^{o}}t d'insister sur les principes et
+  sur les m{\'{e}}thodes {\'{e}}prouv{\'{e}}s, dont les bases scientifiques
+  sont s{\^{u}}res. Dans un domaine sans cesse parcouru de modes multiples et
+  {\'{e}}ph{\'{e}}m{\`{e}}res, il est utile, pour qui cherche {\`{a}}
+  acqu{\'{e}}rir les connaissances et principes de base, d'insister sur les
+  aspects p{\'{e}}rennes du domaine. Cet ouvrage fait suite {\`{a}}
+  R{\'{e}}seaux de neurones, m{\'{e}}thodologies et applications, des
+  m{\^{e}}mes auteurs, paru en 2000, r{\'{e}}{\'{e}}dit{\'{e}} en 2004, chez le
+  m{\^{e}}me {\'{e}}diteur, puis publi{\'{e}} en traduction anglaise chez
+  Springer. Consacr{\'{e}} essentiellement aux r{\'{e}}seaux de neurones et aux
+  cartes auto-adaptatives, il a largement contribu{\'{e}} {\`{a}} populariser
+  ces techniques et {\`{a}} convaincre leurs utilisateurs qu'il est possible
+  d'obtenir des r{\'{e}}sultats remarquables, {\`{a}} condition de mettre en
+  {\oe}uvre une m{\'{e}}thodologie de conception rigoureuse, scientifique- ment
+  fond{\'{e}}e, dans un domaine o{\`{u}} l'empirisme a longtemps tenu lieu de
+  m{\'{e}}thode. Tout en restant fid{\`{e}}le {\`{a}} l'esprit de cet ouvrage,
+  combinant fondements math{\'{e}}matiques et m{\'{e}}thodologie de mise en
+  {\oe}uvre, les auteurs ont {\'{e}}largi le champ de la pr{\'{e}}sentation,
+  afin de permettre au lecteur d'aborder d'autres m{\'{e}}thodes
+  d'apprentissage statistique que celles qui sont directement d{\'{e}}crites
+  dans cet ouvrage. En effet, les succ{\`{e}}s de l'apprentissage dans un grand
+  nombre de domaines ont pouss{\'{e}} au d{\'{e}}veloppement de tr{\`{e}}s
+  nombreuses variantes, souvent destin{\'{e}}es {\`{a}} r{\'{e}}pondre
+  efficacement aux exigences de telle ou telle classe d'applications. Toutes
+  ces variantes ont n{\'{e}}anmoins des bases th{\'{e}}oriques et des aspects
+  m{\'{e}}thodolo- giques communs, qu'il est important d'avoir pr{\'{e}}sents
+  {\`{a}} l'esprit. Le terme d'apprentissage, comme celui de r{\'{e}}seau de
+  neurones, {\'{e}}voque {\'{e}}videmment le fonctionnement du cerveau. Il ne
+  faut pourtant pas s'attendre {\`{a}} trouver ici d'explications sur les
+  m{\'{e}}canismes de traitement des informations dans les syst{\`{e}}mes
+  nerveux ; ces derniers sont d'une grande complexit{\'{e}}, r{\'{e}}sultant de
+  processus {\'{e}}lectriques et chimiques subtils, encore mal compris en
+  d{\'{e}}pit de la grande quantit{\'{e}} de donn{\'{e}}es exp{\'{e}}rimentales
+  disponibles. Si les m{\'{e}}thodes d'apprentissage statistique peuvent
+  {\^{e}}tre d'une grande utilit{\'{e}} pour cr{\'{e}}er des mod{\`{e}}les
+  empiriques de telle ou telle fonction r{\'{e}}alis{\'{e}}e par le
+  syst{\`{e}}me nerveux, celles qui sont d{\'{e}}crites dans cet ouvrage n'ont
+  aucunement la pr{\'{e}}tention d'imiter, m{\^{e}}me vaguement, le fonctionne-
+  ment du cerveau. L'apprentissage artificiel, notamment statistique,
+  permettra-t-il un jour de donner aux ordinateurs des capacit{\'{e}}s
+  analogues {\`{a}} celles des {\^{e}}tres humains ? Se rapprochera-t-on de cet
+  objectif en perfectionnant les techniques actuelles d'apprentissage, ou bien
+  des approches radicalement nouvelles sont-elles indispensables ? Faut-il
+  s'inspirer de ce que l'on sait, ou croit savoir, sur le fonctionnement du
+  cerveau ? Ces questions font l'objet de d{\'{e}}bats passionn{\'{e}}s, et
+  passionnants, au sein de la communaut{\'{e}} scientifique : on n'en trouvera
+  pas les r{\'{e}}ponses ici.%
   }
   \field{edition}{Eyrolles}
   \field{isbn}{9782212114645}
@@ -1811,8 +1818,10 @@
   \field{title}{{Learning multiple temporal matching for time series
   classification}}
   \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Desktop/22488{\_}FRAMBOURG{\_}2013{\_}
-  \verb archivage.pdf:pdf
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Frambourg, Douzal-chouakria, Gaussier - 2013 - Appren
+  \verb tissage de couplages pour la discrimination de s{\'{e}}ries temporelles
+  \verb .pdf:pdf
   \endverb
   \field{year}{2013}
 \endentry
@@ -1849,7 +1858,7 @@
   The primary objective of this paper is to serve as a glossary for interested
   researchers to have an overall picture on the current time series data mining
   development and identify their potential research direction to further
-  investigation. © 2010 Elsevier Ltd. All rights reserved.%
+  investigation. {\textcopyright} 2010 Elsevier Ltd. All rights reserved.%
   }
   \field{booktitle}{Engineering Applications of Artificial Intelligence}
   \verb{doi}
@@ -2508,7 +2517,9 @@
     {San Jose, CA}%
   }
   \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Desktop/ICDM01.pdf:pdf
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Kalpakis, Gada, Puttagunta - 2001 - Distance Measures
+  \verb  for Effective Clustering of ARIMA Time-Series.pdf:pdf
   \endverb
   \field{year}{2001}
 \endentry
@@ -2663,9 +2674,9 @@
   \verb io-classification-using-convolutional-deep-belief-networks.pdf
   \endverb
   \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Desktop/3674-unsupervised-feature-lear
-  \verb ning-for-audio-classification-using-convolutional-deep-belief-networks.
-  \verb pdf:pdf
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Lee et al. - 2009 - Unsupervised feature learning for
+  \verb  audio classification using convolutional deep belief networks.pdf:pdf
   \endverb
   \field{journaltitle}{Nips}
   \field{year}{2009}
@@ -3018,7 +3029,9 @@
   algorithm}}
   \field{volume}{6}
   \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Desktop/v6-3299-3303.pdf:pdf
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Mohamad, Usman - 2013 - Standardization and its effec
+  \verb ts on K-means clustering algorithm.pdf:pdf
   \endverb
   \field{journaltitle}{Research Journal of Applied Sciences, Engineering and
   Technology}
@@ -3103,9 +3116,9 @@
   determination}}
   \field{volume}{78}
   \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Desktop/nagelkerke{\_}n.j.d.{\_}1991{\
-  \verb _}-{\_}a{\_}note{\_}on{\_}a{\_}general{\_}definition{\_}of{\_}the{\_}co
-  \verb efficient{\_}of{\_}determination.pdf:pdf
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Nagelkerke - 1991 - A note on a general definition of
+  \verb  the coefficient of determination.pdf:pdf
   \endverb
   \field{journaltitle}{Biometrika}
   \field{year}{1991}
@@ -3151,8 +3164,8 @@
   \verb{file}
   \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
   \verb esktop/Downloaded/Najmeddine et al. - 2012 - Mesures de similarit{\'{e}
-  \verb } pour l’aide {\`{a}} l’analyse des donn{\'{e}}es {\'{e}}nerg{\'{e}
-  \verb }tiques de b{\^{a}}timents.pdf:pdf
+  \verb } pour l'aide {\`{a}} l'analyse des donn{\'{e}}es {\'{e}}nerg{\'{e}}tiq
+  \verb ues de b{\^{a}}timents.pdf:pdf
   \endverb
   \field{year}{2012}
 \endentry
@@ -4084,6 +4097,67 @@
   \field{year}{1998}
 \endentry
 
+\entry{Vishwanathan2007}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Vishwanathan}{V.}%
+     {S~V~N}{S.~V.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Smola}{S.}%
+     {A~J}{A.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vidal}{V.}%
+     {R}{R}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{arma models and dynamical systems,binet-cauchy theorem,dynamic
+  scenes,dynamic textures,kernel methods,linear-system,reproducing kernel
+  hilbert spaces,sylvester equation,time-series}
+  \strng{namehash}{VSVNSAJVR1}
+  \strng{fullhash}{VSVNSAJVR1}
+  \field{labelalpha}{VSV07}
+  \field{sortinit}{V}
+  \field{abstract}{%
+  We propose a family of kernels based on the Binet-Cauchy theorem, and its
+  extension to Fredholm operators. Our derivation provides a unifying framework
+  for all kernels on dynamical systems currently used in machine learning,
+  including kernels derived from the behavioral framework, diffusion processes,
+  marginalized kernels, kernels on graphs, and the kernels on sets arising from
+  the subspace angle approach. In the case of linear time-invariant systems, we
+  derive explicit formulae for Computing the proposed Binet-Cauchy kernels by
+  solving Sylvester equations, and relate the proposed kernels to existing
+  kernels based on cepstrum coefficients and subspace angles. We show efficient
+  methods for computing Our kernels which make them viable for the
+  practitioner. Besides their theoretical appeal, these kernels can be used
+  efficiently in the comparison of video sequences of dynamic scenes that can
+  be modeled as the output of a linear time-invariant dynamical system. One
+  advantage of our kernels is that they take the initial conditions of the
+  dynamical systems into account. As a first example, we use our kernels to
+  compare video sequences of dynamic textures. As a second example, we apply
+  our kernels to the problem of clustering short clips of a movie. Experimental
+  evidence shows superior performance of our kernels.%
+  }
+  \verb{doi}
+  \verb DOI 10.1007/s11263-006-9352-0
+  \endverb
+  \field{isbn}{0920-5691}
+  \field{number}{1}
+  \field{pages}{95\bibrangedash 119}
+  \field{title}{{Binet-cauchy kernels on dynamical systems and its application
+  to the analysis of dynamic scenes}}
+  \verb{url}
+  \verb {\textless}Go to ISI{\textgreater}://000244616100005
+  \endverb
+  \field{volume}{73}
+  \field{journaltitle}{International Journal of Computer Vision}
+  \field{year}{2007}
+\endentry
+
 \entry{Wang2002}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -4499,8 +4573,9 @@
   classification}}
   \field{volume}{14}
   \verb{file}
-  \verb :C$\backslash$:/Users/SESA245227/Desktop/Haicho{\_}Inforamtion Fusion{\
-  \verb _}2012{\_}MultiMetric.pdf:pdf
+  \verb :C$\backslash$:/Users/SESA245227/AppData/Local/Mendeley Ltd./Mendeley D
+  \verb esktop/Downloaded/Zhang et al. - 2013 - Multi-metric learning for multi
+  \verb -sensor fusion based classification.pdf:pdf
   \endverb
   \field{journaltitle}{Information Fusion}
   \field{year}{2013}
@@ -4634,7 +4709,7 @@
   optimization problem, we use an alternating method in which each subproblem
   has an efficient solution. Experimental results on some commonly used
   transfer learning applications demonstrate the effectiveness of our method.
-  © 2010 ACM.%
+  {\textcopyright} 2010 ACM.%
   }
   \verb{doi}
   \verb 10.1145/1835804.1835954

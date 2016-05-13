@@ -185,7 +185,7 @@ C
 	\sum\limits_{i,j \rightsquigarrow i,l \nrightarrow i} \xi_{ijl}
 }
 _{push} \right\rbrace \\
-&\text{s.t.  } \forall j \rightsquigarrow i, l \nrightarrow i, \\
+&\text{s.t.  } \forall i = 1,\ldots, n, \forall j \rightsquigarrow i, l \nrightarrow i, \\
 & D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_l) - D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j)  \geq 1-\xi_{ijl} \\
 & \xi_{ijl} \geq 0 \\
 & \textbf{M} \succeq 0
@@ -353,6 +353,8 @@ Similarly, we formalize the \textsc{m$^2$tml} problem as an optimization problem
 	R_{Pull}(D) 	& = \sum_{\substack{i \\ j \in Pull_i}}D(\textbf{x}_{ij}) \\
 	L_{Push}(\xi) 	& = \sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}} \xi_{ijl}
 \end{align}
+with $D = f(d_1, \ldots, d_p)$ combination of the metrics $d_1, \ldots, d_p$.
+
 The \textsc{m$^2$tml} problem for large margin $k$-NN classification can be written as the following optimization problem:
 \begin{equation}
 \begin{aligned}
@@ -1437,7 +1439,7 @@ To learn a metric for a robust $k$-NN, we formulate the \textsc{m$^2$tml} proble
 			& formalization & formalization & formalization\\
 			\hline
 			$D$  					& Linear & Linear/Non-linear & Linear/Non-linear \\
-			Sparcity 				& Yes	& No    & Yes/No 	\\
+			Sparcity 				& Yes	& No    & Yes ($L_1$ regularized \textsc{svm}) 	\\
 			Dissimilarity properties& Yes 	& No (non-positivity) & Yes		\\
 			\hline
 		\end{tabular}}

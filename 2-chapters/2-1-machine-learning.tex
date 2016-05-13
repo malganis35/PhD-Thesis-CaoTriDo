@@ -434,7 +434,7 @@ In most of the case, the mapping function $\Phi$ does not need to be known since
 \end{figure}
 \footnotetext{source: \url{http://users.sussex.ac.uk/~christ/crs/ml/lec08a.html}}
 
-Many kernels have been proposed in the literature such as the polynomial, sigmoid, exponential or wavelet kernels \cite{Schlkopf2013}. The most popular ones that we will use in our work are respectively the Linear and the Gaussian (or Radial Basis Function ({\sc rbf})) kernels:
+Many kernels have been proposed in the literature such as the polynomial, exponential or wavelet kernels \cite{Schlkopf2013}. The most popular ones that we will use in our work are respectively the Linear and the Gaussian (or Radial Basis Function ({\sc rbf})) kernels:
 \begin{align}
 	& \kappa(\textbf{x}_i,\textbf{x}_j)= \textbf{x}_i ^T \textbf{x}_j \\
 	& \kappa(\textbf{x}_i,\textbf{x}_j)
@@ -577,11 +577,11 @@ E_{\epsilon} (f(\textbf{x}_i)-y_i) =
 		\right) 
 		\label{eq:objectiveSVR}\\
 		& \textbf{s.t. } \forall i=1, \ldots, n: \nonumber\\
-		& y_i-(\textbf{w}^T\textbf{x}_i+b) \geq \epsilon -\xi_{i_1} \\
-		& (\textbf{w}^T\textbf{x}_i+b)-y_i \geq \epsilon -\xi_{i_2} \\
+		& y_i-(\textbf{w}^T\textbf{x}_i+b) \leq \epsilon +\xi_{i_1} \\
+		& (\textbf{w}^T\textbf{x}_i+b)-y_i \leq \epsilon +\xi_{i_2} \\
 		&  \xi_{i_1} \geq 0 \\
 		&  \xi_{i_2} \geq 0
-	\end{align}
+b 	\end{align}
 
 \noindent The slack variables are divided into 2 kind of slacks variables, one for samples above the decision function $f$ ($\xi_{i_1}$), and one for samples under the decision function $f$ ($\xi_{i_2}$). As for {\sc svm}, it is possible to have a dual formulation:
 	\begin{align}
