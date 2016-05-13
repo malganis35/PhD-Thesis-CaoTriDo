@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.15)  13 MAY 2016 15:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.15)  13 MAY 2016 15:08
 entering extended mode
 **roque-phdthesis.tex
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.tex
@@ -2571,7 +2571,7 @@ c-metrics.tex" [30
 Chapter 2.
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-5") [31] <images/time_series_example.png, id=900, 681.747pt x 201.75375pt>
+5") [31] <images/time_series_example.png, id=903, 681.747pt x 201.75375pt>
 File: images/time_series_example.png Graphic file (type png)
 
 <use images/time_series_example.png>
@@ -2586,7 +2586,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [32 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/time_seri
 es_example.png>]
-<images/Representation_Metric.png, id=923, 687.7695pt x 319.79475pt>
+<images/Representation_Metric.png, id=926, 687.7695pt x 319.79475pt>
 File: images/Representation_Metric.png Graphic file (type png)
 
 <use images/Representation_Metric.png>
@@ -2609,7 +2609,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 108.
 
-<images/MDS_example.png, id=927, 631.158pt x 840.741pt>
+<images/MDS_example.png, id=930, 631.158pt x 840.741pt>
 File: images/MDS_example.png Graphic file (type png)
 
 <use images/MDS_example.png>
@@ -2660,7 +2660,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35] <images/Example2_temporal.png, id=990, 418.66759pt x 314.00069pt>
+[35] <images/Example2_temporal.png, id=993, 418.66759pt x 314.00069pt>
 File: images/Example2_temporal.png Graphic file (type png)
 
 <use images/Example2_temporal.png>
@@ -2676,7 +2676,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36] <images/Example2_frequency.png, id=1011, 418.66759pt x 314.00069pt>
+[36] <images/Example2_frequency.png, id=1014, 418.66759pt x 314.00069pt>
 File: images/Example2_frequency.png Graphic file (type png)
 
 <use images/Example2_frequency.png>
@@ -2692,7 +2692,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [37 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Example2_
 temporal.png (PNG copy)> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manus
 crit/images/Example2_frequency.png (PNG copy)>]
-<images/ExampleTimeSeriesMetrics4.png, id=1024, 418.66759pt x 314.00069pt>
+<images/ExampleTimeSeriesMetrics4.png, id=1027, 418.66759pt x 314.00069pt>
 File: images/ExampleTimeSeriesMetrics4.png Graphic file (type png)
 
 <use images/ExampleTimeSeriesMetrics4.png>
@@ -2709,7 +2709,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38] <images/Voice_Example2.png, id=1040, 243.309pt x 296.307pt>
+[38] <images/Voice_Example2.png, id=1043, 243.309pt x 296.307pt>
 File: images/Voice_Example2.png Graphic file (type png)
 
 <use images/Voice_Example2.png>
@@ -2741,14 +2741,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [40 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Voice_Exa
-mple2.png>] <images/DTWgrid2.png, id=1071, 421.78267pt x 337.05232pt>
+mple2.png>] <images/DTWgrid2.png, id=1074, 421.78267pt x 337.05232pt>
 File: images/DTWgrid2.png Graphic file (type png)
 
 <use images/DTWgrid2.png>
 Package pdftex.def Info: images/DTWgrid2.png used on input line 386.
 (pdftex.def)             Requested size: 265.59494pt x 212.23608pt.
 
-<images/DTWwarpedSignals.png, id=1072, 696.53328pt x 314.00069pt>
+<images/DTWwarpedSignals.png, id=1075, 696.53328pt x 314.00069pt>
 File: images/DTWwarpedSignals.png Graphic file (type png)
 
 <use images/DTWwarpedSignals.png>
@@ -2788,7 +2788,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [41 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/DTWgrid2.
 png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/DTWwarpe
 dSignals.png (PNG copy)>]
-<images/CombinedMetrics.png, id=1088, 2336.73pt x 2317.458pt>
+<images/CombinedMetrics.png, id=1091, 2336.73pt x 2317.458pt>
 File: images/CombinedMetrics.png Graphic file (type png)
 
 <use images/CombinedMetrics.png>
@@ -2817,7 +2817,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [43 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/CombinedM
-etrics.png>] <images/SkewedData2.png, id=1105, 544.434pt x 448.074pt>
+etrics.png>] <images/SkewedData2.png, id=1108, 544.434pt x 448.074pt>
 File: images/SkewedData2.png Graphic file (type png)
 
 <use images/SkewedData2.png>
@@ -2870,7 +2870,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-6") [47] <images/CinCECGtorso3.png, id=1169, 644.4075pt x 303.534pt>
+6") [47] <images/CinCECGtorso3.png, id=1172, 644.4075pt x 303.534pt>
 File: images/CinCECGtorso3.png Graphic file (type png)
 
 <use images/CinCECGtorso3.png>
@@ -2914,7 +2914,7 @@ Package nag Warning: Command \centerline is TeX.
  140.
 
 
-<images/TargetImposterRepresentationCao.png, id=1207, 906.38625pt x 363.60844pt
+<images/TargetImposterRepresentationCao.png, id=1210, 906.38625pt x 363.60844pt
 >
 File: images/TargetImposterRepresentationCao.png Graphic file (type png)
  <use images/TargetImposterRepresentationCao.png>
@@ -2952,7 +2952,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[51] <images/PairwiseEmbedding2.png, id=1235, 613.0905pt x 346.896pt>
+[51] <images/PairwiseEmbedding2.png, id=1238, 613.0905pt x 346.896pt>
 File: images/PairwiseEmbedding2.png Graphic file (type png)
 
 <use images/PairwiseEmbedding2.png>
@@ -2967,7 +2967,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [52 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/PairwiseE
 mbedding2.png>]
-<images/Pairwise_interpretation.png, id=1244, 638.98724pt x 272.217pt>
+<images/Pairwise_interpretation.png, id=1247, 638.98724pt x 272.217pt>
 File: images/Pairwise_interpretation.png Graphic file (type png)
 
 <use images/Pairwise_interpretation.png>
@@ -2983,7 +2983,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [53 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Pairwise_
 interpretation.png>]
-<images/ContreExample.png, id=1253, 728.7225pt x 316.7835pt>
+<images/ContreExample.png, id=1256, 728.7225pt x 316.7835pt>
 File: images/ContreExample.png Graphic file (type png)
 
 <use images/ContreExample.png>
@@ -2997,7 +2997,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [54 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/ContreExa
-mple.png>] <images/Intervalles3.png, id=1268, 432.4155pt x 320.397pt>
+mple.png>] <images/Intervalles3.png, id=1271, 432.4155pt x 320.397pt>
 File: images/Intervalles3.png Graphic file (type png)
 
 <use images/Intervalles3.png>
@@ -3048,7 +3048,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[57] <images/Strategy_neighborhood.png, id=1296, 576.35326pt x 398.08725pt>
+[57] <images/Strategy_neighborhood.png, id=1299, 576.35326pt x 398.08725pt>
 File: images/Strategy_neighborhood.png Graphic file (type png)
 
 <use images/Strategy_neighborhood.png>
@@ -3064,7 +3064,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [58 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Strategy_
 neighborhood.png>]
-<images/Transposition_Pairwise4.png, id=1311, 1338.1995pt x 796.1745pt>
+<images/Transposition_Pairwise4.png, id=1314, 1338.1995pt x 796.1745pt>
 File: images/Transposition_Pairwise4.png Graphic file (type png)
 
 <use images/Transposition_Pairwise4.png>
@@ -3229,14 +3229,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[68] <images/projected_norm.png, id=1423, 493.845pt x 327.02174pt>
+[68] <images/projected_norm.png, id=1426, 493.845pt x 327.02174pt>
 File: images/projected_norm.png Graphic file (type png)
 
 <use images/projected_norm.png>
 Package pdftex.def Info: images/projected_norm.png used on input line 1180.
 (pdftex.def)             Requested size: 287.72223pt x 190.52602pt.
 
-<images/Dissimilarity_def_norm_scalar_product.png, id=1425, 1052.733pt x 385.44
+<images/Dissimilarity_def_norm_scalar_product.png, id=1428, 1052.733pt x 385.44
 pt>
 File: images/Dissimilarity_def_norm_scalar_product.png Graphic file (type png)
  <use images/Dissimilarity_def_norm_scalar_product.png>
@@ -3254,7 +3254,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [69 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/projected
-_norm.png>] <images/3D_diss.png, id=1434, 819.06pt x 352.9185pt>
+_norm.png>] <images/3D_diss.png, id=1437, 819.06pt x 352.9185pt>
 File: images/3D_diss.png Graphic file (type png)
 
 <use images/3D_diss.png>
@@ -3295,7 +3295,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [71 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/3D_diss.p
-ng>] <images/Neighborhood_scaling.png, id=1460, 834.11626pt x 335.45325pt>
+ng>] <images/Neighborhood_scaling.png, id=1463, 834.11626pt x 335.45325pt>
 File: images/Neighborhood_scaling.png Graphic file (type png)
 
 <use images/Neighborhood_scaling.png>
@@ -3421,7 +3421,7 @@ i . edu / ml / datasets / Individual + household + electric + power +$
 Package nag Warning: `center' environment in table.
 (nag)                Maybe you want \centering instead on input line 66.
 
-<images/dataset_exp.png, id=1538, 857.604pt x 631.158pt>
+<images/dataset_exp.png, id=1541, 857.604pt x 631.158pt>
 File: images/dataset_exp.png Graphic file (type png)
 
 <use images/dataset_exp.png>
@@ -3694,42 +3694,42 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[80] <images/Stand_m2tml_2.png, id=1610, 418.66759pt x 314.00069pt>
+[80] <images/Stand_m2tml_2.png, id=1613, 418.66759pt x 314.00069pt>
 File: images/Stand_m2tml_2.png Graphic file (type png)
 
 <use images/Stand_m2tml_2.png>
 Package pdftex.def Info: images/Stand_m2tml_2.png used on input line 356.
 (pdftex.def)             Requested size: 216.81pt x 162.6105pt.
 
-<images/behavior_m2tml_2.png, id=1611, 418.66759pt x 314.00069pt>
+<images/behavior_m2tml_2.png, id=1614, 418.66759pt x 314.00069pt>
 File: images/behavior_m2tml_2.png Graphic file (type png)
 
 <use images/behavior_m2tml_2.png>
 Package pdftex.def Info: images/behavior_m2tml_2.png used on input line 357.
 (pdftex.def)             Requested size: 216.81pt x 162.6105pt.
 
-<images/no_warp_m2tml_2.png, id=1612, 418.66759pt x 314.00069pt>
+<images/no_warp_m2tml_2.png, id=1615, 418.66759pt x 314.00069pt>
 File: images/no_warp_m2tml_2.png Graphic file (type png)
 
 <use images/no_warp_m2tml_2.png>
 Package pdftex.def Info: images/no_warp_m2tml_2.png used on input line 358.
 (pdftex.def)             Requested size: 216.81pt x 162.6105pt.
 
-<images/Unimod_m2tml_2.png, id=1613, 418.66759pt x 314.00069pt>
+<images/Unimod_m2tml_2.png, id=1616, 418.66759pt x 314.00069pt>
 File: images/Unimod_m2tml_2.png Graphic file (type png)
 
 <use images/Unimod_m2tml_2.png>
 Package pdftex.def Info: images/Unimod_m2tml_2.png used on input line 359.
 (pdftex.def)             Requested size: 216.81pt x 162.6105pt.
 
-<images/freq_m2tml_2.png, id=1614, 418.66759pt x 314.00069pt>
+<images/freq_m2tml_2.png, id=1617, 418.66759pt x 314.00069pt>
 File: images/freq_m2tml_2.png Graphic file (type png)
 
 <use images/freq_m2tml_2.png>
 Package pdftex.def Info: images/freq_m2tml_2.png used on input line 360.
 (pdftex.def)             Requested size: 216.81pt x 162.6105pt.
 
-<images/apriori_m2tml_2.png, id=1615, 418.66759pt x 314.00069pt>
+<images/apriori_m2tml_2.png, id=1618, 418.66759pt x 314.00069pt>
 File: images/apriori_m2tml_2.png Graphic file (type png)
 
 <use images/apriori_m2tml_2.png>
@@ -4158,7 +4158,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 (nag)                Use \scshape or \textsc instead on input line 452.
 
 
-<images/SonyAIBORobotSurface_NoDelay_bar2.png, id=1624, 844.81139pt x 404.3382p
+<images/SonyAIBORobotSurface_NoDelay_bar2.png, id=1627, 844.81139pt x 404.3382p
 t>
 File: images/SonyAIBORobotSurface_NoDelay_bar2.png Graphic file (type png)
  <use images/SonyAIBORobotSurface_NoDelay_bar2.png>
@@ -4166,14 +4166,14 @@ Package pdftex.def Info: images/SonyAIBORobotSurface_NoDelay_bar2.png used on i
 nput line 460.
 (pdftex.def)             Requested size: 252.94499pt x 121.06177pt.
 
-<images/Beef_NoDelay_bar2.png, id=1625, 844.81139pt x 369.44922pt>
+<images/Beef_NoDelay_bar2.png, id=1628, 844.81139pt x 369.44922pt>
 File: images/Beef_NoDelay_bar2.png Graphic file (type png)
 
 <use images/Beef_NoDelay_bar2.png>
 Package pdftex.def Info: images/Beef_NoDelay_bar2.png used on input line 461.
 (pdftex.def)             Requested size: 252.94499pt x 110.61575pt.
 
-<images/CinC_ECG_torso_NoDelay_bar2.png, id=1626, 844.81139pt x 400.60008pt>
+<images/CinC_ECG_torso_NoDelay_bar2.png, id=1629, 844.81139pt x 400.60008pt>
 File: images/CinC_ECG_torso_NoDelay_bar2.png Graphic file (type png)
 
 <use images/CinC_ECG_torso_NoDelay_bar2.png>
@@ -4181,7 +4181,7 @@ Package pdftex.def Info: images/CinC_ECG_torso_NoDelay_bar2.png used on input l
 ine 462.
 (pdftex.def)             Requested size: 252.94499pt x 119.94255pt.
 
-<images/FaceFour_DTW_bar2.png, id=1627, 844.81139pt x 426.1438pt>
+<images/FaceFour_DTW_bar2.png, id=1630, 844.81139pt x 426.1438pt>
 File: images/FaceFour_DTW_bar2.png Graphic file (type png)
 
 <use images/FaceFour_DTW_bar2.png>
@@ -4208,7 +4208,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<images/SonyAIBORobotSurface_NoDelay_TS.png, id=1628, 418.66759pt x 314.00069pt
+<images/SonyAIBORobotSurface_NoDelay_TS.png, id=1631, 418.66759pt x 314.00069pt
 >
 File: images/SonyAIBORobotSurface_NoDelay_TS.png Graphic file (type png)
  <use images/SonyAIBORobotSurface_NoDelay_TS.png>
@@ -4216,14 +4216,14 @@ Package pdftex.def Info: images/SonyAIBORobotSurface_NoDelay_TS.png used on inp
 ut line 470.
 (pdftex.def)             Requested size: 195.12877pt x 146.34898pt.
 
-<images/Beef_NoDelay_TS.png, id=1629, 418.66759pt x 314.00069pt>
+<images/Beef_NoDelay_TS.png, id=1632, 418.66759pt x 314.00069pt>
 File: images/Beef_NoDelay_TS.png Graphic file (type png)
 
 <use images/Beef_NoDelay_TS.png>
 Package pdftex.def Info: images/Beef_NoDelay_TS.png used on input line 471.
 (pdftex.def)             Requested size: 195.12877pt x 146.34898pt.
 
-<images/CinC_ECG_torso_NoDelay_TS.png, id=1630, 418.66759pt x 314.00069pt>
+<images/CinC_ECG_torso_NoDelay_TS.png, id=1633, 418.66759pt x 314.00069pt>
 File: images/CinC_ECG_torso_NoDelay_TS.png Graphic file (type png)
 
 <use images/CinC_ECG_torso_NoDelay_TS.png>
@@ -4231,7 +4231,7 @@ Package pdftex.def Info: images/CinC_ECG_torso_NoDelay_TS.png used on input lin
 e 472.
 (pdftex.def)             Requested size: 195.12877pt x 146.34898pt.
 
-<images/FaceFour_DTW_TS2.png, id=1631, 418.04457pt x 312.75465pt>
+<images/FaceFour_DTW_TS2.png, id=1634, 418.04457pt x 312.75465pt>
 File: images/FaceFour_DTW_TS2.png Graphic file (type png)
 
 <use images/FaceFour_DTW_TS2.png>
@@ -4257,7 +4257,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/FaceFourALL_DTWDB_2.png, id=1632, 422.32782pt x 316.18124pt>
+<images/FaceFourALL_DTWDB_2.png, id=1635, 422.32782pt x 316.18124pt>
 File: images/FaceFourALL_DTWDB_2.png Graphic file (type png)
 
 <use images/FaceFourALL_DTWDB_2.png>
@@ -4273,7 +4273,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 494.
 
-<images/FaceFourALL_D_Delay_3.png, id=1633, 422.32782pt x 316.18124pt>
+<images/FaceFourALL_D_Delay_3.png, id=1636, 422.32782pt x 316.18124pt>
 File: images/FaceFourALL_D_Delay_3.png Graphic file (type png)
 
 <use images/FaceFourALL_D_Delay_3.png>
@@ -4403,7 +4403,7 @@ lusion.tex" [87
 
 
 
-] <images/SonyAIBO_temp.png, id=1688, 586.5915pt x 231.86626pt>
+] <images/SonyAIBO_temp.png, id=1691, 586.5915pt x 231.86626pt>
 File: images/SonyAIBO_temp.png Graphic file (type png)
 
 <use images/SonyAIBO_temp.png>
@@ -4435,7 +4435,7 @@ temp.png>]
 Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 57.
 
-<images/Discretize_binning.png, id=1708, 690.78075pt x 301.125pt>
+<images/Discretize_binning.png, id=1711, 690.78075pt x 301.125pt>
 File: images/Discretize_binning.png Graphic file (type png)
 
 <use images/Discretize_binning.png>
@@ -4450,7 +4450,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [90 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Discretiz
 e_binning.png>]
-<images/Discretize_binning_border_effect.png, id=1716, 392.667pt x 320.99925pt>
+<images/Discretize_binning_border_effect.png, id=1719, 392.667pt x 320.99925pt>
 File: images/Discretize_binning_border_effect.png Graphic file (type png)
 <use images/Discretize_binning_border_effect.png>
 Package pdftex.def Info: images/Discretize_binning_border_effect.png used on in
@@ -4461,7 +4461,7 @@ put line 73.
 Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 87.
 
-<images/pairwise_label_tube2.png, id=1718, 580.569pt x 389.0535pt>
+<images/pairwise_label_tube2.png, id=1721, 580.569pt x 389.0535pt>
 File: images/pairwise_label_tube2.png Graphic file (type png)
 
 <use images/pairwise_label_tube2.png>
@@ -4772,10 +4772,10 @@ Package logreq Info: Writing requests to 'roque-phdthesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
- 40521 strings out of 493921
- 890621 string characters out of 3146064
- 1353416 words of memory out of 3000000
- 42025 multiletter control sequences out of 15000+200000
+ 40524 strings out of 493921
+ 890680 string characters out of 3146064
+ 1354007 words of memory out of 3000000
+ 42027 multiletter control sequences out of 15000+200000
  46692 words of font info for 130 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  59i,25n,87p,2061b,3246s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4898,9 +4898,9 @@ MikeTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/
 MikeTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files (x86)/
 MikeTeX/fonts/type1/hoekwater/rsfs/rsfs10.pfb><C:/Program Files (x86)/MikeTeX/f
 onts/type1/hoekwater/rsfs/rsfs7.pfb>
-Output written on roque-phdthesis.pdf (126 pages, 3660941 bytes).
+Output written on roque-phdthesis.pdf (126 pages, 3661948 bytes).
 PDF statistics:
- 3138 PDF objects out of 3580 (max. 8388607)
- 588 named destinations out of 1000 (max. 500000)
+ 3143 PDF objects out of 3580 (max. 8388607)
+ 589 named destinations out of 1000 (max. 500000)
  595 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -671,6 +671,58 @@
   \field{year}{2006}
 \endentry
 
+\entry{Clarke2005}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Clarke}{C.}%
+     {Stella~M.}{S.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Griebsch}{G.}%
+     {Jan~H.}{J.~H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Simpson}{S.}%
+     {Timothy~W.}{T.~W.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CSMGJHSTW1}
+  \strng{fullhash}{CSMGJHSTW1}
+  \field{labelalpha}{CGS05}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  A variety of metamodeling techniques have been developed in the past decade
+  to reduce the computational expense of computer-based analysis and simulation
+  codes. Metamodeling is the process of building a "model of a model" to
+  provide a fast surrogate for a computationally expensive computer code.
+  Common metamodeling techniques include response surface methodology, kriging,
+  radial basis functions, and multivariate adaptive regression splines. In this
+  paper, we investigate support vector regression (SVR) as an alternative
+  technique for approximating complex engineering analyses. The computationally
+  efficient theory behind SVR is reviewed, and SVR approximations are compared
+  against the aforementioned four metamodeling techniques using a test bed of
+  26 engineering analysis functions. SVR achieves more accurate and more robust
+  function approximations than the four metamodeling techniques, and shows
+  great potential for metamodeling applications, adding to the growing body of
+  promising empirical performance of SVR. Copyright {\textcopyright} 2005 by
+  ASME.%
+  }
+  \verb{doi}
+  \verb 10.1115/1.1897403
+  \endverb
+  \field{issn}{10500472}
+  \field{number}{6}
+  \field{pages}{1077}
+  \field{title}{{Analysis of Support Vector Regression for Approximation of
+  Complex Engineering Analyses}}
+  \field{volume}{127}
+  \field{journaltitle}{Journal of Mechanical Design}
+  \field{year}{2005}
+\endentry
+
 \entry{Cover1967b}{article}{}
   \name{author}{2}{}{%
     {{}%
