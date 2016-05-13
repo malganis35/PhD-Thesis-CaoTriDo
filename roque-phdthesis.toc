@@ -28,15 +28,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.1}$k$-Nearest Neighbors ($k$-NN) classifier}{15}{subsection.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Support Vector Machine (SVM) algorithm}{16}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.2}Support Vector Machine (SVM) algorithm}{17}{subsection.1.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.2.2.a}Intuition}{17}{subsubsection.1.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.2.b}Primal formulation}{19}{subsubsection.1.2.2.2}
+\contentsline {subsubsection}{\numberline {1.2.2.b}Primal formulation}{18}{subsubsection.1.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.2.c}Dual formulation}{19}{subsubsection.1.2.2.3}
+\contentsline {subsubsection}{\numberline {1.2.2.c}Dual formulation}{20}{subsubsection.1.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.2.d}Kernel trick}{21}{subsubsection.1.2.2.4}
+\contentsline {subsubsection}{\numberline {1.2.2.d}Kernel trick}{22}{subsubsection.1.2.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.2.2.e}Interpretation}{25}{subsubsection.1.2.2.5}
 \defcounter {refsection}{0}\relax 
@@ -88,7 +88,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}M$^2$TML general problem}{55}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}General formalization for M$^2$TML}{55}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}General formalization for M$^2$TML}{56}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.2}Push and pull set definition}{57}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 

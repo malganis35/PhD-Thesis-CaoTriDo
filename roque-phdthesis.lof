@@ -18,9 +18,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Example of $k$-NN classification.}}{15}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Example of linear classifiers (blue lines) in a 2-dimensional classification problem.}}{17}{figure.caption.15}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Example of linear classifiers (blue lines) in a 2-dimensional classification problem.}}{18}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.8}{\ignorespaces \textsc {svm} optimal hyperplane}}{18}{figure.caption.16}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces \textsc {svm} optimal hyperplane}}{19}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.9}{\ignorespaces Hyperplane obtained after a dual resolution (blue line). }}{22}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
@@ -28,7 +28,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.11}{\ignorespaces Illustration of the Gaussian kernel in the 1-dimensional input space for a small and large $\gamma $ when $\textbf {x}_i$ is fixed and $\textbf {x}_j$ varies.\relax }}{24}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.12}{\ignorespaces Geometric representation of SVM.\relax }}{25}{figure.caption.20}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Geometric representation of SVM.\relax }}{26}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.13}{\ignorespaces Example of several {\sc svm}s and how to interpret the weight vector $\textbf {w}$\relax }}{26}{figure.caption.21}
 \defcounter {refsection}{0}\relax 
@@ -66,9 +66,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Pushed and pulled samples in the $k=3$ target neighborhood of $\textbf {x}_i$ before (left) and after (right) learning.}}{50}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of embedding of four time series $\textbf {x}_i$ from the temporal space (left) into the dissimilarity space (right) for $p=3$ basic metrics.\relax }}{52}{figure.caption.35}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of embedding of four time series $\textbf {x}_i$ from the temporal space (left) into the dissimilarity space (right) for $p=3$ basic metrics.\relax }}{53}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Example of interpretation of two pairwise vectors $\textbf {x}_{12}$ and $\textbf {x}_{34}$ on a same line passing through the origin in the pairwise dissimilarity space.\relax }}{53}{figure.caption.36}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Example of interpretation of two pairwise vectors $\textbf {x}_{12}$ and $\textbf {x}_{34}$ on a same line passing through the origin in the pairwise dissimilarity space.\relax }}{54}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Example of two pairwise vectors $\textbf {x}_{12}$ and $\textbf {x}_{34}$ close in the pairwise dissimilarity space. However, the time series $\textbf {x}_{1}$ and $\textbf {x}_{3}$ are not similar in the temporal space.\relax }}{54}{figure.caption.37}
 \defcounter {refsection}{0}\relax 

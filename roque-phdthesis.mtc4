@@ -7,11 +7,11 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.4}Data normalization}{\reset@font\mtcSSfont 14}{subsection.1.1.4}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}Machine learning algorithms}{\reset@font\mtcSfont 15}{section.1.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.1}$k$-Nearest Neighbors ($k$-NN) classifier}{\reset@font\mtcSSfont 15}{subsection.1.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.2}Support Vector Machine (SVM) algorithm}{\reset@font\mtcSSfont 16}{subsection.1.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.2}Support Vector Machine (SVM) algorithm}{\reset@font\mtcSSfont 17}{subsection.1.2.2}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.a}Intuition}{\reset@font\mtcSSSfont 17}{subsubsection.1.2.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.b}Primal formulation}{\reset@font\mtcSSSfont 19}{subsubsection.1.2.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.c}Dual formulation}{\reset@font\mtcSSSfont 19}{subsubsection.1.2.2.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.d}Kernel trick}{\reset@font\mtcSSSfont 21}{subsubsection.1.2.2.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.b}Primal formulation}{\reset@font\mtcSSSfont 18}{subsubsection.1.2.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.c}Dual formulation}{\reset@font\mtcSSSfont 20}{subsubsection.1.2.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.d}Kernel trick}{\reset@font\mtcSSSfont 22}{subsubsection.1.2.2.4}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.e}Interpretation}{\reset@font\mtcSSSfont 25}{subsubsection.1.2.2.5}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.f}Variants of SVM}{\reset@font\mtcSSSfont 27}{subsubsection.1.2.2.6}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {1.2.2.g}Extensions of SVM}{\reset@font\mtcSSSfont 27}{subsubsection.1.2.2.7}}

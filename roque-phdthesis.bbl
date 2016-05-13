@@ -133,6 +133,56 @@
   \field{year}{2010}
 \endentry
 
+\entry{Bhatia2010}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Bhatia}{B.}%
+     {Nitin}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Author}{A.}%
+     {Corres}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{- nearest neighbor,1,condensed nn,divided into two categories,knn,model
+  based knn,nearest neighbor techniques are,nn,reduced nn,structure
+  based,structure less and 2,weighted knn}
+  \strng{namehash}{BNAC1}
+  \strng{fullhash}{BNAC1}
+  \field{labelalpha}{BA10}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  — The nearest neighbor (NN) technique is very simple, highly efficient and
+  effective in the field of pattern recognition, text categorization, object
+  recognition etc. Its simplicity is its main advantage, but the disadvantages
+  can't be ignored even. The memory requirement and computation complexity also
+  matter. Many techniques are developed to overcome these limitations. NN
+  techniques are broadly classified into structure less and structure based
+  techniques. In this paper, we present the survey of such techniques. Weighted
+  kNN, Model based kNN, Condensed NN, Reduced NN, Generalized NN are structure
+  less techniques whereas k-d tree, ball tree, Principal Axis Tree, Nearest
+  Feature Line, Tunable NN, Orthogonal Search Tree are structure based
+  algorithms developed on the basis of kNN. The structure less method overcome
+  memory limitation and structure based techniques reduce the computational
+  complexity. Keywords-Nearest neighbor (NN), kNN, Model based kNN, Weighted
+  kNN, Condensed NN, Reduced NN.%
+  }
+  \verb{eprint}
+  \verb 1007.0085
+  \endverb
+  \field{isbn}{ISSN 1947-5500}
+  \field{number}{2}
+  \field{pages}{302\bibrangedash 305}
+  \field{title}{{Survey of Nearest Neighbor Techniques}}
+  \field{volume}{8}
+  \field{journaltitle}{IJCSIS) International Journal of Computer Science and
+  Information Security}
+  \field{eprinttype}{arXiv}
+  \field{year}{2010}
+\endentry
+
 \entry{Berndt1994a}{article}{}
   \name{author}{2}{}{%
     {{}%
@@ -3041,6 +3091,61 @@
   \field{journaltitle}{Rendiconti del Circolo Matematico di Palermo
   (1884-1940)}
   \field{year}{1906}
+\endentry
+
+\entry{Mei2015}{misc}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Mei}{M.}%
+     {Jiangyuan}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liu}{L.}%
+     {Meizhu}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Yuan~Fang}{Y.~F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gao}{G.}%
+     {Huijun}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MJ+1}
+  \strng{fullhash}{MJLMWYFGH1}
+  \field{labelalpha}{Mei+15}
+  \field{sortinit}{M}
+  \field{abstract}{%
+  Multivariate time series (MTS) datasets broadly exist in numerous fields,
+  including health care, multimedia, finance, and biometrics. How to classify
+  MTS accurately has become a hot research topic since it is an important
+  element in many computer vision and pattern recognition applications. In this
+  paper, we propose a Mahalanobis distance-based dynamic time warping (DTW)
+  measure for MTS classification. The Mahalanobis distance builds an accurate
+  relationship between each variable and its corresponding category. It is
+  utilized to calculate the local distance between vectors in MTS. Then we use
+  DTW to align those MTS which are out of synchronization or with different
+  lengths. After that, how to learn an accurate Mahalanobis distance function
+  becomes another key problem. This paper establishes a LogDet divergence-based
+  metric learning with triplet constraint model which can learn Mahalanobis
+  matrix with high precision and robustness. Furthermore, the proposed method
+  is applied on nine MTS datasets selected from the University of California,
+  Irvine machine learning repository and Robert T. Olszewski's homepage, and
+  the results demonstrate the improved performance of the proposed approach.%
+  }
+  \field{booktitle}{IEEE Transactions on Cybernetics}
+  \verb{doi}
+  \verb 10.1109/TCYB.2015.2426723
+  \endverb
+  \field{issn}{21682267}
+  \field{title}{{Learning a Mahalanobis Distance-Based Dynamic Time Warping
+  Measure for Multivariate Time Series Classification}}
+  \field{year}{2015}
 \endentry
 
 \entry{Mohamad2013}{article}{}
