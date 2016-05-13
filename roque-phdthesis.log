@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.15)  13 MAY 2016 15:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.15)  13 MAY 2016 15:42
 entering extended mode
 **roque-phdthesis.tex
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.tex
@@ -4702,15 +4702,19 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 29.
+(nag)                Use \scshape or \textsc instead on input line 28.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 29.
+(nag)                Use \scshape or \textsc instead on input line 28.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 29.
+(nag)                Use \scshape or \textsc instead on input line 28.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 28.
 
 )
 
@@ -4740,7 +4744,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                in the roque-phdthesis.log file.
 
 
-Package nag Warning: 312 complaints in total.
+Package nag Warning: 313 complaints in total.
 
 [110]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
@@ -4792,7 +4796,7 @@ Here is how much of TeX's memory you used:
  42043 multiletter control sequences out of 15000+200000
  46692 words of font info for 130 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 59i,25n,87p,2061b,3246s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 59i,25n,87p,2046b,3246s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.21} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -4912,9 +4916,9 @@ MikeTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/
 MikeTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files (x86)/
 MikeTeX/fonts/type1/hoekwater/rsfs/rsfs10.pfb><C:/Program Files (x86)/MikeTeX/f
 onts/type1/hoekwater/rsfs/rsfs7.pfb>
-Output written on roque-phdthesis.pdf (126 pages, 3655879 bytes).
+Output written on roque-phdthesis.pdf (126 pages, 3656056 bytes).
 PDF statistics:
- 3151 PDF objects out of 3580 (max. 8388607)
+ 3152 PDF objects out of 3580 (max. 8388607)
  591 named destinations out of 1000 (max. 500000)
  595 words of extra memory for PDF output out of 10000 (max. 10000000)
 
