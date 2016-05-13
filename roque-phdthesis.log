@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.15)  13 MAY 2016 10:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.15)  13 MAY 2016 14:42
 entering extended mode
 **roque-phdthesis.tex
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.tex
@@ -1736,36 +1736,36 @@ line 35.
 File: 1-opening/PageGarde.pdf Graphic file (type pdf)
 
 <use 1-opening/PageGarde.pdf>
-Package pdftex.def Info: 1-opening/PageGarde.pdf used on input line 41.
+Package pdftex.def Info: 1-opening/PageGarde.pdf used on input line 40.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 1-opening/PageGarde.pdf Graphic file (type pdf)
  <use 1-opening/PageGarde.pdf>
-Package pdftex.def Info: 1-opening/PageGarde.pdf used on input line 41.
+Package pdftex.def Info: 1-opening/PageGarde.pdf used on input line 40.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 <1-opening/PageGarde.pdf, id=145, page=1, 597.55246pt x 845.07718pt>
 File: 1-opening/PageGarde.pdf Graphic file (type pdf)
 
 <use 1-opening/PageGarde.pdf, page 1>
-Package pdftex.def Info: 1-opening/PageGarde.pdf, page1 used on input line 41.
+Package pdftex.def Info: 1-opening/PageGarde.pdf, page1 used on input line 40.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 1-opening/PageGarde.pdf Graphic file (type pdf)
  <use 1-opening/PageGarde.pdf, page 1>
-Package pdftex.def Info: 1-opening/PageGarde.pdf, page1 used on input line 41.
+Package pdftex.def Info: 1-opening/PageGarde.pdf, page1 used on input line 40.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 1-opening/PageGarde.pdf Graphic file (type pdf)
 
 <use 1-opening/PageGarde.pdf, page 1>
-Package pdftex.def Info: 1-opening/PageGarde.pdf, page1 used on input line 41.
+Package pdftex.def Info: 1-opening/PageGarde.pdf, page1 used on input line 40.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 1-opening/PageGarde.pdf Graphic file (type pdf)
  <use 1-opening/PageGarde.pdf, page 1>
-Package pdftex.def Info: 1-opening/PageGarde.pdf, page1 used on input line 41.
+Package pdftex.def Info: 1-opening/PageGarde.pdf, page1 used on input line 40.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 1-opening/PageGarde.pdf Graphic file (type pdf)
 
 <use 1-opening/PageGarde.pdf, page 1>
-Package pdftex.def Info: 1-opening/PageGarde.pdf, page1 used on input line 41.
+Package pdftex.def Info: 1-opening/PageGarde.pdf, page1 used on input line 40.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [1
 
@@ -1774,10 +1774,53 @@ Package pdftex.def Info: 1-opening/PageGarde.pdf, page1 used on input line 41.
 
 
  <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/1-opening/PageGarde
-.pdf>]
+.pdf>] [2
+
+]
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\1-opening/titlepage
+.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 155.
+("C:\Program Files (x86)\MikeTeX\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 155.
+
+("C:\Program Files (x86)\MikeTeX\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 155.
+
+("C:\Program Files (x86)\MikeTeX\tex\latex\jknappen\ursfs.fd"
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for OMS+rsfs on input line 155
+.
+
+("C:\Program Files (x86)\MikeTeX\tex\latex\calrsfs\omsrsfs.fd")pdfTeX warning (
+ext4): destination with the same identifier (name{page.1}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.165 \end{titlepage}
+                      [1
+
+
+{C:/Users/SESA245227/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]pdfTeX 
+warning (ext4): destination with the same identifier (name{page.2}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.168 \titlepage
+                 [2
+
+])
 Package minitoc Info: I0024
 (minitoc)             PREPARING MINITOCS FROM roque-phdthesis.toc on input line
- 45.
+ 46.
 Package minitoc Info: I0033
 (minitoc)             Writing roque-phdthesis.mtc1.
 Package minitoc Info: I0033
@@ -1804,35 +1847,25 @@ Package minitoc Info: I0033
 (minitoc)             Writing roque-phdthesis.mtc12.
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\1-opening/acknowled
-gements.tex") [1
+gements.tex" [1
 
 
 
 
-{C:/Users/SESA245227/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
+])
 
-]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.toc
-"
-LaTeX Font Info:    Try loading font information for U+msa on input line 13.
- ("C:\Program Files (x86)\MikeTeX\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 13.
-
-("C:\Program Files (x86)\MikeTeX\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 13.
-
-("C:\Program Files (x86)\MikeTeX\tex\latex\jknappen\ursfs.fd"
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Try loading font information for OMS+rsfs on input line 13.
+" [3
 
 
-("C:\Program Files (x86)\MikeTeX\tex\latex\calrsfs\omsrsfs.fd") [3])
+])
 \tf@toc=\write8
 
 
@@ -2018,7 +2051,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.51 
+      [2]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2072,7 +2110,7 @@ Chapter 1.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 16.
 
-[9] <images/Overfitting.png, id=514, 287.8755pt x 287.27325pt>
+[9] <images/Overfitting.png, id=530, 287.8755pt x 287.27325pt>
 File: images/Overfitting.png Graphic file (type png)
 
 <use images/Overfitting.png>
@@ -2082,7 +2120,7 @@ Package pdftex.def Info: images/Overfitting.png used on input line 46.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/GridSearch.png, id=517, 340.8735pt x 338.4645pt>
+<images/GridSearch.png, id=533, 340.8735pt x 338.4645pt>
 File: images/GridSearch.png Graphic file (type png)
 
 <use images/GridSearch.png>
@@ -2092,7 +2130,7 @@ Package pdftex.def Info: images/GridSearch.png used on input line 55.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Cross_validation2.jpg, id=518, 651.93562pt x 258.9675pt>
+<images/Cross_validation2.jpg, id=534, 651.93562pt x 258.9675pt>
 File: images/Cross_validation2.jpg Graphic file (type jpg)
 
 <use images/Cross_validation2.jpg>
@@ -2120,7 +2158,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Overfitti
 ng.png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/GridS
-earch.png>] <images/LearningFramework.png, id=540, 890.1255pt x 448.074pt>
+earch.png>] <images/LearningFramework.png, id=556, 890.1255pt x 448.074pt>
 File: images/LearningFramework.png Graphic file (type png)
 
 <use images/LearningFramework.png>
@@ -2130,7 +2168,7 @@ Package pdftex.def Info: images/LearningFramework.png used on input line 83.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Dataset.png, id=541, 634.16925pt x 473.3685pt>
+<images/Dataset.png, id=557, 634.16925pt x 473.3685pt>
 File: images/Dataset.png Graphic file (type png)
 
 <use images/Dataset.png>
@@ -2202,7 +2240,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 204.
 
-<images/kNN_example.png, id=603, 419.76825pt x 309.5565pt>
+<images/kNN_example.png, id=619, 419.76825pt x 309.5565pt>
 File: images/kNN_example.png Graphic file (type png)
 
 <use images/kNN_example.png>
@@ -2245,7 +2283,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 (nag)                Use \scshape or \textsc instead on input line 284.
 
 
-<images/Plusieurs_separatrice_lineaire2.png, id=652, 418.66759pt x 314.00069pt>
+<images/Plusieurs_separatrice_lineaire2.png, id=667, 418.66759pt x 314.00069pt>
 File: images/Plusieurs_separatrice_lineaire2.png Graphic file (type png)
 <use images/Plusieurs_separatrice_lineaire2.png>
 Package pdftex.def Info: images/Plusieurs_separatrice_lineaire2.png used on inp
@@ -2263,7 +2301,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [19 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Plusieurs
 _separatrice_lineaire2.png>]
-<images/Separatrice_lineaire_avec_marges2.png, id=669, 404.712pt x 303.534pt>
+<images/Separatrice_lineaire_avec_marges2.png, id=684, 404.712pt x 303.534pt>
 File: images/Separatrice_lineaire_avec_marges2.png Graphic file (type png)
 
 <use images/Separatrice_lineaire_avec_marges2.png>
@@ -2315,7 +2353,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22] <images/SVM_SV2.png, id=732, 404.712pt x 314.3745pt>
+[22] <images/SVM_SV2.png, id=748, 404.712pt x 314.3745pt>
 File: images/SVM_SV2.png Graphic file (type png)
 
 <use images/SVM_SV2.png>
@@ -2340,7 +2378,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23] <images/SVM_nonlinear2.png, id=749, 733.74126pt x 347.2975pt>
+[23] <images/SVM_nonlinear2.png, id=765, 733.74126pt x 347.2975pt>
 File: images/SVM_nonlinear2.png Graphic file (type png)
 
 <use images/SVM_nonlinear2.png>
@@ -2371,7 +2409,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 446--446
 Machines / What -[] is -[] the -[] intuition -[] behind -[] Gaussian -[]$
  []
 
-<images/Kernel_Gaussian2.png, id=765, 369.17924pt x 166.82326pt>
+<images/Kernel_Gaussian2.png, id=780, 369.17924pt x 166.82326pt>
 File: images/Kernel_Gaussian2.png Graphic file (type png)
 
 <use images/Kernel_Gaussian2.png>
@@ -2400,7 +2438,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [26 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Kernel_Ga
-ussian2.png>] <images/SVM_interpretation2.png, id=792, 404.712pt x 303.534pt>
+ussian2.png>] <images/SVM_interpretation2.png, id=807, 404.712pt x 303.534pt>
 File: images/SVM_interpretation2.png Graphic file (type png)
 
 <use images/SVM_interpretation2.png>
@@ -2416,7 +2454,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [27 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/SVM_inter
 pretation2.png>]
-<images/Weight_interpretation3.png, id=805, 635.976pt x 460.119pt>
+<images/Weight_interpretation3.png, id=821, 635.976pt x 460.119pt>
 File: images/Weight_interpretation3.png Graphic file (type png)
 
 <use images/Weight_interpretation3.png>
@@ -2476,7 +2514,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 550.
 
-<images/SVR_tube.png, id=824, 420.97275pt x 200.54926pt>
+<images/SVR_tube.png, id=840, 420.97275pt x 200.54926pt>
 File: images/SVR_tube.png Graphic file (type png)
 
 <use images/SVR_tube.png>
@@ -2546,7 +2584,7 @@ c-metrics.tex" [32
 Chapter 2.
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-5") [33] <images/time_series_example.png, id=895, 681.747pt x 201.75375pt>
+5") [33] <images/time_series_example.png, id=911, 681.747pt x 201.75375pt>
 File: images/time_series_example.png Graphic file (type png)
 
 <use images/time_series_example.png>
@@ -2561,7 +2599,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [34 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/time_seri
 es_example.png>]
-<images/Representation_Metric.png, id=918, 687.7695pt x 319.79475pt>
+<images/Representation_Metric.png, id=934, 687.7695pt x 319.79475pt>
 File: images/Representation_Metric.png Graphic file (type png)
 
 <use images/Representation_Metric.png>
@@ -2584,7 +2622,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 108.
 
-<images/MDS_example.png, id=922, 631.158pt x 840.741pt>
+<images/MDS_example.png, id=938, 631.158pt x 840.741pt>
 File: images/MDS_example.png Graphic file (type png)
 
 <use images/MDS_example.png>
@@ -2638,7 +2676,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37] <images/Example2_temporal.png, id=983, 418.66759pt x 314.00069pt>
+[37] <images/Example2_temporal.png, id=998, 418.66759pt x 314.00069pt>
 File: images/Example2_temporal.png Graphic file (type png)
 
 <use images/Example2_temporal.png>
@@ -2656,7 +2694,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [38 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Example2_
 temporal.png (PNG copy)>]
-<images/Example2_frequency.png, id=1000, 418.66759pt x 314.00069pt>
+<images/Example2_frequency.png, id=1015, 418.66759pt x 314.00069pt>
 File: images/Example2_frequency.png Graphic file (type png)
 
 <use images/Example2_frequency.png>
@@ -2674,7 +2712,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [39 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Example2_
 frequency.png (PNG copy)>]
-<images/ExampleTimeSeriesMetrics4.png, id=1017, 418.66759pt x 314.00069pt>
+<images/ExampleTimeSeriesMetrics4.png, id=1033, 418.66759pt x 314.00069pt>
 File: images/ExampleTimeSeriesMetrics4.png Graphic file (type png)
 
 <use images/ExampleTimeSeriesMetrics4.png>
@@ -2691,7 +2729,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40] <images/Voice_Example2.png, id=1033, 243.309pt x 296.307pt>
+[40] <images/Voice_Example2.png, id=1049, 243.309pt x 296.307pt>
 File: images/Voice_Example2.png Graphic file (type png)
 
 <use images/Voice_Example2.png>
@@ -2713,14 +2751,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [41 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/ExampleTi
 meSeriesMetrics4.png>]
-<images/DTWgrid2.png, id=1056, 421.78267pt x 337.05232pt>
+<images/DTWgrid2.png, id=1072, 421.78267pt x 337.05232pt>
 File: images/DTWgrid2.png Graphic file (type png)
 
 <use images/DTWgrid2.png>
 Package pdftex.def Info: images/DTWgrid2.png used on input line 385.
 (pdftex.def)             Requested size: 265.59494pt x 212.23608pt.
 
-<images/DTWwarpedSignals.png, id=1057, 696.53328pt x 314.00069pt>
+<images/DTWwarpedSignals.png, id=1073, 696.53328pt x 314.00069pt>
 File: images/DTWwarpedSignals.png Graphic file (type png)
 
 <use images/DTWwarpedSignals.png>
@@ -2772,7 +2810,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [43 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/DTWgrid2.
 png> <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/DTWwarpe
 dSignals.png (PNG copy)>]
-<images/CombinedMetrics.png, id=1081, 2336.73pt x 2317.458pt>
+<images/CombinedMetrics.png, id=1096, 2336.73pt x 2317.458pt>
 File: images/CombinedMetrics.png Graphic file (type png)
 
 <use images/CombinedMetrics.png>
@@ -2801,7 +2839,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [45 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/CombinedM
-etrics.png>] <images/SkewedData2.png, id=1098, 544.434pt x 448.074pt>
+etrics.png>] <images/SkewedData2.png, id=1114, 544.434pt x 448.074pt>
 File: images/SkewedData2.png Graphic file (type png)
 
 <use images/SkewedData2.png>
@@ -2854,7 +2892,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.mtc
-6") [49] <images/CinCECGtorso3.png, id=1162, 644.4075pt x 303.534pt>
+6") [49] <images/CinCECGtorso3.png, id=1177, 644.4075pt x 303.534pt>
 File: images/CinCECGtorso3.png Graphic file (type png)
 
 <use images/CinCECGtorso3.png>
@@ -2898,7 +2936,7 @@ Package nag Warning: Command \centerline is TeX.
  140.
 
 
-<images/TargetImposterRepresentationCao.png, id=1200, 906.38625pt x 363.60844pt
+<images/TargetImposterRepresentationCao.png, id=1216, 906.38625pt x 363.60844pt
 >
 File: images/TargetImposterRepresentationCao.png Graphic file (type png)
  <use images/TargetImposterRepresentationCao.png>
@@ -2936,7 +2974,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[53] <images/PairwiseEmbedding2.png, id=1227, 613.0905pt x 346.896pt>
+[53] <images/PairwiseEmbedding2.png, id=1243, 613.0905pt x 346.896pt>
 File: images/PairwiseEmbedding2.png Graphic file (type png)
 
 <use images/PairwiseEmbedding2.png>
@@ -2951,7 +2989,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [54 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/PairwiseE
 mbedding2.png>]
-<images/Pairwise_interpretation.png, id=1237, 638.98724pt x 272.217pt>
+<images/Pairwise_interpretation.png, id=1252, 638.98724pt x 272.217pt>
 File: images/Pairwise_interpretation.png Graphic file (type png)
 
 <use images/Pairwise_interpretation.png>
@@ -2967,7 +3005,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [55 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Pairwise_
 interpretation.png>]
-<images/ContreExample.png, id=1246, 728.7225pt x 316.7835pt>
+<images/ContreExample.png, id=1261, 728.7225pt x 316.7835pt>
 File: images/ContreExample.png Graphic file (type png)
 
 <use images/ContreExample.png>
@@ -2981,7 +3019,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [56 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/ContreExa
-mple.png>] <images/Intervalles3.png, id=1261, 432.4155pt x 320.397pt>
+mple.png>] <images/Intervalles3.png, id=1276, 432.4155pt x 320.397pt>
 File: images/Intervalles3.png Graphic file (type png)
 
 <use images/Intervalles3.png>
@@ -3032,7 +3070,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[59] <images/Strategy_neighborhood.png, id=1288, 576.35326pt x 398.08725pt>
+[59] <images/Strategy_neighborhood.png, id=1304, 576.35326pt x 398.08725pt>
 File: images/Strategy_neighborhood.png Graphic file (type png)
 
 <use images/Strategy_neighborhood.png>
@@ -3048,7 +3086,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [60 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Strategy_
 neighborhood.png>]
-<images/Transposition_Pairwise4.png, id=1304, 1338.1995pt x 796.1745pt>
+<images/Transposition_Pairwise4.png, id=1319, 1338.1995pt x 796.1745pt>
 File: images/Transposition_Pairwise4.png Graphic file (type png)
 
 <use images/Transposition_Pairwise4.png>
@@ -3213,14 +3251,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[70] <images/projected_norm.png, id=1416, 493.845pt x 327.02174pt>
+[70] <images/projected_norm.png, id=1432, 493.845pt x 327.02174pt>
 File: images/projected_norm.png Graphic file (type png)
 
 <use images/projected_norm.png>
 Package pdftex.def Info: images/projected_norm.png used on input line 1178.
 (pdftex.def)             Requested size: 287.72223pt x 190.52602pt.
 
-<images/Dissimilarity_def_norm_scalar_product.png, id=1418, 1052.733pt x 385.44
+<images/Dissimilarity_def_norm_scalar_product.png, id=1434, 1052.733pt x 385.44
 pt>
 File: images/Dissimilarity_def_norm_scalar_product.png Graphic file (type png)
  <use images/Dissimilarity_def_norm_scalar_product.png>
@@ -3238,7 +3276,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [71 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/projected
-_norm.png>] <images/3D_diss.png, id=1426, 819.06pt x 352.9185pt>
+_norm.png>] <images/3D_diss.png, id=1442, 819.06pt x 352.9185pt>
 File: images/3D_diss.png Graphic file (type png)
 
 <use images/3D_diss.png>
@@ -3260,13 +3298,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [72 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Dissimila
 rity_def_norm_scalar_product.png>]
-Overfull \hbox (40.57567pt too wide) in paragraph at lines 1262--1264
-$[]\OT1/cmr/m/n/10.95 ; ([][]) \OML/cmm/m/it/10.95 >\OT1/cmr/m/n/10.95 = [][] 
-\OML/cmm/m/it/10.95 y[][]\OT1/cmr/m/n/10.95 ([][]\OML/cmm/m/it/10.95 ; [][]\O
-T1/cmr/m/n/10.95 )$ \T1/cmr/m/n/10.95 and the norm of $[]$ gives $\OMS/cmsy/m/n
-/10.95 jj[]jj \OT1/cmr/m/n/10.95 = []$\T1/cmr/m/n/10.95 .
- []
-
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1281.
@@ -3280,17 +3311,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1281.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [73 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/3D_diss.p
-ng>] <images/Neighborhood_scaling.png, id=1453, 834.11626pt x 335.45325pt>
+ng>] <images/Neighborhood_scaling.png, id=1468, 834.11626pt x 335.45325pt>
 File: images/Neighborhood_scaling.png Graphic file (type png)
 
 <use images/Neighborhood_scaling.png>
@@ -3416,7 +3443,7 @@ i . edu / ml / datasets / Individual + household + electric + power +$
 Package nag Warning: `center' environment in table.
 (nag)                Maybe you want \centering instead on input line 66.
 
-<images/dataset_exp.png, id=1530, 857.604pt x 631.158pt>
+<images/dataset_exp.png, id=1546, 857.604pt x 631.158pt>
 File: images/dataset_exp.png Graphic file (type png)
 
 <use images/dataset_exp.png>
@@ -3689,42 +3716,42 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[82] <images/Stand_m2tml_2.png, id=1603, 418.66759pt x 314.00069pt>
+[82] <images/Stand_m2tml_2.png, id=1619, 418.66759pt x 314.00069pt>
 File: images/Stand_m2tml_2.png Graphic file (type png)
 
 <use images/Stand_m2tml_2.png>
 Package pdftex.def Info: images/Stand_m2tml_2.png used on input line 356.
 (pdftex.def)             Requested size: 216.81pt x 162.6105pt.
 
-<images/behavior_m2tml_2.png, id=1604, 418.66759pt x 314.00069pt>
+<images/behavior_m2tml_2.png, id=1620, 418.66759pt x 314.00069pt>
 File: images/behavior_m2tml_2.png Graphic file (type png)
 
 <use images/behavior_m2tml_2.png>
 Package pdftex.def Info: images/behavior_m2tml_2.png used on input line 357.
 (pdftex.def)             Requested size: 216.81pt x 162.6105pt.
 
-<images/no_warp_m2tml_2.png, id=1605, 418.66759pt x 314.00069pt>
+<images/no_warp_m2tml_2.png, id=1621, 418.66759pt x 314.00069pt>
 File: images/no_warp_m2tml_2.png Graphic file (type png)
 
 <use images/no_warp_m2tml_2.png>
 Package pdftex.def Info: images/no_warp_m2tml_2.png used on input line 358.
 (pdftex.def)             Requested size: 216.81pt x 162.6105pt.
 
-<images/Unimod_m2tml_2.png, id=1606, 418.66759pt x 314.00069pt>
+<images/Unimod_m2tml_2.png, id=1622, 418.66759pt x 314.00069pt>
 File: images/Unimod_m2tml_2.png Graphic file (type png)
 
 <use images/Unimod_m2tml_2.png>
 Package pdftex.def Info: images/Unimod_m2tml_2.png used on input line 359.
 (pdftex.def)             Requested size: 216.81pt x 162.6105pt.
 
-<images/freq_m2tml_2.png, id=1607, 418.66759pt x 314.00069pt>
+<images/freq_m2tml_2.png, id=1623, 418.66759pt x 314.00069pt>
 File: images/freq_m2tml_2.png Graphic file (type png)
 
 <use images/freq_m2tml_2.png>
 Package pdftex.def Info: images/freq_m2tml_2.png used on input line 360.
 (pdftex.def)             Requested size: 216.81pt x 162.6105pt.
 
-<images/apriori_m2tml_2.png, id=1608, 418.66759pt x 314.00069pt>
+<images/apriori_m2tml_2.png, id=1624, 418.66759pt x 314.00069pt>
 File: images/apriori_m2tml_2.png Graphic file (type png)
 
 <use images/apriori_m2tml_2.png>
@@ -4165,7 +4192,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 (nag)                Use \scshape or \textsc instead on input line 452.
 
 
-<images/SonyAIBORobotSurface_NoDelay_bar2.png, id=1616, 844.81139pt x 404.3382p
+<images/SonyAIBORobotSurface_NoDelay_bar2.png, id=1632, 844.81139pt x 404.3382p
 t>
 File: images/SonyAIBORobotSurface_NoDelay_bar2.png Graphic file (type png)
  <use images/SonyAIBORobotSurface_NoDelay_bar2.png>
@@ -4173,14 +4200,14 @@ Package pdftex.def Info: images/SonyAIBORobotSurface_NoDelay_bar2.png used on i
 nput line 460.
 (pdftex.def)             Requested size: 252.94499pt x 121.06177pt.
 
-<images/Beef_NoDelay_bar2.png, id=1617, 844.81139pt x 369.44922pt>
+<images/Beef_NoDelay_bar2.png, id=1633, 844.81139pt x 369.44922pt>
 File: images/Beef_NoDelay_bar2.png Graphic file (type png)
 
 <use images/Beef_NoDelay_bar2.png>
 Package pdftex.def Info: images/Beef_NoDelay_bar2.png used on input line 461.
 (pdftex.def)             Requested size: 252.94499pt x 110.61575pt.
 
-<images/CinC_ECG_torso_NoDelay_bar2.png, id=1618, 844.81139pt x 400.60008pt>
+<images/CinC_ECG_torso_NoDelay_bar2.png, id=1634, 844.81139pt x 400.60008pt>
 File: images/CinC_ECG_torso_NoDelay_bar2.png Graphic file (type png)
 
 <use images/CinC_ECG_torso_NoDelay_bar2.png>
@@ -4188,7 +4215,7 @@ Package pdftex.def Info: images/CinC_ECG_torso_NoDelay_bar2.png used on input l
 ine 462.
 (pdftex.def)             Requested size: 252.94499pt x 119.94255pt.
 
-<images/FaceFour_DTW_bar2.png, id=1619, 844.81139pt x 426.1438pt>
+<images/FaceFour_DTW_bar2.png, id=1635, 844.81139pt x 426.1438pt>
 File: images/FaceFour_DTW_bar2.png Graphic file (type png)
 
 <use images/FaceFour_DTW_bar2.png>
@@ -4215,7 +4242,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<images/SonyAIBORobotSurface_NoDelay_TS.png, id=1620, 418.66759pt x 314.00069pt
+<images/SonyAIBORobotSurface_NoDelay_TS.png, id=1636, 418.66759pt x 314.00069pt
 >
 File: images/SonyAIBORobotSurface_NoDelay_TS.png Graphic file (type png)
  <use images/SonyAIBORobotSurface_NoDelay_TS.png>
@@ -4223,14 +4250,14 @@ Package pdftex.def Info: images/SonyAIBORobotSurface_NoDelay_TS.png used on inp
 ut line 470.
 (pdftex.def)             Requested size: 195.12877pt x 146.34898pt.
 
-<images/Beef_NoDelay_TS.png, id=1621, 418.66759pt x 314.00069pt>
+<images/Beef_NoDelay_TS.png, id=1637, 418.66759pt x 314.00069pt>
 File: images/Beef_NoDelay_TS.png Graphic file (type png)
 
 <use images/Beef_NoDelay_TS.png>
 Package pdftex.def Info: images/Beef_NoDelay_TS.png used on input line 471.
 (pdftex.def)             Requested size: 195.12877pt x 146.34898pt.
 
-<images/CinC_ECG_torso_NoDelay_TS.png, id=1622, 418.66759pt x 314.00069pt>
+<images/CinC_ECG_torso_NoDelay_TS.png, id=1638, 418.66759pt x 314.00069pt>
 File: images/CinC_ECG_torso_NoDelay_TS.png Graphic file (type png)
 
 <use images/CinC_ECG_torso_NoDelay_TS.png>
@@ -4238,7 +4265,7 @@ Package pdftex.def Info: images/CinC_ECG_torso_NoDelay_TS.png used on input lin
 e 472.
 (pdftex.def)             Requested size: 195.12877pt x 146.34898pt.
 
-<images/FaceFour_DTW_TS2.png, id=1623, 418.04457pt x 312.75465pt>
+<images/FaceFour_DTW_TS2.png, id=1639, 418.04457pt x 312.75465pt>
 File: images/FaceFour_DTW_TS2.png Graphic file (type png)
 
 <use images/FaceFour_DTW_TS2.png>
@@ -4264,7 +4291,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/FaceFourALL_DTWDB_2.png, id=1624, 422.32782pt x 316.18124pt>
+<images/FaceFourALL_DTWDB_2.png, id=1640, 422.32782pt x 316.18124pt>
 File: images/FaceFourALL_DTWDB_2.png Graphic file (type png)
 
 <use images/FaceFourALL_DTWDB_2.png>
@@ -4280,7 +4307,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 494.
 
-<images/FaceFourALL_D_Delay_3.png, id=1625, 422.32782pt x 316.18124pt>
+<images/FaceFourALL_D_Delay_3.png, id=1641, 422.32782pt x 316.18124pt>
 File: images/FaceFourALL_D_Delay_3.png Graphic file (type png)
 
 <use images/FaceFourALL_D_Delay_3.png>
@@ -4410,7 +4437,7 @@ lusion.tex" [89
 
 
 
-] <images/SonyAIBO_temp.png, id=1680, 586.5915pt x 231.86626pt>
+] <images/SonyAIBO_temp.png, id=1696, 586.5915pt x 231.86626pt>
 File: images/SonyAIBO_temp.png Graphic file (type png)
 
 <use images/SonyAIBO_temp.png>
@@ -4442,7 +4469,7 @@ temp.png>]
 Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 57.
 
-<images/Discretize_binning.png, id=1701, 690.78075pt x 301.125pt>
+<images/Discretize_binning.png, id=1716, 690.78075pt x 301.125pt>
 File: images/Discretize_binning.png Graphic file (type png)
 
 <use images/Discretize_binning.png>
@@ -4457,7 +4484,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [92 <C:/Users/SESA245227/Google Drive/Algo/Redaction/Manuscrit/images/Discretiz
 e_binning.png>]
-<images/Discretize_binning_border_effect.png, id=1709, 392.667pt x 320.99925pt>
+<images/Discretize_binning_border_effect.png, id=1724, 392.667pt x 320.99925pt>
 File: images/Discretize_binning_border_effect.png Graphic file (type png)
 <use images/Discretize_binning_border_effect.png>
 Package pdftex.def Info: images/Discretize_binning_border_effect.png used on in
@@ -4468,7 +4495,7 @@ put line 73.
 Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 87.
 
-<images/pairwise_label_tube2.png, id=1711, 580.569pt x 389.0535pt>
+<images/pairwise_label_tube2.png, id=1726, 580.569pt x 389.0535pt>
 File: images/pairwise_label_tube2.png Graphic file (type png)
 
 <use images/pairwise_label_tube2.png>
@@ -4736,11 +4763,13 @@ Package minitoc(hints) Warning: W0024
 Package nag Warning: 315 complaints in total.
 
 [112]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
 
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\roque-phdthesis.aux
 "
+("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\1-opening/titlepage
+.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\1-opening/acknowled
 gements.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\1-opening/acronyms.
@@ -4765,8 +4794,8 @@ _articles.aux")
 rth-appendix.aux")
 ("C:\Users\SESA245227\Google Drive\Algo\Redaction\Manuscrit\3-appendices/3-5-fi
 fth-appendix.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 133.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
 Package rerunfilecheck Info: File `roque-phdthesis.out' has not changed.
 (rerunfilecheck)             Checksum: 45B87A1315E80C66F72CFA43E84E41A6;2410.
 
@@ -4774,16 +4803,16 @@ Package rerunfilecheck Info: File `roque-phdthesis.out' has not changed.
 LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'roque-phdthesis.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
- 40502 strings out of 493921
- 889925 string characters out of 3146064
- 1350394 words of memory out of 3000000
- 42012 multiletter control sequences out of 15000+200000
- 43773 words of font info for 126 fonts, out of 3000000 for 9000
+ 40514 strings out of 493921
+ 890345 string characters out of 3146064
+ 1350427 words of memory out of 3000000
+ 42016 multiletter control sequences out of 15000+200000
+ 46692 words of font info for 130 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 59i,25n,87p,2061b,3254s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 59i,25n,87p,2061b,3246s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.22} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -4861,47 +4890,54 @@ cbx0900.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
 pen\ec\dpi600\ectt0900.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\
 pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\SESA245227\AppData\Local\Mi
 KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\SESA245227\A
-ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Use
-rs\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1
-440.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecrm0900.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\l
-jfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\SESA245227\AppDa
-ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\S
-ESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0800.
+ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk> <C:\Use
+rs\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0
+900.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecrm0600.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\l
+jfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0800.pk> <C:\Users\SESA245227\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\S
+ESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.
 pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\d
-pi600\ecrm0800.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\jknappen\ec\dpi600\eccc1095.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9
-\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\SESA245227\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\SESA2
-45227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk><
-C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pr
-ogram Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Pro
-gram Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program 
-Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files
- (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)
-/MikeTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MikeT
-eX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MikeTeX/fon
-ts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files (x86)/MikeTeX/fonts/typ
-e1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/p
-ublic/amsfonts/cmextra/cmmib8.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/
-amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfon
-ts/cm/cmr6.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/c
-mr7.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb
-><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Pr
-ogram Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
- Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files
- (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)
-/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MikeT
-eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MikeTeX/fon
-ts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/MikeTeX/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files (x86)/MikeTeX/fon
-ts/type1/hoekwater/rsfs/rsfs10.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/
-hoekwater/rsfs/rsfs7.pfb>
-Output written on roque-phdthesis.pdf (125 pages, 3599335 bytes).
+pi600\ecrm1095.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
+r\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9
+\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk> <C:\Users\SESA245227\AppData\L
+ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecxc1440.pk> <C:\Users\SESA2
+45227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> 
+<C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\ecrm1440.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\ecrm1200.pk> <C:\Users\SESA245227\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\SESA245227\AppData\Local
+\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\SESA24522
+7\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\
+Users\SESA245227\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
+bx1200.pk><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmex10
+.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cmextra/cmex8.
+pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pr
+ogram Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program 
+Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files 
+(x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/
+MikeTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files (x86)/MikeTe
+X/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files (x86)/MikeTeX/fo
+nts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Program Files (x86)/MikeTeX/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MikeTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/am
+sfonts/cm/cmr7.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/
+cm/cmr8.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmr9
+.pfb><C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<C:/Program Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Pr
+ogram Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program 
+Files (x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files 
+(x86)/MikeTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/
+MikeTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/
+MikeTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files (x86)/
+MikeTeX/fonts/type1/hoekwater/rsfs/rsfs10.pfb><C:/Program Files (x86)/MikeTeX/f
+onts/type1/hoekwater/rsfs/rsfs7.pfb>
+Output written on roque-phdthesis.pdf (128 pages, 3670918 bytes).
 PDF statistics:
- 2962 PDF objects out of 2984 (max. 8388607)
+ 3148 PDF objects out of 3580 (max. 8388607)
  590 named destinations out of 1000 (max. 500000)
  595 words of extra memory for PDF output out of 10000 (max. 10000000)
 
