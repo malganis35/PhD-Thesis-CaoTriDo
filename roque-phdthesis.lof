@@ -4,146 +4,146 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Related work}{9}{chapter.1}
+\contentsline {xchapter}{Related work}{7}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces An example of overfitting in the case of classification.}}{11}{figure.caption.8}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces An example of overfitting in the case of classification.}}{9}{figure.caption.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Example of a 2 dimensional grid search for parameters $C$ and $\gamma $}}{11}{figure.caption.9}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Example of a 2 dimensional grid search for parameters $C$ and $\gamma $}}{9}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.3}{\ignorespaces $v$-fold Cross-validation for one combination of parameters.}}{12}{figure.caption.10}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces $v$-fold Cross-validation for one combination of parameters.}}{10}{figure.caption.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.4}{\ignorespaces General framework for building a supervised (classification/regression) model. Example with 3 features and 2 classes ('Yes' and 'No').\relax }}{13}{figure.caption.11}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces General framework for building a supervised (classification/regression) model. Example with 3 features and 2 classes ('Yes' and 'No').\relax }}{11}{figure.caption.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Division of a dataset into 3 datasets: training, test and operational.\relax }}{13}{figure.caption.12}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Division of a dataset into 3 datasets: training, test and operational.\relax }}{11}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Example of $k$-NN classification.}}{17}{figure.caption.14}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Example of $k$-NN classification.}}{15}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Example of linear classifiers (blue lines) in a 2-dimensional classification problem.}}{19}{figure.caption.15}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Example of linear classifiers (blue lines) in a 2-dimensional classification problem.}}{17}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.8}{\ignorespaces \textsc {svm} optimal hyperplane}}{20}{figure.caption.16}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces \textsc {svm} optimal hyperplane}}{18}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Hyperplane obtained after a dual resolution (blue line). }}{24}{figure.caption.17}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Hyperplane obtained after a dual resolution (blue line). }}{22}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Illustration of the use of kernels}}{25}{figure.caption.18}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Illustration of the use of kernels}}{23}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Illustration of the Gaussian kernel in the 1-dimensional input space for a small and large $\gamma $ when $\textbf {x}_i$ is fixed and $\textbf {x}_j$ varies.\relax }}{26}{figure.caption.19}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Illustration of the Gaussian kernel in the 1-dimensional input space for a small and large $\gamma $ when $\textbf {x}_i$ is fixed and $\textbf {x}_j$ varies.\relax }}{24}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.12}{\ignorespaces Geometric representation of SVM.\relax }}{27}{figure.caption.20}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Geometric representation of SVM.\relax }}{25}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.13}{\ignorespaces Example of several {\sc svm}s and how to interpret the weight vector $\textbf {w}$\relax }}{28}{figure.caption.21}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Example of several {\sc svm}s and how to interpret the weight vector $\textbf {w}$\relax }}{26}{figure.caption.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.14}{\ignorespaces Illustration of {\sc svm} regression (left), showing the regression curve with the $\epsilon $-insensitive "tube" (right).}}{30}{figure.caption.22}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Time series metrics}{33}{chapter.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The Beveridge wheat price index is the average in nearly 50 places in various countries measured in successive years from 1500 to 1869\footnotemark .\relax }}{34}{figure.caption.23}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of metric representation}}{36}{figure.caption.24}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of {\sc mds}}}{36}{figure.caption.25}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces 3 toy time series in the temporal domain.}}{38}{figure.caption.26}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces 3 toy time series in the frequency domain}}{39}{figure.caption.27}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces 4 toys time series in the temporal domain.}}{41}{figure.caption.28}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Example of a same sentence said by two different speakers.}}{42}{figure.caption.29}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Example of {\sc dtw} grid between 2 time series $\textbf {x}_{i}$ and $\textbf {x}_{j}$ (top) and the signals before and after warping (bottom)}}{43}{figure.caption.30}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Contour plot of the resulting combined metrics: $D_{Lin}$ ($1^{st}$ line), $D_{Geom}$ ($2^{nd}$ line) and $D_{Sig}$ ($3^{rd}$ line), for different values of $\beta $.}}{45}{figure.caption.31}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces A nearly log-normal distribution, and its log transform\footnotemark \relax }}{46}{figure.caption.32}
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Illustration of {\sc svm} regression (left), showing the regression curve with the $\epsilon $-insensitive "tube" (right).}}{28}{figure.caption.22}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Multi-modal and Multi-scale \\ Time series Metric Learning (M$^2$TML)}{49}{chapter.3}
+\contentsline {xchapter}{Time series metrics}{31}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces CinCECGtorso dataset and error rate using a $k$-NN ($k=1$) with standard metrics (Euclidean distance, Dynamic Time Warping, temporal correlation) and a learned combined metric $D$.}}{50}{figure.caption.33}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The Beveridge wheat price index is the average in nearly 50 places in various countries measured in successive years from 1500 to 1869\footnotemark .\relax }}{32}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Pushed and pulled samples in the $k=3$ target neighborhood of $\textbf {x}_i$ before (left) and after (right) learning.}}{52}{figure.caption.34}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of metric representation}}{34}{figure.caption.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of embedding of four time series $\textbf {x}_i$ from the temporal space (left) into the dissimilarity space (right) for $p=3$ basic metrics.\relax }}{54}{figure.caption.35}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of {\sc mds}}}{34}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Example of interpretation of two pairwise vectors $\textbf {x}_{12}$ and $\textbf {x}_{34}$ on a same line passing through the origin in the pairwise dissimilarity space.\relax }}{55}{figure.caption.36}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces 3 toy time series in the temporal domain.}}{36}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Example of two pairwise vectors $\textbf {x}_{12}$ and $\textbf {x}_{34}$ close in the pairwise dissimilarity space. However, the time series $\textbf {x}_{1}$ and $\textbf {x}_{3}$ are not similar in the temporal space.\relax }}{56}{figure.caption.37}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces 3 toy time series in the frequency domain}}{37}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Multi-scale decomposition\relax }}{57}{figure.caption.38}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces 4 toys time series in the temporal domain.}}{39}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Example of different strategies to build $Pull_i$ and $Push_i$ sets for a $k=2$ neighborhood.\relax }}{60}{figure.caption.39}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Example of a same sentence said by two different speakers.}}{40}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces \textsc {m$^2$tml} problem in the original space (top) and the pairwise dissimilarity space (bottom) for a $k=3$ neighborhood of $\textbf {x}_i$.}}{61}{figure.caption.40}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Example of {\sc dtw} grid between 2 time series $\textbf {x}_{i}$ and $\textbf {x}_{j}$ (top) and the signals before and after warping (bottom)}}{41}{figure.caption.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces The projected vector $\textbf {P}_\textbf {w}(\textbf {x}_{ij})$ and $\textbf {P}_\textbf {w}(\textbf {x}_{ij'})$\relax }}{71}{figure.caption.41}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Contour plot of the resulting combined metrics: $D_{Lin}$ ($1^{st}$ line), $D_{Geom}$ ($2^{nd}$ line) and $D_{Sig}$ ($3^{rd}$ line), for different values of $\beta $.}}{43}{figure.caption.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Example of \textsc {svm} solutions and of the resulting metric $D$ defined by the norm of the projection on $\textbf {w}$. }}{72}{figure.caption.42}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces The behavior of the learned metric $D$ ($p = 2$; $\lambda = 2.5$) with respect to common (a) and challenging (b) configurations of pull and push pairs.\relax }}{73}{figure.caption.43}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Effect of neighborhood scaling before (left) and after (right) on the neighborhood of two time series $\textbf {x}_1$ (green) and $\textbf {x}_2$ (red).}}{74}{figure.caption.44}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces A nearly log-normal distribution, and its log transform\footnotemark \relax }}{44}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Experiments}{77}{chapter.4}
+\contentsline {xchapter}{Multi-modal and Multi-scale \\ Time series Metric Learning (M$^2$TML)}{47}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Temporal representation of some datasets (SonyAIBO, ECG200, BME, UMD, FaceFour, PowerConsumption) considered in the experiments.\relax }}{79}{figure.caption.47}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces CinCECGtorso dataset and error rate using a $k$-NN ($k=1$) with standard metrics (Euclidean distance, Dynamic Time Warping, temporal correlation) and a learned combined metric $D$.}}{48}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces (a) Standard amplitude-based (Euclidean distance $d_A$ and {\sc dtw}) vs. {\sc m}$^2${\sc tml} ($D$ and $D_{\mathrsfs {H}}$) metrics. (b) Behavior-based ($d_B$ and $d_{B-\unhbox \voidb@x \hbox {\sc dtw}}$) vs. {\sc m}$^2${\sc tml} metrics. (c) No-warp ($d_A$ and $d_{B}$) vs. {\sc m}$^2${\sc tml} metrics. (d) Warp ({\sc dtw} and $d_{B-\unhbox \voidb@x \hbox {\sc dtw}}$) vs. {\sc m}$^2${\sc tml} metrics. (e) Frequential-based ($d_F$) vs. {\sc m}$^2${\sc tml} metrics. (f) \textit {A priori} ($D_{Lin}$, $D_{Geom}$, $D_{Sig}$) vs. {\sc m}$^2${\sc tml} metrics. \relax }}{86}{figure.caption.51}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Pushed and pulled samples in the $k=3$ target neighborhood of $\textbf {x}_i$ before (left) and after (right) learning.}}{50}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{86}{subfigure.2.1}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of embedding of four time series $\textbf {x}_i$ from the temporal space (left) into the dissimilarity space (right) for $p=3$ basic metrics.\relax }}{52}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{86}{subfigure.2.2}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Example of interpretation of two pairwise vectors $\textbf {x}_{12}$ and $\textbf {x}_{34}$ on a same line passing through the origin in the pairwise dissimilarity space.\relax }}{53}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{86}{subfigure.2.3}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Example of two pairwise vectors $\textbf {x}_{12}$ and $\textbf {x}_{34}$ close in the pairwise dissimilarity space. However, the time series $\textbf {x}_{1}$ and $\textbf {x}_{3}$ are not similar in the temporal space.\relax }}{54}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{86}{subfigure.2.4}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Multi-scale decomposition\relax }}{55}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{86}{subfigure.2.5}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Example of different strategies to build $Pull_i$ and $Push_i$ sets for a $k=2$ neighborhood.\relax }}{58}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{86}{subfigure.2.6}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces \textsc {m$^2$tml} problem in the original space (top) and the pairwise dissimilarity space (bottom) for a $k=3$ neighborhood of $\textbf {x}_i$.}}{59}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces {\sc m}$^2${\sc tml} feature weights for 4 datasets.\relax }}{87}{figure.caption.53}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces The projected vector $\textbf {P}_\textbf {w}(\textbf {x}_{ij})$ and $\textbf {P}_\textbf {w}(\textbf {x}_{ij'})$\relax }}{69}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {SonyAIBO}}}{87}{subfigure.3.1}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Example of \textsc {svm} solutions and of the resulting metric $D$ defined by the norm of the projection on $\textbf {w}$. }}{70}{figure.caption.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Beef}}}{87}{subfigure.3.2}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces The behavior of the learned metric $D$ ($p = 2$; $\lambda = 2.5$) with respect to common (a) and challenging (b) configurations of pull and push pairs.\relax }}{71}{figure.caption.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {CinC ECG torso}}}{87}{subfigure.3.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {FaceFour}}}{87}{subfigure.3.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Temporal representation of the top {\sc m}$^2${\sc tml} feature weights for 4 datasets.\relax }}{88}{figure.caption.54}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {SonyAIBO}}}{88}{subfigure.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Beef}}}{88}{subfigure.4.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {CinC ECG torso}}}{88}{subfigure.4.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {FaceFour}}}{88}{subfigure.4.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces {\sc mds} visualization of the $d_{B-\unhbox \voidb@x \hbox {\sc dtw}}$ (Fig. a) and $D$ (Fig. b) dissimilarities for FaceFour\relax }}{88}{figure.caption.55}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {FaceFour ($d_{B-\unhbox \voidb@x \hbox {\sc dtw}}$, stress: 20,1\%)}}}{88}{subfigure.5.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {FaceFour ($D$, stress: 18,9\%)}}}{88}{subfigure.5.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces (a) Two classes of time series from the Sony AIBO accelerometer. (b) The and-shapelets from the walk cycle on carpet. (c) The Sony AIBO Robot.\footnotemark \relax }}{91}{figure.caption.57}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Example of discretization by binning a continuous label $y$ into $Q=4$ equal-length intervals.}}{92}{figure.caption.58}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Border effect problems.}}{93}{figure.caption.59}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Example of pairwise label definition using an $\epsilon $-tube (green lines) around the time series $\textbf {x}_i$ (circled in blue).}}{93}{figure.caption.60}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Effect of neighborhood scaling before (left) and after (right) on the neighborhood of two time series $\textbf {x}_1$ (green) and $\textbf {x}_2$ (red).}}{72}{figure.caption.44}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Quadratic formalization development}{97}{appendix.A}
+\contentsline {xchapter}{Experiments}{75}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Temporal representation of some datasets (SonyAIBO, ECG200, BME, UMD, FaceFour, PowerConsumption) considered in the experiments.\relax }}{77}{figure.caption.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces (a) Standard amplitude-based (Euclidean distance $d_A$ and {\sc dtw}) vs. {\sc m}$^2${\sc tml} ($D$ and $D_{\mathrsfs {H}}$) metrics. (b) Behavior-based ($d_B$ and $d_{B-\unhbox \voidb@x \hbox {\sc dtw}}$) vs. {\sc m}$^2${\sc tml} metrics. (c) No-warp ($d_A$ and $d_{B}$) vs. {\sc m}$^2${\sc tml} metrics. (d) Warp ({\sc dtw} and $d_{B-\unhbox \voidb@x \hbox {\sc dtw}}$) vs. {\sc m}$^2${\sc tml} metrics. (e) Frequential-based ($d_F$) vs. {\sc m}$^2${\sc tml} metrics. (f) \textit {A priori} ($D_{Lin}$, $D_{Geom}$, $D_{Sig}$) vs. {\sc m}$^2${\sc tml} metrics. \relax }}{84}{figure.caption.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{84}{subfigure.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{84}{subfigure.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{84}{subfigure.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{84}{subfigure.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{84}{subfigure.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{84}{subfigure.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces {\sc m}$^2${\sc tml} feature weights for 4 datasets.\relax }}{85}{figure.caption.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {SonyAIBO}}}{85}{subfigure.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Beef}}}{85}{subfigure.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {CinC ECG torso}}}{85}{subfigure.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {FaceFour}}}{85}{subfigure.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Temporal representation of the top {\sc m}$^2${\sc tml} feature weights for 4 datasets.\relax }}{86}{figure.caption.54}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {SonyAIBO}}}{86}{subfigure.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Beef}}}{86}{subfigure.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {CinC ECG torso}}}{86}{subfigure.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {FaceFour}}}{86}{subfigure.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces {\sc mds} visualization of the $d_{B-\unhbox \voidb@x \hbox {\sc dtw}}$ (Fig. a) and $D$ (Fig. b) dissimilarities for FaceFour\relax }}{86}{figure.caption.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {FaceFour ($d_{B-\unhbox \voidb@x \hbox {\sc dtw}}$, stress: 20,1\%)}}}{86}{subfigure.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {FaceFour ($D$, stress: 18,9\%)}}}{86}{subfigure.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces (a) Two classes of time series from the Sony AIBO accelerometer. (b) The and-shapelets from the walk cycle on carpet. (c) The Sony AIBO Robot.\footnotemark \relax }}{89}{figure.caption.57}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Example of discretization by binning a continuous label $y$ into $Q=4$ equal-length intervals.}}{90}{figure.caption.58}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Border effect problems.}}{91}{figure.caption.59}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Example of pairwise label definition using an $\epsilon $-tube (green lines) around the time series $\textbf {x}_i$ (circled in blue).}}{91}{figure.caption.60}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Link between SVM and the Quadratic formalization}{99}{appendix.B}
+\contentsline {xchapter}{Quadratic formalization development}{95}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Link between SVM and the Quadratic formalization}{97}{appendix.B}

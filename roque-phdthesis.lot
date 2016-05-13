@@ -4,38 +4,38 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Related work}{9}{chapter.1}
+\contentsline {xchapter}{Related work}{7}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.1}{\ignorespaces Confusion matrix for a 2-class problem.\relax }}{14}{table.caption.13}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Time series metrics}{33}{chapter.2}
+\contentsline {table}{\numberline {1.1}{\ignorespaces Confusion matrix for a 2-class problem.\relax }}{12}{table.caption.13}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Multi-modal and Multi-scale \\ Time series Metric Learning (M$^2$TML)}{49}{chapter.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.1}{\ignorespaces The different formalizations for \textsc {m$^2$tml}\relax }}{76}{table.caption.45}
+\contentsline {xchapter}{Time series metrics}{31}{chapter.2}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Experiments}{77}{chapter.4}
+\contentsline {xchapter}{Multi-modal and Multi-scale \\ Time series Metric Learning (M$^2$TML)}{47}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.1}{\ignorespaces Dataset table description providing the number of classes (Nb. Class), the number of time series for the training (Nb. Train) and the testing (Nb. Test) sets, and the length of each time series (TS length).\relax }}{78}{table.caption.46}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.2}{\ignorespaces Considered metric in the experiments\relax }}{79}{table.caption.48}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.3}{\ignorespaces Parameter ranges\relax }}{80}{table.caption.49}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.4}{\ignorespaces 1-NN test error rates for standard, \textit {a priori} combined and {\sc m}$^2${\sc tml} measures.\relax }}{81}{table.caption.50}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.5}{\ignorespaces Top 5 multi-modal and multi-scale features involved in $D$\relax }}{84}{table.caption.52}
+\contentsline {table}{\numberline {3.1}{\ignorespaces The different formalizations for \textsc {m$^2$tml}\relax }}{74}{table.caption.45}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Quadratic formalization development}{97}{appendix.A}
+\contentsline {xchapter}{Experiments}{75}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.1}{\ignorespaces Dataset table description providing the number of classes (Nb. Class), the number of time series for the training (Nb. Train) and the testing (Nb. Test) sets, and the length of each time series (TS length).\relax }}{76}{table.caption.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.2}{\ignorespaces Considered metric in the experiments\relax }}{77}{table.caption.48}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.3}{\ignorespaces Parameter ranges\relax }}{78}{table.caption.49}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.4}{\ignorespaces 1-NN test error rates for standard, \textit {a priori} combined and {\sc m}$^2${\sc tml} measures.\relax }}{79}{table.caption.50}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.5}{\ignorespaces Top 5 multi-modal and multi-scale features involved in $D$\relax }}{82}{table.caption.52}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Link between SVM and the Quadratic formalization}{99}{appendix.B}
+\contentsline {xchapter}{Quadratic formalization development}{95}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Link between SVM and the Quadratic formalization}{97}{appendix.B}

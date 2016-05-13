@@ -59,42 +59,42 @@ In this work, our objective is to learn a combined multi-modal and multi-scale t
 %If you think that they are missing figures, you can add them with a description with this command line :
 %\missingfigure{Testing a long text string}
 
-\newpage
-\section*{Industrial motivations: analytics context within Schneider Electric}
-\begin{itemize}
-	\item Idée : raccrocher les problématiques de Schneider aux problématiques scientifiques
-	\item Part 1 : Problème autour de la segmentation des séries temporelles : qu'est ce qu'une série temporelle en industrie?
-	\item Part 2 : Les types de problèmes en Machine Learning en lien avec le voca de l'industrie
-	\item L'évolution des technologies dans la collecte des données ces dernières décennies a posé de nouveaux intérêts et enjeux : comment tirer parti au mieux des données massives provenant de plusieurs sources pour aider les industries à être plus efficaces dans leurs activités de développement de solutions (services, etc.) qui leur permettent d'être plus efficaces (construction de modèles, coût, temps, précision, etc.).
-	\item Le terme à la mode "Analytics" est souvent utilisés pour désigner ces efforts mais les frontières de sa définition reste assez flous (donner des exemples?). Ceci peut générer des incompréhensions entre les domaines (industries, recherche, etc.).
-	\item Dans le même temps, l'évolution des technologies a permis de donner une nouvelle dimension dans l'étude des données : la temporalité. Pour désigner des données qui évoluent dans le temps, on utilise souvent le terme de séries temporelles mais la définition mathématiques et industrielles (y compris pour différents domaines ou applications) peuvent connaître quelques différences.
-	\item L'idée ici est de 1) Poser une définition des Analytics; 2) Formaliser le terme de séries temporelles; 3) Donner les liens de voca entre l'académique et l'industrie. 
-	\item La définition d'un terme comme "Analytics" doit répondre à 2 questions : qu'est ce que c'est, et qu'est ce que ça fait (what it is, what it does): "Analytics is the process of developing actionable insights through problem definition and the application of statistical models and analysis against existing and/or simulated future data."
-	\item Expliquer ce que veut dire "actionable insights"
-	\item Prendre la définition des Analytics de l'équipe
-	\item Définir le terme séries temporelles (peut être vues comme une extension des données statiques en tenant compte de la séquentialité des données) En industrie, une série temporelle peut représenter différents objets ou entités en fonction du choix de segmentation/découpage qui leur ai fait (\textit{i.e.}, choisir le début et la fin de la série temporelle). Pas très claire et intuitif pour moi
-	\item Problème de la segmentation des séries temporelles : liés à l'application.
-	\begin{itemize}
-		\item si le but est de reconnaître un pattern dans une longue série temporelle
-		\item si le but est de prédire une valeur à partir d'une fenêtre temporelle
-		\item etc.
-	\end{itemize}
-	\item Les problèmes généraux des Analytics pour les séries temporelles 
-	\begin{itemize}
-		\item Supervisé / semi-supervisé
-		\begin{itemize}
-			\item Classification : assign a time series to a pre-defined class
-			\begin{itemize}
-				\item One-class = outlier detection. (Application: Fault dectection)
-				\item Two-class (particular case of multi-class problems)
-				\item Multi-class = classification. (Application: diagnosis, situation assement, pattern matching)
-			\end{itemize}
-			\item Régression : predict a (real) number = scoring, prediction, regression (Application: Virtual Sensor, Forecasting)
-		\end{itemize}
-		\item Clustering : separate a dataset into distinct non-given groups/class = profiling, segmentation.
-	\end{itemize}
-\end{itemize}
-
-In the last decades, the evolution in data collection technologies has raised new interests and challenges: how to get the best from the massive growing amount data coming from several sources to help industries in their activities to develop solutions (services, etc.) that can make them more effective (\textit{e.g.}, cost, time or accuracy in system modeling\footnote{the word modeling is used in its broad sense, encompassing prediction, fault detection, profiling, etc.}). The word "Analytics" is often used to describe the efforts that goes in that sense. However, like many other buzz-words, the frontier of its definition may be vague and it can lead to misunterstading or the appearance of several words for a same concept, either between various actors (industrial, academics, etc.) or worst, between collaborators working in the same company but in different teams. \\
-Meanwhile, the ability of collecting easily data has allowed to take into account of an other characteristics in the data: the temporality. To designate data that evolves over the time, the word "time series" is often used but the
+%\newpage
+%\section*{Industrial motivations: analytics context within Schneider Electric}
+%\begin{itemize}
+%	\item Idée : raccrocher les problématiques de Schneider aux problématiques scientifiques
+%	\item Part 1 : Problème autour de la segmentation des séries temporelles : qu'est ce qu'une série temporelle en industrie?
+%	\item Part 2 : Les types de problèmes en Machine Learning en lien avec le voca de l'industrie
+%	\item L'évolution des technologies dans la collecte des données ces dernières décennies a posé de nouveaux intérêts et enjeux : comment tirer parti au mieux des données massives provenant de plusieurs sources pour aider les industries à être plus efficaces dans leurs activités de développement de solutions (services, etc.) qui leur permettent d'être plus efficaces (construction de modèles, coût, temps, précision, etc.).
+%	\item Le terme à la mode "Analytics" est souvent utilisés pour désigner ces efforts mais les frontières de sa définition reste assez flous (donner des exemples?). Ceci peut générer des incompréhensions entre les domaines (industries, recherche, etc.).
+%	\item Dans le même temps, l'évolution des technologies a permis de donner une nouvelle dimension dans l'étude des données : la temporalité. Pour désigner des données qui évoluent dans le temps, on utilise souvent le terme de séries temporelles mais la définition mathématiques et industrielles (y compris pour différents domaines ou applications) peuvent connaître quelques différences.
+%	\item L'idée ici est de 1) Poser une définition des Analytics; 2) Formaliser le terme de séries temporelles; 3) Donner les liens de voca entre l'académique et l'industrie. 
+%	\item La définition d'un terme comme "Analytics" doit répondre à 2 questions : qu'est ce que c'est, et qu'est ce que ça fait (what it is, what it does): "Analytics is the process of developing actionable insights through problem definition and the application of statistical models and analysis against existing and/or simulated future data."
+%	\item Expliquer ce que veut dire "actionable insights"
+%	\item Prendre la définition des Analytics de l'équipe
+%	\item Définir le terme séries temporelles (peut être vues comme une extension des données statiques en tenant compte de la séquentialité des données) En industrie, une série temporelle peut représenter différents objets ou entités en fonction du choix de segmentation/découpage qui leur ai fait (\textit{i.e.}, choisir le début et la fin de la série temporelle). Pas très claire et intuitif pour moi
+%	\item Problème de la segmentation des séries temporelles : liés à l'application.
+%	\begin{itemize}
+%		\item si le but est de reconnaître un pattern dans une longue série temporelle
+%		\item si le but est de prédire une valeur à partir d'une fenêtre temporelle
+%		\item etc.
+%	\end{itemize}
+%	\item Les problèmes généraux des Analytics pour les séries temporelles 
+%	\begin{itemize}
+%		\item Supervisé / semi-supervisé
+%		\begin{itemize}
+%			\item Classification : assign a time series to a pre-defined class
+%			\begin{itemize}
+%				\item One-class = outlier detection. (Application: Fault dectection)
+%				\item Two-class (particular case of multi-class problems)
+%				\item Multi-class = classification. (Application: diagnosis, situation assement, pattern matching)
+%			\end{itemize}
+%			\item Régression : predict a (real) number = scoring, prediction, regression (Application: Virtual Sensor, Forecasting)
+%		\end{itemize}
+%		\item Clustering : separate a dataset into distinct non-given groups/class = profiling, segmentation.
+%	\end{itemize}
+%\end{itemize}
+%
+%In the last decades, the evolution in data collection technologies has raised new interests and challenges: how to get the best from the massive growing amount data coming from several sources to help industries in their activities to develop solutions (services, etc.) that can make them more effective (\textit{e.g.}, cost, time or accuracy in system modeling\footnote{the word modeling is used in its broad sense, encompassing prediction, fault detection, profiling, etc.}). The word "Analytics" is often used to describe the efforts that goes in that sense. However, like many other buzz-words, the frontier of its definition may be vague and it can lead to misunterstading or the appearance of several words for a same concept, either between various actors (industrial, academics, etc.) or worst, between collaborators working in the same company but in different teams. \\
+%Meanwhile, the ability of collecting easily data has allowed to take into account of an other characteristics in the data: the temporality. To designate data that evolves over the time, the word "time series" is often used but the
 
