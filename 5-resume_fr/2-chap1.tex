@@ -1,0 +1,73 @@
+\chapter*{Chapitre 1 : Etat de l'art}
+
+Dans ce chapitre, on rappelle les concepts généraux en apprentissage statistique. On présente d'abord le principe, l'architecture général et le protocole d'évaluation en apprentissage supervisée. Ensuite, on présente deux algorithmes qui seront utilisées dans notre travail : les k-plus proches voisins (k-ppv) et les Support Vector Machine (\textsc{svm}).
+
+\section*{Classification, Régression}
+%\begin{itemize}
+%	\item concept général : L'idée général du machine learning est d'imiter avec des algorithmes, la capacité qu'on les humains d'apprendre par l'exemple.
+%	\item Soit X un ensemble d'apprentissage, l'objectif est d'apprendre une fonction entre x et y sur la base d'exemples étiquetés. Après la phase d'apprentissage, le modèle f doit pouvoir bien généralisée en phase de test, i.e., donner une bonne pred pour de nouvelles instances x que le modèle n'a pas rencontré en apprentissage.
+%	\item Pour mesurer la performance d'un modèle, il existe deux types d'erreurs : apprentissage et généralisation. erreur d'apprentissage = erreur sur l'ensemble d'apprentissage et l'erreur de test = erreur sur le jeu de test. Il est important de bien considérer les deux mesures car un modèle qui fit trop bien sur les données d'apprentissage peut être soumis au sur apprentissage.
+%	\item Pour éviter cela, de nombreux algos nécessite d'optimiser des hyper param. Plusieurs techniques existent comme la validation simple ou la validation croisée qui permettent de sélectionner le meilleur jeu d'hyper param. On appelle cela la sélection de modèle. Nous utilisons en autre la validation croisée dans nos expériences.
+%	\item Pour mesurer l'erreur sur le jeu de validation, il existe des mesures d'erreur en classification et en régression. Pour la classification, on utilise le taux d'erreur qui est égale à ... De manière similaire, des mesures de calcul d'erreur existent pour la régression (MAE, RMSE, R2, etc.).
+%	\item Pour mesurer si la performance d'un classifieur par rapport à un autre est équivalent, on va se référer à un test qui mesure la différence de perf entre 2 algos proposées dans ....
+%	\item Si on considère deux classifieurs fA et fB ....
+%	\item Les données réelles sont souvent assujettis à des problèmes comme le bruit, les points aberrants ou les problèmes d'échelles des données. Avant d'appliquer un protocole d'apprentissage, il est souvent nécessaire d'appliquer des méthodes de pre-processing comme le filtrage des données (e.g., dé-buitage), la suppression des points aberrants, la normalisation. On se focalise sur la normalisation dans notre travail. (peut être à enlever)
+%\end{itemize}
+
+L'idée de l'apprentissage statistique est d'imiter avec des algorithmes, la capacité qu'on les humains d'apprendre par l'exemple \cite{Dreyfus2006}. Soit $X=\{\textbf{x}_i,y_i\}_{i=1}^n$ un ensemble d'apprentissage de $n$ vecteurs avec $\textbf{x}_i \in \mathbb{R}^p$ et $y_i$ leurs étiquettes. Lors de la phase d'apprentissage, l'objectif de l'apprentissage supervisé est d'apprendre une relation $f$ entre les exemples $\textbf{x}_i$ et leur étiquette $y_i$ sur la base d'exemples $X$ \cite{Bishop2006,Duda1973}. Ensuite, lors de la phase de test, le modèle $f$ doit être capable de généraliser, \textit{i.e}., donner une bonne prédiction pour de nouvelles instances $\textbf{x}_j$ que le modèle n'a pas rencontré obligatoirement en apprentissage. On appelle \textbf{ensemble de test} $X_{Test}=\{\textbf{x}_j,y_j\}_{j=1}^m$, l'ensemble des individus en test avec $m$, le nombre d'individus en test.
+
+Pour mesurer la performance d'un modèle $f$, deux types d'erreurs existent : l'\textbf{erreur d'apprentissage} (erreur sur l'ensemble d'apprentissage $X$) et l'\textbf{erreur de généralisation} (erreur sur le jeu de test $X_{Test}$). Il est important de bien considérer les deux types d'erreur car un modèle qui est appris pour prédire seulement au mieux les données en apprentissage sera très susceptible d'être soumis au sur-apprentissage. Pour éviter cela, lorsqu'un algorithme nécessite d'optimiser ses hyper-paramètres, des techniques comme la validation simple ou la validation croisée permettent de sélectionner le meilleur jeu d'hyper-paramètres pour éviter les problèmes de sur-apprentissage. On appelle ce processus la sélection de modèle. L'idée est de diviser le jeu d'apprentissage en 2 sous-ensembles : un ensemble d'apprentissage où le modèle sera appris et un ensemble de validation où le modèle appris sera testé. Dans le cas de la validation croisée, ces ensembles rotationnent pour mieux estimer l'erreur du modèle pour un jeu de paramètres donné. Nous utilisons la validation croisée dans nos expériences.
+
+Pour mesurer l'erreur sur le jeu de validation, il existe des mesures pour calculer l'erreur en classification et en régression. Pour la classification, on utilise en général le taux d'erreur qui est égale à
+\begin{align}
+Err & = \frac{\text{Number of wrong predictions}}{\text{Total number of predictions}}
+\end{align}
+De manière similaire, des mesures de calcul d'erreurs existent pour la régression  comme la Mean Absolute Error (MAE), la Root Mean Square Error (RMSE), ou le coefficient de détermination ($R^2$). Pour mesurer si la performance d'un classifieur par rapport à un autre est équivalente ou non, on va se référer à un Z-test qui mesure la différence de performances entre deux algorithmes sur le jeu de test $X_{Test}$ proposées dans \cite{Cochran1977} et utiliser par de nombreux travaux \cite{Dietterich1997,Dietterich1995}.
+
+
+\section*{Algorithmes d'apprentissage statistique}
+%\begin{itemize}
+%	\item De nombreux algos d'apprentissage ont été proposés dans le cadre supervisé comme les réseaux de neurones \cite{Lee2009}, les arbres de décisions \cite{Quinlan1986a}, les k-plus proches voisins ($k$-NN) ou les Support Vector Machine ({\sc svm}). Dans notre travail, le classifieur utilisé est le $k$-NN et on utilisera les {\sc svm} pour leur concept de vaste marge.
+%	\item le kNN \cite{Silverman1989,Cover1967b} est une approche simple pour classifier des objets qui considère que des objets proches appartiendront à la même classe. La classe yj d'un nouvel individu xj est obtenue avec le vote majoritaire de la classe des k plus proches voisins xi. La notion de proximité est basé sur le calcul d'une métrique. Pour les données statiques, les distances usuelles sont la distance euclidienne, de Minkowski ou la distance de Mahalnobis. Malgré sa simplicité, le kNN reste un algo qui réussit dans de nombreux problèmes de classif \cite{Belongie2002,Xi2006a,Ding2008}. Néanmoins, ils présentent de nombreux désavantages, notamment en terme de complexité calculatoire, que ce soit en terme de stockage (stockage de l'ensemble des individus d'apprentissage) ou de temps (recherche des voisins) \cite{Duda1973}. Des techniques existent pour surpasser ces limités comme les Ball Tree, $k$-d Tree, etc. qui visent essentiellement à partitionner les donner. Une revue plus détaillée peut être trouvé dan s\cite{Bhatia2010}.
+%	\item les Support Vector Machine ({\sc svm})  sont une méthode de classif introduit en 1992 par Boser, Guyon, and Vapnik \cite{Boser1992,Cortes1995} conçu au départ pour résoudre des problèmes linéairement séparables. Les svm appartiennent à la catégories des méthodes à noyaux, algoritmes qui ne dépendent que de produits scalaires entre les données \cite{Schlkopf2013}. qui permettent ainsi de résoudre des problèmes non linéairement séparables.
+%	\item Dans un problème linéairement séparable, l'objectif est d'apprendre un séparateur wx+b qui va maximer la marge 1/w entre les supports vectors de chaque classe. 
+%	\item Ce problème peut s'écrire sous la forme d'un problème d'optimisation : ....
+%	\item En réécrivant le problème, on obtient une forme duale équivalente :
+%	\item Cette forme ne fait apparaître que des produits scalaires entre les données. On peut alors appliquer l'astuce du kernel :
+%	\item pour permettre d'apprendre des séparateurs non-linéaires.
+%\end{itemize}
+
+
+De nombreux algos d'apprentissage ont été proposés dans le cadre supervisé comme les réseaux de neurones \cite{Lee2009}, les arbres de décisions \cite{Quinlan1986a}, les k-plus proches voisins ($k$-NN) ou les Support Vector Machine ({\sc svm}). Dans notre travail, le classifieur utilisé est le $k$-NN et on utilisera les {\sc svm} pour leur concept de vaste marge.
+
+L'approche des $k$-NN \cite{Silverman1989,Cover1967b} est une approche simple pour classifier des objets qui considère que des objets proches appartiendront à la même classe. La classe $y_j$ d'un nouvel individu $\textbf{x}_j$ est obtenue avec le vote majoritaire de la classe des $k$ plus proches voisins $\textbf{x}_i$. La notion de proximité est basé sur le calcul d'une métrique. Pour les données statiques, les distances usuelles sont la distance euclidienne, de Minkowski ou la distance de Mahalanobis. Malgré sa simplicité, le $k$-NN reste un algorithme qui réussit dans de nombreux problèmes de classification \cite{Belongie2002,Xi2006a,Ding2008}. Néanmoins, ils présentent de nombreux désavantages, notamment en terme de complexité calculatoire, que ce soit en terme de stockage (stockage de l'ensemble des individus d'apprentissage) ou de temps (recherche des voisins) \cite{Duda1973}. Des techniques existent pour surpasser ces limités comme les Ball Tree, $k$-d Tree, etc. qui visent essentiellement à partitionner les donner. Une revue plus détaillée peut être trouvée dans \cite{Bhatia2010}.
+
+Les Support Vector Machine ({\sc svm})  sont une méthode de classification introduit en 1992 par Boser, Guyon, and Vapnik \cite{Boser1992,Cortes1995} conçu au départ pour résoudre des problèmes linéairement séparables. Les {\sc svm} appartiennent à la catégories des méthodes à noyaux, algorithmes qui ne dépendent que de produits scalaires entre les données \cite{Schlkopf2013}. qui permettent ainsi de résoudre des problèmes non linéairement séparables. Dans un problème linéairement séparable, l'objectif est d'apprendre un séparateur wx+b qui va maximimer la marge $1/||\textbf{w}||^2$ entre les vecteurs supports de chaque classe. Ce problème peut s'écrire sous la forme d'un problème d'optimisation :
+	\begin{align}
+		& \argmin_{\textbf{w},b} \frac{1}{2} ||\textbf{w}||_2^2 \label{eq:objectiveSVM}\\
+		& \textbf{s.t. } \forall i = 1,\ldots,n: \quad y_i(\textbf{w} ^T\textbf{x}_i+b) \geq 1 \label{eq:constraintsSVM}
+	\end{align}
+En réécrivant le problème, on obtient une forme duale équivalente :
+\begin{align}
+	& \argmax_{\boldsymbol{\alpha}} \left( 
+	\sum\limits_{i=1}^{n} \alpha_i - \frac{1}{2} \sum\limits_{i,j=1}^{n} \alpha_i \alpha_j y_i y_j (\textbf{x}_i . \textbf{x}_j) 
+	\right) 
+	\label{eq:dualSVM}\\
+	& \textbf{s.t. } \forall i = 1...n: \nonumber \\
+	& \sum\limits_{i=1}^{n}\alpha_i y_i = 0 \label{constraintdual1}\\
+	& \alpha_i \geq 0 \label{constraintdual2}
+\end{align}
+Cette forme ne fait apparaître que des produits scalaires entre les données. On peut alors appliquer l'astuce du kernel pour apprendre des fonctions non-linéaires.
+\begin{equation}
+(\textbf{x}_i . \textbf{x}_j) \rightarrow \Phi(\textbf{x}_i) . \Phi(\textbf{x}_j) = \kappa(\textbf{x}_i . \textbf{x}_j)
+\end{equation}
+\noindent où $\Phi$ est une fonction de mappage de $\kappa$, une fonction kernel. Le problème d'optimisation peut alors s'écrire :
+\begin{align}
+	& \argmax_{\boldsymbol{\alpha}} \left( 
+	\sum\limits_{i=1}^{n} \alpha_i - \frac{1}{2} \sum\limits_{i=1}^{n} \sum\limits_{j=1}^{n} \alpha_i \alpha_j y_i y_j \kappa(\textbf{x}_i , \textbf{x}_j) 
+	\right) 
+	\label{eq:dualSVM2kernel}\\
+	& \textbf{s.t. } \sum\limits_{i=1}^{n}\alpha_i y_i = 0 \label{constraintdual3kernel}\\
+	& 0 \leq \alpha_i \leq C  \label{constraintdual4kernel}
+\end{align}
+Les \textsc{svm} sont donc des algorithmes intéressants car ils permettent l'apprentissage de fonctions linéaires ou non-linéaire. L'interprétation dans le primal du vecteur de poids $\textbf{w}$ permet de révéler les caractéristiques discriminantes du modèle, et dans le dual, l'analyse des coefficients $\alpha$ permet de connaître les individus vecteurs supports et d'obtenir une solution parcimonieuse. Il existe des variantes des \textsc{svm} qui permettent de changer la régularisation en norme 1 pour obtenir un modèle parcimonieux ou les Support Vector Regression qui permettent de résoudre des problèmes de régression.

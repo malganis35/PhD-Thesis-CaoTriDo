@@ -1,0 +1,88 @@
+\chapter*{Chapitre 2 : Mesure de comparaison pour les séries temporelles}
+
+Dans ce chapitre, on donne tout d'abord la définition d'une série temporelle. Ensuite, on rappelle les propriétés générales d'une mesure de distance et introduisons quelques métriques pour les séries temporelles. On se focalise en particulier sur les mesures basées sur les amplitudes, la forme et les fréquences. Pour gérer les problèmes de délais, on rappelle le concept d'alignement et de programmation dynamique. Finalement, on présente quelques modèles de métriques combinées pour les séries temporelles. 
+
+\section*{Définition d'une série temporelle}
+Les séries temporelles sont des données que l'on retrouve dans de nombreux domaines émergent tels que les réseaux de capteurs, les bâtiments intelligents, les réseaux sociaux ou l'Internet des Objets (IoT) \cite{Najmeddine2012,Nguyen2012,Yin2008}. Elles sont impliquées dans de nombreux problèmes d'apprentissage tels que la détection de mouvements humains dans une vidéo, la détection d'un mode d'opération d'une machine, etc. \cite{PANAGIOTAKIS2008,Ramasso2008}. \\
+\indent Dans la suite, on note $\textbf{x}_i=(x_{i1}, x_{i2}, ..., x_{iq})$ une série temporelle de taille $q$. Chaque observation $x_{it}$ est bornée, \textit{i.e.},  l'infinie n'est pas une valeur valide : $x_{it} \neq \pm \infty$. En général, les séries temporelles peuvent être monovariées (provenant de la mesure d'un seul capteur par exemple) ou multivariées (provenant de la mesure par plusieurs capteurs simultanément par exemple). 
+
+
+\section*{Propriétés et représentation d'une métrique}
+Une fonction $D:\mathbb{R}^p \times \mathbb{R}^p \rightarrow \mathbb{R}^+$ sur un espace $\mathbb{R}^p$ est appelé métrique ou distance si pour tout vecteur $\forall \textbf{ } \textbf{x}_i, \textbf{x}_j, \textbf{x}_l \in \mathbb{R}^p$, elle satisfait les propriétés 1 à 4 \cite{Deza2009}
+\begin{enumerate}
+	\item {\makebox[6cm]{$D(\textbf{x}_i, \textbf{x}_j) \geq 0$\hfill} (positivité)}
+	\item {\makebox[6cm]{$D(\textbf{x}_i, \textbf{x}_j) = D(\textbf{x}_j, \textbf{x}_i)$\hfill} (symétrie)}	
+	\item {\makebox[6cm]{$D(\textbf{x}_i, \textbf{x}_j) = 0 \Leftrightarrow  \textbf{x}_i=\textbf{x}_j$\hfill} (distinguashibilité)}
+	\item {\makebox[6cm]{$D(\textbf{x}_i, \textbf{x}_j) + D(\textbf{x}_j, \textbf{x}_l) \geq D(\textbf{x}_i, \textbf{x}_l)$\hfill} (inégalité triangulaire)}
+	\item {\makebox[6cm]{$D(\textbf{x}_i, \textbf{x}_i) = 0$\hfill} (réfléxivité)}
+\end{enumerate}
+Une fonction $D$ qui satisfait les propriétés 1, 2 et 5 est appelée une dissimilarité and une fonction $D$ qui satisfait les propriétés 1, 2 et 4 est appelée une pseudo-métrique. Dans la suite, pour simplifier le discours, on réfèrera les pseudo-métriques et les dissimilarités à des métriques en pointant les distinctions lorsque cela est nécessaire. 
+
+\section*{Métrique unimodale pour les séries temporelles}
+Dans la suite, on suppose que les séries temporelles ont la même taille $q$ et ont été échantillonée à la même période $f_e$. Soit $\textbf{x}_i=(x_{i1}, x_{i2}, ..., x_{iq})$ et $\textbf{x}_j=(x_{j1}, x_{j2}, ..., x_{jq})$, deux séries temporelles univariées de taille $q$.
+
+De nombreuses mesures de comparaison pour les séries ont été proposées dans la littérature. Une revue détaillée peut être trouvée dans \cite{Montero2014}. Dans notre travail, on se focalise sur 3 catégories de mesures de comparaison pour les séries : basées sur l'amplitude, la forme et les fréquences.
+
+La mesure de comparaison la plus utilisée repose sur la comparaison entre les amplitudes des séries dans le domaine temporel, indépendamment de leurs formes ou de leurs contenus en fréquence. Parmi elle, la plus commune est la distance euclidienne qui compare les observations situés au même instants \cite{Ding2008}: 
+\begin{equation}	
+d_E(\textbf{x}_i,\textbf{x}_j) = \sqrt{\sum\limits_{t=1}^{q} (x_{it}-x_{jt})^2}
+\label{eq:A}
+\end{equation}
+
+La seconde catégorie, très utilisée en traitement du signal, compare les séries en se basant sur leurs propriétés fréquentielles (\textit{e.g.}, transformée de Fourier, en Ondelette, ou en Mel-Frequency Cepstral Coefficients \cite{Sahidullah2012,Torrence1998,Brigham1967}). Dans ce travail, on se restreint à la comparaison basée sur la transformée de Fourier discrète \cite{Lhermitte2011a}. Les séries $\textbf{x}_i$ sont d'abord transformées en leur représentation de Fourier $\tilde{\textbf{x}}_i=[\tilde{x}_{i1}, ...,  \tilde{x}_{iF}]$, avec $\tilde{x}_{if}$ la composante complexe à l'indice fréquentiel $f=\{1,\ldots,F\}$. On propose dans ce travail de considérer une métrique fréquentielle entre les modules $|\tilde{x}_{if}|$ des représentations complexes des séries dans le domaine de Fourier :
+\begin{equation}
+d_{F}(\textbf{x}_i,\textbf{x}_j) = \sqrt{\sum_{f=1}^{F} 
+	(|\tilde{x}_{if}|-|\tilde{x}_{jf}|)^2}
+\label{eq:F}
+\end{equation}
+
+La troisième distance pour les séries vise à comparer les formes indépendemment du domaine de variations de valeurs des séries. Des mesures existent comme le coefficient de corrélation de Pearson \cite{Abraham2010a,Benesty2009}. Une variante de celle-ci, plus générale, appelée la correlation temporelle $cort_r$ est introduite dans \cite{Douzal-Chouakria2003,AhlameDouzal-Chouakria2012,Chouakria2007} :
+\begin{equation}	
+cort_r(\textbf{x}_i,\textbf{x}_j) = 
+\frac{
+	\sum\limits_{t,t'=1}^q 
+	{
+		(x_{it}-x_{it'})
+		(x_{jt}-x_{jt'})
+	}
+}
+{
+	\sqrt{
+		\sum\limits_{t,t'=1}^q  
+		{(x_{it}-x_{it'})^2}
+	} 
+	\sqrt{
+		\sum\limits_{t,t'=1}^q  
+		{(x_{jt}-x_{jt'})^2}
+	} 	 
+}
+\label{eq:corTr}
+\end{equation}
+
+\noindent avec $|t-t'| \leq r$, $r \in [1,..., q-1]$. Le paramètre $r$ peut être appris ou fixé a priori en fonction du niveau de bruit dans les données. Lorsque $r=q-1$, la formule revient au coefficient de correlation de Pearson. Comme la mesure $cort_r$ est similarité, on peut la transformer en dissimilarité:
+\begin{equation}
+d_B(\textbf{x}_i,\textbf{x}_j) = \frac{1 - cort_r(\textbf{x}_i,\textbf{x}_j)}{2}
+\label{eq:B}
+\end{equation}
+
+Lorsque les séries sont soumis à des délais, il peut être nécessaire devoir les ré-aligner avant tout processus d'analyse. Pour résoudre ces problèmes, des algorithmes ont été proposées comme la 
+Dynamic Time Warping (\textsc{dtw}) \cite{Keogh2004,Salvador}. Basée sur les signaux ré-alignées, il est possible de calculer les mesures cités précédemment.
+
+En résumé, les mesures cités précédemment fonctionne dans les cas où une seule modalité est impliquée dans la comparaison et où l'ensemble des observations pour la comparaison sont nécessaires. Elles restent néanmoins limités dans les cas où plusieurs échelles d'observations interviennent et où plusieurs modalités sont nécessaires pour la comparaison.
+
+% \section*{Alignement des séries temporelle et approche par programmation dynamique}
+
+
+
+\section*{Métrique combinée pour les séries temporelles}
+Dans les cas où plusieurs modalités sont nécessaires pour la comparaison, certains auteurs ont proposé de combiner plusieurs modalités (en général la forme et la valeur) avec des fonctions de combinaisons linéaires, géométriques ou sigmoïde \cite{AhlameDouzal-Chouakria2012,Chouakria2007} :
+\begin{align}
+	D_{Lin}(\textbf{x}_i,\textbf{x}_j) &= \beta d_{B}(\textbf{x}_i,\textbf{x}_j) + (1-\beta) d_A(\textbf{x}_i,\textbf{x}_j)  \label{eq:DLin}   \\
+	D_{Geom}(\textbf{x}_i,\textbf{x}_j) &= (d_{B}(\textbf{x}_i,\textbf{x}_j))^\beta  (d_A(\textbf{x}_i,\textbf{x}_j))^{1-\beta} \label{eq:DGeom} \\
+	D_{Sig}(\textbf{x}_i,\textbf{x}_j) &= \frac{2d_A(\textbf{x}_i,\textbf{x}_j)}{1+\exp(\beta cort_r(\textbf{x}_i,\textbf{x}_j))}
+	= \frac{2d_A(\textbf{x}_i,\textbf{x}_j)}{1+\exp(\beta (1-2d_B(\textbf{x}_i,\textbf{x}_j)))}
+	\label{eq:DSig}
+\end{align}
+\noindent où $\beta$ est un paramètre contrôlant le compromis des composantes forme $d_B$ et amplitude $d_A$. Ce paramètre peut être appris en utilisant une procédure de grille de recherche et de validation croisée \ref{sec:model_selection}).
+
+Lorsque l'on combine plusieurs métriques ensemble, il est nécessaire de normaliser les métriques impliquées pour éviter les problèmes d'échelles. Comme les distances sont des données provenant d'une distribution asymétrique (elles appartiennent à $[0;+\infty]$), on propose dans ce travail de Z-normaliser le log de leur distribution \cite{Zumel}.

@@ -1,0 +1,260 @@
+\chapter*{Chapitre 3 : M$^2$TML}
+
+Dans ce chapitre, on motive d'abord le problème d'apprentissage de métriques multi-modale et multi-échelle (\textsc{m$^2$tml}) pour la classification de séries temporelles. Ensuite, on rappelle l'architecture Large Margin Nearest Neighbors (\textsc{lmnn}) proposée par Weinberger \& Saul. Troisièmement, on introduit le concept de l'espace des paires. On formalise ensuite le problème général de \textsc{m$^2$tml} où on va décliner 3 formalisations différentes (Linéaire, Quadratique, \textsc{svm}-based). On donne les interprétations de la solution obtenue et étudions les propriétés de la métrique résultante. Finalement, on donne l'algorithme.
+
+\section*{Motivations}
+Notre objectif est la définition d'une métrique pour la classification de séries temporelles. Jusqu'à maintenant, on a vu que les séries peuvent être comparées sur la base de une ou plusieurs modalités, peuvent être assujettis à des caractéristiques comme les délais. 
+
+Nous allons nous inspirer des travaux de l'apprentissage de métriques pour apprendre une métrique multi modale et multi échelle pour la classification de séries temporelles par plus proche voisin. Plus précisément, notre objectif sera d'apprendre depuis les données, une fonction linéaires ou non-linéaires qui combine plusieurs modalités à plusieurs échelles et qui satisfait les propriétés d'une dissimilarité (Section \ref{sec:property_metric}).
+
+L'apprentissage de métriques peut être défini comme l'apprentissage, à partir des données et pour une tâche spécifique, une fonction par paire (i.e., similarité, dissimilarité ou une distance) qui rend proche les objets qui sont sensés être similaire et qui rend éloigné les objets qui sont sensés être dissimilaires. La notion de similaire et dissimilaire dépend de l'application et est en général fixé pendant l'apprentissage. De nombreuses recherches ont été menées ces dernières décennies et on peut en distinguer au moins 2 grandes familles : linéaire et non-linéaire. Les premières, qui regroupent la majorité des propositions, visent à apprendre une pondération de la distance de Mahalanobis \cite{Weinberger2009}. Les deuxièmes visent en général à capturer des structures non linéaires qui existent dans les données comme la Kernel Principal Component Analysis (KPCA) \cite{Zhang2010,Chatpatanasiri2010} ou les Support Vector Metric Learning (SVML) \cite{Xu2012}. Une revue plus détaillée des recherches en apprentissage de métriques peut être trouvée dans \cite{Bellet2013}. \\
+Contrairement aux données statiques, les travaux sur l'apprentissage de métriques pour les données structurées (e.g., séquence, séries temporelles, arbre, graphes, chaînes de caractères) sont beaucoup moins fréquents. Sans être exhaustif, la plupart des travaux reposent sur des variantes pondérées de la dynamic time warping pour apprendre des alignements sous des contraintes de phases ou d'amplitudes \cite{Reyes2011,Jeong2011,ZhangX.-L.Z.-G.Luo2014,Mei2015} ou propose des architectures d'apprentissage d'alignement en réalisant des appariements temporelles multiples guidées par des caractéristiques discriminantes globales et locales \cite{Frambourg2013a}. On notera que pour la plupart, ces propositions restent : a) Uni-modales (basées sur les amplitudes), b) Uni-échelles (échelle globale). Nous pensons que les perspectives de l'apprentissage de métriques, dans le cadre des séries temporelles devrait inclure les aspects multi-modals et multi-échelles.
+
+On propose dans ce travail d'apprendre une métrique multi-modal et multi-échelle pour la classification robuste de séries temporelles pour un classifieur $k$-NN. Pour cela, nous allons plongés les séries dans un espace des paires où une fonction linéaire combinant les différentes modalités et échelles temporelles sera apprise, grâce à un processus d'optimisation à vaste marge inspiré des travaux de Weinberger \cite{Weinberger2009}. Grâce au kernel trick, la solution proposée est étendue à l'apprentissage de combinaisons non-linéaires. Une variante parcimonieuse et interprétable de la solution permet de montrer le potentiel de la méthode pour localiser finement les modalités et échelles discriminatives.
+
+\section*{Rappel sur LMNN}
+Let $\textbf{X}=\{\textbf{x}_i,y_i\}_{i=1}^n$ be a set of $n$ static vector samples, ${\textbf{x}_i \in \mathbb{R}^{p}}$, $p$ being the number of descriptive features and $y_i$ the class labels. Weinberger \& Saul proposed in~\cite{Weinberger2009} an approach to learn a metric $D$ for a large margin $k$-NN classifier in the case of static data. The \textsc{m$^2$tml} concept and optimization problem will be inspired in the following by this approach.
+
+Mathematically, the metric learning problem can be formalized as an optimization problem involving two terms for each sample $\textbf{x}_i$: one term penalizes large distances between nearby inputs with the same label (pull), while the other term penalizes small distances between inputs with different labels (push). For all samples $\textbf{x}_i$, this implies a minimization problem:
+\begin{equation}
+\begin{aligned}
+&\displaystyle 		 \argmin_{\textbf{M},\xi} \left\lbrace \underbrace{
+	\sum\limits_{i,j \rightsquigarrow i}
+	D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j)
+}_{pull}
++
+C
+\underbrace{
+	\sum\limits_{i,j \rightsquigarrow i,l \nrightarrow i} \xi_{ijl}
+}
+_{push} \right\rbrace \\
+&\text{s.t.  } \forall i = 1,\ldots, n, \forall j \rightsquigarrow i, l \nrightarrow i, \\
+& D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_l) - D^2_\textbf{M}(\textbf{x}_i,\textbf{x}_j)  \geq 1-\xi_{ijl} \\
+& \xi_{ijl} \geq 0 \\
+& \textbf{M} \succeq 0
+\label{eq:OptimizationProblem}
+\end{aligned}
+\end{equation}
+\noindent where $\xi_{ijl}$ are slack variables, $C$ is a trade-off between the push and pull term and $\textbf{M} \succeq 0$ means that $\textbf{M}$ is a positive semidefinite matrix. Generally, the parameter $C$ is tuned via cross validation and grid search (Section \ref{sec:model_selection}). Similarly to Support Vector Machine ({\sc svm}) approach, slack variables $\xi_{ijl}$ are introduced to relax the optimization problem. 
+
+
+\section*{Espace de représentation par paires multi-modale et multi-échelle}
+Let $\{\textbf{x}_{i}, y_{i}\}_{i=1}^n$ be a set of $n$ time series $\textbf{x}_i = [x_{i1}, \ldots, x_{iq}] \in \mathbb{R}^q$ labeled $y_{i}$. Let  $d_1, \ldots , d_p$ be $p$ given metrics that allow one to compare samples $\textbf{x}_{i}$. As discussed in Chapter \ref{sec:Chapter_metrics}, three naturally modalities are involved for time series comparison: amplitude-based $d_A$, behavior-based $d_B$ and frequential-based $d_F$. Our objective is to learn a metric $D$ that combines the $p$ basic temporal metrics for a robust $k$-NN classifier.
+
+We introduce a new space representation referred to as the \textbf{pairwise dissimilarity space}. We note $\varphi$ an embedding function that maps each pair of time
+series $(\textbf{x}_i, \textbf{x}_j)$ to a vector $\textbf{x}_{ij}$ in a pairwise dissimilarity space $\mathcal{E} = \mathbb{R}^p$ whose dimensions are $d_1, \ldots, d_p$ (Fig. \ref{fig:PairwiseEmbedding}):
+\begin{equation}
+\begin{aligned}
+\varphi : \mathbb{R}^q \times \mathbb{R}^q & \rightarrow \mathcal{E} = \mathbb{R}^p \\
+(\textbf{x}_i, \textbf{x}_j) & \rightarrow \textbf{x}_{ij} = [d_1(\textbf{x}_i, \textbf{x}_j), \ldots, d_p(\textbf{x}_i, \textbf{x}_j)]^T
+\end{aligned}
+\label{eq:projection}
+\end{equation}
+
+\noindent A metric $D$ that combines the $p$ metrics $d_1, \ldots, d_p$ can be seen as a function of the dissimilarity space:
+\begin{equation}
+\begin{aligned}
+D : \mathbb{R}^p & \rightarrow \mathbb{R} \\
+\textbf{x}_{ij} & \rightarrow D(\textbf{x}_{ij}) = f(d_1(\textbf{x}_i, \textbf{x}_j), \ldots , d_p(\textbf{x}_i, \textbf{x}_j))
+\end{aligned}
+\label{eq:metric}
+\end{equation}
+In that space, the norm of a pairwise vector $||\textbf{x}_{ij}||$ refers to the proximity between the time series $\textbf{x}_i$ and $\textbf{x}_j$. In particular, if $||\textbf{x}_{ij}||=0$ then $\textbf{x}_j$ is identical to $\textbf{x}_i$ according to all metrics $d_h$. 
+
+The multi-modal representation in the dissimilarity space can be enriched for time series by measuring each unimodal metric $d_h$ at different temporal localization, called in this work scales. 
+In this work, we provide a multi-scale framework for time series comparison using a hierarchical structure. Many methods exist in the literature such as the sliding window \cite{Keogh2003a} or the dichotomy \cite{AhlameDouzal-Chouakria2012}.
+
+\section*{Problème général de M2TML}
+Our objective is to learn a dissimilarity $D=f(d_1, \ldots, d_p)$ in $\mathcal{E}$, the embedding space, that combines the $p$ dissimilarities $d_1, \ldots, d_p$ for a robust $k$-NN classifier. The function $f$ can be linear or non-linear and must satisfy at least the properties of a dissimilarity, \textit{i.e.}, positivity ($D(\textbf{x}_{ij} \geq 0)$), reflexivity ($D(\textbf{x}_{ii})=0 \text{ }\forall i$) and symmetry ($D(\textbf{x}_{ij}) = D(\textbf{x}_{ji}) \text{ } \forall i,j$) (Section \ref{sec:property_metric}). In the following, the term metric is used to reference both a distance or a dissimilarity measure.
+
+The proposition is based on two standard intuitions in metric learning, \textit{i.e.}, for each time series $\textbf{x}_i$, the metric $D$ should bring closer the time series $\textbf{x}_j$ of the same class ($y_j=y_i$) while pushing the time series $\textbf{x}_l$ of different classes ($y_l \neq y_i$). These two sets are called respectively $Pull_i$ and $Push_i$. 
+% Fig. \ref{fig:Transposition_Pairwise2} illustrates that concept.
+In addition, in order to have a robust $k$-NN, a safety margin between the resulting metric values between the sets $Pull_i$ and $Push_i$ must be considered. 
+
+Similarly, we formalize the \textsc{m$^2$tml} problem as an optimization problem involving both a \textbf{regularization term} on $D$ and the pull set $Pull_i$, denoted $R_{Pull}(D)$, and a \textbf{loss term} on $\xi$ and the push set $Push_i$, denoted $L_{Push}(\xi)$. \textbf{A set of constraints} is added to control the push term in order to have a large margin between $Pull_i$ and $Push_i$:
+\begin{equation}
+\begin{aligned}
+\displaystyle 	& \argmin_{D,\xi} \left\lbrace R_{Pull}(D) + L_{Push}(\xi) \right\rbrace  \\
+& \text{s.t. } 	\forall i, j \in Pull_i, l \in Push_i, \\
+& \qquad D(\textbf{x}_{il})-D(\textbf{x}_{ij}) \geq 1 - \xi_{ijl} \\
+& \qquad \xi_{ijl} \geq 0 
+\end{aligned}
+\end{equation}
+
+Among the possibilities for the loss term, we decide to choose to minimize the sum of the slack variables on the push pairs: 
+\begin{align}
+	R_{Pull}(D) 	& = \sum_{\substack{i \\ j \in Pull_i}}D(\textbf{x}_{ij}) \\
+	L_{Push}(\xi) 	& = \sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}} \xi_{ijl}
+\end{align}
+with $D = f(d_1, \ldots, d_p)$ combination of the metrics $d_1, \ldots, d_p$.
+
+The \textsc{m$^2$tml} problem for large margin $k$-NN classification can be written as the following optimization problem:
+\begin{equation}
+\begin{aligned}
+&\displaystyle 		\argmin_{D,\xi} \left\lbrace \underbrace{
+	\vphantom{ \sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}}  \xi_{ijl} }
+	\sum_{\substack{i \\ j \in Pull_i}}D(\textbf{x}_{ij})
+}_{pull}
++ C
+\underbrace{
+	\sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}} \xi_{ijl}
+}
+_{push} \right\rbrace  \\
+&\text{s.t.  } \forall i = 1, \ldots, n, \forall j \in Pull_i, l \in Push_i, \\
+& \qquad D(\textbf{x}_{il})-D(\textbf{x}_{ij}) \geq 1-\xi_{ijl} \\
+& \qquad \xi_{ijl} \geq 0 
+\label{eq:OriginalOptimizationProblem_Objective} 
+\end{aligned}
+\end{equation}
+
+\noindent where $\xi_{ijl}$ are the slack variables and $C$, the trade-off between the pull (regularization) and push (loss) costs. In the next section, we detail different strategies to define the $Pull_i$ and $Push_i$ sets. 
+
+To build the pairwise training set, we associate for each $\textbf{x}_i$, two sets, $Pull_i$ and $Push_i$, where the two sets are chosen according to one of the following strategies, illustrated in Fig \ref{fig:Strategy_neighborhood}. 
+
+\textbf{$m$-NN$^+$ vs $m$-NN$^-$}: for a given $\textbf{x}_i$, the pull and push sets are defined respectively as 
+the set of the $m$-nearest neighbors of the same class ($y_j=y_i$), 
+and the $m$-nearest neighbor of $\textbf{x}_i$ of a different class ($y_j \neq y_i$)
+More precisely, our proposition states: $m=\alpha.k$ with $\alpha \geq 1$. Other propositions for $m$ are possible:
+\begin{align}
+	\forall i\in 1, \ldots, n, \quad Pull_i & = \{\textbf{x}_{ij} \text{ } / \text{ } \text{$y_j = y_i$, $D_0(\textbf{x}_{ij})$ is among the $m$-lowest distance} \} \label{eq:mnn+}\\
+	Push_i & = \{\textbf{x}_{il} \text{ } / \text{ } \text{s.t. $y_l \neq y_i$, $D_0(\textbf{x}_{il})$ is among the $m$-lowest distance} \} \label{eq:mnn-}
+\end{align}
+In the following, we denote $m\text{-NN}^+ = \bigcup\limits_{i} Pull_i$ and $m\text{-NN}^- = \bigcup\limits_{i} Push_i$
+
+Finally, let discuss about the similarities and differences between \textsc{lmnn} (Weinberger \& Saul~\cite{Weinberger2009}) and our \textsc{m$^2$tml} proposition. In \textsc{lmnn}, the sets $Pull_i$ and $Push_i$ are defined according the \textbf{$k$-NN vs impostors} strategy (Eqs. \ref{eq:pull1} \& \ref{eq:push1}) and may be unbalanced. The sets are defined and fixed during the optimization process according to the initial metric $D_0$. In \textsc{m$^2$tml} the sets $Pull_i$ and $Push_i$ are defined according the \textbf{$m$-NN$^+$ vs $m$-NN$^-$} strategy (Eqs. \ref{eq:mnn+} \& \ref{eq:mnn-}) and are balanced. The sets are defined and fixed during the optimization process according to the initial metric $D_0$, but the $m$-neighborhood is larger than the $k$-neighborhood. By considering a neighborhood larger than the $k$-neighborhood, we believe that the generalization properties of the learned metric $D$ will be improved. 
+
+
+\section*{Formalisation linéaire}
+In this section, we define the problem of learning a combined metric $D$ as a linear combination in the dissimilarity space using a linear regularizer. First, we give the \textsc{m$^2$tml} optimization problem for a linear regularizer. 
+\noindent Let $\{\textbf{x}_{ij}\}_{i,j=1}^n$ be a set of pairwise vectors $\textbf{x}_{ij}=[d_1(\textbf{x}_i,\textbf{x}_j), ..., d_p(\textbf{x}_i,\textbf{x}_j)]^T$  described by $p$ metrics $d_1, \ldots, d_p$. We consider a linear combination of the $p$ metrics:
+\begin{equation}
+D(\textbf{x}_{ij})=\textbf{w}^T\textbf{x}_{ij} = \sum_{h=1}^p w_h.d_h(\textbf{x}_i,\textbf{x}_j)
+\label{eq:D_linear}
+\end{equation}
+where $\textbf{w}=[w_1, \ldots, w_p]^T$ is the vector of weights $w_h$. From Eq. \ref{eq:OriginalOptimizationProblem_Objective}, by choosing $R_{Pull}(D) = R_{Pull}(\textbf{w}) = \sum\limits_{i, j \in Pull_i} \textbf{w}^T\textbf{x}_{ij}$, learning a linear combined metric $D$ can be formalized as follow:
+\begin{align}
+	&\displaystyle 		\argmin_{\textbf{w},\xi}
+	\left\lbrace \underbrace{
+		\vphantom{ \sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}} \xi_{ijl} }
+		\sum\limits_{\substack{i \\ j \in Pull_i}} \textbf{w}^T\textbf{x}_{ij}
+	}_{pull}					
+	+	
+	C \underbrace{				
+		\sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}}  \xi_{ijl}
+	}_{push} \right\rbrace \nonumber \\
+	&\text{s.t.  } \forall i = 1, \ldots, n, \forall j \in Pull_i, l \in Push_i, \label{eq:MMLPrimal} \\
+	& \qquad \textbf{w}^T(\textbf{x}_{il}-\textbf{x}_{ij}) \geq 1-\xi_{ijl}  \nonumber \\
+	& \qquad \xi_{ijl} \geq 0 \nonumber \\
+	& \nonumber \\
+	& \qquad \forall h=1, \ldots, p, \quad w_h \geq 0 \label{eq:MMLPrimal_constraint_pos}
+\end{align}
+\noindent where $\xi_{ijl}$ are the slack variables, $C$ the trade-off between the pull and push costs, and $Pull_i$ and $Push_i$ are defined in Eqs. \ref{eq:mnn+} \& \ref{eq:mnn-}. 
+\noindent Concerning the properties of $D$, positivity is ensured with the constraints $w_h \geq 0$ (Eq. \ref{eq:MMLPrimal_constraint_pos}) and because $d_1, \ldots, d_p$ are dissimilarity measures ($d_h \geq 0$). As the metric $D$ is defined as a linear combination of dissimilarity measures $d_1, \ldots, d_p$, it can be shown that symmetry and reflexivity is verified.
+
+\section*{Formalisation quadratique}
+The linear formalization being similar to the one of a $L_1$-regularized \textsc{svm}, it can be derived into a dual form involving only dot-products to extend the method to find non-linear solutions for $D$. For that, we propose to change the linear regularizer $R_{Pull}(\textbf{w})$ in the objective function of Eq. \ref{eq:MMLPrimal} into a quadratic regularizer. 
+
+\noindent From this, the optimization problem can be written using a quadratic regularization for the pull term:
+\begin{equation}
+\begin{aligned}
+&\displaystyle 		\argmin_{\textbf{w},\xi}
+\left\lbrace \underbrace{
+	\vphantom{ \sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}} }
+	\frac{1}{2} \textbf{w}^T \textbf{M} \textbf{w}		
+}_{pull}				
++					
+C
+\underbrace{
+	\sum\limits_{\substack{i \\ j \in Pull_i \\ l \in Push_i}}  \xi_{ijl}
+}_{push}
+\right\rbrace  \\
+&\text{s.t.  } \forall i = 1, \ldots, n, \forall j \in Pull_i, l \in Push_i, \\
+& \qquad \textbf{w}^T(\textbf{x}_{il}-\textbf{x}_{ij}) \geq 1-\xi_{ijl} \\
+& \qquad \xi_{ijl} \geq 0 
+\end{aligned}
+\label{eq:quadratic}
+\end{equation}
+
+Similarly to \textsc{svm}, the formulation in Eq. \ref{eq:quadratic} can be reduced to the maximization of the following Lagrange function $L(\textbf{w},\xi,\boldsymbol{\alpha},\textbf{r})$, we get the dual formulation (details of the development can be found in Appendix \ref{chap:app:qp_resolution}):
+\begin{equation}
+\begin{aligned}
+&\displaystyle \argmax_{\boldsymbol{\alpha}} \left\lbrace 
+\sum\limits_{ijl} \alpha_{ijl} 
+- \frac{1}{2} \sum\limits_{ijl} \sum\limits_{i'j'l'}
+\alpha_{ijl} \alpha_{i'j'l'}
+(\textbf{x}_{il}-\textbf{x}_{ij})^T
+\textbf{M}^{-1}
+(\textbf{x}_{i'l'}-\textbf{x}_{i'j'}) \right\rbrace \\
+&\text{s.t.  } \forall i = 1, \ldots, n, \forall j \in Pull_i, l \in Push_i, \\
+& 0 \leq \alpha_{ijl} \leq C
+\end{aligned}
+\label{eq:OptimDual}
+\end{equation}
+
+\noindent For any new pair of samples $\textbf{x}_{i'}$ and $\textbf{x}_{j'}$, the resulting metric $D$ writes: 
+\begin{align}
+	D(\textbf{x}_{i'j'}) = & 
+	\underbrace{
+		\sum\limits_{ijl} \alpha_{ijl} 
+		(\textbf{x}_{il}-\textbf{x}_{ij})^T
+		\textbf{M}^{-1}
+	}_{\textbf{w}^T}
+	\textbf{x}_{i'j'}
+	\label{eq:D1_2}
+\end{align}
+
+\noindent By replacing the inner product by a kernel back into Eq. \ref{eq:OptimDual2}, the kernelized dual formulation becomes:
+\begin{equation}
+\begin{aligned}
+&\displaystyle \argmax_{\boldsymbol{\alpha}} 
+\sum\limits_{ijl} \alpha_{ijl} 
+- \frac{1}{2} 
+\sum\limits_{ijl} \sum\limits_{i'j'l'}
+\alpha_{ijl} \alpha_{i'j'l'}
+( \kappa(\textbf{M}^{-\frac{1}{2}} \textbf{x}_{il} ;  \textbf{M}^{-\frac{1}{2}} \textbf{x}_{i'l'} )
+-2\kappa(\textbf{M}^{-\frac{1}{2}} \textbf{x}_{ij} ;  \textbf{M}^{-\frac{1}{2}} \textbf{x}_{i'l'} ) \\
+& \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad +\kappa(\textbf{M}^{-\frac{1}{2}} \textbf{x}_{ij} ;  \textbf{M}^{-\frac{1}{2}} \textbf{x}_{i'j'} ) 
+)   \\
+&\text{s.t.  } \forall i = 1, \ldots, n, \forall j \in Pull_i, l \in Push_i, \\
+& 0 \leq \alpha_{ijl} \leq C
+\end{aligned}
+\label{eq:OptimDual3}
+\end{equation}
+
+\noindent By replacing the inner product by a kernel back into Eq. \ref{eq:D1_3}, we obtain:
+\begin{equation}
+\begin{aligned}
+D(\textbf{x}_{i'j'}) = & 
+\overbrace{
+	\sum\limits_{ijl} \alpha_{ijl} 
+	\kappa(\textbf{M}^{-\frac{1}{2}}\textbf{x}_{il}; \textbf{M}^{-\frac{1}{2}} \textbf{x}_{i'j'})
+}^{\text{similarity of $\textbf{x}_{i'j'}$ to $Push$ set}}		
+- 
+\overbrace{	
+	\sum\limits_{ijl} \alpha_{ijl} 
+	\kappa(\textbf{M}^{-\frac{1}{2}}\textbf{x}_{ij}; \textbf{M}^{-\frac{1}{2}} \textbf{x}_{i'j'})
+}^{\text{similarity of $\textbf{x}_{i'j'}$ to $Pull$ set}}		\\	
+\end{aligned} 
+\label{Eq:nonlinearD2}
+\end{equation}
+Concerning the property of  D, it is not a dissimilarity as non positive: $D$ is a difference of two similarities, the similarity of the pull term is greater than the similarity of the push term.
+
+Link between SVM and the quadratic formalization
+
+\section*{Formalisation à base SVM}
+In this section,we formulate the problem as a \textsc{svm} problem to solve a large margin problem between $Pull_i$ and $Push_i$ sets, and then, induce a combined metric $D$ for the obtained \textsc{svm} solution. Thanks to the \textsc{svm} framework, the proposition can be naturally extended to learn both, linear or non-linear functions for the metric $D$.
+
+Let $\{\textbf{x}_{ij}, y_{ij} = \pm 1\}$, $\textbf{x}_{ij} \in Pull_i \cup Push_i$ be the training set, with $y_{ij} = -1$ for $\textbf{x}_{ij} \in$ $Push_i$ and $+1$ for $\textbf{x}_{ij} \in$ $Pull_i$. For a maximum margin between the sets $Pull_i$ and $Push_i$, the problem is formalized in the dissimilarity space $\mathcal{E}$:
+\begin{equation}
+\begin{aligned}
+& \argmin_{\textbf{w},b,\boldsymbol{\xi}} \left\lbrace \frac{1}{2}||\textbf{w}||_2^2 + C \sum\limits_{i,j} \xi_{ij}\right\rbrace  \label{eq:svm_pairwise}\\
+&\textbf{s.t. } y_{ij}(\textbf{w}^T \textbf{x}_{ij} + b) \geq 1-\xi_{ij} \\
+&\xi_{ij} \geq 0
+\end{aligned}
+\end{equation}
+\noindent In the linear case, a $L_1$ regularization ($||\textbf{w}||_1$) in Eq. \ref{eq:svm_pairwise} leads to a sparse and interpretable \textbf{w} that uncovers the modalities, periods and scales that differentiate best pull from push pairs for a robust nearest neighbors classification.
+
+\section*{Solution et algorithme à base SVM}
+
+
+\section*{Conclusion}

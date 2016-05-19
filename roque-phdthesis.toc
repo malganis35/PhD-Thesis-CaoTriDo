@@ -4,9 +4,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {starchapter}{List of Acronyms}{xi}{chapter*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{Introduction}{1}{chapter*.6}
+\contentsline {starchapter}{Introduction}{1}{chapter*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{Notations}{5}{chapter*.7}
+\contentsline {starchapter}{Notations}{5}{chapter*.11}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Related work}{7}{chapter.1}
 \defcounter {refsection}{0}\relax 
@@ -134,12 +134,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.4}Conclusion of the chapter}{83}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{Conclusion}{87}{chapter*.56}
+\contentsline {starchapter}{Conclusion}{87}{chapter*.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{List of publications}{93}{chapter*.61}
+\contentsline {starchapter}{List of publications}{93}{chapter*.65}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Quadratic formalization development}{95}{appendix.A}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {B}Link between SVM and the Quadratic formalization}{97}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {starchapter}{Bibliography}{107}{appendix*.62}
+\contentsline {starchapter}{Bibliography}{107}{appendix*.66}
